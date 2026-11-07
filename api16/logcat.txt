@@ -1,0 +1,1013 @@
+--------- beginning of /dev/log/main
+D/AndroidRuntime( 1973): 
+D/AndroidRuntime( 1973): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 1973): CheckJNI is ON
+D/dalvikvm( 1973): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 1973): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 1973): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 1973): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 1973): Calling main entry com.android.commands.am.Am
+D/PermissionCache( 1137): checking android.permission.READ_FRAME_BUFFER for uid=1000 => granted (61 us)
+D/dalvikvm( 1982): Not late-enabling CheckJNI (already on)
+D/AndroidRuntime( 1973): Shutting down VM
+--------- beginning of /dev/log/system
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main u=0} from pid 1973
+W/WindowManager( 1369): Failure taking screenshot for (315x184) to layer 21010
+I/ActivityManager( 1369): Start proc com.stradaos.launcher.debug for activity com.stradaos.launcher.debug/com.stradaos.launcher.Main: pid=1982 uid=10044 gids={3003, 1028, 1015, 3002}
+D/dalvikvm( 1973): GC_CONCURRENT freed 96K, 77% free 473K/2048K, paused 1ms+0ms, total 2ms
+E/Trace   ( 1982): error opening trace file: Permission denied (13)
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 0ms
+I/ActivityThread( 1982): Pub com.stradaos.launcher.debug.apk: com.stradaos.launcher.ApkProvider
+D/EGL_emulation( 1741): eglMakeCurrent: 0xb838aab0: ver 2 0
+W/dalvikvm( 1982): Unable to resolve superclass of Lcom/stradaos/launcher/MediaListener; (99)
+W/dalvikvm( 1982): Link of class 'Lcom/stradaos/launcher/MediaListener;' failed
+W/dalvikvm( 1982): VFY: unable to resolve static field 593 (connected) in Lcom/stradaos/launcher/MediaListener;
+D/dalvikvm( 1982): VFY: replacing opcode 0x63 at 0x0042
+I/dalvikvm( 1982): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.gpsState
+W/dalvikvm( 1982): VFY: unable to resolve virtual method 1087: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+D/dalvikvm( 1982): VFY: replacing opcode 0x6e at 0x0008
+W/dalvikvm( 1982): Unable to resolve superclass of Lcom/stradaos/launcher/MediaListener; (99)
+W/dalvikvm( 1982): Link of class 'Lcom/stradaos/launcher/MediaListener;' failed
+W/dalvikvm( 1982): VFY: unable to resolve static field 593 (connected) in Lcom/stradaos/launcher/MediaListener;
+D/dalvikvm( 1982): VFY: replacing opcode 0x63 at 0x00f7
+D/gralloc_ranchu( 1137): gralloc_alloc: Creating ashmem region of size 2457600
+D/dalvikvm( 1982): GC_CONCURRENT freed 258K, 6% free 6165K/6535K, paused 1ms+0ms, total 3ms
+D/dalvikvm( 1369): GREF has increased to 501
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+D/PhoneStatusBar( 1474): addNotification score=10
+D/EGL_emulation( 1741): eglMakeCurrent: 0xb838aab0: ver 2 0
+D/EGL_emulation( 1741): eglMakeCurrent: 0xb838aab0: ver 2 0
+D/libEGL  ( 1982): loaded /system/lib/egl/libEGL_emulation.so
+D/libEGL  ( 1982): loaded /system/lib/egl/libGLESv1_CM_emulation.so
+D/libEGL  ( 1982): loaded /system/lib/egl/libGLESv2_emulation.so
+D/        ( 1982): HostConnection::get() New Host Connection established 0xb83464f8, tid 1982
+D/EGL_emulation( 1982): eglCreateContext: 0xb8347898: maj 2 min 0 rcv 2
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/OpenGLRenderer( 1982): Enabling debug mode 0
+D/dalvikvm( 1982): GC_CONCURRENT freed 57K, 5% free 6513K/6791K, paused 11ms+0ms, total 13ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 48K, 5% free 6646K/6983K, paused 4ms, total 6ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 109K, 7% free 6760K/7239K, paused 1ms, total 1ms
+I/dalvikvm-heap( 1982): Grow heap (frag case) to 7.142MB for 471738-byte allocation
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 224K, 10% free 6997K/7751K, paused 5ms, total 5ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed <1K, 7% free 7227K/7751K, paused 3ms, total 3ms
+I/dalvikvm-heap( 1982): Grow heap (frag case) to 7.598MB for 471738-byte allocation
+D/dalvikvm( 1982): GC_CONCURRENT freed 0K, 7% free 7688K/8263K, paused 0ms+1ms, total 3ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 1ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 518K, 8% free 7683K/8327K, paused 0ms+0ms, total 5ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 296K, 5% free 7932K/8327K, paused 12ms+1ms, total 15ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 379K, 6% free 8160K/8647K, paused 0ms+11ms, total 13ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 402K, 7% free 8408K/8967K, paused 12ms+1ms, total 16ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 1195K, 15% free 7962K/9287K, paused 10ms+1ms, total 15ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 95K, 11% free 8284K/9287K, paused 3ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 2K, 5% free 8906K/9287K, paused 12ms, total 12ms
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+I/ActivityManager( 1369): Displayed com.stradaos.launcher.debug/com.stradaos.launcher.Main: +950ms
+D/EGL_emulation( 1741): eglMakeCurrent: 0xb838aab0: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/dalvikvm( 1982): GC_CONCURRENT freed 170K, 4% free 9664K/9991K, paused 10ms+0ms, total 13ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 642K, 8% free 10011K/10823K, paused 3ms, total 3ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 338K, 9% free 10506K/11463K, paused 2ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 655K, 9% free 11019K/12103K, paused 3ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 658K, 10% free 11532K/12743K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 964K, 10% free 12056K/13383K, paused 3ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 672K, 9% free 12812K/14023K, paused 4ms, total 4ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 989K, 10% free 13581K/14983K, paused 3ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 968K, 9% free 14349K/15623K, paused 3ms, total 3ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2016): 
+D/AndroidRuntime( 2016): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2016): CheckJNI is ON
+D/dalvikvm( 2016): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2016): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2016): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2016): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2016): Calling main entry com.android.commands.input.Input
+I/Input   ( 2016): InjectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=47238, downTime=47238, deviceId=-1, source=0x101 }
+I/Input   ( 2016): InjectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=47238, downTime=47238, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2016): Shutting down VM
+I/AndroidRuntime( 2016): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2016): GC_CONCURRENT freed 98K, 79% free 440K/2048K, paused 1ms+0ms, total 1ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2030): 
+D/AndroidRuntime( 2030): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2030): CheckJNI is ON
+D/dalvikvm( 2030): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2030): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2030): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2030): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2030): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2030): Shutting down VM
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/dalvikvm( 2030): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2030
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+D/dalvikvm( 1982): GC_CONCURRENT freed 1379K, 10% free 14942K/16455K, paused 10ms+1ms, total 15ms
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/InputMethodManagerService( 1369): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@970f61d0 attribute=null
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2049): 
+D/AndroidRuntime( 2049): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2049): CheckJNI is ON
+D/dalvikvm( 2049): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2049): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2049): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2049): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2049): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2049): Shutting down VM
+I/AndroidRuntime( 2049): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2049): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2049
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2065): 
+D/AndroidRuntime( 2065): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2065): CheckJNI is ON
+D/dalvikvm( 2065): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2065): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2065): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2065): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2065): Calling main entry com.android.commands.input.Input
+I/Input   ( 2065): InjectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=70158, downTime=70158, deviceId=-1, source=0x101 }
+I/Input   ( 2065): InjectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=70158, downTime=70158, deviceId=-1, source=0x101 }
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/AndroidRuntime( 2065): Shutting down VM
+D/dalvikvm( 2065): GC_CONCURRENT freed 98K, 79% free 439K/2048K, paused 1ms+0ms, total 1ms
+I/AndroidRuntime( 2065): NOTE: attach of thread 'Binder_3' failed
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/InputMethodManagerService( 1369): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@974ce550 attribute=null
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2077): 
+D/AndroidRuntime( 2077): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2077): CheckJNI is ON
+D/dalvikvm( 2077): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2077): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2077): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2077): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2077): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2077): Shutting down VM
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2077
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/AndroidRuntime( 2077): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2077): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 1ms
+D/dalvikvm( 1369): GC_CONCURRENT freed 359K, 49% free 8328K/16071K, paused 0ms+1ms, total 4ms
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2093): 
+D/AndroidRuntime( 2093): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2093): CheckJNI is ON
+D/dalvikvm( 2093): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2093): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2093): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2093): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2093): Calling main entry com.android.commands.input.Input
+I/Input   ( 2093): InjectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=80839, downTime=80839, deviceId=-1, source=0x101 }
+I/Input   ( 2093): InjectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=80839, downTime=80839, deviceId=-1, source=0x101 }
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/AndroidRuntime( 2093): Shutting down VM
+I/AndroidRuntime( 2093): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2093): GC_CONCURRENT freed 98K, 79% free 440K/2048K, paused 0ms+0ms, total 0ms
+W/InputMethodManagerService( 1369): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@96ecab30 attribute=null
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2105): 
+D/AndroidRuntime( 2105): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2105): CheckJNI is ON
+D/dalvikvm( 2105): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2105): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2105): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2105): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2105): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2105): Shutting down VM
+I/AndroidRuntime( 2105): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2105): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 1ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2105
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1982): GC_CONCURRENT freed 946K, 7% free 15928K/17031K, paused 10ms+1ms, total 14ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2121): 
+D/AndroidRuntime( 2121): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2121): CheckJNI is ON
+D/dalvikvm( 2121): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2121): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2121): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2121): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2121): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2121): Shutting down VM
+I/AndroidRuntime( 2121): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2121): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2121
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+E/ThrottleService( 1369): problem during onPollAlarm: java.lang.IllegalStateException: problem parsing stats: java.io.FileNotFoundException: /proc/net/xt_qtaguid/iface_stat_all: open failed: ENOENT (No such file or directory)
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2137): 
+D/AndroidRuntime( 2137): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2137): CheckJNI is ON
+D/dalvikvm( 2137): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2137): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2137): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2137): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2137): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2137
+D/AndroidRuntime( 2137): Shutting down VM
+I/AndroidRuntime( 2137): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2137): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2153): 
+D/AndroidRuntime( 2153): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2153): CheckJNI is ON
+D/dalvikvm( 2153): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2153): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2153): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2153): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2153): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2153): Shutting down VM
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2153
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+I/AndroidRuntime( 2153): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2153): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2169): 
+D/AndroidRuntime( 2169): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2169): CheckJNI is ON
+D/dalvikvm( 2169): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2169): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2169): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2169): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2169): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2169): Shutting down VM
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2169
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/AndroidRuntime( 2169): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2169): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 1ms
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2185): 
+D/AndroidRuntime( 2185): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2185): CheckJNI is ON
+D/dalvikvm( 2185): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2185): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2185): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2185): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2185): Calling main entry com.android.commands.input.Input
+I/Input   ( 2185): InjectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=124987, downTime=124987, deviceId=-1, source=0x101 }
+I/Input   ( 2185): InjectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=124987, downTime=124987, deviceId=-1, source=0x101 }
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/AndroidRuntime( 2185): Shutting down VM
+I/AndroidRuntime( 2185): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2185): GC_CONCURRENT freed 98K, 79% free 440K/2048K, paused 0ms+0ms, total 0ms
+W/InputMethodManagerService( 1369): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@96f89a80 attribute=null
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2198): 
+D/AndroidRuntime( 2198): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2198): CheckJNI is ON
+D/dalvikvm( 2198): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2198): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2198): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2198): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2198): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2198): Shutting down VM
+I/AndroidRuntime( 2198): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2198): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2198
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1982): GC_CONCURRENT freed 1677K, 10% free 16271K/18055K, paused 10ms+1ms, total 16ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2214): 
+D/AndroidRuntime( 2214): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2214): CheckJNI is ON
+D/dalvikvm( 2214): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2214): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2214): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2214): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2214): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2214): Shutting down VM
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2214
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/AndroidRuntime( 2214): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2214): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1369): GC_CONCURRENT freed 519K, 49% free 8284K/16071K, paused 0ms+0ms, total 5ms
+D/AndroidRuntime( 2226): 
+D/AndroidRuntime( 2226): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2226): CheckJNI is ON
+D/dalvikvm( 2226): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2226): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2226): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2226): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2226): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2226
+D/AndroidRuntime( 2226): Shutting down VM
+I/AndroidRuntime( 2226): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2226): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 1ms
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2242): 
+D/AndroidRuntime( 2242): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2242): CheckJNI is ON
+D/dalvikvm( 2242): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2242): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2242): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2242): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2242): Calling main entry com.android.commands.input.Input
+I/Input   ( 2242): InjectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=148253, downTime=148253, deviceId=-1, source=0x101 }
+I/Input   ( 2242): InjectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=148253, downTime=148253, deviceId=-1, source=0x101 }
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/AndroidRuntime( 2242): Shutting down VM
+D/dalvikvm( 2242): GC_CONCURRENT freed 98K, 79% free 440K/2048K, paused 0ms+0ms, total 1ms
+I/AndroidRuntime( 2242): NOTE: attach of thread 'Binder_3' failed
+W/InputMethodManagerService( 1369): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@97438b58 attribute=null
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2254): 
+D/AndroidRuntime( 2254): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2254): CheckJNI is ON
+D/dalvikvm( 2254): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2254): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2254): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2254): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2254): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2254): Shutting down VM
+I/AndroidRuntime( 2254): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2254): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2254
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+I/ActivityManager( 1369): START {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=android/com.android.internal.app.ResolverActivity u=0} from pid 1982
+W/WindowManager( 1369): Failure taking screenshot for (302x176) to layer 21010
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+D/gralloc_ranchu( 1137): gralloc_alloc: Creating ashmem region of size 57344
+D/gralloc_ranchu( 1137): gralloc_alloc: Creating ashmem region of size 704512
+D/        ( 1369): HostConnection::get() New Host Connection established 0xb840e940, tid 1385
+I/ActivityManager( 1369): Displayed android/com.android.internal.app.ResolverActivity: +73ms
+D/gralloc_ranchu( 1137): gralloc_alloc: Creating ashmem region of size 704512
+D/gralloc_ranchu( 1137): gralloc_alloc: Creating ashmem region of size 704512
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2270): 
+D/AndroidRuntime( 2270): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2270): CheckJNI is ON
+D/dalvikvm( 2270): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2270): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2270): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2270): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2270): Calling main entry com.android.commands.input.Input
+I/Input   ( 2270): InjectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=157923, downTime=157923, deviceId=-1, source=0x101 }
+I/Input   ( 2270): InjectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=157923, downTime=157923, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2270): Shutting down VM
+D/dalvikvm( 2270): GC_CONCURRENT freed 98K, 79% free 440K/2048K, paused 0ms+1ms, total 1ms
+I/AndroidRuntime( 2270): NOTE: attach of thread 'Binder_3' failed
+W/WindowManager( 1369): Failure taking screenshot for (302x176) to layer 21015
+D/dalvikvm( 1369): WAIT_FOR_CONCURRENT_GC blocked 0ms
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+D/dalvikvm( 1369): GC_EXPLICIT freed 243K, 48% free 8432K/16071K, paused 0ms+1ms, total 5ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/InputMethodManagerService( 1369): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@975913d0 attribute=null
+W/ActivityManager( 1369): Duplicate finish request for ActivityRecord{97418b58 android/com.android.internal.app.ResolverActivity}
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2282): 
+D/AndroidRuntime( 2282): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2282): CheckJNI is ON
+D/dalvikvm( 2282): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2282): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2282): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2282): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2282): Calling main entry com.android.commands.input.Input
+I/Input   ( 2282): InjectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=160182, downTime=160182, deviceId=-1, source=0x101 }
+I/Input   ( 2282): InjectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=160182, downTime=160182, deviceId=-1, source=0x101 }
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/AndroidRuntime( 2282): Shutting down VM
+D/dalvikvm( 2282): GC_CONCURRENT freed 98K, 79% free 440K/2048K, paused 0ms+0ms, total 1ms
+I/AndroidRuntime( 2282): NOTE: attach of thread 'Binder_3' failed
+W/InputMethodManagerService( 1369): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@96f8b228 attribute=null
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/PackageManager( 1369): generateServicesMap(android.accounts.AccountAuthenticator): 2 services unchanged
+D/PackageManager( 1369): generateServicesMap(android.content.SyncAdapter): 4 services unchanged
+I/InputReader( 1369): Reconfiguring input devices.  changes=0x00000010
+I/AccountTypeManager( 1731): Loaded meta-data for 1 account types, 0 accounts in 1ms(wall) 0ms(cpu)
+I/Launcher( 1741): setLoadOnResume
+D/AndroidRuntime( 2294): 
+D/AndroidRuntime( 2294): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2294): CheckJNI is ON
+D/dalvikvm( 2294): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2294): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2294): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2294): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2294): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2294): Shutting down VM
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2294
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/AndroidRuntime( 2294): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2294): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2310): 
+D/AndroidRuntime( 2310): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2310): CheckJNI is ON
+D/dalvikvm( 2310): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2310): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2310): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2310): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2310): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2310): Shutting down VM
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2310
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/AndroidRuntime( 2310): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2310): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2326): 
+D/AndroidRuntime( 2326): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2326): CheckJNI is ON
+D/dalvikvm( 2326): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2326): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2326): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2326): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2326): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2326): Shutting down VM
+I/AndroidRuntime( 2326): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2326): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 1ms+0ms, total 1ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2326
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2342): 
+D/AndroidRuntime( 2342): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2342): CheckJNI is ON
+D/dalvikvm( 2342): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2342): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2342): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2342): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2342): Calling main entry com.android.commands.input.Input
+I/Input   ( 2342): InjectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=187544, downTime=187544, deviceId=-1, source=0x101 }
+I/Input   ( 2342): InjectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=187544, downTime=187544, deviceId=-1, source=0x101 }
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/AndroidRuntime( 2342): Shutting down VM
+D/dalvikvm( 2342): GC_CONCURRENT freed 98K, 79% free 440K/2048K, paused 0ms+1ms, total 1ms
+I/AndroidRuntime( 2342): NOTE: attach of thread 'Binder_3' failed
+W/InputMethodManagerService( 1369): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@974bd1a0 attribute=null
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2354): 
+D/AndroidRuntime( 2354): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2354): CheckJNI is ON
+D/dalvikvm( 2354): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2354): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2354): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2354): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2354): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2354): Shutting down VM
+I/AndroidRuntime( 2354): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2354): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 1ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2354
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 8420K, 48% free 9439K/18055K, paused 4ms, total 4ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 6K, 45% free 10038K/18055K, paused 12ms, total 12ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 726K, 42% free 10605K/18055K, paused 4ms, total 5ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 4K, 40% free 10861K/18055K, paused 1ms+1ms, total 4ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 877K, 37% free 11394K/18055K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 872K, 33% free 12163K/18055K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 904K, 28% free 13155K/18055K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 1180K, 23% free 13967K/18055K, paused 0ms+1ms, total 3ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 2ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 2ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 595K, 18% free 14979K/18055K, paused 2ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 291K, 16% free 15233K/18055K, paused 13ms, total 13ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 294K, 16% free 15217K/18055K, paused 13ms, total 13ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 259K, 16% free 15249K/18055K, paused 3ms, total 4ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed <1K, 15% free 15521K/18055K, paused 2ms, total 2ms
+I/dalvikvm-heap( 1982): Grow heap (frag case) to 15.499MB for 262156-byte allocation
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 0K, 15% free 15777K/18375K, paused 3ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 32K, 15% free 15745K/18375K, paused 2ms, total 2ms
+I/dalvikvm-heap( 1982): Grow heap (frag case) to 15.717MB for 262156-byte allocation
+D/dalvikvm( 1982): GC_FOR_ALLOC freed <1K, 15% free 16001K/18695K, paused 13ms, total 13ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 32K, 15% free 15969K/18695K, paused 3ms, total 3ms
+I/dalvikvm-heap( 1982): Grow heap (frag case) to 15.936MB for 262156-byte allocation
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 0K, 15% free 16225K/19015K, paused 3ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 516K, 18% free 15745K/19015K, paused 4ms, total 4ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 33K, 15% free 16257K/19015K, paused 2ms, total 2ms
+I/dalvikvm-heap( 1982): Grow heap (frag case) to 16.217MB for 262156-byte allocation
+D/dalvikvm( 1982): GC_FOR_ALLOC freed <1K, 15% free 16513K/19335K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 292K, 15% free 16514K/19335K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 32K, 14% free 16738K/19335K, paused 1ms, total 1ms
+I/dalvikvm-heap( 1982): Grow heap (frag case) to 16.686MB for 262156-byte allocation
+D/dalvikvm( 1982): GC_FOR_ALLOC freed <1K, 14% free 16993K/19655K, paused 12ms, total 12ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 585K, 17% free 16495K/19655K, paused 7ms, total 7ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 62K, 14% free 17005K/19655K, paused 12ms, total 12ms
+I/dalvikvm-heap( 1982): Grow heap (frag case) to 16.947MB for 262156-byte allocation
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 0K, 14% free 17261K/19975K, paused 3ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 12K, 14% free 17250K/19975K, paused 2ms, total 2ms
+I/dalvikvm-heap( 1982): Grow heap (frag case) to 17.187MB for 262156-byte allocation
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 256K, 16% free 17250K/20295K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 336K, 15% free 17252K/20295K, paused 3ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 308K, 15% free 17257K/20295K, paused 3ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 9K, 14% free 17504K/20295K, paused 2ms, total 2ms
+I/dalvikvm-heap( 1982): Grow heap (frag case) to 17.434MB for 262156-byte allocation
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 0K, 14% free 17760K/20615K, paused 2ms, total 2ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1369): GC_CONCURRENT freed 475K, 48% free 8457K/16071K, paused 0ms+1ms, total 5ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2375): 
+D/AndroidRuntime( 2375): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2375): CheckJNI is ON
+D/dalvikvm( 2375): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2375): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2375): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2375): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2375): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2375): Shutting down VM
+I/AndroidRuntime( 2375): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2375): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2375
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 8992K, 56% free 9149K/20615K, paused 3ms, total 9ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 43K, 53% free 9700K/20615K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 293K, 49% free 10597K/20615K, paused 4ms, total 4ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 324K, 44% free 11623K/20615K, paused 11ms+0ms, total 13ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 1130K, 41% free 12168K/20615K, paused 15ms, total 15ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 905K, 37% free 13160K/20615K, paused 14ms, total 14ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 904K, 32% free 14152K/20615K, paused 14ms, total 14ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 1134K, 28% free 14954K/20615K, paused 11ms+1ms, total 19ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2394): 
+D/AndroidRuntime( 2394): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2394): CheckJNI is ON
+D/dalvikvm( 2394): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2394): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2394): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2394): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2394): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2394): Shutting down VM
+I/AndroidRuntime( 2394): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2394): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 1ms+0ms, total 1ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2394
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+D/dalvikvm( 1982): GC_CONCURRENT freed 7740K, 56% free 9145K/20615K, paused 0ms+0ms, total 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 95K, 53% free 9738K/20615K, paused 3ms, total 3ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 47K, 47% free 10945K/20615K, paused 11ms+1ms, total 14ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 1ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 2ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 838K, 44% free 11713K/20615K, paused 13ms+1ms, total 18ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 5ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 6ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 1194K, 40% free 12418K/20615K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 651K, 34% free 13699K/20615K, paused 11ms+2ms, total 20ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 1ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 1ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 1130K, 30% free 14467K/20615K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 1132K, 26% free 15268K/20615K, paused 12ms+0ms, total 16ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2409): 
+D/AndroidRuntime( 2409): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2409): CheckJNI is ON
+D/dalvikvm( 2409): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2409): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2409): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2409): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2409): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2409): Shutting down VM
+D/dalvikvm( 2409): GC_CONCURRENT freed 94K, 79% free 444K/2048K, paused 0ms+0ms, total 0ms
+I/AndroidRuntime( 2409): NOTE: attach of thread 'Binder_3' failed
+I/WindowManager( 1369): Using new display size: 1024x600
+D/AndroidRuntime( 2421): 
+D/AndroidRuntime( 2421): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2421): CheckJNI is ON
+D/dalvikvm( 2421): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2421): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2421): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2421): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2421): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2421): Shutting down VM
+I/AndroidRuntime( 2421): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2421): GC_CONCURRENT freed 99K, 78% free 451K/2048K, paused 0ms+0ms, total 0ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2433): 
+D/AndroidRuntime( 2433): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2433): CheckJNI is ON
+D/dalvikvm( 2433): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2433): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2433): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2433): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2433): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2433): Shutting down VM
+D/dalvikvm( 2433): GC_CONCURRENT freed 96K, 77% free 476K/2048K, paused 0ms+0ms, total 1ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2433
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2447): 
+D/AndroidRuntime( 2447): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2447): CheckJNI is ON
+D/dalvikvm( 2447): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2447): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2447): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2447): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2447): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2447): Shutting down VM
+I/AndroidRuntime( 2447): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2447): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+1ms, total 1ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2447
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2463): 
+D/AndroidRuntime( 2463): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2463): CheckJNI is ON
+D/dalvikvm( 2463): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2463): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2463): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2463): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2463): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2463): Shutting down VM
+D/dalvikvm( 2463): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 1ms
+I/AndroidRuntime( 2463): NOTE: attach of thread 'Binder_3' failed
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2463
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2475): 
+D/AndroidRuntime( 2475): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2475): CheckJNI is ON
+D/dalvikvm( 2475): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2475): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2475): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2475): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2475): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2475): Shutting down VM
+D/dalvikvm( 2475): GC_CONCURRENT freed 94K, 79% free 444K/2048K, paused 0ms+0ms, total 0ms
+I/WindowManager( 1369): Using new display size: 1024x600
+D/AndroidRuntime( 2486): 
+D/AndroidRuntime( 2486): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2486): CheckJNI is ON
+D/dalvikvm( 2486): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2486): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2486): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2486): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2486): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2486): Shutting down VM
+D/dalvikvm( 2486): GC_CONCURRENT freed 99K, 78% free 451K/2048K, paused 0ms+0ms, total 1ms
+I/AndroidRuntime( 2486): NOTE: attach of thread 'Binder_3' failed
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2498): 
+D/AndroidRuntime( 2498): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2498): CheckJNI is ON
+D/dalvikvm( 2498): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2498): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2498): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2498): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2498): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2498): Shutting down VM
+D/dalvikvm( 2498): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 1ms
+I/AndroidRuntime( 2498): NOTE: attach of thread 'Binder_3' failed
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2498
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1982): GC_CONCURRENT freed 1518K, 24% free 15767K/20615K, paused 0ms+1ms, total 8ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 1506K, 22% free 16229K/20615K, paused 11ms+0ms, total 14ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 1686K, 20% free 16584K/20615K, paused 1ms+0ms, total 4ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 2ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 1908K, 20% free 16599K/20615K, paused 10ms+1ms, total 13ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 1908K, 20% free 16618K/20615K, paused 11ms+0ms, total 13ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 1907K, 20% free 16631K/20615K, paused 11ms+0ms, total 13ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2510): 
+D/AndroidRuntime( 2510): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2510): CheckJNI is ON
+D/dalvikvm( 2510): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2510): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2510): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2510): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2510): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2510): Shutting down VM
+D/dalvikvm( 2510): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 1ms
+I/AndroidRuntime( 2510): NOTE: attach of thread 'Binder_3' failed
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2510
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1982): GC_CONCURRENT freed 7186K, 45% free 11457K/20615K, paused 11ms+2ms, total 18ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 1617K, 45% free 11512K/20615K, paused 13ms, total 13ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 902K, 41% free 12249K/20615K, paused 12ms, total 13ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 946K, 36% free 13201K/20615K, paused 14ms, total 14ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 1132K, 33% free 14001K/20615K, paused 0ms+0ms, total 2ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 2ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 908K, 28% free 14993K/20615K, paused 3ms, total 3ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1982): GC_CONCURRENT freed 1402K, 25% free 15529K/20615K, paused 0ms+0ms, total 4ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2529): 
+D/AndroidRuntime( 2529): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2529): CheckJNI is ON
+D/dalvikvm( 2529): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2529): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2529): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2529): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2529): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2529): Shutting down VM
+I/AndroidRuntime( 2529): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2529): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 1ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2529
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2545): 
+D/AndroidRuntime( 2545): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2545): CheckJNI is ON
+D/dalvikvm( 2545): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2545): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2545): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2545): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2545): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2545): Shutting down VM
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2545
+I/AndroidRuntime( 2545): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2545): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2561): 
+D/AndroidRuntime( 2561): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2561): CheckJNI is ON
+D/dalvikvm( 2561): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2561): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2561): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2561): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2561): Calling main entry com.android.commands.input.Input
+I/Input   ( 2561): InjectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=272974, downTime=272974, deviceId=-1, source=0x101 }
+I/Input   ( 2561): InjectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=272974, downTime=272974, deviceId=-1, source=0x101 }
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+D/AndroidRuntime( 2561): Shutting down VM
+W/InputMethodManagerService( 1369): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@9738e968 attribute=null
+I/AndroidRuntime( 2561): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2561): GC_CONCURRENT freed 98K, 79% free 440K/2048K, paused 0ms+0ms, total 0ms
+D/EGL_emulation( 1982): eglMakeCurrent: 0xb8347898: ver 2 0
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2573): 
+D/AndroidRuntime( 2573): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2573): CheckJNI is ON
+D/dalvikvm( 2573): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2573): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2573): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2573): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2573): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2573): Shutting down VM
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2573
+I/AndroidRuntime( 2573): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2573): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+D/dalvikvm( 1369): GC_CONCURRENT freed 663K, 49% free 8301K/16071K, paused 0ms+0ms, total 7ms
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 7422K, 54% free 9660K/20615K, paused 4ms, total 12ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 60K, 51% free 10223K/20615K, paused 12ms, total 12ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 354K, 47% free 11089K/20615K, paused 3ms, total 3ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 908K, 43% free 11855K/20615K, paused 10ms+11ms, total 23ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 13ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 945K, 38% free 12807K/20615K, paused 12ms, total 12ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 28ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 897K, 34% free 13806K/20615K, paused 13ms, total 13ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 1100K, 30% free 14606K/20615K, paused 13ms, total 19ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 1447K, 27% free 15090K/20615K, paused 12ms, total 12ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 592K, 25% free 15558K/20615K, paused 11ms+0ms, total 13ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1504): GC_CONCURRENT freed 397K, 8% free 6560K/7111K, paused 1ms+0ms, total 3ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2592): 
+D/AndroidRuntime( 2592): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2592): CheckJNI is ON
+D/dalvikvm( 2592): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2592): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2592): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2592): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2592): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2592): Shutting down VM
+D/dalvikvm( 2592): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2592
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2608): 
+D/AndroidRuntime( 2608): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2608): CheckJNI is ON
+D/dalvikvm( 2608): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2608): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2608): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2608): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2608): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2608): Shutting down VM
+I/AndroidRuntime( 2608): NOTE: attach of thread 'Binder_3' failed
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2608
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+D/dalvikvm( 2608): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 1ms
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2624): 
+D/AndroidRuntime( 2624): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2624): CheckJNI is ON
+D/dalvikvm( 2624): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2624): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2624): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2624): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2624): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2624): Shutting down VM
+D/dalvikvm( 2624): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/AndroidRuntime( 2624): NOTE: attach of thread 'Binder_3' failed
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2624
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 7332K, 52% free 9922K/20615K, paused 3ms, total 8ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 79K, 47% free 11062K/20615K, paused 5ms, total 16ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 82K, 39% free 12622K/20615K, paused 10ms+1ms, total 14ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 0ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 1740K, 39% free 12778K/20615K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 1155K, 31% free 14391K/20615K, paused 10ms+11ms, total 24ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 1ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 1539K, 29% free 14748K/20615K, paused 13ms, total 13ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 21ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 895K, 24% free 15752K/20615K, paused 13ms, total 13ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2639): 
+D/AndroidRuntime( 2639): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2639): CheckJNI is ON
+D/dalvikvm( 2639): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2639): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2639): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2639): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2639): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2639): Shutting down VM
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2639
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/AndroidRuntime( 2639): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2639): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 1ms+0ms, total 1ms
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+D/dalvikvm( 1982): GC_CONCURRENT freed 7329K, 50% free 10410K/20615K, paused 11ms+1ms, total 22ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 11ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 11ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 628K, 47% free 11132K/20615K, paused 2ms, total 2ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 871K, 43% free 11902K/20615K, paused 11ms+0ms, total 14ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 2ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 6ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 905K, 38% free 12927K/20615K, paused 11ms+0ms, total 15ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 4ms
+D/dalvikvm( 1982): WAIT_FOR_CONCURRENT_GC blocked 3ms
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 904K, 33% free 13886K/20615K, paused 3ms, total 3ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/dalvikvm( 1982): GC_FOR_ALLOC freed 1131K, 29% free 14687K/20615K, paused 2ms, total 3ms
+D/dalvikvm( 1982): GC_CONCURRENT freed 550K, 25% free 15487K/20615K, paused 0ms+0ms, total 3ms
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+D/AndroidRuntime( 2658): 
+D/AndroidRuntime( 2658): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2658): CheckJNI is ON
+D/dalvikvm( 2658): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2658): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2658): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2658): Added shared lib libnativehelper.so 0x0
+D/AndroidRuntime( 2658): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2658): Shutting down VM
+I/AndroidRuntime( 2658): NOTE: attach of thread 'Binder_3' failed
+D/dalvikvm( 2658): GC_CONCURRENT freed 97K, 77% free 476K/2048K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1369): START {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras) u=0} from pid 2658
+I/LocationManagerService( 1369): remove gps (pid 1982), disabled
+I/LocationManagerService( 1369): request gps (pid 1982) 1000 1000
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found
+W/ActivityManager( 1369): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService }: not found

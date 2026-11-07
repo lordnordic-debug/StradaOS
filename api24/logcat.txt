@@ -1,0 +1,1384 @@
+--------- beginning of main
+11-07 06:00:43.373  2702  2702 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:00:43.375  2702  2702 D AndroidRuntime: CheckJNI is OFF
+11-07 06:00:43.387  2702  2702 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:00:43.389  2702  2702 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:00:43.397  2702  2702 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:00:43.397  2702  2702 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:00:43.397  2702  2702 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:00:43.400  2702  2702 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+--------- beginning of system
+11-07 06:00:43.403  1597  1609 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main} from uid 2000 on display 0
+11-07 06:00:43.406  2702  2702 D AndroidRuntime: Shutting down VM
+11-07 06:00:43.412  2712  2712 I art     : Late-enabling -Xcheck:jni
+11-07 06:00:43.412  2712  2712 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:00:43.416  1597  1843 I ActivityManager: Start proc 2712:com.stradaos.launcher.debug/u0a62 for activity com.stradaos.launcher.debug/com.stradaos.launcher.Main
+11-07 06:00:43.433  2712  2712 W System  : ClassLoader referenced unknown path: /data/app/com.stradaos.launcher.debug-1/lib/x86
+11-07 06:00:43.443  1302  2184 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:00:43.458  2137  2187 D EGL_emulation: eglMakeCurrent: 0xae405360: ver 3 0 (tinfo 0xae403600)
+11-07 06:00:43.487  1597  1842 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@3c644dc)
+11-07 06:00:43.487  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@3c644dc)
+11-07 06:00:43.495  1302  2184 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:00:43.498  2712  2712 D         : HostConnection::get() New Host Connection established 0x91f08900, tid 2712
+11-07 06:00:43.527  2712  2730 D         : HostConnection::get() New Host Connection established 0x91f08ac0, tid 2730
+11-07 06:00:43.534  2712  2730 I OpenGLRenderer: Initialized EGL, version 1.4
+11-07 06:00:43.534  2712  2730 D OpenGLRenderer: Swap behavior 1
+11-07 06:00:43.535  2712  2730 D EGL_emulation: eglCreateContext: 0xae4054e0: maj 3 min 0 rcv 3
+11-07 06:00:43.535  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:00:43.536  2712  2730 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+11-07 06:00:43.536  2712  2730 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+11-07 06:00:43.538  2712  2712 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-07 06:00:43.604  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:00:44.120  1597  1626 I ActivityManager: Displayed com.stradaos.launcher.debug/com.stradaos.launcher.Main: +714ms
+11-07 06:00:44.150  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:00:44.348  1597  1626 I WindowManager: Destroying surface Surface(name=Starting com.stradaos.launcher.debug) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-07 06:00:44.519  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:00:44.548  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:00:44.556  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:00:44.565  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:00:44.577  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:00:44.643  1597  1842 I WindowManager: Destroying surface Surface(name=com.android.launcher3/com.android.launcher3.Launcher) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.AppWindowToken.notifyAppStopped:389 com.android.server.wm.WindowManagerService.notifyAppStopped:4456 com.android.server.am.ActivityStack.activityStoppedLocked:1252 com.android.server.am.ActivityManagerService.activityStopped:6903 
+11-07 06:00:45.016  1597  1843 D AlarmManagerService: Kernel timezone updated to 0 minutes west of GMT
+11-07 06:00:45.017  1597  1842 D AlarmManagerService: Setting time of day to sec=1794031245
+11-07 06:00:45.002  1597  1842 W AlarmManagerService: Unable to set rtc to 1794031245: No such device
+11-07 06:00:45.598  1597  1646 I InputReader: Reconfiguring input devices.  changes=0x00000010
+11-07 06:00:45.601  1597  1646 I InputReader: Reconfiguring input devices.  changes=0x00000010
+11-07 06:00:45.602  1597  1646 I InputReader: Reconfiguring input devices.  changes=0x00000010
+11-07 06:00:45.603  1597  1646 I InputReader: Reconfiguring input devices.  changes=0x00000010
+11-07 06:00:45.603  1597  1646 I InputReader: Reconfiguring input devices.  changes=0x00000010
+11-07 06:00:45.605  1823  1823 D CarrierSvcBindHelper: No carrier app for: 0
+11-07 06:00:45.611  1823  1823 D CarrierSvcBindHelper: No carrier app for: 0
+11-07 06:00:45.612  1823  1823 D CarrierSvcBindHelper: No carrier app for: 0
+11-07 06:00:45.615  1823  1823 D CarrierSvcBindHelper: No carrier app for: 0
+11-07 06:00:45.617  1823  1823 D CarrierSvcBindHelper: No carrier app for: 0
+11-07 06:00:45.619  1597  1611 W LocationProviderProxy-network: Odd, no component found for service com.android.location.service.v3.NetworkLocationProvider
+11-07 06:00:45.619  1597  1611 W GeocoderProxy: Odd, no component found for service com.android.location.service.GeocodeProvider
+11-07 06:00:45.619  1597  1611 W GeofenceProxy: Odd, no component found for service com.android.location.service.GeofenceProvider
+11-07 06:00:45.619  1597  1611 W ActivityRecognitionProxy: Odd, no component found for service com.android.location.service.ActivityRecognitionProvider
+11-07 06:00:45.625  1597  1611 W LocationProviderProxy-network: Odd, no component found for service com.android.location.service.v3.NetworkLocationProvider
+11-07 06:00:45.625  1597  1611 W GeocoderProxy: Odd, no component found for service com.android.location.service.GeocodeProvider
+11-07 06:00:45.625  1597  1611 W GeofenceProxy: Odd, no component found for service com.android.location.service.GeofenceProvider
+11-07 06:00:45.625  1597  1611 W ActivityRecognitionProxy: Odd, no component found for service com.android.location.service.ActivityRecognitionProvider
+11-07 06:00:45.630  1597  1611 W LocationProviderProxy-network: Odd, no component found for service com.android.location.service.v3.NetworkLocationProvider
+11-07 06:00:45.630  1597  1611 W GeocoderProxy: Odd, no component found for service com.android.location.service.GeocodeProvider
+11-07 06:00:45.630  1597  1611 W GeofenceProxy: Odd, no component found for service com.android.location.service.GeofenceProvider
+11-07 06:00:45.630  1597  1611 W ActivityRecognitionProxy: Odd, no component found for service com.android.location.service.ActivityRecognitionProvider
+11-07 06:00:45.631  1597  1611 W LocationProviderProxy-network: Odd, no component found for service com.android.location.service.v3.NetworkLocationProvider
+11-07 06:00:45.631  1597  1611 W GeocoderProxy: Odd, no component found for service com.android.location.service.GeocodeProvider
+11-07 06:00:45.631  1597  1611 W GeofenceProxy: Odd, no component found for service com.android.location.service.GeofenceProvider
+11-07 06:00:45.631  1597  1611 W ActivityRecognitionProxy: Odd, no component found for service com.android.location.service.ActivityRecognitionProvider
+11-07 06:00:45.631  1597  1611 W LocationProviderProxy-network: Odd, no component found for service com.android.location.service.v3.NetworkLocationProvider
+11-07 06:00:45.632  1597  1611 W GeocoderProxy: Odd, no component found for service com.android.location.service.GeocodeProvider
+11-07 06:00:45.632  1597  1611 W GeofenceProxy: Odd, no component found for service com.android.location.service.GeofenceProvider
+11-07 06:00:45.632  1597  1611 W ActivityRecognitionProxy: Odd, no component found for service com.android.location.service.ActivityRecognitionProvider
+11-07 06:00:45.678  1597  2375 W BackupManagerService: dataChanged but no participant pkg='com.android.launcher3' uid=10014
+11-07 06:00:45.710  1597  2375 W BackupManagerService: dataChanged but no participant pkg='com.android.launcher3' uid=10014
+11-07 06:00:45.727  1597  1843 W BackupManagerService: dataChanged but no participant pkg='com.android.launcher3' uid=10014
+11-07 06:00:46.010  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:00:46.470  1597  1842 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:00:46.543  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:00:48.470  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:00:50.472  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:00:50.622  1597  1613 I ActivityManager: Waited long enough for: ServiceRecord{942b35c u0 com.android.calendar/.alerts.InitAlarmsService}
+11-07 06:00:52.474  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:00:54.475  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:00:55.435  1302  2737 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:00:55.435  1302  1308 D PermissionCache: checking android.permission.READ_FRAME_BUFFER for uid=2000 => granted (169 us)
+11-07 06:00:55.436  1302  1308 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:00:55.437  2749  2749 D         : HostConnection::get() New Host Connection established 0xb569b2c0, tid 2749
+11-07 06:00:55.618  2755  2755 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:00:55.619  2755  2755 D AndroidRuntime: CheckJNI is OFF
+11-07 06:00:55.631  2755  2755 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:00:55.633  2755  2755 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:00:55.640  2755  2755 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:00:55.640  2755  2755 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:00:55.641  2755  2755 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:00:55.644  2755  2755 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:00:55.647  1597  1613 I ActivityManager: Killing 1846:com.android.settings:CryptKeeper/1000 (adj 906): empty #17
+11-07 06:00:55.649  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:00:55.650  1597  1694 I ActivityManager: Killing 2122:com.android.keychain/1000 (adj 906): empty #17
+11-07 06:00:55.654  2755  2755 D AndroidRuntime: Shutting down VM
+11-07 06:00:55.690  1597  1842 D ActivityManager: cleanUpApplicationRecord -- 1846
+11-07 06:00:55.690  1597  2375 D ActivityManager: cleanUpApplicationRecord -- 2122
+11-07 06:00:55.785  2766  2766 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:00:55.786  2766  2766 D AndroidRuntime: CheckJNI is OFF
+11-07 06:00:55.798  2766  2766 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:00:55.800  2766  2766 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:00:55.808  2766  2766 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:00:55.808  2766  2766 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:00:55.808  2766  2766 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:00:55.811  2766  2766 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-07 06:00:55.813  2766  2766 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=36852, downTime=36852, deviceId=-1, source=0x101 }
+11-07 06:00:55.814  2766  2766 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=36852, downTime=36852, deviceId=-1, source=0x101 }
+11-07 06:00:55.814  2766  2766 D AndroidRuntime: Shutting down VM
+11-07 06:00:56.476  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:00:57.935  2776  2776 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:00:57.936  2776  2776 D AndroidRuntime: CheckJNI is OFF
+11-07 06:00:57.949  2776  2776 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:00:57.951  2776  2776 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:00:57.958  2776  2776 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:00:57.958  2776  2776 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:00:57.959  2776  2776 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:00:57.964  2776  2776 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:00:57.968  1597  1609 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:00:57.977  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@bfd613c)
+11-07 06:00:57.977  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@bfd613c)
+11-07 06:00:57.978  2776  2776 D AndroidRuntime: Shutting down VM
+11-07 06:00:58.017  1597  2048 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@eddf74b)
+11-07 06:00:58.018  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@eddf74b)
+11-07 06:00:58.020  1597  1609 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@71fa241 attribute=null, token = android.os.BinderProxy@7e0d2c8
+11-07 06:00:58.159  1597  1626 I WindowManager: Destroying surface Surface(name=com.stradaos.launcher.debug/com.stradaos.launcher.Main) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-07 06:00:58.478  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:00.479  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:02.480  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:04.481  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:04.985  1597  1597 I ActivityManager: Killing 2188:com.android.carrierconfig/u0a3 (adj 906): empty #17
+11-07 06:01:05.019  1597  1608 D ActivityManager: cleanUpApplicationRecord -- 2188
+11-07 06:01:05.649  2446  2482 D InitAlarmsService: Clearing and rescheduling alarms.
+11-07 06:01:06.482  1597  1842 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:08.026  1302  2737 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:01:08.027  1302  1657 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:01:08.028  2789  2789 D         : HostConnection::get() New Host Connection established 0xab31b2c0, tid 2789
+11-07 06:01:08.030  1302  2737 D         : HostConnection::get() New Host Connection established 0xabd5a2c0, tid 2737
+11-07 06:01:08.182  2794  2794 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:08.183  2794  2794 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:08.196  2794  2794 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:08.198  2794  2794 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:08.205  2794  2794 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:08.205  2794  2794 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:08.206  2794  2794 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:08.210  2794  2794 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:08.215  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:01:08.218  2794  2794 D AndroidRuntime: Shutting down VM
+11-07 06:01:08.350  2804  2804 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:08.351  2804  2804 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:08.362  2804  2804 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:08.365  2804  2804 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:08.372  2804  2804 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:08.372  2804  2804 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:08.372  2804  2804 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:08.375  2804  2804 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:08.378  1597  1609 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:01:08.380  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@5469bd4)
+11-07 06:01:08.380  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@5469bd4)
+11-07 06:01:08.380  2804  2804 D AndroidRuntime: Shutting down VM
+11-07 06:01:08.385  1597  1609 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@bb78872)
+11-07 06:01:08.385  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@bb78872)
+11-07 06:01:08.483  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:09.917  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:09.965  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:09.973  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:10.483  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:10.961  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:11.126  1597  1684 D ConnectivityService: handleLingerComplete for NetworkAgentInfo [MOBILE (LTE) - 100]
+11-07 06:01:11.126  1597  1684 D ConnectivityService: NetworkAgentInfo [MOBILE (LTE) - 100] got DISCONNECTED, was satisfying 3
+11-07 06:01:11.126  1823  2011 D DcNetworkAgent: NetworkAgent: NetworkAgent channel lost
+11-07 06:01:11.126  1823  2011 D DcNetworkAgent: NetworkAgent: DcNetworkAgent: [unwanted]: disconnect apnContext={mApnType=default mState=CONNECTED mWaitingApns={[[ApnSettingV3] T-Mobile US, 1, 310260, epc.tmobile.com, , http://mms.msg.eng.t-mobile.com/mms/wapenc, , , , -1, *, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false]} mApnSetting={[ApnSettingV3] T-Mobile US, 1, 310260, epc.tmobile.com, , http://mms.msg.eng.t-mobile.com/mms/wapenc, , , , -1, *, IP, IP, true, 0, 0, 0, false, 0, 0, 0, 0, , , false} mReason=dataDisabled mDataEnabled=false mDependencyMet=true}
+11-07 06:01:11.131  1597  1700 D DnsEventListenerService: Logging 2 results for netId 100
+11-07 06:01:11.142  1320  1584 E Netd    : netlink response contains error (No such file or directory)
+11-07 06:01:11.510  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:11.961  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:12.484  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:14.426  1302  2737 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:01:14.427  1302  1657 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:01:14.429  2822  2822 D         : HostConnection::get() New Host Connection established 0xab81b2c0, tid 2822
+11-07 06:01:14.485  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:14.582  2827  2827 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:14.583  2827  2827 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:14.595  2827  2827 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:14.597  2827  2827 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:14.604  2827  2827 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:14.604  2827  2827 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:14.604  2827  2827 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:14.608  2827  2827 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:14.612  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:01:14.615  2827  2827 D AndroidRuntime: Shutting down VM
+11-07 06:01:14.755  2837  2837 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:14.756  2837  2837 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:14.768  2837  2837 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:14.770  2837  2837 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:14.777  2837  2837 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:14.777  2837  2837 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:14.778  2837  2837 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:14.781  2837  2837 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-07 06:01:14.782  2837  2837 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=55822, downTime=55822, deviceId=-1, source=0x101 }
+11-07 06:01:14.783  2837  2837 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=55822, downTime=55822, deviceId=-1, source=0x101 }
+11-07 06:01:14.785  2837  2837 D AndroidRuntime: Shutting down VM
+11-07 06:01:14.793  2712  2712 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+11-07 06:01:14.793  1597  2048 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@ef9916c attribute=null, token = android.os.BinderProxy@7e0d2c8
+11-07 06:01:14.976  1597  1626 I WindowManager: Destroying surface Surface(name=com.stradaos.launcher.debug/com.stradaos.launcher.Main) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-07 06:01:16.486  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:16.906  2847  2847 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:16.907  2847  2847 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:16.920  2847  2847 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:16.922  2847  2847 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:16.929  2847  2847 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:16.929  2847  2847 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:16.929  2847  2847 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:16.933  2847  2847 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:16.935  1597  2048 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:01:16.937  1597  1842 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@80bb3ca)
+11-07 06:01:16.937  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@80bb3ca)
+11-07 06:01:16.938  2847  2847 D AndroidRuntime: Shutting down VM
+11-07 06:01:16.942  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@4a45858)
+11-07 06:01:16.942  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@4a45858)
+11-07 06:01:18.485  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:18.611  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:18.961  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:20.076  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:20.613  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:20.961  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:22.614  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:22.991  1302  1657 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:01:22.992  1302  2184 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:01:22.994  2858  2858 D         : HostConnection::get() New Host Connection established 0xb021b2c0, tid 2858
+11-07 06:01:23.141  2863  2863 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:23.142  2863  2863 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:23.154  2863  2863 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:23.156  2863  2863 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:23.162  2863  2863 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:23.162  2863  2863 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:23.163  2863  2863 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:23.166  2863  2863 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:23.169  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:01:23.170  2863  2863 D AndroidRuntime: Shutting down VM
+11-07 06:01:23.295  2873  2873 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:23.296  2873  2873 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:23.308  2873  2873 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:23.310  2873  2873 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:23.317  2873  2873 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:23.317  2873  2873 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:23.318  2873  2873 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:23.321  2873  2873 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-07 06:01:23.322  2873  2873 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=64362, downTime=64362, deviceId=-1, source=0x101 }
+11-07 06:01:23.323  2873  2873 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=64362, downTime=64362, deviceId=-1, source=0x101 }
+11-07 06:01:23.325  2873  2873 D AndroidRuntime: Shutting down VM
+11-07 06:01:23.343  2712  2712 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+11-07 06:01:23.345  1597  1609 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@90463ed attribute=null, token = android.os.BinderProxy@7e0d2c8
+11-07 06:01:23.526  1597  1626 I WindowManager: Destroying surface Surface(name=com.stradaos.launcher.debug/com.stradaos.launcher.Main) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-07 06:01:24.615  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:25.445  2884  2884 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:25.446  2884  2884 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:25.458  2884  2884 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:25.460  2884  2884 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:25.467  2884  2884 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:25.467  2884  2884 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:25.467  2884  2884 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:25.471  2884  2884 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:25.473  1597  1608 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:01:25.475  1597  1609 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@b39da70)
+11-07 06:01:25.475  2884  2884 D AndroidRuntime: Shutting down VM
+11-07 06:01:25.475  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@b39da70)
+11-07 06:01:25.484  1597  1608 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6de0e6e)
+11-07 06:01:25.484  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6de0e6e)
+11-07 06:01:26.615  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:28.616  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:30.617  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:31.524  1302  2737 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:01:31.525  1302  1657 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:01:31.527  2895  2895 D         : HostConnection::get() New Host Connection established 0xad71b2c0, tid 2895
+11-07 06:01:31.670  2900  2900 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:31.670  2900  2900 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:31.683  2900  2900 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:31.685  2900  2900 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:31.692  2900  2900 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:31.692  2900  2900 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:31.692  2900  2900 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:31.696  2900  2900 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:31.699  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:01:31.700  1597  1609 I ActivityManager: Killing 2016:com.android.cellbroadcastreceiver/u0a4 (adj 906): empty #17
+11-07 06:01:31.700  2900  2900 D AndroidRuntime: Shutting down VM
+11-07 06:01:31.702  1597  1843 D ActivityManager: cleanUpApplicationRecord -- 2016
+11-07 06:01:31.828  2910  2910 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:31.830  2910  2910 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:31.842  2910  2910 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:31.844  2910  2910 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:31.851  2910  2910 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:31.851  2910  2910 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:31.852  2910  2910 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:31.855  2910  2910 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:31.857  1597  1842 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:01:31.858  1597  1609 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@ee0a37a)
+11-07 06:01:31.859  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@ee0a37a)
+11-07 06:01:31.859  2910  2910 D AndroidRuntime: Shutting down VM
+11-07 06:01:31.864  1597  1842 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@78a8788)
+11-07 06:01:31.864  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@78a8788)
+11-07 06:01:32.617  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:33.363  2712  2717 I art     : Do partial code cache collection, code=27KB, data=26KB
+11-07 06:01:33.364  2712  2717 I art     : After code cache collection, code=27KB, data=26KB
+11-07 06:01:33.364  2712  2717 I art     : Increasing code cache capacity to 128KB
+11-07 06:01:34.619  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:36.620  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:37.902  1302  1657 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:01:37.903  1302  2737 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:01:37.904  2920  2920 D         : HostConnection::get() New Host Connection established 0xb179b2c0, tid 2920
+11-07 06:01:38.054  2926  2926 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:38.055  2926  2926 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:38.068  2926  2926 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:38.070  2926  2926 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:38.078  2926  2926 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:38.078  2926  2926 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:38.078  2926  2926 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:38.082  2926  2926 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:38.086  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:01:38.091  2926  2926 D AndroidRuntime: Shutting down VM
+11-07 06:01:38.220  2936  2936 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:38.221  2936  2936 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:38.234  2936  2936 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:38.236  2936  2936 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:38.243  2936  2936 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:38.243  2936  2936 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:38.243  2936  2936 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:38.247  2936  2936 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:38.250  1597  2375 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:01:38.251  1597  1609 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@d049434)
+11-07 06:01:38.252  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@d049434)
+11-07 06:01:38.252  2936  2936 D AndroidRuntime: Shutting down VM
+11-07 06:01:38.257  1597  1608 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@ccc27d2)
+11-07 06:01:38.257  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@ccc27d2)
+11-07 06:01:38.621  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:40.623  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:42.624  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:44.300  1302  2184 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:01:44.300  1302  1657 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:01:44.302  2946  2946 D         : HostConnection::get() New Host Connection established 0xa741b2c0, tid 2946
+11-07 06:01:44.446  2951  2951 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:44.447  2951  2951 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:44.459  2951  2951 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:44.461  2951  2951 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:44.468  2951  2951 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:44.468  2951  2951 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:44.468  2951  2951 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:44.472  2951  2951 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:44.476  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:01:44.476  2951  2951 D AndroidRuntime: Shutting down VM
+11-07 06:01:44.608  2961  2961 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:44.609  2961  2961 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:44.621  2961  2961 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:44.624  2961  2961 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:44.625  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:44.631  2961  2961 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:44.631  2961  2961 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:44.632  2961  2961 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:44.635  2961  2961 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:44.638  1597  1608 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:01:44.640  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@2a0ef1e)
+11-07 06:01:44.641  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@2a0ef1e)
+11-07 06:01:44.641  2961  2961 D AndroidRuntime: Shutting down VM
+11-07 06:01:44.649  1597  1842 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@4b235cc)
+11-07 06:01:44.649  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@4b235cc)
+11-07 06:01:46.627  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:48.627  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:50.628  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:50.683  1302  1314 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:01:50.684  1302  2184 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:01:50.685  2972  2972 D         : HostConnection::get() New Host Connection established 0xaa41b2c0, tid 2972
+11-07 06:01:50.828  2977  2977 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:50.829  2977  2977 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:50.840  2977  2977 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:50.842  2977  2977 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:50.850  2977  2977 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:50.850  2977  2977 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:50.850  2977  2977 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:50.854  2977  2977 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:50.858  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:01:50.858  2977  2977 D AndroidRuntime: Shutting down VM
+11-07 06:01:50.991  2987  2987 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:50.992  2987  2987 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:51.004  2987  2987 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:51.006  2987  2987 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:51.013  2987  2987 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:51.013  2987  2987 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:51.014  2987  2987 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:51.017  2987  2987 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:51.020  1597  1694 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:01:51.021  2987  2987 D AndroidRuntime: Shutting down VM
+11-07 06:01:51.022  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@ac65ccd)
+11-07 06:01:51.022  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@ac65ccd)
+11-07 06:01:51.027  1597  2048 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6c57893)
+11-07 06:01:51.028  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6c57893)
+11-07 06:01:52.568  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:52.629  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:52.961  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:54.143  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:54.630  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:54.961  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:01:56.632  1597  1842 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:57.069  1302  1657 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:01:57.069  1302  2737 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:01:57.071  2997  2997 D         : HostConnection::get() New Host Connection established 0xb3d1b2c0, tid 2997
+11-07 06:01:57.219  3002  3002 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:57.220  3002  3002 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:57.232  3002  3002 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:57.234  3002  3002 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:57.241  3002  3002 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:57.241  3002  3002 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:57.241  3002  3002 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:57.244  3002  3002 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:57.248  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:01:57.249  3002  3002 D AndroidRuntime: Shutting down VM
+11-07 06:01:57.375  3012  3012 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:57.376  3012  3012 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:57.388  3012  3012 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:57.390  3012  3012 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:57.397  3012  3012 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:57.397  3012  3012 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:57.398  3012  3012 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:57.401  3012  3012 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-07 06:01:57.402  3012  3012 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=98442, downTime=98442, deviceId=-1, source=0x101 }
+11-07 06:01:57.403  3012  3012 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=98442, downTime=98442, deviceId=-1, source=0x101 }
+11-07 06:01:57.405  3012  3012 D AndroidRuntime: Shutting down VM
+11-07 06:01:57.409  2712  2712 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+11-07 06:01:57.410  1597  1843 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@a14a9fc attribute=null, token = android.os.BinderProxy@7e0d2c8
+11-07 06:01:57.593  1597  1626 I WindowManager: Destroying surface Surface(name=com.stradaos.launcher.debug/com.stradaos.launcher.Main) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-07 06:01:58.632  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:01:59.525  3022  3022 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:01:59.527  3022  3022 D AndroidRuntime: CheckJNI is OFF
+11-07 06:01:59.538  3022  3022 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:01:59.540  3022  3022 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:01:59.547  3022  3022 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:01:59.547  3022  3022 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:01:59.548  3022  3022 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:01:59.551  3022  3022 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:01:59.553  1597  2048 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:01:59.555  1597  1609 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@e0f66da)
+11-07 06:01:59.556  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@e0f66da)
+11-07 06:01:59.556  3022  3022 D AndroidRuntime: Shutting down VM
+11-07 06:01:59.566  1597  2048 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@60069e8)
+11-07 06:01:59.567  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@60069e8)
+11-07 06:02:00.633  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:02.633  1597  1842 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:04.633  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:05.603  1302  1314 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:02:05.604  1302  2737 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:02:05.605  3033  3033 D         : HostConnection::get() New Host Connection established 0xaf81b2c0, tid 3033
+11-07 06:02:05.760  3038  3038 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:05.761  3038  3038 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:05.772  3038  3038 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:05.774  3038  3038 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:05.782  3038  3038 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:05.782  3038  3038 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:05.782  3038  3038 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:05.785  3038  3038 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:05.790  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:02:05.791  3038  3038 D AndroidRuntime: Shutting down VM
+11-07 06:02:05.916  3048  3048 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:05.917  3048  3048 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:05.929  3048  3048 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:05.931  3048  3048 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:05.939  3048  3048 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:05.939  3048  3048 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:05.939  3048  3048 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:05.942  3048  3048 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:05.945  1597  1694 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:02:05.946  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@c663c94)
+11-07 06:02:05.947  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@c663c94)
+11-07 06:02:05.947  3048  3048 D AndroidRuntime: Shutting down VM
+11-07 06:02:05.952  1597  1694 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@7e3f732)
+11-07 06:02:05.952  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@7e3f732)
+11-07 06:02:06.634  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:08.635  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:10.070  3058  3058 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:10.071  3058  3058 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:10.083  3058  3058 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:10.085  3058  3058 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:10.091  3058  3058 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:10.091  3058  3058 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:10.092  3058  3058 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:10.095  3058  3058 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:10.097  1597  1609 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:02:10.099  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@824a639)
+11-07 06:02:10.099  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@824a639)
+11-07 06:02:10.100  3058  3058 D AndroidRuntime: Shutting down VM
+11-07 06:02:10.103  1597  1609 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@8f48ddf)
+11-07 06:02:10.103  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@8f48ddf)
+11-07 06:02:10.637  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:11.633  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:11.978  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:12.639  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:13.226  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:13.977  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:14.641  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:16.146  1302  1657 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:02:16.146  1302  2184 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:02:16.148  3068  3068 D         : HostConnection::get() New Host Connection established 0xaf49b2c0, tid 3068
+11-07 06:02:16.297  3074  3074 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:16.298  3074  3074 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:16.310  3074  3074 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:16.312  3074  3074 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:16.320  3074  3074 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:16.320  3074  3074 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:16.320  3074  3074 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:16.323  3074  3074 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:16.328  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:02:16.329  3074  3074 D AndroidRuntime: Shutting down VM
+11-07 06:02:16.457  3084  3084 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:16.458  3084  3084 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:16.470  3084  3084 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:16.472  3084  3084 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:16.481  3084  3084 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:16.481  3084  3084 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:16.481  3084  3084 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:16.485  3084  3084 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-07 06:02:16.486  3084  3084 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=117526, downTime=117526, deviceId=-1, source=0x101 }
+11-07 06:02:16.487  3084  3084 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=117526, downTime=117526, deviceId=-1, source=0x101 }
+11-07 06:02:16.489  3084  3084 D AndroidRuntime: Shutting down VM
+11-07 06:02:16.493  2712  2712 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+11-07 06:02:16.494  1597  1609 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@6161d18 attribute=null, token = android.os.BinderProxy@7e0d2c8
+11-07 06:02:16.642  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:16.676  1597  1626 I WindowManager: Destroying surface Surface(name=com.stradaos.launcher.debug/com.stradaos.launcher.Main) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-07 06:02:18.612  3094  3094 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:18.614  3094  3094 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:18.625  3094  3094 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:18.627  3094  3094 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:18.634  3094  3094 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:18.634  3094  3094 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:18.635  3094  3094 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:18.638  3094  3094 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:18.640  1597  2048 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:02:18.641  3094  3094 D AndroidRuntime: Shutting down VM
+11-07 06:02:18.643  1597  1842 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@99e7556)
+11-07 06:02:18.643  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@99e7556)
+11-07 06:02:18.649  1597  2048 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@4dbf2c4)
+11-07 06:02:18.649  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@4dbf2c4)
+11-07 06:02:18.650  1597  1842 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:20.147  1597  1609 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=android/com.android.internal.app.ResolverActivity} from uid 10062 on display 0
+11-07 06:02:20.150  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@524d65c)
+11-07 06:02:20.150  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@524d65c)
+11-07 06:02:20.153  3104  3104 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:20.162  1597  1608 I ActivityManager: Start proc 3104:system:ui/1000 for activity android/com.android.internal.app.ResolverActivity
+11-07 06:02:20.197  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:20.246  1302  1657 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2891776
+11-07 06:02:20.249  3104  3104 D         : HostConnection::get() New Host Connection established 0xa1774200, tid 3104
+11-07 06:02:20.256  1597  1626 I ActivityManager: Displayed android/com.android.internal.app.ResolverActivity: +105ms
+11-07 06:02:20.262  1302  2184 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2891776
+11-07 06:02:20.320  1302  1657 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2891776
+11-07 06:02:20.651  1597  1842 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:22.651  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:23.649  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:23.688  1302  2184 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:02:23.688  1302  2737 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:02:23.690  3122  3122 D         : HostConnection::get() New Host Connection established 0xb351b2c0, tid 3122
+11-07 06:02:23.887  3127  3127 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:23.888  3127  3127 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:23.905  3127  3127 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:23.907  3127  3127 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:23.917  3127  3127 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:23.917  3127  3127 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:23.917  3127  3127 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:23.922  3127  3127 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:23.925  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:02:23.926  3127  3127 D AndroidRuntime: Shutting down VM
+11-07 06:02:24.092  3137  3137 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:24.094  3137  3137 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:24.114  3137  3137 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:24.117  3137  3137 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:24.124  3137  3137 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:24.124  3137  3137 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:24.125  3137  3137 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:24.130  3137  3137 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-07 06:02:24.131  3137  3137 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=125171, downTime=125171, deviceId=-1, source=0x101 }
+11-07 06:02:24.132  3137  3137 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=125171, downTime=125171, deviceId=-1, source=0x101 }
+11-07 06:02:24.145  3137  3137 D AndroidRuntime: Shutting down VM
+11-07 06:02:24.162  1302  1657 D PermissionCache: checking android.permission.READ_FRAME_BUFFER for uid=1000 => granted (116 us)
+11-07 06:02:24.168  1302  1657 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 847872
+11-07 06:02:24.169  1597  1694 D         : HostConnection::get() New Host Connection established 0x912c3640, tid 1694
+11-07 06:02:24.250  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:24.293  1597  2048 W art     : Long monitor contention with owner Binder:1597_3 (1694) at void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder)(ActivityManagerService.java:6879) waiters=0 in android.content.pm.UserInfo com.android.server.am.UserController.getCurrentUser() for 148ms
+11-07 06:02:24.299  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6f7053)
+11-07 06:02:24.299  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6f7053)
+11-07 06:02:24.310  1597  1626 I WindowManager: Destroying surface Surface(name=Toast) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementInner:429 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop:232 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement:180 com.android.server.wm.WindowManagerService$H.handleMessage:8079 android.os.Handler.dispatchMessage:102 
+11-07 06:02:24.331  1597  1608 I ActivityManager: Killing 2344:com.android.quicksearchbox/u0a52 (adj 906): empty #17
+11-07 06:02:24.334  1597  1842 D ActivityManager: cleanUpApplicationRecord -- 2344
+11-07 06:02:24.652  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:24.976  1597  1626 I WindowManager: Destroying surface Surface(name=android/com.android.internal.app.ResolverActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.removeLocked:1449 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2478 com.android.server.wm.AppWindowToken.destroySurfaces:365 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.AppWindowAnimator.stepAnimationLocked:427 com.android.server.wm.WindowAnimator.updateAppWindowsLocked:196 
+11-07 06:02:25.033  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:25.310  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:26.266  3147  3147 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:26.267  3147  3147 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:26.279  3147  3147 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:26.281  3147  3147 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:26.287  3147  3147 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:26.287  3147  3147 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:26.288  3147  3147 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:26.291  3147  3147 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-07 06:02:26.292  3147  3147 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=127332, downTime=127332, deviceId=-1, source=0x101 }
+11-07 06:02:26.293  3147  3147 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=127332, downTime=127332, deviceId=-1, source=0x101 }
+11-07 06:02:26.295  3147  3147 D AndroidRuntime: Shutting down VM
+11-07 06:02:26.310  2712  2712 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+11-07 06:02:26.311  1597  1608 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4747d9a attribute=null, token = android.os.BinderProxy@7e0d2c8
+11-07 06:02:26.493  1597  1626 I WindowManager: Destroying surface Surface(name=com.stradaos.launcher.debug/com.stradaos.launcher.Main) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-07 06:02:26.653  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:28.415  3157  3157 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:28.416  3157  3157 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:28.428  3157  3157 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:28.430  3157  3157 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:28.437  3157  3157 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:28.437  3157  3157 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:28.437  3157  3157 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:28.441  3157  3157 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:28.443  1597  1694 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:02:28.445  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@aa63ea8)
+11-07 06:02:28.445  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@aa63ea8)
+11-07 06:02:28.447  3157  3157 D AndroidRuntime: Shutting down VM
+11-07 06:02:28.451  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@a0cd966)
+11-07 06:02:28.452  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@a0cd966)
+11-07 06:02:28.655  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:30.204  1597  1646 I InputReader: Reconfiguring input devices.  changes=0x00000010
+11-07 06:02:30.207  1823  1823 D CarrierSvcBindHelper: No carrier app for: 0
+11-07 06:02:30.213  1597  1611 W LocationProviderProxy-network: Odd, no component found for service com.android.location.service.v3.NetworkLocationProvider
+11-07 06:02:30.213  1597  1611 W GeocoderProxy: Odd, no component found for service com.android.location.service.GeocodeProvider
+11-07 06:02:30.213  1597  1611 W GeofenceProxy: Odd, no component found for service com.android.location.service.GeofenceProvider
+11-07 06:02:30.214  1597  1611 W ActivityRecognitionProxy: Odd, no component found for service com.android.location.service.ActivityRecognitionProvider
+11-07 06:02:30.656  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:32.656  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:34.483  1302  2737 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:02:34.484  1302  1657 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:02:34.485  3168  3168 D         : HostConnection::get() New Host Connection established 0xafa1b2c0, tid 3168
+11-07 06:02:34.627  3173  3173 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:34.628  3173  3173 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:34.640  3173  3173 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:34.642  3173  3173 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:34.649  3173  3173 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:34.649  3173  3173 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:34.650  3173  3173 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:34.653  3173  3173 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:34.656  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:02:34.657  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:34.657  3173  3173 D AndroidRuntime: Shutting down VM
+11-07 06:02:34.783  3183  3183 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:34.784  3183  3183 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:34.795  3183  3183 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:34.797  3183  3183 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:34.803  3183  3183 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:34.803  3183  3183 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:34.804  3183  3183 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:34.807  3183  3183 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:34.809  1597  2375 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:02:34.810  1597  1608 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@acb3597)
+11-07 06:02:34.810  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@acb3597)
+11-07 06:02:34.811  3183  3183 D AndroidRuntime: Shutting down VM
+11-07 06:02:34.815  1597  1609 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6ffe76d)
+11-07 06:02:34.815  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6ffe76d)
+11-07 06:02:36.658  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:38.660  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:40.662  1597  1842 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:40.851  1302  2737 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:02:40.851  1302  1314 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:02:40.853  3194  3194 D         : HostConnection::get() New Host Connection established 0xaa71b2c0, tid 3194
+11-07 06:02:41.004  3199  3199 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:41.004  3199  3199 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:41.016  3199  3199 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:41.018  3199  3199 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:41.025  3199  3199 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:41.025  3199  3199 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:41.025  3199  3199 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:41.029  3199  3199 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:41.033  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:02:41.033  3199  3199 D AndroidRuntime: Shutting down VM
+11-07 06:02:41.163  3209  3209 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:41.164  3209  3209 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:41.176  3209  3209 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:41.178  3209  3209 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:41.185  3209  3209 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:41.185  3209  3209 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:41.185  3209  3209 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:41.189  3209  3209 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:41.191  1597  1609 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:02:41.192  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@3c08d69)
+11-07 06:02:41.193  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@3c08d69)
+11-07 06:02:41.193  3209  3209 D AndroidRuntime: Shutting down VM
+11-07 06:02:41.202  1597  1694 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@159408f)
+11-07 06:02:41.203  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@159408f)
+11-07 06:02:42.662  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:42.735  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:42.977  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:44.327  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:44.663  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:44.977  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:02:46.664  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:47.232  1302  1314 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:02:47.233  1302  1657 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:02:47.235  3219  3219 D         : HostConnection::get() New Host Connection established 0xa831b2c0, tid 3219
+11-07 06:02:47.385  3224  3224 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:47.386  3224  3224 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:47.398  3224  3224 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:47.400  3224  3224 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:47.407  3224  3224 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:47.407  3224  3224 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:47.408  3224  3224 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:47.411  3224  3224 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:47.414  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:02:47.415  3224  3224 D AndroidRuntime: Shutting down VM
+11-07 06:02:47.543  3234  3234 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:47.544  3234  3234 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:47.556  3234  3234 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:47.558  3234  3234 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:47.565  3234  3234 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:47.565  3234  3234 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:47.566  3234  3234 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:47.569  3234  3234 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-07 06:02:47.571  3234  3234 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=148610, downTime=148610, deviceId=-1, source=0x101 }
+11-07 06:02:47.572  3234  3234 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=148610, downTime=148610, deviceId=-1, source=0x101 }
+11-07 06:02:47.574  3234  3234 D AndroidRuntime: Shutting down VM
+11-07 06:02:47.594  2712  2712 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+11-07 06:02:47.595  1597  2048 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@9063108 attribute=null, token = android.os.BinderProxy@7e0d2c8
+11-07 06:02:47.776  1597  1626 I WindowManager: Destroying surface Surface(name=com.stradaos.launcher.debug/com.stradaos.launcher.Main) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-07 06:02:48.665  1597  1842 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:49.698  3244  3244 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:49.700  3244  3244 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:49.712  3244  3244 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:49.714  3244  3244 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:49.720  3244  3244 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:49.720  3244  3244 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:49.721  3244  3244 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:49.725  3244  3244 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:49.727  1597  1842 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:02:49.728  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@7f502c6)
+11-07 06:02:49.729  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@7f502c6)
+11-07 06:02:49.729  3244  3244 D AndroidRuntime: Shutting down VM
+11-07 06:02:49.735  1597  1608 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@85155b4)
+11-07 06:02:49.735  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@85155b4)
+11-07 06:02:50.666  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:52.668  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:54.670  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:55.776  1302  1308 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:02:55.776  1302  1314 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:02:55.778  3260  3260 D         : HostConnection::get() New Host Connection established 0xaa91b2c0, tid 3260
+11-07 06:02:55.923  3265  3265 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:55.924  3265  3265 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:55.935  3265  3265 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:55.937  3265  3265 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:55.944  3265  3265 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:55.944  3265  3265 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:55.945  3265  3265 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:55.948  3265  3265 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:55.952  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:02:55.955  3265  3265 D AndroidRuntime: Shutting down VM
+11-07 06:02:56.087  3275  3275 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:02:56.089  3275  3275 D AndroidRuntime: CheckJNI is OFF
+11-07 06:02:56.101  3275  3275 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:02:56.103  3275  3275 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:02:56.110  3275  3275 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:02:56.110  3275  3275 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:02:56.110  3275  3275 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:02:56.113  3275  3275 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:02:56.116  1597  2048 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:02:56.117  1597  1842 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@7881920)
+11-07 06:02:56.118  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@7881920)
+11-07 06:02:56.118  3275  3275 D AndroidRuntime: Shutting down VM
+11-07 06:02:56.132  1597  1842 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@ba49e)
+11-07 06:02:56.133  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@ba49e)
+11-07 06:02:56.672  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:02:58.673  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:00.674  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:02.159  1302  2737 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:03:02.160  1302  1314 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:03:02.162  3288  3288 D         : HostConnection::get() New Host Connection established 0xa761b2c0, tid 3288
+11-07 06:03:02.312  3293  3293 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:02.313  3293  3293 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:02.325  3293  3293 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:02.327  3293  3293 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:02.334  3293  3293 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:02.334  3293  3293 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:02.335  3293  3293 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:02.338  3293  3293 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:02.342  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:03:02.343  3293  3293 D AndroidRuntime: Shutting down VM
+11-07 06:03:02.474  3303  3303 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:02.475  3303  3303 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:02.487  3303  3303 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:02.489  3303  3303 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:02.497  3303  3303 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:02.497  3303  3303 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:02.497  3303  3303 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:02.500  3303  3303 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:02.503  1597  1843 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:03:02.504  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@d896caa)
+11-07 06:03:02.504  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@d896caa)
+11-07 06:03:02.505  3303  3303 D AndroidRuntime: Shutting down VM
+11-07 06:03:02.524  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@42bec38)
+11-07 06:03:02.524  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@42bec38)
+11-07 06:03:02.676  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:04.676  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:06.633  3316  3316 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:06.635  3316  3316 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:06.647  3316  3316 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:06.649  3316  3316 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:06.657  3316  3316 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:06.657  3316  3316 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:06.657  3316  3316 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:06.661  3316  3316 D AndroidRuntime: Calling main entry com.android.commands.wm.Wm
+11-07 06:03:06.663  1597  1843 I WindowManager: Using new display size: 1920x720
+11-07 06:03:06.665  1302  1657 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:03:06.670  3316  3316 D AndroidRuntime: Shutting down VM
+11-07 06:03:06.671  1597  1626 I ActivityManager: Config changes=d00 {1.0 310mcc260mnc [en_US] ldltr sw720dp w1920dp h696dp 160dpi xlrg long land finger -keyb/v/h tball/v s.8}
+11-07 06:03:06.694  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:06.696  1597  1646 I InputReader: Reconfiguring input devices.  changes=0x00000004
+11-07 06:03:06.696  1597  1646 I InputReader: Device reconfigured: id=0, name='qwerty2', size 1920x1125, orientation 0, mode 1, display id 0
+11-07 06:03:06.714  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:06.717  1746  1899 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403640)
+11-07 06:03:06.718  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:06.743  1746  1899 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403640)
+11-07 06:03:06.760  1597  1626 I WindowManager: Screen frozen for +97ms due to Window{9a2df61 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-07 06:03:06.850  3327  3327 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:06.855  3327  3327 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:06.879  3327  3327 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:06.882  3327  3327 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:06.895  3327  3327 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:06.895  3327  3327 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:06.896  3327  3327 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:06.900  3327  3327 D AndroidRuntime: Calling main entry com.android.commands.wm.Wm
+11-07 06:03:06.937  1302  1657 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:03:06.943  3327  3327 D AndroidRuntime: Shutting down VM
+11-07 06:03:06.948  1597  1626 I ActivityManager: Config changes=1d00 {1.0 310mcc260mnc [en_US] ldltr sw480dp w1280dp h464dp 240dpi lrg long land finger -keyb/v/h tball/v s.9}
+11-07 06:03:06.950  1597  1626 I ActivityManager: Killing 2137:com.android.launcher3/u0a14 (adj 600): kill all background except
+11-07 06:03:06.950  1597  1626 D ActivityManager: cleanUpApplicationRecord -- 2137
+11-07 06:03:06.950  1597  1626 I ActivityManager: Killing 2446:com.android.calendar/u0a26 (adj 902): kill all background except
+11-07 06:03:06.950  1597  1626 D ActivityManager: cleanUpApplicationRecord -- 2446
+11-07 06:03:06.951  1597  1626 I ActivityManager: Killing 2427:com.android.dialer/u0a8 (adj 904): kill all background except
+11-07 06:03:06.951  1597  1626 D ActivityManager: cleanUpApplicationRecord -- 2427
+11-07 06:03:06.951  1597  1626 I ActivityManager: Killing 1705:com.android.inputmethod.latin/u0a42 (adj 200): kill all background except
+11-07 06:03:06.951  1597  1626 D ActivityManager: cleanUpApplicationRecord -- 1705
+11-07 06:03:06.951  1597  1626 W ActivityManager: Scheduling restart of crashed service com.android.inputmethod.latin/.LatinIME in 1000ms
+11-07 06:03:06.951  1597  1626 I ActivityManager: Killing 2486:com.android.email/u0a35 (adj 902): kill all background except
+11-07 06:03:06.952  1597  1626 D ActivityManager: cleanUpApplicationRecord -- 2486
+11-07 06:03:06.955  1597  1626 I ActivityManager: Config changes=400 {1.0 310mcc260mnc [en_US] ldltr sw480dp w1280dp h456dp 240dpi lrg long land finger -keyb/v/h tball/v s.10}
+11-07 06:03:06.961  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@f1cf449)
+11-07 06:03:06.962  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@f1cf449)
+11-07 06:03:06.970  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:06.974  1597  1843 I WindowManager: Destroying surface Surface(name=com.stradaos.launcher.debug/com.stradaos.launcher.Main) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.removeLocked:1449 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2478 com.android.server.wm.WindowManagerService.removeWindowLocked:2436 com.android.server.wm.WindowManagerService.removeWindowLocked:2305 com.android.server.wm.WindowManagerService.removeWindow:2300 com.android.server.wm.Session.remove:193 
+11-07 06:03:07.002  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@18c8075)
+11-07 06:03:07.003  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@18c8075)
+11-07 06:03:07.011  1746  1899 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403640)
+11-07 06:03:07.019  1746  1899 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403640)
+11-07 06:03:07.035  1597  1694 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 244)
+11-07 06:03:07.042  1597  1608 I WindowManager: WIN DEATH: Window{f9a21dc u0 com.android.launcher3/com.android.launcher3.Launcher}
+11-07 06:03:07.044  1597  2048 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 100)
+11-07 06:03:07.044  1597  2048 W InputMethodManagerService: Session failed to close due to remote exception
+11-07 06:03:07.044  1597  2048 W InputMethodManagerService: android.os.DeadObjectException: Transaction failed on small parcel; remote process probably died
+11-07 06:03:07.044  1597  2048 W InputMethodManagerService: 	at android.os.BinderProxy.transactNative(Native Method)
+11-07 06:03:07.044  1597  2048 W InputMethodManagerService: 	at android.os.BinderProxy.transact(Binder.java:615)
+11-07 06:03:07.044  1597  2048 W InputMethodManagerService: 	at com.android.internal.view.IInputMethodSession$Stub$Proxy.finishSession(IInputMethodSession.java:305)
+11-07 06:03:07.044  1597  2048 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.finishSessionLocked(InputMethodManagerService.java:1627)
+11-07 06:03:07.044  1597  2048 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.clearClientSessionLocked(InputMethodManagerService.java:1618)
+11-07 06:03:07.044  1597  2048 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.removeClient(InputMethodManagerService.java:1241)
+11-07 06:03:07.044  1597  2048 W InputMethodManagerService: 	at com.android.server.wm.Session.binderDied(Session.java:151)
+11-07 06:03:07.044  1597  2048 W InputMethodManagerService: 	at android.os.BinderProxy.sendDeathNotice(Binder.java:688)
+11-07 06:03:07.044  1597  2375 D GraphicsStats: Buffer count: 3
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: Session failed to close due to remote exception
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: android.os.DeadObjectException
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at android.os.BinderProxy.transactNative(Native Method)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at android.os.BinderProxy.transact(Binder.java:615)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at com.android.internal.view.IInputMethodSession$Stub$Proxy.finishSession(IInputMethodSession.java:305)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.finishSessionLocked(InputMethodManagerService.java:1627)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.clearClientSessionLocked(InputMethodManagerService.java:1618)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.clearCurMethodLocked(InputMethodManagerService.java:1644)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.onServiceDisconnected(InputMethodManagerService.java:1663)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at android.app.LoadedApk$ServiceDispatcher.doDeath(LoadedApk.java:1470)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1484)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at android.os.Handler.handleCallback(Handler.java:751)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at android.os.Looper.loop(Looper.java:154)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at com.android.server.SystemServer.run(SystemServer.java:341)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at com.android.server.SystemServer.main(SystemServer.java:211)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at java.lang.reflect.Method.invoke(Native Method)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+11-07 06:03:07.061  1597  1597 W InputMethodManagerService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: Session failed to close due to remote exception
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: android.os.DeadObjectException
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at android.os.BinderProxy.transactNative(Native Method)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at android.os.BinderProxy.transact(Binder.java:615)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at com.android.internal.view.IInputMethodSession$Stub$Proxy.finishSession(IInputMethodSession.java:305)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.finishSessionLocked(InputMethodManagerService.java:1627)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.clearClientSessionLocked(InputMethodManagerService.java:1618)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.clearCurMethodLocked(InputMethodManagerService.java:1644)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.onServiceDisconnected(InputMethodManagerService.java:1663)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at android.app.LoadedApk$ServiceDispatcher.doDeath(LoadedApk.java:1470)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1484)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at android.os.Handler.handleCallback(Handler.java:751)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at android.os.Looper.loop(Looper.java:154)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at com.android.server.SystemServer.run(SystemServer.java:341)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at com.android.server.SystemServer.main(SystemServer.java:211)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at java.lang.reflect.Method.invoke(Native Method)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+11-07 06:03:07.063  1597  1597 W InputMethodManagerService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: Session failed to close due to remote exception
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: android.os.DeadObjectException
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at android.os.BinderProxy.transactNative(Native Method)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at android.os.BinderProxy.transact(Binder.java:615)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at com.android.internal.view.IInputMethodSession$Stub$Proxy.finishSession(IInputMethodSession.java:305)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.finishSessionLocked(InputMethodManagerService.java:1627)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.clearClientSessionLocked(InputMethodManagerService.java:1618)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.clearCurMethodLocked(InputMethodManagerService.java:1644)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.onServiceDisconnected(InputMethodManagerService.java:1663)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at android.app.LoadedApk$ServiceDispatcher.doDeath(LoadedApk.java:1470)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1484)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at android.os.Handler.handleCallback(Handler.java:751)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at android.os.Looper.loop(Looper.java:154)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at com.android.server.SystemServer.run(SystemServer.java:341)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at com.android.server.SystemServer.main(SystemServer.java:211)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at java.lang.reflect.Method.invoke(Native Method)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+11-07 06:03:07.064  1597  1597 W InputMethodManagerService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+11-07 06:03:07.089  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:07.098  1746  1746 W View    : requestLayout() improperly called by com.android.systemui.statusbar.AlphaOptimizedButton{42d3d59 IFED..C.. ......I. 0,0-0,0 #7f120105 app:id/alarm_status} during layout: running second layout pass
+11-07 06:03:07.098  1746  1746 W View    : requestLayout() improperly called by com.android.systemui.statusbar.AlphaOptimizedImageView{bca6d1e I.ED..... ......I. 0,0-0,0 #7f12022d app:id/alarm_status_collapsed} during layout: running second layout pass
+11-07 06:03:07.146  1597  1626 I WindowManager: Screen frozen for +238ms due to Window{6d1e698 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-07 06:03:07.956  3358  3358 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:07.963  1597  1613 I ActivityManager: Start proc 3358:com.android.inputmethod.latin/u0a42 for service com.android.inputmethod.latin/.LatinIME
+11-07 06:03:07.976  3358  3358 I LatinIME: Hardware accelerated drawing: true
+11-07 06:03:08.009  3358  3358 W InputAttributes: No editor info for this field. Bug?
+11-07 06:03:08.017  3358  3374 I LatinIME:LogUtils: Dictionary info: dictionary = userunigram.en_US ; version = 1794031388 ; date = ?
+11-07 06:03:08.039  3358  3374 I LatinIME:LogUtils: Dictionary info: dictionary = UserHistoryDictionary.en_US ; version = 1794031388 ; date = ?
+11-07 06:03:08.045  3358  3374 I LatinIME:LogUtils: Dictionary info: dictionary = main:en ; version = 54 ; date = 1414726273
+11-07 06:03:09.194  1597  1626 I art     : Starting a blocking GC Explicit
+11-07 06:03:09.207  1597  1626 I art     : Explicit concurrent mark sweep GC freed 6559(357KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 6MB/9MB, paused 572us total 12.086ms
+11-07 06:03:10.002  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:12.003  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:12.084  3377  3377 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:12.086  3377  3377 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:12.097  3377  3377 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:12.099  3377  3377 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:12.107  3377  3377 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:12.107  3377  3377 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:12.108  3377  3377 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:12.111  3377  3377 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:12.114  1597  2048 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:03:12.117  1597  1842 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@3c7662f)
+11-07 06:03:12.117  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@3c7662f)
+11-07 06:03:12.117  3377  3377 D AndroidRuntime: Shutting down VM
+11-07 06:03:12.139  1597  1608 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@bdb45c5)
+11-07 06:03:12.139  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@bdb45c5)
+11-07 06:03:14.004  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:16.005  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:18.006  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:20.007  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:20.165  1302  2737 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:03:20.166  1302  1308 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:03:20.169  3387  3387 D         : HostConnection::get() New Host Connection established 0xa889b2c0, tid 3387
+11-07 06:03:20.317  3392  3392 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:20.319  3392  3392 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:20.331  3392  3392 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:20.333  3392  3392 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:20.341  3392  3392 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:20.341  3392  3392 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:20.341  3392  3392 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:20.345  3392  3392 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:20.349  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:03:20.349  3392  3392 D AndroidRuntime: Shutting down VM
+11-07 06:03:20.480  3402  3402 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:20.481  3402  3402 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:20.493  3402  3402 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:20.495  3402  3402 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:20.502  3402  3402 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:20.502  3402  3402 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:20.502  3402  3402 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:20.506  3402  3402 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:20.508  1597  1842 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:03:20.510  3402  3402 D AndroidRuntime: Shutting down VM
+11-07 06:03:20.510  1597  2048 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@2f7941)
+11-07 06:03:20.511  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@2f7941)
+11-07 06:03:20.518  1597  1609 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@367ec27)
+11-07 06:03:20.518  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@367ec27)
+11-07 06:03:22.008  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:22.019  2712  2717 I art     : Do partial code cache collection, code=62KB, data=52KB
+11-07 06:03:22.019  2712  2717 I art     : After code cache collection, code=62KB, data=52KB
+11-07 06:03:22.019  2712  2717 I art     : Increasing code cache capacity to 256KB
+11-07 06:03:24.009  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:26.010  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:26.551  1302  2737 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:03:26.552  1302  1308 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:03:26.553  3413  3413 D         : HostConnection::get() New Host Connection established 0xadd9b2c0, tid 3413
+11-07 06:03:26.696  3418  3418 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:26.697  3418  3418 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:26.708  3418  3418 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:26.710  3418  3418 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:26.717  3418  3418 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:26.717  3418  3418 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:26.718  3418  3418 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:26.721  3418  3418 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:26.725  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:03:26.726  3418  3418 D AndroidRuntime: Shutting down VM
+11-07 06:03:26.855  3428  3428 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:26.856  3428  3428 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:26.868  3428  3428 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:26.870  3428  3428 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:26.878  3428  3428 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:26.878  3428  3428 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:26.879  3428  3428 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:26.882  3428  3428 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:26.885  1597  1608 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:03:26.886  1597  1694 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@95fd440)
+11-07 06:03:26.886  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@95fd440)
+11-07 06:03:26.887  3428  3428 D AndroidRuntime: Shutting down VM
+11-07 06:03:26.891  1597  1608 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@258a4be)
+11-07 06:03:26.891  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@258a4be)
+11-07 06:03:28.011  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:30.012  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:30.039  3438  3438 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:30.040  3438  3438 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:30.053  3438  3438 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:30.055  3438  3438 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:30.062  3438  3438 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:30.062  3438  3438 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:30.062  3438  3438 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:30.066  3438  3438 D AndroidRuntime: Calling main entry com.android.commands.wm.Wm
+11-07 06:03:30.068  1597  1608 I WindowManager: Using new display size: 1024x600
+11-07 06:03:30.070  1302  2184 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:03:30.074  1597  1626 I ActivityManager: Config changes=d00 {1.0 310mcc260mnc [en_US] ldltr sw400dp w682dp h376dp 240dpi nrml long land finger -keyb/v/h tball/v s.11}
+11-07 06:03:30.076  3438  3438 D AndroidRuntime: Shutting down VM
+11-07 06:03:30.097  1597  1646 I InputReader: Reconfiguring input devices.  changes=0x00000004
+11-07 06:03:30.097  1597  1646 I InputReader: Device reconfigured: id=0, name='qwerty2', size 1024x600, orientation 0, mode 1, display id 0
+11-07 06:03:30.098  1597  1646 I InputReader: Reconfiguring input devices.  changes=0x00000004
+11-07 06:03:30.119  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:30.122  1746  1899 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403640)
+11-07 06:03:30.122  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:30.130  1746  1899 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403640)
+11-07 06:03:30.144  1597  1626 I WindowManager: Screen frozen for +76ms due to Window{6d1e698 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-07 06:03:30.317  3449  3449 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:30.318  3449  3449 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:30.332  3449  3449 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:30.334  3449  3449 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:30.341  3449  3449 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:30.341  3449  3449 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:30.341  3449  3449 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:30.346  3449  3449 D AndroidRuntime: Calling main entry com.android.commands.wm.Wm
+11-07 06:03:30.349  1302  1314 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:03:30.354  3449  3449 D AndroidRuntime: Shutting down VM
+11-07 06:03:30.354  1597  1626 I ActivityManager: Config changes=1d00 {1.0 310mcc260mnc [en_US] ldltr sw600dp w1024dp h564dp 160dpi lrg long land finger -keyb/v/h tball/v s.12}
+11-07 06:03:30.355  1597  1626 I ActivityManager: Killing 3358:com.android.inputmethod.latin/u0a42 (adj 200): kill all background except
+11-07 06:03:30.355  1597  1626 D ActivityManager: cleanUpApplicationRecord -- 3358
+11-07 06:03:30.355  1597  1626 W ActivityManager: Scheduling restart of crashed service com.android.inputmethod.latin/.LatinIME in 1000ms
+11-07 06:03:30.358  1597  1626 I ActivityManager: Config changes=400 {1.0 310mcc260mnc [en_US] ldltr sw600dp w1024dp h576dp 160dpi lrg long land finger -keyb/v/h tball/v s.13}
+11-07 06:03:30.364  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@30e2d17)
+11-07 06:03:30.365  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@30e2d17)
+11-07 06:03:30.367  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:30.372  1597  2375 I WindowManager: Destroying surface Surface(name=com.stradaos.launcher.debug/com.stradaos.launcher.Main) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.removeLocked:1449 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2478 com.android.server.wm.WindowManagerService.removeWindowLocked:2436 com.android.server.wm.WindowManagerService.removeWindowLocked:2305 com.android.server.wm.WindowManagerService.removeWindow:2300 com.android.server.wm.Session.remove:193 
+11-07 06:03:30.391  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@efbfa3)
+11-07 06:03:30.392  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@efbfa3)
+11-07 06:03:30.420  1597  1609 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 244)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: Session failed to close due to remote exception
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: android.os.DeadObjectException
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at android.os.BinderProxy.transactNative(Native Method)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at android.os.BinderProxy.transact(Binder.java:615)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at com.android.internal.view.IInputMethodSession$Stub$Proxy.finishSession(IInputMethodSession.java:305)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.finishSessionLocked(InputMethodManagerService.java:1627)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.clearClientSessionLocked(InputMethodManagerService.java:1618)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.clearCurMethodLocked(InputMethodManagerService.java:1644)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at com.android.server.InputMethodManagerService.onServiceDisconnected(InputMethodManagerService.java:1663)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at android.app.LoadedApk$ServiceDispatcher.doDeath(LoadedApk.java:1470)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1484)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at android.os.Handler.handleCallback(Handler.java:751)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at android.os.Looper.loop(Looper.java:154)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at com.android.server.SystemServer.run(SystemServer.java:341)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at com.android.server.SystemServer.main(SystemServer.java:211)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at java.lang.reflect.Method.invoke(Native Method)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+11-07 06:03:30.448  1597  1597 W InputMethodManagerService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+11-07 06:03:30.465  1746  1899 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403640)
+11-07 06:03:30.468  1746  1746 W View    : requestLayout() improperly called by com.android.systemui.statusbar.AlphaOptimizedButton{962384c IFED..C.. ......I. 0,0-0,0 #7f120105 app:id/alarm_status} during layout: running second layout pass
+11-07 06:03:30.468  1746  1746 W View    : requestLayout() improperly called by com.android.systemui.statusbar.AlphaOptimizedImageView{2c15095 I.ED..... ......I. 0,0-0,0 #7f12022d app:id/alarm_status_collapsed} during layout: running second layout pass
+11-07 06:03:30.469  1746  1899 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403640)
+11-07 06:03:30.469  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:30.496  1597  1626 I WindowManager: Screen frozen for +149ms due to Window{3d95a1e u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-07 06:03:31.359  3470  3470 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:31.367  1597  1613 I ActivityManager: Start proc 3470:com.android.inputmethod.latin/u0a42 for service com.android.inputmethod.latin/.LatinIME
+11-07 06:03:31.378  3470  3470 I LatinIME: Hardware accelerated drawing: true
+11-07 06:03:31.394  3470  3470 W InputAttributes: No editor info for this field. Bug?
+11-07 06:03:31.399  3470  3486 I LatinIME:LogUtils: Dictionary info: dictionary = userunigram.en_US ; version = 1794031411 ; date = ?
+11-07 06:03:31.401  3470  3486 I LatinIME:LogUtils: Dictionary info: dictionary = UserHistoryDictionary.en_US ; version = 1794031411 ; date = ?
+11-07 06:03:31.407  3470  3486 I LatinIME:LogUtils: Dictionary info: dictionary = main:en ; version = 54 ; date = 1414726273
+11-07 06:03:32.531  1597  1626 I art     : Starting a blocking GC Explicit
+11-07 06:03:32.544  1597  1626 I art     : Explicit concurrent mark sweep GC freed 29851(1671KB) AllocSpace objects, 4(76KB) LOS objects, 33% free, 6MB/10MB, paused 592us total 12.840ms
+11-07 06:03:33.391  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:35.391  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:35.492  3488  3488 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:35.493  3488  3488 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:35.505  3488  3488 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:35.507  3488  3488 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:35.514  3488  3488 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:35.514  3488  3488 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:35.515  3488  3488 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:35.518  3488  3488 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:35.525  1597  1843 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:03:35.527  3488  3488 D AndroidRuntime: Shutting down VM
+11-07 06:03:35.527  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@55ac056)
+11-07 06:03:35.528  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@55ac056)
+11-07 06:03:35.545  1597  1609 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@34b5c4)
+11-07 06:03:35.546  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@34b5c4)
+11-07 06:03:37.035  2712  2712 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.USE_CREDENTIALS in package: com.android.settings at: Binary XML file line #53
+11-07 06:03:37.035  2712  2712 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.READ_SYNC_SETTINGS in package: com.android.settings at: Binary XML file line #58
+11-07 06:03:37.035  2712  2712 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.WRITE_SYNC_SETTINGS in package: com.android.settings at: Binary XML file line #59
+11-07 06:03:37.393  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:39.395  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:39.651  3498  3498 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:39.653  3498  3498 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:39.665  3498  3498 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:39.667  3498  3498 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:39.674  3498  3498 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:39.674  3498  3498 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:39.675  3498  3498 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:39.679  3498  3498 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:39.682  1597  2375 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:03:39.684  1597  1694 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@2789b73)
+11-07 06:03:39.684  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@2789b73)
+11-07 06:03:39.684  3498  3498 D AndroidRuntime: Shutting down VM
+11-07 06:03:39.699  1597  1842 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@99d06a9)
+11-07 06:03:39.699  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@99d06a9)
+11-07 06:03:41.395  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:43.397  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:45.398  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:45.733  1302  1308 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:03:45.734  1302  2737 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:03:45.736  3512  3512 D         : HostConnection::get() New Host Connection established 0xa7a1b2c0, tid 3512
+11-07 06:03:45.887  3518  3518 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:45.888  3518  3518 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:45.900  3518  3518 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:45.902  3518  3518 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:45.909  3518  3518 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:45.909  3518  3518 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:45.910  3518  3518 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:45.913  3518  3518 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:45.916  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:03:45.918  3518  3518 D AndroidRuntime: Shutting down VM
+11-07 06:03:46.053  3528  3528 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:46.054  3528  3528 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:46.066  3528  3528 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:46.068  3528  3528 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:46.075  3528  3528 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:46.076  3528  3528 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:46.076  3528  3528 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:46.079  3528  3528 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:46.082  1597  1608 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:03:46.083  1597  1609 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6166465)
+11-07 06:03:46.083  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6166465)
+11-07 06:03:46.084  3528  3528 D AndroidRuntime: Shutting down VM
+11-07 06:03:46.108  1597  1694 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@d5a05eb)
+11-07 06:03:46.108  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@d5a05eb)
+11-07 06:03:47.398  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:49.399  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:51.400  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:52.129  1302  1657 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:03:52.130  1302  2737 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:03:52.132  3538  3538 D         : HostConnection::get() New Host Connection established 0xb479b2c0, tid 3538
+11-07 06:03:52.277  3544  3544 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:52.278  3544  3544 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:52.291  3544  3544 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:52.293  3544  3544 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:52.300  3544  3544 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:52.300  3544  3544 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:52.300  3544  3544 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:52.303  3544  3544 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:52.307  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:03:52.310  3544  3544 D AndroidRuntime: Shutting down VM
+11-07 06:03:52.440  3554  3554 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:52.441  3554  3554 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:52.453  3554  3554 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:52.455  3554  3554 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:52.462  3554  3554 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:52.462  3554  3554 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:52.463  3554  3554 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:52.466  3554  3554 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:52.468  1597  1608 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:03:52.470  1597  1609 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@fd115c7)
+11-07 06:03:52.470  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@fd115c7)
+11-07 06:03:52.470  3554  3554 D AndroidRuntime: Shutting down VM
+11-07 06:03:52.475  1597  2048 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@da5bb1d)
+11-07 06:03:52.475  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@da5bb1d)
+11-07 06:03:53.401  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:54.004  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:54.017  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:54.024  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:54.994  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:55.403  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:55.593  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:55.994  2712  2730 D EGL_emulation: eglMakeCurrent: 0xae4054e0: ver 3 0 (tinfo 0xae403580)
+11-07 06:03:57.403  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:03:58.510  1302  2184 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:03:58.511  1302  2737 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:03:58.513  3565  3565 D         : HostConnection::get() New Host Connection established 0xa729b2c0, tid 3565
+11-07 06:03:58.661  3570  3570 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:58.662  3570  3570 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:58.674  3570  3570 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:58.675  3570  3570 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:58.682  3570  3570 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:58.682  3570  3570 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:58.683  3570  3570 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:58.686  3570  3570 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:03:58.690  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:03:58.690  3570  3570 D AndroidRuntime: Shutting down VM
+11-07 06:03:58.819  3580  3580 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:03:58.820  3580  3580 D AndroidRuntime: CheckJNI is OFF
+11-07 06:03:58.832  3580  3580 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:03:58.834  3580  3580 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:03:58.841  3580  3580 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:03:58.841  3580  3580 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:03:58.841  3580  3580 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:03:58.844  3580  3580 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-07 06:03:58.845  3580  3580 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=219885, downTime=219885, deviceId=-1, source=0x101 }
+11-07 06:03:58.846  3580  3580 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=219885, downTime=219885, deviceId=-1, source=0x101 }
+11-07 06:03:58.848  3580  3580 D AndroidRuntime: Shutting down VM
+11-07 06:03:58.860  2712  2712 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+11-07 06:03:58.861  1597  1843 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@88230d5 attribute=null, token = android.os.BinderProxy@a9fbe59
+11-07 06:03:59.043  1597  1626 I WindowManager: Destroying surface Surface(name=com.stradaos.launcher.debug/com.stradaos.launcher.Main) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-07 06:03:59.404  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:00.969  3590  3590 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:04:00.970  3590  3590 D AndroidRuntime: CheckJNI is OFF
+11-07 06:04:00.983  3590  3590 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:04:00.985  3590  3590 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:04:00.992  3590  3590 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:04:00.992  3590  3590 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:04:00.993  3590  3590 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:04:00.997  3590  3590 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:04:01.001  1597  1842 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:04:01.003  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@36c3fdb)
+11-07 06:04:01.003  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@36c3fdb)
+11-07 06:04:01.004  3590  3590 D AndroidRuntime: Shutting down VM
+11-07 06:04:01.008  1597  2048 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@8420551)
+11-07 06:04:01.008  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@8420551)
+11-07 06:04:01.405  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:03.406  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:05.407  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:07.051  1302  1314 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:04:07.052  1302  1308 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:04:07.053  3603  3603 D         : HostConnection::get() New Host Connection established 0xb0b9b2c0, tid 3603
+11-07 06:04:07.204  3609  3609 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:04:07.205  3609  3609 D AndroidRuntime: CheckJNI is OFF
+11-07 06:04:07.218  3609  3609 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:04:07.220  3609  3609 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:04:07.227  3609  3609 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:04:07.227  3609  3609 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:04:07.228  3609  3609 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:04:07.231  3609  3609 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:04:07.235  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:04:07.235  3609  3609 D AndroidRuntime: Shutting down VM
+11-07 06:04:07.367  3619  3619 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:04:07.369  3619  3619 D AndroidRuntime: CheckJNI is OFF
+11-07 06:04:07.381  3619  3619 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:04:07.383  3619  3619 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:04:07.391  3619  3619 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:04:07.391  3619  3619 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:04:07.392  3619  3619 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:04:07.395  3619  3619 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:04:07.398  1597  1842 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:04:07.399  1597  2048 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@150a58d)
+11-07 06:04:07.400  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@150a58d)
+11-07 06:04:07.400  3619  3619 D AndroidRuntime: Shutting down VM
+11-07 06:04:07.413  1597  1694 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@ec0cf53)
+11-07 06:04:07.413  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@ec0cf53)
+11-07 06:04:07.417  1597  2048 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:09.418  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:11.420  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:13.421  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:13.447  1302  1308 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:04:13.448  1302  2737 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:04:13.449  3630  3630 D         : HostConnection::get() New Host Connection established 0xb061b2c0, tid 3630
+11-07 06:04:13.594  3636  3636 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:04:13.595  3636  3636 D AndroidRuntime: CheckJNI is OFF
+11-07 06:04:13.607  3636  3636 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:04:13.609  3636  3636 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:04:13.615  3636  3636 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:04:13.615  3636  3636 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:04:13.616  3636  3636 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:04:13.620  3636  3636 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:04:13.624  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:04:13.624  3636  3636 D AndroidRuntime: Shutting down VM
+11-07 06:04:13.753  3646  3646 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:04:13.754  3646  3646 D AndroidRuntime: CheckJNI is OFF
+11-07 06:04:13.767  3646  3646 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:04:13.769  3646  3646 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:04:13.776  3646  3646 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:04:13.776  3646  3646 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:04:13.776  3646  3646 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:04:13.780  3646  3646 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:04:13.782  1597  2048 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:04:13.784  1597  1608 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@dff0daf)
+11-07 06:04:13.785  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@dff0daf)
+11-07 06:04:13.786  3646  3646 D AndroidRuntime: Shutting down VM
+11-07 06:04:13.802  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@671f945)
+11-07 06:04:13.802  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@671f945)
+11-07 06:04:15.421  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:17.421  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:19.422  1597  1842 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:19.823  1302  2737 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:04:19.824  1302  2184 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:04:19.826  3656  3656 D         : HostConnection::get() New Host Connection established 0xa911b2c0, tid 3656
+11-07 06:04:19.973  3661  3661 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:04:19.974  3661  3661 D AndroidRuntime: CheckJNI is OFF
+11-07 06:04:19.988  3661  3661 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:04:19.990  3661  3661 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:04:20.004  3661  3661 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:04:20.004  3661  3661 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:04:20.004  3661  3661 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:04:20.008  3661  3661 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:04:20.014  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:04:20.014  3661  3661 D AndroidRuntime: Shutting down VM
+11-07 06:04:20.150  3671  3671 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:04:20.151  3671  3671 D AndroidRuntime: CheckJNI is OFF
+11-07 06:04:20.163  3671  3671 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:04:20.165  3671  3671 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:04:20.172  3671  3671 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:04:20.172  3671  3671 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:04:20.173  3671  3671 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:04:20.177  3671  3671 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:04:20.179  1597  1843 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:04:20.181  1597  1694 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@c3de4c1)
+11-07 06:04:20.181  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@c3de4c1)
+11-07 06:04:20.183  3671  3671 D AndroidRuntime: Shutting down VM
+11-07 06:04:20.188  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@8fd03a7)
+11-07 06:04:20.188  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@8fd03a7)
+11-07 06:04:21.423  1597  1694 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:23.423  1597  1842 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:25.424  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:26.317  3684  3684 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:04:26.318  3684  3684 D AndroidRuntime: CheckJNI is OFF
+11-07 06:04:26.330  3684  3684 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:04:26.332  3684  3684 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:04:26.339  3684  3684 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:04:26.339  3684  3684 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:04:26.340  3684  3684 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:04:26.343  3684  3684 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:04:26.345  1597  1842 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:04:26.346  1597  1843 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@bec3343)
+11-07 06:04:26.347  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@bec3343)
+11-07 06:04:26.348  3684  3684 D AndroidRuntime: Shutting down VM
+11-07 06:04:26.358  1597  1608 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@4f96af9)
+11-07 06:04:26.358  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@4f96af9)
+11-07 06:04:27.425  1597  2375 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:29.425  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:31.426  1597  1609 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:33.427  1597  1843 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:35.428  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:36.393  1302  1657 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-07 06:04:36.394  1302  1314 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 2457600
+11-07 06:04:36.395  3697  3697 D         : HostConnection::get() New Host Connection established 0xae41b2c0, tid 3697
+11-07 06:04:36.549  3703  3703 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:04:36.550  3703  3703 D AndroidRuntime: CheckJNI is OFF
+11-07 06:04:36.562  3703  3703 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:04:36.564  3703  3703 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:04:36.572  3703  3703 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:04:36.572  3703  3703 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:04:36.572  3703  3703 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:04:36.576  3703  3703 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:04:36.581  2206  2206 D MediaScannerReceiver: action: android.intent.action.MEDIA_SCANNER_SCAN_FILE path: /data/local/tmp/s.png
+11-07 06:04:36.582  3703  3703 D AndroidRuntime: Shutting down VM
+11-07 06:04:36.715  3713  3713 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-07 06:04:36.716  3713  3713 D AndroidRuntime: CheckJNI is OFF
+11-07 06:04:36.728  3713  3713 W art     : Unexpected CPU variant for X86 using defaults: x86
+11-07 06:04:36.730  3713  3713 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-07 06:04:36.737  3713  3713 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-07 06:04:36.737  3713  3713 E android.os.Debug: failed to load memtrack module: -2
+11-07 06:04:36.738  3713  3713 I Radio-JNI: register_android_hardware_Radio DONE
+11-07 06:04:36.741  3713  3713 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-07 06:04:36.743  1597  1843 I ActivityManager: START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 2000 on display 0
+11-07 06:04:36.745  1597  2375 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6dcbdb5)
+11-07 06:04:36.745  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@6dcbdb5)
+11-07 06:04:36.745  3713  3713 D AndroidRuntime: Shutting down VM
+11-07 06:04:36.766  1597  1694 I GnssLocationProvider: WakeLock acquired by sendMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@50ec7bb)
+11-07 06:04:36.766  1597  1611 I GnssLocationProvider: WakeLock released by handleMessage(3, 0, com.android.server.location.GnssLocationProvider$GpsRequest@50ec7bb)
+11-07 06:04:37.429  1597  1608 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+11-07 06:04:39.430  1597  1842 W ActivityManager: Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found

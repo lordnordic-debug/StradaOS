@@ -1,0 +1,844 @@
+--------- beginning of main
+D/AndroidRuntime( 2524): Shutting down VM
+D/AndroidRuntime( 2538): 
+D/AndroidRuntime( 2538): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2538): CheckJNI is ON
+E/memtrack( 2538): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2538): failed to load memtrack module: -2
+D/AndroidRuntime( 2538): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main} from uid 0 on display 0
+D/AndroidRuntime( 2538): Shutting down VM
+E/libprocessgroup( 2550): failed to make and chown /acct/uid_10053: Read-only file system
+W/Zygote  ( 2550): createProcessGroup failed, kernel missing CONFIG_CGROUP_CPUACCT?
+I/ActivityManager( 1484): Start proc com.stradaos.launcher.debug for activity com.stradaos.launcher.debug/com.stradaos.launcher.Main: pid=2550 uid=10053 gids={50053, 9997, 3003, 1028, 1015, 3002} abi=x86
+I/art     ( 2550): Not late-enabling -Xcheck:jni (already on)
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/EGL_emulation( 2059): eglMakeCurrent: 0xae70c100: ver 3 0
+D/OpenGLRenderer( 2550): Render dirty regions requested: true
+D/        ( 2550): HostConnection::get() New Host Connection established 0xae6768d0, tid 2550
+D/Atlas   ( 2550): Validating map...
+D/        ( 2550): HostConnection::get() New Host Connection established 0xae7360b0, tid 2569
+I/OpenGLRenderer( 2550): Initialized EGL, version 1.4
+D/EGL_emulation( 2550): eglCreateContext: 0xae70c1c0: maj 3 min 0 rcv 3
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+E/eglCodecCommon( 2550): glUtilsParamSize: unknow param 0x00008cdf
+E/eglCodecCommon( 2550): glUtilsParamSize: unknow param 0x00008824
+D/OpenGLRenderer( 2550): Enabling debug mode 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+I/ActivityManager( 1484): Displayed com.stradaos.launcher.debug/com.stradaos.launcher.Main: +674ms
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/AlarmManagerService( 1484): Kernel timezone updated to 0 minutes west of GMT
+D/AlarmManagerService( 1484): Setting time of day to sec=1794031261
+V/AlarmClock( 2124): AlarmInitReceiver android.intent.action.TIME_SET
+V/AlarmClock( 2124): AlarmInitReceiver finished
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2579): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2579
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2584): 
+D/AndroidRuntime( 2584): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2584): CheckJNI is ON
+E/memtrack( 2584): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2584): failed to load memtrack module: -2
+D/AndroidRuntime( 2584): Calling main entry com.android.commands.input.Input
+I/Input   ( 2584): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=35857, downTime=35857, deviceId=-1, source=0x101 }
+I/Input   ( 2584): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=35857, downTime=35857, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2584): Shutting down VM
+D/InitAlarmsService( 2252): Clearing and rescheduling alarms.
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2596): 
+D/AndroidRuntime( 2596): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2596): CheckJNI is ON
+E/memtrack( 2596): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2596): failed to load memtrack module: -2
+D/AndroidRuntime( 2596): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2596): Shutting down VM
+W/InputMethodManagerService( 1484): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@2b6cfc55 attribute=null, token = android.os.BinderProxy@52f4fe5
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2612): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2612
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2617): 
+D/AndroidRuntime( 2617): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2617): CheckJNI is ON
+E/memtrack( 2617): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2617): failed to load memtrack module: -2
+D/AndroidRuntime( 2617): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2617): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2629): HostConnection::get() New Host Connection established 0xb674e3d0, tid 2629
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2634): 
+D/AndroidRuntime( 2634): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2634): CheckJNI is ON
+E/memtrack( 2634): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2634): failed to load memtrack module: -2
+D/AndroidRuntime( 2634): Calling main entry com.android.commands.input.Input
+I/Input   ( 2634): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=54815, downTime=54815, deviceId=-1, source=0x101 }
+I/Input   ( 2634): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=54815, downTime=54815, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2634): Shutting down VM
+W/InputEventReceiver( 2550): Attempted to finish an input event but the input event receiver has already been disposed.
+W/InputMethodManagerService( 1484): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@2236dfa4 attribute=null, token = android.os.BinderProxy@52f4fe5
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2646): 
+D/AndroidRuntime( 2646): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2646): CheckJNI is ON
+E/memtrack( 2646): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2646): failed to load memtrack module: -2
+D/AndroidRuntime( 2646): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2646): Shutting down VM
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.browser: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.calendar: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.camera: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.contacts: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.customlocale2: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.development_settings: Resource ID #0x0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2658): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2658
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2663): 
+D/AndroidRuntime( 2663): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2663): CheckJNI is ON
+E/memtrack( 2663): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2663): failed to load memtrack module: -2
+D/AndroidRuntime( 2663): Calling main entry com.android.commands.input.Input
+I/Input   ( 2663): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=63429, downTime=63429, deviceId=-1, source=0x101 }
+I/Input   ( 2663): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=63429, downTime=63429, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2663): Shutting down VM
+W/InputEventReceiver( 2550): Attempted to finish an input event but the input event receiver has already been disposed.
+W/InputMethodManagerService( 1484): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@c6f5f0e attribute=null, token = android.os.BinderProxy@52f4fe5
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+I/MediaFocusControl( 1484):  AudioFocus  abandonAudioFocus() from android.media.AudioManager@14b36cbacom.android.music.MediaPlaybackService$3@d62276b
+D/AndroidRuntime( 2675): 
+D/AndroidRuntime( 2675): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2675): CheckJNI is ON
+E/memtrack( 2675): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2675): failed to load memtrack module: -2
+D/AndroidRuntime( 2675): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2675): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2687): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2687
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2692): 
+D/AndroidRuntime( 2692): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2692): CheckJNI is ON
+E/memtrack( 2692): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2692): failed to load memtrack module: -2
+D/AndroidRuntime( 2692): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2692): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2704): HostConnection::get() New Host Connection established 0xb674e3d0, tid 2704
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2709): 
+D/AndroidRuntime( 2709): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2709): CheckJNI is ON
+E/memtrack( 2709): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2709): failed to load memtrack module: -2
+D/AndroidRuntime( 2709): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2709): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2721): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2721
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2726): 
+D/AndroidRuntime( 2726): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2726): CheckJNI is ON
+E/memtrack( 2726): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2726): failed to load memtrack module: -2
+D/AndroidRuntime( 2726): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2726): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2738): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2738
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2743): 
+D/AndroidRuntime( 2743): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2743): CheckJNI is ON
+E/memtrack( 2743): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2743): failed to load memtrack module: -2
+D/AndroidRuntime( 2743): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2743): Shutting down VM
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.browser: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.calendar: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.camera: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.contacts: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.customlocale2: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.development_settings: Resource ID #0x0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2755): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2755
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2760): 
+D/AndroidRuntime( 2760): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2760): CheckJNI is ON
+E/memtrack( 2760): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2760): failed to load memtrack module: -2
+D/AndroidRuntime( 2760): Calling main entry com.android.commands.input.Input
+I/Input   ( 2760): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=97381, downTime=97381, deviceId=-1, source=0x101 }
+I/Input   ( 2760): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=97381, downTime=97381, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2760): Shutting down VM
+W/InputEventReceiver( 2550): Attempted to finish an input event but the input event receiver has already been disposed.
+W/InputMethodManagerService( 1484): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@d942f6c attribute=null, token = android.os.BinderProxy@52f4fe5
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2772): 
+D/AndroidRuntime( 2772): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2772): CheckJNI is ON
+E/memtrack( 2772): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2772): failed to load memtrack module: -2
+D/AndroidRuntime( 2772): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2772): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.browser: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.calendar: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.camera: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.contacts: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.customlocale2: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.development_settings: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.providers.downloads.ui: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.email: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.mms: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.music: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.quicksearchbox: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.settings: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.speechrecorder: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.speechrecorder: Resource ID #0x0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2784): HostConnection::get() New Host Connection established 0xb674e3d0, tid 2784
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2789): 
+D/AndroidRuntime( 2789): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2789): CheckJNI is ON
+E/memtrack( 2789): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2789): failed to load memtrack module: -2
+D/AndroidRuntime( 2789): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2789): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2801): 
+D/AndroidRuntime( 2801): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2801): CheckJNI is ON
+E/memtrack( 2801): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2801): failed to load memtrack module: -2
+D/AndroidRuntime( 2801): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2801): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2813): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2813
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2818): 
+D/AndroidRuntime( 2818): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2818): CheckJNI is ON
+E/memtrack( 2818): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2818): failed to load memtrack module: -2
+D/AndroidRuntime( 2818): Calling main entry com.android.commands.input.Input
+I/Input   ( 2818): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=116620, downTime=116620, deviceId=-1, source=0x101 }
+I/Input   ( 2818): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=116620, downTime=116620, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2818): Shutting down VM
+W/InputEventReceiver( 2550): Attempted to finish an input event but the input event receiver has already been disposed.
+W/InputMethodManagerService( 1484): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@1e721870 attribute=null, token = android.os.BinderProxy@52f4fe5
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2830): 
+D/AndroidRuntime( 2830): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2830): CheckJNI is ON
+E/memtrack( 2830): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2830): failed to load memtrack module: -2
+D/AndroidRuntime( 2830): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2830): Shutting down VM
+I/ActivityManager( 1484): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=android/com.android.internal.app.ResolverActivity} from uid 10053 on display 0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 520192
+D/        ( 1484): HostConnection::get() New Host Connection established 0xa0a285b0, tid 1906
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+E/libprocessgroup( 2842): failed to make and chown /acct/uid_1000: Read-only file system
+W/Zygote  ( 2842): createProcessGroup failed, kernel missing CONFIG_CGROUP_CPUACCT?
+I/ActivityManager( 1484): Start proc system:ui for activity android/com.android.internal.app.ResolverActivity: pid=2842 uid=1000 gids={41000, 9997, 1028, 1015, 3002, 3001, 3003} abi=x86
+I/art     ( 1154): Explicit concurrent mark sweep GC freed 707(30KB) AllocSpace objects, 0(0B) LOS objects, 90% free, 110KB/1134KB, paused 195us total 3.106ms
+I/art     ( 1154): Explicit concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 90% free, 110KB/1134KB, paused 472us total 3.689ms
+I/art     ( 1154): Explicit concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 90% free, 110KB/1134KB, paused 316us total 5.496ms
+D/ResolverActivity( 2842): sinceTime=1792821755709
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+V/RenderScript( 2550): 0xa1811a00 Launching thread(s), CPUs 2
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2842): HostConnection::get() New Host Connection established 0xae681650, tid 2842
+I/ActivityManager( 1484): Displayed android/com.android.internal.app.ResolverActivity: +92ms
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/TaskPersister( 1484): removeObsoleteFile: deleting file=4_task_thumbnail.png
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2863): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2863
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2868): 
+D/AndroidRuntime( 2868): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2868): CheckJNI is ON
+E/memtrack( 2868): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2868): failed to load memtrack module: -2
+D/AndroidRuntime( 2868): Calling main entry com.android.commands.input.Input
+I/Input   ( 2868): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=124272, downTime=124272, deviceId=-1, source=0x101 }
+I/Input   ( 2868): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=124272, downTime=124272, deviceId=-1, source=0x101 }
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 520192
+D/        ( 1484): HostConnection::get() New Host Connection established 0x9efe9240, tid 2001
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2868): Shutting down VM
+W/art     ( 2868): No such thread id for suspend: 1
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/InputMethodManagerService( 1484): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@7a1c9ce (uid=1000 pid=2842)
+I/ActivityManager( 1484): Killing 2092:com.android.music/u0a33 (adj 15): empty #17
+W/libprocessgroup( 1484): failed to open /acct/uid_10033/pid_2092/cgroup.procs: No such file or directory
+W/libprocessgroup( 1484): failed to open /acct/uid_10033/pid_2092/cgroup.procs: No such file or directory
+W/ActivityManager( 1484): Duplicate finish request for ActivityRecord{28b84b9c u0 android/com.android.internal.app.ResolverActivity t5 f}
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/AndroidRuntime( 2880): 
+D/AndroidRuntime( 2880): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2880): CheckJNI is ON
+E/memtrack( 2880): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2880): failed to load memtrack module: -2
+D/AndroidRuntime( 2880): Calling main entry com.android.commands.input.Input
+I/Input   ( 2880): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=126564, downTime=126564, deviceId=-1, source=0x101 }
+I/Input   ( 2880): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=126564, downTime=126564, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2880): Shutting down VM
+W/InputEventReceiver( 2550): Attempted to finish an input event but the input event receiver has already been disposed.
+W/InputMethodManagerService( 1484): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@211967e8 attribute=null, token = android.os.BinderProxy@52f4fe5
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/TaskPersister( 1484): removeObsoleteFile: deleting file=4_task.xml
+D/TaskPersister( 1484): removeObsoleteFile: deleting file=5_task_thumbnail.png
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2892): 
+D/AndroidRuntime( 2892): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2892): CheckJNI is ON
+E/memtrack( 2892): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2892): failed to load memtrack module: -2
+D/AndroidRuntime( 2892): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2892): Shutting down VM
+I/InputReader( 1484): Reconfiguring input devices.  changes=0x00000010
+D/BackupManagerService( 1484): Received broadcast Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.stradaos.launcher.debug flg=0x4000010 (has extras) }
+I/Launcher( 2059): Deferring update until onResume
+I/Launcher( 2059): Deferring update until onResume
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2904): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2904
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2909): 
+D/AndroidRuntime( 2909): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2909): CheckJNI is ON
+E/memtrack( 2909): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2909): failed to load memtrack module: -2
+D/AndroidRuntime( 2909): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2909): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2921): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2921
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2926): 
+D/AndroidRuntime( 2926): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2926): CheckJNI is ON
+E/memtrack( 2926): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2926): failed to load memtrack module: -2
+D/AndroidRuntime( 2926): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2926): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2938): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2938
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2943): 
+D/AndroidRuntime( 2943): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2943): CheckJNI is ON
+E/memtrack( 2943): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2943): failed to load memtrack module: -2
+D/AndroidRuntime( 2943): Calling main entry com.android.commands.input.Input
+I/Input   ( 2943): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=147849, downTime=147849, deviceId=-1, source=0x101 }
+I/Input   ( 2943): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=147849, downTime=147849, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2943): Shutting down VM
+W/InputEventReceiver( 2550): Attempted to finish an input event but the input event receiver has already been disposed.
+W/InputMethodManagerService( 1484): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@2c344365 attribute=null, token = android.os.BinderProxy@52f4fe5
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2956): 
+D/AndroidRuntime( 2956): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2956): CheckJNI is ON
+E/memtrack( 2956): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2956): failed to load memtrack module: -2
+D/AndroidRuntime( 2956): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2956): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2974): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2974
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2979): 
+D/AndroidRuntime( 2979): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2979): CheckJNI is ON
+E/memtrack( 2979): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2979): failed to load memtrack module: -2
+D/AndroidRuntime( 2979): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2979): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2994): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2994
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2999): 
+D/AndroidRuntime( 2999): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2999): CheckJNI is ON
+E/memtrack( 2999): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2999): failed to load memtrack module: -2
+D/AndroidRuntime( 2999): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2999): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 3014): 
+D/AndroidRuntime( 3014): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3014): CheckJNI is ON
+E/memtrack( 3014): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3014): failed to load memtrack module: -2
+D/AndroidRuntime( 3014): Calling main entry com.android.commands.wm.Wm
+I/WindowManager( 1484): Using new display size: 1920x720
+V/ActivityManager( 1484): Display changed displayId=0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3014): Shutting down VM
+I/ActivityManager( 1484): Config changes=d00 {1.0 310mcc260mnc en_US ldltr sw720dp w1920dp h695dp 160dpi xlrg long land finger -keyb/v/h tball/v s.8}
+I/InputReader( 1484): Reconfiguring input devices.  changes=0x00000004
+I/InputReader( 1484): Device reconfigured: id=0, name='qwerty2', size 1920x1125, orientation 0, mode 1, display id 0
+D/EGL_emulation( 1754): eglMakeCurrent: 0xae72c100: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+I/WindowManager( 1484): Screen frozen for +68ms due to Window{f9afaba u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+D/AndroidRuntime( 3030): 
+D/AndroidRuntime( 3030): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3030): CheckJNI is ON
+E/memtrack( 3030): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3030): failed to load memtrack module: -2
+D/AndroidRuntime( 3030): Calling main entry com.android.commands.wm.Wm
+I/WindowManager( 1484): Using new display density: 240
+V/ActivityManager( 1484): Display changed displayId=0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+I/ActivityManager( 1484): Config changes=1d00 {1.0 310mcc260mnc en_US ldltr sw480dp w1280dp h463dp 240dpi lrg long land finger -keyb/v/h tball/v s.9}
+I/ActivityThread( 2274): Switching default density from 160 to 240
+I/ActivityThread( 2485): Switching default density from 160 to 240
+I/ActivityThread( 1484): Switching default density from 160 to 240
+I/ActivityThread( 1963): Switching default density from 160 to 240
+I/ActivityThread( 2317): Switching default density from 160 to 240
+I/ActivityThread( 2141): Switching default density from 160 to 240
+I/ActivityThread( 1894): Switching default density from 160 to 240
+I/ActivityThread( 1982): Switching default density from 160 to 240
+I/ActivityThread( 2124): Switching default density from 160 to 240
+I/ActivityThread( 2252): Switching default density from 160 to 240
+I/ActivityThread( 2842): Switching default density from 160 to 240
+I/ActivityThread( 2108): Switching default density from 160 to 240
+I/ActivityThread( 2505): Switching default density from 160 to 240
+I/ActivityThread( 1834): Switching default density from 160 to 240
+I/ActivityThread( 2157): Switching default density from 160 to 240
+I/ActivityThread( 2296): Switching default density from 160 to 240
+I/ActivityThread( 2216): Switching default density from 160 to 240
+I/ActivityThread( 2199): Switching default density from 160 to 240
+I/ActivityThread( 1928): Switching default density from 160 to 240
+I/ActivityThread( 2059): Switching default density from 160 to 240
+I/ActivityThread( 1877): Switching default density from 160 to 240
+I/ActivityThread( 2550): Switching default density from 160 to 240
+I/ActivityThread( 1754): Switching default density from 160 to 240
+D/AndroidRuntime( 3030): Shutting down VM
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+I/WindowManager( 1484): Screen frozen for +133ms due to Window{2f26cccb u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+I/art     ( 1484): Explicit concurrent mark sweep GC freed 20554(964KB) AllocSpace objects, 2(29KB) LOS objects, 32% free, 8MB/12MB, paused 257us total 10.242ms
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 3049): 
+D/AndroidRuntime( 3049): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3049): CheckJNI is ON
+E/memtrack( 3049): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3049): failed to load memtrack module: -2
+D/AndroidRuntime( 3049): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3049): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3061): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3061
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3066): 
+D/AndroidRuntime( 3066): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3066): CheckJNI is ON
+E/memtrack( 3066): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3066): failed to load memtrack module: -2
+D/AndroidRuntime( 3066): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3066): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 5529600
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3078): HostConnection::get() New Host Connection established 0xb674e3d0, tid 3078
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3083): 
+D/AndroidRuntime( 3083): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3083): CheckJNI is ON
+E/memtrack( 3083): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3083): failed to load memtrack module: -2
+D/AndroidRuntime( 3083): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3083): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 3095): 
+D/AndroidRuntime( 3095): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3095): CheckJNI is ON
+E/memtrack( 3095): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3095): failed to load memtrack module: -2
+D/AndroidRuntime( 3095): Calling main entry com.android.commands.wm.Wm
+I/WindowManager( 1484): Using new display size: 1024x600
+V/ActivityManager( 1484): Display changed displayId=0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3095): Shutting down VM
+I/ActivityManager( 1484): Config changes=d00 {1.0 310mcc260mnc en_US ldltr sw400dp w682dp h374dp 240dpi nrml long land finger -keyb/v/h tball/v s.10}
+I/InputReader( 1484): Reconfiguring input devices.  changes=0x00000004
+I/InputReader( 1484): Device reconfigured: id=0, name='qwerty2', size 1024x600, orientation 0, mode 1, display id 0
+D/EGL_emulation( 1754): eglMakeCurrent: 0xae72c100: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+I/WindowManager( 1484): Screen frozen for +58ms due to Window{2f26cccb u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+D/AndroidRuntime( 3111): 
+D/AndroidRuntime( 3111): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3111): CheckJNI is ON
+E/memtrack( 3111): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3111): failed to load memtrack module: -2
+D/AndroidRuntime( 3111): Calling main entry com.android.commands.wm.Wm
+I/WindowManager( 1484): Using new display density: 160
+V/ActivityManager( 1484): Display changed displayId=0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+I/ActivityManager( 1484): Config changes=1d00 {1.0 310mcc260mnc en_US ldltr sw600dp w1024dp h562dp 160dpi lrg long land finger -keyb/v/h tball/v s.11}
+I/ActivityThread( 2550): Switching default density from 240 to 160
+I/ActivityThread( 1982): Switching default density from 240 to 160
+I/ActivityThread( 2842): Switching default density from 240 to 160
+I/ActivityThread( 2485): Switching default density from 240 to 160
+I/ActivityThread( 2274): Switching default density from 240 to 160
+I/ActivityThread( 2252): Switching default density from 240 to 160
+I/ActivityThread( 2124): Switching default density from 240 to 160
+I/ActivityThread( 1963): Switching default density from 240 to 160
+I/ActivityThread( 2505): Switching default density from 240 to 160
+I/ActivityThread( 2317): Switching default density from 240 to 160
+I/ActivityThread( 2141): Switching default density from 240 to 160
+I/ActivityThread( 2108): Switching default density from 240 to 160
+I/ActivityThread( 1834): Switching default density from 240 to 160
+I/ActivityThread( 2157): Switching default density from 240 to 160
+I/ActivityThread( 2296): Switching default density from 240 to 160
+I/ActivityThread( 2216): Switching default density from 240 to 160
+I/ActivityThread( 1928): Switching default density from 240 to 160
+I/ActivityThread( 2199): Switching default density from 240 to 160
+I/ActivityThread( 1877): Switching default density from 240 to 160
+I/ActivityThread( 1484): Switching default density from 240 to 160
+I/ActivityThread( 1754): Switching default density from 240 to 160
+D/AndroidRuntime( 3111): Shutting down VM
+I/ActivityThread( 2059): Switching default density from 240 to 160
+I/ActivityThread( 1894): Switching default density from 240 to 160
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+I/WindowManager( 1484): Screen frozen for +138ms due to Window{25d133b4 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+I/art     ( 1484): Explicit concurrent mark sweep GC freed 8851(415KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 8MB/12MB, paused 299us total 9.625ms
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 3129): 
+D/AndroidRuntime( 3129): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3129): CheckJNI is ON
+E/memtrack( 3129): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3129): failed to load memtrack module: -2
+D/AndroidRuntime( 3129): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3129): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 3141): 
+D/AndroidRuntime( 3141): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3141): CheckJNI is ON
+E/memtrack( 3141): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3141): failed to load memtrack module: -2
+D/AndroidRuntime( 3141): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3141): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3156): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3156
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3161): 
+D/AndroidRuntime( 3161): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3161): CheckJNI is ON
+E/memtrack( 3161): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3161): failed to load memtrack module: -2
+D/AndroidRuntime( 3161): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3161): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3173): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3173
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3178): 
+D/AndroidRuntime( 3178): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3178): CheckJNI is ON
+E/memtrack( 3178): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3178): failed to load memtrack module: -2
+D/AndroidRuntime( 3178): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3178): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.browser: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.calendar: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.camera: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.contacts: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.customlocale2: Resource ID #0x0
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.android.development_settings: Resource ID #0x0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2550): eglMakeCurrent: 0xae70c1c0: ver 3 0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3190): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3190
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3195): 
+D/AndroidRuntime( 3195): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3195): CheckJNI is ON
+E/memtrack( 3195): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3195): failed to load memtrack module: -2
+D/AndroidRuntime( 3195): Calling main entry com.android.commands.input.Input
+I/Input   ( 3195): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=219473, downTime=219473, deviceId=-1, source=0x101 }
+I/Input   ( 3195): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=219473, downTime=219473, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 3195): Shutting down VM
+W/InputEventReceiver( 2550): Attempted to finish an input event but the input event receiver has already been disposed.
+W/InputMethodManagerService( 1484): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@2fca5a49 attribute=null, token = android.os.BinderProxy@278b4887
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 3207): 
+D/AndroidRuntime( 3207): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3207): CheckJNI is ON
+E/memtrack( 3207): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3207): failed to load memtrack module: -2
+D/AndroidRuntime( 3207): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3207): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3222): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3222
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3227): 
+D/AndroidRuntime( 3227): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3227): CheckJNI is ON
+E/memtrack( 3227): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3227): failed to load memtrack module: -2
+D/AndroidRuntime( 3227): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3227): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3239): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3239
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3244): 
+D/AndroidRuntime( 3244): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3244): CheckJNI is ON
+E/memtrack( 3244): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3244): failed to load memtrack module: -2
+D/AndroidRuntime( 3244): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3244): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3256): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3256
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3261): 
+D/AndroidRuntime( 3261): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3261): CheckJNI is ON
+E/memtrack( 3261): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3261): failed to load memtrack module: -2
+D/AndroidRuntime( 3261): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3261): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 3276): 
+D/AndroidRuntime( 3276): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3276): CheckJNI is ON
+E/memtrack( 3276): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3276): failed to load memtrack module: -2
+D/AndroidRuntime( 3276): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3276): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ResourceType( 2550): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2550): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3291): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3291
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3296): 
+D/AndroidRuntime( 3296): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3296): CheckJNI is ON
+E/memtrack( 3296): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3296): failed to load memtrack module: -2
+D/AndroidRuntime( 3296): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1484): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3296): Shutting down VM
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1484): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found

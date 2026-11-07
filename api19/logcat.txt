@@ -1,0 +1,1560 @@
+--------- beginning of /dev/log/main
+D/AndroidRuntime( 2229): 
+D/AndroidRuntime( 2229): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2229): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2229): CheckJNI is ON
+D/dalvikvm( 2229): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2229): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2229): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2229): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2229): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2229): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2229): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2229): failed to load memtrack module: -2
+D/AndroidRuntime( 2229): Calling main entry com.android.commands.am.Am
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 233472
+D/        ( 1556): HostConnection::get() New Host Connection established 0xb7c6c5f0, tid 1802
+D/AndroidRuntime( 2229): Shutting down VM
+D/dalvikvm( 2229): GC_CONCURRENT freed 94K, 15% free 576K/672K, paused 0ms+0ms, total 0ms
+--------- beginning of /dev/log/system
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main} from pid 2229
+D/dalvikvm( 2240): Not late-enabling CheckJNI (already on)
+I/ActivityManager( 1556): Start proc com.stradaos.launcher.debug for activity com.stradaos.launcher.debug/com.stradaos.launcher.Main: pid=2240 uid=10052 gids={50052, 3003, 1028, 1015, 3002}
+I/dalvikvm( 2240): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.gpsState
+W/dalvikvm( 2240): VFY: unable to resolve virtual method 1087: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+D/dalvikvm( 2240): VFY: replacing opcode 0x6e at 0x0008
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/EGL_emulation( 1856): eglMakeCurrent: 0xb7b27230: ver 3 0
+D/dalvikvm( 2240): GC_CONCURRENT freed 208K, 10% free 2866K/3156K, paused 0ms+1ms, total 4ms
+D/EGL_emulation( 1856): eglMakeCurrent: 0xb7b27230: ver 3 0
+D/        ( 2240): HostConnection::get() New Host Connection established 0xb7ae3cb0, tid 2240
+D/EGL_emulation( 2240): eglCreateContext: 0xb7ae6f50: maj 3 min 0 rcv 3
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+E/eglCodecCommon( 2240): glUtilsParamSize: unknow param 0x00008cdf
+E/eglCodecCommon( 2240): glUtilsParamSize: unknow param 0x00008824
+D/OpenGLRenderer( 2240): Enabling debug mode 0
+D/dalvikvm( 2240): GC_CONCURRENT freed 94K, 6% free 3190K/3384K, paused 0ms+2ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 125K, 7% free 3429K/3648K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 109K, 9% free 3543K/3876K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 3.985MB for 471738-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 224K, 13% free 3779K/4340K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_CONCURRENT freed <1K, 8% free 4010K/4340K, paused 0ms+0ms, total 1ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 4.441MB for 471738-byte allocation
+D/dalvikvm( 2240): GC_CONCURRENT freed 0K, 7% free 4471K/4804K, paused 0ms+0ms, total 1ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 1ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 692K, 16% free 4290K/5064K, paused 0ms+2ms, total 3ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 305K, 12% free 4466K/5064K, paused 0ms+2ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 968K, 29% free 3631K/5064K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 6K, 21% free 4027K/5064K, paused 0ms+0ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 85K, 17% free 4235K/5064K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 4.820MB for 638412-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 15% free 4858K/5688K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 1K, 15% free 4857K/5688K, paused 0ms+0ms, total 2ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 5.427MB for 638412-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 14% free 5480K/6312K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 2K, 14% free 5485K/6312K, paused 0ms+1ms, total 3ms
+I/ActivityManager( 1556): Displayed com.stradaos.launcher.debug/com.stradaos.launcher.Main: +605ms
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/AlarmManagerService( 1556): Kernel timezone updated to 0 minutes west of GMT
+D/dalvikvm( 1939): GC_CONCURRENT freed 275K, 12% free 2763K/3120K, paused 1ms+1ms, total 2ms
+V/AlarmClock( 1976): AlarmInitReceiver android.intent.action.TIME_SET
+E/StrictMode( 1939): A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+E/StrictMode( 1939): java.lang.Throwable: Explicit termination method 'close' not called
+E/StrictMode( 1939): 	at dalvik.system.CloseGuard.open(CloseGuard.java:184)
+E/StrictMode( 1939): 	at android.content.ContentResolver$CursorWrapperInner.<init>(ContentResolver.java:2255)
+E/StrictMode( 1939): 	at android.content.ContentResolver.query(ContentResolver.java:485)
+E/StrictMode( 1939): 	at android.content.CursorLoader.loadInBackground(CursorLoader.java:65)
+E/StrictMode( 1939): 	at android.content.CursorLoader.loadInBackground(CursorLoader.java:43)
+E/StrictMode( 1939): 	at android.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:312)
+E/StrictMode( 1939): 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:69)
+E/StrictMode( 1939): 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:57)
+E/StrictMode( 1939): 	at android.os.AsyncTask$2.call(AsyncTask.java:288)
+E/StrictMode( 1939): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+E/StrictMode( 1939): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+E/StrictMode( 1939): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+E/StrictMode( 1939): 	at java.lang.Thread.run(Thread.java:841)
+I/AlarmClock( 1976): Displaying next alarm time: ''
+V/AlarmClock( 1976): AlarmInitReceiver finished
+W/CursorWrapperInner( 1939): Cursor finalized without prior close()
+D/dalvikvm( 1556): GC_CONCURRENT freed 283K, 50% free 5967K/11728K, paused 1ms+3ms, total 16ms
+D/        ( 1737): Setting time of day to sec=1794031253
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/dalvikvm( 2240): GC_CONCURRENT freed 400K, 8% free 5990K/6472K, paused 1ms+0ms, total 3ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_CONCURRENT freed 761K, 12% free 6253K/7096K, paused 0ms+0ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 332K, 12% free 6484K/7356K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 42K, 9% free 6997K/7616K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 571K, 14% free 7251K/8396K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 606K, 14% free 7510K/8656K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 606K, 13% free 8043K/9176K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 607K, 12% free 8556K/9696K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 654K, 12% free 9308K/10476K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 863K, 13% free 9815K/11256K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 354K, 8% free 10834K/11776K, paused 2ms, total 2ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_CONCURRENT freed 1626K, 14% free 11153K/12860K, paused 1ms+2ms, total 6ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2270): HostConnection::get() New Host Connection established 0xb851a130, tid 2270
+D/AndroidRuntime( 2275): 
+D/AndroidRuntime( 2275): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2275): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2275): CheckJNI is ON
+D/dalvikvm( 2275): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2275): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2275): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2275): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2275): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2275): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2275): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2275): failed to load memtrack module: -2
+D/AndroidRuntime( 2275): Calling main entry com.android.commands.input.Input
+I/Input   ( 2275): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=36156, downTime=36156, deviceId=-1, source=0x101 }
+I/Input   ( 2275): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=36156, downTime=36156, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2275): Shutting down VM
+D/dalvikvm( 2275): GC_CONCURRENT freed 96K, 15% free 554K/652K, paused 0ms+0ms, total 1ms
+D/InitAlarmsService( 1939): Clearing and rescheduling alarms.
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2286): 
+D/AndroidRuntime( 2286): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2286): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2286): CheckJNI is ON
+D/dalvikvm( 2286): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2286): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2286): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2286): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2286): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2286): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2286): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2286): failed to load memtrack module: -2
+D/AndroidRuntime( 2286): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2286): Shutting down VM
+D/dalvikvm( 2286): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2286
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/InputMethodManagerService( 1556): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@9563f898 attribute=null, token = android.os.BinderProxy@950fef80
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2301): HostConnection::get() New Host Connection established 0xb8010130, tid 2301
+D/AndroidRuntime( 2306): 
+D/AndroidRuntime( 2306): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2306): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2306): CheckJNI is ON
+D/dalvikvm( 2306): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2306): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2306): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2306): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2306): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2306): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2306): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2306): failed to load memtrack module: -2
+D/AndroidRuntime( 2306): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2306): Shutting down VM
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2306
+D/dalvikvm( 2306): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 1ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2317): HostConnection::get() New Host Connection established 0xb8295130, tid 2317
+D/AndroidRuntime( 2322): 
+D/AndroidRuntime( 2322): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2322): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2322): CheckJNI is ON
+D/dalvikvm( 2322): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2322): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2322): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2322): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2322): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2322): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2322): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2322): failed to load memtrack module: -2
+D/AndroidRuntime( 2322): Calling main entry com.android.commands.input.Input
+I/Input   ( 2322): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=55073, downTime=55073, deviceId=-1, source=0x101 }
+I/Input   ( 2322): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=55073, downTime=55073, deviceId=-1, source=0x101 }
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/AndroidRuntime( 2322): Shutting down VM
+D/dalvikvm( 2322): GC_CONCURRENT freed 96K, 15% free 554K/652K, paused 0ms+0ms, total 0ms
+W/InputEventReceiver( 2240): Attempted to finish an input event but the input event receiver has already been disposed.
+W/InputMethodManagerService( 1556): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@9535e490 attribute=null, token = android.os.BinderProxy@950fef80
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2333): 
+D/AndroidRuntime( 2333): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2333): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2333): CheckJNI is ON
+D/dalvikvm( 2333): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2333): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2333): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2333): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2333): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2333): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2333): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2333): failed to load memtrack module: -2
+D/AndroidRuntime( 2333): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2333): Shutting down VM
+D/dalvikvm( 2333): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 1ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2333
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2344): HostConnection::get() New Host Connection established 0xb807a130, tid 2344
+D/AndroidRuntime( 2349): 
+D/AndroidRuntime( 2349): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2349): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2349): CheckJNI is ON
+D/dalvikvm( 2349): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2349): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2349): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2349): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2349): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2349): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2349): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2349): failed to load memtrack module: -2
+D/AndroidRuntime( 2349): Calling main entry com.android.commands.input.Input
+I/Input   ( 2349): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=63656, downTime=63656, deviceId=-1, source=0x101 }
+I/Input   ( 2349): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=63656, downTime=63656, deviceId=-1, source=0x101 }
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/AndroidRuntime( 2349): Shutting down VM
+D/dalvikvm( 2349): GC_CONCURRENT freed 96K, 15% free 554K/652K, paused 0ms+0ms, total 0ms
+W/InputEventReceiver( 2240): Attempted to finish an input event but the input event receiver has already been disposed.
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/InputMethodManagerService( 1556): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@9523cb90 attribute=null, token = android.os.BinderProxy@950fef80
+I/MediaFocusControl( 1556):  AudioFocus  abandonAudioFocus() from android.media.AudioManager@94f5a5a0com.android.music.MediaPlaybackService$3@94f594a0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/ConnectivityService( 1556): Sampling interval elapsed, updating statistics ..
+D/ConnectivityService( 1556): Done.
+D/ConnectivityService( 1556): Setting timer for 720seconds
+D/AndroidRuntime( 2360): 
+D/AndroidRuntime( 2360): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2360): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2360): CheckJNI is ON
+D/dalvikvm( 2360): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2360): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2360): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2360): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2360): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2360): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2360): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2360): failed to load memtrack module: -2
+D/AndroidRuntime( 2360): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2360): Shutting down VM
+D/dalvikvm( 2360): GC_CONCURRENT freed 94K, 15% free 576K/672K, paused 0ms+0ms, total 1ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2360
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1501K, 13% free 11544K/13124K, paused 2ms, total 2ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2371): HostConnection::get() New Host Connection established 0xb967d130, tid 2371
+D/AndroidRuntime( 2376): 
+D/AndroidRuntime( 2376): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2376): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2376): CheckJNI is ON
+D/dalvikvm( 2376): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2376): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2376): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2376): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2376): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2376): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2376): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2376): failed to load memtrack module: -2
+D/AndroidRuntime( 2376): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2376): Shutting down VM
+D/dalvikvm( 2376): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2376
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2387): HostConnection::get() New Host Connection established 0xb913b130, tid 2387
+D/AndroidRuntime( 2392): 
+D/AndroidRuntime( 2392): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2392): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2392): CheckJNI is ON
+D/dalvikvm( 2392): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2392): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2392): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2392): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2392): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2392): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2392): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2392): failed to load memtrack module: -2
+D/AndroidRuntime( 2392): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2392): Shutting down VM
+D/dalvikvm( 2392): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2392
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 1556): GC_CONCURRENT freed 768K, 50% free 5905K/11728K, paused 0ms+0ms, total 5ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2403): HostConnection::get() New Host Connection established 0xb7ef4130, tid 2403
+D/AndroidRuntime( 2408): 
+D/AndroidRuntime( 2408): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2408): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2408): CheckJNI is ON
+D/dalvikvm( 2408): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2408): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2408): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2408): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2408): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2408): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2408): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2408): failed to load memtrack module: -2
+D/AndroidRuntime( 2408): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2408): Shutting down VM
+D/dalvikvm( 2408): GC_CONCURRENT freed 94K, 15% free 576K/672K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2408
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_CONCURRENT freed 1225K, 10% free 12242K/13548K, paused 2ms+1ms, total 5ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2419): HostConnection::get() New Host Connection established 0xb7b0d130, tid 2419
+D/AndroidRuntime( 2424): 
+D/AndroidRuntime( 2424): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2424): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2424): CheckJNI is ON
+D/dalvikvm( 2424): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2424): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2424): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2424): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2424): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2424): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2424): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2424): failed to load memtrack module: -2
+D/AndroidRuntime( 2424): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2424): Shutting down VM
+D/dalvikvm( 2424): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2424
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2435): HostConnection::get() New Host Connection established 0xb962e130, tid 2435
+D/AndroidRuntime( 2440): 
+D/AndroidRuntime( 2440): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2440): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2440): CheckJNI is ON
+D/dalvikvm( 2440): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2440): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2440): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2440): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2440): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2440): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2440): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2440): failed to load memtrack module: -2
+D/AndroidRuntime( 2440): Calling main entry com.android.commands.input.Input
+I/Input   ( 2440): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=97544, downTime=97544, deviceId=-1, source=0x101 }
+I/Input   ( 2440): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=97544, downTime=97544, deviceId=-1, source=0x101 }
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/AndroidRuntime( 2440): Shutting down VM
+W/InputEventReceiver( 2240): Attempted to finish an input event but the input event receiver has already been disposed.
+D/dalvikvm( 2440): GC_CONCURRENT freed 96K, 15% free 554K/652K, paused 0ms+0ms, total 0ms
+W/InputMethodManagerService( 1556): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@95599d88 attribute=null, token = android.os.BinderProxy@950fef80
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2451): 
+D/AndroidRuntime( 2451): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2451): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2451): CheckJNI is ON
+D/dalvikvm( 2451): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2451): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2451): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2451): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2451): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2451): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2451): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2451): failed to load memtrack module: -2
+D/AndroidRuntime( 2451): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2451): Shutting down VM
+D/dalvikvm( 2451): GC_CONCURRENT freed 94K, 15% free 576K/672K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2451
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2462): HostConnection::get() New Host Connection established 0xb8581130, tid 2462
+D/AndroidRuntime( 2467): 
+D/AndroidRuntime( 2467): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2467): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2467): CheckJNI is ON
+D/dalvikvm( 2467): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2467): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2467): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2467): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2467): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2467): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2467): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2467): failed to load memtrack module: -2
+D/AndroidRuntime( 2467): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2467
+D/AndroidRuntime( 2467): Shutting down VM
+D/dalvikvm( 2467): GC_CONCURRENT freed 94K, 15% free 576K/672K, paused 1ms+0ms, total 1ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2478): 
+D/AndroidRuntime( 2478): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2478): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2478): CheckJNI is ON
+D/dalvikvm( 2478): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2478): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2478): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2478): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2478): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2478): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2478): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2478): failed to load memtrack module: -2
+D/AndroidRuntime( 2478): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2478): Shutting down VM
+D/dalvikvm( 2478): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2478
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2489): HostConnection::get() New Host Connection established 0xb89ca130, tid 2489
+D/AndroidRuntime( 2494): 
+D/AndroidRuntime( 2494): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2494): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2494): CheckJNI is ON
+D/dalvikvm( 2494): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2494): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2494): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2494): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2494): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2494): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2494): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2494): failed to load memtrack module: -2
+D/AndroidRuntime( 2494): Calling main entry com.android.commands.input.Input
+I/Input   ( 2494): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=116750, downTime=116750, deviceId=-1, source=0x101 }
+I/Input   ( 2494): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=116750, downTime=116750, deviceId=-1, source=0x101 }
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/AndroidRuntime( 2494): Shutting down VM
+D/dalvikvm( 2494): GC_CONCURRENT freed 96K, 15% free 554K/652K, paused 0ms+0ms, total 1ms
+W/InputEventReceiver( 2240): Attempted to finish an input event but the input event receiver has already been disposed.
+W/InputMethodManagerService( 1556): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@9522bc50 attribute=null, token = android.os.BinderProxy@950fef80
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2505): 
+D/AndroidRuntime( 2505): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2505): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2505): CheckJNI is ON
+D/dalvikvm( 2505): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2505): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2505): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2505): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2505): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2505): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2505): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2505): failed to load memtrack module: -2
+D/AndroidRuntime( 2505): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2505): Shutting down VM
+D/dalvikvm( 2505): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2505
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 212992
+D/        ( 1556): HostConnection::get() New Host Connection established 0xb7a10d00, tid 1789
+I/ActivityManager( 1556): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=android/com.android.internal.app.ResolverActivity} from pid 2240
+D/dalvikvm( 1556): GC_CONCURRENT freed 526K, 48% free 6181K/11728K, paused 2ms+0ms, total 9ms
+I/ActivityManager( 1556): Start proc system:ui for activity android/com.android.internal.app.ResolverActivity: pid=2516 uid=1000 gids={41000, 1028, 1015, 3002, 3001, 3003}
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 45056
+D/dalvikvm( 2516): GC_CONCURRENT freed 87K, 6% free 3019K/3188K, paused 1ms+1ms, total 7ms
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 643072
+D/        ( 2516): HostConnection::get() New Host Connection established 0xb7ab4050, tid 2516
+I/ActivityManager( 1556): Displayed android/com.android.internal.app.ResolverActivity: +75ms
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 643072
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 643072
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2533): HostConnection::get() New Host Connection established 0xb87bb130, tid 2533
+D/AndroidRuntime( 2538): 
+D/AndroidRuntime( 2538): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2538): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2538): CheckJNI is ON
+D/dalvikvm( 2538): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2538): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2538): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2538): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2538): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2538): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2538): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2538): failed to load memtrack module: -2
+D/AndroidRuntime( 2538): Calling main entry com.android.commands.input.Input
+I/Input   ( 2538): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=124366, downTime=124366, deviceId=-1, source=0x101 }
+I/Input   ( 2538): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=124366, downTime=124366, deviceId=-1, source=0x101 }
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 212992
+D/        ( 1556): HostConnection::get() New Host Connection established 0xb7a0ff40, tid 1661
+D/AndroidRuntime( 2538): Shutting down VM
+D/dalvikvm( 2538): GC_CONCURRENT freed 96K, 15% free 554K/652K, paused 0ms+0ms, total 0ms
+W/InputMethodManagerService( 1556): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@955df858 attribute=null, token = android.os.BinderProxy@950fef80
+W/ActivityManager( 1556): Duplicate finish request for ActivityRecord{955acfa8 u0 android/com.android.internal.app.ResolverActivity t5 f}
+W/WindowManager( 1556): Rebuild removed 3 windows but added 2
+W/WindowManager( 1556): java.lang.RuntimeException: here
+W/WindowManager( 1556): 	at com.android.server.wm.WindowManagerService.rebuildAppWindowListLocked(WindowManagerService.java:8011)
+W/WindowManager( 1556): 	at com.android.server.wm.WindowManagerService.rebuildAppWindowListLocked(WindowManagerService.java:7947)
+W/WindowManager( 1556): 	at com.android.server.wm.WindowManagerService.handleAnimatingStoppedAndTransitionLocked(WindowManagerService.java:8691)
+W/WindowManager( 1556): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:9205)
+W/WindowManager( 1556): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLockedLoop(WindowManagerService.java:8163)
+W/WindowManager( 1556): 	at com.android.server.wm.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:8105)
+W/WindowManager( 1556): 	at com.android.server.wm.WindowManagerService.access$300(WindowManagerService.java:157)
+W/WindowManager( 1556): 	at com.android.server.wm.WindowManagerService$H.handleMessage(WindowManagerService.java:7139)
+W/WindowManager( 1556): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+W/WindowManager( 1556): 	at android.os.Looper.loop(Looper.java:136)
+W/WindowManager( 1556): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+W/WindowManager( 1556): This window was lost: Window{952a8ac0 u0 android/com.android.internal.app.ResolverActivity}
+W/WindowManager( 1556): mDisplayId=0 mSession=Session{953894f0 2516:1000} mClient=android.os.BinderProxy@95260ca8
+W/WindowManager( 1556): mOwnerUid=1000 mShowToOwnerOnly=true package=android appop=NONE
+W/WindowManager( 1556): mAttrs=WM.LayoutParams{(0,0)(wrapxwrap) sim=#120 ty=1 fl=#820002 pfl=0x8 fmt=-2 wanim=0x10302a2}
+W/WindowManager( 1556): Requested w=580 h=276 mLayoutSeq=106
+W/WindowManager( 1556): mBaseLayer=21000 mSubLayer=0 mAnimLayer=21015+0=21015 mLastLayer=21015
+W/WindowManager( 1556): mToken=AppWindowToken{95377c68 token=Token{955ad108 ActivityRecord{955acfa8 u0 android/com.android.internal.app.ResolverActivity t5}}}
+W/WindowManager( 1556): mRootToken=AppWindowToken{95377c68 token=Token{955ad108 ActivityRecord{955acfa8 u0 android/com.android.internal.app.ResolverActivity t5}}}
+W/WindowManager( 1556): mAppToken=AppWindowToken{95377c68 token=Token{955ad108 ActivityRecord{955acfa8 u0 android/com.android.internal.app.ResolverActivity t5}}}
+W/WindowManager( 1556): mViewVisibility=0x8 mHaveFrame=true mObscured=false
+W/WindowManager( 1556): mSeq=0 mSystemUiVisibility=0x0
+W/WindowManager( 1556): mGivenContentInsets=[0,0][0,0] mGivenVisibleInsets=[0,0][0,0]
+W/WindowManager( 1556): mConfiguration={1.0 310mcc260mnc en_US ldltr sw600dp w1024dp h575dp 160dpi lrg long land finger -keyb/v/h tball/v s.7}
+W/WindowManager( 1556): mHasSurface=true mShownFrame=[525.38275,183.38156][1105.3828,459.38156] isReadyForDisplay()=false
+W/WindowManager( 1556): mFrame=[222,162][802,438] last=[222,162][802,438]
+W/WindowManager( 1556): mSystemDecorRect=[0,0][580,276] last=[0,0][580,276]
+W/WindowManager( 1556): Frames: containing=[0,0][1024,600] parent=[0,0][1024,600]
+W/WindowManager( 1556):     display=[0,0][1024,600] overscan=[0,0][1024,600]
+W/WindowManager( 1556):     content=[222,162][802,438] visible=[222,162][802,438]
+W/WindowManager( 1556):     decor=[0,25][1024,600]
+W/WindowManager( 1556): Cur insets: overscan=[0,0][0,0] content=[0,0][0,0] visible=[0,0][0,0]
+W/WindowManager( 1556): Lst insets: overscan=[0,0][0,0] content=[0,0][0,0] visible=[0,0][0,0]
+W/WindowManager( 1556): WindowStateAnimator{957b7db8 android/com.android.internal.app.ResolverActivity}:
+W/WindowManager( 1556):   mSurface=Surface(name=android/com.android.internal.app.ResolverActivity)
+W/WindowManager( 1556):   mDrawState=HAS_DRAWN mLastHidden=true
+W/WindowManager( 1556):   Surface: shown=false layer=21015 alpha=0.0 rect=(525.38275,183.38156) 580.0 x 276.0
+W/WindowManager( 1556):   mShownAlpha=0.69012225 mAlpha=1.0 mLastAlpha=0.0
+W/WindowManager( 1556):   mGlobalScale=1.0 mDsDx=0.8450611 mDtDx=0.0 mDsDy=0.0 mDtDy=0.8450611
+W/WindowManager( 1556): mExiting=false mRemoveOnExit=false mDestroying=true mRemoved=false
+W/WindowManager( 1556): Current app token list:
+V/WindowManager( 1556):   Display 0
+V/WindowManager( 1556):   #1: Token{952e2508 ActivityRecord{95143368 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main t4}}
+V/WindowManager( 1556):   #0: Token{95355d28 ActivityRecord{95355bc8 u0 com.android.launcher/com.android.launcher2.Launcher t3}}
+W/WindowManager( 1556): Final window list:
+V/WindowManager( 1556):   #0: Window{9523f198 u0 StatusBar}
+V/WindowManager( 1556):   #1: Window{955b0900 u0 KeyguardScrim}
+V/WindowManager( 1556):   #2: Window{951f9918 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+V/WindowManager( 1556):   #3: Window{952a83d0 u0 com.android.launcher/com.android.launcher2.Launcher}
+V/WindowManager( 1556):   #4: Window{955fd060 u0 com.android.systemui.ImageWallpaper}
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/AndroidRuntime( 2549): 
+D/AndroidRuntime( 2549): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2549): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2549): CheckJNI is ON
+D/dalvikvm( 2549): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2549): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2549): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2549): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2549): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2549): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2549): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2549): failed to load memtrack module: -2
+D/AndroidRuntime( 2549): Calling main entry com.android.commands.input.Input
+I/Input   ( 2549): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=126645, downTime=126645, deviceId=-1, source=0x101 }
+I/Input   ( 2549): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=126645, downTime=126645, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2549): Shutting down VM
+D/dalvikvm( 2549): GC_CONCURRENT freed 96K, 15% free 554K/652K, paused 0ms+0ms, total 0ms
+W/InputEventReceiver( 2240): Attempted to finish an input event but the input event receiver has already been disposed.
+W/InputMethodManagerService( 1556): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@9559ff38 attribute=null, token = android.os.BinderProxy@950fef80
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2561): 
+D/AndroidRuntime( 2561): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2561): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2561): CheckJNI is ON
+D/dalvikvm( 2561): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2561): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2561): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2561): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2561): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2561): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2561): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2561): failed to load memtrack module: -2
+D/AndroidRuntime( 2561): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2561): Shutting down VM
+D/dalvikvm( 2561): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 1ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2561
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 1556): GC_CONCURRENT freed 746K, 48% free 6193K/11728K, paused 2ms+0ms, total 7ms
+I/PackageManager( 1556):   Action: "android.intent.action.SENDTO"
+I/PackageManager( 1556):   Category: "android.intent.category.DEFAULT"
+I/PackageManager( 1556):   Scheme: "sms"
+I/Launcher( 1856): Deferring update until onResume
+I/PackageManager( 1556): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+I/InputReader( 1556): Reconfiguring input devices.  changes=0x00000010
+I/Launcher( 1856): Deferring update until onResume
+I/PackageManager( 1556):   Action: "android.intent.action.SENDTO"
+I/PackageManager( 1556):   Category: "android.intent.category.DEFAULT"
+I/PackageManager( 1556):   Scheme: "smsto"
+I/PackageManager( 1556):   Action: "android.intent.action.SENDTO"
+I/PackageManager( 1556):   Category: "android.intent.category.DEFAULT"
+I/PackageManager( 1556):   Scheme: "mms"
+I/PackageManager( 1556): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+I/PackageManager( 1556): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+I/PackageManager( 1556):   Action: "android.intent.action.SENDTO"
+I/PackageManager( 1556):   Category: "android.intent.category.DEFAULT"
+I/PackageManager( 1556):   Scheme: "mmsto"
+D/dalvikvm( 1737): GC_CONCURRENT freed 414K, 15% free 3314K/3876K, paused 0ms+0ms, total 2ms
+I/PackageManager( 1556):   Action: "android.intent.action.SENDTO"
+I/PackageManager( 1556):   Category: "android.intent.category.DEFAULT"
+I/PackageManager( 1556):   Scheme: "sms"
+I/PackageManager( 1556):   Action: "android.intent.action.SENDTO"
+I/PackageManager( 1556):   Category: "android.intent.category.DEFAULT"
+I/PackageManager( 1556):   Scheme: "smsto"
+I/PackageManager( 1556):   Action: "android.intent.action.SENDTO"
+I/PackageManager( 1556):   Category: "android.intent.category.DEFAULT"
+I/PackageManager( 1556):   Scheme: "mms"
+I/PackageManager( 1556): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+I/PackageManager( 1556): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+I/PackageManager( 1556): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+I/PackageManager( 1556): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+I/PackageManager( 1556):   Action: "android.intent.action.SENDTO"
+I/PackageManager( 1556):   Category: "android.intent.category.DEFAULT"
+I/PackageManager( 1556):   Scheme: "mmsto"
+D/dalvikvm( 1556): GC_CONCURRENT freed 818K, 47% free 6236K/11728K, paused 2ms+0ms, total 6ms
+I/PackageManager( 1556): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2572): HostConnection::get() New Host Connection established 0xb8f8b130, tid 2572
+D/AndroidRuntime( 2577): 
+D/AndroidRuntime( 2577): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2577): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2577): CheckJNI is ON
+D/dalvikvm( 2577): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2577): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2577): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2577): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2577): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2577): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2577): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2577): failed to load memtrack module: -2
+D/AndroidRuntime( 2577): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2577): Shutting down VM
+D/dalvikvm( 2577): GC_CONCURRENT freed 94K, 15% free 576K/672K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2577
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_CONCURRENT freed 1798K, 14% free 12367K/14244K, paused 0ms+1ms, total 4ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2588): HostConnection::get() New Host Connection established 0xb84c5130, tid 2588
+D/AndroidRuntime( 2593): 
+D/AndroidRuntime( 2593): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2593): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2593): CheckJNI is ON
+D/dalvikvm( 2593): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2593): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2593): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2593): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2593): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2593): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2593): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2593): failed to load memtrack module: -2
+D/AndroidRuntime( 2593): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2593): Shutting down VM
+D/dalvikvm( 2593): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2593
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2604): HostConnection::get() New Host Connection established 0xb9289130, tid 2604
+D/AndroidRuntime( 2609): 
+D/AndroidRuntime( 2609): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2609): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2609): CheckJNI is ON
+D/dalvikvm( 2609): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2609): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2609): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2609): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2609): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2609): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2609): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2609): failed to load memtrack module: -2
+D/AndroidRuntime( 2609): Calling main entry com.android.commands.input.Input
+I/Input   ( 2609): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=147930, downTime=147930, deviceId=-1, source=0x101 }
+I/Input   ( 2609): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=147930, downTime=147930, deviceId=-1, source=0x101 }
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/AndroidRuntime( 2609): Shutting down VM
+D/dalvikvm( 2609): GC_CONCURRENT freed 96K, 15% free 554K/652K, paused 0ms+0ms, total 0ms
+W/InputEventReceiver( 2240): Attempted to finish an input event but the input event receiver has already been disposed.
+W/InputMethodManagerService( 1556): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@95141cb8 attribute=null, token = android.os.BinderProxy@950fef80
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2620): 
+D/AndroidRuntime( 2620): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2620): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2620): CheckJNI is ON
+D/dalvikvm( 2620): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2620): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2620): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2620): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2620): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2620): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2620): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2620): failed to load memtrack module: -2
+D/AndroidRuntime( 2620): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2620): Shutting down VM
+D/dalvikvm( 2620): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 1ms+0ms, total 1ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2620
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 7434K, 62% free 5440K/14244K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 4K, 58% free 6040K/14244K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 287K, 53% free 6805K/14244K, paused 0ms+0ms, total 2ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 4ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 824K, 49% free 7326K/14244K, paused 0ms+0ms, total 2ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 584K, 44% free 8093K/14244K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 574K, 37% free 9098K/14244K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1082K, 31% free 9883K/14244K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1102K, 26% free 10635K/14244K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 535K, 22% free 11179K/14244K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 33K, 19% free 11659K/14244K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 11.710MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 20% free 11658K/14504K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 275K, 20% free 11675K/14504K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 3K, 18% free 11930K/14504K, paused 4ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 11.975MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 18% free 12186K/14764K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 259K, 20% free 11947K/14764K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 18% free 12186K/14764K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 12.226MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 18% free 12442K/15024K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 18% free 12427K/15024K, paused 4ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 12.460MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 18% free 12683K/15284K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 260K, 19% free 12443K/15284K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 17K, 18% free 12683K/15284K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 12.710MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 19% free 12682K/15544K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 274K, 19% free 12682K/15544K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 307K, 19% free 12690K/15544K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 35K, 17% free 12947K/15544K, paused 1ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 12.969MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 17% free 13203K/15804K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 4K, 17% free 13199K/15804K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 13.214MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 0K, 17% free 13455K/16064K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 4K, 17% free 13451K/16064K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 13.461MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 18% free 13451K/16324K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 311K, 18% free 13455K/16324K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 293K, 18% free 13455K/16324K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 5K, 17% free 13705K/16324K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 13.709MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 0K, 16% free 13961K/16584K, paused 2ms, total 2ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2637): HostConnection::get() New Host Connection established 0xb8d72130, tid 2637
+D/AndroidRuntime( 2642): 
+D/AndroidRuntime( 2642): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2642): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2642): CheckJNI is ON
+D/dalvikvm( 2642): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2642): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2642): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2642): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2642): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2642): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2642): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2642): failed to load memtrack module: -2
+D/AndroidRuntime( 2642): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2642): Shutting down VM
+D/dalvikvm( 2642): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 1ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2642
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 8999K, 63% free 5352K/14236K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 5K, 59% free 5941K/14236K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 42K, 53% free 6780K/14236K, paused 4ms, total 4ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 557K, 47% free 7559K/14236K, paused 1ms+2ms, total 6ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 5ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 815K, 42% free 8338K/14236K, paused 3ms+0ms, total 7ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 3ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1098K, 37% free 9107K/14236K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1098K, 31% free 9875K/14236K, paused 4ms, total 4ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 2K, 26% free 10643K/14236K, paused 2ms+0ms, total 4ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 837K, 24% free 10867K/14236K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 532K, 22% free 11140K/14236K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 275K, 20% free 11395K/14236K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 17K, 19% free 11634K/14236K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 11.686MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 18% free 11890K/14496K, paused 2ms, total 2ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2656): HostConnection::get() New Host Connection established 0xb8f78130, tid 2656
+D/AndroidRuntime( 2661): 
+D/AndroidRuntime( 2661): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2661): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2661): CheckJNI is ON
+D/dalvikvm( 2661): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2661): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2661): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2661): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2661): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2661): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2661): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2661): failed to load memtrack module: -2
+D/AndroidRuntime( 2661): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2661
+D/AndroidRuntime( 2661): Shutting down VM
+D/dalvikvm( 2661): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 1ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 6913K, 64% free 5350K/14492K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 7K, 59% free 5966K/14492K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 39K, 53% free 6839K/14492K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 563K, 48% free 7613K/14492K, paused 1ms+1ms, total 3ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 2ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 827K, 41% free 8653K/14492K, paused 1ms+0ms, total 3ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1355K, 37% free 9165K/14492K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 825K, 30% free 10188K/14492K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 840K, 23% free 11197K/14492K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 291K, 20% free 11693K/14492K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 20% free 11709K/14492K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 273K, 20% free 11691K/14492K, paused 1ms, total 1ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2675): 
+D/AndroidRuntime( 2675): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2675): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2675): CheckJNI is ON
+D/dalvikvm( 2675): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2675): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2675): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2675): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2675): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2675): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2675): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2675): failed to load memtrack module: -2
+D/AndroidRuntime( 2675): Calling main entry com.android.commands.wm.Wm
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+I/WindowManager( 1556): Using new display size: 1920x720
+D/AndroidRuntime( 2675): Shutting down VM
+D/dalvikvm( 2675): GC_CONCURRENT freed 91K, 15% free 551K/644K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): Config changes=d00 {1.0 310mcc260mnc en_US ldltr sw720dp w1920dp h695dp 160dpi xlrg long land finger -keyb/v/h tball/v s.8}
+D/PhoneStatusBar( 1634): mSettingsPanelGravity = 8388661
+I/InputReader( 1556): Reconfiguring input devices.  changes=0x00000004
+I/InputReader( 1556): Device reconfigured: id=0, name='qwerty2', size 1920x1125, orientation 0, mode 1, display id 0
+I/InputReader( 1556): Reconfiguring input devices.  changes=0x00000004
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 1634): eglMakeCurrent: 0xb7ae1a90: ver 3 0
+I/WindowManager( 1556): Screen frozen for +70ms due to Window{951f9918 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 6902K, 64% free 5347K/14492K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 7.375MB for 2179692-byte allocation
+D/dalvikvm( 2240): GC_CONCURRENT freed 26K, 49% free 7449K/14492K, paused 2ms+0ms, total 5ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 5K, 49% free 7444K/14492K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 9.423MB for 2179692-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 43% free 9572K/16624K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 849K, 35% free 10873K/16624K, paused 0ms+2ms, total 13ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1088K, 30% free 11657K/16624K, paused 1ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 841K, 24% free 12665K/16624K, paused 4ms, total 4ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 549K, 21% free 13177K/16624K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 532K, 21% free 13193K/16624K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 33K, 18% free 13672K/16624K, paused 5ms, total 5ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 13.676MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 18% free 13928K/16884K, paused 2ms, total 4ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 18% free 13928K/16884K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 13.927MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 0K, 18% free 14185K/17144K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 19% free 13945K/17144K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 273K, 19% free 13945K/17144K, paused 5ms, total 5ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1K, 18% free 14201K/17144K, paused 2ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 14.193MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 19% free 14200K/17404K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 17K, 17% free 14456K/17404K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 14.443MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 17% free 14712K/17664K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 17% free 14696K/17664K, paused 3ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 14.677MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 17% free 14952K/17924K, paused 4ms, total 4ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 18% free 14713K/17924K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 17% free 14953K/17924K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 14.927MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 17% free 15209K/18184K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 260K, 18% free 14969K/18184K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 17% free 15209K/18184K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 15.177MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 17% free 15465K/18444K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 259K, 18% free 15225K/18444K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 17% free 15465K/18444K, paused 4ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 15.427MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 16% free 15721K/18704K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 516K, 19% free 15241K/18704K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 17K, 16% free 15737K/18704K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 15.693MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 16% free 15993K/18964K, paused 5ms, total 5ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 16% free 15977K/18964K, paused 4ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 15.927MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 16% free 16233K/19224K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 259K, 17% free 15993K/19224K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 17% free 16009K/19224K, paused 5ms, total 5ms
+D/AndroidRuntime( 2690): 
+D/AndroidRuntime( 2690): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2690): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 16% free 16249K/19224K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 16.194MB for 262156-byte allocation
+D/AndroidRuntime( 2690): CheckJNI is ON
+D/dalvikvm( 2690): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2690): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2690): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2690): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2690): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 16% free 16505K/19484K, paused 6ms, total 6ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 16% free 16489K/19484K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 16.427MB for 262156-byte allocation
+D/dalvikvm( 2690): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 16% free 16745K/19744K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 17% free 16505K/19744K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 16% free 16745K/19744K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 16.677MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 16% free 17001K/20004K, paused 1ms, total 1ms
+E/memtrack( 2690): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2690): failed to load memtrack module: -2
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 263K, 17% free 16762K/20004K, paused 2ms, total 5ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 273K, 17% free 16745K/20004K, paused 2ms, total 2ms
+D/AndroidRuntime( 2690): Calling main entry com.android.commands.wm.Wm
+I/WindowManager( 1556): Using new display density: 240
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+I/ActivityManager( 1556): Config changes=1d00 {1.0 310mcc260mnc en_US ldltr sw480dp w1280dp h463dp 240dpi lrg long land finger -keyb/v/h tball/v s.9}
+I/ActivityThread( 1961): Switching default density from 160 to 240
+I/ActivityThread( 1556): Switching default density from 160 to 240
+I/ActivityThread( 2182): Switching default density from 160 to 240
+I/ActivityThread( 1939): Switching default density from 160 to 240
+I/ActivityThread( 2198): Switching default density from 160 to 240
+I/ActivityThread( 1750): Switching default density from 160 to 240
+I/ActivityThread( 2050): Switching default density from 160 to 240
+I/ActivityThread( 1839): Switching default density from 160 to 240
+I/ActivityThread( 1790): Switching default density from 160 to 240
+I/ActivityThread( 1634): Switching default density from 160 to 240
+I/ActivityThread( 2516): Switching default density from 160 to 240
+I/ActivityThread( 1737): Switching default density from 160 to 240
+I/ActivityThread( 1976): Switching default density from 160 to 240
+I/ActivityThread( 1876): Switching default density from 160 to 240
+I/ActivityThread( 1764): Switching default density from 160 to 240
+I/ActivityThread( 1718): Switching default density from 160 to 240
+I/ActivityThread( 1891): Switching default density from 160 to 240
+I/ActivityThread( 1915): Switching default density from 160 to 240
+I/ActivityThread( 2020): Switching default density from 160 to 240
+I/ActivityThread( 1856): Switching default density from 160 to 240
+I/ActivityThread( 2240): Switching default density from 160 to 240
+D/AndroidRuntime( 2690): Shutting down VM
+D/dalvikvm( 2690): GC_CONCURRENT freed 91K, 15% free 551K/644K, paused 0ms+0ms, total 0ms
+D/PhoneStatusBar( 1634): mSettingsPanelGravity = 55
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 4792K, 33% free 13552K/20004K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 142K, 33% free 13558K/20004K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 15.394MB for 2179692-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 22% free 15687K/20004K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 5K, 22% free 15681K/20004K, paused 1ms+1ms, total 5ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 17.467MB for 2179692-byte allocation
+D/dalvikvm( 2240): GC_CONCURRENT freed 5K, 11% free 17805K/20004K, paused 2ms+0ms, total 3ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 1ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 26K, 10% free 18072K/20004K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 17.973MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 10% free 18327K/20264K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 259K, 11% free 18088K/20264K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 10% free 18360K/20264K, paused 4ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 18.254MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 0K, 10% free 18616K/20524K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 10% free 18600K/20524K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 18.489MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 10% free 18856K/20784K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 274K, 11% free 18600K/20784K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 10% free 18857K/20784K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 18.740MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 10% free 19113K/21044K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 273K, 11% free 18841K/21044K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1K, 10% free 19113K/21044K, paused 2ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 18.990MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 11% free 19112K/21304K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 22K, 10% free 19370K/21304K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 19.241MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 257K, 11% free 19368K/21564K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 18K, 9% free 19625K/21564K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 19.490MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 11% free 19624K/21824K, paused 2ms, total 2ms
+I/WindowManager( 1556): Screen frozen for +167ms due to Window{9534f770 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 18K, 9% free 19881K/21824K, paused 3ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 19.740MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 9% free 20136K/22084K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 9% free 20121K/22084K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 19.974MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 9% free 20377K/22344K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 515K, 11% free 19897K/22344K, paused 8ms, total 8ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 9% free 20393K/22344K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 20.240MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 9% free 20649K/22604K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 17K, 9% free 20633K/22604K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 20.474MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 10% free 20632K/22864K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 275K, 10% free 20649K/22864K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1K, 9% free 20905K/22864K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 20.741MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 10% free 20905K/23124K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 17K, 9% free 21162K/23124K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 20.991MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 10% free 21161K/23384K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 279K, 10% free 21178K/23384K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 9% free 21433K/23384K, paused 3ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 21.255MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 9% free 21689K/23644K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 9% free 21673K/23644K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 21.490MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 9% free 21929K/23904K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 9% free 21914K/23904K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 21.725MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 10% free 21913K/24164K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 17K, 9% free 22170K/24164K, paused 5ms, total 5ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 21.975MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 9% free 22426K/24424K, paused 4ms, total 4ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 10% free 22186K/24424K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 17K, 9% free 22426K/24424K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 22.225MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 9% free 22682K/24684K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 518K, 11% free 22203K/24684K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 9% free 22698K/24684K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 22.491MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 0K, 8% free 22954K/24944K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 18K, 9% free 22938K/24944K, paused 4ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 22.726MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 8% free 23194K/25204K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 9% free 22955K/25204K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 8% free 23195K/25204K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 22.976MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 8% free 23451K/25464K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 259K, 9% free 23211K/25464K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 257K, 9% free 23227K/25464K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 8% free 23466K/25464K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 23.242MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 8% free 23722K/25724K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 17K, 8% free 23707K/25724K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 23.476MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 8% free 23963K/25984K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 257K, 9% free 23723K/25984K, paused 7ms, total 7ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 9% free 23739K/25984K, paused 3ms, total 4ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 8% free 23979K/25984K, paused 4ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 23.742MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 8% free 24235K/26244K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 9% free 23995K/26244K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 8% free 24235K/26244K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 23.992MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 0K, 8% free 24491K/26504K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 8% free 24475K/26504K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 24.226MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 8% free 24731K/26764K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 9% free 24492K/26764K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 273K, 9% free 24475K/26764K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 9% free 24491K/26764K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 17K, 8% free 24731K/26764K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 24.476MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 0K, 8% free 24987K/27024K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1K, 8% free 25004K/27024K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 24.744MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 9% free 25004K/27284K, paused 3ms, total 3ms
+D/dalvikvm( 1556): GC_EXPLICIT freed 541K, 48% free 6202K/11728K, paused 1ms+0ms, total 5ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2708): 
+D/AndroidRuntime( 2708): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2708): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2708): CheckJNI is ON
+D/dalvikvm( 2708): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2708): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2708): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2708): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2708): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2708): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2708): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2708): failed to load memtrack module: -2
+D/AndroidRuntime( 2708): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2708): Shutting down VM
+D/dalvikvm( 2708): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2708
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2719): HostConnection::get() New Host Connection established 0xb87ad130, tid 2719
+D/AndroidRuntime( 2724): 
+D/AndroidRuntime( 2724): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2724): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2724): CheckJNI is ON
+D/dalvikvm( 2724): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2724): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2724): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2724): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2724): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2724): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2724): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2724): failed to load memtrack module: -2
+D/AndroidRuntime( 2724): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2724): Shutting down VM
+D/dalvikvm( 2724): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2724
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 679K, 8% free 25046K/27148K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 20K, 7% free 25290K/27148K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 11K, 7% free 25549K/27404K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 25.631MB for 635808-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 7% free 26170K/28028K, paused 3ms, total 3ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 1737): GC_CONCURRENT freed 456K, 17% free 3242K/3880K, paused 0ms+0ms, total 2ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2735): HostConnection::get() New Host Connection established 0xb8b00130, tid 2735
+D/AndroidRuntime( 2740): 
+D/AndroidRuntime( 2740): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2740): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2740): CheckJNI is ON
+D/dalvikvm( 2740): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2740): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2740): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2740): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2740): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2740): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2740): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2740): failed to load memtrack module: -2
+D/AndroidRuntime( 2740): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2740
+D/AndroidRuntime( 2740): Shutting down VM
+D/dalvikvm( 2740): GC_CONCURRENT freed 94K, 15% free 576K/672K, paused 0ms+1ms, total 1ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2751): 
+D/AndroidRuntime( 2751): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2751): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2751): CheckJNI is ON
+D/dalvikvm( 2751): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2751): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2751): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2751): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2751): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2751): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2751): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2751): failed to load memtrack module: -2
+D/AndroidRuntime( 2751): Calling main entry com.android.commands.wm.Wm
+I/WindowManager( 1556): Using new display size: 1024x600
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/AndroidRuntime( 2751): Shutting down VM
+D/dalvikvm( 2751): GC_CONCURRENT freed 91K, 15% free 551K/644K, paused 0ms+0ms, total 1ms
+D/PhoneStatusBar( 1634): mSettingsPanelGravity = 55
+I/ActivityManager( 1556): Config changes=d00 {1.0 310mcc260mnc en_US ldltr sw400dp w682dp h374dp 240dpi nrml long land finger -keyb/v/h tball/v s.10}
+I/InputReader( 1556): Reconfiguring input devices.  changes=0x00000004
+I/InputReader( 1556): Device reconfigured: id=0, name='qwerty2', size 1024x600, orientation 0, mode 1, display id 0
+I/InputReader( 1556): Reconfiguring input devices.  changes=0x00000004
+D/EGL_emulation( 1634): eglMakeCurrent: 0xb7ae1a90: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+I/WindowManager( 1556): Screen frozen for +55ms due to Window{9534f770 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 12551K, 50% free 14143K/28028K, paused 7ms, total 12ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 339K, 45% free 15614K/28028K, paused 6ms, total 6ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 592K, 40% free 16870K/28028K, paused 4ms, total 4ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1120K, 38% free 17616K/28028K, paused 10ms, total 10ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 860K, 34% free 18605K/28028K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1086K, 31% free 19390K/28028K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 841K, 28% free 20398K/28028K, paused 2ms, total 2ms
+D/AndroidRuntime( 2766): 
+D/AndroidRuntime( 2766): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2766): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2766): CheckJNI is ON
+D/dalvikvm( 2766): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2766): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2766): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2766): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2766): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2766): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2766): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2766): failed to load memtrack module: -2
+D/AndroidRuntime( 2766): Calling main entry com.android.commands.wm.Wm
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+I/WindowManager( 1556): Using new display density: 160
+I/ActivityManager( 1556): Config changes=1d00 {1.0 310mcc260mnc en_US ldltr sw600dp w1024dp h562dp 160dpi lrg long land finger -keyb/v/h tball/v s.11}
+I/ActivityThread( 2182): Switching default density from 240 to 160
+I/ActivityThread( 2198): Switching default density from 240 to 160
+I/ActivityThread( 2050): Switching default density from 240 to 160
+I/ActivityThread( 1839): Switching default density from 240 to 160
+I/ActivityThread( 1856): Switching default density from 240 to 160
+I/ActivityThread( 2240): Switching default density from 240 to 160
+D/AndroidRuntime( 2766): Shutting down VM
+D/dalvikvm( 2766): GC_CONCURRENT freed 91K, 15% free 551K/644K, paused 0ms+0ms, total 0ms
+D/PhoneStatusBar( 1634): mSettingsPanelGravity = 8388661
+I/ActivityThread( 1790): Switching default density from 240 to 160
+I/ActivityThread( 1634): Switching default density from 240 to 160
+I/ActivityThread( 2516): Switching default density from 240 to 160
+I/ActivityThread( 1961): Switching default density from 240 to 160
+I/ActivityThread( 1976): Switching default density from 240 to 160
+I/ActivityThread( 1939): Switching default density from 240 to 160
+I/ActivityThread( 1556): Switching default density from 240 to 160
+I/ActivityThread( 1750): Switching default density from 240 to 160
+I/ActivityThread( 1876): Switching default density from 240 to 160
+I/ActivityThread( 1764): Switching default density from 240 to 160
+I/ActivityThread( 1718): Switching default density from 240 to 160
+I/ActivityThread( 1891): Switching default density from 240 to 160
+I/ActivityThread( 1915): Switching default density from 240 to 160
+I/ActivityThread( 2020): Switching default density from 240 to 160
+I/ActivityThread( 1737): Switching default density from 240 to 160
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/dalvikvm( 2240): GC_CONCURRENT freed 2304K, 29% free 20093K/28028K, paused 4ms+0ms, total 7ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 161K, 23% free 21734K/28028K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1102K, 20% free 22515K/28028K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 825K, 16% free 23556K/28028K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1098K, 14% free 24324K/28028K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 828K, 11% free 25076K/28028K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 35K, 8% free 25828K/28028K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 25.547MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 9% free 25827K/28288K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 26K, 8% free 26084K/28288K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 25.798MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 257K, 9% free 26083K/28548K, paused 2ms, total 2ms
+I/WindowManager( 1556): Screen frozen for +127ms due to Window{9529b2f8 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 260K, 9% free 26115K/28548K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 8% free 26355K/28548K, paused 4ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 26.063MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 8% free 26611K/28808K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 258K, 9% free 26372K/28808K, paused 1ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 8% free 26611K/28808K, paused 4ms, total 4ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 26.313MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 8% free 26867K/29068K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 16K, 8% free 26851K/29068K, paused 2ms, total 2ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 26.547MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 8% free 27107K/29328K, paused 1ms, total 1ms
+D/dalvikvm( 1556): GC_EXPLICIT freed 312K, 48% free 6176K/11728K, paused 1ms+0ms, total 5ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2786): 
+D/AndroidRuntime( 2786): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2786): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2786): CheckJNI is ON
+D/dalvikvm( 2786): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2786): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2786): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2786): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2786): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2786): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2786): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2786): failed to load memtrack module: -2
+D/AndroidRuntime( 2786): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2786): Shutting down VM
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2786
+D/dalvikvm( 2786): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 1859K, 7% free 27211K/29184K, paused 2ms+1ms, total 6ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 558K, 7% free 27440K/29312K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_CONCURRENT freed 1618K, 6% free 27866K/29568K, paused 0ms+0ms, total 4ms
+D/dalvikvm( 2240): WAIT_FOR_CONCURRENT_GC blocked 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1647K, 8% free 27866K/29988K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1644K, 8% free 27876K/29988K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1655K, 8% free 27888K/30000K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1682K, 8% free 27910K/30012K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1718K, 8% free 27925K/30036K, paused 3ms, total 3ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2797): 
+D/AndroidRuntime( 2797): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2797): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2797): CheckJNI is ON
+D/dalvikvm( 2797): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2797): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2797): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2797): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2797): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2797): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2797): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2797): failed to load memtrack module: -2
+D/AndroidRuntime( 2797): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2797): Shutting down VM
+D/dalvikvm( 2797): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+1ms, total 1ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2797
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 7159K, 29% free 21496K/30036K, paused 4ms, total 4ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 312K, 24% free 22992K/30036K, paused 4ms, total 4ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1966K, 24% free 22895K/30036K, paused 9ms, total 9ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 887K, 21% free 23858K/30036K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 840K, 18% free 24866K/30036K, paused 1ms, total 1ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1082K, 15% free 25651K/30036K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 827K, 13% free 26162K/30036K, paused 5ms, total 5ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 276K, 12% free 26673K/30036K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 17K, 11% free 26914K/30036K, paused 1ms, total 1ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 26.608MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 256K, 12% free 26913K/30296K, paused 2ms, total 3ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2811): HostConnection::get() New Host Connection established 0xb80e7130, tid 2811
+D/AndroidRuntime( 2816): 
+D/AndroidRuntime( 2816): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2816): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2816): CheckJNI is ON
+D/dalvikvm( 2816): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2816): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2816): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2816): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2816): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2816): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2816): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2816): failed to load memtrack module: -2
+D/AndroidRuntime( 2816): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2816): Shutting down VM
+D/dalvikvm( 2816): GC_CONCURRENT freed 94K, 15% free 576K/672K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2816
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 393K, 10% free 27177K/30076K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 26.883MB for 281892-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 18K, 10% free 27434K/30352K, paused 2ms, total 2ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2827): HostConnection::get() New Host Connection established 0xb869e130, tid 2827
+D/AndroidRuntime( 2832): 
+D/AndroidRuntime( 2832): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2832): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2832): CheckJNI is ON
+D/dalvikvm( 2832): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2832): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2832): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2832): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2832): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2832): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2832): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2832): failed to load memtrack module: -2
+D/AndroidRuntime( 2832): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2832): Shutting down VM
+D/dalvikvm( 2832): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2832
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2843): HostConnection::get() New Host Connection established 0xb79a9130, tid 2843
+D/AndroidRuntime( 2848): 
+D/AndroidRuntime( 2848): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2848): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2848): CheckJNI is ON
+D/dalvikvm( 2848): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2848): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2848): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2848): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2848): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2848): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2848): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2848): failed to load memtrack module: -2
+D/AndroidRuntime( 2848): Calling main entry com.android.commands.input.Input
+I/Input   ( 2848): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=219440, downTime=219440, deviceId=-1, source=0x101 }
+I/Input   ( 2848): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=219440, downTime=219440, deviceId=-1, source=0x101 }
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+D/AndroidRuntime( 2848): Shutting down VM
+W/InputEventReceiver( 2240): Attempted to finish an input event but the input event receiver has already been disposed.
+D/dalvikvm( 2848): GC_CONCURRENT freed 96K, 15% free 554K/652K, paused 0ms+0ms, total 1ms
+W/InputMethodManagerService( 1556): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@951f2508 attribute=null, token = android.os.BinderProxy@95202070
+D/EGL_emulation( 2240): eglMakeCurrent: 0xb7ae6f50: ver 3 0
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2859): 
+D/AndroidRuntime( 2859): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2859): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2859): CheckJNI is ON
+D/dalvikvm( 2859): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2859): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2859): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2859): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2859): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2859): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2859): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2859): failed to load memtrack module: -2
+D/AndroidRuntime( 2859): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2859): Shutting down VM
+D/dalvikvm( 2859): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2859
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 7310K, 29% free 21615K/30352K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 307K, 24% free 23117K/30352K, paused 5ms, total 5ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 607K, 20% free 24358K/30352K, paused 4ms, total 4ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1136K, 18% free 25089K/30352K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 889K, 15% free 26052K/30352K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1088K, 12% free 26830K/30352K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 573K, 10% free 27318K/30352K, paused 4ms, total 4ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 532K, 10% free 27317K/30352K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 47K, 9% free 27802K/30352K, paused 3ms, total 3ms
+I/dalvikvm-heap( 2240): Grow heap (frag case) to 27.476MB for 262156-byte allocation
+D/dalvikvm( 2240): GC_FOR_ALLOC freed <1K, 9% free 28058K/30612K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 280K, 10% free 27779K/30612K, paused 3ms, total 3ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2873): HostConnection::get() New Host Connection established 0xb9621130, tid 2873
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2878): 
+D/AndroidRuntime( 2878): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2878): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2878): CheckJNI is ON
+D/dalvikvm( 2878): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2878): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2878): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2878): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2878): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2878): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2878): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2878): failed to load memtrack module: -2
+D/AndroidRuntime( 2878): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2878): Shutting down VM
+D/dalvikvm( 2878): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2878
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1033K, 12% free 27226K/30612K, paused 2ms, total 2ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2889): HostConnection::get() New Host Connection established 0xb87c5130, tid 2889
+D/AndroidRuntime( 2894): 
+D/AndroidRuntime( 2894): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2894): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2894): CheckJNI is ON
+D/dalvikvm( 2894): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2894): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2894): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2894): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2894): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2894): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2894): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2894): failed to load memtrack module: -2
+D/AndroidRuntime( 2894): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2894): Shutting down VM
+D/dalvikvm( 2894): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 1ms+0ms, total 1ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2894
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2905): HostConnection::get() New Host Connection established 0xb874e130, tid 2905
+D/AndroidRuntime( 2910): 
+D/AndroidRuntime( 2910): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2910): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2910): CheckJNI is ON
+D/dalvikvm( 2910): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2910): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2910): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2910): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2910): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2910): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2910): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2910): failed to load memtrack module: -2
+D/AndroidRuntime( 2910): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2910): Shutting down VM
+D/dalvikvm( 2910): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2910
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 7492K, 32% free 20930K/30612K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 307K, 27% free 22432K/30612K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 621K, 23% free 23661K/30612K, paused 4ms, total 7ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1143K, 21% free 24386K/30612K, paused 5ms, total 5ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 839K, 18% free 25395K/30612K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1337K, 16% free 25925K/30612K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 868K, 13% free 26926K/30612K, paused 4ms, total 4ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/AndroidRuntime( 2924): 
+D/AndroidRuntime( 2924): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2924): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2924): CheckJNI is ON
+D/dalvikvm( 2924): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2924): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2924): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2924): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2924): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2924): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2924): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2924): failed to load memtrack module: -2
+D/AndroidRuntime( 2924): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2924): Shutting down VM
+D/dalvikvm( 2924): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2924
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 7377K, 33% free 20728K/30612K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 304K, 28% free 22234K/30612K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 596K, 24% free 23486K/30612K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1087K, 21% free 24266K/30612K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 844K, 18% free 25275K/30612K, paused 3ms, total 3ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1082K, 15% free 26059K/30612K, paused 2ms, total 2ms
+D/dalvikvm( 2240): GC_FOR_ALLOC freed 1085K, 14% free 26587K/30612K, paused 2ms, total 2ms
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2938): HostConnection::get() New Host Connection established 0xb7798130, tid 2938
+D/AndroidRuntime( 2943): 
+D/AndroidRuntime( 2943): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+W/linker  ( 2943): libdvm.so has text relocations. This is wasting memory and is a security risk. Please fix.
+D/AndroidRuntime( 2943): CheckJNI is ON
+D/dalvikvm( 2943): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 2943): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 2943): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 2943): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 2943): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+D/dalvikvm( 2943): Note: class Landroid/app/ActivityManagerNative; has 179 unimplemented (abstract) methods
+E/memtrack( 2943): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2943): failed to load memtrack module: -2
+D/AndroidRuntime( 2943): Calling main entry com.android.commands.am.Am
+D/AndroidRuntime( 2943): Shutting down VM
+D/dalvikvm( 2943): GC_CONCURRENT freed 94K, 15% free 577K/676K, paused 0ms+0ms, total 0ms
+I/ActivityManager( 1556): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from pid 2943
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
+W/ActivityManager( 1556): Unable to start service Intent { cmp=com.clw.btmusic/.BTPlaybackService } U=0: not found
