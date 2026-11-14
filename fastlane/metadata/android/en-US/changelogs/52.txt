@@ -1,0 +1,1 @@
+Portrait layout for Tesla-style screens; settings backup to a file on the screen or a USB drive (no cloud); open an app at startup; new rounded windows; translated diagnostics; French (9 languages).

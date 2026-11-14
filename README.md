@@ -40,7 +40,7 @@
 
 **A tu medida**
 - Cada botón de la barra abre la app o la función que quieras. Oculta las apps que no usas.
-- 8 idiomas (español, inglés, portugués, italiano, alemán, malayo, árabe y turco), km/h o mph.
+- 9 idiomas (español, inglés, portugués, francés, italiano, alemán, malayo, árabe y turco), km/h o mph.
 - Avisos de actualización con código QR. Pesa **menos de 1 MB**.
 
 👉 Novedades de cada versión en [Releases](https://github.com/lordnordic-debug/StradaOS/releases).
