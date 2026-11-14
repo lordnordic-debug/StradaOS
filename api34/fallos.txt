@@ -1,0 +1,3 @@
+2026-11-14 20:25:25 · v2.21.0-prueba · Android 14 (API 34) · unknown Android SDK built for x86_64
+PRUEBA copia: ok=true error=null archivo=/storage/emulated/0/Android/data/com.stradaos.launcher.debug/files/StradaOS-backup-prueba.json encontradas=1 usb=[]
+
