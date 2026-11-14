@@ -174,6 +174,7 @@ public class Main extends Activity {
         I18n.init(this, prefs);
         LiveMapView.headingUp = prefs.getBoolean("map_heading", false);
         LiveMapView.satellite = prefs.getBoolean("map_satellite", false);
+        crashLoopGuard();
         lm = (LocationManager) getSystemService(LOCATION_SERVICE);
         if (getPackageName().endsWith(".debug") && getIntent() != null && "saltar".equals(getIntent().getStringExtra("prueba")))
             prefs.edit().putBoolean("setup_done", true).apply();
@@ -2555,6 +2556,35 @@ public class Main extends Activity {
 
     static final String[] SPEED_OFFSETS = {"0", "+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8", "+10",
         "-1", "-2", "-3", "-4", "-5", "+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+10%", "-3%", "-5%"};
+
+    private static boolean crashChecked;
+
+    /**
+     * Protección contra cierres en bucle: si StradaOS se cerró dos veces seguidas en los primeros 20 s (también
+     * cierres nativos o del sistema, que no pasan por Guard), al abrir otra vez se apagan las opciones del mapa que
+     * más trabajo le dan a la pantalla (mapa que gira, satélite). Así el inicio nunca queda inutilizable.
+     */
+    private void crashLoopGuard() {
+        if (crashChecked) return;   // una vez por proceso (no en cada recreación de la actividad)
+        crashChecked = true;
+        boolean diedEarly = prefs.contains("boot_ok") && !prefs.getBoolean("boot_ok", true);
+        int streak = diedEarly ? prefs.getInt("boot_fails", 0) + 1 : 0;
+        SharedPreferences.Editor e = prefs.edit().putBoolean("boot_ok", false).putInt("boot_fails", streak);
+        boolean safe = streak >= 2 && (prefs.getBoolean("map_heading", false) || prefs.getBoolean("map_satellite", false));
+        if (safe) {
+            e.putBoolean("map_heading", false).putBoolean("map_satellite", false).putInt("boot_fails", 0);
+            LiveMapView.headingUp = false;
+            LiveMapView.satellite = false;
+            Guard.log("Se cerró " + streak + " veces seguidas al iniciar: se apagan «mapa según tu dirección» y «satélite».");
+        }
+        e.commit();   // commit: tiene que quedar escrito aunque se cierre enseguida
+        if (safe) h.postDelayed(new Runnable() { public void run() {
+            toast("StradaOS se cerró al iniciar: se desactivó el mapa que gira con el carro");
+        }}, 3000);
+        h.postDelayed(new Runnable() { public void run() {
+            prefs.edit().putBoolean("boot_ok", true).putInt("boot_fails", 0).apply();
+        }}, 20000);
+    }
 
     /** km/h o mph: lo elegido, o mph en EE. UU., Reino Unido, Liberia y Birmania. */
     private boolean useMph() {

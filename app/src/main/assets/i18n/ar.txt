@@ -805,3 +805,4 @@ Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro
 Pantalla	الشاشة
 Ocultar la barra del sistema	إخفاء شريط النظام
 Pantalla completa de verdad: esconde la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla	ملء الشاشة فعلاً: يخفي شريط التنقل في شاشتك (في الأسفل أو على الجانب). اسحب من الحافة لرؤيته
+StradaOS se cerró al iniciar: se desactivó el mapa que gira con el carro	أُغلق StradaOS عند البدء: تم إيقاف الخريطة التي تدور مع السيارة
