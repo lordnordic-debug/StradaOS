@@ -797,3 +797,95 @@ Cambiar el ícono	Simgeyi değiştir
 Filtro de combustible	Yakıt filtresi
 Aire acondicionado	Klima
 Lavado	Yıkama
+# 2.21: ventanas propias, diagnósticos traducidos, copia de seguridad, app al encender, diseño vertical
+Fuente: {}	Kaynak: {}
+Pista: {}	Parça: {}
+Carátula: {}	Albüm kapağı: {}
+Lector de notificaciones (accesibilidad): {}	Bildirim okuyucu (erişilebilirlik): {}
+ACTIVO	ETKİN
+Última notificación de Open Headunit: {}	Son Open Headunit bildirimi: {}
+ninguna	yok
+{} s, carátula {}, textos {}	{} sn, albüm kapağı {}, metinler {}
+Open Headunit corriendo: {} · celular por USB en modo Android Auto: {}	Open Headunit çalışıyor: {} · telefon USB ile Android Auto modunda: {}
+no se sabe	bilinmiyor
+Android Auto conectado (para StradaOS): {}	Android Auto bağlı (StradaOS için): {}
+App Bluetooth conectada: {}	Bluetooth uygulaması bağlı: {}
+Audio Bluetooth automático: {}	Otomatik Bluetooth sesi: {}
+desactivado	kapalı
+no aplica (otra marca)	geçerli değil (başka marka)
+App de música Bluetooth: {} · abrir al conectar: {}	Bluetooth müzik uygulaması: {} · bağlanınca aç: {}
+no encontrada	bulunamadı
+Sonido en Bluetooth (estimado): {} · app al frente: {}	Ses Bluetooth'ta (tahmini): {} · öndeki uygulama: {}
+Activaciones: {}	Etkinleştirmeler: {}
+Eventos Bluetooth:	Bluetooth olayları:
+(sin eventos)	(olay yok)
+no	hayır
+conectado a la app Bluetooth	Bluetooth uygulamasına bağlandı
+la app Bluetooth se cerró	Bluetooth uygulaması kapandı
+se reinicia muy seguido: pausa de 15 min	çok sık yeniden başlıyor: 15 dk ara
+activar audio: el celular no está conectado por Bluetooth	sesi etkinleştir: telefon Bluetooth ile bağlı değil
+activar audio: el celular está en pausa	sesi etkinleştir: telefon duraklatılmış
+modo de audio Bluetooth solicitado	Bluetooth ses modu istendi
+activar audio falló: {}	ses etkinleştirilemedi: {}
+el celular empezó a sonar	telefon çalmaya başladı
+revisión falló: {}	kontrol başarısız: {}
+otra fuente al frente: {}	önde başka bir kaynak var: {}
+no se cambió: StradaOS acaba de arrancar	değiştirilmedi: StradaOS yeni başladı
+no se cambió: llamada en curso	değiştirilmedi: arama sürüyor
+no se cambió: Android Auto tiene el sonido	değiştirilmedi: ses Android Auto'da
+el sonido ya es Bluetooth	ses zaten Bluetooth'ta
+celular conectado por Bluetooth	telefon Bluetooth ile bağlandı
+no se abrió la app BT: cámara de reversa al frente	BT uygulaması açılmadı: geri görüş kamerası önde
+no se abrió la app BT: no sé qué app está al frente	BT uygulaması açılmadı: önde hangi uygulamanın olduğu bilinmiyor
+no se abrió la app BT: ajustes abiertos	BT uygulaması açılmadı: ayarlar açık
+abierta {} para tomar el sonido (luego vuelve a {})	sesi almak için {} açıldı (sonra {} uygulamasına döner)
+abierta {} para tomar el sonido	sesi almak için {} açıldı
+no se volvió: el usuario abrió {}	geri dönülmedi: kullanıcı {} uygulamasını açtı
+Android Auto se desconectó	Android Auto bağlantısı kesildi
+Registro técnico para enviar al desarrollador (se guarda en español).	Geliştiriciye gönderilecek teknik kayıt (İspanyolca tutulur).
+Preparando {}…	{} hazırlanıyor…
+Copia de seguridad	Yedekleme
+Guardar una copia	Yedek kaydet
+Ajustes, mantenimientos, kilometraje y la foto del vehículo en un archivo, en la pantalla o en una USB. Nada se sube a internet	Ayarlar, bakımlar, kilometre ve araç fotoğrafı tek bir dosyada, ekranda veya USB bellekte. İnternete hiçbir şey yüklenmez
+Restaurar una copia	Yedeği geri yükle
+Recupera todo después de restablecer la pantalla, o pásalo a otra pantalla	Ekranı sıfırladıktan sonra her şeyi geri al veya başka bir ekrana taşı
+Copia automática	Otomatik yedekleme
+Cada vez que cambias algo se actualiza una copia en la pantalla y en la USB que esté conectada	Bir şeyi her değiştirdiğinde, ekranda ve bağlı USB bellekte bir yedek güncellenir
+Memoria de la pantalla	Ekranın belleği
+Memoria USB	USB bellek
+Elegir otra carpeta…	Başka klasör seç…
+¿Dónde guardar la copia?	Yedek nereye kaydedilsin?
+No se pudo abrir el selector de archivos	Dosya seçici açılamadı
+No se pudo guardar la copia	Yedek kaydedilemedi
+Esa memoria no dejó escribir el archivo. Prueba con otra memoria o con «Elegir otra carpeta…».	Bu bellek dosyanın yazılmasına izin vermedi. Başka bir bellek veya «Başka klasör seç…» seçeneğini dene.
+Copia guardada	Yedek kaydedildi
+Se guardó en:	Şuraya kaydedildi:
+Al restablecer la pantalla de fábrica también se puede borrar su memoria: guarda otra copia en una USB para tenerla a salvo.	Ekranı fabrika ayarlarına sıfırlamak belleğini de silebilir: güvende olmak için bir yedeği de USB bellekte sakla.
+No se pudo leer el archivo	Dosya okunamadı
+Buscando copias…	Yedekler aranıyor…
+No se encontró ninguna copia	Yedek bulunamadı
+No hay copias de StradaOS en la memoria de la pantalla ni en las USB conectadas. El archivo se llama «StradaOS-backup» y termina en .json.	Ekranın belleğinde veya bağlı USB belleklerde StradaOS yedeği yok. Dosyanın adı «StradaOS-backup» ile başlar ve .json ile biter.
+automática	otomatik
+Buscar el archivo…	Dosyayı bul…
+Elige la copia	Yedeği seç
+No se pudo restaurar	Geri yüklenemedi
+Este archivo no es una copia de seguridad de StradaOS	Bu dosya bir StradaOS yedeği değil
+Copia del	Yedek tarihi:
+Pantalla:	Ekran:
+Ajustes guardados:	Kaydedilen ayarlar:
+con la foto del vehículo	araç fotoğrafıyla birlikte
+Se reemplaza toda la configuración actual de StradaOS por la de la copia.	StradaOS'un mevcut tüm ayarları yedektekilerle değiştirilir.
+¿Restaurar esta copia?	Bu yedek geri yüklensin mi?
+Restaurar	Geri yükle
+Copia restaurada	Yedek geri yüklendi
+Esta copia se hizo con una versión más nueva de StradaOS. Actualiza StradaOS y vuelve a intentarlo	Bu yedek StradaOS'un daha yeni bir sürümüyle alınmış. StradaOS'u güncelleyip tekrar dene
+No se pudo guardar la configuración	Ayarlar kaydedilemedi
+La copia está dañada o incompleta	Yedek bozuk veya eksik
+Abrir una app al encender	Açılışta bir uygulama aç
+StradaOS la abre un momento al arrancar (por ejemplo la radio, para que empiece a sonar) y vuelve al inicio	StradaOS açılışta onu kısa süreliğine açar (örneğin radyoyu, çalmaya başlasın diye) ve ana ekrana döner
+Copia de seguridad en un archivo (pantalla o USB)	Dosyaya yedekleme (ekran veya USB)
+en Android 10+ la carpeta se elige con el selector de archivos	Android 10+ sürümlerinde klasör dosya seçiciyle seçilir
+Diseño vertical	Dikey düzen
+Pantallas en vertical (tipo Tesla)	Dikey ekranlar (Tesla tarzı)
+en uso	kullanımda
+esta pantalla es horizontal	bu ekran yatay

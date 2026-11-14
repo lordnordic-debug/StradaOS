@@ -797,3 +797,95 @@ Cambiar el ícono	تغيير الأيقونة
 Filtro de combustible	فلتر الوقود
 Aire acondicionado	التكييف
 Lavado	غسيل السيارة
+# 2.21: ventanas propias, diagnósticos traducidos, copia de seguridad, app al encender, diseño vertical
+Fuente: {}	المصدر: {}
+Pista: {}	المقطع: {}
+Carátula: {}	غلاف الألبوم: {}
+Lector de notificaciones (accesibilidad): {}	قارئ الإشعارات (إمكانية الوصول): {}
+ACTIVO	مفعّل
+Última notificación de Open Headunit: {}	آخر إشعار من Open Headunit: {}
+ninguna	لا شيء
+{} s, carátula {}, textos {}	{} ث، غلاف الألبوم {}، النصوص {}
+Open Headunit corriendo: {} · celular por USB en modo Android Auto: {}	Open Headunit يعمل: {} · الهاتف عبر USB في وضع Android Auto: {}
+no se sabe	غير معروف
+Android Auto conectado (para StradaOS): {}	Android Auto متصل (بالنسبة إلى StradaOS): {}
+App Bluetooth conectada: {}	تطبيق البلوتوث متصل: {}
+Audio Bluetooth automático: {}	صوت البلوتوث التلقائي: {}
+desactivado	معطّل
+no aplica (otra marca)	لا ينطبق (علامة تجارية أخرى)
+App de música Bluetooth: {} · abrir al conectar: {}	تطبيق موسيقى البلوتوث: {} · الفتح عند الاتصال: {}
+no encontrada	غير موجود
+Sonido en Bluetooth (estimado): {} · app al frente: {}	الصوت على البلوتوث (تقديري): {} · التطبيق في الواجهة: {}
+Activaciones: {}	مرات التفعيل: {}
+Eventos Bluetooth:	أحداث البلوتوث:
+(sin eventos)	(لا توجد أحداث)
+no	لا
+conectado a la app Bluetooth	تم الاتصال بتطبيق البلوتوث
+la app Bluetooth se cerró	أُغلق تطبيق البلوتوث
+se reinicia muy seguido: pausa de 15 min	يُعاد تشغيله كثيرًا: توقف لمدة 15 دقيقة
+activar audio: el celular no está conectado por Bluetooth	تفعيل الصوت: الهاتف غير متصل عبر البلوتوث
+activar audio: el celular está en pausa	تفعيل الصوت: الهاتف متوقف مؤقتًا
+modo de audio Bluetooth solicitado	تم طلب وضع صوت البلوتوث
+activar audio falló: {}	فشل تفعيل الصوت: {}
+el celular empezó a sonar	بدأ الهاتف بالتشغيل
+revisión falló: {}	فشل الفحص: {}
+otra fuente al frente: {}	مصدر آخر في الواجهة: {}
+no se cambió: StradaOS acaba de arrancar	لم يتم التبديل: StradaOS بدأ للتو
+no se cambió: llamada en curso	لم يتم التبديل: مكالمة جارية
+no se cambió: Android Auto tiene el sonido	لم يتم التبديل: الصوت لدى Android Auto
+el sonido ya es Bluetooth	الصوت على البلوتوث بالفعل
+celular conectado por Bluetooth	الهاتف متصل عبر البلوتوث
+no se abrió la app BT: cámara de reversa al frente	لم يُفتح تطبيق البلوتوث: كاميرا الرجوع للخلف في الواجهة
+no se abrió la app BT: no sé qué app está al frente	لم يُفتح تطبيق البلوتوث: لا يُعرف أي تطبيق في الواجهة
+no se abrió la app BT: ajustes abiertos	لم يُفتح تطبيق البلوتوث: الإعدادات مفتوحة
+abierta {} para tomar el sonido (luego vuelve a {})	تم فتح {} لأخذ الصوت (ثم العودة إلى {})
+abierta {} para tomar el sonido	تم فتح {} لأخذ الصوت
+no se volvió: el usuario abrió {}	لم تتم العودة: المستخدم فتح {}
+Android Auto se desconectó	انقطع اتصال Android Auto
+Registro técnico para enviar al desarrollador (se guarda en español).	سجل تقني لإرساله إلى المطوّر (يُحفظ بالإسبانية).
+Preparando {}…	جارٍ تجهيز {}…
+Copia de seguridad	النسخ الاحتياطي
+Guardar una copia	حفظ نسخة احتياطية
+Ajustes, mantenimientos, kilometraje y la foto del vehículo en un archivo, en la pantalla o en una USB. Nada se sube a internet	الإعدادات والصيانة وعداد المسافة وصورة المركبة في ملف واحد، على الشاشة أو على ذاكرة USB. لا يُرفع أي شيء إلى الإنترنت
+Restaurar una copia	استعادة نسخة احتياطية
+Recupera todo después de restablecer la pantalla, o pásalo a otra pantalla	استرجع كل شيء بعد إعادة ضبط الشاشة، أو انقله إلى شاشة أخرى
+Copia automática	نسخ احتياطي تلقائي
+Cada vez que cambias algo se actualiza una copia en la pantalla y en la USB que esté conectada	في كل مرة تغيّر شيئًا، تُحدَّث نسخة احتياطية على الشاشة وعلى ذاكرة USB المتصلة
+Memoria de la pantalla	ذاكرة الشاشة
+Memoria USB	ذاكرة USB
+Elegir otra carpeta…	اختيار مجلد آخر…
+¿Dónde guardar la copia?	أين تريد حفظ النسخة الاحتياطية؟
+No se pudo abrir el selector de archivos	تعذّر فتح منتقي الملفات
+No se pudo guardar la copia	تعذّر حفظ النسخة الاحتياطية
+Esa memoria no dejó escribir el archivo. Prueba con otra memoria o con «Elegir otra carpeta…».	هذه الذاكرة لم تسمح بكتابة الملف. جرّب ذاكرة أخرى أو «اختيار مجلد آخر…».
+Copia guardada	تم حفظ النسخة الاحتياطية
+Se guardó en:	تم الحفظ في:
+Al restablecer la pantalla de fábrica también se puede borrar su memoria: guarda otra copia en una USB para tenerla a salvo.	إعادة ضبط المصنع للشاشة قد تمسح ذاكرتها أيضًا: احتفظ بنسخة احتياطية أخرى على ذاكرة USB للأمان.
+No se pudo leer el archivo	تعذّرت قراءة الملف
+Buscando copias…	جارٍ البحث عن النسخ الاحتياطية…
+No se encontró ninguna copia	لم يُعثر على أي نسخة احتياطية
+No hay copias de StradaOS en la memoria de la pantalla ni en las USB conectadas. El archivo se llama «StradaOS-backup» y termina en .json.	لا توجد نسخ احتياطية لـ StradaOS في ذاكرة الشاشة ولا على ذواكر USB المتصلة. اسم الملف «StradaOS-backup» وينتهي بـ .json.
+automática	تلقائية
+Buscar el archivo…	البحث عن الملف…
+Elige la copia	اختر النسخة الاحتياطية
+No se pudo restaurar	تعذّرت الاستعادة
+Este archivo no es una copia de seguridad de StradaOS	هذا الملف ليس نسخة احتياطية من StradaOS
+Copia del	نسخة بتاريخ
+Pantalla:	الشاشة:
+Ajustes guardados:	الإعدادات المحفوظة:
+con la foto del vehículo	مع صورة المركبة
+Se reemplaza toda la configuración actual de StradaOS por la de la copia.	تُستبدل جميع إعدادات StradaOS الحالية بإعدادات النسخة الاحتياطية.
+¿Restaurar esta copia?	هل تريد استعادة هذه النسخة؟
+Restaurar	استعادة
+Copia restaurada	تمت استعادة النسخة الاحتياطية
+Esta copia se hizo con una versión más nueva de StradaOS. Actualiza StradaOS y vuelve a intentarlo	أُنشئت هذه النسخة بإصدار أحدث من StradaOS. حدّث StradaOS ثم حاول مجددًا
+No se pudo guardar la configuración	تعذّر حفظ الإعدادات
+La copia está dañada o incompleta	النسخة الاحتياطية تالفة أو غير مكتملة
+Abrir una app al encender	فتح تطبيق عند التشغيل
+StradaOS la abre un momento al arrancar (por ejemplo la radio, para que empiece a sonar) y vuelve al inicio	يفتحه StradaOS للحظة عند بدء التشغيل (مثل الراديو ليبدأ بالتشغيل) ثم يعود إلى الشاشة الرئيسية
+Copia de seguridad en un archivo (pantalla o USB)	نسخ احتياطي إلى ملف (الشاشة أو USB)
+en Android 10+ la carpeta se elige con el selector de archivos	في Android 10+ يُختار المجلد عبر منتقي الملفات
+Diseño vertical	التخطيط العمودي
+Pantallas en vertical (tipo Tesla)	الشاشات العمودية (على غرار Tesla)
+en uso	قيد الاستخدام
+esta pantalla es horizontal	هذه الشاشة أفقية

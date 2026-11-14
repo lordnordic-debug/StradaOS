@@ -797,3 +797,95 @@ Cambiar el ícono	Tukar ikon
 Filtro de combustible	Penapis bahan api
 Aire acondicionado	Penyaman udara
 Lavado	Cucian kereta
+# 2.21: ventanas propias, diagnósticos traducidos, copia de seguridad, app al encender, diseño vertical
+Fuente: {}	Sumber: {}
+Pista: {}	Lagu: {}
+Carátula: {}	Kulit album: {}
+Lector de notificaciones (accesibilidad): {}	Pembaca pemberitahuan (kebolehcapaian): {}
+ACTIVO	AKTIF
+Última notificación de Open Headunit: {}	Pemberitahuan terakhir Open Headunit: {}
+ninguna	tiada
+{} s, carátula {}, textos {}	{} s, kulit album {}, teks {}
+Open Headunit corriendo: {} · celular por USB en modo Android Auto: {}	Open Headunit berjalan: {} · telefon melalui USB dalam mod Android Auto: {}
+no se sabe	tidak diketahui
+Android Auto conectado (para StradaOS): {}	Android Auto disambung (untuk StradaOS): {}
+App Bluetooth conectada: {}	Aplikasi Bluetooth disambung: {}
+Audio Bluetooth automático: {}	Audio Bluetooth automatik: {}
+desactivado	mati
+no aplica (otra marca)	tidak berkenaan (jenama lain)
+App de música Bluetooth: {} · abrir al conectar: {}	Aplikasi muzik Bluetooth: {} · buka semasa disambung: {}
+no encontrada	tidak dijumpai
+Sonido en Bluetooth (estimado): {} · app al frente: {}	Bunyi pada Bluetooth (anggaran): {} · aplikasi di hadapan: {}
+Activaciones: {}	Pengaktifan: {}
+Eventos Bluetooth:	Peristiwa Bluetooth:
+(sin eventos)	(tiada peristiwa)
+no	tidak
+conectado a la app Bluetooth	disambung ke aplikasi Bluetooth
+la app Bluetooth se cerró	aplikasi Bluetooth ditutup
+se reinicia muy seguido: pausa de 15 min	terlalu kerap dimulakan semula: jeda 15 min
+activar audio: el celular no está conectado por Bluetooth	aktifkan audio: telefon tidak disambung melalui Bluetooth
+activar audio: el celular está en pausa	aktifkan audio: telefon sedang dijeda
+modo de audio Bluetooth solicitado	mod audio Bluetooth diminta
+activar audio falló: {}	gagal mengaktifkan audio: {}
+el celular empezó a sonar	telefon mula memainkan lagu
+revisión falló: {}	semakan gagal: {}
+otra fuente al frente: {}	sumber lain di hadapan: {}
+no se cambió: StradaOS acaba de arrancar	tidak ditukar: StradaOS baru sahaja dimulakan
+no se cambió: llamada en curso	tidak ditukar: panggilan sedang berlangsung
+no se cambió: Android Auto tiene el sonido	tidak ditukar: Android Auto memegang bunyi
+el sonido ya es Bluetooth	bunyi sudah pada Bluetooth
+celular conectado por Bluetooth	telefon disambung melalui Bluetooth
+no se abrió la app BT: cámara de reversa al frente	aplikasi BT tidak dibuka: kamera undur di hadapan
+no se abrió la app BT: no sé qué app está al frente	aplikasi BT tidak dibuka: tidak pasti aplikasi mana di hadapan
+no se abrió la app BT: ajustes abiertos	aplikasi BT tidak dibuka: tetapan sedang dibuka
+abierta {} para tomar el sonido (luego vuelve a {})	{} dibuka untuk mengambil bunyi (kemudian kembali ke {})
+abierta {} para tomar el sonido	{} dibuka untuk mengambil bunyi
+no se volvió: el usuario abrió {}	tidak kembali: pengguna membuka {}
+Android Auto se desconectó	Android Auto terputus
+Registro técnico para enviar al desarrollador (se guarda en español).	Log teknikal untuk dihantar kepada pembangun (disimpan dalam bahasa Sepanyol).
+Preparando {}…	Menyediakan {}…
+Copia de seguridad	Sandaran
+Guardar una copia	Simpan sandaran
+Ajustes, mantenimientos, kilometraje y la foto del vehículo en un archivo, en la pantalla o en una USB. Nada se sube a internet	Tetapan, penyelenggaraan, odometer dan gambar kenderaan dalam satu fail, pada skrin atau pemacu USB. Tiada apa-apa dimuat naik ke internet
+Restaurar una copia	Pulihkan sandaran
+Recupera todo después de restablecer la pantalla, o pásalo a otra pantalla	Dapatkan semula semuanya selepas menetapkan semula skrin, atau pindahkan ke skrin lain
+Copia automática	Sandaran automatik
+Cada vez que cambias algo se actualiza una copia en la pantalla y en la USB que esté conectada	Setiap kali anda mengubah sesuatu, sandaran dikemas kini pada skrin dan pada pemacu USB yang disambung
+Memoria de la pantalla	Storan skrin
+Memoria USB	Pemacu USB
+Elegir otra carpeta…	Pilih folder lain…
+¿Dónde guardar la copia?	Di mana hendak simpan sandaran?
+No se pudo abrir el selector de archivos	Tidak dapat membuka pemilih fail
+No se pudo guardar la copia	Tidak dapat menyimpan sandaran
+Esa memoria no dejó escribir el archivo. Prueba con otra memoria o con «Elegir otra carpeta…».	Storan itu tidak membenarkan fail ditulis. Cuba storan lain atau «Pilih folder lain…».
+Copia guardada	Sandaran disimpan
+Se guardó en:	Disimpan di:
+Al restablecer la pantalla de fábrica también se puede borrar su memoria: guarda otra copia en una USB para tenerla a salvo.	Tetapan semula kilang skrin juga boleh memadam storannya: simpan satu lagi sandaran pada pemacu USB supaya selamat.
+No se pudo leer el archivo	Tidak dapat membaca fail
+Buscando copias…	Mencari sandaran…
+No se encontró ninguna copia	Tiada sandaran dijumpai
+No hay copias de StradaOS en la memoria de la pantalla ni en las USB conectadas. El archivo se llama «StradaOS-backup» y termina en .json.	Tiada sandaran StradaOS dalam storan skrin atau pada pemacu USB yang disambung. Fail itu bernama «StradaOS-backup» dan berakhir dengan .json.
+automática	automatik
+Buscar el archivo…	Cari fail…
+Elige la copia	Pilih sandaran
+No se pudo restaurar	Tidak dapat memulihkan
+Este archivo no es una copia de seguridad de StradaOS	Fail ini bukan sandaran StradaOS
+Copia del	Sandaran dari
+Pantalla:	Skrin:
+Ajustes guardados:	Tetapan disimpan:
+con la foto del vehículo	dengan gambar kenderaan
+Se reemplaza toda la configuración actual de StradaOS por la de la copia.	Semua tetapan semasa StradaOS digantikan dengan tetapan daripada sandaran.
+¿Restaurar esta copia?	Pulihkan sandaran ini?
+Restaurar	Pulihkan
+Copia restaurada	Sandaran dipulihkan
+Esta copia se hizo con una versión más nueva de StradaOS. Actualiza StradaOS y vuelve a intentarlo	Sandaran ini dibuat dengan versi StradaOS yang lebih baharu. Kemas kini StradaOS dan cuba lagi
+No se pudo guardar la configuración	Tidak dapat menyimpan tetapan
+La copia está dañada o incompleta	Sandaran rosak atau tidak lengkap
+Abrir una app al encender	Buka aplikasi semasa dihidupkan
+StradaOS la abre un momento al arrancar (por ejemplo la radio, para que empiece a sonar) y vuelve al inicio	StradaOS membukanya seketika semasa bermula (contohnya radio, supaya ia mula berbunyi) dan kembali ke skrin utama
+Copia de seguridad en un archivo (pantalla o USB)	Sandaran ke dalam fail (skrin atau USB)
+en Android 10+ la carpeta se elige con el selector de archivos	pada Android 10+ folder dipilih dengan pemilih fail
+Diseño vertical	Susun atur menegak
+Pantallas en vertical (tipo Tesla)	Skrin menegak (gaya Tesla)
+en uso	sedang digunakan
+esta pantalla es horizontal	skrin ini mendatar

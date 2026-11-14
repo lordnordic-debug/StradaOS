@@ -797,3 +797,95 @@ Cambiar el ícono	Cambia l'icona
 Filtro de combustible	Filtro del carburante
 Aire acondicionado	Aria condizionata
 Lavado	Lavaggio
+# 2.21: ventanas propias, diagnósticos traducidos, copia de seguridad, app al encender, diseño vertical
+Fuente: {}	Sorgente: {}
+Pista: {}	Brano: {}
+Carátula: {}	Copertina: {}
+Lector de notificaciones (accesibilidad): {}	Lettore di notifiche (accessibilità): {}
+ACTIVO	ATTIVO
+Última notificación de Open Headunit: {}	Ultima notifica di Open Headunit: {}
+ninguna	nessuna
+{} s, carátula {}, textos {}	{} s, copertina {}, testi {}
+Open Headunit corriendo: {} · celular por USB en modo Android Auto: {}	Open Headunit in esecuzione: {} · telefono via USB in modalità Android Auto: {}
+no se sabe	sconosciuto
+Android Auto conectado (para StradaOS): {}	Android Auto connesso (per StradaOS): {}
+App Bluetooth conectada: {}	App Bluetooth connessa: {}
+Audio Bluetooth automático: {}	Audio Bluetooth automatico: {}
+desactivado	disattivato
+no aplica (otra marca)	non applicabile (altra marca)
+App de música Bluetooth: {} · abrir al conectar: {}	App di musica Bluetooth: {} · apri alla connessione: {}
+no encontrada	non trovata
+Sonido en Bluetooth (estimado): {} · app al frente: {}	Audio su Bluetooth (stimato): {} · app in primo piano: {}
+Activaciones: {}	Attivazioni: {}
+Eventos Bluetooth:	Eventi Bluetooth:
+(sin eventos)	(nessun evento)
+no	no
+conectado a la app Bluetooth	connesso all'app Bluetooth
+la app Bluetooth se cerró	l'app Bluetooth si è chiusa
+se reinicia muy seguido: pausa de 15 min	si riavvia troppo spesso: pausa di 15 min
+activar audio: el celular no está conectado por Bluetooth	attiva audio: il telefono non è connesso via Bluetooth
+activar audio: el celular está en pausa	attiva audio: il telefono è in pausa
+modo de audio Bluetooth solicitado	modalità audio Bluetooth richiesta
+activar audio falló: {}	attivazione audio non riuscita: {}
+el celular empezó a sonar	il telefono ha iniziato a riprodurre
+revisión falló: {}	controllo non riuscito: {}
+otra fuente al frente: {}	un'altra sorgente in primo piano: {}
+no se cambió: StradaOS acaba de arrancar	non cambiato: StradaOS si è appena avviato
+no se cambió: llamada en curso	non cambiato: chiamata in corso
+no se cambió: Android Auto tiene el sonido	non cambiato: Android Auto ha l'audio
+el sonido ya es Bluetooth	l'audio è già su Bluetooth
+celular conectado por Bluetooth	telefono connesso via Bluetooth
+no se abrió la app BT: cámara de reversa al frente	app BT non aperta: retrocamera in primo piano
+no se abrió la app BT: no sé qué app está al frente	app BT non aperta: non so quale app è in primo piano
+no se abrió la app BT: ajustes abiertos	app BT non aperta: impostazioni aperte
+abierta {} para tomar el sonido (luego vuelve a {})	aperta {} per prendere l'audio (poi torna a {})
+abierta {} para tomar el sonido	aperta {} per prendere l'audio
+no se volvió: el usuario abrió {}	non è tornato: l'utente ha aperto {}
+Android Auto se desconectó	Android Auto si è disconnesso
+Registro técnico para enviar al desarrollador (se guarda en español).	Registro tecnico da inviare allo sviluppatore (viene salvato in spagnolo).
+Preparando {}…	Preparazione di {}…
+Copia de seguridad	Backup
+Guardar una copia	Salva un backup
+Ajustes, mantenimientos, kilometraje y la foto del vehículo en un archivo, en la pantalla o en una USB. Nada se sube a internet	Impostazioni, manutenzioni, chilometraggio e foto del veicolo in un file, sullo schermo o su una chiavetta USB. Niente viene caricato su internet
+Restaurar una copia	Ripristina un backup
+Recupera todo después de restablecer la pantalla, o pásalo a otra pantalla	Recupera tutto dopo aver ripristinato lo schermo, oppure passalo a un altro schermo
+Copia automática	Backup automatico
+Cada vez que cambias algo se actualiza una copia en la pantalla y en la USB que esté conectada	Ogni volta che cambi qualcosa, un backup viene aggiornato sullo schermo e sulla chiavetta USB collegata
+Memoria de la pantalla	Memoria dello schermo
+Memoria USB	Chiavetta USB
+Elegir otra carpeta…	Scegli un'altra cartella…
+¿Dónde guardar la copia?	Dove salvare il backup?
+No se pudo abrir el selector de archivos	Impossibile aprire il selettore di file
+No se pudo guardar la copia	Impossibile salvare il backup
+Esa memoria no dejó escribir el archivo. Prueba con otra memoria o con «Elegir otra carpeta…».	Quella memoria non ha permesso di scrivere il file. Prova con un'altra memoria o con «Scegli un'altra cartella…».
+Copia guardada	Backup salvato
+Se guardó en:	Salvato in:
+Al restablecer la pantalla de fábrica también se puede borrar su memoria: guarda otra copia en una USB para tenerla a salvo.	Il ripristino di fabbrica dello schermo può cancellare anche la sua memoria: tieni un altro backup su una chiavetta USB per sicurezza.
+No se pudo leer el archivo	Impossibile leggere il file
+Buscando copias…	Ricerca dei backup…
+No se encontró ninguna copia	Nessun backup trovato
+No hay copias de StradaOS en la memoria de la pantalla ni en las USB conectadas. El archivo se llama «StradaOS-backup» y termina en .json.	Non ci sono backup di StradaOS nella memoria dello schermo né sulle chiavette USB collegate. Il file si chiama «StradaOS-backup» e termina con .json.
+automática	automatico
+Buscar el archivo…	Cerca il file…
+Elige la copia	Scegli il backup
+No se pudo restaurar	Impossibile ripristinare
+Este archivo no es una copia de seguridad de StradaOS	Questo file non è un backup di StradaOS
+Copia del	Backup del
+Pantalla:	Schermo:
+Ajustes guardados:	Impostazioni salvate:
+con la foto del vehículo	con la foto del veicolo
+Se reemplaza toda la configuración actual de StradaOS por la de la copia.	Tutta la configurazione attuale di StradaOS viene sostituita da quella del backup.
+¿Restaurar esta copia?	Ripristinare questo backup?
+Restaurar	Ripristina
+Copia restaurada	Backup ripristinato
+Esta copia se hizo con una versión más nueva de StradaOS. Actualiza StradaOS y vuelve a intentarlo	Questo backup è stato creato con una versione più recente di StradaOS. Aggiorna StradaOS e riprova
+No se pudo guardar la configuración	Impossibile salvare la configurazione
+La copia está dañada o incompleta	Il backup è danneggiato o incompleto
+Abrir una app al encender	Apri un'app all'accensione
+StradaOS la abre un momento al arrancar (por ejemplo la radio, para que empiece a sonar) y vuelve al inicio	StradaOS la apre per un momento all'avvio (per esempio la radio, così inizia a suonare) e torna alla schermata iniziale
+Copia de seguridad en un archivo (pantalla o USB)	Backup in un file (schermo o USB)
+en Android 10+ la carpeta se elige con el selector de archivos	su Android 10+ la cartella si sceglie con il selettore di file
+Diseño vertical	Layout verticale
+Pantallas en vertical (tipo Tesla)	Schermi in verticale (tipo Tesla)
+en uso	in uso
+esta pantalla es horizontal	questo schermo è orizzontale

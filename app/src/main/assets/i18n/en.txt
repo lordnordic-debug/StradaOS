@@ -797,3 +797,95 @@ Cambiar el ícono	Change the icon
 Filtro de combustible	Fuel filter
 Aire acondicionado	Air conditioning
 Lavado	Car wash
+# 2.21: ventanas propias, diagnósticos traducidos, copia de seguridad, app al encender, diseño vertical
+Fuente: {}	Source: {}
+Pista: {}	Track: {}
+Carátula: {}	Album art: {}
+Lector de notificaciones (accesibilidad): {}	Notification reader (accessibility): {}
+ACTIVO	ACTIVE
+Última notificación de Open Headunit: {}	Last Open Headunit notification: {}
+ninguna	none
+{} s, carátula {}, textos {}	{} s, album art {}, texts {}
+Open Headunit corriendo: {} · celular por USB en modo Android Auto: {}	Open Headunit running: {} · phone on USB in Android Auto mode: {}
+no se sabe	unknown
+Android Auto conectado (para StradaOS): {}	Android Auto connected (for StradaOS): {}
+App Bluetooth conectada: {}	Bluetooth app connected: {}
+Audio Bluetooth automático: {}	Automatic Bluetooth audio: {}
+desactivado	off
+no aplica (otra marca)	not applicable (other brand)
+App de música Bluetooth: {} · abrir al conectar: {}	Bluetooth music app: {} · open on connect: {}
+no encontrada	not found
+Sonido en Bluetooth (estimado): {} · app al frente: {}	Sound on Bluetooth (estimated): {} · app in front: {}
+Activaciones: {}	Activations: {}
+Eventos Bluetooth:	Bluetooth events:
+(sin eventos)	(no events)
+no	no
+conectado a la app Bluetooth	connected to the Bluetooth app
+la app Bluetooth se cerró	the Bluetooth app closed
+se reinicia muy seguido: pausa de 15 min	it restarts too often: pausing for 15 min
+activar audio: el celular no está conectado por Bluetooth	enable audio: the phone isn't connected over Bluetooth
+activar audio: el celular está en pausa	enable audio: the phone is paused
+modo de audio Bluetooth solicitado	Bluetooth audio mode requested
+activar audio falló: {}	enabling audio failed: {}
+el celular empezó a sonar	the phone started playing
+revisión falló: {}	check failed: {}
+otra fuente al frente: {}	another source in front: {}
+no se cambió: StradaOS acaba de arrancar	not switched: StradaOS has just started
+no se cambió: llamada en curso	not switched: call in progress
+no se cambió: Android Auto tiene el sonido	not switched: Android Auto has the sound
+el sonido ya es Bluetooth	the sound is already on Bluetooth
+celular conectado por Bluetooth	phone connected over Bluetooth
+no se abrió la app BT: cámara de reversa al frente	BT app not opened: reverse camera in front
+no se abrió la app BT: no sé qué app está al frente	BT app not opened: can't tell which app is in front
+no se abrió la app BT: ajustes abiertos	BT app not opened: settings are open
+abierta {} para tomar el sonido (luego vuelve a {})	opened {} to take the sound (then back to {})
+abierta {} para tomar el sonido	opened {} to take the sound
+no se volvió: el usuario abrió {}	didn't return: the user opened {}
+Android Auto se desconectó	Android Auto disconnected
+Registro técnico para enviar al desarrollador (se guarda en español).	Technical log to send to the developer (it is kept in Spanish).
+Preparando {}…	Preparing {}…
+Copia de seguridad	Backup
+Guardar una copia	Save a backup
+Ajustes, mantenimientos, kilometraje y la foto del vehículo en un archivo, en la pantalla o en una USB. Nada se sube a internet	Settings, maintenance, odometer and the vehicle photo in one file, on the screen or on a USB drive. Nothing is uploaded to the internet
+Restaurar una copia	Restore a backup
+Recupera todo después de restablecer la pantalla, o pásalo a otra pantalla	Get everything back after resetting the screen, or move it to another screen
+Copia automática	Automatic backup
+Cada vez que cambias algo se actualiza una copia en la pantalla y en la USB que esté conectada	Every time you change something, a backup is updated on the screen and on the connected USB drive
+Memoria de la pantalla	Screen storage
+Memoria USB	USB drive
+Elegir otra carpeta…	Choose another folder…
+¿Dónde guardar la copia?	Where should the backup be saved?
+No se pudo abrir el selector de archivos	Couldn't open the file picker
+No se pudo guardar la copia	Couldn't save the backup
+Esa memoria no dejó escribir el archivo. Prueba con otra memoria o con «Elegir otra carpeta…».	That storage didn't allow writing the file. Try another one or “Choose another folder…”.
+Copia guardada	Backup saved
+Se guardó en:	Saved to:
+Al restablecer la pantalla de fábrica también se puede borrar su memoria: guarda otra copia en una USB para tenerla a salvo.	A factory reset of the screen can also erase its storage: keep another backup on a USB drive to be safe.
+No se pudo leer el archivo	Couldn't read the file
+Buscando copias…	Looking for backups…
+No se encontró ninguna copia	No backup found
+No hay copias de StradaOS en la memoria de la pantalla ni en las USB conectadas. El archivo se llama «StradaOS-backup» y termina en .json.	There are no StradaOS backups in the screen's storage or on connected USB drives. The file is called “StradaOS-backup” and ends in .json.
+automática	automatic
+Buscar el archivo…	Browse for the file…
+Elige la copia	Choose the backup
+No se pudo restaurar	Couldn't restore
+Este archivo no es una copia de seguridad de StradaOS	This file is not a StradaOS backup
+Copia del	Backup from
+Pantalla:	Screen:
+Ajustes guardados:	Settings saved:
+con la foto del vehículo	with the vehicle photo
+Se reemplaza toda la configuración actual de StradaOS por la de la copia.	All current StradaOS settings are replaced with the ones in the backup.
+¿Restaurar esta copia?	Restore this backup?
+Restaurar	Restore
+Copia restaurada	Backup restored
+Esta copia se hizo con una versión más nueva de StradaOS. Actualiza StradaOS y vuelve a intentarlo	This backup was made with a newer version of StradaOS. Update StradaOS and try again
+No se pudo guardar la configuración	Couldn't save the settings
+La copia está dañada o incompleta	The backup is damaged or incomplete
+Abrir una app al encender	Open an app at startup
+StradaOS la abre un momento al arrancar (por ejemplo la radio, para que empiece a sonar) y vuelve al inicio	StradaOS opens it for a moment when it starts (for example the radio, so it starts playing) and returns home
+Copia de seguridad en un archivo (pantalla o USB)	Backup to a file (screen or USB)
+en Android 10+ la carpeta se elige con el selector de archivos	on Android 10+ you choose the folder with the file picker
+Diseño vertical	Portrait layout
+Pantallas en vertical (tipo Tesla)	Portrait screens (Tesla style)
+en uso	in use
+esta pantalla es horizontal	this screen is landscape
