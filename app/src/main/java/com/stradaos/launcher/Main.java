@@ -173,6 +173,8 @@ public class Main extends Activity {
         prefs = getSharedPreferences("launcher", MODE_PRIVATE);
         I18n.init(this, prefs);
         LiveMapView.headingUp = prefs.getBoolean("map_heading", false);
+        LiveMapView.satellite = prefs.getBoolean("map_satellite", false);
+        crashLoopGuard();
         lm = (LocationManager) getSystemService(LOCATION_SERVICE);
         if (getPackageName().endsWith(".debug") && getIntent() != null && "saltar".equals(getIntent().getStringExtra("prueba")))
             prefs.edit().putBoolean("setup_done", true).apply();
@@ -715,10 +717,15 @@ public class Main extends Activity {
 
     private void immersive() {
         if (noImmersive) return;
+        // Ajuste «Ocultar la barra del sistema»: también se esconde la barra de navegación (abajo o al costado,
+        // p. ej. la barra lateral de Ottocast P3 con hora, Wi-Fi, apps, atrás e inicio), como hacen Waze y otras
+        // apps a pantalla completa. Deslizando desde el borde vuelve a aparecer un momento.
+        int nav = prefs != null && prefs.getBoolean("hide_navbar", false)
+                ? View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION : 0;
         try {
             getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_FULLSCREEN | 0x00001000 /* IMMERSIVE_STICKY, API 19 */);
+                | View.SYSTEM_UI_FLAG_FULLSCREEN | nav | 0x00001000 /* IMMERSIVE_STICKY, API 19 */);
         } catch (Exception ignored) { }
     }
 
@@ -2534,6 +2541,51 @@ public class Main extends Activity {
         updateMapTag();
     }
 
+    /** Corrección del velocímetro (ajuste «speed_offset»): «0» ninguna, «+3»/«-2» en la unidad que se muestra
+     *  (km/h o mph), «+5%» en porcentaje. Sirve para que coincida con el velocímetro del tablero, que casi
+     *  siempre marca un poco más que el GPS. Solo se aplica en movimiento: detenido sigue marcando 0. */
+    private float speedFix(float v) {
+        if (v < 1) return v;
+        String o = prefs.getString("speed_offset", "0").trim();
+        try {
+            if (o.endsWith("%")) v *= 1f + Float.parseFloat(o.substring(0, o.length() - 1).replace("+", "")) / 100f;
+            else v += Float.parseFloat(o.replace("+", ""));
+        } catch (NumberFormatException ignored) { }
+        return Math.max(0, v);
+    }
+
+    static final String[] SPEED_OFFSETS = {"0", "+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8", "+10",
+        "-1", "-2", "-3", "-4", "-5", "+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+10%", "-3%", "-5%"};
+
+    private static boolean crashChecked;
+
+    /**
+     * Protección contra cierres en bucle: si StradaOS se cerró dos veces seguidas en los primeros 20 s (también
+     * cierres nativos o del sistema, que no pasan por Guard), al abrir otra vez se apagan las opciones del mapa que
+     * más trabajo le dan a la pantalla (mapa que gira, satélite). Así el inicio nunca queda inutilizable.
+     */
+    private void crashLoopGuard() {
+        if (crashChecked) return;   // una vez por proceso (no en cada recreación de la actividad)
+        crashChecked = true;
+        boolean diedEarly = prefs.contains("boot_ok") && !prefs.getBoolean("boot_ok", true);
+        int streak = diedEarly ? prefs.getInt("boot_fails", 0) + 1 : 0;
+        SharedPreferences.Editor e = prefs.edit().putBoolean("boot_ok", false).putInt("boot_fails", streak);
+        boolean safe = streak >= 2 && (prefs.getBoolean("map_heading", false) || prefs.getBoolean("map_satellite", false));
+        if (safe) {
+            e.putBoolean("map_heading", false).putBoolean("map_satellite", false).putInt("boot_fails", 0);
+            LiveMapView.headingUp = false;
+            LiveMapView.satellite = false;
+            Guard.log("Se cerró " + streak + " veces seguidas al iniciar: se apagan «mapa según tu dirección» y «satélite».");
+        }
+        e.commit();   // commit: tiene que quedar escrito aunque se cierre enseguida
+        if (safe) h.postDelayed(new Runnable() { public void run() {
+            toast("StradaOS se cerró al iniciar: se desactivó el mapa que gira con el carro");
+        }}, 3000);
+        h.postDelayed(new Runnable() { public void run() {
+            prefs.edit().putBoolean("boot_ok", true).putInt("boot_fails", 0).apply();
+        }}, 20000);
+    }
+
     /** km/h o mph: lo elegido, o mph en EE. UU., Reino Unido, Liberia y Birmania. */
     private boolean useMph() {
         String u = prefs.getString("speed_unit", "auto");
@@ -3256,7 +3308,7 @@ public class Main extends Activity {
     private void setGps(boolean ok, float kmh) {
         if (speedTv == null) return;
         if (!ok) lastFix = 0;
-        float v = useMph() ? kmh * 0.621371f : kmh;
+        float v = speedFix(useMph() ? kmh * 0.621371f : kmh);
         speedTv.setText(ok ? String.valueOf(Math.round(kmh < 2 ? 0 : v)) : "--");
         if (carGauge != null) carGauge.setSpeed(kmh < 2 ? 0 : v, ok);
         if (mapGauge != null) mapGauge.setSpeed(kmh < 2 ? 0 : v, ok);
@@ -4562,6 +4614,14 @@ public class Main extends Activity {
             new IntCb() { public void on(int i) {
                 prefs.edit().putString("speed_unit", i == 1 ? "kmh" : i == 2 ? "mph" : "auto").apply(); rebuild(); showSettings(settingsCat);
             }});
+        final String unitLbl = useMph() ? " mph" : " km/h";
+        String[] offLbl = new String[SPEED_OFFSETS.length];
+        for (int i = 0; i < offLbl.length; i++)
+            offLbl[i] = i == 0 ? "Ninguna" : SPEED_OFFSETS[i].endsWith("%") ? SPEED_OFFSETS[i].replace("%", " %") : SPEED_OFFSETS[i] + unitLbl;
+        choice(un, "Corrección del velocímetro", "Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro",
+            offLbl, Math.max(0, java.util.Arrays.asList(SPEED_OFFSETS).indexOf(prefs.getString("speed_offset", "0"))), new IntCb() { public void on(int i) {
+                prefs.edit().putString("speed_offset", SPEED_OFFSETS[i]).apply(); rebuild(); showSettings(settingsCat);
+            }});
         LinearLayout mt = section(body, "Mantenimientos");
         row(mt, "Aceite, filtros, SOAT y más", "Ahora están en su propia sección", null, new Runnable() { public void run() { showSettings(C_MAINT); } });
     }
@@ -4704,6 +4764,13 @@ public class Main extends Activity {
 
     /** Pantalla de inicio: qué tarjetas se ven, el mapa y la barra de arriba. */
     private void catHome(LinearLayout body) {
+        LinearLayout scr = section(body, "Pantalla");
+        toggle(scr, "Ocultar la barra del sistema", "Pantalla completa de verdad: esconde la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla",
+            prefs.getBoolean("hide_navbar", false), new IntCb() { public void on(int i) {
+                prefs.edit().putBoolean("hide_navbar", i == 1).apply();
+                noImmersive = false; stormCount = 0;
+                immersive(); rebuild(); showSettings(settingsCat);
+            }});
         LinearLayout lay = section(body, "Tarjetas");
         segmented(lay, "Reproductor de música", "Ponlo del lado del conductor para tenerlo a la mano", new String[]{"Derecha", "Izquierda"},
             playerLeft ? 1 : 0, new IntCb() { public void on(int i) {
@@ -4863,6 +4930,11 @@ public class Main extends Activity {
             edit("city_manual", "Ciudad (vacío = automática por GPS)", ""));
         LinearLayout mo = section(body, "Mapa");
         LinearLayout ml = mo, nv = mo;
+        segmented(mo, "Tipo de mapa", "Satélite: fotos aéreas con calles y nombres (necesita internet; no usa el mapa sin conexión)",
+            new String[]{"Mapa", "Satélite"}, prefs.getBoolean("map_satellite", false) ? 1 : 0, new IntCb() { public void on(int i) {
+                prefs.edit().putBoolean("map_satellite", i == 1).apply(); LiveMapView.satellite = i == 1;
+                if (liveMap != null) liveMap.invalidate(); updateMapTag(); showSettings(settingsCat);
+            }});
         segmented(mo, "El mapa apunta", "Según tu dirección: gira con el carro mientras te mueves", new String[]{"Norte arriba", "Según tu dirección"},
             prefs.getBoolean("map_heading", false) ? 1 : 0, new IntCb() { public void on(int i) {
                 prefs.edit().putBoolean("map_heading", i == 1).apply(); LiveMapView.headingUp = i == 1;

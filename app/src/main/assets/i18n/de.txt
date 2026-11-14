@@ -797,3 +797,12 @@ Cambiar el ícono	Symbol ändern
 Filtro de combustible	Kraftstofffilter
 Aire acondicionado	Klimaanlage
 Lavado	Autowäsche
+Tipo de mapa	Kartentyp
+Satélite	Satellit
+Satélite: fotos aéreas con calles y nombres (necesita internet; no usa el mapa sin conexión)	Satellit: Luftbilder mit Straßen und Namen (braucht Internet; nutzt die Offline-Karte nicht)
+Corrección del velocímetro	Tachokorrektur
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	Addiert oder subtrahiert von der GPS-Geschwindigkeit, damit sie zum Tacho deines Autos passt
+Pantalla	Bildschirm
+Ocultar la barra del sistema	Systemleiste ausblenden
+Pantalla completa de verdad: esconde la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla	Echter Vollbildmodus: blendet die Navigationsleiste deines Bildschirms aus (unten oder seitlich). Vom Rand wischen, um sie zu sehen
+StradaOS se cerró al iniciar: se desactivó el mapa que gira con el carro	StradaOS wurde beim Start geschlossen: Die mitdrehende Karte wurde deaktiviert

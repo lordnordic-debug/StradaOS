@@ -797,3 +797,12 @@ Cambiar el ícono	Change the icon
 Filtro de combustible	Fuel filter
 Aire acondicionado	Air conditioning
 Lavado	Car wash
+Tipo de mapa	Map type
+Satélite	Satellite
+Satélite: fotos aéreas con calles y nombres (necesita internet; no usa el mapa sin conexión)	Satellite: aerial photos with streets and names (needs internet; doesn't use the offline map)
+Corrección del velocímetro	Speedometer correction
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	Adds to or subtracts from the GPS speed so it matches your car's dashboard
+Pantalla	Screen
+Ocultar la barra del sistema	Hide the system bar
+Pantalla completa de verdad: esconde la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla	True full screen: hides your screen's navigation bar (bottom or side). Swipe from the edge to see it
+StradaOS se cerró al iniciar: se desactivó el mapa que gira con el carro	StradaOS closed on startup: the map that turns with the car was disabled
