@@ -1,7 +1,7 @@
 name: Compilar (debug)
 
 # Compila la versión de prueba («StradaOS Prueba», paquete com.stradaos.launcher.debug) en cada push.
-# En main la publica en el Release «prueba» (prerelease, no cuenta como versión nueva) para instalarla en un
+# En main (o al lanzarlo a mano desde una rama) la publica en el Release «prueba» (prerelease, no cuenta como versión nueva) para instalarla en un
 # celular o en la pantalla junto a la normal. Se firma con la llave de siempre, así cada prueba se instala encima.
 on:
   push:
@@ -43,7 +43,8 @@ jobs:
           name: StradaOS-debug
           path: app/build/outputs/apk/debug/*.apk
       - name: Publicar en el Release «prueba»
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        # en main al hacer push, o a mano desde cualquier rama (para probar una versión antes de publicarla)
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'workflow_dispatch'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
