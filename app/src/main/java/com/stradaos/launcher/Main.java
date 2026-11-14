@@ -716,10 +716,15 @@ public class Main extends Activity {
 
     private void immersive() {
         if (noImmersive) return;
+        // Ajuste «Ocultar la barra del sistema»: también se esconde la barra de navegación (abajo o al costado,
+        // p. ej. la barra lateral de Ottocast P3 con hora, Wi-Fi, apps, atrás e inicio), como hacen Waze y otras
+        // apps a pantalla completa. Deslizando desde el borde vuelve a aparecer un momento.
+        int nav = prefs != null && prefs.getBoolean("hide_navbar", false)
+                ? View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION : 0;
         try {
             getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_FULLSCREEN | 0x00001000 /* IMMERSIVE_STICKY, API 19 */);
+                | View.SYSTEM_UI_FLAG_FULLSCREEN | nav | 0x00001000 /* IMMERSIVE_STICKY, API 19 */);
         } catch (Exception ignored) { }
     }
 
@@ -4729,6 +4734,13 @@ public class Main extends Activity {
 
     /** Pantalla de inicio: qué tarjetas se ven, el mapa y la barra de arriba. */
     private void catHome(LinearLayout body) {
+        LinearLayout scr = section(body, "Pantalla");
+        toggle(scr, "Ocultar la barra del sistema", "Pantalla completa de verdad: esconde la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla",
+            prefs.getBoolean("hide_navbar", false), new IntCb() { public void on(int i) {
+                prefs.edit().putBoolean("hide_navbar", i == 1).apply();
+                noImmersive = false; stormCount = 0;
+                immersive(); rebuild(); showSettings(settingsCat);
+            }});
         LinearLayout lay = section(body, "Tarjetas");
         segmented(lay, "Reproductor de música", "Ponlo del lado del conductor para tenerlo a la mano", new String[]{"Derecha", "Izquierda"},
             playerLeft ? 1 : 0, new IntCb() { public void on(int i) {

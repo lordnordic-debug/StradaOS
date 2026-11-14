@@ -802,3 +802,6 @@ Satélite	Satellite
 Satélite: fotos aéreas con calles y nombres (necesita internet; no usa el mapa sin conexión)	Satellite: foto aeree con strade e nomi (serve internet; non usa la mappa offline)
 Corrección del velocímetro	Correzione del tachimetro
 Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	Aggiunge o toglie alla velocità GPS per farla coincidere con il cruscotto della tua auto
+Pantalla	Schermo
+Ocultar la barra del sistema	Nascondi la barra di sistema
+Pantalla completa de verdad: esconde la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla	Vero schermo intero: nasconde la barra di navigazione del tuo schermo (in basso o laterale). Scorri dal bordo per vederla

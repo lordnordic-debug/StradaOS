@@ -802,3 +802,6 @@ Satélite	قمر صناعي
 Satélite: fotos aéreas con calles y nombres (necesita internet; no usa el mapa sin conexión)	قمر صناعي: صور جوية مع الشوارع والأسماء (يحتاج إلى الإنترنت؛ لا يستخدم الخريطة دون اتصال)
 Corrección del velocímetro	تصحيح عداد السرعة
 Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	يضيف إلى سرعة GPS أو يطرح منها لتطابق عداد سيارتك
+Pantalla	الشاشة
+Ocultar la barra del sistema	إخفاء شريط النظام
+Pantalla completa de verdad: esconde la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla	ملء الشاشة فعلاً: يخفي شريط التنقل في شاشتك (في الأسفل أو على الجانب). اسحب من الحافة لرؤيته
