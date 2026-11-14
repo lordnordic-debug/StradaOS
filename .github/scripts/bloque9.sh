@@ -61,7 +61,8 @@ adb shell am start -n $ACT --es prueba saltar >/dev/null; sleep 6
 go tema:oscuro 6; go inicio 3
 
 # ── vertical 768x1024 (tipo Tesla 9,7") ──
-size 768x1024
+# en Android 4.1 el emulador no cambia de tamaño: se usa la simulación de pantalla de la versión de prueba
+if [ "$API" -ge 18 ]; then size 768x1024; else go sim:6 6; fi
 go inicio 6; go pista-demo 4; go vel:62 3; shot v01-vertical
 go diseno:izq 5; go pista-demo 3; shot v02-reproductor-izquierda
 go diseno:der 4; go diseno:sinauto 5; go pista-demo 3; go vel:62 3; shot v03-sin-vehiculo
@@ -80,7 +81,7 @@ go tema:claro 6; go pista-demo 3; go vel:62 3; shot v15-vertical-claro
 go tema:oscuro 6
 
 # ── vertical 1080x1920 ──
-size 1080x1920
+if [ "$API" -ge 18 ]; then size 1080x1920; else go sim:7 6; fi
 go inicio 6; go pista-demo 4; go vel:62 3; shot w01-vertical-1080
 go diseno:sinauto 5; go pista-demo 3; shot w02-sin-vehiculo
 go diseno:conauto 4; go diseno:sinreproductor 5; shot w03-sin-reproductor
@@ -88,7 +89,7 @@ go diseno:base 5; go ajustes:5 5; shot w04-ajustes
 go inicio 3
 
 # ── vuelta a horizontal: todo como antes ──
-size 1024x600
+if [ "$API" -ge 18 ]; then size 1024x600; else go sim:0 6; fi
 go inicio 6; go pista-demo 3; shot h30-inicio-de-vuelta
 adb shell "run-as $PKG cat files/fallos.txt" > "$OUT/fallos.txt" 2>/dev/null || true
 adb logcat -d | grep -E "FATAL EXCEPTION|AndroidRuntime: (java|Caused|\tat com.stradaos)" | tail -60 > $OUT/logcat.txt

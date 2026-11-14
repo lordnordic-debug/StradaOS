@@ -56,6 +56,8 @@ class Dlg extends AlertDialog {
         Window w = getWindow();
         try { w.requestFeature(Window.FEATURE_NO_TITLE); } catch (Throwable ignored) { }
         w.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        // en Android 4.x la ventana del diálogo es opaca: sin esto, las esquinas redondeadas salen negras
+        w.setFormat(android.graphics.PixelFormat.TRANSLUCENT);
         DisplayMetrics dm = getContext().getResources().getDisplayMetrics();
         int sw = dm.widthPixels, sh = dm.heightPixels;
         S = sw >= sh ? Math.min(sw / 1024f, sh / 600f) : Math.min(sw / 600f, sh / 1024f);
@@ -209,8 +211,8 @@ class Dlg extends AlertDialog {
                     LinearLayout row = new LinearLayout(c);
                     row.setGravity(Gravity.CENTER_VERTICAL);
                     row.setMinimumHeight(px(54));
+                    row.setBackground(rowBg());   // antes del margen: en Android 4.x el fondo reemplaza el margen interno
                     row.setPadding(px(28), px(9), px(24), px(9));
-                    row.setBackground(rowBg());
                     TextView t = text(it[pos], 17, sel ? Main.RED : Main.TEXT, sel);
                     row.addView(t, new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1));
                     if (p.single) {
@@ -273,8 +275,8 @@ class Dlg extends AlertDialog {
             b.setGravity(Gravity.CENTER);
             b.setSingleLine(true);
             b.setEllipsize(TextUtils.TruncateAt.END);
-            b.setPadding(px(12), 0, px(12), 0);
             b.setBackground(button(main ? Main.RED : Main.BTN, 25));
+            b.setPadding(px(12), 0, px(12), 0);
             b.setClickable(true);
             b.setOnClickListener(new View.OnClickListener() { public void onClick(View v) {
                 if (ls[i] != null) ls[i].onClick(Dlg.this, which[i]);

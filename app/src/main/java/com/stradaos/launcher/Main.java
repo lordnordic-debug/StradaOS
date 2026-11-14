@@ -3670,7 +3670,7 @@ public class Main extends Activity {
     }
 
     private void showPlayerDiag() {
-        String msg = "Fuente: " + curOrigin + " / " + curSource
+        String msg = "Fuente: " + (curOrigin != null ? curOrigin : "—") + " / " + (curSource != null ? curSource : "—")
                 + "\nPista: " + curTitle + " — " + curArtist
                 + "\nCarátula: " + (curArt != null ? curArt.getWidth() + "x" + curArt.getHeight() : "no")
                 + "\n\nLector de notificaciones (accesibilidad): " + (NotifArt.running ? "ACTIVO" : "apagado")
