@@ -889,3 +889,9 @@ Diseño vertical	Dikey düzen
 Pantallas en vertical (tipo Tesla)	Dikey ekranlar (Tesla tarzı)
 en uso	kullanımda
 esta pantalla es horizontal	bu ekran yatay
+# 2.21.1: PR #26 (wsx79)
+Pantalla completa	Tam ekran
+Ocultar la barra del sistema	Sistem çubuğunu gizle
+Esconde también la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla un momento	Ekranınızın gezinme çubuğunu da gizler (altta veya yanda). Kısa süre görmek için kenardan kaydırın
+Corrección del velocímetro	Hız göstergesi düzeltmesi
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	GPS hızına ekleme veya çıkarma yaparak aracınızın göstergesiyle eşleşmesini sağlar

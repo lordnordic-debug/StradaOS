@@ -889,3 +889,9 @@ Diseño vertical	التخطيط العمودي
 Pantallas en vertical (tipo Tesla)	الشاشات العمودية (على غرار Tesla)
 en uso	قيد الاستخدام
 esta pantalla es horizontal	هذه الشاشة أفقية
+# 2.21.1: PR #26 (wsx79)
+Pantalla completa	ملء الشاشة
+Ocultar la barra del sistema	إخفاء شريط النظام
+Esconde también la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla un momento	يخفي أيضًا شريط التنقل في شاشتك (في الأسفل أو على الجانب). اسحب من الحافة لرؤيته للحظة
+Corrección del velocímetro	تصحيح عداد السرعة
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	يضيف إلى سرعة GPS أو يطرح منها لتطابق لوحة عدادات سيارتك

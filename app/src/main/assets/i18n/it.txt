@@ -889,3 +889,9 @@ Diseño vertical	Layout verticale
 Pantallas en vertical (tipo Tesla)	Schermi in verticale (tipo Tesla)
 en uso	in uso
 esta pantalla es horizontal	questo schermo è orizzontale
+# 2.21.1: PR #26 (wsx79)
+Pantalla completa	Schermo intero
+Ocultar la barra del sistema	Nascondi la barra di sistema
+Esconde también la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla un momento	Nasconde anche la barra di navigazione dello schermo (in basso o di lato). Scorri dal bordo per vederla per un momento
+Corrección del velocímetro	Correzione del tachimetro
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	Aggiunge o toglie alla velocità GPS perché coincida con il cruscotto della tua auto

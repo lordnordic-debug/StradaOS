@@ -889,3 +889,9 @@ Diseño vertical	Portrait layout
 Pantallas en vertical (tipo Tesla)	Portrait screens (Tesla style)
 en uso	in use
 esta pantalla es horizontal	this screen is landscape
+# 2.21.1: PR #26 (wsx79)
+Pantalla completa	Full screen
+Ocultar la barra del sistema	Hide the system bar
+Esconde también la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla un momento	Also hides your screen's navigation bar (bottom or side). Swipe from the edge to see it for a moment
+Corrección del velocímetro	Speedometer correction
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	Adds or subtracts from the GPS speed so it matches your car's dashboard

@@ -1,0 +1,1 @@
+Hide the system navigation bar (Android 4.4+, optional) and speedometer correction to match your dashboard.

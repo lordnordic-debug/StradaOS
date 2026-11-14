@@ -757,12 +757,35 @@ public class Main extends Activity {
 
     private void immersive() {
         if (noImmersive) return;
+        // 2.21.1 (PR #26 de wsx79): «Ocultar la barra del sistema» esconde también la barra de navegación (abajo o
+        // al costado, como la del Ottocast P3), igual que Waze a pantalla completa; deslizando desde el borde vuelve
+        // un momento. Solo desde Android 4.4: antes no existe el modo inmersivo y la barra volvería encima al tocar.
+        int nav = SDK >= 19 && prefs != null && prefs.getBoolean("hide_navbar", false)
+                ? View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION : 0;
         try {
             getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_FULLSCREEN | 0x00001000 /* IMMERSIVE_STICKY, API 19 */);
+                | View.SYSTEM_UI_FLAG_FULLSCREEN | nav | 0x00001000 /* IMMERSIVE_STICKY, API 19 */);
         } catch (Exception ignored) { }
     }
+
+    /**
+     * Corrección del velocímetro (2.21.1, PR #26 de wsx79): «+3» o «-2» en la unidad que se muestra, «+5%» en
+     * porcentaje, para que coincida con el tablero (que casi siempre marca un poco más que el GPS). Solo cambia el
+     * número que se ve: el kilometraje y los mantenimientos siguen con la distancia real del GPS.
+     */
+    private float speedFix(float v) {
+        if (v < 1) return v;
+        String o = prefs.getString("speed_offset", "0").trim();
+        try {
+            if (o.endsWith("%")) v *= 1f + Float.parseFloat(o.substring(0, o.length() - 1).replace("+", "")) / 100f;
+            else v += Float.parseFloat(o.replace("+", ""));
+        } catch (NumberFormatException ignored) { }
+        return Math.max(0, v);
+    }
+
+    static final String[] SPEED_OFFSETS = {"0", "+1", "+2", "+3", "+4", "+5", "+7", "+10", "-1", "-2", "-3",
+        "+3%", "+5%", "+7%", "+10%", "-5%"};
 
     /** Al conectar algo por USB: si aún no se eligió cómo conectar el celular y hay varias opciones, se pregunta. */
     private final BroadcastReceiver usbReceiver = new BroadcastReceiver() {
@@ -3391,7 +3414,7 @@ public class Main extends Activity {
     private void setGps(boolean ok, float kmh) {
         if (speedTv == null) return;
         if (!ok) lastFix = 0;
-        float v = useMph() ? kmh * 0.621371f : kmh;
+        float v = speedFix(useMph() ? kmh * 0.621371f : kmh);
         speedTv.setText(ok ? String.valueOf(Math.round(kmh < 2 ? 0 : v)) : "--");
         if (carGauge != null) carGauge.setSpeed(kmh < 2 ? 0 : v, ok);
         if (mapGauge != null) mapGauge.setSpeed(kmh < 2 ? 0 : v, ok);
@@ -4849,6 +4872,14 @@ public class Main extends Activity {
             new IntCb() { public void on(int i) {
                 prefs.edit().putString("speed_unit", i == 1 ? "kmh" : i == 2 ? "mph" : "auto").apply(); rebuild(); showSettings(settingsCat);
             }});
+        final String unitLbl = useMph() ? " mph" : " km/h";
+        String[] offLbl = new String[SPEED_OFFSETS.length];
+        for (int i = 0; i < offLbl.length; i++)
+            offLbl[i] = i == 0 ? I18n.t("Ninguna") : SPEED_OFFSETS[i].endsWith("%") ? SPEED_OFFSETS[i].replace("%", " %") : SPEED_OFFSETS[i] + unitLbl;
+        choice(un, "Corrección del velocímetro", "Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro",
+            offLbl, Math.max(0, java.util.Arrays.asList(SPEED_OFFSETS).indexOf(prefs.getString("speed_offset", "0"))), new IntCb() { public void on(int i) {
+                prefs.edit().putString("speed_offset", SPEED_OFFSETS[i]).apply(); rebuild(); showSettings(settingsCat);
+            }});
         LinearLayout mt = section(body, "Mantenimientos");
         row(mt, "Aceite, filtros, SOAT y más", "Ahora están en su propia sección", null, new Runnable() { public void run() { showSettings(C_MAINT); } });
     }
@@ -5063,6 +5094,15 @@ public class Main extends Activity {
     }
 
     private void catConnection(LinearLayout body) {
+        if (SDK >= 19) {
+            LinearLayout scr = section(body, "Pantalla completa");
+            toggle(scr, "Ocultar la barra del sistema", "Esconde también la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla un momento",
+                prefs.getBoolean("hide_navbar", false), new IntCb() { public void on(int i) {
+                    prefs.edit().putBoolean("hide_navbar", i == 1).apply();
+                    noImmersive = false; stormCount = 0;
+                    immersive(); rebuild(); showSettings(settingsCat);
+                }});
+        }
         LinearLayout c = section(body, "Celular");
         String chosen = prefs.getString("conn_app", null);
         row(c, "Cómo conectar el celular", "La app que se abre al conectar por USB", chosen != null ? labelOf(chosen) : "Preguntar",

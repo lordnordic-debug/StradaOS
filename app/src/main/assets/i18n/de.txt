@@ -889,3 +889,9 @@ Diseño vertical	Hochformat-Layout
 Pantallas en vertical (tipo Tesla)	Bildschirme im Hochformat (Tesla-Stil)
 en uso	in Verwendung
 esta pantalla es horizontal	dieser Bildschirm ist im Querformat
+# 2.21.1: PR #26 (wsx79)
+Pantalla completa	Vollbild
+Ocultar la barra del sistema	Systemleiste ausblenden
+Esconde también la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla un momento	Blendet auch die Navigationsleiste des Bildschirms aus (unten oder seitlich). Vom Rand wischen, um sie kurz zu sehen
+Corrección del velocímetro	Tachokorrektur
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	Addiert oder subtrahiert etwas zur GPS-Geschwindigkeit, damit sie zum Tacho deines Autos passt

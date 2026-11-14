@@ -1,0 +1,1 @@
+Ocultar la barra de navegación del sistema (Android 4.4+, opcional) y corrección del velocímetro para que coincida con el tablero.

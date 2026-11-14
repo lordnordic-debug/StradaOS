@@ -889,3 +889,9 @@ Diseño vertical	Disposition verticale
 Pantallas en vertical (tipo Tesla)	Écrans en portrait (type Tesla)
 en uso	utilisée
 esta pantalla es horizontal	cet écran est horizontal
+# 2.21.1: PR #26 (wsx79)
+Pantalla completa	Plein écran
+Ocultar la barra del sistema	Masquer la barre système
+Esconde también la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla un momento	Masque aussi la barre de navigation de votre écran (en bas ou sur le côté). Balayez depuis le bord pour la voir un instant
+Corrección del velocímetro	Correction du compteur
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	Ajoute ou retire à la vitesse GPS pour qu'elle corresponde au tableau de bord de votre voiture

@@ -889,3 +889,9 @@ Diseño vertical	Layout vertical
 Pantallas en vertical (tipo Tesla)	Telas na vertical (tipo Tesla)
 en uso	em uso
 esta pantalla es horizontal	esta tela é horizontal
+# 2.21.1: PR #26 (wsx79)
+Pantalla completa	Tela cheia
+Ocultar la barra del sistema	Ocultar a barra do sistema
+Esconde también la barra de navegación de tu pantalla (abajo o al costado). Desliza desde el borde para verla un momento	Esconde também a barra de navegação da sua tela (embaixo ou na lateral). Deslize da borda para vê-la por um momento
+Corrección del velocímetro	Correção do velocímetro
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	Soma ou subtrai da velocidade do GPS para coincidir com o painel do seu carro
