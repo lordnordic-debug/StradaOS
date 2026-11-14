@@ -696,6 +696,27 @@ public class Main extends Activity {
                     Guard.log("PRUEBA verificar-apk: propio=" + own + " otro=" + other);
                 }
                 else if ("aviso-inicio".equals(v)) askDefaultHome(null);
+                // 2.21: ventanas propias, copia de seguridad
+                else if ("diag-reproductor".equals(v)) showPlayerDiag();
+                else if ("compat".equals(v)) showCompat();
+                else if ("ayuda-bt".equals(v)) btHelp();
+                else if ("fecha".equals(v)) pickDate("¿Cuándo fue la última vez?", 0, new LongCb() { public void on(long w) { } });
+                else if ("hora".equals(v)) askDarkTime("dark_start", 18 * 60, "Oscuro desde");
+                else if ("copia-guardar".equals(v)) backupSave0();
+                else if ("copia-restaurar".equals(v)) backupRestore0();
+                else if ("copia-prueba".equals(v)) {
+                    // ida y vuelta: se guarda una copia, se cambian datos, se restaura y deben volver los de antes
+                    prefs.edit().putString("car_name", "Carro de prueba").putFloat("odo_base_km", 12345.5f).putInt("accent", 0xFF2D7FF9).apply();
+                    String json = Backup.build(Main.this);
+                    File f = Backup.save(Main.this, Backup.primary(), "StradaOS-backup-prueba.json", json);
+                    prefs.edit().putString("car_name", "Otro").putFloat("odo_base_km", 1f).remove("accent").putString("maint", "[]").apply();
+                    String err = Backup.apply(Main.this, new String(Backup.readAll(new java.io.FileInputStream(f)), "UTF-8"));
+                    boolean ok = err == null && "Carro de prueba".equals(prefs.getString("car_name", "")) && prefs.getFloat("odo_base_km", 0) == 12345.5f
+                        && prefs.getInt("accent", 0) == 0xFF2D7FF9 && Backup.apply(Main.this, "{\"app\":\"otra\"}") != null;
+                    int found = Backup.find(Main.this).size();
+                    Guard.log("PRUEBA copia: ok=" + ok + " error=" + err + " archivo=" + f + " encontradas=" + found + " usb=" + Backup.removable(Main.this));
+                    reloadAll();
+                }
                 else if ("demo-barra".equals(v) && !apps.isEmpty()) {
                     ResolveInfo r = apps.get(0);
                     prefs.edit().putString("dock_2", "fn:music")
@@ -2971,13 +2992,13 @@ public class Main extends Activity {
         final float railX = railLeft ? 16 : 1016 + ex, step = (boardH - 24) / (float) n;
         float cs0 = (sideDock ? (dockLabels ? 40 : 48) : compactDock ? 50 : 64) * ik;
         if (sideDock) cs0 = Math.min(cs0, step - (dockLabels ? 18 : 6));          // que quepan en la barra lateral
-        if (vertical) cs0 = Math.min(cs0, slotW - 10);                            // con muchos botones, que no se monten
-        final float cs = cs0;          // círculo
         final float lblSize = sideDock ? 10 : compactDock ? 12 : 13, lblPad = sideDock ? 2 : compactDock ? 2 : 8;
         final boolean appStyle = "apps".equals(prefs.getString("dock_style", "circle"));
         // botones a lo ancho: con 7 se usan las posiciones de siempre; con otra cantidad se reparten parejo
         final float slotW = n == 7 && !vertical ? 138 + ex / 6 : (948 + ex) / (float) n, itemW = Math.min(120, slotW - 4);
         final float x0 = n == 7 && !vertical ? 38 : 38 + (slotW - itemW) / 2;
+        if (vertical) cs0 = Math.min(cs0, slotW - 10);                            // con muchos botones, que no se monten
+        final float cs = cs0;          // círculo
         if (sideDock) {
             View rail = new View(this);
             rail.setBackground(round(DOCK, 20));
