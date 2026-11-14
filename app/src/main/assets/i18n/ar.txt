@@ -797,3 +797,8 @@ Cambiar el ícono	تغيير الأيقونة
 Filtro de combustible	فلتر الوقود
 Aire acondicionado	التكييف
 Lavado	غسيل السيارة
+Tipo de mapa	نوع الخريطة
+Satélite	قمر صناعي
+Satélite: fotos aéreas con calles y nombres (necesita internet; no usa el mapa sin conexión)	قمر صناعي: صور جوية مع الشوارع والأسماء (يحتاج إلى الإنترنت؛ لا يستخدم الخريطة دون اتصال)
+Corrección del velocímetro	تصحيح عداد السرعة
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	يضيف إلى سرعة GPS أو يطرح منها لتطابق عداد سيارتك

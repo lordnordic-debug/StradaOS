@@ -797,3 +797,8 @@ Cambiar el ícono	Cambia l'icona
 Filtro de combustible	Filtro del carburante
 Aire acondicionado	Aria condizionata
 Lavado	Lavaggio
+Tipo de mapa	Tipo di mappa
+Satélite	Satellite
+Satélite: fotos aéreas con calles y nombres (necesita internet; no usa el mapa sin conexión)	Satellite: foto aeree con strade e nomi (serve internet; non usa la mappa offline)
+Corrección del velocímetro	Correzione del tachimetro
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	Aggiunge o toglie alla velocità GPS per farla coincidere con il cruscotto della tua auto

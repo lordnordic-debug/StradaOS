@@ -797,3 +797,8 @@ Cambiar el ícono	Simgeyi değiştir
 Filtro de combustible	Yakıt filtresi
 Aire acondicionado	Klima
 Lavado	Yıkama
+Tipo de mapa	Harita türü
+Satélite	Uydu
+Satélite: fotos aéreas con calles y nombres (necesita internet; no usa el mapa sin conexión)	Uydu: sokak ve adlarla hava fotoğrafları (internet gerekir; çevrimdışı haritayı kullanmaz)
+Corrección del velocímetro	Hız göstergesi düzeltmesi
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	GPS hızına ekler veya çıkarır, böylece aracının göstergesiyle aynı olur

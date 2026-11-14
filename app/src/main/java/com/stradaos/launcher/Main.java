@@ -173,6 +173,7 @@ public class Main extends Activity {
         prefs = getSharedPreferences("launcher", MODE_PRIVATE);
         I18n.init(this, prefs);
         LiveMapView.headingUp = prefs.getBoolean("map_heading", false);
+        LiveMapView.satellite = prefs.getBoolean("map_satellite", false);
         lm = (LocationManager) getSystemService(LOCATION_SERVICE);
         if (getPackageName().endsWith(".debug") && getIntent() != null && "saltar".equals(getIntent().getStringExtra("prueba")))
             prefs.edit().putBoolean("setup_done", true).apply();
@@ -2534,6 +2535,22 @@ public class Main extends Activity {
         updateMapTag();
     }
 
+    /** Corrección del velocímetro (ajuste «speed_offset»): «0» ninguna, «+3»/«-2» en la unidad que se muestra
+     *  (km/h o mph), «+5%» en porcentaje. Sirve para que coincida con el velocímetro del tablero, que casi
+     *  siempre marca un poco más que el GPS. Solo se aplica en movimiento: detenido sigue marcando 0. */
+    private float speedFix(float v) {
+        if (v < 1) return v;
+        String o = prefs.getString("speed_offset", "0").trim();
+        try {
+            if (o.endsWith("%")) v *= 1f + Float.parseFloat(o.substring(0, o.length() - 1).replace("+", "")) / 100f;
+            else v += Float.parseFloat(o.replace("+", ""));
+        } catch (NumberFormatException ignored) { }
+        return Math.max(0, v);
+    }
+
+    static final String[] SPEED_OFFSETS = {"0", "+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8", "+10",
+        "-1", "-2", "-3", "-4", "-5", "+2%", "+3%", "+4%", "+5%", "+6%", "+7%", "+8%", "+10%", "-3%", "-5%"};
+
     /** km/h o mph: lo elegido, o mph en EE. UU., Reino Unido, Liberia y Birmania. */
     private boolean useMph() {
         String u = prefs.getString("speed_unit", "auto");
@@ -3256,7 +3273,7 @@ public class Main extends Activity {
     private void setGps(boolean ok, float kmh) {
         if (speedTv == null) return;
         if (!ok) lastFix = 0;
-        float v = useMph() ? kmh * 0.621371f : kmh;
+        float v = speedFix(useMph() ? kmh * 0.621371f : kmh);
         speedTv.setText(ok ? String.valueOf(Math.round(kmh < 2 ? 0 : v)) : "--");
         if (carGauge != null) carGauge.setSpeed(kmh < 2 ? 0 : v, ok);
         if (mapGauge != null) mapGauge.setSpeed(kmh < 2 ? 0 : v, ok);
@@ -4562,6 +4579,14 @@ public class Main extends Activity {
             new IntCb() { public void on(int i) {
                 prefs.edit().putString("speed_unit", i == 1 ? "kmh" : i == 2 ? "mph" : "auto").apply(); rebuild(); showSettings(settingsCat);
             }});
+        final String unitLbl = useMph() ? " mph" : " km/h";
+        String[] offLbl = new String[SPEED_OFFSETS.length];
+        for (int i = 0; i < offLbl.length; i++)
+            offLbl[i] = i == 0 ? "Ninguna" : SPEED_OFFSETS[i].endsWith("%") ? SPEED_OFFSETS[i].replace("%", " %") : SPEED_OFFSETS[i] + unitLbl;
+        choice(un, "Corrección del velocímetro", "Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro",
+            offLbl, Math.max(0, java.util.Arrays.asList(SPEED_OFFSETS).indexOf(prefs.getString("speed_offset", "0"))), new IntCb() { public void on(int i) {
+                prefs.edit().putString("speed_offset", SPEED_OFFSETS[i]).apply(); rebuild(); showSettings(settingsCat);
+            }});
         LinearLayout mt = section(body, "Mantenimientos");
         row(mt, "Aceite, filtros, SOAT y más", "Ahora están en su propia sección", null, new Runnable() { public void run() { showSettings(C_MAINT); } });
     }
@@ -4863,6 +4888,11 @@ public class Main extends Activity {
             edit("city_manual", "Ciudad (vacío = automática por GPS)", ""));
         LinearLayout mo = section(body, "Mapa");
         LinearLayout ml = mo, nv = mo;
+        segmented(mo, "Tipo de mapa", "Satélite: fotos aéreas con calles y nombres (necesita internet; no usa el mapa sin conexión)",
+            new String[]{"Mapa", "Satélite"}, prefs.getBoolean("map_satellite", false) ? 1 : 0, new IntCb() { public void on(int i) {
+                prefs.edit().putBoolean("map_satellite", i == 1).apply(); LiveMapView.satellite = i == 1;
+                if (liveMap != null) liveMap.invalidate(); updateMapTag(); showSettings(settingsCat);
+            }});
         segmented(mo, "El mapa apunta", "Según tu dirección: gira con el carro mientras te mueves", new String[]{"Norte arriba", "Según tu dirección"},
             prefs.getBoolean("map_heading", false) ? 1 : 0, new IntCb() { public void on(int i) {
                 prefs.edit().putBoolean("map_heading", i == 1).apply(); LiveMapView.headingUp = i == 1;

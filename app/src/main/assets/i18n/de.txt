@@ -797,3 +797,8 @@ Cambiar el ícono	Symbol ändern
 Filtro de combustible	Kraftstofffilter
 Aire acondicionado	Klimaanlage
 Lavado	Autowäsche
+Tipo de mapa	Kartentyp
+Satélite	Satellit
+Satélite: fotos aéreas con calles y nombres (necesita internet; no usa el mapa sin conexión)	Satellit: Luftbilder mit Straßen und Namen (braucht Internet; nutzt die Offline-Karte nicht)
+Corrección del velocímetro	Tachokorrektur
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	Addiert oder subtrahiert von der GPS-Geschwindigkeit, damit sie zum Tacho deines Autos passt

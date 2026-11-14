@@ -797,3 +797,8 @@ Cambiar el ícono	Change the icon
 Filtro de combustible	Fuel filter
 Aire acondicionado	Air conditioning
 Lavado	Car wash
+Tipo de mapa	Map type
+Satélite	Satellite
+Satélite: fotos aéreas con calles y nombres (necesita internet; no usa el mapa sin conexión)	Satellite: aerial photos with streets and names (needs internet; doesn't use the offline map)
+Corrección del velocímetro	Speedometer correction
+Suma o resta a la velocidad del GPS para que coincida con el tablero de tu carro	Adds to or subtracts from the GPS speed so it matches your car's dashboard

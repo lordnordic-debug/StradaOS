@@ -42,12 +42,20 @@ public class LiveMapView extends View {
         "https://a.tile.opentopomap.org/{z}/{x}/{y}.png",
         ESRI + "World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}",
         "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",   // 7: satélite
     };
-    static final String[] LABELS = {null, null, null, null, null, ESRI + "World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}", null};
-    static final boolean[] DARKEN = {true, true, true, true, true, false, true};
-    static final String[] NAMES = {"Personalizada", "OSM Alemania", "OSM Francia", "OSM Humanitario", "OpenTopoMap", "Esri gris oscuro", "OpenStreetMap"};
-    static final int[] MAXZ = {18, 18, 18, 18, 17, 16, 18};
-    static final String[] ERR = new String[7];
+    static final String[] LABELS = {null, null, null, null, null, ESRI + "World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}", null,
+        "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}"};
+    static final boolean[] DARKEN = {true, true, true, true, true, false, true, false};
+    static final String[] NAMES = {"Personalizada", "OSM Alemania", "OSM Francia", "OSM Humanitario", "OpenTopoMap", "Esri gris oscuro", "OpenStreetMap", "Satélite (Esri)"};
+    static final int[] MAXZ = {18, 18, 18, 18, 17, 16, 18, 18};
+    static final String[] ERR = new String[8];
+    /** Fuente de la vista satelital: no entra en la rotación automática de fuentes del mapa normal. */
+    static final int SAT = 7;
+    /** true: vista satelital (fotos aéreas de Esri con calles y nombres encima) en lugar del mapa normal. */
+    static boolean satellite;
+    /** Fuente que se dibuja ahora: la satelital si está elegida, si no la que funciona. */
+    static int cur() { return satellite ? SAT : provider; }
     static int rounds;      // vueltas completas sin éxito
     static int provider = 1;             // índice del que funciona
     static String lastError = "—";
@@ -139,7 +147,7 @@ public class LiveMapView extends View {
         else if (okCount == 0) {
             // empezar por la fuente que funcionó la última vez: así, sin internet, se encuentra lo que ya está en caché
             int saved = sp.getInt("map_provider", 0);
-            if (saved > 0 && saved < URLS.length) provider = saved;
+            if (saved > 0 && saved < SAT) provider = saved;
         }
         loadFile(c);
     }
@@ -167,7 +175,7 @@ public class LiveMapView extends View {
 
     /** Tesela guardada de cualquier fuente (sin internet vale cualquiera). Devuelve {bitmap, fuente} o null. */
     private Object[] cachedAny(int z, int x, int y) {
-        for (int q = 1; q < URLS.length; q++) {
+        for (int q = 1; q < SAT; q++) {   // solo mapas normales: una foto satelital no reemplaza al mapa
             File g = tileFile(q, 0, z, x, y);
             if (!g.exists()) continue;
             Bitmap b = BitmapFactory.decodeFile(g.getAbsolutePath());
@@ -182,7 +190,7 @@ public class LiveMapView extends View {
     /** ¿La posición actual se dibuja desde el mapa sin conexión? */
     public boolean usingFile() {
         OfflineMap f = fileMap;
-        return f != null && !Double.isNaN(tLat) && f.contains(tLat, tLon);
+        return !satellite && f != null && !Double.isNaN(tLat) && f.contains(tLat, tLon);
     }
 
     /** Mapa claro → estilo oscuro (invierte y gira el tono 180°, como el "modo noche" de muchos mapas). */
@@ -227,7 +235,7 @@ public class LiveMapView extends View {
                 : fileErr != null ? "error: " + fileErr : "ninguno";
         return "Posición: " + (Double.isNaN(tLat) ? "sin GPS" : String.format(java.util.Locale.US, "%.5f, %.5f", tLat, tLon))
                 + "\nZoom: " + zoom + "\nMapa sin conexión: " + file
-                + "\nProveedor: " + NAMES[provider]
+                + "\nProveedor: " + NAMES[cur()]
                 + (okCount == 0 && rounds > 0 ? " · ninguna fuente respondió (" + rounds + " vueltas)" : "")
                 + "\nTeselas descargadas: " + okCount + " · en caché: " + cached
                 + "\nErrores seguidos: " + netErrors + "\nÚltimo error: " + lastError
@@ -239,7 +247,7 @@ public class LiveMapView extends View {
     private static String sources() {
         StringBuilder b = new StringBuilder();
         for (int i = 0; i < URLS.length; i++) {
-            if (URLS[i].length() == 0) continue;
+            if (URLS[i].length() == 0 || (i == SAT && ERR[i] == null)) continue;
             b.append("\n• ").append(NAMES[i]).append(": ").append(ERR[i] == null ? "sin probar" : ERR[i]);
         }
         return b.toString();
@@ -314,8 +322,10 @@ public class LiveMapView extends View {
 
         if (!Double.isNaN(dLat)) {
             OfflineMap fm = fileMap;
+            if (satellite) fm = null;   // en satélite no se usa el mapa sin conexión (es un mapa de calles)
             boolean fileHere = fm != null && fm.contains(dLat, dLon);
-            if (!fileHere && zoom > MAXZ[provider]) zoom = MAXZ[provider];
+            int pvNow = cur();
+            if (!fileHere && zoom > MAXZ[pvNow]) zoom = MAXZ[pvNow];
             int n = 1 << zoom;
             double fx = (dLon + 180.0) / 360.0 * n;
             double latR = Math.toRadians(dLat);
@@ -346,7 +356,7 @@ public class LiveMapView extends View {
                         tile.setFilterBitmap(rot || b.getWidth() != dst.width());
                         c.drawBitmap(b, null, dst, tile);
                         if (fromFile) anyFile = true;
-                        else if (LABELS[provider] != null) {
+                        else if (LABELS[pvNow] != null) {
                             Bitmap l = get(zoom, wx, ty, L_LABELS);
                             if (l != null) c.drawBitmap(l, null, dst, tile);
                         }
@@ -359,7 +369,7 @@ public class LiveMapView extends View {
             if (rot) c.restore();
             drawMarker(c, cx, cy, rot);
             String attr = anyFile ? I18n.t("© colaboradores de OpenStreetMap") + " · mapsforge"
-                    : provider == 5 ? "© Esri, HERE, Garmin, © OpenStreetMap" : provider == 4 ? "© OpenStreetMap, SRTM · © OpenTopoMap" : I18n.t("© colaboradores de OpenStreetMap");
+                    : pvNow == SAT ? "© Esri, Maxar, Earthstar Geographics" : pvNow == 5 ? "© Esri, HERE, Garmin, © OpenStreetMap" : pvNow == 4 ? "© OpenStreetMap, SRTM · © OpenTopoMap" : I18n.t("© colaboradores de OpenStreetMap");
             c.drawText(attr, w - text.measureText(attr) - 10 * s, 14 * s, text);
         }
         corner.setColor(Main.BG);
@@ -391,7 +401,7 @@ public class LiveMapView extends View {
     // ── teselas ──
 
     private Bitmap get(int z, int x, int y, int layer) {
-        long k = key(layer, layer == L_FILE ? 0 : provider, z, x, y);
+        long k = key(layer, layer == L_FILE ? 0 : cur(), z, x, y);
         Bitmap b = mem.get(k);
         if (b != null) return b;
         synchronized (queue) {
@@ -456,14 +466,14 @@ public class LiveMapView extends View {
                                 }
                                 if (!noNet && provider == pv && okCount == 0 && layer == 0) {
                                     int nx = pv;
-                                    do { nx = (nx + 1) % URLS.length; if (nx == 1) rounds++; } while (URLS[nx].length() == 0);
+                                    do { nx = (nx + 1) % SAT; if (nx == 1) rounds++; } while (URLS[nx].length() == 0);
                                     provider = nx;
                                 }
                                 throw ex;
                             }
                             okCount++;
                             if (layer == 0) ERR[pv] = "OK";
-                            if (layer == 0 && pv > 0 && sp.getInt("map_provider", 0) != pv) sp.edit().putInt("map_provider", pv).apply();
+                            if (layer == 0 && pv > 0 && pv != SAT && sp.getInt("map_provider", 0) != pv) sp.edit().putInt("map_provider", pv).apply();
                             b = BitmapFactory.decodeByteArray(data, 0, data.length);
                             if (b != null) {
                                 FileOutputStream os = new FileOutputStream(f);
