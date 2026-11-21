@@ -1,0 +1,2107 @@
+--------- beginning of main
+D/AndroidRuntime( 2542): Shutting down VM
+D/AndroidRuntime( 2556): 
+D/AndroidRuntime( 2556): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2556): CheckJNI is ON
+E/memtrack( 2556): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2556): failed to load memtrack module: -2
+D/AndroidRuntime( 2556): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main} from uid 0 on display 0
+D/AndroidRuntime( 2556): Shutting down VM
+E/libprocessgroup( 2568): failed to make and chown /acct/uid_10053: Read-only file system
+W/Zygote  ( 2568): createProcessGroup failed, kernel missing CONFIG_CGROUP_CPUACCT?
+I/art     ( 2568): Not late-enabling -Xcheck:jni (already on)
+I/ActivityManager( 1483): Start proc com.stradaos.launcher.debug for activity com.stradaos.launcher.debug/com.stradaos.launcher.Main: pid=2568 uid=10053 gids={50053, 9997, 3003, 1028, 1015, 3002, 3001} abi=x86
+I/art     ( 1154): Explicit concurrent mark sweep GC freed 708(30KB) AllocSpace objects, 0(0B) LOS objects, 90% free, 110KB/1134KB, paused 415us total 2.883ms
+I/art     ( 1154): Explicit concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 90% free, 110KB/1134KB, paused 200us total 2.345ms
+I/art     ( 1154): Explicit concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 90% free, 110KB/1134KB, paused 1.179ms total 4.578ms
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/EGL_emulation( 2056): eglMakeCurrent: 0xae60c100: ver 3 0
+D/OpenGLRenderer( 2568): Render dirty regions requested: true
+D/        ( 2568): HostConnection::get() New Host Connection established 0xac4ae1f0, tid 2568
+D/Atlas   ( 2568): Validating map...
+D/        ( 2568): HostConnection::get() New Host Connection established 0xaec410b0, tid 2587
+I/OpenGLRenderer( 2568): Initialized EGL, version 1.4
+D/EGL_emulation( 2568): eglCreateContext: 0xaec0c100: maj 3 min 0 rcv 3
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/eglCodecCommon( 2568): glUtilsParamSize: unknow param 0x00008cdf
+E/eglCodecCommon( 2568): glUtilsParamSize: unknow param 0x00008824
+D/OpenGLRenderer( 2568): Enabling debug mode 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+W/StradaI18n( 2568): en	mph
+W/StradaI18n( 2568): en	Android Auto
+W/StradaI18n( 2568): en	CarPlay
+W/StradaI18n( 2568): en	Bluetooth
+D/WifiService( 1483): New client listening to asynchronous messages
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+I/Choreographer( 2568): Skipped 30 frames!  The application may be doing too much work on its main thread.
+I/ActivityManager( 1483): Displayed com.stradaos.launcher.debug/com.stradaos.launcher.Main: +785ms
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/AlarmManagerService( 1483): Kernel timezone updated to 0 minutes west of GMT
+D/AlarmManagerService( 1483): Setting time of day to sec=1795239321
+V/AlarmClock( 2126): AlarmInitReceiver android.intent.action.TIME_SET
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+V/AlarmClock( 2126): AlarmInitReceiver finished
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2598): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2598
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2604): 
+D/AndroidRuntime( 2604): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2604): CheckJNI is ON
+E/memtrack( 2604): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2604): failed to load memtrack module: -2
+D/AndroidRuntime( 2604): Calling main entry com.android.commands.input.Input
+I/Input   ( 2604): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=36051, downTime=36051, deviceId=-1, source=0x101 }
+I/Input   ( 2604): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=36051, downTime=36051, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2604): Shutting down VM
+D/InitAlarmsService( 2275): Clearing and rescheduling alarms.
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 2616): 
+D/AndroidRuntime( 2616): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2616): CheckJNI is ON
+E/memtrack( 2616): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2616): failed to load memtrack module: -2
+D/AndroidRuntime( 2616): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2616): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2631): HostConnection::get() New Host Connection established 0xb674e3d0, tid 2631
+D/        ( 1142): HostConnection::get() New Host Connection established 0xb6b53060, tid 2602
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2636): 
+D/AndroidRuntime( 2636): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2636): CheckJNI is ON
+E/memtrack( 2636): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2636): failed to load memtrack module: -2
+D/AndroidRuntime( 2636): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2636): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2648): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2648
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2653): 
+D/AndroidRuntime( 2653): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2653): CheckJNI is ON
+E/memtrack( 2653): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2653): failed to load memtrack module: -2
+D/AndroidRuntime( 2653): Calling main entry com.android.commands.input.Input
+I/Input   ( 2653): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=55126, downTime=55126, deviceId=-1, source=0x101 }
+I/Input   ( 2653): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=55126, downTime=55126, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2653): Shutting down VM
+W/InputEventReceiver( 2568): Attempted to finish an input event but the input event receiver has already been disposed.
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 2666): 
+D/AndroidRuntime( 2666): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2666): CheckJNI is ON
+E/memtrack( 2666): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2666): failed to load memtrack module: -2
+D/AndroidRuntime( 2666): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2666): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/StradaI18n( 2568): en	API Demos
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.browser: Resource ID #0x0
+W/StradaI18n( 2568): en	Browser
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/StradaI18n( 2568): en	Calculator
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calendar: Resource ID #0x0
+W/StradaI18n( 2568): en	Calendar
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.camera: Resource ID #0x0
+W/StradaI18n( 2568): en	Camera
+W/StradaI18n( 2568): en	Clock
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2680): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2680
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2685): 
+D/AndroidRuntime( 2685): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2685): CheckJNI is ON
+E/memtrack( 2685): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2685): failed to load memtrack module: -2
+D/AndroidRuntime( 2685): Calling main entry com.android.commands.input.Input
+I/Input   ( 2685): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=63899, downTime=63899, deviceId=-1, source=0x101 }
+I/Input   ( 2685): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=63899, downTime=63899, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2685): Shutting down VM
+W/InputEventReceiver( 2568): Attempted to finish an input event but the input event receiver has already been disposed.
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+I/MediaFocusControl( 1483):  AudioFocus  abandonAudioFocus() from android.media.AudioManager@3ddbf506com.android.music.MediaPlaybackService$3@23f357c7
+D/AndroidRuntime( 2697): 
+D/AndroidRuntime( 2697): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2697): CheckJNI is ON
+E/memtrack( 2697): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2697): failed to load memtrack module: -2
+D/AndroidRuntime( 2697): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2697): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): en	StradaOS
+W/StradaI18n( 2568): en	Phone
+W/StradaI18n( 2568): en	None
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2711): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2711
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2716): 
+D/AndroidRuntime( 2716): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2716): CheckJNI is ON
+E/memtrack( 2716): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2716): failed to load memtrack module: -2
+D/AndroidRuntime( 2716): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2716): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2731): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2731
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2736): 
+D/AndroidRuntime( 2736): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2736): CheckJNI is ON
+E/memtrack( 2736): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2736): failed to load memtrack module: -2
+D/AndroidRuntime( 2736): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2736): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2751): HostConnection::get() New Host Connection established 0xb674e3d0, tid 2751
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2756): 
+D/AndroidRuntime( 2756): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2756): CheckJNI is ON
+E/memtrack( 2756): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2756): failed to load memtrack module: -2
+D/AndroidRuntime( 2756): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2756): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2772): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2772
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2777): 
+D/AndroidRuntime( 2777): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2777): CheckJNI is ON
+E/memtrack( 2777): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2777): failed to load memtrack module: -2
+D/AndroidRuntime( 2777): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2777): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.browser: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calendar: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.camera: Resource ID #0x0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2792): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2792
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2797): 
+D/AndroidRuntime( 2797): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2797): CheckJNI is ON
+E/memtrack( 2797): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2797): failed to load memtrack module: -2
+D/AndroidRuntime( 2797): Calling main entry com.android.commands.input.Input
+I/Input   ( 2797): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=98059, downTime=98059, deviceId=-1, source=0x101 }
+I/Input   ( 2797): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=98059, downTime=98059, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2797): Shutting down VM
+W/InputEventReceiver( 2568): Attempted to finish an input event but the input event receiver has already been disposed.
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 2809): 
+D/AndroidRuntime( 2809): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2809): CheckJNI is ON
+E/memtrack( 2809): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2809): failed to load memtrack module: -2
+D/AndroidRuntime( 2809): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2809): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): en	Order: A-Z
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.browser: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calendar: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.camera: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.contacts: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.customlocale2: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.development_settings: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.providers.downloads.ui: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.email: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.mms: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.music: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.quicksearchbox: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.settings: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.speechrecorder: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.speechrecorder: Resource ID #0x0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2823): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2823
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2828): 
+D/AndroidRuntime( 2828): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2828): CheckJNI is ON
+E/memtrack( 2828): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2828): failed to load memtrack module: -2
+D/AndroidRuntime( 2828): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2828): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 2843): 
+D/AndroidRuntime( 2843): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2843): CheckJNI is ON
+E/memtrack( 2843): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2843): failed to load memtrack module: -2
+D/AndroidRuntime( 2843): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2843): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2857): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2857
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2862): 
+D/AndroidRuntime( 2862): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2862): CheckJNI is ON
+E/memtrack( 2862): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2862): failed to load memtrack module: -2
+D/AndroidRuntime( 2862): Calling main entry com.android.commands.input.Input
+I/Input   ( 2862): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=117370, downTime=117370, deviceId=-1, source=0x101 }
+I/Input   ( 2862): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=117370, downTime=117370, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2862): Shutting down VM
+W/InputEventReceiver( 2568): Attempted to finish an input event but the input event receiver has already been disposed.
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 2874): 
+D/AndroidRuntime( 2874): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2874): CheckJNI is ON
+E/memtrack( 2874): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2874): failed to load memtrack module: -2
+D/AndroidRuntime( 2874): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2874): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+I/ActivityManager( 1483): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=android/com.android.internal.app.ResolverActivity} from uid 10053 on display 0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 520192
+D/        ( 1483): HostConnection::get() New Host Connection established 0x9eaf0600, tid 1664
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+E/libprocessgroup( 2888): failed to make and chown /acct/uid_1000: Read-only file system
+W/Zygote  ( 2888): createProcessGroup failed, kernel missing CONFIG_CGROUP_CPUACCT?
+I/ActivityManager( 1483): Start proc system:ui for activity android/com.android.internal.app.ResolverActivity: pid=2888 uid=1000 gids={41000, 9997, 1028, 1015, 3002, 3001, 3003} abi=x86
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/ResolverActivity( 2888): sinceTime=1794029816354
+V/RenderScript( 2568): 0xaec6ce00 Launching thread(s), CPUs 2
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/        ( 2888): HostConnection::get() New Host Connection established 0xae581650, tid 2888
+I/ActivityManager( 1483): Displayed android/com.android.internal.app.ResolverActivity: +76ms
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/TaskPersister( 1483): removeObsoleteFile: deleting file=4_task_thumbnail.png
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2908): HostConnection::get() New Host Connection established 0xb674e3d0, tid 2908
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2913): 
+D/AndroidRuntime( 2913): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2913): CheckJNI is ON
+E/memtrack( 2913): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2913): failed to load memtrack module: -2
+D/AndroidRuntime( 2913): Calling main entry com.android.commands.input.Input
+I/Input   ( 2913): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=125058, downTime=125058, deviceId=-1, source=0x101 }
+I/Input   ( 2913): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=125058, downTime=125058, deviceId=-1, source=0x101 }
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 520192
+D/        ( 1483): HostConnection::get() New Host Connection established 0x9e0b7b50, tid 1891
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2913): Shutting down VM
+I/ActivityManager( 1483): Killing 2110:com.android.music/u0a33 (adj 15): empty #17
+W/libprocessgroup( 1483): failed to open /acct/uid_10033/pid_2110/cgroup.procs: No such file or directory
+W/ActivityManager( 1483): Duplicate finish request for ActivityRecord{25095b5 u0 android/com.android.internal.app.ResolverActivity t5 f}
+W/libprocessgroup( 1483): failed to open /acct/uid_10033/pid_2110/cgroup.procs: No such file or directory
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/AndroidRuntime( 2927): 
+D/AndroidRuntime( 2927): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2927): CheckJNI is ON
+E/memtrack( 2927): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2927): failed to load memtrack module: -2
+D/AndroidRuntime( 2927): Calling main entry com.android.commands.input.Input
+I/Input   ( 2927): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=127361, downTime=127361, deviceId=-1, source=0x101 }
+I/Input   ( 2927): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=127361, downTime=127361, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2927): Shutting down VM
+W/InputEventReceiver( 2568): Attempted to finish an input event but the input event receiver has already been disposed.
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/TaskPersister( 1483): removeObsoleteFile: deleting file=4_task.xml
+D/TaskPersister( 1483): removeObsoleteFile: deleting file=5_task_thumbnail.png
+D/AndroidRuntime( 2939): 
+D/AndroidRuntime( 2939): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2939): CheckJNI is ON
+E/memtrack( 2939): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2939): failed to load memtrack module: -2
+D/AndroidRuntime( 2939): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2939): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+I/InputReader( 1483): Reconfiguring input devices.  changes=0x00000010
+D/BackupManagerService( 1483): Received broadcast Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.stradaos.launcher.debug flg=0x4000010 (has extras) }
+I/Launcher( 2056): Deferring update until onResume
+I/Launcher( 2056): Deferring update until onResume
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2954): HostConnection::get() New Host Connection established 0xb664e3d0, tid 2954
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2959): 
+D/AndroidRuntime( 2959): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2959): CheckJNI is ON
+E/memtrack( 2959): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2959): failed to load memtrack module: -2
+D/AndroidRuntime( 2959): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2959): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2973): HostConnection::get() New Host Connection established 0xb674e3d0, tid 2973
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2978): 
+D/AndroidRuntime( 2978): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2978): CheckJNI is ON
+E/memtrack( 2978): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2978): failed to load memtrack module: -2
+D/AndroidRuntime( 2978): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 2978): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): en	Zoom: 17
+W/StradaI18n( 2568): en	Tráfico en vivo: inactivo
+W/StradaI18n( 2568): en	OpenTopoMap
+W/StradaI18n( 2568): en	OpenStreetMap
+W/StradaI18n( 2568): en	Android 5.0.2 (API 21)
+W/StradaI18n( 2568): en	Location permission: yes
+W/StradaI18n( 2568): en	Head unit GPS: on · network location: off
+W/StradaI18n( 2568): en	Last signal: 0 s ago
+W/StradaI18n( 2568): en	Searching for 2 min
+W/StradaI18n( 2568): en	Position: 39.23726, -123.15003
+W/StradaI18n( 2568): en	Offline map: none
+W/StradaI18n( 2568): en	Provider: OSM Germany
+W/StradaI18n( 2568): en	Tiles downloaded: 20 · cached: 20
+W/StradaI18n( 2568): en	Errors in a row: 0
+W/StradaI18n( 2568): en	Last error: —
+W/StradaI18n( 2568): en	Sources tried:
+W/StradaI18n( 2568): en	OSM Germany
+W/StradaI18n( 2568): en	• OSM Germany: OK
+W/StradaI18n( 2568): en	OSM France
+W/StradaI18n( 2568): en	not tried
+W/StradaI18n( 2568): en	• OSM France: not tried
+W/StradaI18n( 2568): en	OSM Humanitarian
+W/StradaI18n( 2568): en	• OSM Humanitarian: not tried
+W/StradaI18n( 2568): en	• OpenTopoMap: not tried
+W/StradaI18n( 2568): en	Esri dark gray
+W/StradaI18n( 2568): en	• Esri dark gray: not tried
+W/StradaI18n( 2568): en	• OpenStreetMap: not tried
+W/StradaI18n( 2568): en	TLS ready (TLSv1.2), 118 roots
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 2993): HostConnection::get() New Host Connection established 0xb674e3d0, tid 2993
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 2998): 
+D/AndroidRuntime( 2998): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 2998): CheckJNI is ON
+E/memtrack( 2998): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 2998): failed to load memtrack module: -2
+D/AndroidRuntime( 2998): Calling main entry com.android.commands.input.Input
+I/Input   ( 2998): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=148740, downTime=148740, deviceId=-1, source=0x101 }
+I/Input   ( 2998): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=148740, downTime=148740, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 2998): Shutting down VM
+W/InputEventReceiver( 2568): Attempted to finish an input event but the input event receiver has already been disposed.
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3010): 
+D/AndroidRuntime( 3010): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3010): CheckJNI is ON
+E/memtrack( 3010): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3010): failed to load memtrack module: -2
+D/AndroidRuntime( 3010): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3010): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3030): HostConnection::get() New Host Connection established 0xb674e3d0, tid 3030
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3035): 
+D/AndroidRuntime( 3035): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3035): CheckJNI is ON
+E/memtrack( 3035): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3035): failed to load memtrack module: -2
+D/AndroidRuntime( 3035): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3035): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3051): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3051
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3056): 
+D/AndroidRuntime( 3056): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3056): CheckJNI is ON
+E/memtrack( 3056): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3056): failed to load memtrack module: -2
+D/AndroidRuntime( 3056): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3056): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3072): 
+D/AndroidRuntime( 3072): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3072): CheckJNI is ON
+E/memtrack( 3072): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3072): failed to load memtrack module: -2
+D/AndroidRuntime( 3072): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3072): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3087): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3087
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3092): 
+D/AndroidRuntime( 3092): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3092): CheckJNI is ON
+E/memtrack( 3092): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3092): failed to load memtrack module: -2
+D/AndroidRuntime( 3092): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3092): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3107): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3107
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3112): 
+D/AndroidRuntime( 3112): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3112): CheckJNI is ON
+E/memtrack( 3112): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3112): failed to load memtrack module: -2
+D/AndroidRuntime( 3112): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3112): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3132): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3132
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3137): 
+D/AndroidRuntime( 3137): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3137): CheckJNI is ON
+E/memtrack( 3137): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3137): failed to load memtrack module: -2
+D/AndroidRuntime( 3137): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3137): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3153): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3153
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3158): 
+D/AndroidRuntime( 3158): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3158): CheckJNI is ON
+E/memtrack( 3158): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3158): failed to load memtrack module: -2
+D/AndroidRuntime( 3158): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3158): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3174): HostConnection::get() New Host Connection established 0xb674e3d0, tid 3174
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3179): 
+D/AndroidRuntime( 3179): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3179): CheckJNI is ON
+E/memtrack( 3179): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3179): failed to load memtrack module: -2
+D/AndroidRuntime( 3179): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3179): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3193): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3193
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3198): 
+D/AndroidRuntime( 3198): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3198): CheckJNI is ON
+E/memtrack( 3198): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3198): failed to load memtrack module: -2
+D/AndroidRuntime( 3198): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3198): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3212): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3212
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3217): 
+D/AndroidRuntime( 3217): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3217): CheckJNI is ON
+E/memtrack( 3217): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3217): failed to load memtrack module: -2
+D/AndroidRuntime( 3217): Calling main entry com.android.commands.input.Input
+I/Input   ( 3217): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=208806, downTime=208806, deviceId=-1, source=0x101 }
+I/Input   ( 3217): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=208806, downTime=208806, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 3217): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3230): 
+D/AndroidRuntime( 3230): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3230): CheckJNI is ON
+E/memtrack( 3230): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3230): failed to load memtrack module: -2
+D/AndroidRuntime( 3230): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3230): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.browser: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calendar: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.camera: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.contacts: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.customlocale2: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.development_settings: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.providers.downloads.ui: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.email: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.mms: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.music: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.quicksearchbox: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.settings: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.speechrecorder: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.speechrecorder: Resource ID #0x0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3246): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3246
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3251): 
+D/AndroidRuntime( 3251): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3251): CheckJNI is ON
+E/memtrack( 3251): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3251): failed to load memtrack module: -2
+D/AndroidRuntime( 3251): Calling main entry com.android.commands.input.Input
+I/Input   ( 3251): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=217607, downTime=217607, deviceId=-1, source=0x101 }
+I/Input   ( 3251): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=217607, downTime=217607, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 3251): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3263): 
+D/AndroidRuntime( 3263): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3263): CheckJNI is ON
+E/memtrack( 3263): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3263): failed to load memtrack module: -2
+D/AndroidRuntime( 3263): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3263): Shutting down VM
+E/art     ( 3263): Thread attaching while runtime is shutting down: Binder_1
+I/AndroidRuntime( 3263): NOTE: attach of thread 'Binder_1' failed
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3277): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3277
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3283): 
+D/AndroidRuntime( 3283): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3283): CheckJNI is ON
+E/memtrack( 3283): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3283): failed to load memtrack module: -2
+D/AndroidRuntime( 3283): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3283): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3298): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3298
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3303): 
+D/AndroidRuntime( 3303): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3303): CheckJNI is ON
+E/memtrack( 3303): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3303): failed to load memtrack module: -2
+D/AndroidRuntime( 3303): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3303): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3319): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3319
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3324): 
+D/AndroidRuntime( 3324): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3324): CheckJNI is ON
+E/memtrack( 3324): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3324): failed to load memtrack module: -2
+D/AndroidRuntime( 3324): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3324): Shutting down VM
+E/art     ( 3324): Thread attaching while runtime is shutting down: Binder_1
+I/AndroidRuntime( 3324): NOTE: attach of thread 'Binder_1' failed
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3339): 
+D/AndroidRuntime( 3339): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3339): CheckJNI is ON
+E/memtrack( 3339): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3339): failed to load memtrack module: -2
+D/AndroidRuntime( 3339): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3339): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3353): 
+D/AndroidRuntime( 3353): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3353): CheckJNI is ON
+E/memtrack( 3353): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3353): failed to load memtrack module: -2
+D/AndroidRuntime( 3353): Calling main entry com.android.commands.wm.Wm
+I/WindowManager( 1483): Using new display size: 1920x720
+V/ActivityManager( 1483): Display changed displayId=0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+I/ActivityManager( 1483): Config changes=d00 {1.0 310mcc260mnc en_US ldltr sw720dp w1920dp h695dp 160dpi xlrg long land finger -keyb/v/h tball/v s.8}
+D/AndroidRuntime( 3353): Shutting down VM
+I/InputReader( 1483): Reconfiguring input devices.  changes=0x00000004
+I/InputReader( 1483): Device reconfigured: id=0, name='qwerty2', size 1920x1125, orientation 0, mode 1, display id 0
+D/EGL_emulation( 1753): eglMakeCurrent: 0xae90c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+I/WindowManager( 1483): Screen frozen for +82ms due to Window{e87edc4 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3367): 
+D/AndroidRuntime( 3367): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3367): CheckJNI is ON
+E/memtrack( 3367): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3367): failed to load memtrack module: -2
+D/AndroidRuntime( 3367): Calling main entry com.android.commands.wm.Wm
+I/WindowManager( 1483): Using new display density: 240
+V/ActivityManager( 1483): Display changed displayId=0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3367): Shutting down VM
+I/ActivityManager( 1483): Config changes=1d00 {1.0 310mcc260mnc en_US ldltr sw480dp w1280dp h463dp 240dpi lrg long land finger -keyb/v/h tball/v s.9}
+I/ActivityThread( 2888): Switching default density from 160 to 240
+I/ActivityThread( 2503): Switching default density from 160 to 240
+I/ActivityThread( 2126): Switching default density from 160 to 240
+I/ActivityThread( 2523): Switching default density from 160 to 240
+I/ActivityThread( 1955): Switching default density from 160 to 240
+I/ActivityThread( 1827): Switching default density from 160 to 240
+I/ActivityThread( 2319): Switching default density from 160 to 240
+I/ActivityThread( 2234): Switching default density from 160 to 240
+I/ActivityThread( 1939): Switching default density from 160 to 240
+I/ActivityThread( 2056): Switching default density from 160 to 240
+I/ActivityThread( 1483): Switching default density from 160 to 240
+I/ActivityThread( 1893): Switching default density from 160 to 240
+I/ActivityThread( 2177): Switching default density from 160 to 240
+I/ActivityThread( 2568): Switching default density from 160 to 240
+I/ActivityThread( 1985): Switching default density from 160 to 240
+I/ActivityThread( 1753): Switching default density from 160 to 240
+I/ActivityThread( 2295): Switching default density from 160 to 240
+I/ActivityThread( 1921): Switching default density from 160 to 240
+I/ActivityThread( 2275): Switching default density from 160 to 240
+I/ActivityThread( 2143): Switching default density from 160 to 240
+I/ActivityThread( 2339): Switching default density from 160 to 240
+I/ActivityThread( 2160): Switching default density from 160 to 240
+I/ActivityThread( 2216): Switching default density from 160 to 240
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+W/StradaI18n( 2568): en	mph
+W/StradaI18n( 2568): en	Android Auto
+W/StradaI18n( 2568): en	CarPlay
+W/StradaI18n( 2568): en	Bluetooth
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+I/WindowManager( 1483): Screen frozen for +142ms due to Window{1097fab3 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+I/art     ( 1483): Explicit concurrent mark sweep GC freed 36654(1668KB) AllocSpace objects, 2(29KB) LOS objects, 32% free, 8MB/12MB, paused 362us total 13.299ms
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3384): 
+D/AndroidRuntime( 3384): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3384): CheckJNI is ON
+E/memtrack( 3384): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3384): failed to load memtrack module: -2
+D/AndroidRuntime( 3384): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3384): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3399): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3399
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3404): 
+D/AndroidRuntime( 3404): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3404): CheckJNI is ON
+E/memtrack( 3404): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3404): failed to load memtrack module: -2
+D/AndroidRuntime( 3404): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3404): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): en	StradaOS
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3418): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3418
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3423): 
+D/AndroidRuntime( 3423): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3423): CheckJNI is ON
+E/memtrack( 3423): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3423): failed to load memtrack module: -2
+D/AndroidRuntime( 3423): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3423): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3437): 
+D/AndroidRuntime( 3437): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3437): CheckJNI is ON
+E/memtrack( 3437): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3437): failed to load memtrack module: -2
+D/AndroidRuntime( 3437): Calling main entry com.android.commands.wm.Wm
+I/WindowManager( 1483): Using new display size: 1024x600
+V/ActivityManager( 1483): Display changed displayId=0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+I/ActivityManager( 1483): Config changes=d00 {1.0 310mcc260mnc en_US ldltr sw400dp w682dp h374dp 240dpi nrml long land finger -keyb/v/h tball/v s.10}
+D/AndroidRuntime( 3437): Shutting down VM
+I/InputReader( 1483): Reconfiguring input devices.  changes=0x00000004
+I/InputReader( 1483): Device reconfigured: id=0, name='qwerty2', size 1024x600, orientation 0, mode 1, display id 0
+I/InputReader( 1483): Reconfiguring input devices.  changes=0x00000004
+D/EGL_emulation( 1753): eglMakeCurrent: 0xae90c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+I/WindowManager( 1483): Screen frozen for +89ms due to Window{1097fab3 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3451): 
+D/AndroidRuntime( 3451): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3451): CheckJNI is ON
+E/memtrack( 3451): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3451): failed to load memtrack module: -2
+D/AndroidRuntime( 3451): Calling main entry com.android.commands.wm.Wm
+I/WindowManager( 1483): Using new display density: 160
+V/ActivityManager( 1483): Display changed displayId=0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+I/ActivityManager( 1483): Config changes=1d00 {1.0 310mcc260mnc en_US ldltr sw600dp w1024dp h562dp 160dpi lrg long land finger -keyb/v/h tball/v s.11}
+I/ActivityThread( 2888): Switching default density from 240 to 160
+I/ActivityThread( 2126): Switching default density from 240 to 160
+I/ActivityThread( 2295): Switching default density from 240 to 160
+I/ActivityThread( 2523): Switching default density from 240 to 160
+I/ActivityThread( 2503): Switching default density from 240 to 160
+I/ActivityThread( 2275): Switching default density from 240 to 160
+I/ActivityThread( 2339): Switching default density from 240 to 160
+I/ActivityThread( 1483): Switching default density from 240 to 160
+I/ActivityThread( 2160): Switching default density from 240 to 160
+I/ActivityThread( 2234): Switching default density from 240 to 160
+I/ActivityThread( 2216): Switching default density from 240 to 160
+I/ActivityThread( 1985): Switching default density from 240 to 160
+I/ActivityThread( 1893): Switching default density from 240 to 160
+I/ActivityThread( 2056): Switching default density from 240 to 160
+I/ActivityThread( 1955): Switching default density from 240 to 160
+I/ActivityThread( 2143): Switching default density from 240 to 160
+I/ActivityThread( 1827): Switching default density from 240 to 160
+I/ActivityThread( 2177): Switching default density from 240 to 160
+I/ActivityThread( 2319): Switching default density from 240 to 160
+I/ActivityThread( 1939): Switching default density from 240 to 160
+I/ActivityThread( 1921): Switching default density from 240 to 160
+I/ActivityThread( 1753): Switching default density from 240 to 160
+I/ActivityThread( 2568): Switching default density from 240 to 160
+D/AndroidRuntime( 3451): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+W/StradaI18n( 2568): en	mph
+W/StradaI18n( 2568): en	Android Auto
+W/StradaI18n( 2568): en	CarPlay
+W/StradaI18n( 2568): en	Bluetooth
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+I/WindowManager( 1483): Screen frozen for +144ms due to Window{917d0b u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+I/art     ( 1483): Explicit concurrent mark sweep GC freed 10126(445KB) AllocSpace objects, 0(0B) LOS objects, 32% free, 8MB/12MB, paused 515us total 12.519ms
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3470): 
+D/AndroidRuntime( 3470): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3470): CheckJNI is ON
+E/memtrack( 3470): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3470): failed to load memtrack module: -2
+D/AndroidRuntime( 3470): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3470): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3482): 
+D/AndroidRuntime( 3482): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3482): CheckJNI is ON
+E/memtrack( 3482): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3482): failed to load memtrack module: -2
+D/AndroidRuntime( 3482): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3482): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): en	mph
+W/StradaI18n( 2568): en	Android Auto
+W/StradaI18n( 2568): en	CarPlay
+W/StradaI18n( 2568): en	Bluetooth
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3495): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3495
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3500): 
+D/AndroidRuntime( 3500): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3500): CheckJNI is ON
+E/memtrack( 3500): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3500): failed to load memtrack module: -2
+D/AndroidRuntime( 3500): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3500): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): en	StradaOS
+W/StradaI18n( 2568): en	Phone
+W/StradaI18n( 2568): en	Camera
+W/StradaI18n( 2568): en	None
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3512): HostConnection::get() New Host Connection established 0xb674e3d0, tid 3512
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3517): 
+D/AndroidRuntime( 3517): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3517): CheckJNI is ON
+E/memtrack( 3517): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3517): failed to load memtrack module: -2
+D/AndroidRuntime( 3517): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3517): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/StradaI18n( 2568): en	API Demos
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.browser: Resource ID #0x0
+W/StradaI18n( 2568): en	Browser
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/StradaI18n( 2568): en	Calculator
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calendar: Resource ID #0x0
+W/StradaI18n( 2568): en	Calendar
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.camera: Resource ID #0x0
+W/StradaI18n( 2568): en	Clock
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3529): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3529
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3534): 
+D/AndroidRuntime( 3534): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3534): CheckJNI is ON
+E/memtrack( 3534): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3534): failed to load memtrack module: -2
+D/AndroidRuntime( 3534): Calling main entry com.android.commands.input.Input
+I/Input   ( 3534): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=300477, downTime=300477, deviceId=-1, source=0x101 }
+I/Input   ( 3534): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=300477, downTime=300477, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 3534): Shutting down VM
+W/InputEventReceiver( 2568): Attempted to finish an input event but the input event receiver has already been disposed.
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3546): 
+D/AndroidRuntime( 3546): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3546): CheckJNI is ON
+E/memtrack( 3546): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3546): failed to load memtrack module: -2
+D/AndroidRuntime( 3546): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3546): Shutting down VM
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): pt	mph
+W/StradaI18n( 2568): pt	Android Auto
+W/StradaI18n( 2568): pt	CarPlay
+W/StradaI18n( 2568): pt	Bluetooth
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3559): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3559
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3564): 
+D/AndroidRuntime( 3564): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3564): CheckJNI is ON
+E/memtrack( 3564): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3564): failed to load memtrack module: -2
+D/AndroidRuntime( 3564): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3564): Shutting down VM
+E/art     ( 3564): Thread attaching while runtime is shutting down: Binder_1
+I/AndroidRuntime( 3564): NOTE: attach of thread 'Binder_1' failed
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): pt	StradaOS
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3575): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3575
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3580): 
+D/AndroidRuntime( 3580): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3580): CheckJNI is ON
+E/memtrack( 3580): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3580): failed to load memtrack module: -2
+D/AndroidRuntime( 3580): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3580): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3591): HostConnection::get() New Host Connection established 0xb674e3d0, tid 3591
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3596): 
+D/AndroidRuntime( 3596): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3596): CheckJNI is ON
+E/memtrack( 3596): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3596): failed to load memtrack module: -2
+D/AndroidRuntime( 3596): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3596): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3609): 
+D/AndroidRuntime( 3609): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3609): CheckJNI is ON
+E/memtrack( 3609): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3609): failed to load memtrack module: -2
+D/AndroidRuntime( 3609): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3609): Shutting down VM
+E/art     ( 3609): Thread attaching while runtime is shutting down: Binder_1
+I/AndroidRuntime( 3609): NOTE: attach of thread 'Binder_1' failed
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): it	mph
+W/StradaI18n( 2568): it	Android Auto
+W/StradaI18n( 2568): it	CarPlay
+W/StradaI18n( 2568): it	Bluetooth
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3621): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3621
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3626): 
+D/AndroidRuntime( 3626): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3626): CheckJNI is ON
+E/memtrack( 3626): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3626): failed to load memtrack module: -2
+D/AndroidRuntime( 3626): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3626): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): it	StradaOS
+W/StradaI18n( 2568): it	Configura
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3638): HostConnection::get() New Host Connection established 0xb674e3d0, tid 3638
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3643): 
+D/AndroidRuntime( 3643): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3643): CheckJNI is ON
+E/memtrack( 3643): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3643): failed to load memtrack module: -2
+D/AndroidRuntime( 3643): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3643): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): de	mph
+W/StradaI18n( 2568): de	Android Auto
+W/StradaI18n( 2568): de	CarPlay
+W/StradaI18n( 2568): de	Bluetooth
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3656): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3656
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3661): 
+D/AndroidRuntime( 3661): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3661): CheckJNI is ON
+E/memtrack( 3661): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3661): failed to load memtrack module: -2
+D/AndroidRuntime( 3661): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3661): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+W/StradaI18n( 2568): de	StradaOS
+W/StradaI18n( 2568): de	Keiner
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3673): HostConnection::get() New Host Connection established 0xb674e3d0, tid 3673
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3678): 
+D/AndroidRuntime( 3678): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3678): CheckJNI is ON
+E/memtrack( 3678): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3678): failed to load memtrack module: -2
+D/AndroidRuntime( 3678): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3678): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3691): 
+D/AndroidRuntime( 3691): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3691): CheckJNI is ON
+E/memtrack( 3691): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3691): failed to load memtrack module: -2
+D/AndroidRuntime( 3691): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3691): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3704): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3704
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3709): 
+D/AndroidRuntime( 3709): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3709): CheckJNI is ON
+E/memtrack( 3709): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3709): failed to load memtrack module: -2
+D/AndroidRuntime( 3709): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3709): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3721): 
+D/AndroidRuntime( 3721): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3721): CheckJNI is ON
+E/memtrack( 3721): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3721): failed to load memtrack module: -2
+D/AndroidRuntime( 3721): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3721): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3733): HostConnection::get() New Host Connection established 0xb674e3d0, tid 3733
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3738): 
+D/AndroidRuntime( 3738): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3738): CheckJNI is ON
+E/memtrack( 3738): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3738): failed to load memtrack module: -2
+D/AndroidRuntime( 3738): Calling main entry com.android.commands.input.Input
+I/Input   ( 3738): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=376995, downTime=376995, deviceId=-1, source=0x101 }
+I/Input   ( 3738): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=376995, downTime=376995, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 3738): Shutting down VM
+W/InputEventReceiver( 2568): Attempted to finish an input event but the input event receiver has already been disposed.
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3750): 
+D/AndroidRuntime( 3750): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3750): CheckJNI is ON
+E/memtrack( 3750): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3750): failed to load memtrack module: -2
+D/AndroidRuntime( 3750): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3750): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3762): HostConnection::get() New Host Connection established 0xb674e3d0, tid 3762
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3767): 
+D/AndroidRuntime( 3767): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3767): CheckJNI is ON
+E/memtrack( 3767): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3767): failed to load memtrack module: -2
+D/AndroidRuntime( 3767): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3767): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3780): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3780
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3785): 
+D/AndroidRuntime( 3785): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3785): CheckJNI is ON
+E/memtrack( 3785): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3785): failed to load memtrack module: -2
+D/AndroidRuntime( 3785): Calling main entry com.android.commands.input.Input
+I/Input   ( 3785): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=394005, downTime=394005, deviceId=-1, source=0x101 }
+I/Input   ( 3785): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=394005, downTime=394005, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 3785): Shutting down VM
+W/InputEventReceiver( 2568): Attempted to finish an input event but the input event receiver has already been disposed.
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3797): 
+D/AndroidRuntime( 3797): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3797): CheckJNI is ON
+E/memtrack( 3797): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3797): failed to load memtrack module: -2
+D/AndroidRuntime( 3797): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3797): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3810): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3810
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3815): 
+D/AndroidRuntime( 3815): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3815): CheckJNI is ON
+E/memtrack( 3815): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3815): failed to load memtrack module: -2
+D/AndroidRuntime( 3815): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3815): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/AndroidRuntime( 3828): 
+D/AndroidRuntime( 3828): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3828): CheckJNI is ON
+E/memtrack( 3828): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3828): failed to load memtrack module: -2
+D/AndroidRuntime( 3828): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3828): Shutting down VM
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+W/SubtypeSwitcher( 1827): Can't find emoji subtype
+W/SubtypeSwitcher( 1827): No input method subtype found; returning dummy subtype: android.view.inputmethod.InputMethodSubtype@d78b2ed0
+W/ViewPager( 1827): Requested offscreen page limit 0 too small; defaulting to 1
+W/AudioTrack( 1483): AUDIO_OUTPUT_FLAG_FAST denied by client
+I/LatinIME( 1827): Starting input. Cursor position = 5,5
+D/OpenGLRenderer( 1827): Render dirty regions requested: true
+D/        ( 1827): HostConnection::get() New Host Connection established 0xabf8df10, tid 1827
+D/Atlas   ( 1827): Validating map...
+D/        ( 1827): HostConnection::get() New Host Connection established 0xb306e0b0, tid 3846
+I/OpenGLRenderer( 1827): Initialized EGL, version 1.4
+D/EGL_emulation( 1827): eglCreateContext: 0xb306c0a0: maj 3 min 0 rcv 3
+D/EGL_emulation( 1827): eglMakeCurrent: 0xb306c0a0: ver 3 0
+E/eglCodecCommon( 1827): glUtilsParamSize: unknow param 0x00008cdf
+E/eglCodecCommon( 1827): glUtilsParamSize: unknow param 0x00008824
+D/OpenGLRenderer( 1827): Enabling debug mode 0
+D/EGL_emulation( 1827): eglMakeCurrent: 0xb306c0a0: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3848): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3848
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3853): 
+D/AndroidRuntime( 3853): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3853): CheckJNI is ON
+E/memtrack( 3853): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3853): failed to load memtrack module: -2
+D/AndroidRuntime( 3853): Calling main entry com.android.commands.input.Input
+I/Input   ( 3853): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=415344, downTime=415344, deviceId=-1, source=0x101 }
+I/Input   ( 3853): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=415344, downTime=415344, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 3853): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/AndroidRuntime( 3865): 
+D/AndroidRuntime( 3865): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3865): CheckJNI is ON
+E/memtrack( 3865): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3865): failed to load memtrack module: -2
+D/AndroidRuntime( 3865): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3865): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3877): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3877
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3882): 
+D/AndroidRuntime( 3882): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3882): CheckJNI is ON
+E/memtrack( 3882): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3882): failed to load memtrack module: -2
+D/AndroidRuntime( 3882): Calling main entry com.android.commands.input.Input
+I/Input   ( 3882): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=422023, downTime=422023, deviceId=-1, source=0x101 }
+I/Input   ( 3882): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=422023, downTime=422023, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 3882): Shutting down VM
+W/InputEventReceiver( 2568): Attempted to finish an input event but the input event receiver has already been disposed.
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/AndroidRuntime( 3894): 
+D/AndroidRuntime( 3894): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3894): CheckJNI is ON
+E/memtrack( 3894): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3894): failed to load memtrack module: -2
+D/AndroidRuntime( 3894): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3894): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3906): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3906
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3911): 
+D/AndroidRuntime( 3911): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3911): CheckJNI is ON
+E/memtrack( 3911): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3911): failed to load memtrack module: -2
+D/AndroidRuntime( 3911): Calling main entry com.android.commands.input.Input
+I/Input   ( 3911): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=428699, downTime=428699, deviceId=-1, source=0x101 }
+I/Input   ( 3911): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=428699, downTime=428699, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 3911): Shutting down VM
+W/InputEventReceiver( 2568): Attempted to finish an input event but the input event receiver has already been disposed.
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/AndroidRuntime( 3923): 
+D/AndroidRuntime( 3923): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3923): CheckJNI is ON
+E/memtrack( 3923): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3923): failed to load memtrack module: -2
+D/AndroidRuntime( 3923): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3923): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/AndroidRuntime( 3936): 
+D/AndroidRuntime( 3936): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3936): CheckJNI is ON
+E/memtrack( 3936): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3936): failed to load memtrack module: -2
+D/AndroidRuntime( 3936): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3936): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calendar: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.camera: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.contacts: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.customlocale2: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.development_settings: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.providers.downloads.ui: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.email: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.mms: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.music: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.quicksearchbox: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.settings: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.speechrecorder: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.speechrecorder: Resource ID #0x0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3948): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3948
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3953): 
+D/AndroidRuntime( 3953): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3953): CheckJNI is ON
+E/memtrack( 3953): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3953): failed to load memtrack module: -2
+D/AndroidRuntime( 3953): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3953): Shutting down VM
+E/art     ( 3953): Thread attaching while runtime is shutting down: Binder_2
+I/AndroidRuntime( 3953): NOTE: attach of thread 'Binder_2' failed
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.browser: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calculator2: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.calendar: Resource ID #0x0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.android.camera: Resource ID #0x0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+I/LatinIME( 1827): Starting input. Cursor position = 0,0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 1827): eglMakeCurrent: 0xb306c0a0: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+I/LatinIME:LogUtils( 1827): Dictionary info: dictionary = contacts.en_US ; version = 1795239740 ; date = ?
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 3968): HostConnection::get() New Host Connection established 0xb664e3d0, tid 3968
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 3973): 
+D/AndroidRuntime( 3973): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3973): CheckJNI is ON
+E/memtrack( 3973): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3973): failed to load memtrack module: -2
+D/AndroidRuntime( 3973): Calling main entry com.android.commands.input.Input
+I/Input   ( 3973): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=449012, downTime=449012, deviceId=-1, source=0x101 }
+I/Input   ( 3973): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=449012, downTime=449012, deviceId=-1, source=0x101 }
+D/AndroidRuntime( 3973): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/AndroidRuntime( 3985): 
+D/AndroidRuntime( 3985): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3985): CheckJNI is ON
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/memtrack( 3985): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3985): failed to load memtrack module: -2
+D/AndroidRuntime( 3985): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3985): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/AndroidRuntime( 3997): 
+D/AndroidRuntime( 3997): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 3997): CheckJNI is ON
+E/memtrack( 3997): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 3997): failed to load memtrack module: -2
+D/AndroidRuntime( 3997): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 3997): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 4014): HostConnection::get() New Host Connection established 0xb664e3d0, tid 4014
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/AndroidRuntime( 4019): 
+D/AndroidRuntime( 4019): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 4019): CheckJNI is ON
+E/memtrack( 4019): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 4019): failed to load memtrack module: -2
+D/AndroidRuntime( 4019): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 4019): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 4031): HostConnection::get() New Host Connection established 0xb664e3d0, tid 4031
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/AndroidRuntime( 4036): 
+D/AndroidRuntime( 4036): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 4036): CheckJNI is ON
+E/memtrack( 4036): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 4036): failed to load memtrack module: -2
+D/AndroidRuntime( 4036): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 4036): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/AndroidRuntime( 4053): 
+D/AndroidRuntime( 4053): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 4053): CheckJNI is ON
+E/memtrack( 4053): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 4053): failed to load memtrack module: -2
+D/AndroidRuntime( 4053): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 4053): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+W/ResourceType( 2568): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2568): Failure retrieving resources for com.example.android.apis: Resource ID #0x0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 1827): eglMakeCurrent: 0xb306c0a0: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/gralloc_ranchu( 1142): gralloc_alloc: Creating ashmem region of size 2457600
+D/        ( 4065): HostConnection::get() New Host Connection established 0xb664e3d0, tid 4065
+E/EGL_emulation( 1142): tid 1142: eglCreateSyncKHR(1865): error 0x3004 (EGL_BAD_ATTRIBUTE)
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/AndroidRuntime( 4070): 
+D/AndroidRuntime( 4070): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 4070): CheckJNI is ON
+E/memtrack( 4070): Couldn't load memtrack module (No such file or directory)
+E/android.os.Debug( 4070): failed to load memtrack module: -2
+D/AndroidRuntime( 4070): Calling main entry com.android.commands.am.Am
+I/ActivityManager( 1483): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} from uid 0 on display 0
+D/AndroidRuntime( 4070): Shutting down VM
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+D/EGL_emulation( 2568): eglMakeCurrent: 0xaec0c100: ver 3 0
+E/BluetoothAdapter( 2568): Bluetooth binder is null
