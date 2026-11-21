@@ -1,0 +1,4 @@
+--------- beginning of main
+11-21 14:09:43.754  2453  2453 I StradaBt: abierta com.android.settings para tomar el sonido
+11-21 14:09:46.257  2453  2453 I StradaBt: revisando la vuelta: al frente com.stradaos.launcher.debug
+11-21 14:09:46.257  2453  2453 I StradaBt: vuelta al inicio

@@ -1,0 +1,2 @@
+    topResumedActivity=ActivityRecord{a630e40 u0 com.android.settings/.Settings$NetworkDashboardActivity t10}
+  ResumedActivity: ActivityRecord{a630e40 u0 com.android.settings/.Settings$NetworkDashboardActivity t10}

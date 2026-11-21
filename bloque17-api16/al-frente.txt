@@ -1,0 +1,1 @@
+  mResumedActivity: ActivityRecord{97529ee8 com.stradaos.launcher.debug/com.stradaos.launcher.Main}

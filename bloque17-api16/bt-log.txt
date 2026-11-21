@@ -1,0 +1,5 @@
+--------- beginning of /dev/log/system
+--------- beginning of /dev/log/main
+I/StradaBt( 2082): abierta com.android.settings para tomar el sonido
+I/StradaBt( 2082): revisando la vuelta: al frente com.android.settings
+I/StradaBt( 2082): vuelta al inicio
