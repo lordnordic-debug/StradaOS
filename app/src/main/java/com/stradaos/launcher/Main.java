@@ -157,6 +157,12 @@ public class Main extends Activity {
     private Nav.ManeuverView navTurnIc, topNavIc;
     private Nav.LaneStripView navLaneView;
     private TextView navDistTv, navStepTv, navEtaTv, speedSignTv, camBadgeTv, topNavDistTv;
+    private TextView topPrayerTv, afnonPrayerTv, afnonCountdownTv, afnonHijriTv, afnonBadgeTv, afnonQiblaTv, afnonSpeedTv;
+    private Prayer.MihrabView afnonMihrab;
+    private Prayer.QiblaCompassView afnonQiblaView;
+    private int prayerAlertTick;
+    private boolean autoDuaSafarDone;
+    private float curHeadingDeg = Float.NaN;
     private final List<Nav.Place> pendingStops = new ArrayList<Nav.Place>();
     private LiveMapView liveMap;
     private MediaWatcher mediaWatcher;
@@ -266,6 +272,9 @@ public class Main extends Activity {
             public void onTrack(NowPlaying.Track t) { showTrack(t); }
         });
         try { nowPlaying.start(); } catch (Throwable ignored) { }
+        FaithRadio.setListener(new QuranRadio.Listener() {
+            public void onStateChanged() { renderTrack(); }
+        });
         NotifArt.listener = new NotifArt.Listener() {
             public void onAaNotification(final Bitmap art, final java.util.List<String> texts) {
                 h.post(new Runnable() { public void run() { applyAaNotif(art, texts); } });
@@ -462,6 +471,8 @@ public class Main extends Activity {
         try { unregisterReceiver(pkgReceiver); } catch (Exception ignored) { }
         try { unregisterReceiver(timeReceiver); } catch (Exception ignored) { }
         try { nowPlaying.stop(); } catch (Throwable ignored) { }
+        FaithRadio.setListener(null);
+        FaithRadio.stop();
         try { unregisterReceiver(usbReceiver); } catch (Throwable ignored) { }
         try { unregisterReceiver(usbOffReceiver); } catch (Throwable ignored) { }
         try { bt.disconnect(); } catch (Throwable ignored) { }
@@ -1203,6 +1214,8 @@ public class Main extends Activity {
             }
             updatePlayIcon();
             updateStatusIcons();
+            updatePrayerUi();
+            if (++prayerAlertTick % 15 == 0) checkPrayerAlerts();
             if (++themeTick % 30 == 0) {
                 boolean was = LIGHT;
                 applyTheme();
@@ -1546,6 +1559,19 @@ public class Main extends Activity {
         pill.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openNavMenu(); } });
         topNavPill = pill;
         row.addView(pill, plp);
+        topPrayerTv = null;
+        if (Faith.showInTop(prefs)) {
+            topPrayerTv = tv("", 13, RED, true);
+            topPrayerTv.setBackground(round(RED_DARK, 12));
+            topPrayerTv.setPadding((int) (10 * s), (int) (4 * s), (int) (10 * s), (int) (4 * s));
+            topPrayerTv.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) { showCompanionDialog(); }
+            });
+            LinearLayout.LayoutParams prlp = new LinearLayout.LayoutParams(-2, -2);
+            prlp.leftMargin = (int) (10 * s);
+            prlp.gravity = Gravity.CENTER_VERTICAL;
+            row.addView(topPrayerTv, prlp);
+        }
         placeWrap(board, row, ox + 24, 10);
 
         LinearLayout right = new LinearLayout(this);
@@ -1744,6 +1770,10 @@ public class Main extends Activity {
     }
 
     private void buildCarCard() {
+        if (Faith.showInCard(prefs)) {
+            buildCompanionCard();
+            return;
+        }
         final FrameLayout card = card(carX, rowY, 300, cardH, CARD);
         carCard = card;
         // barra de abajo compacta: la foto crece y la velocidad baja; sin velocidad (carros sin GPS) la foto llena el resto
@@ -3327,9 +3357,16 @@ public class Main extends Activity {
                 updateNavHud();
             }
         }
-        if (liveMap == null || l == null) return;
         float kmh = l.hasSpeed() ? l.getSpeed() * 3.6f : 0;
-        liveMap.setPosition(l.getLatitude(), l.getLongitude(), l.hasBearing() && kmh > 4 ? l.getBearing() : Float.NaN, kmh);
+        boolean hasBr = l.hasBearing() && kmh > 4;
+        if (hasBr) curHeadingDeg = l.getBearing();
+        Prayer.saveCoord(prefs, wLat, wLon, curHeadingDeg, hasBr);
+        if (!autoDuaSafarDone && Faith.isEnabled(prefs) && prefs.getBoolean("auto_dua_safar", false) && kmh >= 15f) {
+            autoDuaSafarDone = true;
+            triggerAutoTravelPrayer();
+        }
+        if (liveMap == null) return;
+        liveMap.setPosition(l.getLatitude(), l.getLongitude(), hasBr ? l.getBearing() : Float.NaN, kmh);
         liveMap.setVisibility(View.VISIBLE);
         updateMapTag();
     }
@@ -3667,6 +3704,8 @@ public class Main extends Activity {
         {"music", "Música", "music_note"}, {"nav", "Navegación", "map"}, {"aa", "Android Auto", "navigation"},
         {"carplay", "CarPlay", "phone_iphone"}, {"web", "Navegador web", "public"}, {"files", "Archivos", "folder"},
         {"nav_home", "Ir a Casa", "location_on"}, {"nav_work", "Ir a Trabajo", "directions_car"},
+        {"prayer", "Horario y brújula", "nights_stay"}, {"quran", "Radio devocional", "music_note"},
+        {"dua_safar", "Oración de viaje", "navigation"}, {"masjid", "Lugar de culto cercano", "location_on"},
         {"obd", "Vehículo (OBD-II)", "car_repair"},
         {"settings", "Ajustes", "settings"}, {"apps", "Apps", "apps"},
     };
@@ -6316,6 +6355,10 @@ public class Main extends Activity {
         else if ("carplay".equals(id)) openCarPlay();
         else if ("nav_home".equals(id)) navigateSavedSlot("nav_home", "Casa");
         else if ("nav_work".equals(id)) navigateSavedSlot("nav_work", "Trabajo");
+        else if ("prayer".equals(id)) showCompanionDialog();
+        else if ("quran".equals(id)) showFaithRadioDialog();
+        else if ("dua_safar".equals(id)) openTravelPrayerDialog();
+        else if ("masjid".equals(id)) findNearestWorship();
         else if ("obd".equals(id)) openVehiclePanel();
         else openDrawer();
     }
@@ -6507,6 +6550,7 @@ public class Main extends Activity {
     }
 
     private void openMusicApp() {
+        if (FaithRadio.isActive()) { showFaithRadioDialog(); return; }
         if (notifHint && wantsNotifAccess()) { askNotifAccess(); return; }
         if (launchSaved("music_app")) return;
         if ("Android Auto".equals(curSource) && launchPkg(PKG_HUR)) return;
@@ -6642,15 +6686,16 @@ public class Main extends Activity {
         body.addView(quickRow, qlp);
 
 
-        if (LiveMapView.fileMap != null) {
+        if (LiveMapView.fileMap != null || Faith.isEnabled(prefs)) {
             LinearLayout catRow = new LinearLayout(this);
             catRow.setOrientation(LinearLayout.HORIZONTAL);
-            String[][] cats = {
-                {"fuel", "Gasolina"},
-                {"health", "Salud"},
-                {"parking", "Parqueo"},
-                {"food", "Comida"}
-            };
+            String worshipCat = Faith.worshipCategory(prefs);
+            String worshipShort = Faith.worshipShortLabel(prefs);
+            String[][] cats = LiveMapView.fileMap != null
+                ? (worshipCat != null
+                    ? new String[][]{{"fuel", "Gasolina"}, {"health", "Salud"}, {"parking", "Parqueo"}, {"food", "Comida"}, {worshipCat, worshipShort}}
+                    : new String[][]{{"fuel", "Gasolina"}, {"health", "Salud"}, {"parking", "Parqueo"}, {"food", "Comida"}})
+                : new String[][]{{worshipCat, worshipShort}};
             for (int i = 0; i < cats.length; i++) {
                 final String cKey = cats[i][0];
                 final String cLbl = cats[i][1];
@@ -6886,7 +6931,7 @@ public class Main extends Activity {
     private void searchNavCategory(String cat, final String label, final boolean insertActive, final boolean asStop) {
         if (Double.isNaN(wLat) || Double.isNaN(wLon)) seedLastLocation();
         toast("Buscando…");
-        Nav.searchCategory(cat, wLat, wLon, useMph(), new Nav.SearchCb() {
+        Nav.searchCategory(this, cat, wLat, wLon, useMph(), new Nav.SearchCb() {
             public void onResult(List<Nav.Place> places, String error) {
                 if (isFinishing()) return;
                 if (places == null || places.isEmpty()) {
@@ -7291,11 +7336,17 @@ public class Main extends Activity {
         boolean h24 = "24".equals(fmt) || ("auto".equals(fmt) && android.text.format.DateFormat.is24HourFormat(this));
         timeTv.setText(I18n.sdf(h24 ? "HH:mm" : "h:mm a").format(now));
         String d = I18n.sdf(vertical && !(premium && !mapOnly) ? "EEE d MMM" : I18n.datePattern()).format(now);
-        dateTv.setText(d.substring(0, 1).toUpperCase(I18n.loc) + d.substring(1));
+        String dateLine = d.substring(0, 1).toUpperCase(I18n.loc) + d.substring(1);
+        if (Faith.ISLAM.equals(Faith.mode(prefs)) && prefs.getBoolean("hijri_on", true)) {
+            Prayer.HijriDate hd = Prayer.hijriDate(Calendar.getInstance(), prefs.getInt("hijri_adj", 0));
+            dateLine = dateLine + "  ·  " + hd.formatShort();
+        }
+        dateTv.setText(dateLine);
         int hr = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
         String saludo = I18n.t(hr >= 5 && hr < 12 ? "Buenos días" : (hr >= 12 && hr < 19 ? "Buenas tardes" : "Buenas noches"));
         String nombre = prefs.getString("user_name", "").trim();
         greetTv.setText(nombre.length() > 0 ? saludo + ", " + nombre : saludo);
+        updatePrayerUi();
     }
 
     private final LocationListener gpsListener = new LocationListener() {
@@ -7375,6 +7426,10 @@ public class Main extends Activity {
             if (idleSpeedTv != null) idleSpeedTv.setText(ok ? String.valueOf(Math.round(kmh < 2 ? 0 : iv)) : "--");
             if (idleGauge != null) idleGauge.setSpeed(kmh < 2 ? 0 : iv, ok);
         }
+        if (afnonSpeedTv != null) {
+            String spdStr = ok ? String.valueOf(Math.round(kmh < 2 ? 0 : conv)) : "--";
+            afnonSpeedTv.setText(spdStr + " " + (useMph() ? "mph" : "km/h"));
+        }
         if (speedTv == null) return;
         float v = conv;
         speedTv.setText(ok ? String.valueOf(Math.round(kmh < 2 ? 0 : v)) : "--");
@@ -7396,6 +7451,13 @@ public class Main extends Activity {
     private View.OnClickListener mediaClick(final int code) {
         return new View.OnClickListener() {
             public void onClick(View v) {
+                if (FaithRadio.isActive()) {
+                    if (code == KeyEvent.KEYCODE_MEDIA_NEXT) FaithRadio.next(Main.this);
+                    else if (code == KeyEvent.KEYCODE_MEDIA_PREVIOUS) FaithRadio.prev(Main.this);
+                    else FaithRadio.toggle(Main.this);
+                    h.postDelayed(new Runnable() { public void run() { updatePlayIcon(); } }, 200);
+                    return;
+                }
                 int which = code == KeyEvent.KEYCODE_MEDIA_NEXT ? 1 : code == KeyEvent.KEYCODE_MEDIA_PREVIOUS ? -1 : 0;
                 boolean done = false;
 
@@ -7494,6 +7556,11 @@ public class Main extends Activity {
 
     private void updatePlayIcon() {
         if (playIc == null) return;
+        if (FaithRadio.isActive()) {
+            boolean qOn = FaithRadio.isPlaying() || FaithRadio.isBuffering();
+            playIc.setImageBitmap(asset(qOn ? "ic/pause.png" : "ic/play_arrow.png"));
+            return;
+        }
         AudioManager am = (AudioManager) getSystemService(AUDIO_SERVICE);
         boolean on = playingState != null ? playingState : am.isMusicActive();
         playIc.setImageBitmap(asset(on ? "ic/pause.png" : "ic/play_arrow.png"));
@@ -7849,6 +7916,20 @@ public class Main extends Activity {
 
     private void renderTrack() {
         if (trackTv == null) return;
+        if (FaithRadio.isActive()) {
+            FaithRadio.Station st = FaithRadio.currentStation(this);
+            trackTv.setText(st != null ? st.name : "");
+            artistTv.setText(FaithRadio.isBuffering() ? I18n.t("Conectando…")
+                    : FaithRadio.lastError() != null ? FaithRadio.lastError()
+                    : (st != null ? st.subtitle : ""));
+            sourceTv.setText(I18n.t(FaithRadio.radioTitle(FaithRadio.activeMode())).toUpperCase(I18n.loc));
+            timePosTv.setText(FaithRadio.isPlaying() ? I18n.t("EN VIVO") : FaithRadio.isBuffering() ? "…" : I18n.t("Pausado"));
+            playerArt.setArt(null);
+            playerArt.setProgress(-1);
+            if (faroBar != null) faroBar.set(-1);
+            if (playIc != null) playIc.setImageBitmap(asset(FaithRadio.isPlaying() || FaithRadio.isBuffering() ? "ic/pause.png" : "ic/play_arrow.png"));
+            return;
+        }
         if (curTitle == null && curArtist == null) {
             notifHint = wantsNotifAccess();
             trackTv.setText(I18n.t(notifHint ? "Música sonando" : "Nada sonando"));
@@ -8902,12 +8983,12 @@ public class Main extends Activity {
 
     // 2.20: Ajustes reordenados (Andrés): cada opción en el apartado donde uno la busca
     static final String[] CAT_NAMES = {"Volver al inicio", "Tu vehículo", "Mantenimientos", "Pantalla de inicio", "Barra de apps", "Apariencia",
-        "Conexión", "Mapa y clima", "Música", "Sistema", "Acerca de", "Personalización"};
-    static final String[] CAT_ICONS = {"arrow_back", "directions_car", "car_repair", "dehaze", "apps", "palette", "usb", "map", "music_note", "tune", "info", "star"};
+        "Conexión", "Mapa y clima", "Música", "Sistema", "Acerca de", "Personalización", "Compañero de Fe"};
+    static final String[] CAT_ICONS = {"arrow_back", "directions_car", "car_repair", "dehaze", "apps", "palette", "usb", "map", "music_note", "tune", "info", "star", "nights_stay"};
     static final int C_VEHICLE = 1, C_MAINT = 2, C_HOME = 3, C_DOCK = 4, C_LOOK = 5, C_CONN = 6, C_MAP = 7, C_MUSIC = 8, C_SYS = 9, C_ABOUT = 10,
-        C_STYLE = 11;
+        C_STYLE = 11, C_FAITH = 12;
     /** Orden en pantalla (los números de categoría no cambian: los usan los ganchos de prueba «ajustes:N»). */
-    static final int[] CAT_ORDER = {0, C_STYLE, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    static final int[] CAT_ORDER = {0, C_STYLE, 1, 2, 3, 4, 5, 6, 7, 8, C_FAITH, 9, 10};
 
     private android.widget.ScrollView settingsScroll;
     private int settingsScrollCat = -1;
@@ -9050,6 +9131,7 @@ public class Main extends Activity {
             case C_SYS: catSystem(body); break;
             case C_ABOUT: catAbout(body); break;
             case C_STYLE: catStyle(body); break;
+            case C_FAITH: catCompanion(body); break;
         }
     }
 
@@ -9821,6 +9903,20 @@ public class Main extends Activity {
                     noImmersive = false; stormCount = 0;
                     immersive(); rebuild(); showSettings(settingsCat);
                 }});
+        }
+        LinearLayout isl = section(body, "Compañero de Fe");
+        String curMode = Faith.mode(prefs);
+        int mIdx = 0;
+        for (int i = 0; i < Faith.MODE_KEYS.length; i++) if (Faith.MODE_KEYS[i].equals(curMode)) mIdx = i;
+        choice(isl, "Compañero de Fe", "Horarios de oración/devoción, calendarios sagrados, brújula, oración de viaje y radio en vivo",
+            Faith.MODE_NAMES, mIdx, new IntCb() { public void on(int i) {
+                String mk = Faith.MODE_KEYS[i];
+                prefs.edit().putString("companion_mode", mk).putBoolean("islamic_on", !Faith.OFF.equals(mk)).apply();
+                rebuild(); showSettings(settingsCat);
+            }});
+        if (Faith.isEnabled(prefs)) {
+            row(isl, "Ajustes del compañero", "Ubicación del contador, cálculo, brújula y radio", null,
+                new Runnable() { public void run() { showSettings(C_FAITH); } });
         }
     }
 
@@ -12363,5 +12459,531 @@ public class Main extends Activity {
         if ("panel".equals(action)) return new Runnable() { public void run() { openVehiclePanel(); } };
         if (action.startsWith("obd")) return obdGo(action);
         return null;
+    }
+
+    // ───────────────────────── Compañero de Fe ─────────────────────────
+
+    private double[] prayerCoord() {
+        if (!Double.isNaN(wLat) && !Double.isNaN(wLon)) return new double[]{wLat, wLon};
+        return Prayer.savedCoord(prefs);
+    }
+
+    private void buildCompanionCard() {
+        final FrameLayout card = card(carX, rowY, 300, cardH, CARD);
+        carCard = card;
+        carTv = null;
+        chipTv = null;
+        carGauge = null;
+        oilValTv = null;
+        oilBar = null;
+        oilBarBg = null;
+        oilLblTv = null;
+        oilIc = null;
+
+        double[] coord = prayerCoord();
+        Faith.Snapshot s0 = Faith.snapshot(this, prefs, coord != null ? coord[0] : Double.NaN, coord != null ? coord[1] : Double.NaN);
+        String mode = Faith.mode(prefs);
+        boolean isIslam = Faith.ISLAM.equals(mode);
+
+        float archH = Math.max(150f, cardH - 122f);
+        if (isIslam) {
+            afnonMihrab = new Prayer.MihrabView(this);
+            afnonMihrab.setColors(RED, INNER);
+            place(card, afnonMihrab, 10, 10, 280, archH);
+        } else {
+            afnonMihrab = null;
+            View boxBg = new View(this);
+            boxBg.setBackground(round(INNER, 16));
+            place(card, boxBg, 10, 10, 280, archH);
+        }
+
+        LinearLayout archBox = new LinearLayout(this);
+        archBox.setOrientation(LinearLayout.VERTICAL);
+        archBox.setGravity(Gravity.CENTER);
+        archBox.setPadding((int) (18 * s), (int) (16 * s), (int) (18 * s), (int) (10 * s));
+
+        afnonBadgeTv = tv("", 10, Color.WHITE, true);
+        afnonBadgeTv.setBackground(round(RED, 8));
+        afnonBadgeTv.setPadding((int) (8 * s), (int) (2 * s), (int) (8 * s), (int) (2 * s));
+        archBox.addView(afnonBadgeTv, new LinearLayout.LayoutParams(-2, -2));
+
+        afnonPrayerTv = tv("", 17, SOFT, true);
+        afnonPrayerTv.setGravity(Gravity.CENTER);
+        afnonPrayerTv.setPadding(0, (int) (6 * s), 0, 0);
+        archBox.addView(afnonPrayerTv);
+
+        afnonCountdownTv = tv("--:--:--", 34, TEXT, true);
+        afnonCountdownTv.setGravity(Gravity.CENTER);
+        afnonCountdownTv.setPadding(0, (int) (2 * s), 0, (int) (2 * s));
+        archBox.addView(afnonCountdownTv);
+
+        afnonHijriTv = tv("", 12, MUTED, false);
+        afnonHijriTv.setGravity(Gravity.CENTER);
+        archBox.addView(afnonHijriTv);
+
+        place(card, archBox, 10, 10, 280, archH);
+        archBox.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) { showCompanionDialog(); }
+        });
+        archBox.setOnLongClickListener(new View.OnLongClickListener() {
+            public boolean onLongClick(View v) { showSettings(C_FAITH); return true; }
+        });
+
+        float stripY = 10 + archH + 8;
+        LinearLayout qBox = new LinearLayout(this);
+        qBox.setGravity(Gravity.CENTER_VERTICAL);
+        qBox.setBackground(round(INNER, 12));
+        qBox.setPadding((int) (8 * s), (int) (4 * s), (int) (8 * s), (int) (4 * s));
+        afnonQiblaView = new Prayer.QiblaCompassView(this);
+        qBox.addView(afnonQiblaView, new LinearLayout.LayoutParams((int) (36 * s), (int) (36 * s)));
+        afnonQiblaTv = tv("", 11, TEXT, true);
+        afnonQiblaTv.setSingleLine(false);
+        afnonQiblaTv.setMaxLines(2);
+        afnonQiblaTv.setPadding((int) (6 * s), 0, 0, 0);
+        qBox.addView(afnonQiblaTv, new LinearLayout.LayoutParams(0, -2, 1));
+        qBox.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) { showCompanionDialog(); }
+        });
+        place(card, qBox, 10, stripY, carSpeed ? 168 : 280, 52);
+
+        speedTv = null;
+        if (carSpeed) {
+            LinearLayout spBox = new LinearLayout(this);
+            spBox.setOrientation(LinearLayout.VERTICAL);
+            spBox.setGravity(Gravity.CENTER);
+            spBox.setBackground(round(INNER, 12));
+            spBox.setPadding((int) (6 * s), (int) (4 * s), (int) (6 * s), (int) (4 * s));
+            afnonSpeedTv = tv("-- " + (useMph() ? "mph" : "km/h"), 13, TEXT, true);
+            afnonSpeedTv.setGravity(Gravity.CENTER);
+            spBox.addView(afnonSpeedTv);
+            LinearLayout gRow = new LinearLayout(this);
+            gRow.setGravity(Gravity.CENTER);
+            gpsDot = new View(this);
+            gpsDot.setBackground(round(MUTED, 4));
+            gRow.addView(gpsDot, new LinearLayout.LayoutParams((int) (6 * s), (int) (6 * s)));
+            gpsTv = tv("GPS", 10, MUTED, false);
+            gpsTv.setPadding((int) (4 * s), 0, 0, 0);
+            gRow.addView(gpsTv);
+            spBox.addView(gRow);
+            spBox.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) { showTripDialog(); }
+            });
+            place(card, spBox, 184, stripY, 106, 52);
+        } else {
+            gpsTv = null;
+            gpsDot = null;
+        }
+
+        float btnY = stripY + 60;
+        String travelLbl = s0 != null ? I18n.t(s0.travelBtnLabel) : I18n.t("Oración");
+        String worshipLbl = I18n.t(Faith.worshipShortLabel(prefs));
+        String radioLbl = s0 != null ? I18n.t(s0.radioBtnLabel) : I18n.t("Radio");
+        String[][] acts = {
+            {travelLbl, "dua"},
+            {worshipLbl, "worship"},
+            {radioLbl, "radio"}
+        };
+        for (int i = 0; i < acts.length; i++) {
+            final String act = acts[i][1];
+            TextView b = tv(acts[i][0], 11, TEXT, true);
+            b.setGravity(Gravity.CENTER);
+            b.setBackground(round(BTN, 10));
+            b.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    if ("dua".equals(act)) openTravelPrayerDialog();
+                    else if ("worship".equals(act)) findNearestWorship();
+                    else showFaithRadioDialog();
+                }
+            });
+            place(card, b, 10 + i * 95, btnY, 90, 36);
+        }
+
+        if (!showCar) board.removeView(card);
+        updatePrayerUi();
+        setGps(lastFix > 0, 0);
+    }
+
+    private void updatePrayerUi() {
+        if (prefs == null || !Faith.isEnabled(prefs)) return;
+        double[] coord = prayerCoord();
+        Faith.Snapshot sn = Faith.snapshot(this, prefs,
+                coord != null ? coord[0] : Double.NaN,
+                coord != null ? coord[1] : Double.NaN);
+        if (sn == null) return;
+
+        if (topPrayerTv != null) {
+            topPrayerTv.setText(coord == null ? sn.topShortTitle : (sn.topShortTitle + " · " + sn.countdown));
+        }
+        if (afnonPrayerTv != null) afnonPrayerTv.setText(sn.nextTitle);
+        if (afnonCountdownTv != null) afnonCountdownTv.setText(sn.countdown);
+        if (afnonHijriTv != null) afnonHijriTv.setText(sn.calendarLine != null ? sn.calendarLine : "");
+        if (afnonBadgeTv != null) afnonBadgeTv.setText(sn.badge != null ? sn.badge : Faith.modeDisplayName(sn.mode));
+
+        if (afnonQiblaView != null) {
+            if (sn.hasCompass) {
+                afnonQiblaView.setVisibility(View.VISIBLE);
+                float heading = !Float.isNaN(curHeadingDeg) ? curHeadingDeg : prefs.getFloat("last_heading_deg", -1f);
+                float relDeg = Prayer.carRelativeAngle(sn.compassDeg, heading);
+                afnonQiblaView.setState(relDeg, RED, MUTED, CIRCLE);
+            } else {
+                afnonQiblaView.setVisibility(View.GONE);
+            }
+        }
+        if (afnonQiblaTv != null) {
+            if (sn.hasCompass) {
+                double dispDist = useMph() ? sn.compassDistKm * 0.621371 : sn.compassDistKm;
+                String du = useMph() ? "mi" : "km";
+                afnonQiblaTv.setText(I18n.t(sn.compassTargetName) + " " + Math.round(sn.compassDeg) + "° " + Prayer.compassText(sn.compassDeg)
+                        + "\n" + I18n.integer(Math.round(dispDist)) + " " + du);
+            } else if (coord == null && (Faith.ISLAM.equals(sn.mode) || Faith.JUDAISM.equals(sn.mode))) {
+                afnonQiblaTv.setText(I18n.t(sn.compassTargetName) + " · GPS");
+            } else {
+                afnonQiblaTv.setText(Faith.modeDisplayName(sn.mode) + "\n" + I18n.t("Toca para ver detalles"));
+            }
+        }
+    }
+
+    private void checkPrayerAlerts() {
+        if (prefs == null || !Faith.ISLAM.equals(Faith.mode(prefs))) return;
+        int alertMode = prefs.getInt("prayer_alert", 1);
+        int preMin = prefs.getInt("prayer_pre_min", 0);
+        if (alertMode <= 0) return;
+        double[] coord = prayerCoord();
+        if (coord == null) return;
+        Calendar now = Calendar.getInstance();
+        Prayer.DayTimes dt = Prayer.today(prefs, coord[0], coord[1]);
+        if (!dt.valid) return;
+        int nowMin = now.get(Calendar.HOUR_OF_DAY) * 60 + now.get(Calendar.MINUTE);
+        String dayKey = now.get(Calendar.YEAR) + "-" + now.get(Calendar.DAY_OF_YEAR);
+        int[] order = {0, 2, 3, 4, 5};
+        for (int idx : order) {
+            int pMin = dt.mins[idx];
+            String kind = null;
+            String msg = null;
+            if (nowMin == pMin) {
+                kind = "now";
+                msg = I18n.t("Hora de oración") + ": " + I18n.t(Prayer.PRAYER_KEYS[idx]);
+            } else if (preMin > 0 && pMin - nowMin == preMin) {
+                kind = "pre" + preMin;
+                msg = I18n.t(Prayer.PRAYER_KEYS[idx]) + " " + I18n.f("en %d min", preMin);
+            }
+            if (kind != null) {
+                String token = dayKey + "-" + idx + "-" + kind;
+                if (!token.equals(prefs.getString("prayer_alerted_key", ""))) {
+                    prefs.edit().putString("prayer_alerted_key", token).apply();
+                    toast(msg);
+                    Prayer.playPrayerAlert(this, alertMode, msg);
+                }
+                return;
+            }
+        }
+    }
+
+    private void triggerAutoTravelPrayer() {
+        Faith.Snapshot sn = Faith.snapshot(this, prefs, Double.NaN, Double.NaN);
+        if (sn == null) return;
+        toast(I18n.t(sn.prayerTitle));
+        if (prefs.getInt("prayer_alert", 1) == 2 || prefs.getBoolean("auto_dua_safar_tts", true)) {
+            Nav.speakRaw(this, sn.prayerTranslit);
+        }
+    }
+
+    private void showCompanionDialog() {
+        double[] coord = prayerCoord();
+        Faith.Snapshot sn = Faith.snapshot(this, prefs,
+                coord != null ? coord[0] : Double.NaN,
+                coord != null ? coord[1] : Double.NaN);
+        if (sn == null) {
+            showSettings(C_FAITH);
+            return;
+        }
+
+        LinearLayout lay = new LinearLayout(this);
+        lay.setOrientation(LinearLayout.VERTICAL);
+        lay.setPadding((int) (20 * s), (int) (8 * s), (int) (20 * s), (int) (6 * s));
+
+        String hdrText = (sn.calendarLine != null ? sn.calendarLine : Faith.modeDisplayName(sn.mode))
+                + (sn.badge != null && !sn.badge.equals(sn.calendarLine) ? "  ·  " + sn.badge : "");
+        TextView hdr = tv(hdrText, 13, RED, true);
+        hdr.setPadding(0, 0, 0, (int) (10 * s));
+        lay.addView(hdr);
+
+        if (coord == null) {
+            TextView noGps = tv(I18n.t("Esperando señal GPS para calcular los horarios locales."), 14, MUTED, false);
+            noGps.setSingleLine(false);
+            lay.addView(noGps);
+        } else {
+            if (sn.hasCompass) {
+                float heading = !Float.isNaN(curHeadingDeg) ? curHeadingDeg : prefs.getFloat("last_heading_deg", -1f);
+                float relDeg = Prayer.carRelativeAngle(sn.compassDeg, heading);
+
+                LinearLayout qCard = new LinearLayout(this);
+                qCard.setGravity(Gravity.CENTER_VERTICAL);
+                qCard.setBackground(round(INNER, 14));
+                qCard.setPadding((int) (12 * s), (int) (10 * s), (int) (12 * s), (int) (10 * s));
+                Prayer.QiblaCompassView qv = new Prayer.QiblaCompassView(this);
+                qv.setState(relDeg, RED, MUTED, CIRCLE);
+                qCard.addView(qv, new LinearLayout.LayoutParams((int) (58 * s), (int) (58 * s)));
+                LinearLayout qCol = new LinearLayout(this);
+                qCol.setOrientation(LinearLayout.VERTICAL);
+                qCol.setPadding((int) (12 * s), 0, 0, 0);
+                double dispDist = useMph() ? sn.compassDistKm * 0.621371 : sn.compassDistKm;
+                qCol.addView(tv(I18n.t(sn.compassTitle) + ": " + Math.round(sn.compassDeg) + "° " + Prayer.compassText(sn.compassDeg), 14, TEXT, true));
+                qCol.addView(tv(I18n.t(sn.compassTargetName) + ": " + I18n.integer(Math.round(dispDist)) + " " + (useMph() ? "mi" : "km"), 12, MUTED, false));
+                qCol.addView(tv(heading >= 0 ? I18n.t("La flecha apunta según el rumbo del vehículo") : I18n.t("La flecha apunta respecto al Norte (conduce para calibrar el rumbo)"), 11, SOFT, false));
+                qCard.addView(qCol, new LinearLayout.LayoutParams(0, -2, 1));
+                LinearLayout.LayoutParams qlp = new LinearLayout.LayoutParams(-1, -2);
+                qlp.bottomMargin = (int) (10 * s);
+                lay.addView(qCard, qlp);
+            }
+
+            for (int i = 0; i < sn.rows.size(); i++) {
+                Faith.Row rw = sn.rows.get(i);
+                LinearLayout row = new LinearLayout(this);
+                row.setGravity(Gravity.CENTER_VERTICAL);
+                if (rw.active) row.setBackground(round(RED_DARK, 10));
+                row.setPadding((int) (12 * s), (int) (7 * s), (int) (12 * s), (int) (7 * s));
+                TextView k = tv(rw.label, 14, rw.active ? RED : TEXT, rw.active);
+                row.addView(k, new LinearLayout.LayoutParams(0, -2, 1));
+                if (rw.note != null && rw.note.length() > 0) {
+                    TextView nTv = tv(rw.note, 11, MUTED, false);
+                    nTv.setPadding(0, 0, (int) (10 * s), 0);
+                    row.addView(nTv);
+                }
+                TextView v = tv(rw.time, 14, rw.active ? RED : TEXT, true);
+                row.addView(v);
+                lay.addView(row);
+            }
+            if (sn.footerNote != null && sn.footerNote.length() > 0) {
+                TextView jam = tv(sn.footerNote, 11, MUTED, false);
+                jam.setSingleLine(false);
+                jam.setPadding((int) (4 * s), (int) (8 * s), (int) (4 * s), 0);
+                lay.addView(jam);
+            }
+        }
+
+        LinearLayout actRow = new LinearLayout(this);
+        actRow.setOrientation(LinearLayout.HORIZONTAL);
+        actRow.setPadding(0, (int) (12 * s), 0, 0);
+        final AlertDialog[] dref = new AlertDialog[1];
+        String[][] btns = {
+            {I18n.t(sn.travelBtnLabel), "dua"},
+            {I18n.t(sn.worshipLabel), "worship"},
+            {I18n.t(FaithRadio.radioTitle(sn.mode)), "radio"}
+        };
+        for (int i = 0; i < btns.length; i++) {
+            final String bId = btns[i][1];
+            TextView b = tv(btns[i][0], 12, TEXT, true);
+            b.setGravity(Gravity.CENTER);
+            b.setBackground(round(BTN, 10));
+            b.setPadding((int) (6 * s), (int) (9 * s), (int) (6 * s), (int) (9 * s));
+            LinearLayout.LayoutParams blp = new LinearLayout.LayoutParams(0, -2, 1);
+            if (i + 1 < btns.length) blp.rightMargin = (int) (6 * s);
+            actRow.addView(b, blp);
+            b.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    if (dref[0] != null) try { dref[0].dismiss(); } catch (Throwable ignored) { }
+                    if ("dua".equals(bId)) openTravelPrayerDialog();
+                    else if ("worship".equals(bId)) findNearestWorship();
+                    else showFaithRadioDialog();
+                }
+            });
+        }
+        lay.addView(actRow);
+
+        android.widget.ScrollView sv = new android.widget.ScrollView(this);
+        sv.addView(lay);
+        dref[0] = new TB(this, dlg()).raw().wide()
+            .setTitle(Faith.modeDisplayName(sn.mode) + " · " + I18n.t("Compañero"))
+            .setView(sv)
+            .setPositiveButton(I18n.t("Cerrar"), null)
+            .setNeutralButton(I18n.t("Ajustes"), new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface d, int w) { showSettings(C_FAITH); }
+            })
+            .show();
+    }
+
+    private void openTravelPrayerDialog() {
+        final Faith.Snapshot sn = Faith.snapshot(this, prefs, Double.NaN, Double.NaN);
+        final String title = sn != null ? sn.prayerTitle : Prayer.DUA_SAFAR_EN;
+        final String script = sn != null ? sn.prayerScript : Prayer.DUA_SAFAR_AR;
+        final String translit = sn != null ? sn.prayerTranslit : Prayer.DUA_SAFAR_TRANSLIT;
+        final String translation = sn != null ? sn.prayerTranslation : Prayer.DUA_SAFAR_EN;
+
+        LinearLayout lay = new LinearLayout(this);
+        lay.setOrientation(LinearLayout.VERTICAL);
+        lay.setPadding((int) (20 * s), (int) (10 * s), (int) (20 * s), (int) (10 * s));
+
+        if (script != null && script.length() > 0) {
+            TextView ar = tv(script, 17, TEXT, true);
+            ar.setSingleLine(false);
+            ar.setGravity(Gravity.CENTER_HORIZONTAL);
+            ar.setPadding(0, 0, 0, (int) (12 * s));
+            lay.addView(ar);
+        }
+
+        if (translit != null && translit.length() > 0) {
+            TextView tr = tv(translit, 13, RED, false);
+            tr.setSingleLine(false);
+            tr.setPadding(0, 0, 0, (int) (10 * s));
+            lay.addView(tr);
+        }
+
+        TextView en = tv(translation, 13, SOFT, false);
+        en.setSingleLine(false);
+        lay.addView(en);
+
+        android.widget.ScrollView sv = new android.widget.ScrollView(this);
+        sv.addView(lay);
+        new TB(this, dlg()).raw().wide()
+            .setTitle(I18n.t(title))
+            .setView(sv)
+            .setPositiveButton(I18n.t("Escuchar (voz)"), new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface d, int w) {
+                    Nav.speakRaw(Main.this, translit != null && translit.length() > 0 ? translit : translation);
+                }
+            })
+            .setNegativeButton(I18n.t("Cerrar"), null)
+            .show();
+    }
+
+    private void showFaithRadioDialog() {
+        final String mode = FaithRadio.isActive() ? FaithRadio.activeMode() : Faith.mode(prefs);
+        final FaithRadio.Station[] list = FaithRadio.stationsFor(mode);
+        int cur = FaithRadio.currentIndex(this, mode);
+        String[] items = new String[list.length];
+        for (int i = 0; i < list.length; i++) {
+            FaithRadio.Station st = list[i];
+            String prefix = (FaithRadio.isActive() && cur == i) ? "▶  " : "";
+            items[i] = prefix + st.name + "  ·  " + st.subtitle;
+        }
+        TB b = new TB(this, dlg()).raw()
+            .setTitle(I18n.t(FaithRadio.radioTitle(mode)))
+            .setItems(items, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface d, int w) {
+                    FaithRadio.play(Main.this, mode, w);
+                    toast(list[w].name);
+                }
+            })
+            .setNegativeButton(I18n.t("Cerrar"), null);
+        if (FaithRadio.isActive()) {
+            b.setNeutralButton(I18n.t("Detener"), new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface d, int w) { FaithRadio.stop(); }
+            });
+        }
+        b.show();
+    }
+
+    private void findNearestWorship() {
+        String worshipCat = Faith.worshipCategory(prefs);
+        if (worshipCat == null) worshipCat = "masjid";
+        Faith.Snapshot sn = Faith.snapshot(this, prefs, Double.NaN, Double.NaN);
+        String lbl = sn != null ? sn.worshipLabel : "Lugar de culto cercano";
+        searchNavCategory(worshipCat, lbl, Nav.active != null, false);
+    }
+
+    private void catCompanion(LinearLayout body) {
+        String mode = Faith.mode(prefs);
+        boolean enabled = !Faith.OFF.equals(mode);
+
+        LinearLayout gen = section(body, "Compañero de Fe");
+        int mIdx = 0;
+        for (int i = 0; i < Faith.MODE_KEYS.length; i++) if (Faith.MODE_KEYS[i].equals(mode)) mIdx = i;
+        choice(gen, "Tradición activa", "Horarios de oración/devoción, calendarios sagrados, brújula, oración de viaje y radio en vivo",
+            Faith.MODE_NAMES, mIdx, new IntCb() { public void on(int i) {
+                String mk = Faith.MODE_KEYS[i];
+                prefs.edit().putString("companion_mode", mk).putBoolean("islamic_on", !Faith.OFF.equals(mk)).apply();
+                rebuild(); showSettings(settingsCat);
+            }});
+        if (enabled) {
+            final String[] cdKeys = {"both", "top", "card", "off"};
+            choice(gen, "Contador de horarios", "Mostrar en la barra superior, en la tarjeta inicial o en ambos",
+                new String[]{"Barra superior y tarjeta inicial", "Solo barra superior", "Solo tarjeta inicial", "Oculto"},
+                Math.max(0, java.util.Arrays.asList(cdKeys).indexOf(Faith.countdownMode(prefs))),
+                new IntCb() { public void on(int i) {
+                    prefs.edit().putString("companion_countdown", cdKeys[i]).putString("islamic_countdown", cdKeys[i]).apply();
+                    rebuild(); showSettings(settingsCat);
+                }});
+            toggle(gen, "Oración de viaje al salir", "Anuncia la oración de viaje al superar los 15 km/h",
+                prefs.getBoolean("auto_dua_safar", false), new IntCb() { public void on(int i) {
+                    prefs.edit().putBoolean("auto_dua_safar", i == 1).apply();
+                    showSettings(settingsCat);
+                }});
+        }
+
+        if (Faith.ISLAM.equals(mode)) {
+            toggle(gen, "Fecha islámica en la barra superior", "Muestra el calendario islámico junto a la fecha",
+                prefs.getBoolean("hijri_on", true), new IntCb() { public void on(int i) {
+                    prefs.edit().putBoolean("hijri_on", i == 1).apply();
+                    updateClock(); showSettings(settingsCat);
+                }});
+            final int[] adjVals = {-2, -1, 0, 1, 2};
+            String[] adjLbls = {"-2 días", "-1 día", "0 (Estándar)", "+1 día", "+2 días"};
+            int curAdj = prefs.getInt("hijri_adj", 0);
+            int adjIdx = 2;
+            for (int i = 0; i < adjVals.length; i++) if (adjVals[i] == curAdj) adjIdx = i;
+            choice(gen, "Ajuste de fecha islámica", "Ajustar según el avistamiento lunar local", adjLbls, adjIdx,
+                new IntCb() { public void on(int i) {
+                    prefs.edit().putInt("hijri_adj", adjVals[i]).apply();
+                    updateClock(); showSettings(settingsCat);
+                }});
+            toggle(gen, "Indicadores de Ramadán y Yumu'ah", "Muestra Iftar/Suhoor en Ramadán y recordatorio de viernes",
+                prefs.getBoolean("islamic_occasions", true), new IntCb() { public void on(int i) {
+                    prefs.edit().putBoolean("islamic_occasions", i == 1).apply();
+                    updatePrayerUi(); showSettings(settingsCat);
+                }});
+
+            LinearLayout calc = section(body, "Cálculo de oraciones y alertas");
+            choice(calc, "Método de cálculo", "Cálculo astronómico 100% sin conexión", Prayer.METHOD_NAMES,
+                Math.max(0, Math.min(Prayer.METHOD_NAMES.length - 1, prefs.getInt("prayer_method", 0))),
+                new IntCb() { public void on(int i) {
+                    prefs.edit().putInt("prayer_method", i).apply();
+                    updatePrayerUi(); showSettings(settingsCat);
+                }});
+            segmented(calc, "Escuela jurídica para Asr", null, new String[]{"Estándar", "Hanafi"},
+                prefs.getBoolean("prayer_hanafi", false) ? 1 : 0, new IntCb() { public void on(int i) {
+                    prefs.edit().putBoolean("prayer_hanafi", i == 1).apply();
+                    updatePrayerUi(); showSettings(settingsCat);
+                }});
+            segmented(calc, "Alerta a la hora de oración", "Atenúa brevemente la música para el tono o voz",
+                new String[]{"Apagado", "Tono", "Voz"}, prefs.getInt("prayer_alert", 1),
+                new IntCb() { public void on(int i) {
+                    prefs.edit().putInt("prayer_alert", i).apply();
+                    showSettings(settingsCat);
+                }});
+            final int[] preVals = {0, 10, 15};
+            int curPre = prefs.getInt("prayer_pre_min", 0);
+            segmented(calc, "Recordatorio previo", "Minutos antes de cada oración",
+                new String[]{"Apagado", "10 min", "15 min"}, curPre == 10 ? 1 : curPre == 15 ? 2 : 0,
+                new IntCb() { public void on(int i) {
+                    prefs.edit().putInt("prayer_pre_min", preVals[i]).apply();
+                    showSettings(settingsCat);
+                }});
+
+            LinearLayout trv = section(body, "Viaje (Safar)");
+            final String[] sfKeys = {"auto", "on", "off"};
+            segmented(trv, "Modo viajero (Qasr > 80 km)", "Detecta rutas largas o distancia desde Casa",
+                new String[]{"Auto", "Activo", "Apagado"},
+                Math.max(0, java.util.Arrays.asList(sfKeys).indexOf(prefs.getString("safar_mode", "auto"))),
+                new IntCb() { public void on(int i) {
+                    prefs.edit().putString("safar_mode", sfKeys[i]).apply();
+                    updatePrayerUi(); showSettings(settingsCat);
+                }});
+        }
+
+        if (enabled) {
+            Faith.Snapshot sn = Faith.snapshot(this, prefs, Double.NaN, Double.NaN);
+            boolean supportsCompass = Faith.ISLAM.equals(mode) || Faith.JUDAISM.equals(mode);
+            LinearLayout tools = section(body, "Herramientas");
+            rowIc(tools, "nights_stay", supportsCompass ? "Horario y brújula" : "Horario diario",
+                supportsCompass ? "Ver horarios y dirección a " + (sn != null ? sn.compassTargetName : "lugar sagrado") : "Ver horario diario y calendario sagrado", null,
+                new Runnable() { public void run() { showCompanionDialog(); } });
+            rowIc(tools, "navigation", sn != null ? sn.prayerTitle : "Oración de viaje", "Texto sagrado, traducción y lectura por voz", null,
+                new Runnable() { public void run() { openTravelPrayerDialog(); } });
+            rowIc(tools, "music_note", FaithRadio.radioTitle(mode), FaithRadio.stationsFor(mode).length + " emisoras devocionales en vivo", null,
+                new Runnable() { public void run() { showFaithRadioDialog(); } });
+            rowIc(tools, "location_on", sn != null ? sn.worshipLabel : "Lugar de culto cercano", "Búsqueda sin conexión (.map) o en línea", null,
+                new Runnable() { public void run() { findNearestWorship(); } });
+        }
     }
 }

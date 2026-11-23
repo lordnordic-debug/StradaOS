@@ -233,16 +233,46 @@ public class Nav {
         }).start();
     }
 
-    public static void searchCategory(final String cat, final double biasLat, final double biasLon,
+    public static void searchCategory(final Context c, final String cat, final double biasLat, final double biasLon,
                                       final boolean mph, final SearchCb cb) {
+        final Context app = c != null ? c.getApplicationContext() : null;
         new Thread(new Runnable() {
             public void run() {
-                final List<Place> out = searchOfflineMap(null, cat, biasLat, biasLon, mph, 12);
+                if (app != null) Net.init(app);
+                List<Place> out = searchOfflineMap(null, cat, biasLat, biasLon, mph, 12);
+                String err = null;
+                if ((out == null || out.isEmpty()) && app != null && hasNetwork(app)) {
+                    String q = "masjid".equals(cat) ? "mosque"
+                            : "church".equals(cat) ? "church"
+                            : "synagogue".equals(cat) ? "synagogue"
+                            : "temple".equals(cat) ? "hindu temple"
+                            : "gurdwara".equals(cat) ? "gurdwara"
+                            : "fuel".equals(cat) ? "gas station"
+                            : "health".equals(cat) ? "hospital"
+                            : "parking".equals(cat) ? "parking" : "restaurant";
+                    try {
+                        out = searchPhoton(app, q, biasLat, biasLon);
+                        if ((out == null || out.isEmpty()) && "masjid".equals(cat)) {
+                            out = searchPhoton(app, "masjid", biasLat, biasLon);
+                        } else if ((out == null || out.isEmpty()) && "temple".equals(cat)) {
+                            out = searchPhoton(app, "mandir", biasLat, biasLon);
+                        }
+                    } catch (Throwable e) {
+                        err = shortErr(e);
+                    }
+                }
+                final List<Place> fout = out;
+                final String ferr = fout == null ? err : null;
                 UI.post(new Runnable() {
-                    public void run() { cb.onResult(out, null); }
+                    public void run() { cb.onResult(fout, ferr); }
                 });
             }
         }).start();
+    }
+
+    public static void searchCategory(final String cat, final double biasLat, final double biasLon,
+                                      final boolean mph, final SearchCb cb) {
+        searchCategory(null, cat, biasLat, biasLon, mph, cb);
     }
 
     private static List<Place> searchOfflineMap(String q, String cat, double lat, double lon, boolean mph, int limit) {
@@ -281,6 +311,11 @@ public class Nav {
         if ("hotel".equals(tag)) return I18n.t("Hotel");
         if ("aerodrome".equals(tag) || "airport".equals(tag)) return I18n.t("Aeropuerto");
         if ("station".equals(tag)) return I18n.t("Estación");
+        if ("mosque".equals(tag) || "place_of_worship".equals(tag)) return I18n.t("Mezquita");
+        if ("church".equals(tag)) return I18n.t("Iglesia");
+        if ("synagogue".equals(tag)) return I18n.t("Sinagoga");
+        if ("temple".equals(tag)) return I18n.t("Templo");
+        if ("gurdwara".equals(tag)) return I18n.t("Gurdwara");
         return I18n.t("Lugar");
     }
 

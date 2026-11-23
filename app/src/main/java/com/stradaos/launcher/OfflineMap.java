@@ -948,6 +948,8 @@ public class OfflineMap {
                 String tagLabel = null;
                 int boost = 0;
                 boolean catOk = cat == null;
+                boolean worship = false;
+                String religionVal = null;
                 for (int t = 0; t < nt; t++) {
                     int id = tagIds[t];
                     String k = poiK[id], v = poiV[id];
@@ -958,16 +960,26 @@ public class OfflineMap {
                         else if ("town".equals(v)) boost = 40;
                         else if ("village".equals(v) || "suburb".equals(v)) boost = 30;
                         else boost = 15;
-                    } else if ("amenity".equals(k) || "shop".equals(k) || "tourism".equals(k) || "railway".equals(k) || "aeroway".equals(k)) {
+                    } else if ("amenity".equals(k) || "shop".equals(k) || "tourism".equals(k) || "railway".equals(k) || "aeroway".equals(k) || "building".equals(k)) {
                         if (tagLabel == null) tagLabel = v;
                         boost = Math.max(boost, 22);
+                        if ("amenity".equals(k) && "place_of_worship".equals(v)) worship = true;
                         if (cat != null && matchesCat(cat, k, v)) catOk = true;
+                    } else if ("religion".equals(k)) {
+                        religionVal = v;
                     }
                 }
                 int fb = b.byte8();
                 String name = (fb & 0x80) != 0 ? local(b.str()) : null;
                 if ((fb & 0x40) != 0) b.str();
                 if ((fb & 0x20) != 0) b.svar();
+                if (!catOk && worship) {
+                    String matchedWorship = matchWorshipCat(cat, religionVal, name);
+                    if (matchedWorship != null) {
+                        catOk = true;
+                        tagLabel = matchedWorship;
+                    }
+                }
                 if (!catOk) continue;
                 if (name == null) {
                     if (cat == null) continue;
@@ -1051,12 +1063,34 @@ public class OfflineMap {
         return 80;
     }
 
+    private static String matchWorshipCat(String cat, String religion, String name) {
+        if (cat == null) return null;
+        String f = name != null ? fold(name) : "";
+        if ("masjid".equals(cat)) {
+            if ("muslim".equals(religion) || (religion == null && (f.contains("masjid") || f.contains("mosque") || f.contains("jamia") || f.contains("jami") || f.contains("mezquita") || f.contains("mesquita") || f.contains("camii") || f.contains("moschee") || f.contains("mosquee") || (name != null && (name.contains("مسجد") || name.contains("جامع")))))) return "mosque";
+        } else if ("church".equals(cat)) {
+            if ("christian".equals(religion) || (religion == null && (f.contains("church") || f.contains("cathedral") || f.contains("chapel") || f.contains("iglesia") || f.contains("parish") || f.contains("baptist") || f.contains("catholic")))) return "church";
+        } else if ("synagogue".equals(cat)) {
+            if ("jewish".equals(religion) || (religion == null && (f.contains("synagogue") || f.contains("sinagoga") || f.contains("chabad") || f.contains("beth ") || f.contains("congregation")))) return "synagogue";
+        } else if ("temple".equals(cat)) {
+            if ("hindu".equals(religion) || (religion == null && (f.contains("mandir") || f.contains("temple") || f.contains("shiva") || f.contains("krishna") || f.contains("hanuman") || f.contains("ganesh") || f.contains("devi")))) return "temple";
+        } else if ("gurdwara".equals(cat)) {
+            if ("sikh".equals(religion) || (religion == null && (f.contains("gurdwara") || f.contains("gurudwara") || f.contains("sikh") || f.contains("khalsa")))) return "gurdwara";
+        }
+        return null;
+    }
+
     private static boolean matchesCat(String cat, String k, String v) {
         if ("fuel".equals(cat)) return "amenity".equals(k) && "fuel".equals(v);
         if ("health".equals(cat)) return "amenity".equals(k) && ("hospital".equals(v) || "clinic".equals(v) || "pharmacy".equals(v) || "doctors".equals(v));
         if ("parking".equals(cat)) return "amenity".equals(k) && "parking".equals(v);
         if ("food".equals(cat)) return ("amenity".equals(k) && ("restaurant".equals(v) || "cafe".equals(v) || "fast_food".equals(v)))
                 || ("shop".equals(k) && ("supermarket".equals(v) || "convenience".equals(v)));
+        if ("masjid".equals(cat)) return ("amenity".equals(k) || "building".equals(k)) && "mosque".equals(v);
+        if ("church".equals(cat)) return ("amenity".equals(k) || "building".equals(k)) && ("church".equals(v) || "cathedral".equals(v) || "chapel".equals(v));
+        if ("synagogue".equals(cat)) return ("amenity".equals(k) || "building".equals(k)) && "synagogue".equals(v);
+        if ("temple".equals(cat)) return ("amenity".equals(k) || "building".equals(k)) && ("temple".equals(v) || "mandir".equals(v));
+        if ("gurdwara".equals(cat)) return ("amenity".equals(k) || "building".equals(k)) && "gurdwara".equals(v);
         return false;
     }
 
@@ -1068,6 +1102,11 @@ public class OfflineMap {
         if ("parking".equals(v)) return "Parqueadero";
         if ("restaurant".equals(v)) return "Restaurante";
         if ("supermarket".equals(v)) return "Supermercado";
+        if ("mosque".equals(v) || "place_of_worship".equals(v)) return "Mezquita";
+        if ("church".equals(v)) return "Iglesia";
+        if ("synagogue".equals(v)) return "Sinagoga";
+        if ("temple".equals(v)) return "Templo";
+        if ("gurdwara".equals(v)) return "Gurdwara";
         return v != null ? v : "Lugar";
     }
 

@@ -1856,3 +1856,122 @@ Beige moderno	Modern beige
 Próximo mantenimiento	Next service
 El carro del tema Carbono, visto desde arriba. También se cambia con una presión larga sobre el carro.	The Carbono theme car, seen from above. You can also change it with a long press on the car.
 Tarjetas limpias sobre un fondo carbón con textura y una luz suave desde abajo (o gris perla en claro). Tu vehículo en grande con el velocímetro y los dos mantenimientos más cercanos, el mapa con el reproductor y el clima flotando encima, y una barra de apps tipo píldora.	Clean cards on a textured carbon background with a soft light from below (or pearl gray in light mode). Your vehicle up large with the speedometer and the two nearest services, the map with the player and weather floating on top, and a pill-shaped app bar.
+
+# Compañero de Fe (Faith Companion)
+Cristianismo	Christianity
+Judaísmo	Judaism
+Hinduismo	Hinduism
+Sijismo	Sikhism
+Compañero de Fe	Faith Companion
+Compañero	Companion
+Culto	Worship
+Mezquita	Masjid
+Iglesia	Church
+Sinagoga	Synagogue
+Templo	Temple
+Gurdwara	Gurdwara
+Mezquita cercana	Nearest Masjid
+Iglesia cercana	Nearest Church
+Sinagoga cercana	Nearest Synagogue
+Templo cercano	Nearest Temple
+Gurdwara cercano	Nearest Gurdwara
+Lugar de culto cercano	Nearest place of worship
+Horarios de oración/devoción, calendarios sagrados, brújula, oración de viaje y radio en vivo	Prayer/devotion schedules, sacred calendars, direction compass, travel prayer, and live radio
+Ajustes del compañero	Companion settings
+Ubicación del contador, cálculo, brújula y radio	Countdown placement, calculation options, compass, and radio
+Tradición activa	Active tradition
+Contador de horarios	Schedule countdown
+Mostrar en la barra superior, en la tarjeta inicial o en ambos	Show in the top bar, on the home card, or both
+Barra superior y tarjeta inicial	Top bar and home card
+Solo barra superior	Top bar only
+Solo tarjeta inicial	Home card only
+Oración de viaje al salir	Travel prayer on departure
+Anuncia la oración de viaje al superar los 15 km/h	Announces the travel prayer when driving faster than 15 km/h
+Fecha islámica en la barra superior	Hijri date in top bar
+Muestra el calendario islámico junto a la fecha	Displays the Islamic calendar beside the date
+Ajuste de fecha islámica	Hijri date adjustment
+Ajustar según el avistamiento lunar local	Match your local lunar sighting
+-2 días	-2 days
+-1 día	-1 day
+0 (Estándar)	0 (Standard)
++1 día	+1 day
++2 días	+2 days
+Indicadores de Ramadán y Yumu'ah	Ramadan & Jumu'ah badges
+Muestra Iftar/Suhoor en Ramadán y recordatorio de viernes	Shows Iftar/Suhoor during Ramadan and Friday reminder
+Cálculo de oraciones y alertas	Prayer calculation & alerts
+Método de cálculo	Calculation method
+Cálculo astronómico 100% sin conexión	100% offline astronomical calculation
+Escuela jurídica para Asr	Asr juristic school
+Estándar	Standard
+Alerta a la hora de oración	Alert at prayer time
+Atenúa brevemente la música para el tono o voz	Briefly ducks music for the chime or voice
+Tono	Tone
+Voz	Voice
+Recordatorio previo	Advance reminder
+Minutos antes de cada oración	Minutes before each prayer
+Viaje (Safar)	Travel (Safar)
+Modo viajero (Qasr > 80 km)	Traveler mode (Qasr > 80 km)
+Detecta rutas largas o distancia desde Casa	Detects long routes or distance from Home
+Activo	Active
+Herramientas	Tools
+Horario y brújula	Schedule & compass
+Horario diario	Daily schedule
+Oración de viaje	Travel prayer
+Oración de viaje (Du'a al-Safar)	Travel prayer (Du'a al-Safar)
+Texto sagrado, traducción y lectura por voz	Sacred text, translation, and voice playback
+Búsqueda sin conexión (.map) o en línea	Offline (.map) or online search
+Radio Cristiana	Christian Radio
+Radio Judía	Jewish Radio
+Radio Devocional	Devotional Radio
+Radio Gurbani	Gurbani Radio
+Radio Corán	Quran Radio
+emisoras devocionales en vivo	live devotional stations
+Corán	Quran
+Oración	Prayer
+Esperando señal GPS	Waiting for GPS signal
+Esperando señal GPS para calcular los horarios locales.	Waiting for GPS signal to calculate local times.
+Rezo · GPS…	Prayer · GPS…
+Viaje (Qasr)	Travel (Qasr)
+Dirección de la Qibla	Qibla direction
+Hora de oración	Prayer time
+en %d min	in %d min
+Toca para ver detalles	Tap for details
+La flecha apunta según el rumbo del vehículo	Arrow points relative to the vehicle heading
+La flecha apunta respecto al Norte (conduce para calibrar el rumbo)	Arrow points relative to North (drive to calibrate heading)
+Escuchar (voz)	Listen (Voice)
+EN VIVO	LIVE
+Pausado	Paused
+Safar activo (>80 km): Dhuhr + Asr y Maghrib + Isha se pueden combinar (Jam').	Safar active (>80 km): Dhuhr + Asr and Maghrib + Isha may be combined (Jam').
+Día de Arafah	Day of Arafah
+Ramadán	Ramadan
+Yumu'ah	Jumu'ah
+Días Blancos	White Days
+2 rak'as (Qasr)	2 rak'ahs (Qasr)
+3 rak'as	3 rak'ahs
+2 rak'as	2 rak'ahs
+SO	SW
+O	W
+Culto dominical	Sunday Worship
+Oración de la mañana	Morning Prayer
+Oración del mediodía	Midday Prayer
+Vísperas	Evening Vespers
+Completas	Night Compline
+Navidad	Christmas Day
+Tiempo de Navidad	Christmastide
+Epifanía	Epiphany
+Domingo de Pascua	Easter Sunday
+Viernes Santo	Good Friday
+Domingo de Ramos	Palm Sunday
+Cuaresma	Lent
+Tiempo Pascual	Eastertide
+Pentecostés	Pentecost
+Adviento	Advent
+Tiempo Ordinario	Ordinary Time
+Oración del conductor	Traveler's Safe Driving Prayer
+Oración del viajero (Tefilat HaDerej)	Wayfarer's Prayer (Tefilat HaDerech)
+Mizraj (Jerusalén)	Mizrach (Jerusalem)
+Jerusalén	Jerusalem
+Mantra de viaje seguro (Shubh Yatra)	Safe Journey Mantra (Shubh Yatra)
+Oración de viaje (Ardas Shabad)	Travel Prayer (Ardas Shabad)
+Tefilá	Tefilah
+Devoción · GPS…	Devotion · GPS…
