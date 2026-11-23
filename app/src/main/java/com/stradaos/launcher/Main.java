@@ -12566,7 +12566,7 @@ public class Main extends Activity {
             gRow.addView(gpsTv);
             spBox.addView(gRow);
             spBox.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) { showTripDialog(); }
+                public void onClick(View v) { openVehiclePanel(); }
             });
             place(card, spBox, 184, stripY, 106, 52);
         } else {
