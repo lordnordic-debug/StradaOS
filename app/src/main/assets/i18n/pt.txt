@@ -1965,3 +1965,17 @@ Quitar el acceso	Remover o atalho
 No se pudo abrir la app. Déjala presionada para elegir otra.	Não foi possível abrir o app. Mantenha pressionado para escolher outro.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Está oculta em Barra de apps → Layout da barra. Nas laterais, os cartões chegam até embaixo.
 A los costados, las tarjetas llegan hasta abajo.	Nas laterais, os cartões chegam até embaixo.
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	Editar ícone
+El mismo en los dos temas	O mesmo nos dois temas
+Uno para cada tema	Um para cada tema
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	Toque em um ícone para trocá-lo. O ideal é uma imagem PNG quadrada com fundo transparente
+Ícono para los dos temas	Ícone para os dois temas
+Ícono para el tema claro	Ícone para o tema claro
+Ícono para el tema oscuro	Ícone para o tema escuro
+Ícono original	Ícone original
+Elige la imagen	Escolha a imagem
+Buscando imágenes…	Procurando imagens…
+Abriendo la imagen…	Abrindo a imagem…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	Não encontrei imagens (.png/.jpg). Copie-as para o pendrive ou para Download.
+No se pudo guardar el ícono	Não foi possível salvar o ícone

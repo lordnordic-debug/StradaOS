@@ -1962,3 +1962,17 @@ Quitar el acceso	移除快捷方式
 No se pudo abrir la app. Déjala presionada para elegir otra.	无法打开该应用。长按可选择其他应用。
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	已在「应用栏 → 栏布局」中隐藏。放在两侧时，卡片会延伸到底部。
 A los costados, las tarjetas llegan hasta abajo.	放在两侧时，卡片会延伸到底部。
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	编辑图标
+El mismo en los dos temas	两个主题相同
+Uno para cada tema	每个主题各一个
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	点击图标即可更换。最好使用透明背景的方形 PNG 图片
+Ícono para los dos temas	两个主题的图标
+Ícono para el tema claro	浅色主题的图标
+Ícono para el tema oscuro	深色主题的图标
+Ícono original	原始图标
+Elige la imagen	选择图片
+Buscando imágenes…	正在查找图片…
+Abriendo la imagen…	正在打开图片…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	未找到图片（.png/.jpg）。请将它们复制到 USB 存储设备或 Download 文件夹。
+No se pudo guardar el ícono	无法保存图标

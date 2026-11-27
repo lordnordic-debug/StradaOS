@@ -1962,3 +1962,17 @@ Quitar el acceso	Retirer le raccourci
 No se pudo abrir la app. Déjala presionada para elegir otra.	Impossible d'ouvrir l'appli. Appuie longuement pour en choisir une autre.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Elle est masquée dans Barre d'applis → Disposition de la barre. Sur les côtés, les cartes descendent jusqu'en bas.
 A los costados, las tarjetas llegan hasta abajo.	Sur les côtés, les cartes descendent jusqu'en bas.
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	Modifier l'icône
+El mismo en los dos temas	La même pour les deux thèmes
+Uno para cada tema	Une par thème
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	Touchez une icône pour la changer. Idéalement une image PNG carrée à fond transparent
+Ícono para los dos temas	Icône pour les deux thèmes
+Ícono para el tema claro	Icône pour le thème clair
+Ícono para el tema oscuro	Icône pour le thème sombre
+Ícono original	Icône d'origine
+Elige la imagen	Choisissez l'image
+Buscando imágenes…	Recherche d'images…
+Abriendo la imagen…	Ouverture de l'image…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	Aucune image trouvée (.png/.jpg). Copiez-les sur la clé USB ou dans Download.
+No se pudo guardar el ícono	Impossible d'enregistrer l'icône

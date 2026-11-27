@@ -1962,3 +1962,17 @@ Quitar el acceso	إزالة الاختصار
 No se pudo abrir la app. Déjala presionada para elegir otra.	تعذّر فتح التطبيق. اضغط عليه مطولاً لاختيار تطبيق آخر.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	الشريط مخفي من تصميم الشريط ← شريط التطبيقات. على الجانبين تمتد البطاقات حتى الأسفل.
 A los costados, las tarjetas llegan hasta abajo.	على الجانبين تمتد البطاقات حتى الأسفل.
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	تعديل الأيقونة
+El mismo en los dos temas	نفس الأيقونة في السمتين
+Uno para cada tema	أيقونة لكل سمة
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	اضغط على أيقونة لتغييرها. الأفضل صورة PNG مربعة بخلفية شفافة
+Ícono para los dos temas	أيقونة للسمتين
+Ícono para el tema claro	أيقونة للسمة الفاتحة
+Ícono para el tema oscuro	أيقونة للسمة الداكنة
+Ícono original	الأيقونة الأصلية
+Elige la imagen	اختر الصورة
+Buscando imágenes…	جارٍ البحث عن الصور…
+Abriendo la imagen…	جارٍ فتح الصورة…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	لم أجد صوراً (.png/.jpg). انسخها إلى ذاكرة USB أو إلى مجلد Download.
+No se pudo guardar el ícono	تعذّر حفظ الأيقونة

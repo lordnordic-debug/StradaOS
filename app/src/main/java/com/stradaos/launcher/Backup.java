@@ -101,6 +101,10 @@ public class Backup {
                 root.put("photo", photoCache);
             }
         }
+        // íconos propios de las apps (PNG pequeños); siempre va, aunque esté vacío: al restaurar se reemplazan
+        JSONObject ic = new JSONObject();
+        for (Map.Entry<String, byte[]> e : AppIcons.all(c).entrySet()) ic.put(e.getKey(), Base64.encodeToString(e.getValue(), Base64.NO_WRAP));
+        root.put("icons", ic);
         return root.toString();
     }
 
@@ -371,11 +375,20 @@ public class Backup {
             e.putBoolean("setup_done", true);   // quien restaura ya configuró: no se repite el asistente
             String photo = root.optString("photo", "");
             byte[] data = photo.length() > 0 ? Base64.decode(photo, Base64.DEFAULT) : null;   // antes de guardar: si está dañada, no se cambia nada
+            // íconos propios: las copias anteriores no los traen y entonces se quedan los de ahora
+            JSONObject ic = root.optJSONObject("icons");
+            Map<String, byte[]> icons = null;
+            if (ic != null) {
+                icons = new LinkedHashMap<String, byte[]>();
+                Iterator<String> ik = ic.keys();
+                while (ik.hasNext()) { String n = ik.next(); icons.put(n, Base64.decode(ic.getString(n), Base64.DEFAULT)); }
+            }
             if (!e.commit()) return "No se pudo guardar la configuración";
             if (data != null && data.length > 0) {
                 FileOutputStream os = new FileOutputStream(new File(c.getFilesDir(), CarPhoto.FILE));
                 try { os.write(data); } finally { os.close(); }
             }
+            if (icons != null) AppIcons.replaceAll(c, icons);
             return null;
         } catch (Throwable ex) {
             Guard.log("Restaurar copia: " + ex);

@@ -1964,3 +1964,17 @@ Quitar el acceso	Kısayolu kaldır
 No se pudo abrir la app. Déjala presionada para elegir otra.	Uygulama açılamadı. Başka birini seçmek için basılı tut.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Uygulama çubuğu → Çubuk düzeni bölümünde gizli. Yanlarda kartlar en alta kadar uzanır.
 A los costados, las tarjetas llegan hasta abajo.	Yanlarda kartlar en alta kadar uzanır.
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	Simgeyi düzenle
+El mismo en los dos temas	İki temada aynı
+Uno para cada tema	Her tema için ayrı
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	Değiştirmek için bir simgeye dokunun. En iyisi şeffaf arka planlı kare bir PNG görseli
+Ícono para los dos temas	İki tema için simge
+Ícono para el tema claro	Açık tema için simge
+Ícono para el tema oscuro	Koyu tema için simge
+Ícono original	Orijinal simge
+Elige la imagen	Görseli seçin
+Buscando imágenes…	Görseller aranıyor…
+Abriendo la imagen…	Görsel açılıyor…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	Görsel bulunamadı (.png/.jpg). Bunları USB belleğe veya Download klasörüne kopyalayın.
+No se pudo guardar el ícono	Simge kaydedilemedi

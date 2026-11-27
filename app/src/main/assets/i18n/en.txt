@@ -1966,3 +1966,17 @@ Quitar el acceso	Remove shortcut
 No se pudo abrir la app. Déjala presionada para elegir otra.	Couldn't open the app. Long-press it to choose another one.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	It's hidden in App bar → Bar layout. On the sides, the cards reach all the way down.
 A los costados, las tarjetas llegan hasta abajo.	On the sides, the cards reach all the way down.
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	Edit icon
+El mismo en los dos temas	Same for both themes
+Uno para cada tema	One for each theme
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	Tap an icon to change it. A square PNG with a transparent background works best
+Ícono para los dos temas	Icon for both themes
+Ícono para el tema claro	Icon for the light theme
+Ícono para el tema oscuro	Icon for the dark theme
+Ícono original	Original icon
+Elige la imagen	Choose the image
+Buscando imágenes…	Looking for images…
+Abriendo la imagen…	Opening the image…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	No images found (.png/.jpg). Copy them to the USB drive or to Download.
+No se pudo guardar el ícono	Couldn't save the icon

@@ -4059,8 +4059,23 @@ public class Main extends Activity {
         return ip;
     }
 
-    /** Ícono de una app de la lista: el del pack si lo trae, si no el de siempre. */
+    /** Ícono propio de la app para el tema que se ve (cajón → dejar presionada → «Editar ícono»); null = no tiene. */
+    private Drawable customIcon(String key) {
+        try {
+            Bitmap b = AppIcons.get(this, key, LIGHT);
+            return b != null ? new android.graphics.drawable.BitmapDrawable(getResources(), b) : null;
+        } catch (Throwable e) { return null; }
+    }
+
+    /** Ícono de una app de la lista: el propio si tiene, si no el del pack si lo trae, si no el de siempre. */
     private Drawable iconOf(ResolveInfo r) {
+        Drawable own = customIcon(AppIcons.key(r.activityInfo.packageName, r.activityInfo.name));
+        if (own != null) return own;
+        return stockIcon(r);
+    }
+
+    /** Ícono sin el propio: el del pack o el de siempre. */
+    private Drawable stockIcon(ResolveInfo r) {
         try {
             IconPack ip = iconPack();
             if (ip != null) {
@@ -4105,6 +4120,8 @@ public class Main extends Activity {
     }
 
     private Drawable appIcon(String component) {
+        Drawable own = customIcon(AppIcons.key(component));
+        if (own != null) return own;
         try {
             IconPack ip = iconPack();
             if (ip != null) {
@@ -9726,6 +9743,17 @@ public class Main extends Activity {
             if (res == RESULT_OK && data != null && data.getData() != null) backupDocument(data.getData(), req == REQ_BACKUP_CREATE);
             return;
         }
+        if (req == REQ_ICON) {
+            ImageCb cb = iconWait;
+            iconWait = null;
+            if (cb != null && res == RESULT_OK && data != null && data.getData() != null) {
+                final Uri uri = data.getData();
+                cb.on(new CarPhoto.Opener() {
+                    public InputStream open() throws Exception { return getContentResolver().openInputStream(uri); }
+                });
+            }
+            return;
+        }
         if (req != REQ_PHOTO || res != RESULT_OK || data == null || data.getData() == null) return;
         final Uri uri = data.getData();
         processPhoto(new CarPhoto.Opener() {
@@ -9734,36 +9762,51 @@ public class Main extends Activity {
     }
 
     private void browseImages() {
-        final ProgressDialogLite pd = new ProgressDialogLite("Buscando fotos…");
+        findImages(15000, "Buscando fotos…", new FilesCb() {
+            public void on(final List<File> found) {
+                if (found.isEmpty()) {
+                    toast("No encontré fotos (.jpg/.png). Cópialas a la memoria USB o a Download.");
+                    return;
+                }
+                final int n = Math.min(found.size(), 80);
+                String[] names = new String[n];
+                for (int i = 0; i < n; i++) names[i] = found.get(i).getName() + "  ·  " + found.get(i).getParentFile().getName();
+                new TB(Main.this, dlg())
+                    .setTitle("Elige la foto")
+                    .setItems(names, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface d, int w) {
+                            final File f = found.get(w);
+                            processPhoto(new CarPhoto.Opener() {
+                                public InputStream open() throws Exception { return new java.io.FileInputStream(f); }
+                            });
+                        }
+                    }).setNegativeButton("Cancelar", null).show();
+            }
+        });
+    }
+
+    interface FilesCb { void on(List<File> found); }
+
+    /** Imágenes de la memoria y de las USB, las más nuevas primero (se buscan en segundo plano). */
+    private void findImages(final long minBytes, String msg, final FilesCb cb) {
+        final ProgressDialogLite pd = new ProgressDialogLite(msg);
         new Thread(new Runnable() {
             public void run() {
                 final List<File> found = new ArrayList<File>();
                 File ext = android.os.Environment.getExternalStorageDirectory();
                 String[] roots = {ext.getAbsolutePath(), "/mnt", "/storage", "/udisk", "/mnt/usb_storage"};
-                for (String r : roots) scanImages(new File(r), 4, found);
+                synchronized (scanned) {
+                    scanned.clear();   // si no, la segunda búsqueda se saltaba las carpetas ya vistas
+                    scannedFiles.clear();
+                    for (String r : roots) scanImages(new File(r), 4, found, minBytes);
+                }
                 Collections.sort(found, new Comparator<File>() {
                     public int compare(File a, File b) { long x = b.lastModified() - a.lastModified(); return x > 0 ? 1 : x < 0 ? -1 : 0; }
                 });
                 runOnUiThread(new Runnable() {
                     public void run() {
                         pd.dismiss();
-                        if (found.isEmpty()) {
-                            toast("No encontré fotos (.jpg/.png). Cópialas a la memoria USB o a Download.");
-                            return;
-                        }
-                        final int n = Math.min(found.size(), 80);
-                        String[] names = new String[n];
-                        for (int i = 0; i < n; i++) names[i] = found.get(i).getName() + "  ·  " + found.get(i).getParentFile().getName();
-                        new TB(Main.this, dlg())
-                            .setTitle("Elige la foto")
-                            .setItems(names, new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface d, int w) {
-                                    final File f = found.get(w);
-                                    processPhoto(new CarPhoto.Opener() {
-                                        public InputStream open() throws Exception { return new java.io.FileInputStream(f); }
-                                    });
-                                }
-                            }).setNegativeButton("Cancelar", null).show();
+                        cb.on(found);
                     }
                 });
             }
@@ -9771,11 +9814,14 @@ public class Main extends Activity {
     }
 
     private final java.util.HashSet<String> scanned = new java.util.HashSet<String>();
+    /** Imágenes ya listadas: una carpeta raíz que también cuelga de otra (/mnt/usb_storage en /mnt) salía dos veces. */
+    private final java.util.HashSet<String> scannedFiles = new java.util.HashSet<String>();
 
-    private void scanImages(File dir, int depth, List<File> out) {
+    private void scanImages(File dir, int depth, List<File> out, long minBytes) {
         if (depth < 0 || dir == null || out.size() > 400) return;
+        String canon = dir.getAbsolutePath();
         try {
-            String canon = dir.getCanonicalPath();
+            canon = dir.getCanonicalPath();
             if (!scanned.add(canon) && depth < 4) return;
         } catch (Throwable ignored) { }
         File[] fs = dir.listFiles();
@@ -9783,12 +9829,12 @@ public class Main extends Activity {
         for (File f : fs) {
             String n = f.getName().toLowerCase(ES);
             if (f.isFile() && (n.endsWith(".jpg") || n.endsWith(".jpeg") || n.endsWith(".png") || n.endsWith(".webp"))
-                    && f.length() > 15000 && !n.startsWith(".")) out.add(f);
+                    && f.length() > minBytes && !n.startsWith(".") && scannedFiles.add(canon + "/" + f.getName())) out.add(f);
         }
         for (File f : fs) {
             String n = f.getName();
             if (f.isDirectory() && !n.startsWith(".") && !"Android".equals(n) && !"LOST.DIR".equals(n)
-                    && !n.equalsIgnoreCase("thumbnails") && !"StradaDiag".equals(n)) scanImages(f, depth - 1, out);
+                    && !n.equalsIgnoreCase("thumbnails") && !"StradaDiag".equals(n)) scanImages(f, depth - 1, out, minBytes);
         }
     }
 
@@ -13452,14 +13498,15 @@ public class Main extends Activity {
                 launch(shown.get(p));
             }
         });
-        // Dejar presionada una app: ocultarla del cajón o abrir su información en Android.
+        // Dejar presionada una app: ocultarla del cajón, abrir su información en Android o cambiarle el ícono.
         grid.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             public boolean onItemLongClick(AdapterView<?> a, View v, int p, long id) {
                 final ResolveInfo r = shown.get(p);
                 new TB(Main.this, dlg())
                     .setTitle(String.valueOf(r.loadLabel(pm)))
-                    .setItems(new String[]{"Ocultar del cajón", "Desinstalar", "Información de la app", "Mover"}, new DialogInterface.OnClickListener() {
+                    .setItems(new String[]{"Ocultar del cajón", "Desinstalar", "Información de la app", "Mover", "Editar ícono"}, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface d, int w) {
+                            if (w == 4) { editIcon(r); return; }
                             if (w == 3) {
                                 moving[0] = r;
                                 titleTv.setText(I18n.t("Toca el lugar donde quieres poner «" + r.loadLabel(pm) + "»"));
@@ -13624,6 +13671,246 @@ public class Main extends Activity {
             root.removeView(drawer);
             drawer = null;
         }
+    }
+
+    // ── ícono propio de una app (cajón → dejar presionada → «Editar ícono») ──
+    // El mismo para los dos temas o uno para el claro y otro para el oscuro. Se ve en el cajón y en los botones que
+    // abren esa app. Ver AppIcons.
+
+    private static final int REQ_ICON = 87;   // 86 es REQ_BTEXP_CREATE (2.38)
+    interface ImageCb { void on(CarPhoto.Opener o); }
+    interface BmpCb { void on(Bitmap b); }
+    /** Quien espera la imagen que devuelve la galería (el editor de íconos); null = nadie. */
+    private ImageCb iconWait;
+
+    private void editIcon(ResolveInfo r) {
+        float keep = s;
+        s = uiS;
+        try { editIcon0(r); } finally { s = keep; }
+    }
+
+    private void editIcon0(ResolveInfo r) {
+        final String key = AppIcons.key(r.activityInfo.packageName, r.activityInfo.name);
+        final Drawable stock = stockIcon(r);
+        // lo que se va a guardar: [0] = tema claro, [1] = tema oscuro; null = el ícono de siempre
+        final Bitmap[] img = {AppIcons.get(this, key, true), AppIcons.get(this, key, false)};
+        final boolean[] same = {!AppIcons.separate(this, key)};
+        final LinearLayout box = new LinearLayout(this);
+        box.setOrientation(LinearLayout.VERTICAL);
+        box.setPadding((int) (24 * s), (int) (4 * s), (int) (24 * s), 0);
+        final Runnable[] draw = new Runnable[1];
+        draw[0] = new Runnable() { public void run() {
+            float keep = s;
+            s = uiS;   // se vuelve a dibujar al tocar: mismo tamaño que el resto del cajón
+            try { iconEditorView(box, stock, img, same, draw[0]); } finally { s = keep; }
+        }};
+        draw[0].run();
+        TB b = new TB(this, dlg()).raw();
+        b.setTitle(I18n.t("Editar ícono") + "  ·  " + r.loadLabel(getPackageManager()))
+            .setView(box)
+            .setPositiveButton(I18n.t("Guardar"), new DialogInterface.OnClickListener() { public void onClick(DialogInterface d, int w) {
+                saveIcon(key, same[0], img[0], img[1]);
+            }})
+            .setNegativeButton(I18n.t("Cancelar"), null);
+        if (AppIcons.has(this, key)) b.setNeutralButton(I18n.t("Restablecer"), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface d, int w) { saveIcon(key, true, null, null); }
+        });
+        b.show();
+    }
+
+    /** Contenido del editor: «el mismo / uno para cada tema» y cómo se ve el ícono sobre cada tema. */
+    private void iconEditorView(final LinearLayout box, Drawable stock, final Bitmap[] img, final boolean[] same, final Runnable redraw) {
+        box.removeAllViews();
+        LinearLayout seg = new LinearLayout(this);
+        seg.setBackground(round(BTN, 18));
+        int p = (int) (3 * s);
+        seg.setPadding(p, p, p, p);
+        String[] opts = {"El mismo en los dos temas", "Uno para cada tema"};
+        for (int i = 0; i < 2; i++) {
+            final boolean one = i == 0, sel = one == same[0];
+            TextView o = tv(opts[i], 14, sel ? Color.WHITE : SOFT, sel);
+            o.setGravity(Gravity.CENTER);
+            o.setPadding((int) (10 * s), (int) (9 * s), (int) (10 * s), (int) (9 * s));
+            if (sel) o.setBackground(round(RED, 15));
+            o.setOnClickListener(new View.OnClickListener() { public void onClick(View v) {
+                if (one == same[0]) return;
+                same[0] = one;
+                if (one) {
+                    // un solo ícono: el que se ve ahora (o, si ese es el de siempre, el del otro tema)
+                    int now = LIGHT ? 0 : 1;
+                    Bitmap keep = img[now] != null ? img[now] : img[1 - now];
+                    img[0] = img[1] = keep;
+                }
+                redraw.run();
+            }});
+            seg.addView(o, new LinearLayout.LayoutParams(0, -2, 1f));
+        }
+        box.addView(seg, new LinearLayout.LayoutParams(-1, -2));
+
+        // vista previa sobre el fondo de cada tema; tocarla elige la imagen
+        LinearLayout row = new LinearLayout(this);
+        for (int i = 0; i < 2; i++) {
+            final int t = i;
+            boolean light = t == 0;
+            LinearLayout col = new LinearLayout(this);
+            col.setOrientation(LinearLayout.VERTICAL);
+            col.setGravity(Gravity.CENTER_HORIZONTAL);
+            col.setPadding(0, (int) (14 * s), 0, (int) (12 * s));
+            col.setBackground(round(light ? 0xFFE9ECF1 : 0xFF15171C, 16));   // el fondo de los temas claro y oscuro
+            ImageView iv = new ImageView(this);
+            iv.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            if (img[t] != null) iv.setImageBitmap(img[t]);
+            else {
+                Drawable sd = stock;   // una copia para cada vista previa (un Drawable no se comparte entre dos vistas)
+                if (sd != null && sd.getConstantState() != null) sd = sd.getConstantState().newDrawable();
+                iv.setImageDrawable(sd);
+            }
+            col.addView(iv, new LinearLayout.LayoutParams((int) (64 * s), (int) (64 * s)));
+            TextView cap = tv(light ? "Claro" : "Oscuro", 14, light ? 0xFF3A404C : 0xFFC5C8CE, false);
+            cap.setGravity(Gravity.CENTER);
+            cap.setPadding(0, (int) (10 * s), 0, 0);
+            col.addView(cap, new LinearLayout.LayoutParams(-1, -2));
+            col.setOnClickListener(new View.OnClickListener() { public void onClick(View v) {
+                String title = same[0] ? "Ícono para los dos temas" : t == 0 ? "Ícono para el tema claro" : "Ícono para el tema oscuro";
+                iconSource(title, img[t] != null, new BmpCb() { public void on(Bitmap b) {
+                    if (same[0]) img[0] = img[1] = b;
+                    else img[t] = b;   // null = el ícono de siempre
+                    redraw.run();
+                }});
+            }});
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(0, -2, 1f);
+            if (i == 0) lp.rightMargin = (int) (12 * s);
+            row.addView(col, lp);
+        }
+        LinearLayout.LayoutParams rlp = new LinearLayout.LayoutParams(-1, -2);
+        rlp.topMargin = (int) (14 * s);
+        box.addView(row, rlp);
+        TextView hint = tv("Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente", 13, MUTED, false);
+        hint.setSingleLine(false);
+        hint.setEllipsize(null);
+        hint.setLineSpacing(0, 1.15f);
+        hint.setPadding(0, (int) (12 * s), 0, (int) (4 * s));
+        box.addView(hint, new LinearLayout.LayoutParams(-1, -2));
+    }
+
+    /** De dónde sale la imagen: la memoria o una USB, la galería o el ícono de siempre (b = null). */
+    private void iconSource(String title, boolean hasOwn, final BmpCb cb) {
+        String[] items = hasOwn ? new String[]{"Memoria / USB", "Galería", "Ícono original"} : new String[]{"Memoria / USB", "Galería"};
+        new TB(this, dlg())
+            .setTitle(title)
+            .setItems(items, new DialogInterface.OnClickListener() { public void onClick(DialogInterface d, int w) {
+                final ImageCb read = new ImageCb() { public void on(CarPhoto.Opener o) { readIcon(o, cb); } };
+                if (w == 2) cb.on(null);
+                else if (w == 0) browseIconFiles(read);
+                else {
+                    try {
+                        Intent i = new Intent(Intent.ACTION_GET_CONTENT);
+                        i.setType("image/*");
+                        iconWait = read;
+                        startActivityForResult(Intent.createChooser(i, I18n.t("Elige la imagen")), REQ_ICON);
+                    } catch (Throwable e) { iconWait = null; browseIconFiles(read); }
+                }
+            }})
+            .setNegativeButton("Cancelar", null)
+            .show();
+    }
+
+    /** Abre la imagen en segundo plano y la deja cuadrada, del tamaño de un ícono. */
+    private void readIcon(final CarPhoto.Opener o, final BmpCb cb) {
+        final ProgressDialogLite pd = new ProgressDialogLite("Abriendo la imagen…");
+        new Thread(new Runnable() { public void run() {
+            Bitmap b = null;
+            try {
+                Bitmap src = CarPhoto.decode(o);
+                b = AppIcons.fit(src);
+                src.recycle();
+            } catch (Throwable e) { Guard.log("Ícono propio: " + e); }
+            final Bitmap fb = b;
+            runOnUiThread(new Runnable() { public void run() {
+                pd.dismiss();
+                if (fb == null) toast("No se pudo abrir la imagen");
+                else cb.on(fb);
+            }});
+        }}).start();
+    }
+
+    /** Las imágenes de la memoria y de las USB con su miniatura (también las pequeñas: un ícono pesa poco). */
+    private void browseIconFiles(final ImageCb cb) {
+        findImages(0, "Buscando imágenes…", new FilesCb() { public void on(List<File> found) {
+            if (found.isEmpty()) { toast("No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download."); return; }
+            float keep = s;
+            s = uiS;
+            try { imageList(found, cb); } finally { s = keep; }
+        }});
+    }
+
+    private void imageList(List<File> found, final ImageCb cb) {
+        final List<File> list = new ArrayList<File>(found.subList(0, Math.min(found.size(), 120)));
+        final HashMap<File, Bitmap> thumbs = new HashMap<File, Bitmap>();
+        final java.util.HashSet<File> asked = new java.util.HashSet<File>();
+        // miniaturas de a una en segundo plano: una foto grande tarda y la lista no se traba
+        final java.util.concurrent.ExecutorService work = java.util.concurrent.Executors.newSingleThreadExecutor();
+        final int px = (int) (44 * s);
+        BaseAdapter ad = new BaseAdapter() {
+            public int getCount() { return list.size(); }
+            public Object getItem(int p) { return list.get(p); }
+            public long getItemId(int p) { return p; }
+            public View getView(int p, View cv, ViewGroup parent) {
+                float keep = s;
+                s = uiS;
+                try { return row(p); } finally { s = keep; }
+            }
+            private View row(int p) {
+                final File f = list.get(p);
+                LinearLayout row = new LinearLayout(Main.this);
+                row.setGravity(Gravity.CENTER_VERTICAL);
+                row.setPadding((int) (24 * s), (int) (8 * s), (int) (20 * s), (int) (8 * s));
+                ImageView iv = new ImageView(Main.this);
+                iv.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                Bitmap b = thumbs.get(f);
+                if (b != null) iv.setImageBitmap(b);
+                else if (asked.add(f)) {
+                    try {
+                        work.execute(new Runnable() { public void run() {
+                            final Bitmap t = AppIcons.thumb(f, px);
+                            if (t != null) runOnUiThread(new Runnable() { public void run() { thumbs.put(f, t); notifyDataSetChanged(); } });
+                        }});
+                    } catch (Throwable ignored) { }   // la lista ya se cerró
+                }
+                row.addView(iv, new LinearLayout.LayoutParams(px, px));
+                LinearLayout txt = new LinearLayout(Main.this);
+                txt.setOrientation(LinearLayout.VERTICAL);
+                txt.setPadding((int) (14 * s), 0, 0, 0);
+                TextView name = tv("", 16, TEXT, false);
+                name.setText(f.getName());   // nombres de archivo: no se traducen
+                txt.addView(name);
+                TextView where = tv("", 12, MUTED, false);
+                where.setText(f.getParentFile() != null ? f.getParentFile().getName() : "");
+                where.setPadding(0, (int) (4 * s), 0, 0);
+                txt.addView(where);
+                row.addView(txt, new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1));
+                return row;
+            }
+        };
+        AlertDialog d = new TB(this, dlg())
+            .setTitle("Elige la imagen")
+            .setAdapter(ad, new DialogInterface.OnClickListener() { public void onClick(DialogInterface di, int w) {
+                final File f = list.get(w);
+                cb.on(new CarPhoto.Opener() { public InputStream open() throws Exception { return new java.io.FileInputStream(f); } });
+            }})
+            .setNegativeButton("Cancelar", null)
+            .show();
+        d.setOnDismissListener(new DialogInterface.OnDismissListener() { public void onDismiss(DialogInterface di) { work.shutdownNow(); } });
+    }
+
+    /** Guarda (o, con los dos en null, quita) el ícono propio y vuelve a dibujar el cajón y la pantalla de inicio. */
+    private void saveIcon(String key, boolean same, Bitmap light, Bitmap dark) {
+        try { AppIcons.save(this, key, same, light, same ? null : dark); }
+        catch (Throwable e) { Guard.log("Guardar ícono propio: " + e); toast("No se pudo guardar el ícono"); }
+        prefs.edit().putLong("app_icons_at", System.currentTimeMillis()).apply();   // avisa a la copia automática
+        boolean open = drawer != null;
+        rebuild();   // los botones de la barra que abren esta app
+        if (open) openDrawer();
     }
 
     // ───────────────────────── Escáner OBD-II (2.26) ─────────────────────────

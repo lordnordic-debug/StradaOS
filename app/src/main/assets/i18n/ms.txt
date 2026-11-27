@@ -1962,3 +1962,17 @@ Quitar el acceso	Buang pintasan
 No se pudo abrir la app. Déjala presionada para elegir otra.	Aplikasi tidak dapat dibuka. Tekan lama untuk memilih yang lain.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Ia disembunyikan dalam Bar aplikasi → Reka letak bar. Di tepi, kad memanjang hingga ke bawah.
 A los costados, las tarjetas llegan hasta abajo.	Di tepi, kad memanjang hingga ke bawah.
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	Edit ikon
+El mismo en los dos temas	Sama untuk kedua-dua tema
+Uno para cada tema	Satu untuk setiap tema
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	Ketik ikon untuk menukarnya. Paling baik imej PNG segi empat sama dengan latar belakang lutsinar
+Ícono para los dos temas	Ikon untuk kedua-dua tema
+Ícono para el tema claro	Ikon untuk tema cerah
+Ícono para el tema oscuro	Ikon untuk tema gelap
+Ícono original	Ikon asal
+Elige la imagen	Pilih imej
+Buscando imágenes…	Mencari imej…
+Abriendo la imagen…	Membuka imej…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	Tiada imej dijumpai (.png/.jpg). Salin ke pemacu USB atau ke Download.
+No se pudo guardar el ícono	Tidak dapat menyimpan ikon

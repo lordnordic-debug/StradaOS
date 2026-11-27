@@ -1947,3 +1947,17 @@ Quitar el acceso	Parancsikon eltávolítása
 No se pudo abrir la app. Déjala presionada para elegir otra.	Nem sikerült megnyitni az alkalmazást. Tartsd lenyomva, és válassz másikat.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	El van rejtve: Alkalmazássáv → Sáv elrendezése. Oldalt a kártyák egészen lenyúlnak.
 A los costados, las tarjetas llegan hasta abajo.	Oldalt a kártyák egészen lenyúlnak.
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	Ikon szerkesztése
+El mismo en los dos temas	Ugyanaz mindkét témában
+Uno para cada tema	Mindegyik témához külön
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	Koppints egy ikonra a cseréjéhez. Legjobb egy négyzet alakú, átlátszó hátterű PNG-kép
+Ícono para los dos temas	Ikon mindkét témához
+Ícono para el tema claro	Ikon a világos témához
+Ícono para el tema oscuro	Ikon a sötét témához
+Ícono original	Eredeti ikon
+Elige la imagen	Válaszd ki a képet
+Buscando imágenes…	Képek keresése…
+Abriendo la imagen…	Kép megnyitása…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	Nem található kép (.png/.jpg). Másold őket a pendrive-ra vagy a Download mappába.
+No se pudo guardar el ícono	Nem sikerült menteni az ikont

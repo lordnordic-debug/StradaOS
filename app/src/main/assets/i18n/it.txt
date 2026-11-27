@@ -1962,3 +1962,17 @@ Quitar el acceso	Rimuovi scorciatoia
 No se pudo abrir la app. Déjala presionada para elegir otra.	Impossibile aprire l'app. Tienila premuta per sceglierne un'altra.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	È nascosta in Barra delle app → Aspetto della barra. Ai lati, le schede arrivano fino in fondo.
 A los costados, las tarjetas llegan hasta abajo.	Ai lati, le schede arrivano fino in fondo.
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	Modifica icona
+El mismo en los dos temas	Uguale nei due temi
+Uno para cada tema	Una per ogni tema
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	Tocca un'icona per cambiarla. Meglio un'immagine PNG quadrata con sfondo trasparente
+Ícono para los dos temas	Icona per entrambi i temi
+Ícono para el tema claro	Icona per il tema chiaro
+Ícono para el tema oscuro	Icona per il tema scuro
+Ícono original	Icona originale
+Elige la imagen	Scegli l'immagine
+Buscando imágenes…	Ricerca immagini…
+Abriendo la imagen…	Apertura dell'immagine…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	Nessuna immagine trovata (.png/.jpg). Copiale sulla chiavetta USB o in Download.
+No se pudo guardar el ícono	Impossibile salvare l'icona

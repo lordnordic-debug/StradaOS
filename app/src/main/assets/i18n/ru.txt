@@ -1937,3 +1937,17 @@ Quitar el acceso	Убрать ярлык
 No se pudo abrir la app. Déjala presionada para elegir otra.	Не удалось открыть приложение. Удерживайте, чтобы выбрать другое.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Скрыта в разделе «Панель приложений → Расположение панели». По бокам карточки доходят до самого низа.
 A los costados, las tarjetas llegan hasta abajo.	По бокам карточки доходят до самого низа.
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	Изменить значок
+El mismo en los dos temas	Одинаковый для обеих тем
+Uno para cada tema	Свой для каждой темы
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	Нажмите на значок, чтобы изменить его. Лучше всего квадратное изображение PNG с прозрачным фоном
+Ícono para los dos temas	Значок для обеих тем
+Ícono para el tema claro	Значок для светлой темы
+Ícono para el tema oscuro	Значок для тёмной темы
+Ícono original	Исходный значок
+Elige la imagen	Выберите изображение
+Buscando imágenes…	Поиск изображений…
+Abriendo la imagen…	Открываем изображение…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	Изображения (.png/.jpg) не найдены. Скопируйте их на USB-накопитель или в папку Download.
+No se pudo guardar el ícono	Не удалось сохранить значок

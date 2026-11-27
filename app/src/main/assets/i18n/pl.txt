@@ -1941,3 +1941,17 @@ Quitar el acceso	Usuń skrót
 No se pudo abrir la app. Déjala presionada para elegir otra.	Nie udało się otworzyć aplikacji. Przytrzymaj, aby wybrać inną.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Jest ukryty w Pasek aplikacji → Układ. Po bokach karty sięgają do samego dołu.
 A los costados, las tarjetas llegan hasta abajo.	Po bokach karty sięgają do samego dołu.
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	Edytuj ikonę
+El mismo en los dos temas	Ta sama w obu motywach
+Uno para cada tema	Osobna dla każdego motywu
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	Dotknij ikony, aby ją zmienić. Najlepiej kwadratowy obraz PNG z przezroczystym tłem
+Ícono para los dos temas	Ikona dla obu motywów
+Ícono para el tema claro	Ikona dla jasnego motywu
+Ícono para el tema oscuro	Ikona dla ciemnego motywu
+Ícono original	Oryginalna ikona
+Elige la imagen	Wybierz obraz
+Buscando imágenes…	Wyszukiwanie obrazów…
+Abriendo la imagen…	Otwieranie obrazu…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	Nie znaleziono obrazów (.png/.jpg). Skopiuj je na pamięć USB lub do folderu Download.
+No se pudo guardar el ícono	Nie udało się zapisać ikony

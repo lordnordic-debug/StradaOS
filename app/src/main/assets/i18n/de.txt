@@ -1962,3 +1962,17 @@ Quitar el acceso	Verknüpfung entfernen
 No se pudo abrir la app. Déjala presionada para elegir otra.	Die App ließ sich nicht öffnen. Gedrückt halten, um eine andere zu wählen.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Sie ist unter App-Leiste → Leistenlayout ausgeblendet. Seitlich reichen die Karten bis ganz nach unten.
 A los costados, las tarjetas llegan hasta abajo.	Seitlich reichen die Karten bis ganz nach unten.
+# ícono propio de cada app: el mismo para los dos temas o uno para cada tema
+Editar ícono	Symbol bearbeiten
+El mismo en los dos temas	Gleich in beiden Designs
+Uno para cada tema	Eines pro Design
+Toca un ícono para cambiarlo. Mejor una imagen PNG cuadrada con fondo transparente	Tippe auf ein Symbol, um es zu ändern. Am besten ein quadratisches PNG mit transparentem Hintergrund
+Ícono para los dos temas	Symbol für beide Designs
+Ícono para el tema claro	Symbol für das helle Design
+Ícono para el tema oscuro	Symbol für das dunkle Design
+Ícono original	Originalsymbol
+Elige la imagen	Wähle das Bild
+Buscando imágenes…	Bilder werden gesucht…
+Abriendo la imagen…	Bild wird geöffnet…
+No encontré imágenes (.png/.jpg). Cópialas a la memoria USB o a Download.	Keine Bilder gefunden (.png/.jpg). Kopiere sie auf den USB-Stick oder nach Download.
+No se pudo guardar el ícono	Symbol konnte nicht gespeichert werden
