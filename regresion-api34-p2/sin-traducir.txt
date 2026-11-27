@@ -1,0 +1,463 @@
+ar	68/215 s · hcn
+ar	Android 14 (API 34)
+ar	Android Auto
+ar	Android Auto: Cancion de prueba
+ar	Bluetooth
+ar	Cancion de prueba
+ar	Canción de prueba — StradaOS
+ar	CarPlay
+ar	Carátula de internet: apagada
+ar	Esri رمادي داكن
+ar	OpenStreetMap
+ar	OpenTopoMap
+ar	SecurityException
+ar	StradaOS
+ar	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+ar	com.stradaos.launcher.debug
+ar	mph
+ar	— / Bluetooth
+ar	• Esri رمادي داكن: لم يُجرَّب
+ar	• OpenStreetMap: لم يُجرَّب
+ar	• OpenTopoMap: لم يُجرَّب
+de	68/215 s · hcn
+de	Anbieter: OSM Deutschland
+de	Android 14 (API 34)
+de	Android Auto
+de	Android Auto: Cancion de prueba
+de	Bluetooth
+de	Cancion de prueba
+de	Canción de prueba — StradaOS
+de	CarPlay
+de	Carátula de internet: apagada
+de	Deutsch
+de	Esri dunkelgrau
+de	Fehler in Folge: 0
+de	GPS des Geräts: an · Netzwerkortung: aus
+de	Getestete Quellen:
+de	Heruntergeladene Kacheln: 24 · im Cache: 24
+de	Keine
+de	Letzter Fehler: —
+de	Letztes Signal: vor 1 s
+de	Live-Verkehr: inaktiv
+de	OSM Deutschland
+de	OSM Frankreich
+de	OSM Humanitär
+de	Offline-Karte: keine
+de	OpenStreetMap
+de	OpenTopoMap
+de	Position: 4.65330, -74.08360
+de	SecurityException
+de	Standortberechtigung: ja
+de	StradaOS
+de	Suche seit 7 min
+de	TLS bereit (TLSv1.2), 118 Wurzeln
+de	Tatsächlich
+de	Zoom: 17
+de	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+de	com.stradaos.launcher.debug
+de	mph
+de	nicht getestet
+de	— / Bluetooth
+de	• Esri dunkelgrau: nicht getestet
+de	• OSM Deutschland: OK
+de	• OSM Frankreich: nicht getestet
+de	• OSM Humanitär: nicht getestet
+de	• OpenStreetMap: nicht getestet
+de	• OpenTopoMap: nicht getestet
+en	2.38.0-prueba
+en	68/215 s · hcn
+en	Android 14 (API 34)
+en	Android Auto
+en	Android Auto: Cancion de prueba
+en	Bluetooth
+en	Cancion de prueba
+en	Canción de prueba — StradaOS
+en	CarPlay
+en	Carátula de internet: apagada
+en	English
+en	Errors in a row: 0
+en	Esri dark gray
+en	Head unit GPS: on · network location: off
+en	Last error: —
+en	Last signal: 0 s ago
+en	Live traffic: inactive
+en	Location permission: yes
+en	None
+en	OSM France
+en	OSM Germany
+en	OSM Humanitarian
+en	Offline map: none
+en	OpenStreetMap
+en	OpenTopoMap
+en	Position: 4.65330, -74.08360
+en	Provider: OSM Germany
+en	Searching for 6 min
+en	SecurityException
+en	Sources tried:
+en	StradaOS
+en	TLS ready (TLSv1.2), 118 roots
+en	Tiles downloaded: 24 · cached: 24
+en	Zoom: 17
+en	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+en	com.stradaos.launcher.debug
+en	mph
+en	not tried
+en	— / Bluetooth
+en	• Esri dark gray: not tried
+en	• OSM France: not tried
+en	• OSM Germany: OK
+en	• OSM Humanitarian: not tried
+en	• OpenStreetMap: not tried
+en	• OpenTopoMap: not tried
+fr	68/215 s · hcn
+fr	Android 14 (API 34)
+fr	Android Auto
+fr	Android Auto: Cancion de prueba
+fr	Aucune
+fr	Autorisation de position : oui
+fr	Bluetooth
+fr	Cancion de prueba
+fr	Canción de prueba — StradaOS
+fr	CarPlay
+fr	Carte hors ligne : aucune
+fr	Carátula de internet: apagada
+fr	Dernier signal : il y a 0 s
+fr	Dernière erreur : —
+fr	Erreurs consécutives : 0
+fr	Esri gris foncé
+fr	Esri gris foncé 
+fr	Fournisseur : OSM Allemagne
+fr	Français
+fr	GPS de l'appareil : activé · position par le réseau : désactivée
+fr	OSM Allemagne
+fr	OSM Allemagne 
+fr	OSM France
+fr	OSM France 
+fr	OSM Humanitaire
+fr	OSM Humanitaire 
+fr	OpenStreetMap
+fr	OpenStreetMap 
+fr	OpenTopoMap
+fr	OpenTopoMap 
+fr	Position : 4.65330, -74.08360
+fr	Recherche depuis 9 min
+fr	Réel
+fr	SecurityException
+fr	Sources testées :
+fr	StradaOS
+fr	TLS prêt (TLSv1.2), 118 racines
+fr	Trafic en direct : inactif
+fr	Tuiles téléchargées : 24 · en cache : 24
+fr	Zoom : 17
+fr	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+fr	com.stradaos.launcher.debug
+fr	mph
+fr	non testée
+fr	— / Bluetooth
+hu	10 perce keres
+hu	68/215 s · hcn
+hu	Android 14 (API 34)
+hu	Android Auto
+hu	Android Auto: Cancion de prueba
+hu	Bluetooth
+hu	Cancion de prueba
+hu	Canción de prueba — StradaOS
+hu	CarPlay
+hu	Carátula de internet: apagada
+hu	Egymás utáni hibák: 0
+hu	Esri sötétszürke
+hu	Fejegység GPS: be · hálózati hely: ki
+hu	Helymeghatározási engedély: igen
+hu	Kipróbált források:
+hu	Letöltött csempék: 24 · gyorsítótárban: 24
+hu	Magyar
+hu	Nagyítás: 17
+hu	Nincs
+hu	OSM Franciaország
+hu	OSM Humanitárius
+hu	OSM Németország
+hu	Offline térkép: nincs
+hu	OpenStreetMap
+hu	OpenTopoMap
+hu	Pozíció: 4.65330, -74.08360
+hu	SecurityException
+hu	StradaOS
+hu	Szolgáltató: OSM Németország
+hu	TLS kész (TLSv1.2), 118 gyökér
+hu	Utolsó hiba: —
+hu	Utolsó jel: 0 mp-e
+hu	Valós
+hu	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+hu	com.stradaos.launcher.debug
+hu	mph
+hu	nem kipróbált
+hu	Élő forgalom: inaktív
+hu	— / Bluetooth
+hu	• Esri sötétszürke: nem kipróbált
+hu	• OSM Franciaország: nem kipróbált
+hu	• OSM Humanitárius: nem kipróbált
+hu	• OSM Németország: OK
+hu	• OpenStreetMap: nem kipróbált
+hu	• OpenTopoMap: nem kipróbált
+it	68/215 s · hcn
+it	Android 14 (API 34)
+it	Android Auto
+it	Android Auto: Cancion de prueba
+it	Bluetooth
+it	Cancion de prueba
+it	Canción de prueba — StradaOS
+it	CarPlay
+it	Carátula de internet: apagada
+it	Errori consecutivi: 0
+it	Esri grigio scuro
+it	Fonti provate:
+it	Fornitore: OSM Germania
+it	GPS del dispositivo: acceso · posizione da rete: spenta
+it	In ricerca da 7 min
+it	Italiano
+it	Mappa offline: nessuno
+it	Nessuna
+it	OSM Germania
+it	OSM Umanitario
+it	OpenStreetMap
+it	OpenTopoMap
+it	Permesso di posizione: sì
+it	Posizione: 4.65330, -74.08360
+it	Reale
+it	SecurityException
+it	StradaOS
+it	TLS pronto (TLSv1.2), 118 radici
+it	Tessere scaricate: 24 · in cache: 24
+it	Traffico in tempo reale: inattivo
+it	Ultimo errore: —
+it	Ultimo segnale: 0 s fa
+it	Zoom: 17
+it	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+it	com.stradaos.launcher.debug
+it	mph
+it	non provata
+it	— / Bluetooth
+it	• Esri grigio scuro: non provata
+it	• OSM Francia: non provata
+it	• OSM Germania: OK
+it	• OSM Umanitario: non provata
+it	• OpenStreetMap: non provata
+it	• OpenTopoMap: non provata
+ms	68/215 s · hcn
+ms	Android 14 (API 34)
+ms	Android Auto
+ms	Android Auto: Cancion de prueba
+ms	Bluetooth
+ms	Cancion de prueba
+ms	Canción de prueba — StradaOS
+ms	CarPlay
+ms	Carátula de internet: apagada
+ms	Esri kelabu gelap
+ms	GPS unit: hidup · lokasi rangkaian: mati
+ms	Isyarat terakhir: 0 s lalu
+ms	Jubin dimuat turun: 24 · dalam cache: 24
+ms	Kebenaran lokasi: ya
+ms	Kedudukan: 4.65330, -74.08360
+ms	Melayu
+ms	Mencari sejak 8 min
+ms	OSM Jerman
+ms	OSM Kemanusiaan
+ms	OSM Perancis
+ms	OpenStreetMap
+ms	OpenTopoMap
+ms	Pembekal: OSM Jerman
+ms	Peta luar talian: tiada
+ms	Ralat berturut-turut: 0
+ms	Ralat terakhir: —
+ms	Sebenar
+ms	SecurityException
+ms	StradaOS
+ms	Sumber dicuba:
+ms	TLS sedia (TLSv1.2), 118 akar
+ms	Tiada
+ms	Trafik langsung: tidak aktif
+ms	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+ms	belum dicuba
+ms	com.stradaos.launcher.debug
+ms	mph
+ms	— / Bluetooth
+ms	• Esri kelabu gelap: belum dicuba
+ms	• OSM Jerman: OK
+ms	• OSM Kemanusiaan: belum dicuba
+ms	• OSM Perancis: belum dicuba
+ms	• OpenStreetMap: belum dicuba
+ms	• OpenTopoMap: belum dicuba
+pl	68/215 s · hcn
+pl	Android 14 (API 34)
+pl	Android Auto
+pl	Android Auto: Cancion de prueba
+pl	Bluetooth
+pl	Brak
+pl	Cancion de prueba
+pl	Canción de prueba — StradaOS
+pl	CarPlay
+pl	Carátula de internet: apagada
+pl	Dostawca: OSM Niemcy
+pl	Esri ciemnoszary
+pl	GPS jednostki głównej: włączone · lokalizacja na podstawie sieci: wyłączone
+pl	Kolejne błędy: 0
+pl	Mapa offline: brak
+pl	OSM Francja
+pl	OSM Humanitarian
+pl	OSM Niemcy
+pl	OpenStreetMap
+pl	OpenTopoMap
+pl	Ostatni błąd: —
+pl	Ostatni sygnał: 0 s temu
+pl	Pobrane kafelki: 24 · w pamięci podręcznej: 24
+pl	Polski
+pl	Powiększenie: 17
+pl	Pozycja: 4.65330, -74.08360
+pl	Ruch na żywo: nieaktywny
+pl	Rzeczywisty
+pl	SecurityException
+pl	Sprawdzone źródła:
+pl	StradaOS
+pl	TLS gotowe (TLSv1.2), 118 certyfikatów głównych
+pl	Uprawnienie do lokalizacji: tak
+pl	Wyszukiwanie trwa 10 min
+pl	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+pl	com.stradaos.launcher.debug
+pl	mph
+pl	nie sprawdzono
+pl	— / Bluetooth
+pl	• Esri ciemnoszary: nie sprawdzono
+pl	• OSM Francja: nie sprawdzono
+pl	• OSM Humanitarian: nie sprawdzono
+pl	• OSM Niemcy: OK
+pl	• OpenStreetMap: nie sprawdzono
+pl	• OpenTopoMap: nie sprawdzono
+pt	2.38.0-prueba
+pt	68/215 s · hcn
+pt	Android 14 (API 34)
+pt	Android Auto
+pt	Android Auto: Cancion de prueba
+pt	Blocos baixados: 24 · em cache: 24
+pt	Bluetooth
+pt	Cancion de prueba
+pt	Canción de prueba — StradaOS
+pt	CarPlay
+pt	Carátula de internet: apagada
+pt	Erros seguidos: 0
+pt	Esri cinza escuro
+pt	Fontes testadas:
+pt	GPS do aparelho: ligado · localização por rede: desligada
+pt	Mapa offline: nenhum
+pt	Nenhum
+pt	OSM Alemanha
+pt	OSM França
+pt	OSM Humanitário
+pt	OpenStreetMap
+pt	OpenTopoMap
+pt	Permissão de localização: sim
+pt	Português
+pt	Posição: 4.65330, -74.08360
+pt	Procurando há 6 min
+pt	Provedor: OSM Alemanha
+pt	SecurityException
+pt	StradaOS
+pt	TLS pronto (TLSv1.2), 118 raízes
+pt	Trânsito ao vivo: inativo
+pt	Zoom: 17
+pt	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+pt	com.stradaos.launcher.debug
+pt	mph
+pt	não testada
+pt	Último erro: —
+pt	Último sinal: há 0 s
+pt	— / Bluetooth
+pt	• Esri cinza escuro: não testada
+pt	• OSM Alemanha: OK
+pt	• OSM França: não testada
+pt	• OSM Humanitário: não testada
+pt	• OpenStreetMap: não testada
+pt	• OpenTopoMap: não testada
+ru	68/215 s · hcn
+ru	Android 14 (API 34)
+ru	Android Auto
+ru	Android Auto: Cancion de prueba
+ru	Bluetooth
+ru	Cancion de prueba
+ru	Canción de prueba — StradaOS
+ru	CarPlay
+ru	Carátula de internet: apagada
+ru	Esri тёмно-серая
+ru	OpenStreetMap
+ru	OpenTopoMap
+ru	SecurityException
+ru	StradaOS
+ru	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+ru	com.stradaos.launcher.debug
+ru	mph
+ru	— / Bluetooth
+ru	• Esri тёмно-серая: не проверялось
+ru	• OpenStreetMap: не проверялось
+ru	• OpenTopoMap: не проверялось
+tr	68/215 s · hcn
+tr	9 dk'dır arıyor
+tr	Android 14 (API 34)
+tr	Android Auto
+tr	Android Auto: Cancion de prueba
+tr	Bluetooth
+tr	Cancion de prueba
+tr	Canción de prueba — StradaOS
+tr	Canlı trafik: etkin değil
+tr	CarPlay
+tr	Carátula de internet: apagada
+tr	Cihaz GPS'i: açık · ağ konumu: kapalı
+tr	Denenen kaynaklar:
+tr	Esri koyu gri
+tr	Hiçbiri
+tr	Konum izni: evet
+tr	Konum: 4.65330, -74.08360
+tr	OSM Almanya
+tr	OSM Fransa
+tr	OSM İnsani
+tr	OpenStreetMap
+tr	OpenTopoMap
+tr	Sağlayıcı: OSM Almanya
+tr	SecurityException
+tr	Son hata: —
+tr	Son sinyal: 0 sn önce
+tr	StradaOS
+tr	TLS hazır (TLSv1.2), 118 kök
+tr	Yakınlaştırma: 17
+tr	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+tr	com.stradaos.launcher.debug
+tr	denenmedi
+tr	mph
+tr	Çevrimdışı harita: hiçbiri
+tr	Üst üste hatalar: 0
+tr	İndirilen döşemeler: 24 · önbellekte: 24
+tr	— / Bluetooth
+tr	• Esri koyu gri: denenmedi
+tr	• OSM Almanya: OK
+tr	• OSM Fransa: denenmedi
+tr	• OSM İnsani: denenmedi
+tr	• OpenStreetMap: denenmedi
+tr	• OpenTopoMap: denenmedi
+zh	68/215 s · hcn
+zh	Android 14 (API 34)
+zh	Android Auto
+zh	Android Auto: Cancion de prueba
+zh	Bluetooth
+zh	Cancion de prueba
+zh	Canción de prueba — StradaOS
+zh	CarPlay
+zh	Carátula de internet: apagada
+zh	OpenStreetMap
+zh	OpenTopoMap
+zh	SecurityException
+zh	StradaOS
+zh	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+zh	com.stradaos.launcher.debug
+zh	mph
+zh	— / Bluetooth
+zh	• Esri 深灰：未尝试
+zh	• OpenStreetMap：未尝试
+zh	• OpenTopoMap：未尝试

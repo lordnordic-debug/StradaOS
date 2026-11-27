@@ -1,0 +1,31 @@
+Fuente: —
+Pista: — — —
+Carátula de la fuente: no
+Última búsqueda: —
+
+Android 6.0 (API 23)
+Conexión segura: TLS listo (TLSv1.2), 118 raíces
+Fecha de la pantalla: 2026-11-27 04:19 (si está mal, los certificados fallan)
+Sin canción con artista: se prueba con una de ejemplo
+Canción: La Camisa Negra — Juanes
+
+1. MusicBrainz (buscar la canción)
+  https musicbrainz.org: HTTP 200 (6676 ms)
+  5 resultados
+2. Cover Art Archive (bajar la portada)
+  https coverartarchive.org: HTTP 307 (745 ms)
+  https archive.org: HTTP 302 (371 ms)
+  https dn711201.ca.archive.org: HTTP 200 (399 ms)
+  imagen: 28 KB, se ve bien
+3. iTunes (buscar la canción)
+  https itunes.apple.com: HTTP 200 (63 ms)
+  5 resultados
+4. iTunes (bajar la portada)
+  https is1-ssl.mzstatic.com: HTTP 200 (97 ms)
+  imagen: 6 KB, se ve bien
+5. Deezer (buscar la canción)
+  https api.deezer.com: HTTP 200 (307 ms)
+  encontrada
+6. Deezer (bajar la portada)
+  https cdn-images.dzcdn.net: HTTP 200 (142 ms)
+  imagen: 62 KB, se ve bien
