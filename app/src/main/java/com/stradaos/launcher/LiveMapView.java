@@ -198,11 +198,11 @@ public class LiveMapView extends View {
     // centra en ese hueco (focus, en px); el hueco crece hasta la píldora y el centro lo sigue cuadro a cuadro.
     private boolean focusOn;
     private float fL, fT, fR, fB;
-    void setFocus(float l, float t, float r, float b) {
+    void setHoleFocus(float l, float t, float r, float b) {
         focusOn = true; fL = l; fT = t; fR = r; fB = b;
         invalidate();
     }
-    void clearFocus() { if (focusOn) { focusOn = false; invalidate(); } }
+    void clearHoleFocus() { if (focusOn) { focusOn = false; invalidate(); } }
 
     // Tema Cobalto: el mapa se difumina hacia un borde (1 = derecha, 2 = abajo) hasta quedar en el fondo.
     private int fadeEdge;

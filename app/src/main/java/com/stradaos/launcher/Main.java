@@ -1445,7 +1445,7 @@ public class Main extends Activity {
         ckClock = false; ckGauge = null; ckLogo = null; ckRing = null; ckHoleMask = null; ckTap = null; ckDot = null;
         ckMapUi = null; ckMaintBox = null; ckWxIc = null; ckWxTv = null; ckCityTv = null;
         if (ckAnim != null) { ckAnim.cancel(); ckAnim = null; }
-        if (liveMap != null) liveMap.clearFocus();
+        if (liveMap != null) liveMap.clearHoleFocus();
         if (premium) buildPremium();
         else {
             buildTop();
@@ -6556,7 +6556,7 @@ public class Main extends Activity {
         float rad = Math.min(rt - l, bt - tp) / 2;
         if (ckHoleMask != null) ckHoleMask.setHole(l * s, tp * s, rt * s, bt * s, rad * s);
         if (ckRing != null) ckRing.set(l * s, tp * s, rt * s, bt * s, rad * s, 1 - t);
-        if (liveMap != null) liveMap.setFocus(l * s, tp * s, rt * s, bt * s);
+        if (liveMap != null) liveMap.setHoleFocus(l * s, tp * s, rt * s, bt * s);
         if (ckGauge != null) {
             // chico abajo a la izquierda, adentro de la curva de la píldora
             float small = H * 0.42f, sc = 1 + (small / D - 1) * t;
