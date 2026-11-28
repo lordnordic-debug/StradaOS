@@ -16,7 +16,7 @@ on:
         description: 'ID de la pantalla (XXXX-XXXX), tal como sale en StradaOS'
         required: true
       temas:
-        description: 'Temas separados por comas (por ejemplo faro o faro,otro), o «todos»'
+        description: 'Temas: faro, carbono, cards o cockpit. Varios separados por comas (por ejemplo faro,cockpit), o «todos»'
         required: true
         default: 'faro'
 

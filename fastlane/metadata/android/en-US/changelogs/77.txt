@@ -1,0 +1,1 @@
+New premium theme “Sport Cockpit”: a pill-shaped dashboard with a sporty speedometer and a round map (swipe to enlarge the map or watch a video), OBD scanner RPM, player and upcoming maintenance on swappable sides, and the app bar on one side or at the bottom.
