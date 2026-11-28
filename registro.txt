@@ -1,0 +1,18 @@
+11-28 16:50:24.658   280   280 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+11-28 16:50:24.693   280   280 I AndroidRuntime: Using default boot image
+11-28 16:50:24.693   280   280 I AndroidRuntime: Leaving lock profiling enabled
+11-28 16:50:24.862   281   281 D AndroidRuntime: >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+11-28 16:50:24.914   281   281 I AndroidRuntime: Using default boot image
+11-28 16:50:24.914   281   281 I AndroidRuntime: Leaving lock profiling enabled
+11-28 16:50:31.825   843   843 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-28 16:50:31.826   850   850 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-28 16:50:35.357  1409  1409 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-28 16:50:35.378  1409  1409 I AndroidRuntime: Using default boot image
+11-28 16:50:35.378  1409  1409 I AndroidRuntime: Leaving lock profiling enabled
+11-28 16:50:35.680  1409  1409 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-28 16:50:36.511  1409  1409 D AndroidRuntime: Shutting down VM
+11-28 16:50:47.056  2281  2281 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-28 16:50:47.058  2281  2281 I AndroidRuntime: Using default boot image
+11-28 16:50:47.058  2281  2281 I AndroidRuntime: Leaving lock profiling enabled
+11-28 16:50:47.106  2281  2281 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-28 16:50:47.115  2281  2281 D AndroidRuntime: Shutting down VM
