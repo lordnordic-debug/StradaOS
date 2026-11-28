@@ -499,7 +499,8 @@ final class Cockpit {
             c.drawText(n, x0, base, big);
             c.drawText(u, x0 + nw + gap, base, unit);
 
-            float bw = rf * 0.92f, bx0 = cx - bw / 2, bx1 = cx + bw / 2;
+            // más corta que el hueco de la escala: los números 0 y 200 quedan libres a los lados
+            float bw = rf * 0.62f, bx0 = cx - bw / 2, bx1 = cx + bw / 2;
             if (rpm) {
                 // barra de las revoluciones y su valor (como «Mode · Self» de la referencia)
                 float by = cy + rf * 0.25f, rv = tach.value();
