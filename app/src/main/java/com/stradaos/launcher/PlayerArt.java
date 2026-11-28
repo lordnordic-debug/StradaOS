@@ -91,8 +91,9 @@ public class PlayerArt extends View {
     private void drawDisc(Canvas c, float w, float h) {
         float cx = w / 2f, cy = h / 2f, R = Math.min(w, h) / 2f, ra = R * 0.80f;
         if (glowR != R) {
-            glow.setShader(new android.graphics.RadialGradient(cx, cy, R, new int[]{glowColor, glowColor, Aurora.a(glowColor, 0.25f), Aurora.a(glowColor, 0f)},
-                new float[]{0f, 0.76f, 0.86f, 1f}, Shader.TileMode.CLAMP));
+            // 3 colores como mucho: con 4, el emulador de Android 14 (swiftshader) dibuja rayas y se cae
+            glow.setShader(new android.graphics.RadialGradient(cx, cy, R, new int[]{glowColor, Aurora.a(glowColor, 0.25f), Aurora.a(glowColor, 0f)},
+                new float[]{0.78f, 0.88f, 1f}, Shader.TileMode.CLAMP));
             glowR = R;
         }
         c.drawCircle(cx, cy, R, glow);

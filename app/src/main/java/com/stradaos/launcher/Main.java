@@ -6365,7 +6365,7 @@ public class Main extends Activity {
             : mapCardView instanceof FrameLayout ? (FrameLayout) mapCardView : null;
         if (stage != null) buildCockpitStage(stage, holder);
         // encima del carrusel: las curvas de la píldora (fijas, también mientras pasa el video) y la pestaña
-        Cockpit.Mask edge = new Cockpit.Mask(this, ckPillBmp, holder);
+        Cockpit.Mask edge = new Cockpit.Mask(this, ckPillBmp, holder, premBg, premBgHolder);
         place(board, edge, mapX, mapY, mapW, mapH);
         edge.setHole(0, 0, mapW * s, mapH * s, mapH / 2 * s);
         buildCockpitTab();
@@ -6497,7 +6497,7 @@ public class Main extends Activity {
             lp.leftMargin = (int) (r * 0.84f * s);
             camBadgeTv.setLayoutParams(lp);
         }
-        ckHoleMask = new Cockpit.Mask(this, ckPillBmp, holder);
+        ckHoleMask = new Cockpit.Mask(this, ckPillBmp, holder, premBg, premBgHolder);
         place(stage, ckHoleMask, 0, 0, mapW, mapH);
         ckRing = new Cockpit.Ring(this, s, LIGHT, RED);
         place(stage, ckRing, 0, 0, mapW, mapH);

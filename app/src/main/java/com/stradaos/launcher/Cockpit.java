@@ -140,21 +140,29 @@ final class Cockpit {
      */
     static final class Mask extends View {
         private final Paint p = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG);
+        private final Paint pb = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG);
         private final Path path = new Path();
         private final RectF hole = new RectF();
-        private final Matrix m = new Matrix();
+        private final Matrix m = new Matrix(), mb = new Matrix();
         private final int[] la = new int[2], lb = new int[2];
-        private final Bitmap bmp;
-        private final View holder;
+        private final Bitmap bmp, bg;
+        private final View holder, bgHolder;
         private float rad;
         private boolean dirty = true;
 
-        Mask(Context c, Bitmap bmp, View holder) {
+        /**
+         * bmp/holder: el fondo de la píldora y la vista que lo tiene estirado. bg/bgHolder: el fondo de la pantalla
+         * (en las esquinas, fuera de la píldora, se ve la pantalla; sin él ahí se asomaba el mapa).
+         */
+        Mask(Context c, Bitmap bmp, View holder, Bitmap bg, View bgHolder) {
             super(c);
             this.bmp = bmp;
             this.holder = holder;
+            this.bg = bg;
+            this.bgHolder = bgHolder;
             if (bmp != null) p.setShader(new BitmapShader(bmp, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
-            else p.setColor(Main.BG);
+            if (bg != null) pb.setShader(new BitmapShader(bg, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP));
+            else pb.setColor(Main.BG);
         }
 
         /** El hueco, en px de esta vista. */
@@ -177,14 +185,22 @@ final class Cockpit {
                 if (hole.width() > 0 && hole.height() > 0) path.addRoundRect(hole, rad, rad, Path.Direction.CW);
                 dirty = false;
             }
+            getLocationInWindow(la);
+            // primero la pantalla (la parte que queda detrás) y encima la píldora con su brillo o su sombra
+            if (bg != null && bgHolder != null && bgHolder.getWidth() > 0) {
+                bgHolder.getLocationInWindow(lb);
+                mb.setScale(bgHolder.getWidth() / (float) bg.getWidth(), bgHolder.getHeight() / (float) bg.getHeight());
+                mb.postTranslate(lb[0] - la[0], lb[1] - la[1]);
+                pb.getShader().setLocalMatrix(mb);
+            }
+            c.drawPath(path, pb);
             if (bmp != null && holder != null && holder.getWidth() > 0) {
-                getLocationInWindow(la);
                 holder.getLocationInWindow(lb);
                 m.setScale(holder.getWidth() / (float) bmp.getWidth(), holder.getHeight() / (float) bmp.getHeight());
                 m.postTranslate(lb[0] - la[0], lb[1] - la[1]);
                 p.getShader().setLocalMatrix(m);
+                c.drawPath(path, p);
             }
-            c.drawPath(path, p);
         }
     }
 
