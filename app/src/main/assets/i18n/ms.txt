@@ -1962,3 +1962,8 @@ Quitar el acceso	Buang pintasan
 No se pudo abrir la app. Déjala presionada para elegir otra.	Aplikasi tidak dapat dibuka. Tekan lama untuk memilih yang lain.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Ia disembunyikan dalam Bar aplikasi → Reka letak bar. Di tepi, kad memanjang hingga ke bawah.
 A los costados, las tarjetas llegan hasta abajo.	Di tepi, kad memanjang hingga ke bawah.
+Un tablero en píldora con tu color de acento: el velocímetro deportivo y el mapa redondos con el logo al medio, y la hora, el clima y la fecha en su pestaña. Desliza la píldora para agrandar el mapa o ver un video. Abajo, el reproductor con la carátula redonda y tus próximos mantenimientos (cámbialos de lado). La barra de apps va a un costado o abajo.	Papan pemuka berbentuk pil dengan warna aksen anda: meter laju sukan dan peta dalam bulatan dengan logo di tengah, serta masa, cuaca dan tarikh pada tabnya. Leret pil untuk membesarkan peta atau menonton video. Di bawah, pemain dengan kulit album bulat dan penyelenggaraan anda yang akan datang (tukar sisinya). Bar aplikasi boleh di sisi atau di bawah.
+Próximos mantenimientos	Penyelenggaraan akan datang
+Los mantenimientos van del otro lado.	Penyelenggaraan di sebelah yang satu lagi.
+A un costado o abajo de todo.	Di sisi atau di paling bawah.
+Está oculta en Barra de apps → Diseño de la barra.	Ia disembunyikan dalam Bar aplikasi → Reka letak bar.

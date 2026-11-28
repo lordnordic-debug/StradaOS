@@ -1941,3 +1941,8 @@ Quitar el acceso	Usuń skrót
 No se pudo abrir la app. Déjala presionada para elegir otra.	Nie udało się otworzyć aplikacji. Przytrzymaj, aby wybrać inną.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Jest ukryty w Pasek aplikacji → Układ. Po bokach karty sięgają do samego dołu.
 A los costados, las tarjetas llegan hasta abajo.	Po bokach karty sięgają do samego dołu.
+Un tablero en píldora con tu color de acento: el velocímetro deportivo y el mapa redondos con el logo al medio, y la hora, el clima y la fecha en su pestaña. Desliza la píldora para agrandar el mapa o ver un video. Abajo, el reproductor con la carátula redonda y tus próximos mantenimientos (cámbialos de lado). La barra de apps va a un costado o abajo.	Kokpit w kształcie pigułki w Twoim kolorze akcentu: sportowy prędkościomierz i mapa w okręgach z logo pośrodku oraz godzina, pogoda i data na jego zakładce. Przesuń pigułkę, aby powiększyć mapę lub obejrzeć wideo. Poniżej odtwarzacz z okrągłą okładką i najbliższe serwisy (możesz zamienić ich strony). Pasek aplikacji może być z boku lub na dole.
+Próximos mantenimientos	Najbliższe serwisy
+Los mantenimientos van del otro lado.	Serwisy będą po drugiej stronie.
+A un costado o abajo de todo.	Z boku lub na samym dole.
+Está oculta en Barra de apps → Diseño de la barra.	Jest ukryty w Pasek aplikacji → Układ.

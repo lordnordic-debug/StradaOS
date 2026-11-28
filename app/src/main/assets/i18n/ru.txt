@@ -1937,3 +1937,8 @@ Quitar el acceso	Убрать ярлык
 No se pudo abrir la app. Déjala presionada para elegir otra.	Не удалось открыть приложение. Удерживайте, чтобы выбрать другое.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Скрыта в разделе «Панель приложений → Расположение панели». По бокам карточки доходят до самого низа.
 A los costados, las tarjetas llegan hasta abajo.	По бокам карточки доходят до самого низа.
+Un tablero en píldora con tu color de acento: el velocímetro deportivo y el mapa redondos con el logo al medio, y la hora, el clima y la fecha en su pestaña. Desliza la píldora para agrandar el mapa o ver un video. Abajo, el reproductor con la carátula redonda y tus próximos mantenimientos (cámbialos de lado). La barra de apps va a un costado o abajo.	Приборная панель в форме капсулы в вашем акцентном цвете: спортивный спидометр и карта в кругах с логотипом посередине, а время, погода и дата — на её вкладке. Проведите по капсуле, чтобы увеличить карту или посмотреть видео. Внизу — плеер с круглой обложкой и ближайшее обслуживание (их можно поменять местами). Панель приложений — сбоку или внизу.
+Próximos mantenimientos	Ближайшее обслуживание
+Los mantenimientos van del otro lado.	Обслуживание будет с другой стороны.
+A un costado o abajo de todo.	Сбоку или в самом низу.
+Está oculta en Barra de apps → Diseño de la barra.	Скрыта в разделе «Панель приложений → Расположение панели».

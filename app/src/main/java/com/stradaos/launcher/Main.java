@@ -761,6 +761,7 @@ public class Main extends Activity {
                     rebuild();
                 }
                 else if (v.startsWith("pagina:")) { if (centerPager != null) centerPager.flip(Integer.parseInt(v.substring(7))); }
+                else if (v.startsWith("cabina:")) { String k = v.substring(7); ckSetWide(k.startsWith("1"), k.endsWith("a")); }   // 1/0, «a» = con animación
                 // velocidad para el video: «video-vel:0», «video-vel:40», «video-vel:nan» (sin datos), «video-vel:x» (la real)
                 else if (v.startsWith("video-vel:")) {
                     String k = v.substring(10);
@@ -1441,6 +1442,10 @@ public class Main extends Activity {
         cardsClock = false; cdMaintBox = null; cdPlayerOuter = null; cdPlayerTab = null; cdPosTv = null; cdDurTv = null;
         cdVolTv = null; cdCityTv = null; cdTopWxTv = null; cdWxIc = null; cdMapShadow = null;
         if (cdAnim != null) { cdAnim.cancel(); cdAnim = null; }
+        ckClock = false; ckGauge = null; ckLogo = null; ckRing = null; ckHoleMask = null; ckTap = null; ckDot = null;
+        ckMapUi = null; ckMaintBox = null; ckWxIc = null; ckWxTv = null; ckCityTv = null;
+        if (ckAnim != null) { ckAnim.cancel(); ckAnim = null; }
+        if (liveMap != null) liveMap.clearFocus();
         if (premium) buildPremium();
         else {
             buildTop();
@@ -2918,7 +2923,9 @@ public class Main extends Activity {
                 root.addView(videoBig, new FrameLayout.LayoutParams(-1, -1));
             } else {
                 videoBig.setBackgroundColor(premium ? Prem.base(LIGHT) : BG);
-                if (premium && Prem.cards()) {
+                if (premium && Prem.cockpit()) {
+                    place(board, videoBig, ckBodyX, ckBodyY, ckBodyW, ckBodyH);
+                } else if (premium && Prem.cards()) {
                     place(board, videoBig, cdBodyX, cdBodyY, cdBodyW, cdBodyH);
                 } else if (premium && Prem.carb()) {
                     // Carbono: tarjeta del vehículo + mapa (debajo de su barra de arriba y sin tapar la barra de apps)
@@ -2967,12 +2974,15 @@ public class Main extends Activity {
         // 2.35 «Mapa y video»: la tarjeta es un carrusel. La página del mapa lleva todo lo de siempre (botones, clima,
         // navegación); la del video, solo el video (sin el mapa de adorno: alrededor se ve el fondo del tema).
         final boolean carousel = "both".equals(prefs.getString("center_card", "map"));
-        if (carousel) {
+        // Sport Cockpit: siempre con el carrusel (aunque sea de una página) para deslizar entre Cabina y Mapa
+        final boolean ckPager = premium && Prem.cockpit();
+        if (carousel || ckPager) {
             final FrameLayout outer = card;
             centerPager = new CenterPager(this, s);
             outer.addView(centerPager, new FrameLayout.LayoutParams(-1, -1));
             card = new FrameLayout(this);
             centerPager.addPage(card);
+            if (carousel) {
             FrameLayout vp = new FrameLayout(this);
             videoCard = new VideoCard(this, s, prefs, new VideoCard.Speed() { public float kmh() { return currentKmh(); } },
                 new VideoCard.Host() {
@@ -2982,6 +2992,7 @@ public class Main extends Activity {
                 });
             vp.addView(videoCard, new FrameLayout.LayoutParams(-1, -1));
             centerPager.addPage(vp);
+            }
         }
         // fondo decorativo mientras no hay GPS; encima, el mapa en vivo (Faro: sin dibujo de relleno, el área queda limpia)
         if (!(premium && Prem.faroFam())) card.addView(new MapView(this, s, 20 * s), new FrameLayout.LayoutParams(-1, -1));
@@ -3005,7 +3016,7 @@ public class Main extends Activity {
             }
         });
         liveMap.setOwnButtons(premium && Prem.faroFam());   // Faro y Carbono ya tienen + − y centrar
-        liveMap.setDragExplores(!carousel);
+        liveMap.setDragExplores(!carousel && !ckPager);
         liveMap.exploreListener = new LiveMapView.Listener() { public void onExplore(boolean on) { applyCenterOverlays(); } };
         seedLastLocation();
 
@@ -3021,6 +3032,7 @@ public class Main extends Activity {
             if (videoCard != null && videoBig == null) videoCard.setActive(p == 1);
             if (p == 1 && liveMap != null) liveMap.follow();
             applyCenterOverlays();
+            ckOnPage(p);
         }});
         centerPager.setPage(prefs.getInt("center_page", 0));
     }
@@ -3051,7 +3063,8 @@ public class Main extends Activity {
 
     private void buildAaCardRest(FrameLayout card) {
         final boolean faroT = premium && Prem.faroFam();
-        if (faroT && Prem.cards()) buildCardsMapTop(card);
+        if (faroT && Prem.cockpit()) buildCockpitMapTop(card);
+        else if (faroT && Prem.cards()) buildCardsMapTop(card);
         else if (faroT) buildFaroMapTop(card);
         else {
         LinearLayout topRow = new LinearLayout(this);
@@ -3143,7 +3156,7 @@ public class Main extends Activity {
         // 2.18: qué botones de conexión se ven (Reinaldo, MIGSGx #12). Con uno o ninguno, el clima usa el espacio libre.
         String cm = prefs.getString("conn_buttons", "both");
         // Carbono: Android Auto y CarPlay van en la barra de arriba (el reproductor y el clima flotan abajo del mapa)
-        boolean carbT = premium && (Prem.carb() || Prem.cards());
+        boolean carbT = premium && (Prem.carb() || Prem.cards() || Prem.cockpit());
         boolean showAa = !carbT && ("both".equals(cm) || "aa".equals(cm)), showCp = !carbT && ("both".equals(cm) || "cp".equals(cm));
         int nBtn = (showAa ? 1 : 0) + (showCp ? 1 : 0);
         // Aurora con su cabecera: el clima ya tiene su tarjeta arriba (con «Solo mapa» vuelve al panel)
@@ -3391,6 +3404,7 @@ public class Main extends Activity {
     private void showPanelWeather() {
         renderFaroWx();
         renderCardsWx();
+        renderCockpitWx();
         if (panelWx == null) return;
         Weather.Now n = weatherNow;
         if (n == null) {
@@ -4446,6 +4460,7 @@ public class Main extends Activity {
         premPillH = noDock ? 0 : vertical ? 68 : 64;
         dockTop = noDock ? boardH : boardH - 16 - premPillH;
         premHeadY = 60;
+        if (Prem.cockpit()) { cockpitMetrics(); return; }
         if (Prem.cards()) { cardsMetrics(); return; }
         if (Prem.carb()) { carbMetrics(); return; }
         if (Prem.faro()) { faroMetrics(); return; }
@@ -4471,6 +4486,7 @@ public class Main extends Activity {
     private void buildPremium() {
         carCard = null; mapGauge = null; mapGaugeBox = null; carGauge = null; chipTv = null; carDataTv = null;
         faroGauge = null; faroBar = null; faroWxIc = null; faroMaintBox = null; faroPillTv = null; carbMaintBox = null; carbRpm = null;
+        if (Prem.cockpit()) { buildCockpit(); setGps(false, 0); return; }
         if (Prem.cards()) { buildCards(); setGps(false, 0); return; }
         if (Prem.carb()) { buildCarbono(); setGps(false, 0); return; }
         if (Prem.faro()) { buildFaro(); setGps(false, 0); return; }
@@ -5118,6 +5134,7 @@ public class Main extends Activity {
     }
 
     private void renderFaroMaint() {
+        if (ckMaintBox != null) { renderCockpitMaint(); return; }
         if (cdMaintBox != null) { renderCardsMaint(); return; }
         if (carbMaintBox != null) { renderCarbMaint(); return; }
         if (faroMaintBox == null) return;
@@ -5357,7 +5374,7 @@ public class Main extends Activity {
             faroPillIc.set(Faro.I_LOCATE);
         } else {
             faroPillTv.setText(I18n.t("internal".equals(prefs.getString("nav_app", null)) ? "Ir a…" : "Navegar"));
-            faroPillTv.setTextColor(Prem.cards() ? MUTED : TEXT);   // Premium Cards: la ciudad arriba, esto debajo
+            faroPillTv.setTextColor(Prem.cards() || Prem.cockpit() ? MUTED : TEXT);   // Premium Cards: la ciudad arriba, esto debajo
             faroPillIc.set(Faro.I_SEARCH);
         }
     }
@@ -6215,6 +6232,669 @@ public class Main extends Activity {
                 }
             })
             .show();
+    }
+
+    // ───────────────────────── tema premium «Sport Cockpit» (2.40, Bloque 26) ─────────────────────────
+    // Horizontal: barra de arriba (Android Auto y CarPlay a la izquierda; Wi-Fi, Bluetooth y Ajustes a la derecha); la
+    // barra de apps a la izquierda (de fábrica), a la derecha o abajo; el tablero en píldora y debajo el reproductor y
+    // los próximos mantenimientos (el reproductor a la izquierda de fábrica; se cambian de lado). Vertical: la píldora
+    // arriba y las dos tarjetas apiladas.
+    // La píldora es un carrusel (CenterPager) con la página del mapa y, con «Mapa y video», la del video. La página del
+    // mapa tiene dos vistas: Cabina (velocímetro, logo y el mapa en un círculo) y Mapa (el mapa llena la píldora y el
+    // velocímetro queda chico abajo a la izquierda). Es el mismo LiveMapView del tamaño de la píldora: en Cabina solo
+    // se ve por el hueco de una máscara (Cockpit.Mask) y el carro se centra en ese hueco (setFocus); al deslizar, el
+    // hueco crece hasta la píldora cuadro a cuadro, sin rearmar nada (Android 4.2 del Picanto).
+
+    private String ckDock = "left";
+    private boolean ckPlayerLeft = true, ckWide, ckClock;
+    private float ckTopH, ckRailX, ckRailY, ckRailW, ckRailH, ckDockX, ckDockY, ckDockW, ckDockH,
+        ckBodyX, ckBodyY, ckBodyW, ckBodyH, ckPX, ckPY, ckPW, ckPH, ckIns,
+        ckPlX, ckPlY, ckPlW, ckPlH, ckMtX, ckMtY, ckMtW, ckMtH;
+    /** Dentro de la píldora de adentro (unidades del lienzo): diámetro de los círculos, centros y la pestaña. */
+    private float ckD, ckGx, ckMx, ckCy, ckLogoL, ckLogoY, ckTabW, ckTabH;
+    private Cockpit.Gauge ckGauge;
+    private Cockpit.Logo ckLogo;
+    private Cockpit.Ring ckRing;
+    private Cockpit.Mask ckHoleMask;
+    private View ckTap, ckDot;
+    private FrameLayout ckMapUi, ckMaintBox;
+    private Faro.Icon ckWxIc;
+    private TextView ckWxTv, ckCityTv;
+    /** 0 = Cabina, 1 = Mapa (cambia mientras se anima). */
+    private float ckMorph;
+    private android.animation.ValueAnimator ckAnim;
+    private Bitmap ckPillBmp;
+
+    private void cockpitMetrics() {
+        float W0 = premW(), H = boardH, m = 12, gap = 14;
+        premHeadH = 0;
+        premWide = false;
+        String d = noDock ? "none" : prefs.getString("ck_dock", "left");
+        if (!"left".equals(d) && !"right".equals(d) && !"bottom".equals(d) && !"none".equals(d)) d = "left";
+        ckDock = d;
+        ckPlayerLeft = !"right".equals(prefs.getString("ck_player", "left"));
+        ckTopH = 38;
+        cbTopH = ckTopH;   // las píldoras de Android Auto y CarPlay (carbProj) toman de aquí su radio
+        float top = 8 + ckTopH + 10;
+        boolean side = "left".equals(d) || "right".equals(d);
+        ckRailW = side ? (vertical ? 80 : 76) : 0;
+        ckRailX = "right".equals(d) ? W0 - m - ckRailW : m;
+        float x0 = "left".equals(d) ? m + ckRailW + m : m, x1 = "right".equals(d) ? W0 - m - ckRailW - m : W0 - m;
+        boolean bottomDock = "bottom".equals(d);
+        premPillH = bottomDock ? (vertical ? 76 : 64) : 0;
+        ckDockH = premPillH; ckDockX = x0; ckDockW = x1 - x0; ckDockY = H - 8 - ckDockH;
+        dockTop = bottomDock ? ckDockY : H;
+        float bottom = bottomDock ? ckDockY - 12 : H - m;
+        ckRailY = top; ckRailH = H - m - top;
+        ckBodyX = x0; ckBodyY = top; ckBodyW = x1 - x0; ckBodyH = bottom - top;
+        float bw = ckBodyW;
+        if (!vertical) {
+            float cardH = Math.max(150, Math.min(190, Math.round(ckBodyH * 0.32f)));
+            ckPX = x0; ckPY = top; ckPW = bw; ckPH = ckBodyH - gap - cardH;
+            ckIns = Math.max(10, Math.min(16, ckPH * 0.045f));
+            // los dos círculos y el logo tienen que caber a lo ancho (píldora de adentro ≥ 2,3 veces su alto)
+            float maxIn = (ckPW - 2 * ckIns) / 2.3f;
+            if (ckPH - 2 * ckIns > maxIn) { ckPH = maxIn + 2 * ckIns; cardH = ckBodyH - gap - ckPH; }
+            float cy = top + ckPH + gap;
+            float cw = showPlayer ? (bw - gap) / 2 : 0;
+            ckPlW = cw; ckPlH = cardH; ckPlY = cy;
+            ckMtW = showPlayer ? bw - gap - cw : bw; ckMtH = cardH; ckMtY = cy;
+            ckPlX = ckPlayerLeft ? x0 : x0 + bw - cw;
+            ckMtX = !showPlayer ? x0 : ckPlayerLeft ? x0 + cw + gap : x0;
+        } else {
+            // vertical: a lo ancho manda (los dos círculos y el logo en fila); las tarjetas apiladas y todo centrado
+            ckIns = 12;
+            float inH = Math.min(330, (bw - 2 * ckIns) / 2.3f);
+            ckPW = bw; ckPH = inH + 2 * ckIns; ckPX = x0;
+            float cardH = Math.max(160, Math.min(230, (ckBodyH - ckPH - 2 * gap) / 2));
+            float total = ckPH + 2 * gap + (showPlayer ? 2 : 1) * cardH - (showPlayer ? 0 : gap);
+            ckPY = top + Math.max(0, (ckBodyH - total) / 2);
+            float cy = ckPY + ckPH + gap;
+            ckPlX = ckMtX = x0; ckPlW = ckMtW = bw;
+            ckPlH = ckMtH = cardH;
+            if (showPlayer) {
+                if (ckPlayerLeft) { ckPlY = cy; ckMtY = cy + cardH + gap; }   // «izquierda» = primero (arriba)
+                else { ckMtY = cy; ckPlY = cy + cardH + gap; }
+            } else { ckPlW = 0; ckMtY = cy; }
+        }
+        // la píldora de adentro es la tarjeta del mapa (el carrusel)
+        mapX = ckPX + ckIns; mapY = ckPY + ckIns; mapW = ckPW - 2 * ckIns; mapH = ckPH - 2 * ckIns;
+        ckD = mapH * 0.90f;
+        ckCy = mapH / 2;
+        ckGx = mapH / 2;
+        ckMx = mapW - mapH / 2;
+        // el disco del logo (70 % de su vista; el resto es el resplandor), chico para darle espacio a los círculos
+        float free = ckMx - ckGx - ckD;
+        ckLogoL = Math.max(60, Math.min(mapH * 0.44f, free / 0.78f));
+        ckLogoY = mapH * 0.45f;
+        ckTabH = 34;
+        ckTabW = Math.max(190, Math.min(340, ckMx - ckGx - ckD * 0.45f));
+        cardH = mapH; rowY = mapY; insL = insR = 0;
+        carX = audX = 16; audW = 248;
+    }
+
+    private void buildCockpit() {
+        premHeadViews.clear();
+        faroGauge = null; faroBar = null; faroWxIc = null; faroMaintBox = null; faroPillTv = null; faroPillIc = null;
+        carbMaintBox = null; carbSetOpen = null;
+        cdMaintBox = null; cdPlayerOuter = null; cdPlayerTab = null; cdMapShadow = null;
+        cdPosTv = null; cdDurTv = null; cdVolTv = null; cdCityTv = null; cdTopWxTv = null; cdTopWxIc = null; cdTopWx = null;
+        cdWxIc = null; cdWxDays = null;
+        ckGauge = null; ckLogo = null; ckRing = null; ckHoleMask = null; ckTap = null; ckDot = null; ckMapUi = null;
+        ckMaintBox = null; ckWxIc = null; ckWxTv = null; ckCityTv = null;
+        if (ckAnim != null) { ckAnim.cancel(); ckAnim = null; }
+        // la velocidad va en el velocímetro; estos no se ven, pero showSpeed los actualiza
+        speedTv = tv("0", 12, TEXT, true);
+        gpsDot = new View(this);
+        gpsTv = tv("GPS", 11, MUTED, false);
+        carTv = tv(prefs.getString("car_name", "Mi vehículo"), 13, MUTED, true);
+        chipTv = null;
+        oilValTv = null; oilBar = null; oilBarBg = null; oilLblTv = null; oilIc = null;
+        buildCockpitTop();
+        if (ckRailW > 0) buildCockpitRail();
+        // el fondo de la píldora (con margen para el brillo o la sombra); las máscaras lo usan para tapar las curvas
+        float gm = 12;
+        View holder = new View(this);
+        float f = Math.min(1f, 1.6f / Math.max(1f, s));   // pantallas densas: a menor resolución (menos memoria)
+        int bw = Math.round((ckPW + 2 * gm) * s * f), bh = Math.round((ckPH + 2 * gm) * s * f);
+        ckPillBmp = Cockpit.pillBitmap(bw, bh, gm * s * f, ckIns * s * f, s * f, LIGHT, RED);
+        if (ckPillBmp != null) holder.setBackground(new android.graphics.drawable.BitmapDrawable(getResources(), ckPillBmp));
+        place(board, holder, ckPX - gm, ckPY - gm, ckPW + 2 * gm, ckPH + 2 * gm);
+        buildAaCard();
+        FrameLayout stage = centerPager != null && centerPager.getChildCount() > 0 ? (FrameLayout) centerPager.getChildAt(0)
+            : mapCardView instanceof FrameLayout ? (FrameLayout) mapCardView : null;
+        if (stage != null) buildCockpitStage(stage, holder);
+        // encima del carrusel: las curvas de la píldora (fijas, también mientras pasa el video) y la pestaña
+        Cockpit.Mask edge = new Cockpit.Mask(this, ckPillBmp, holder);
+        place(board, edge, mapX, mapY, mapW, mapH);
+        edge.setHole(0, 0, mapW * s, mapH * s, mapH / 2 * s);
+        buildCockpitTab();
+        if (showPlayer && ckPlW > 0) buildCockpitPlayer(ckPlX, ckPlY, ckPlW, ckPlH);
+        else { trackTv = null; artistTv = null; sourceTv = null; timePosTv = null; playerArt = null; playIc = null; }
+        buildCockpitMaint(ckMtX, ckMtY, ckMtW, ckMtH);
+        if ("bottom".equals(ckDock)) buildCockpitDockRow();
+        updateOilBadge();
+        renderCockpitWx();
+    }
+
+    /** Barra de arriba: Android Auto y CarPlay a la izquierda; Wi-Fi, Bluetooth y Ajustes a la derecha. */
+    private void buildCockpitTop() {
+        float W0 = premW(), x = 12, xr = W0 - 12, w = xr - x, y = 8;
+        topSpeedTv = null; topOilTv = null; topIconName = null; weatherBox = null;
+        topNavPill = null; topNavIc = null; topNavDistTv = null;
+        greetTv = tv("", 13, MUTED, false);   // no se muestra (el reloj lo actualiza)
+        LinearLayout proj = new LinearLayout(this);
+        proj.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);
+        String cm = prefs.getString("conn_buttons", "both");
+        aaBtnTv = null; aaSubTv = null; cpSubTv = null;
+        if ("both".equals(cm) || "aa".equals(cm)) {
+            LinearLayout aa = carbProj("navigation", "Android Auto", true);
+            aaBtnTv = (TextView) aa.getTag();
+            aaSubTv = aaBtnTv;
+            proj.addView(aa, new LinearLayout.LayoutParams(-2, (int) (ckTopH * s)));
+            aa.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openAndroidAuto(); } });
+            aa.setOnLongClickListener(new View.OnLongClickListener() { public boolean onLongClick(View v) { chooseConnection(null); return true; } });
+        }
+        if ("both".equals(cm) || "cp".equals(cm)) {
+            LinearLayout cp = carbProj("phone_iphone", "CarPlay", false);
+            cpSubTv = (TextView) cp.getTag();
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(-2, (int) (ckTopH * s));
+            lp.leftMargin = (int) (8 * s);
+            proj.addView(cp, lp);
+            cp.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openCarPlay(); } });
+            cp.setOnLongClickListener(new View.OnLongClickListener() { public boolean onLongClick(View v) { pickFor("carplay", "CarPlay"); return true; } });
+        }
+        place(board, proj, x, y, w * 0.6f, ckTopH);
+
+        LinearLayout right = new LinearLayout(this);
+        right.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
+        addCarData(right);
+        wifiIc = null;
+        btIc = null;
+        if (prefs.getBoolean("status_icons", true)) {
+            wifiIc = statusIcon(right, "wifi", new Runnable() { public void run() { toggleWifi(); } },
+                new Runnable() { public void run() { openSettingsPage(Settings.ACTION_WIFI_SETTINGS, new Runnable() { public void run() { openSystemSettings(); } }); } });
+            btIc = statusIcon(right, "bluetooth", new Runnable() { public void run() { toggleBt(); } },
+                new Runnable() { public void run() {
+                    if (clwBt) openSlot(1);
+                    else openSettingsPage(Settings.ACTION_BLUETOOTH_SETTINGS, new Runnable() { public void run() { openSlot(1); } });
+                } });
+        }
+        if (noDock) {
+            FrameLayout apps = faroIconBtn(Faro.I_APPS, 34, 16, Faro.tile(LIGHT));
+            LinearLayout.LayoutParams alp = new LinearLayout.LayoutParams((int) (34 * s), (int) (34 * s));
+            alp.leftMargin = (int) (10 * s);
+            right.addView(apps, alp);
+            apps.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openDrawer(); } });
+        }
+        FrameLayout gear = circleIcon("settings", 34, 18, 0);
+        GradientDrawable gd = round(Faro.tile(LIGHT), 17);
+        gd.setStroke(Math.max(1, (int) s), LIGHT ? 0x14000000 : 0x14FFFFFF);
+        gear.setBackground(gd);
+        LinearLayout.LayoutParams glp = new LinearLayout.LayoutParams((int) (34 * s), (int) (34 * s));
+        glp.leftMargin = (int) (10 * s);
+        right.addView(gear, glp);
+        gear.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openSettings(); } });
+        premTopRow = right;
+        place(board, right, x + w * 0.6f, y, w * 0.4f, ckTopH);
+    }
+
+    /** Barra de apps a un costado: una tarjeta alta con los botones de arriba abajo (si no caben, se desliza). */
+    private void buildCockpitRail() {
+        final int n = dockCount;
+        FrameLayout card = faroCard(ckRailX, ckRailY, ckRailW, ckRailH);
+        float avail = ckRailH - 16, item = Math.max(54, Math.min(84, avail / Math.max(1, n)));
+        boolean label = dockLabels && item >= 62;
+        float isz = Math.min((label ? 28 : 32) * cardsIconK(), item - (label ? 30 : 16));
+        LinearLayout list = new LinearLayout(this);
+        list.setOrientation(LinearLayout.VERTICAL);
+        list.setGravity(Gravity.CENTER);
+        for (int i = 0; i < n; i++) list.addView(cardsDockItem(i, isz, label), new LinearLayout.LayoutParams(-1, (int) (item * s)));
+        android.widget.ScrollView sv = new android.widget.ScrollView(this);
+        sv.setVerticalScrollBarEnabled(false);
+        sv.setOverScrollMode(View.OVER_SCROLL_NEVER);
+        sv.setFillViewport(true);
+        sv.addView(list, new FrameLayout.LayoutParams(-1, -2));
+        if (n * item <= avail) list.setMinimumHeight((int) (avail * s));
+        place(card, sv, 0, 8, ckRailW, avail);
+    }
+
+    /** Barra de apps abajo: una tarjeta a lo ancho con los botones repartidos. */
+    private void buildCockpitDockRow() {
+        final int n = dockCount;
+        FrameLayout card = faroCard(ckDockX, ckDockY, ckDockW, ckDockH);
+        boolean label = dockLabels && ckDockH >= 60;
+        float isz = Math.min((label ? 26 : 32) * cardsIconK(), ckDockH - (label ? 28 : 14));
+        LinearLayout row = new LinearLayout(this);
+        row.setGravity(Gravity.CENTER_VERTICAL);
+        for (int i = 0; i < n; i++) row.addView(cardsDockItem(i, isz, label), new LinearLayout.LayoutParams(0, -1, 1f));
+        place(card, row, 4, 0, ckDockW - 8, ckDockH);
+    }
+
+    /**
+     * La página del mapa del carrusel: el mapa (ya puesto) queda debajo de la máscara con el hueco, el aro, el logo y el
+     * velocímetro; lo que va sobre el mapa (buscador, botones, guía) pasa a una capa que solo se ve en la vista Mapa.
+     */
+    private void buildCockpitStage(FrameLayout stage, View holder) {
+        ckMapUi = new FrameLayout(this);
+        List<View> kids = new ArrayList<View>();
+        for (int i = 0; i < stage.getChildCount(); i++) { View v = stage.getChildAt(i); if (v != liveMap) kids.add(v); }
+        for (View v : kids) {
+            ViewGroup.LayoutParams lp = v.getLayoutParams();
+            stage.removeView(v);
+            ckMapUi.addView(v, lp);
+        }
+        float r = mapH / 2;
+        // la guía de navegación y el aviso de cámara, adentro de las curvas de la píldora
+        if (navHud != null && navHud.getLayoutParams() instanceof FrameLayout.LayoutParams) {
+            FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) navHud.getLayoutParams();
+            lp.leftMargin = (int) (r * 0.84f * s);
+            lp.width = (int) ((mapW - 2 * r * 0.84f) * s);
+            navHud.setLayoutParams(lp);
+        }
+        if (camBadgeTv != null && camBadgeTv.getLayoutParams() instanceof FrameLayout.LayoutParams) {
+            FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) camBadgeTv.getLayoutParams();
+            lp.leftMargin = (int) (r * 0.84f * s);
+            camBadgeTv.setLayoutParams(lp);
+        }
+        ckHoleMask = new Cockpit.Mask(this, ckPillBmp, holder);
+        place(stage, ckHoleMask, 0, 0, mapW, mapH);
+        ckRing = new Cockpit.Ring(this, s, LIGHT, RED);
+        place(stage, ckRing, 0, 0, mapW, mapH);
+        ckLogo = new Cockpit.Logo(this, asset("logo.png"), LIGHT, RED);
+        place(stage, ckLogo, mapW / 2 - ckLogoL / 2, ckLogoY - ckLogoL / 2, ckLogoL, ckLogoL);
+        ckGauge = new Cockpit.Gauge(this, s);
+        ckGauge.setTheme(LIGHT, RED, TEXT, MUTED);
+        ckGauge.setUnit(useMph());
+        place(stage, ckGauge, ckGx - ckD / 2, ckCy - ckD / 2, ckD, ckD);
+        if (!carSpeed) ckGauge.setAlpha(0.35f);
+        ckGauge.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { if (ckWide) ckSetWide(false, true); } });   // el chico (vista Mapa) vuelve a Cabina
+        // tocar el mapa redondo lo agranda (en la vista Mapa, tocarlo entra a «Explorar» como siempre)
+        ckTap = new View(this);
+        place(stage, ckTap, ckMx - ckD / 2, ckCy - ckD / 2, ckD, ckD);
+        ckTap.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { ckSetWide(true, true); } });
+        ckTap.setOnLongClickListener(new View.OnLongClickListener() { public boolean onLongClick(View v) { showMapDiag(); return true; } });
+        stage.addView(ckMapUi, new FrameLayout.LayoutParams(-1, -1));
+        ckWide = prefs.getBoolean("ck_wide", false);
+        ckApply(ckWide ? 1f : 0f);
+        ckFinish();
+        if (centerPager != null) {
+            centerPager.setDotsBottom((ckTabH * 0.62f + 10) * s);
+            centerPager.setGate(new CenterPager.Gate() {
+                public boolean handles(int dir) {
+                    if (centerPager == null || centerPager.getChildCount() < 2) return true;
+                    if (dir > 0) return !ckWide;        // Cabina → Mapa
+                    if (ckWide) return true;             // Mapa → Cabina
+                    ckSetWide(true, false);              // Cabina → (hacia atrás) Video: entra con el mapa grande detrás
+                    return false;
+                }
+                public void go(int dir) {
+                    if (centerPager == null || centerPager.getChildCount() < 2) ckSetWide(!ckWide, true);
+                    else ckSetWide(dir > 0, true);
+                }
+            });
+            centerPager.setVirtualDots(ckDots(), ckDotIndex());
+        }
+    }
+
+    private int ckDots() { return centerPager != null && centerPager.getChildCount() > 1 ? 3 : 2; }
+    private int ckDotIndex() { return centerPager != null && centerPager.page() == 1 ? 2 : ckWide ? 1 : 0; }
+
+    /** El carrusel cambió de página: al volver del video hacia adelante (deslizar a la izquierda) se llega a Cabina. */
+    private void ckOnPage(int p) {
+        if (ckHoleMask == null || centerPager == null) return;
+        if (p == 0 && centerPager.lastDir() > 0 && ckWide) ckSetWide(false, true);
+        centerPager.setVirtualDots(ckDots(), ckDotIndex());
+    }
+
+    /** Cabina (0) → Mapa (1): el hueco, el aro, el centro del mapa, el velocímetro y el logo, cuadro a cuadro. */
+    private void ckApply(float t) {
+        ckMorph = t;
+        float W = mapW, H = mapH, D = ckD;
+        float l = (ckMx - D / 2) * (1 - t), tp = (ckCy - D / 2) * (1 - t);
+        float rt = (ckMx + D / 2) + (W - ckMx - D / 2) * t, bt = (ckCy + D / 2) + (H - ckCy - D / 2) * t;
+        float rad = Math.min(rt - l, bt - tp) / 2;
+        if (ckHoleMask != null) ckHoleMask.setHole(l * s, tp * s, rt * s, bt * s, rad * s);
+        if (ckRing != null) ckRing.set(l * s, tp * s, rt * s, bt * s, rad * s, 1 - t);
+        if (liveMap != null) liveMap.setFocus(l * s, tp * s, rt * s, bt * s);
+        if (ckGauge != null) {
+            // chico abajo a la izquierda, adentro de la curva de la píldora
+            float small = H * 0.42f, sc = 1 + (small / D - 1) * t;
+            ckGauge.setScaleX(sc);
+            ckGauge.setScaleY(sc);
+            ckGauge.setTranslationY(H * 0.19f * t * s);
+        }
+        if (ckLogo != null) {
+            float a = Math.max(0f, 1f - t * 1.7f);
+            ckLogo.setAlpha(a);
+            ckLogo.setScaleX(1 - 0.3f * t);
+            ckLogo.setScaleY(1 - 0.3f * t);
+            ckLogo.setVisibility(a <= 0.01f ? View.INVISIBLE : View.VISIBLE);
+        }
+        if (ckMapUi != null) {
+            float a = Math.max(0f, (t - 0.6f) / 0.4f);
+            ckMapUi.setAlpha(a);
+            ckMapUi.setVisibility(a <= 0.01f ? View.GONE : View.VISIBLE);
+        }
+        if (ckTap != null) ckTap.setVisibility(t < 0.01f ? View.VISIBLE : View.GONE);
+        // en Cabina, tocar fuera del círculo no debe entrar a «Explorar» en el mapa escondido
+        if (ckHoleMask != null) ckHoleMask.setClickable(t < 0.5f);
+    }
+
+    /** Al terminar: la atribución del mapa adentro del círculo (Cabina) o abajo a la derecha (Mapa). */
+    private void ckFinish() {
+        if (liveMap == null) return;
+        if (ckWide) liveMap.setAttributionCentered((mapW - mapH * 0.95f) * s, (mapH - 14) * s);
+        else liveMap.setAttributionCentered(ckMx * s, (ckCy + ckD / 2 - 16) * s);
+    }
+
+    private void ckSetWide(boolean wide, boolean animate) {
+        if (ckHoleMask == null) return;
+        ckWide = wide;
+        prefs.edit().putBoolean("ck_wide", wide).apply();
+        if (ckAnim != null) { ckAnim.cancel(); ckAnim = null; }
+        if (centerPager != null) centerPager.setVirtualDots(ckDots(), ckDotIndex());
+        final float from = ckMorph, to = wide ? 1f : 0f;
+        if (!animate || from == to) { ckApply(to); ckFinish(); return; }
+        final android.animation.ValueAnimator a = android.animation.ValueAnimator.ofFloat(0f, 1f);
+        a.setDuration(dur(420));
+        a.setInterpolator(new android.view.animation.DecelerateInterpolator(1.5f));
+        a.addUpdateListener(new android.animation.ValueAnimator.AnimatorUpdateListener() {
+            public void onAnimationUpdate(android.animation.ValueAnimator va) {
+                ckApply(from + (to - from) * (Float) va.getAnimatedValue());
+            }
+        });
+        a.addListener(new android.animation.AnimatorListenerAdapter() {
+            boolean cancelled;
+            @Override public void onAnimationCancel(android.animation.Animator an) { cancelled = true; }
+            @Override public void onAnimationEnd(android.animation.Animator an) {
+                if (cancelled) return;
+                ckApply(to);
+                ckFinish();
+                if (ckAnim == a) ckAnim = null;
+            }
+        });
+        ckAnim = a;
+        a.start();
+    }
+
+    /** Navegación con guía: la píldora pasa sola a la vista Mapa (también desde el video). */
+    private void cockpitShowMap() {
+        if (ckHoleMask == null) return;
+        if (centerPager != null && centerPager.page() != 0) centerPager.setPage(0);
+        if (!ckWide) ckSetWide(true, true);
+    }
+
+    /** Arriba al centro: la ciudad y, debajo, el estado del GPS o «Ir a…». A la derecha, centrar y zoom. */
+    private void buildCockpitMapTop(FrameLayout card) {
+        FrameLayout box = new FrameLayout(this);
+        place(card, box, 0, 0, mapW, mapH);
+        LinearLayout blk = new LinearLayout(this);
+        blk.setGravity(Gravity.CENTER_VERTICAL);
+        GradientDrawable pd = round(LIGHT ? 0xF2FFFFFF : 0xEB1B1C22, 16);
+        pd.setStroke(Math.max(1, (int) s), LIGHT ? 0x14000000 : 0x1AFFFFFF);
+        blk.setBackground(pd);
+        blk.setPadding((int) (12 * s), 0, (int) (12 * s), 0);
+        faroPillIc = new Faro.Icon(this, Faro.I_SEARCH, TEXT);
+        blk.addView(faroPillIc, new LinearLayout.LayoutParams((int) (18 * s), (int) (18 * s)));
+        LinearLayout col = new LinearLayout(this);
+        col.setOrientation(LinearLayout.VERTICAL);
+        col.setPadding((int) (10 * s), 0, 0, 0);
+        ckCityTv = tv("Mapa", 15, TEXT, true);
+        col.addView(ckCityTv);
+        faroPillTv = tv("", 11, MUTED, false);
+        faroPillTv.setPadding(0, (int) (2 * s), 0, 0);
+        col.addView(faroPillTv);
+        blk.addView(col, new LinearLayout.LayoutParams(0, -2, 1f));
+        float bw = Math.max(170, Math.min(300, mapW - 2 * mapH * 0.62f));
+        place(box, blk, (mapW - bw) / 2, 12, bw, 48);
+        blk.setOnClickListener(new View.OnClickListener() { public void onClick(View v) {
+            if (liveMap == null || !liveMap.hasFix()) { fixGps(); return; }
+            if ("internal".equals(prefs.getString("nav_app", null))) openNavSearch(); else openNavApp();
+        }});
+        blk.setOnLongClickListener(new View.OnLongClickListener() { public boolean onLongClick(View v) { pickFor("nav_app", "Navegación"); return true; } });
+        int btnBg = LIGHT ? 0xF2FFFFFF : 0xEB1B1C22;
+        float bx = mapW - 30 - 40, by = mapH / 2 - 66;
+        boolean zoom = mapH >= 220;
+        if (!zoom) by = mapH / 2 - 20;
+        FrameLayout loc = faroIconBtn(Faro.I_LOCATE, 40, 19, btnBg);
+        place(box, loc, bx, by, 40, 40);
+        loc.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { if (liveMap != null) liveMap.autoZoom(); } });
+        LinearLayout zc = new LinearLayout(this);
+        zc.setOrientation(LinearLayout.VERTICAL);
+        GradientDrawable zd = round(btnBg, 12);
+        if (LIGHT) zd.setStroke(Math.max(1, (int) s), 0x14000000);
+        zc.setBackground(zd);
+        FrameLayout zin = faroIconBtn(Faro.I_PLUS, 40, 18, 0), zout = faroIconBtn(Faro.I_MINUS, 40, 18, 0);
+        zc.addView(zin, new LinearLayout.LayoutParams((int) (40 * s), (int) (42 * s)));
+        zc.addView(zout, new LinearLayout.LayoutParams((int) (40 * s), (int) (42 * s)));
+        place(box, zc, bx, by + 48, 40, 84);
+        zin.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { if (liveMap != null) liveMap.zoomBy(1); } });
+        zout.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { if (liveMap != null) liveMap.zoomBy(-1); } });
+        if (!zoom) zc.setVisibility(View.GONE);
+        mapTagTv = tv("", 13, TEXT, true);   // no se muestra: el estado del GPS va debajo de la ciudad
+        navSearchBtn = null;
+        mapTagBox = box;
+    }
+
+    /** Pestaña de abajo de la píldora: la hora, el clima y la fecha con el día. */
+    private void buildCockpitTab() {
+        Cockpit.Tab tab = new Cockpit.Tab(this, s, LIGHT, RED);
+        float tx = mapX + mapW / 2 - ckTabW / 2, ty = mapY + mapH - ckTabH * 0.62f;
+        place(board, tab, tx, ty, ckTabW, ckTabH);
+        LinearLayout row = new LinearLayout(this);
+        row.setGravity(Gravity.CENTER);
+        float fs = ckTabW >= 270 ? 14 : 12;
+        timeTv = tv("", fs, TEXT, true);
+        timeTv.setEllipsize(null);
+        row.addView(timeTv);
+        boolean wx = prefs.getBoolean("weather_on", true);
+        if (wx) {
+            row.addView(ckSep(), ckSepLp());
+            ckWxIc = new Faro.Icon(this, Faro.I_CLOUD, TEXT);
+            row.addView(ckWxIc, new LinearLayout.LayoutParams((int) ((fs + 3) * s), (int) ((fs + 3) * s)));
+            ckWxTv = tv("--°", fs, TEXT, false);
+            ckWxTv.setPadding((int) (5 * s), 0, 0, 0);
+            ckWxTv.setEllipsize(null);
+            row.addView(ckWxTv);
+            View wxTap = row;   // tocar la pestaña abre el detalle del clima
+            wxTap.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { showWeatherDetail(); } });
+        }
+        row.addView(ckSep(), ckSepLp());
+        dateTv = tv("", fs, MUTED, false);
+        dateTv.setEllipsize(null);
+        row.addView(dateTv);
+        place(tab, row, 0, 2, ckTabW, ckTabH - 2);
+        ckClock = true;
+    }
+
+    private View ckSep() {
+        View v = new View(this);
+        v.setBackgroundColor(LIGHT ? 0x26000000 : 0x2EFFFFFF);
+        return v;
+    }
+
+    private LinearLayout.LayoutParams ckSepLp() {
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(Math.max(1, (int) s), (int) (14 * s));
+        lp.leftMargin = lp.rightMargin = (int) (10 * s);
+        return lp;
+    }
+
+    private void renderCockpitWx() {
+        if (!(premium && Prem.cockpit())) return;
+        Weather.Now n = weatherNow;
+        if (ckWxTv != null) {
+            ckWxTv.setText(n != null ? deg(n.temp) : "--°");
+            ckWxIc.set(n != null ? Faro.weatherIcon(n.code, n.day) : Faro.I_CLOUD);
+        }
+        if (ckCityTv != null) ckCityTv.setText(n != null && n.city != null && n.city.length() > 0 ? n.city : I18n.t("Mapa"));
+    }
+
+    /**
+     * Reproductor: la carátula redonda con el resplandor del acento a la izquierda; la canción y el artista, los minutos
+     * con la línea de tiempo y abajo volumen −, anterior, reproducir (redondo, del color de acento), siguiente y
+     * volumen +. El botón de arriba a la derecha abre la app de música (el puntito se enciende mientras suena).
+     */
+    private void buildCockpitPlayer(float x, float y, float w, float hh) {
+        FrameLayout card = faroCard(x, y, w, hh);
+        float p = 16;
+        float d = Math.max(90, Math.min(hh - 2 * p + 12, w * 0.36f));
+        playerArt = new PlayerArt(this, s, asset("ic/music_note.png"));
+        playerArt.setDisc(LIGHT ? 0xFFE3E5E9 : 0xFF2A2B32, RED);
+        place(card, playerArt, p - 8, (hh - d) / 2, d, d);
+        float tx = p - 8 + d + 8, tw = w - tx - p;
+        // botón de la app de música (arriba a la derecha) con el puntito de «sonando»
+        FrameLayout app = new FrameLayout(this);
+        GradientDrawable ad = round(Cockpit.chip(LIGHT), 10);
+        if (LIGHT) ad.setStroke(Math.max(1, (int) s), 0x12000000);
+        app.setBackground(ad);
+        ImageView ai = icon("music_note", 18);
+        ai.setColorFilter(TEXT);
+        FrameLayout.LayoutParams alp = new FrameLayout.LayoutParams((int) (18 * s), (int) (18 * s));
+        alp.gravity = Gravity.CENTER;
+        app.addView(ai, alp);
+        place(card, app, w - p - 34, p - 2, 34, 34);
+        ckDot = new View(this);
+        ckDot.setBackground(round(RED, 4));
+        place(card, ckDot, w - p - 34 + 26, p - 2 - 2, 9, 9);
+        ckDot.setVisibility(View.INVISIBLE);
+        app.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openMusicApp(); } });
+        app.setOnLongClickListener(new View.OnLongClickListener() { public boolean onLongClick(View v) { pickFor("music_app", "Música"); return true; } });
+        float titH = 25 * FONT, artH = 18 * FONT, ctlH = 44;
+        trackTv = tv("Nada sonando", 19, TEXT, true);
+        place(card, trackTv, tx, p, tw - 42, titH);
+        artistTv = tv("Radio, Bluetooth o USB", 13, MUTED, false);
+        place(card, artistTv, tx, p + titH + 2, tw - 42, artH);
+        sourceTv = tv("", 11, SOFT, true);   // no se muestra (renderTrack lo llena)
+        timePosTv = tv("", 11, MUTED, false);   // no se muestra: los minutos van a los lados, arriba de la línea
+        // los minutos arriba de la línea de tiempo (como la referencia)
+        float ctlY = hh - p - ctlH + 4, lineY = ctlY - 12 - 10, minY = lineY - 16;
+        float topFree = p + titH + 2 + artH + 4;
+        if (minY < topFree) { minY = topFree; lineY = minY + 16; }
+        cdPosTv = tv("", 11, MUTED, false);
+        place(card, cdPosTv, tx, minY, 60, 14);
+        cdDurTv = tv("", 11, MUTED, false);
+        cdDurTv.setGravity(Gravity.RIGHT);
+        place(card, cdDurTv, tx + tw - 60, minY, 60, 14);
+        faroBar = new Faro.Timeline(this, s, Faro.track(LIGHT), TEXT);
+        place(card, faroBar, tx - 4, lineY - 4, tw + 8, 18);
+        // controles
+        float cw = tw / 5f;
+        for (int k = 0; k < 5; k++) {
+            float cx = tx + cw * (k + 0.5f);
+            if (k == 2) {
+                FrameLayout play = new FrameLayout(this);
+                play.setBackground(new Cockpit.PlayBg(RED, LIGHT));
+                playIc = new ImageView(this);
+                playIc.setImageBitmap(asset("ic/play_arrow.png"));
+                playIc.setColorFilter(0xFFFFFFFF);
+                FrameLayout.LayoutParams plp = new FrameLayout.LayoutParams((int) (24 * s), (int) (24 * s));
+                plp.gravity = Gravity.CENTER;
+                play.addView(playIc, plp);
+                place(card, play, cx - 26, ctlY - 4, 52, 52);
+                play.setOnClickListener(mediaClick(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE));
+            } else if (k == 1 || k == 3) {
+                FrameLayout b = faroIconBtn(k == 1 ? Faro.I_PREV : Faro.I_NEXT, 44, 22, 0);
+                place(card, b, cx - 22, ctlY, 44, 44);
+                b.setOnClickListener(mediaClick(k == 1 ? KeyEvent.KEYCODE_MEDIA_PREVIOUS : KeyEvent.KEYCODE_MEDIA_NEXT));
+            } else {
+                final int dir = k == 0 ? -1 : 1;
+                FrameLayout b = new FrameLayout(this);
+                b.setBackground(round(Cockpit.chip(LIGHT), 10));
+                Cockpit.Vol vi = new Cockpit.Vol(this, TEXT, dir > 0);
+                FrameLayout.LayoutParams vlp = new FrameLayout.LayoutParams((int) (22 * s), (int) (22 * s));
+                vlp.gravity = Gravity.CENTER;
+                b.addView(vi, vlp);
+                place(card, b, cx - 18, ctlY + 4, 36, 36);
+                b.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { cardsVolume(dir); } });
+            }
+        }
+        card.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openMusicApp(); } });
+        card.setOnLongClickListener(new View.OnLongClickListener() { public boolean onLongClick(View v) { showPlayerDiag(); return true; } });
+        renderTrack();
+    }
+
+    private void buildCockpitMaint(float x, float y, float w, float hh) {
+        FrameLayout card = faroCard(x, y, w, hh);
+        ckMaintBox = card;
+        ckMaintBoxW = w;
+        ckMaintBoxH = hh;
+        renderCockpitMaint();
+    }
+
+    private float ckMaintBoxW, ckMaintBoxH;
+
+    /** «● PRÓXIMOS MANTENIMIENTOS» y los tres más cercanos con lo que falta para cada uno a la derecha. */
+    private void renderCockpitMaint() {
+        final FrameLayout card = ckMaintBox;
+        if (card == null) return;
+        card.removeAllViews();
+        float w = ckMaintBoxW, hh = ckMaintBoxH, p = 16;
+        LinearLayout chip = new LinearLayout(this);
+        chip.setGravity(Gravity.CENTER_VERTICAL);
+        chip.setBackground(round(Cockpit.chip(LIGHT), 14));
+        chip.setPadding((int) (12 * s), 0, (int) (14 * s), 0);
+        View dot = new View(this);
+        dot.setBackground(round(RED, 4));
+        chip.addView(dot, new LinearLayout.LayoutParams((int) (8 * s), (int) (8 * s)));
+        TextView ct = tv("", 12, MUTED, false);
+        ct.setText(I18n.t("Próximos mantenimientos").toUpperCase(I18n.loc));
+        ct.setPadding((int) (8 * s), 0, 0, 0);
+        chip.addView(ct);
+        FrameLayout.LayoutParams clp = new FrameLayout.LayoutParams(-2, (int) (28 * s));
+        clp.gravity = Gravity.TOP | Gravity.LEFT;
+        clp.leftMargin = (int) (p * s);
+        clp.topMargin = (int) (p * s);
+        card.addView(chip, clp);
+        card.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { showSettings(C_MAINT); } });
+        final List<org.json.JSONObject> l = maint();
+        List<double[]> items = new ArrayList<double[]>();   // {lo que falta, índice} (índice -1 = aceite)
+        if (oilOn()) items.add(new double[]{(oilNextKm() - odoKm()) / Math.max(1, prefs.getFloat("oil_interval_km", 5000)), -1});
+        for (int i = 0; i < l.size(); i++) items.add(new double[]{taskFrac(l.get(i)), i});
+        java.util.Collections.sort(items, new java.util.Comparator<double[]>() {
+            public int compare(double[] a, double[] b) { return Double.compare(a[0], b[0]); }
+        });
+        float y0 = p + 28 + 8, area = hh - y0 - p + 4;
+        if (items.isEmpty()) {
+            TextView t1 = tv("Sin mantenimientos programados", 14, TEXT, true);
+            place(card, t1, p, y0 + area / 2 - 22 * FONT, w - 2 * p, 20 * FONT);
+            TextView t2 = tv("Toca para agregar uno", 12, RED, true);
+            place(card, t2, p, y0 + area / 2 + 2, w - 2 * p, 16 * FONT);
+            return;
+        }
+        int rows = 3;
+        float rowH = area / rows;
+        float nameSize = Math.min(17, Math.max(13, rowH * 0.42f));
+        for (int k = 0; k < Math.min(rows, items.size()); k++) {
+            double f = items.get(k)[0];
+            final int idx = (int) items.get(k)[1];
+            String name, left;
+            if (idx < 0) {
+                float lk = oilNextKm() - odoKm();
+                name = I18n.t("Cambio de aceite");
+                left = Math.round(toUnit(lk)) <= 0 ? I18n.t("¡Ya toca!") : fmtDist(lk);
+            } else {
+                org.json.JSONObject o = l.get(idx);
+                name = taskName(o);
+                left = f <= 0 ? I18n.t("¡Ya toca!") : taskLeftText(o);
+            }
+            int uc = Faro.urgency(f, LIGHT);
+            FrameLayout row = new FrameLayout(this);
+            place(card, row, p - 4, y0 + k * rowH, w - 2 * p + 8, rowH);
+            View b = new View(this);
+            b.setBackground(round(f < 0.15 ? uc : TEXT, 3));
+            place(row, b, 6, rowH / 2 - 3, 6, 6);
+            float lw = Math.min(140, (w - 2 * p) * 0.42f);
+            TextView nt = tv("", nameSize, TEXT, false);
+            nt.setText(name);
+            nt.setGravity(Gravity.CENTER_VERTICAL);
+            place(row, nt, 22, 0, w - 2 * p + 8 - 22 - lw - 8, rowH);
+            TextView lt = tv("", 12, f < 0.15 ? uc : MUTED, f < 0.15);
+            lt.setText(left);
+            lt.setGravity(Gravity.CENTER_VERTICAL | Gravity.RIGHT);
+            place(row, lt, w - 2 * p + 8 - lw - 6, 0, lw, rowH);
+            row.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { if (idx < 0) oilMenu(); else taskMenu(idx); } });
+        }
     }
 
     // ───────────────────────── tema premium «Carbono» (2.33) ─────────────────────────
@@ -7304,6 +7984,7 @@ public class Main extends Activity {
             else if (Faro.ID.equals(id)) { Faro.Thumb t = new Faro.Thumb(this, s, portrait, i == 1); t.selected = sel; th = t; }
             else if (Carbono.ID.equals(id)) { Carbono.Thumb t = new Carbono.Thumb(this, s, portrait, i == 1); t.selected = sel; th = t; }
             else if (Cards.ID.equals(id)) { Cards.Thumb t = new Cards.Thumb(this, s, portrait, i == 1); t.selected = sel; th = t; }
+            else if (Cockpit.ID.equals(id)) { Cockpit.Thumb t = new Cockpit.Thumb(this, s, portrait, i == 1); t.selected = sel; th = t; }
             else { Aurora.Thumb t = new Aurora.Thumb(this, s, portrait, i == 1); t.selected = sel; th = t; }
             col.addView(th, new LinearLayout.LayoutParams(-1, -2));
             TextView cap = tv(i == 0 ? "Oscuro" : "Claro", 11, MUTED, false);
@@ -8190,6 +8871,7 @@ public class Main extends Activity {
                     return;
                 }
                 pendingStops.clear();
+                cockpitShowMap();   // Sport Cockpit: la píldora pasa sola a la vista Mapa
                 if (routes.size() == 1) activateChosenRoute(routes.get(0));
                 else showRouteChooser(routes);
             }
@@ -8537,17 +9219,17 @@ public class Main extends Activity {
         String fmt = prefs.getString("clock", "auto");
         boolean h24 = "24".equals(fmt) || ("auto".equals(fmt) && android.text.format.DateFormat.is24HourFormat(this));
         timeTv.setText(I18n.sdf(h24 ? "HH:mm" : "h:mm a").format(now));
-        if (cardsClock && !h24) {
-            // Premium Cards: la hora llena la tarjeta; «a. m.»/«PM» en pequeño para que quepa
+        if ((cardsClock || ckClock) && !h24) {
+            // Premium Cards: la hora llena la tarjeta; «a. m.»/«PM» en pequeño para que quepa (Sport Cockpit: un poco)
             String tt = timeTv.getText().toString();
             int sp = tt.indexOf(' ');
             if (sp > 0) {
                 android.text.SpannableString ss = new android.text.SpannableString(tt);
-                ss.setSpan(new android.text.style.RelativeSizeSpan(0.34f), sp, tt.length(), 0);
+                ss.setSpan(new android.text.style.RelativeSizeSpan(cardsClock ? 0.34f : 0.75f), sp, tt.length(), 0);
                 timeTv.setText(ss);
             }
         }
-        String d = I18n.sdf(vertical && !(premium && !mapOnly) ? "EEE d MMM" : I18n.datePattern()).format(now);
+        String d = I18n.sdf(ckClock || (vertical && !(premium && !mapOnly)) ? "EEE d MMM" : I18n.datePattern()).format(now);
         dateTv.setText(d.substring(0, 1).toUpperCase(I18n.loc) + d.substring(1));
         greetTv.setText(greetingText());
     }
@@ -8639,6 +9321,7 @@ public class Main extends Activity {
         if (carGauge != null) carGauge.setRpm(r);
         if (mapGauge != null) mapGauge.setRpm(r);
         if (faroGauge != null) faroGauge.setRpm(r);
+        if (ckGauge != null) ckGauge.setRpm(r);
         if (carbRpm != null) carbRpm.set(r);
     }
 
@@ -8665,6 +9348,11 @@ public class Main extends Activity {
             int lim = Nav.active != null && Nav.curSpeedLimitKmh > 0
                 ? (useMph() ? Math.max(5, (int) (Math.round((Nav.curSpeedLimitKmh / 1.60934) / 5.0) * 5)) : Nav.curSpeedLimitKmh) : 0;
             faroGauge.setLimit(lim);
+        }
+        if (ckGauge != null) {
+            ckGauge.setSpeed(kmh < 2 ? 0 : v, ok);
+            ckGauge.setLimit(Nav.active != null && Nav.curSpeedLimitKmh > 0
+                ? (useMph() ? Math.max(5, (int) (Math.round((Nav.curSpeedLimitKmh / 1.60934) / 5.0) * 5)) : Nav.curSpeedLimitKmh) : 0);
         }
         if (topSpeedTv != null) topSpeedTv.setText((ok ? String.valueOf(Math.round(kmh < 2 ? 0 : v)) : "--") + " " + (useMph() ? "mph" : "km/h"));
         int gs = ok ? 0 : gpsState();
@@ -8777,6 +9465,7 @@ public class Main extends Activity {
         AudioManager am = (AudioManager) getSystemService(AUDIO_SERVICE);
         boolean on = playingState != null ? playingState : am.isMusicActive();
         playIc.setImageBitmap(asset(on ? "ic/pause.png" : "ic/play_arrow.png"));
+        if (ckDot != null) ckDot.setVisibility(on ? View.VISIBLE : View.INVISIBLE);
     }
 
     // ───────────────────────── pista en reproducción ─────────────────────────
@@ -9276,6 +9965,7 @@ public class Main extends Activity {
             boolean on = playingState != null ? playingState
                     : ((AudioManager) getSystemService(AUDIO_SERVICE)).isMusicActive();
             playIc.setImageBitmap(asset(on ? "ic/pause.png" : "ic/play_arrow.png"));
+            if (ckDot != null) ckDot.setVisibility(on ? View.VISIBLE : View.INVISIBLE);
         }
     }
 
@@ -11168,7 +11858,19 @@ public class Main extends Activity {
                         prefs.edit().putString("cards_dock", dk[i]).apply(); rebuild(); showSettings(C_HOME);
                     }});
             }
-            if (Faro.ID.equals(pid) || Carbono.ID.equals(pid) || Cards.ID.equals(pid)) {
+            if (Cockpit.ID.equals(pid)) {
+                final String[] ck = {"left", "right", "bottom"};
+                int ci = Math.max(0, java.util.Arrays.asList(ck).indexOf(prefs.getString("ck_dock", "left")));
+                segmented(pn, "Barra de apps", noDock ? "Está oculta en Barra de apps → Diseño de la barra." : "A un costado o abajo de todo.",
+                    new String[]{"Izquierda", "Derecha", "Abajo"}, ci, new IntCb() { public void on(int i) {
+                        prefs.edit().putString("ck_dock", ck[i]).apply(); rebuild(); showSettings(C_HOME);
+                    }});
+                segmented(pn, "Reproductor de música", "Los mantenimientos van del otro lado.", new String[]{"Izquierda", "Derecha"},
+                    "right".equals(prefs.getString("ck_player", "left")) ? 1 : 0, new IntCb() { public void on(int i) {
+                        prefs.edit().putString("ck_player", i == 0 ? "left" : "right").apply(); rebuild(); showSettings(C_HOME);
+                    }});
+            }
+            if (Faro.ID.equals(pid) || Carbono.ID.equals(pid) || Cards.ID.equals(pid) || Cockpit.ID.equals(pid)) {
                 if (Faro.ID.equals(pid)) {
                 final String[] cols = Faro.CAR_COLORS;
                 int ci = Math.max(0, java.util.Arrays.asList(cols).indexOf(Faro.car(prefs.getString("faro_car", "silver"))));
@@ -11217,7 +11919,7 @@ public class Main extends Activity {
         }
         // solo donde hay dónde dibujarlas: velocímetro analógico o mixto, Faro y Carbono (el digital de los demás
         // temas no tiene espacio libre al lado del número)
-        if (carSpeed && (carGauge != null || mapGauge != null || faroGauge != null || carbRpm != null))
+        if (carSpeed && (carGauge != null || mapGauge != null || faroGauge != null || carbRpm != null || ckGauge != null))
             toggle(lay, "Revoluciones junto al velocímetro", "Un cuentarrevoluciones chico al lado, con las RPM del escáner OBD (solo mientras está conectado)",
                 prefs.getBoolean("speedo_rpm", false), new IntCb() { public void on(int i) {
                     // rebuild() vuelve a dibujar Ajustes con el interruptor en su nuevo estado (antes solo se guardaba y el

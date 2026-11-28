@@ -75,6 +75,49 @@ public class PlayerArt extends View {
         }
     }
 
+    /** Sport Cockpit: carátula redonda que llena la vista, con un resplandor del acento alrededor (sin anillo). */
+    private boolean disc;
+    private final Paint glow = new Paint(Paint.ANTI_ALIAS_FLAG);
+    private int glowColor;
+    private float glowR = -1;
+    void setDisc(int fill, int glowCol) {
+        disc = true;
+        bg.setColor(fill);
+        glowColor = glowCol;
+        glowR = -1;
+        invalidate();
+    }
+
+    private void drawDisc(Canvas c, float w, float h) {
+        float cx = w / 2f, cy = h / 2f, R = Math.min(w, h) / 2f, ra = R * 0.80f;
+        if (glowR != R) {
+            glow.setShader(new android.graphics.RadialGradient(cx, cy, R, new int[]{glowColor, glowColor, Aurora.a(glowColor, 0.25f), Aurora.a(glowColor, 0f)},
+                new float[]{0f, 0.76f, 0.86f, 1f}, Shader.TileMode.CLAMP));
+            glowR = R;
+        }
+        c.drawCircle(cx, cy, R, glow);
+        if (bitmap != null && !bitmap.isRecycled()) {
+            BitmapShader sh = new BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
+            float scale = Math.max(2 * ra / bitmap.getWidth(), 2 * ra / bitmap.getHeight());
+            Matrix m = new Matrix();
+            m.setScale(scale, scale);
+            m.postTranslate(cx - bitmap.getWidth() * scale / 2f, cy - bitmap.getHeight() * scale / 2f);
+            sh.setLocalMatrix(m);
+            art.setShader(sh);
+            c.drawCircle(cx, cy, ra, art);
+        } else {
+            c.drawCircle(cx, cy, ra, bg);
+            if (placeholder != null) {
+                float sz = ra * 0.8f;
+                RectF d = new RectF(cx - sz / 2, cy - sz / 2, cx + sz / 2, cy + sz / 2);
+                Paint p = new Paint(Paint.FILTER_BITMAP_FLAG);
+                p.setAlpha(170);
+                if (Main.LIGHT) p.setColorFilter(new android.graphics.PorterDuffColorFilter(Main.MUTED, android.graphics.PorterDuff.Mode.SRC_IN));
+                c.drawBitmap(placeholder, null, d, p);
+            }
+        }
+    }
+
     void setSquare(int track, int fill) {
         square = true;
         ring.setColor(track);
@@ -154,6 +197,7 @@ public class PlayerArt extends View {
     @Override
     protected void onDraw(Canvas c) {
         float w = getWidth(), h = getHeight();
+        if (disc) { drawDisc(c, w, h); return; }
         if (tile) { drawTile(c, w, h); return; }
         if (square) { drawSquare(c, w, h); return; }
         float cx = w / 2f, cy = h / 2f;

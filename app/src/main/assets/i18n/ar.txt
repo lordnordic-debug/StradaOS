@@ -1962,3 +1962,8 @@ Quitar el acceso	إزالة الاختصار
 No se pudo abrir la app. Déjala presionada para elegir otra.	تعذّر فتح التطبيق. اضغط عليه مطولاً لاختيار تطبيق آخر.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	الشريط مخفي من تصميم الشريط ← شريط التطبيقات. على الجانبين تمتد البطاقات حتى الأسفل.
 A los costados, las tarjetas llegan hasta abajo.	على الجانبين تمتد البطاقات حتى الأسفل.
+Un tablero en píldora con tu color de acento: el velocímetro deportivo y el mapa redondos con el logo al medio, y la hora, el clima y la fecha en su pestaña. Desliza la píldora para agrandar el mapa o ver un video. Abajo, el reproductor con la carátula redonda y tus próximos mantenimientos (cámbialos de lado). La barra de apps va a un costado o abajo.	لوحة قيادة على شكل كبسولة بلون التمييز الذي اخترته: عداد السرعة الرياضي والخريطة في دوائر والشعار في المنتصف، والوقت والطقس والتاريخ في لسانها. اسحب الكبسولة لتكبير الخريطة أو مشاهدة فيديو. في الأسفل، المشغّل بغلاف دائري وصياناتك القادمة (يمكنك تبديل جانبيهما). شريط التطبيقات على أحد الجانبين أو في الأسفل.
+Próximos mantenimientos	الصيانات القادمة
+Los mantenimientos van del otro lado.	تنتقل الصيانات إلى الجانب الآخر.
+A un costado o abajo de todo.	على أحد الجانبين أو في الأسفل تمامًا.
+Está oculta en Barra de apps → Diseño de la barra.	الشريط مخفي من تصميم الشريط ← شريط التطبيقات.

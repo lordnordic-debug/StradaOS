@@ -1962,3 +1962,8 @@ Quitar el acceso	Rimuovi scorciatoia
 No se pudo abrir la app. Déjala presionada para elegir otra.	Impossibile aprire l'app. Tienila premuta per sceglierne un'altra.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	È nascosta in Barra delle app → Aspetto della barra. Ai lati, le schede arrivano fino in fondo.
 A los costados, las tarjetas llegan hasta abajo.	Ai lati, le schede arrivano fino in fondo.
+Un tablero en píldora con tu color de acento: el velocímetro deportivo y el mapa redondos con el logo al medio, y la hora, el clima y la fecha en su pestaña. Desliza la píldora para agrandar el mapa o ver un video. Abajo, el reproductor con la carátula redonda y tus próximos mantenimientos (cámbialos de lado). La barra de apps va a un costado o abajo.	Un cruscotto a pillola con il tuo colore d'accento: il tachimetro sportivo e la mappa in cerchi con il logo al centro, e ora, meteo e data nella sua linguetta. Scorri la pillola per ingrandire la mappa o guardare un video. Sotto, il lettore con la copertina rotonda e le tue prossime manutenzioni (scambiale di lato). La barra delle app va su un lato o in basso.
+Próximos mantenimientos	Prossime manutenzioni
+Los mantenimientos van del otro lado.	Le manutenzioni vanno dall'altro lato.
+A un costado o abajo de todo.	Su un lato o in fondo.
+Está oculta en Barra de apps → Diseño de la barra.	È nascosta in Barra delle app → Aspetto della barra.

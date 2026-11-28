@@ -1962,3 +1962,8 @@ Quitar el acceso	Retirer le raccourci
 No se pudo abrir la app. Déjala presionada para elegir otra.	Impossible d'ouvrir l'appli. Appuie longuement pour en choisir une autre.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Elle est masquée dans Barre d'applis → Disposition de la barre. Sur les côtés, les cartes descendent jusqu'en bas.
 A los costados, las tarjetas llegan hasta abajo.	Sur les côtés, les cartes descendent jusqu'en bas.
+Un tablero en píldora con tu color de acento: el velocímetro deportivo y el mapa redondos con el logo al medio, y la hora, el clima y la fecha en su pestaña. Desliza la píldora para agrandar el mapa o ver un video. Abajo, el reproductor con la carátula redonda y tus próximos mantenimientos (cámbialos de lado). La barra de apps va a un costado o abajo.	Un tableau de bord en forme de pilule à votre couleur d'accent : le compteur sportif et la carte en cercles avec le logo au milieu, et l'heure, la météo et la date dans son onglet. Faites glisser la pilule pour agrandir la carte ou regarder une vidéo. En bas, le lecteur avec la pochette ronde et vos prochains entretiens (inversez leurs côtés). La barre d'applis se place sur un côté ou en bas.
+Próximos mantenimientos	Prochains entretiens
+Los mantenimientos van del otro lado.	Les entretiens passent de l'autre côté.
+A un costado o abajo de todo.	Sur un côté ou tout en bas.
+Está oculta en Barra de apps → Diseño de la barra.	Elle est masquée dans Barre d'applis → Disposition de la barre.

@@ -1962,3 +1962,8 @@ Quitar el acceso	Verknüpfung entfernen
 No se pudo abrir la app. Déjala presionada para elegir otra.	Die App ließ sich nicht öffnen. Gedrückt halten, um eine andere zu wählen.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Sie ist unter App-Leiste → Leistenlayout ausgeblendet. Seitlich reichen die Karten bis ganz nach unten.
 A los costados, las tarjetas llegan hasta abajo.	Seitlich reichen die Karten bis ganz nach unten.
+Un tablero en píldora con tu color de acento: el velocímetro deportivo y el mapa redondos con el logo al medio, y la hora, el clima y la fecha en su pestaña. Desliza la píldora para agrandar el mapa o ver un video. Abajo, el reproductor con la carátula redonda y tus próximos mantenimientos (cámbialos de lado). La barra de apps va a un costado o abajo.	Ein Cockpit in Pillenform in deiner Akzentfarbe: der sportliche Tacho und die Karte in Kreisen mit dem Logo in der Mitte, dazu Uhrzeit, Wetter und Datum in seinem Reiter. Wische über die Pille, um die Karte zu vergrößern oder ein Video anzusehen. Darunter der Player mit rundem Cover und deine nächsten Wartungen (Seiten tauschbar). Die App-Leiste kommt an eine Seite oder nach unten.
+Próximos mantenimientos	Nächste Wartungen
+Los mantenimientos van del otro lado.	Die Wartungen kommen auf die andere Seite.
+A un costado o abajo de todo.	An einer Seite oder ganz unten.
+Está oculta en Barra de apps → Diseño de la barra.	Sie ist unter App-Leiste → Leistenlayout ausgeblendet.

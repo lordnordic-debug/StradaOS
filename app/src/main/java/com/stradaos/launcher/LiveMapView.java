@@ -189,7 +189,20 @@ public class LiveMapView extends View {
 
     // Tema Faro (2.25): dónde va la atribución de OSM (px; alineada a la izquierda), si no se navega.
     private float attrX = -1, attrY = -1;
-    void setAttribution(float x, float y) { attrX = x; attrY = y; invalidate(); }
+    private boolean attrCenter;
+    void setAttribution(float x, float y) { attrX = x; attrY = y; attrCenter = false; invalidate(); }
+    /** Sport Cockpit: la atribución centrada en x (dentro del círculo o de la píldora). */
+    void setAttributionCentered(float x, float y) { attrX = x; attrY = y; attrCenter = true; invalidate(); }
+
+    // Sport Cockpit (2.40): el mapa llena la píldora, pero en «Cabina» solo se ve por un hueco redondo. El carro se
+    // centra en ese hueco (focus, en px); el hueco crece hasta la píldora y el centro lo sigue cuadro a cuadro.
+    private boolean focusOn;
+    private float fL, fT, fR, fB;
+    void setFocus(float l, float t, float r, float b) {
+        focusOn = true; fL = l; fT = t; fR = r; fB = b;
+        invalidate();
+    }
+    void clearFocus() { if (focusOn) { focusOn = false; invalidate(); } }
 
     // Tema Cobalto: el mapa se difumina hacia un borde (1 = derecha, 2 = abajo) hasta quedar en el fondo.
     private int fadeEdge;
@@ -937,6 +950,11 @@ public class LiveMapView extends View {
             boolean rot = !ex && headingUp && !Float.isNaN(dBr);   // explorando: norte arriba
             float mapBr = rot ? dBr + backBr * bk : 0;             // al volver al carro, el giro también se desliza
             float cx = leftInset + (w - leftInset) / 2f, cy = ex ? h / 2f : Nav.active != null ? (rot ? h * 0.54f : h * 0.50f) : h * 0.42f;
+            if (focusOn && !ex) {
+                float fh = fB - fT;
+                cx = (fL + fR) / 2f;
+                cy = fT + (Nav.active != null ? (rot ? fh * 0.54f : fh * 0.50f) : fh * 0.46f);
+            }
             // eligiendo entre varias rutas (Nav.altRoutes) todavía no se navega: el carro baja al elegir una
             if (carLow && !ex) cy = lowCy(cy, rot && Nav.active != null && Nav.altRoutes == null, h, now);
             if (bk > 0) cy += (backCy - cy) * bk;
@@ -1011,7 +1029,7 @@ public class LiveMapView extends View {
             String attr = anyFile ? I18n.t("© colaboradores de OpenStreetMap") + " · mapsforge"
                     : provider == 5 ? "© Esri, HERE, Garmin, © OpenStreetMap" : provider == 4 ? "© OpenStreetMap, SRTM · © OpenTopoMap" : I18n.t("© colaboradores de OpenStreetMap");
             float ax = w - text.measureText(attr) - 10 * s, ay = (Nav.active != null ? 96 : 14) * s;
-            if (attrY >= 0 && Nav.active == null) { ax = attrX + leftInset; ay = attrY; }
+            if (attrY >= 0 && Nav.active == null) { ax = attrCenter ? attrX - text.measureText(attr) / 2f : attrX + leftInset; ay = attrY; }
             if (bd && fadeEdge == 1 && fadeLen > 0) {
                 // Cobalto: antes del difuminado (si no, queda detrás de la tarjeta del reproductor) y un poco más
                 // arriba para no rozar los botones de la esquina

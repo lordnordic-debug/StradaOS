@@ -74,6 +74,24 @@ if part 1; then
   step premium-cards-abajo pref:cards_dock= 4
   step premium-cards-visible pref:cards_player_open=true 4
   step premium-cards-oscuro tema:oscuro 5
+  # ── 2.40: Sport Cockpit (Cabina ↔ Mapa, la barra de apps en sus tres lugares, el reproductor de lado y el video) ──
+  step premium-cockpit tema-premium:cockpit 6
+  step premium-cockpit-pista pista-demo:Night_Drive 3
+  step premium-cockpit-mapa cabina:1a 4
+  step premium-cockpit-cabina cabina:0a 4
+  step premium-cockpit-derecha pref:ck_dock=right 4
+  step premium-cockpit-abajo pref:ck_dock=bottom 4
+  step premium-cockpit-reproductor pref:ck_player=right 4
+  step premium-cockpit-claro tema:claro 5
+  step premium-cockpit-mapa-claro cabina:1 4
+  step premium-cockpit-video pref:center_card=both 4
+  step premium-cockpit-pag-video pagina:1 4
+  step premium-cockpit-pag-cabina pagina:1 4
+  step premium-cockpit-solo-mapa pref:center_card= 4
+  step premium-cockpit-izquierda pref:ck_dock= 4
+  step premium-cockpit-rep-izq pref:ck_player= 4
+  step premium-cockpit-oscuro tema:oscuro 5
+  step premium-cockpit-vuelve-cabina cabina:0 3
   for i in 0 1 2 3 4 5; do step "gratis-$i" "tema-gratis:$i" 5; done
   step gratis-1 tema-gratis:1 5
   # ── 2.36 (#74): íconos «Muy grande» y «Enorme» en la barra lateral (agrupada al centro), abajo y compacta ──
@@ -179,7 +197,7 @@ if part 1; then
   adb shell input swipe 330 200 700 200 250; sleep 3
   shot "$(printf %03d $N)-deslizar-mapa"
   # el carrusel en cada tema (página del video y del mapa)
-  for t in tema-premium:aurora tema-premium:cobalto tema-premium:faro tema-premium:carbono tema-premium:cards tema-premium: ; do
+  for t in tema-premium:aurora tema-premium:cobalto tema-premium:faro tema-premium:carbono tema-premium:cards tema-premium:cockpit tema-premium: ; do
     n=${t#tema-premium:}; [ -z "$n" ] && n=clasico
     step "centro-$n" "$t" 6
     step "centro-$n-video" centro:video 6

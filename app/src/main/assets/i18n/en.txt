@@ -1966,3 +1966,8 @@ Quitar el acceso	Remove shortcut
 No se pudo abrir la app. Déjala presionada para elegir otra.	Couldn't open the app. Long-press it to choose another one.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	It's hidden in App bar → Bar layout. On the sides, the cards reach all the way down.
 A los costados, las tarjetas llegan hasta abajo.	On the sides, the cards reach all the way down.
+Un tablero en píldora con tu color de acento: el velocímetro deportivo y el mapa redondos con el logo al medio, y la hora, el clima y la fecha en su pestaña. Desliza la píldora para agrandar el mapa o ver un video. Abajo, el reproductor con la carátula redonda y tus próximos mantenimientos (cámbialos de lado). La barra de apps va a un costado o abajo.	A pill-shaped dashboard with your accent color: the sporty speedometer and the map in circles with the logo in the middle, plus the time, weather and date on its tab. Swipe the pill to enlarge the map or watch a video. Below, the player with round cover art and your upcoming maintenance (swap their sides). The app bar goes on one side or at the bottom.
+Próximos mantenimientos	Upcoming maintenance
+Los mantenimientos van del otro lado.	Maintenance goes on the other side.
+A un costado o abajo de todo.	On one side or along the bottom.
+Está oculta en Barra de apps → Diseño de la barra.	It's hidden in App bar → Bar layout.

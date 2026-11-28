@@ -1965,3 +1965,8 @@ Quitar el acceso	Remover o atalho
 No se pudo abrir la app. Déjala presionada para elegir otra.	Não foi possível abrir o app. Mantenha pressionado para escolher outro.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Está oculta em Barra de apps → Layout da barra. Nas laterais, os cartões chegam até embaixo.
 A los costados, las tarjetas llegan hasta abajo.	Nas laterais, os cartões chegam até embaixo.
+Un tablero en píldora con tu color de acento: el velocímetro deportivo y el mapa redondos con el logo al medio, y la hora, el clima y la fecha en su pestaña. Desliza la píldora para agrandar el mapa o ver un video. Abajo, el reproductor con la carátula redonda y tus próximos mantenimientos (cámbialos de lado). La barra de apps va a un costado o abajo.	Um painel em pílula com a sua cor de destaque: o velocímetro esportivo e o mapa em círculos com o logo no meio, e a hora, o clima e a data na aba. Deslize a pílula para ampliar o mapa ou ver um vídeo. Embaixo, o player com a capa redonda e suas próximas manutenções (troque-os de lado). A barra de apps fica de um lado ou embaixo.
+Próximos mantenimientos	Próximas manutenções
+Los mantenimientos van del otro lado.	As manutenções ficam do outro lado.
+A un costado o abajo de todo.	De um lado ou embaixo de tudo.
+Está oculta en Barra de apps → Diseño de la barra.	Está oculta em Barra de apps → Layout da barra.

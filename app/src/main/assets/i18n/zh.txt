@@ -1962,3 +1962,8 @@ Quitar el acceso	移除快捷方式
 No se pudo abrir la app. Déjala presionada para elegir otra.	无法打开该应用。长按可选择其他应用。
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	已在「应用栏 → 栏布局」中隐藏。放在两侧时，卡片会延伸到底部。
 A los costados, las tarjetas llegan hasta abajo.	放在两侧时，卡片会延伸到底部。
+Un tablero en píldora con tu color de acento: el velocímetro deportivo y el mapa redondos con el logo al medio, y la hora, el clima y la fecha en su pestaña. Desliza la píldora para agrandar el mapa o ver un video. Abajo, el reproductor con la carátula redonda y tus próximos mantenimientos (cámbialos de lado). La barra de apps va a un costado o abajo.	胶囊形仪表盘，使用你的强调色：运动风速度表和地图呈圆形，标志居中，标签上显示时间、天气和日期。滑动胶囊可放大地图或观看视频。下方是带圆形封面的播放器和即将到来的保养项目（可交换左右位置）。应用栏可放在一侧或底部。
+Próximos mantenimientos	即将到来的保养
+Los mantenimientos van del otro lado.	保养项目放在另一侧。
+A un costado o abajo de todo.	放在一侧或最底部。
+Está oculta en Barra de apps → Diseño de la barra.	已在「应用栏 → 栏布局」中隐藏。

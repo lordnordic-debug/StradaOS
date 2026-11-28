@@ -1964,3 +1964,8 @@ Quitar el acceso	Kısayolu kaldır
 No se pudo abrir la app. Déjala presionada para elegir otra.	Uygulama açılamadı. Başka birini seçmek için basılı tut.
 Está oculta en Barra de apps → Diseño de la barra. A los costados, las tarjetas llegan hasta abajo.	Uygulama çubuğu → Çubuk düzeni bölümünde gizli. Yanlarda kartlar en alta kadar uzanır.
 A los costados, las tarjetas llegan hasta abajo.	Yanlarda kartlar en alta kadar uzanır.
+Un tablero en píldora con tu color de acento: el velocímetro deportivo y el mapa redondos con el logo al medio, y la hora, el clima y la fecha en su pestaña. Desliza la píldora para agrandar el mapa o ver un video. Abajo, el reproductor con la carátula redonda y tus próximos mantenimientos (cámbialos de lado). La barra de apps va a un costado o abajo.	Vurgu renginde hap biçiminde bir gösterge paneli: sportif hız göstergesi ve harita daireler içinde, ortada logo; saat, hava durumu ve tarih de sekmesinde. Haritayı büyütmek ya da video izlemek için hapı kaydırın. Altta yuvarlak kapaklı oynatıcı ve yaklaşan bakımlarınız (yerlerini değiştirebilirsiniz). Uygulama çubuğu bir yanda ya da altta durur.
+Próximos mantenimientos	Yaklaşan bakımlar
+Los mantenimientos van del otro lado.	Bakımlar diğer tarafa geçer.
+A un costado o abajo de todo.	Bir yanda ya da en altta.
+Está oculta en Barra de apps → Diseño de la barra.	Uygulama çubuğu → Çubuk düzeni bölümünde gizli.

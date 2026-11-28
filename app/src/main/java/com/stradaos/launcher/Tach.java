@@ -49,6 +49,9 @@ final class Tach {
 
     boolean visible() { return !Float.isNaN(target); }
 
+    /** Valor que se ve ahora (se acerca a la lectura nueva cuadro a cuadro); para Sport Cockpit, que lo dibuja a su modo. */
+    float value() { return val; }
+
     /** Avanza la animación; true mientras la aguja se sigue moviendo. */
     boolean step() {
         if (last == 0 || Float.isNaN(target)) return false;

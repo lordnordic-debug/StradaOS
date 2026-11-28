@@ -25,6 +25,13 @@ public class CenterPager extends FrameLayout {
 
     interface Listener { void onPage(int page); }
 
+    /**
+     * Sport Cockpit (2.40): en la página 0, un deslizamiento puede quedarse adentro de la página (pasar de Cabina a
+     * Mapa agrandando el mapa) en vez de cambiar de página. dir: +1 = deslizar a la izquierda (siguiente), -1 = a la
+     * derecha. Con una sola página el carrusel también responde, solo para esto.
+     */
+    interface Gate { boolean handles(int dir); void go(int dir); }
+
     private static final long DOTS_MS = 3500, FADE_MS = 450;
 
     private final float s;
@@ -34,6 +41,10 @@ public class CenterPager extends FrameLayout {
     private float downX, downY, dx;
     private boolean dragging, settling;
     private VelocityTracker vt;
+    private Gate gate;
+    /** Deslizamiento que se queda en la página (lo maneja {@link Gate}). */
+    private boolean gated;
+    private int gateDir, lastDir;
     private final Paint dot = new Paint(Paint.ANTI_ALIAS_FLAG), shade = new Paint(Paint.ANTI_ALIAS_FLAG);
     private long dotsUntil;
 
@@ -49,6 +60,17 @@ public class CenterPager extends FrameLayout {
 
     void setListener(Listener l) { listener = l; }
 
+    void setGate(Gate g) { gate = g; }
+
+    /** Sport Cockpit: los puntitos cuentan las vistas (Cabina, Mapa, Video) y no las páginas; y van más arriba. */
+    private int vCount, vIndex;
+    private float dotsUp = -1;
+    void setVirtualDots(int count, int index) { vCount = count; vIndex = index; showDots(); }
+    void setDotsBottom(float px) { dotsUp = px; invalidate(); }
+
+    /** Hacia dónde fue el último cambio de página: +1 siguiente, -1 anterior (0 sin animación). */
+    int lastDir() { return lastDir; }
+
     int page() { return page; }
 
     /** Agrega una página del tamaño de la tarjeta. */
@@ -62,6 +84,7 @@ public class CenterPager extends FrameLayout {
         int n = getChildCount();
         if (n == 0) return;
         page = ((p % n) + n) % n;
+        lastDir = 0;
         for (int i = 0; i < n; i++) {
             View v = getChildAt(i);
             v.animate().cancel();
@@ -118,6 +141,7 @@ public class CenterPager extends FrameLayout {
                 cur.setVisibility(INVISIBLE);
                 cur.setTranslationX(0);
                 page = o;
+                lastDir = dx < 0 ? 1 : -1;
                 showDots();
                 if (listener != null) listener.onPage(page);
             }});
@@ -132,11 +156,13 @@ public class CenterPager extends FrameLayout {
         dragging = false;
     }
 
+    private boolean active() { return getChildCount() >= 2 || (gate != null && getChildCount() == 1); }
+
     @Override public boolean onInterceptTouchEvent(MotionEvent e) {
-        if (getChildCount() < 2) return false;
+        if (!active()) return false;
         switch (e.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
-                downX = e.getX(); downY = e.getY(); dragging = false;
+                downX = e.getX(); downY = e.getY(); dragging = false; gated = false;
                 track(e, true);
                 showDots();
                 return settling;
@@ -153,6 +179,13 @@ public class CenterPager extends FrameLayout {
     private boolean startDrag(MotionEvent e) {
         float ddx = e.getX() - downX, ddy = e.getY() - downY;
         if (settling || Math.abs(ddx) < slop || Math.abs(ddx) < Math.abs(ddy) * 1.3f) return false;
+        int dir = ddx < 0 ? 1 : -1;
+        if (gate != null && page == 0 && (getChildCount() < 2 || gate.handles(dir))) {
+            gated = true;
+            gateDir = dir;
+            if (getParent() != null) getParent().requestDisallowInterceptTouchEvent(true);
+            return true;
+        }
         dragging = true;
         downX += ddx > 0 ? slop : -slop;    // que no salte la distancia de arranque
         if (getParent() != null) getParent().requestDisallowInterceptTouchEvent(true);
@@ -165,16 +198,25 @@ public class CenterPager extends FrameLayout {
     }
 
     @Override public boolean onTouchEvent(MotionEvent e) {
-        if (getChildCount() < 2) return false;
+        if (!active()) return false;
+        if (gated) {
+            int a = e.getActionMasked();
+            if (a == MotionEvent.ACTION_UP) {
+                gated = false;
+                if (Math.abs(e.getX() - downX) > 36 * s) gate.go(gateDir);
+            } else if (a == MotionEvent.ACTION_CANCEL) gated = false;
+            return true;
+        }
         switch (e.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
-                downX = e.getX(); downY = e.getY(); dragging = false;
+                downX = e.getX(); downY = e.getY(); dragging = false; gated = false;
                 track(e, true);
                 showDots();
                 return true;
             case MotionEvent.ACTION_MOVE:
                 track(e, false);
                 if (!dragging && !startDrag(e)) return true;
+                if (gated) return true;
                 dx = e.getX() - downX;
                 if (dx == 0) dx = -0.01f;
                 layoutDrag();
@@ -197,12 +239,12 @@ public class CenterPager extends FrameLayout {
 
     @Override protected void dispatchDraw(Canvas c) {
         super.dispatchDraw(c);
-        int n = getChildCount();
+        int n = vCount > 0 ? vCount : getChildCount(), cur = vCount > 0 ? vIndex : page;
         if (n < 2) return;
         long now = SystemClock.uptimeMillis();
         float a = now < dotsUntil ? 1f : Math.max(0f, 1f - (now - dotsUntil) / (float) FADE_MS);
         if (a <= 0) return;
-        float r = 3.2f * s, gap = 12 * s, y = getHeight() - 8 * s;
+        float r = 3.2f * s, gap = 12 * s, y = getHeight() - (dotsUp >= 0 ? dotsUp : 8 * s);
         float x0 = getWidth() / 2f - (n - 1) * gap / 2f;
         shade.setColor(0x000000);
         shade.setAlpha(Math.round(90 * a));
@@ -210,7 +252,7 @@ public class CenterPager extends FrameLayout {
         for (int i = 0; i < n; i++) {
             float x = x0 + i * gap;
             c.drawCircle(x, y, r + 1.4f * s, shade);
-            dot.setAlpha(Math.round((i == page ? 255 : 110) * a));
+            dot.setAlpha(Math.round((i == cur ? 255 : 110) * a));
             c.drawCircle(x, y, r, dot);
         }
         removeCallbacks(redraw);
