@@ -1,0 +1,1872 @@
+--------- beginning of kernel
+E/kvm     (    0): no hardware support for 'kvm_intel'
+E/kvm     (    0): no hardware support for 'kvm_amd'
+E/init    (    0): Failed to copy /avb into /metadata/gsi/dsu/avb/: No such file or directory
+E/init    (    0): [libfs_avb] Device path not found: /dev/block/by-name/system
+E/init    (    0): [libfs_avb] Device path not found: /dev/block/by-name/system
+E/init    (    0): Failed to open package /system/etc/selinux/apex/SEPolicy.zip: No such file or directory
+E/selinux (    0): SELinux:  Could not stat /dev/selinux: No such file or directory.
+E/selinux (    0): SELinux: Could not get canonical path for /metadata/ota/rollback-indicator restorecon: No such file or directory.
+E/selinux (    0): SELinux:  Could not stat /metadata/gsi: No such file or directory.
+E/cutils-trace(    0): Error opening trace file: No such file or directory (2)
+E/cutils-trace(    0): Error opening trace file: Permission denied (13)
+E/selinux (    0): SELinux:  setxattr failed: /cache:  Read-only file system
+--------- beginning of main
+E/HidlServiceManagement(  155): Service android.system.suspend@1.0::ISystemSuspend/default must be in VINTF manifest in order to register/get.
+E/dlkm_loader(    0): LoadWithAliases was unable to load vkms
+--------- beginning of system
+E/keystore2(  156): system/security/keystore2/src/error.rs:180 - system/security/keystore2/src/security_level.rs:622
+E/keystore2(  156): 
+E/keystore2(  156): Caused by:
+E/keystore2(  156):     0: system/security/keystore2/src/security_level.rs:620: While generating Key without explicit attestation key.
+E/keystore2(  156):     1: Error::Km(r#ROLLBACK_RESISTANCE_UNAVAILABLE)
+E/vold    (  146): keystore2 Keystore generateKey returned service specific error: -67
+E/vold    (    0): keystore2 Keystore generateKey returned service specific error: -67
+E/init    (    0): Unable to set property 'ro.boottime.init.fsck.data' from uid:0 gid:0 pid:146: Read-only property was already set
+E/init    (    0): Unable to set property 'ro.boottime.init.mount.data' from uid:0 gid:0 pid:146: Read-only property was already set
+E/keystore2(  156): system/security/keystore2/src/error.rs:180 - system/security/keystore2/src/security_level.rs:622
+E/keystore2(  156): 
+E/keystore2(  156): Caused by:
+E/keystore2(  156):     0: system/security/keystore2/src/security_level.rs:620: While generating Key without explicit attestation key.
+E/keystore2(  156):     1: Error::Km(r#ROLLBACK_RESISTANCE_UNAVAILABLE)
+E/vold    (  146): keystore2 Keystore generateKey returned service specific error: -67
+E/vold    (    0): keystore2 Keystore generateKey returned service specific error: -67
+E/init    (    0): Failed to set encryption policy of /data/misc to 35d8d186507fc656696098eb82e7258e v2 modes 1/4 flags 0x2: Directory not empty
+E/logwrapper(    0): executing ls failed: Permission denied
+E/logwrapper(    0):  
+E/init    (    0): ls -laZ /data/misc returned failure: 255
+E/init    (    0): Setting 35d8d186507fc656696098eb82e7258e policy on /data/misc failed!
+E/init    (    0): Rebooting into recovery
+E/keystore2(  156): system/security/keystore2/src/keystore2_main.rs:69 - [SQLITE3] 17: statement aborts at 28: [CREATE TABLE IF NOT EXISTS persistent.version (
+E/keystore2(  156):                 id INTEGER PRIMARY KEY,
+E/keystore2(  156):                 version INTEGER);] database schema has changed
+E/keystore2(  156): system/security/keystore2/src/maintenance.rs:192 - Call to earlyBootEnded failed for security level STRONGBOX: system/security/keystore2/src/maintenance.rs:167: getting keymint device.
+E/keystore2(  156): system/security/keystore2/src/error.rs:180 - system/security/keystore2/src/maintenance.rs:167: getting keymint device
+E/keystore2(  156): 
+E/keystore2(  156): Caused by:
+E/keystore2(  156):     0: system/security/keystore2/src/globals.rs:335: Cannot connect to Keymint
+E/keystore2(  156):     1: system/security/keystore2/src/globals.rs:246: Trying to get Legacy wrapper.
+E/keystore2(  156):     2: Error::Km(r#HARDWARE_TYPE_UNAVAILABLE)
+E/vold    (  146): keystore2 Keystore earlyBootEnded returned service specific error: -68
+E/vold    (    0): keystore2 Keystore earlyBootEnded returned service specific error: -68
+E/init    (    0): Could not set 'ro.logd.size' to '2M' in /data/local.prop: Read-only property was already set
+E/init    (    0): Could not load single persistent property file, trying legacy directory: Unable to read persistent property file: open() failed: No such file or directory
+E/logd    (    0): Cannot read /data/misc/logd/event-log-tags
+E/logd    (    0): FrameworkListener: read() failed (Connection reset by peer)
+E/keystore2(  156): system/security/keystore2/src/error.rs:180 - system/security/keystore2/src/security_level.rs:622
+E/keystore2(  156): 
+E/keystore2(  156): Caused by:
+E/keystore2(  156):     0: system/security/keystore2/src/security_level.rs:620: While generating Key without explicit attestation key.
+E/keystore2(  156):     1: Error::Km(r#ROLLBACK_RESISTANCE_UNAVAILABLE)
+E/vold    (  146): keystore2 Keystore generateKey returned service specific error: -67
+E/vold    (    0): keystore2 Keystore generateKey returned service specific error: -67
+E/selinux (    0): SELinux:  Could not stat /data/dalvik-cache/arm: No such file or directory.
+E/selinux (    0): SELinux:  Could not stat /data/dalvik-cache/arm64: No such file or directory.
+E/selinux (    0): SELinux:  Could not stat /data/dalvik-cache/riscv64: No such file or directory.
+E/selinux (    0): SELinux:  Could not stat /data/dalvik-cache/x86: No such file or directory.
+E/selinux (    0): SELinux:  Could not stat /data/dalvik-cache/x86_64: No such file or directory.
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/TcUtils (  324): NLMSG_ERROR message return error: -2
+E/LegacySupport(  330): Could not get passthrough implementation for android.hardware.soundtrigger@2.3::ISoundTriggerHw/default.
+E/LegacySupport(  330): Could not get passthrough implementation for android.hardware.soundtrigger@2.2::ISoundTriggerHw/default.
+E/LegacySupport(  330): Could not get passthrough implementation for android.hardware.soundtrigger@2.1::ISoundTriggerHw/default.
+E/LegacySupport(  330): Could not get passthrough implementation for android.hardware.soundtrigger@2.0::ISoundTriggerHw/default.
+E/LegacySupport(  330): Could not get passthrough implementation for android.hardware.bluetooth.audio@2.2::IBluetoothAudioProvidersFactory/default.
+E/LegacySupport(  330): Could not get passthrough implementation for android.hardware.bluetooth.audio@2.1::IBluetoothAudioProvidersFactory/default.
+E/LegacySupport(  330): Could not get passthrough implementation for android.hardware.bluetooth.audio@2.0::IBluetoothAudioProvidersFactory/default.
+E/LegacySupport(  330): Could not get passthrough implementation for android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default.
+E/audiohalservice(  330): Failed to dlopen android.hardware.audio.sounddose-vendor-impl.so: dlopen failed: library "android.hardware.audio.sounddose-vendor-impl.so" not found
+E/ProcessState(  333): vndservicemanager is not started on this device, you can save resources/threads by not initializing ProcessState with /dev/vndbinder.
+E/GCH_CameraProvider(  333): Initialize: HWL doesn't support vendor buffer allocation Function not implemented(-38)
+E/SensorsMultiHal(  364): Failed to load subHal config file: /odm/etc/sensors/hals.conf
+I/AndroidRuntime(  325): Using default boot image
+I/AndroidRuntime(  325): Leaving lock profiling enabled
+E/SurfaceFlinger(  387): Unrecognized RenderEngineType ; ignoring!
+E/bootstat(  408): Failed to read /metadata/bootstat/persist.sys.boot.reason: No such file or directory
+E/RanchuHwc(  375): loadPersistentKeyValues: persistent key-value store path not available.
+E/RanchuHwc(  375): getPersistentKeyValue: failed to load pmem json
+E/RanchuHwc(  375): getBootConfigId: display:0 failed to get persistent boot config
+E/RanchuHwc(  375): start: failed to set Vsync thread name: Math result not representable
+E/RanchuHwc(  375): start: failed to set Vsync thread priority: Invalid argument
+E/bootstat(  408): Failed to unlink /metadata/bootstat/persist.sys.boot.reason: No such file or directory
+E/android.hardware.graphics.composer3-service.ranchu(  375): freeBuffer:127 failed with 'Error3::BAD_BUFFER'
+E/Gralloc3(  375): freeBuffer(0x0) failed with 2
+E/android.hardware.graphics.composer3-service.ranchu(  375): freeBuffer:127 failed with 'Error3::BAD_BUFFER'
+E/Gralloc3(  375): freeBuffer(0x0) failed with 2
+E/android.hardware.graphics.composer3-service.ranchu(  375): freeBuffer:127 failed with 'Error3::BAD_BUFFER'
+E/Gralloc3(  375): freeBuffer(0x0) failed with 2
+E/android.hardware.graphics.composer3-service.ranchu(  375): freeBuffer:127 failed with 'Error3::BAD_BUFFER'
+E/Gralloc3(  375): freeBuffer(0x0) failed with 2
+E/android.hardware.graphics.composer3-service.ranchu(  375): freeBuffer:127 failed with 'Error3::BAD_BUFFER'
+E/Gralloc3(  375): freeBuffer(0x0) failed with 2
+E/android.hardware.graphics.composer3-service.ranchu(  375): freeBuffer:127 failed with 'Error3::BAD_BUFFER'
+E/Gralloc3(  375): freeBuffer(0x0) failed with 2
+E/HwcComposer(  387): getPerFrameMetadataKeys failed Status(-8, EX_SERVICE_SPECIFIC): '8: '
+E/HidlServiceManagement(  387): Service android.frameworks.displayservice@1.0::IDisplayService/default must be in VINTF manifest in order to register/get.
+E/SurfaceFlinger(  387): Did not register (deprecated) IDisplayService service.
+E/bt_vhci_forwarder(  442): setTerminalRaw failed /dev/bluetooth0: Inappropriate ioctl for device
+E/cutils  (  447): Failed to read /data/misc/installd/layout_version: No such file or directory
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/android.hardware.audio@7.1-impl.ranchu(  330): getPresentationPosition:510 failure: Result::INVALID_STATE
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/android.hardware.audio@7.1-impl.ranchu(  330): getPresentationPosition:510 failure: Result::INVALID_STATE
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/APM_AudioPolicyManager(  383): invalid volume index range
+E/ActivityRecognitionHardware(  325): activity_recognition HAL is deprecated. class_init is effectively a no-op
+E/zygote64(  325): Unable to find pattern file or unable to map it for am
+E/system_server(  503): Not starting debugger since process cannot load the jdwp agent.
+E/HidlServiceManagement(  503): Service android.frameworks.stats@1.0::IStats/default must be in VINTF manifest in order to register/get.
+E/BatteryStatsService(  503): Unable to load Power.Stats.HAL. Setting rail availability to false
+E/BluetoothAdapter(  503): Bluetooth service is null
+E/UserManagerService(  503): No user list file
+E/UserManagerService(  503): userlist.xml not found, fallback to single user
+E/ArtService(  503): Failed to load dex use data
+E/ArtService(  503): java.io.FileNotFoundException: /data/system/package-dex-usage.pb: open failed: ENOENT (No such file or directory)
+E/ArtService(  503): 	at libcore.io.IoBridge.open(IoBridge.java:574)
+E/ArtService(  503): 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+E/ArtService(  503): 	at java.io.FileInputStream.<init>(FileInputStream.java:115)
+E/ArtService(  503): 	at com.android.server.art.DexUseManagerLocal.load(DexUseManagerLocal.java:553)
+E/ArtService(  503): 	at com.android.server.art.DexUseManagerLocal.<init>(DexUseManagerLocal.java:161)
+E/ArtService(  503): 	at com.android.server.art.DexUseManagerLocal.<init>(DexUseManagerLocal.java:153)
+E/ArtService(  503): 	at com.android.server.art.DexUseManagerLocal.createInstance(DexUseManagerLocal.java:147)
+E/ArtService(  503): 	at com.android.server.SystemServer.startBootstrapServices(SystemServer.java:1257)
+E/ArtService(  503): 	at com.android.server.SystemServer.run(SystemServer.java:940)
+E/ArtService(  503): 	at com.android.server.SystemServer.main(SystemServer.java:664)
+E/ArtService(  503): 	at java.lang.reflect.Method.invoke(Native Method)
+E/ArtService(  503): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/ArtService(  503): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:949)
+E/ArtService(  503): Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+E/ArtService(  503): 	at libcore.io.Linux.open(Native Method)
+E/ArtService(  503): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+E/ArtService(  503): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+E/ArtService(  503): 	at libcore.io.IoBridge.open(IoBridge.java:560)
+E/ArtService(  503): 	... 12 more
+E/idmap2d (  445): no resources were overlaid
+E/DeviceStateManagerService(  503): Cannot notify device state info change before the initial state has been committed.
+E/vold    (  146): Error getting bootctrl v1.0 module.
+E/DevicePolicyManager(  503): Error reading version
+E/DevicePolicyManager(  503): java.nio.file.NoSuchFileException: /data/system/device_policies_version
+E/DevicePolicyManager(  503): 	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:220)
+E/DevicePolicyManager(  503): 	at java.nio.file.Files.newByteChannel(Files.java:361)
+E/DevicePolicyManager(  503): 	at java.nio.file.Files.newByteChannel(Files.java:407)
+E/DevicePolicyManager(  503): 	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+E/DevicePolicyManager(  503): 	at java.nio.file.Files.newInputStream(Files.java:152)
+E/DevicePolicyManager(  503): 	at java.nio.file.Files.newBufferedReader(Files.java:2784)
+E/DevicePolicyManager(  503): 	at java.nio.file.Files.readAllLines(Files.java:3202)
+E/DevicePolicyManager(  503): 	at com.android.server.devicepolicy.PolicyVersionUpgrader.readVersion(PolicyVersionUpgrader.java:307)
+E/DevicePolicyManager(  503): 	at com.android.server.devicepolicy.PolicyVersionUpgrader.upgradePolicy(PolicyVersionUpgrader.java:71)
+E/DevicePolicyManager(  503): 	at com.android.server.devicepolicy.DevicePolicyManagerService.performPolicyVersionUpgrade(DevicePolicyManagerService.java:3519)
+E/DevicePolicyManager(  503): 	at com.android.server.devicepolicy.DevicePolicyManagerService.<init>(DevicePolicyManagerService.java:2091)
+E/DevicePolicyManager(  503): 	at com.android.server.devicepolicy.DevicePolicyManagerService.<init>(DevicePolicyManagerService.java:2032)
+E/DevicePolicyManager(  503): 	at com.android.server.devicepolicy.DevicePolicyManagerService$Lifecycle.<init>(DevicePolicyManagerService.java:1068)
+E/DevicePolicyManager(  503): 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+E/DevicePolicyManager(  503): 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+E/DevicePolicyManager(  503): 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:218)
+E/DevicePolicyManager(  503): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:1872)
+E/DevicePolicyManager(  503): 	at com.android.server.SystemServer.run(SystemServer.java:942)
+E/DevicePolicyManager(  503): 	at com.android.server.SystemServer.main(SystemServer.java:664)
+E/DevicePolicyManager(  503): 	at java.lang.reflect.Method.invoke(Native Method)
+E/DevicePolicyManager(  503): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/DevicePolicyManager(  503): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:949)
+E/ScanMetrics(  503): Can't get GMS uid
+E/SoundTriggerMiddlewareImpl(  503): Failed to add a SoundTriggerModule instance
+E/SoundTriggerMiddlewareImpl(  503): java.util.NoSuchElementException
+E/SoundTriggerMiddlewareImpl(  503): 	at android.os.HwBinder.getService(Native Method)
+E/SoundTriggerMiddlewareImpl(  503): 	at android.hardware.soundtrigger.V2_0.ISoundTriggerHw.getService(ISoundTriggerHw.java:57)
+E/SoundTriggerMiddlewareImpl(  503): 	at android.hardware.soundtrigger.V2_0.ISoundTriggerHw.getService(ISoundTriggerHw.java:64)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.server.soundtrigger_middleware.DefaultHalFactory.create(DefaultHalFactory.java:76)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.server.soundtrigger_middleware.SoundTriggerModule.attachToHal(SoundTriggerModule.java:176)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.server.soundtrigger_middleware.SoundTriggerModule.<init>(SoundTriggerModule.java:105)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl.<init>(SoundTriggerMiddlewareImpl.java:86)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareService$Lifecycle.onStart(SoundTriggerMiddlewareService.java:248)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:255)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:233)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:2208)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.server.SystemServer.run(SystemServer.java:942)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.server.SystemServer.main(SystemServer.java:664)
+E/SoundTriggerMiddlewareImpl(  503): 	at java.lang.reflect.Method.invoke(Native Method)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/SoundTriggerMiddlewareImpl(  503): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:949)
+E/AS.AudioService(  503): error reading spatial audio device settings
+E/UsbDeviceManager(  503): connectToProxy: usb gadget hidl hal service not found.
+E/UsbDeviceManager(  503): java.util.NoSuchElementException
+E/UsbDeviceManager(  503): 	at android.os.HwBinder.getService(Native Method)
+E/UsbDeviceManager(  503): 	at android.hardware.usb.gadget.V1_0.IUsbGadget.getService(IUsbGadget.java:57)
+E/UsbDeviceManager(  503): 	at android.hardware.usb.gadget.V1_0.IUsbGadget.getService(IUsbGadget.java:64)
+E/UsbDeviceManager(  503): 	at com.android.server.usb.hal.gadget.UsbGadgetHidl.isServicePresent(UsbGadgetHidl.java:132)
+E/UsbDeviceManager(  503): 	at com.android.server.usb.hal.gadget.UsbGadgetHalInstance.getInstance(UsbGadgetHalInstance.java:39)
+E/UsbDeviceManager(  503): 	at com.android.server.usb.UsbDeviceManager.<init>(UsbDeviceManager.java:312)
+E/UsbDeviceManager(  503): 	at com.android.server.usb.UsbService.<init>(UsbService.java:187)
+E/UsbDeviceManager(  503): 	at com.android.server.usb.UsbService$Lifecycle.lambda$onStart$0(UsbService.java:101)
+E/UsbDeviceManager(  503): 	at com.android.server.usb.UsbService$Lifecycle.$r8$lambda$RuGFfXZPzv9JlSTzhIl-GWrBFrQ(UsbService.java:0)
+E/UsbDeviceManager(  503): 	at com.android.server.usb.UsbService$Lifecycle$$ExternalSyntheticLambda2.run(R8$$SyntheticClass:0)
+E/UsbDeviceManager(  503): 	at com.android.server.SystemServerInitThreadPool.lambda$submitTask$0(SystemServerInitThreadPool.java:107)
+E/UsbDeviceManager(  503): 	at com.android.server.SystemServerInitThreadPool.$r8$lambda$iar571g8isa6ZrPZMHj1USmyX48(SystemServerInitThreadPool.java:0)
+E/UsbDeviceManager(  503): 	at com.android.server.SystemServerInitThreadPool$$ExternalSyntheticLambda1.run(R8$$SyntheticClass:0)
+E/UsbDeviceManager(  503): 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+E/UsbDeviceManager(  503): 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+E/UsbDeviceManager(  503): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+E/UsbDeviceManager(  503): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+E/UsbDeviceManager(  503): 	at com.android.internal.util.ConcurrentUtils$1$1.run(ConcurrentUtils.java:65)
+E/UsbPortManager(  503): USB Gadget HAL AIDL/HIDL not present
+E/UsbDeviceManagerJNI(  503): could not open control for mtp No such file or directory
+E/UsbDeviceManager(  503): Failed to open control for mtp
+E/UsbDeviceManagerJNI(  503): could not open control for ptp No such file or directory
+E/UsbDeviceManager(  503): Failed to open control for ptp
+E/UsbDeviceManagerJNI(  503): could not open /dev/usb_accessory
+E/DisplayPowerController2[0](  503): failed to set up display white-balance: java.lang.IllegalStateException: cannot find sensor com.google.sensor.color
+E/AppWidgetManager(  503): Nofity service of inheritance info
+E/AppWidgetManager(  503): java.lang.IllegalStateException: User 0 must be unlocked for widgets to be available
+E/AppWidgetManager(  503): 	at com.android.server.appwidget.AppWidgetServiceImpl.ensureGroupStateLoadedLocked(AppWidgetServiceImpl.java:650)
+E/AppWidgetManager(  503): 	at com.android.server.appwidget.AppWidgetServiceImpl.ensureGroupStateLoadedLocked(AppWidgetServiceImpl.java:644)
+E/AppWidgetManager(  503): 	at com.android.server.appwidget.AppWidgetServiceImpl.getInstalledProvidersForProfile(AppWidgetServiceImpl.java:1708)
+E/AppWidgetManager(  503): 	at android.appwidget.AppWidgetManager.getInstalledProvidersForProfile(AppWidgetManager.java:923)
+E/AppWidgetManager(  503): 	at android.appwidget.AppWidgetManager.getInstalledProvidersForPackage(AppWidgetManager.java:857)
+E/AppWidgetManager(  503): 	at android.appwidget.AppWidgetManager.lambda$new$3(AppWidgetManager.java:536)
+E/AppWidgetManager(  503): 	at android.appwidget.AppWidgetManager.$r8$lambda$MnZCUjy90wcD58stsygv3SVPbu4(Unknown Source:0)
+E/AppWidgetManager(  503): 	at android.appwidget.AppWidgetManager$$ExternalSyntheticLambda4.run(Unknown Source:2)
+E/AppWidgetManager(  503): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/AppWidgetManager(  503): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AppWidgetManager(  503): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/AppWidgetManager(  503): 	at android.os.Looper.loop(Looper.java:294)
+E/AppWidgetManager(  503): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/AppIdleHistory(  503): Unable to read app idle file for user 0
+E/AppIdleHistory(  503): java.io.FileNotFoundException: /data/system/users/0/app_idle_stats.xml: open failed: ENOENT (No such file or directory)
+E/AppIdleHistory(  503): 	at libcore.io.IoBridge.open(IoBridge.java:574)
+E/AppIdleHistory(  503): 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+E/AppIdleHistory(  503): 	at android.util.AtomicFile.openRead(AtomicFile.java:260)
+E/AppIdleHistory(  503): 	at com.android.server.usage.AppIdleHistory.readAppIdleTimes(AppIdleHistory.java:715)
+E/AppIdleHistory(  503): 	at com.android.server.usage.AppIdleHistory.getUserHistory(AppIdleHistory.java:384)
+E/AppIdleHistory(  503): 	at com.android.server.usage.AppIdleHistory.reportUsage(AppIdleHistory.java:372)
+E/AppIdleHistory(  503): 	at com.android.server.usage.AppStandbyController.initializeDefaultsForSystemApps(AppStandbyController.java:2335)
+E/AppIdleHistory(  503): 	at com.android.server.usage.AppStandbyController.onBootPhase(AppStandbyController.java:701)
+E/AppIdleHistory(  503): 	at com.android.server.usage.UsageStatsService.onBootPhase(UsageStatsService.java:368)
+E/AppIdleHistory(  503): 	at com.android.server.SystemServiceManager.startBootPhase(SystemServiceManager.java:291)
+E/AppIdleHistory(  503): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:2747)
+E/AppIdleHistory(  503): 	at com.android.server.SystemServer.run(SystemServer.java:942)
+E/AppIdleHistory(  503): 	at com.android.server.SystemServer.main(SystemServer.java:664)
+E/AppIdleHistory(  503): 	at java.lang.reflect.Method.invoke(Native Method)
+E/AppIdleHistory(  503): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/AppIdleHistory(  503): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:949)
+E/AppIdleHistory(  503): Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+E/AppIdleHistory(  503): 	at libcore.io.Linux.open(Native Method)
+E/AppIdleHistory(  503): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+E/AppIdleHistory(  503): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+E/AppIdleHistory(  503): 	at libcore.io.IoBridge.open(IoBridge.java:560)
+E/AppIdleHistory(  503): 	... 15 more
+E/TestHarnessModeService(  503): Failed to start Test Harness Mode; no implementation of PersistentDataBlockManagerInternal was bound!
+E/SupplicantStaIfaceHalAidlImpl(  503): Can't call setDebugParams, ISupplicant is null
+E/WifiChipAidlImpl(  503): getMode failed with service-specific exception: android.os.ServiceSpecificException:  (code 5)
+E/android.hardware.wifi-service(  367): Unknown iface name: wlan0
+E/android.hardware.wifi-service(  367): Unknown iface name: wlan0
+E/WifiChipAidlImpl(  503): getMode failed with service-specific exception: android.os.ServiceSpecificException:  (code 5)
+E/android.hardware.wifi-service(  367): Unknown iface name: wlan0
+E/android.hardware.wifi-service(  367): Unknown iface name: wlan0
+E/android.hardware.wifi-service(  367): Failed to register radio mode change callback
+E/android.hardware.wifi-service(  367): Failed to get SupportedIfaceCombinations matrix from legacy HAL: NOT_SUPPORTED
+E/android.hardware.wifi-service(  367): Failed to set DFS flag; DFS channels may be unavailable.
+E/android.hardware.wifi-service(  367): Failed to get chip capabilities from legacy HAL: NOT_SUPPORTED
+E/WifiChipAidlImpl(  503): getWifiChipCapabilities failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/SupplicantStaIfaceHalAidlImpl(  503): Can't call getKeyMgmtCapabilities, ISupplicantStaIface is null for iface=wlan0
+E/android.hardware.wifi-service(  367): Failed to get SupportedRadioCombinations matrix from legacy HAL: NOT_SUPPORTED
+E/WifiChipAidlImpl(  503): getSupportedRadioCombinations failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/SupplicantStaIfaceHalAidlImpl(  503): Can't call getWpaDriverCapabilities, ISupplicantStaIface is null for iface=wlan0
+E/WifiChipAidlImpl(  503): getUsableChannels failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/WifiChipAidlImpl(  503): enableStaChannelForPeerNetwork failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/DefaultPermGrantPolicy(  503): Package not found: 
+E/WifiChipAidlImpl(  503): getUsableChannels failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/WifiStaIfaceAidlImpl(  503): getBackgroundScanCapabilities failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/WifiChipAidlImpl(  503): setMultiStaUseCase failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/WifiChipAidlImpl(  503): setMultiStaPrimaryConnection failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/DisplayModeDirector(  503): Asked about unknown display, returning empty display mode specs!(id=0)
+E/DisplayModeDirector(  503): Asked about unknown display, returning empty display mode specs!(id=0)
+E/HealthConnectResContext(  503): Attempted to fetch resources before Health Connect resources APK is loaded!
+E/HealthConnectResContext(  503): java.lang.IllegalStateException
+E/HealthConnectResContext(  503): 	at com.android.server.healthconnect.migration.notification.HealthConnectResourcesContext.resolvePackageInfo(HealthConnectResourcesContext.java:129)
+E/HealthConnectResContext(  503): 	at com.android.server.healthconnect.migration.notification.HealthConnectResourcesContext.initialisePackageNames(HealthConnectResourcesContext.java:87)
+E/HealthConnectResContext(  503): 	at com.android.server.healthconnect.migration.notification.HealthConnectResourcesContext.<init>(HealthConnectResourcesContext.java:83)
+E/HealthConnectResContext(  503): 	at com.android.server.healthconnect.migration.notification.HealthConnectResourcesContext.<init>(HealthConnectResourcesContext.java:70)
+E/HealthConnectResContext(  503): 	at com.android.server.healthconnect.migration.notification.MigrationNotificationFactory.<init>(MigrationNotificationFactory.java:107)
+E/HealthConnectResContext(  503): 	at com.android.server.healthconnect.migration.notification.MigrationNotificationSender.<init>(MigrationNotificationSender.java:60)
+E/HealthConnectResContext(  503): 	at com.android.server.healthconnect.HealthConnectManagerService.<init>(HealthConnectManagerService.java:105)
+E/HealthConnectResContext(  503): 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+E/HealthConnectResContext(  503): 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+E/HealthConnectResContext(  503): 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:218)
+E/HealthConnectResContext(  503): 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:142)
+E/HealthConnectResContext(  503): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:2864)
+E/HealthConnectResContext(  503): 	at com.android.server.SystemServer.run(SystemServer.java:942)
+E/HealthConnectResContext(  503): 	at com.android.server.SystemServer.main(SystemServer.java:664)
+E/HealthConnectResContext(  503): 	at java.lang.reflect.Method.invoke(Native Method)
+E/HealthConnectResContext(  503): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/HealthConnectResContext(  503): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:949)
+E/OmxInfoBuilder(  452): Cannot find an IOmxStore service.
+E/Codec2-FilterWrapper(  339): plugin not OK: -19
+E/ndroid.systemui(  796): Not starting debugger since process cannot load the jdwp agent.
+E/ssioncontroller(  798): Not starting debugger since process cannot load the jdwp agent.
+E/AppOps  (  503): Bad call made by uid 1000. Package "android" does not belong to uid 1037.
+E/AppOps  (  503): Cannot checkOperation
+E/AppOps  (  503): java.lang.SecurityException: Specified package "android" under uid 1037 but it is not
+E/AppOps  (  503): 	at com.android.server.appop.AppOpsService.verifyAndGetBypass(AppOpsService.java:3886)
+E/AppOps  (  503): 	at com.android.server.appop.AppOpsService.verifyAndGetBypass(AppOpsService.java:3746)
+E/AppOps  (  503): 	at com.android.server.appop.AppOpsService.verifyAndGetBypass(AppOpsService.java:3738)
+E/AppOps  (  503): 	at com.android.server.appop.AppOpsService.checkOperationUnchecked(AppOpsService.java:2417)
+E/AppOps  (  503): 	at com.android.server.appop.AppOpsService.checkOperationImpl(AppOpsService.java:2400)
+E/AppOps  (  503): 	at com.android.server.appop.AppOpsService.-$$Nest$mcheckOperationImpl(AppOpsService.java:0)
+E/AppOps  (  503): 	at com.android.server.appop.AppOpsService$CheckOpsDelegateDispatcher.$r8$lambda$fx57Sum-uA3sXo7NCFwrI3iq4WM(AppOpsService.java:0)
+E/AppOps  (  503): 	at com.android.server.appop.AppOpsService$CheckOpsDelegateDispatcher$$ExternalSyntheticLambda9.apply(R8$$SyntheticClass:0)
+E/AppOps  (  503): 	at com.android.server.policy.AppOpsPolicy.checkOperation(AppOpsPolicy.java:221)
+E/AppOps  (  503): 	at com.android.server.appop.AppOpsService$CheckOpsDelegateDispatcher.checkOperation(AppOpsService.java:6389)
+E/AppOps  (  503): 	at com.android.server.appop.AppOpsService.checkOperation(AppOpsService.java:2385)
+E/AppOps  (  503): 	at com.android.server.StorageManagerService$StorageManagerInternalImpl.hasExternalStorageAccess(StorageManagerService.java:4717)
+E/AppOps  (  503): 	at com.android.server.am.ProcessList.startProcessLocked(ProcessList.java:1778)
+E/AppOps  (  503): 	at com.android.server.am.ProcessList.startProcessLocked(ProcessList.java:2483)
+E/AppOps  (  503): 	at com.android.server.am.ProcessList.startProcessLocked(ProcessList.java:2628)
+E/AppOps  (  503): 	at com.android.server.am.ActivityManagerService.startIsolatedProcess(ActivityManagerService.java:2894)
+E/AppOps  (  503): 	at com.android.server.am.ActivityManagerService$LocalService.startIsolatedProcess(ActivityManagerService.java:17372)
+E/AppOps  (  503): 	at android.webkit.WebViewLibraryLoader.createRelroFile(WebViewLibraryLoader.java:126)
+E/AppOps  (  503): 	at android.webkit.WebViewLibraryLoader.createRelros(WebViewLibraryLoader.java:170)
+E/AppOps  (  503): 	at android.webkit.WebViewLibraryLoader.prepareNativeLibraries(WebViewLibraryLoader.java:152)
+E/AppOps  (  503): 	at android.webkit.WebViewFactory.onWebViewProviderChanged(WebViewFactory.java:555)
+E/AppOps  (  503): 	at com.android.server.webkit.SystemImpl.onWebViewProviderChanged(SystemImpl.java:174)
+E/AppOps  (  503): 	at com.android.server.webkit.WebViewUpdateServiceImpl.onWebViewProviderChanged(WebViewUpdateServiceImpl.java:351)
+E/AppOps  (  503): 	at com.android.server.webkit.WebViewUpdateServiceImpl.prepareWebViewInSystemServer(WebViewUpdateServiceImpl.java:182)
+E/AppOps  (  503): 	at com.android.server.webkit.WebViewUpdateService.prepareWebViewInSystemServer(WebViewUpdateService.java:129)
+E/AppOps  (  503): 	at com.android.server.SystemServer.lambda$startOtherServices$4(SystemServer.java:2919)
+E/AppOps  (  503): 	at com.android.server.SystemServer.$r8$lambda$t1R-mpe1gQ3l_T3UqaEuPqwZT88(SystemServer.java:0)
+E/AppOps  (  503): 	at com.android.server.SystemServer$$ExternalSyntheticLambda7.run(R8$$SyntheticClass:0)
+E/AppOps  (  503): 	at com.android.server.SystemServerInitThreadPool.lambda$submitTask$0(SystemServerInitThreadPool.java:107)
+E/AppOps  (  503): 	at com.android.server.SystemServerInitThreadPool.$r8$lambda$iar571g8isa6ZrPZMHj1USmyX48(SystemServerInitThreadPool.java:0)
+E/AppOps  (  503): 	at com.android.server.SystemServerInitThreadPool$$ExternalSyntheticLambda1.run(R8$$SyntheticClass:0)
+E/AppOps  (  503): 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+E/AppOps  (  503): 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+E/AppOps  (  503): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+E/AppOps  (  503): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+E/AppOps  (  503): 	at com.android.internal.util.ConcurrentUtils$1$1.run(ConcurrentUtils.java:65)
+E/WebViewLoader-x(  883): Not starting debugger since process cannot load the jdwp agent.
+E/LocationManagerService(  503): no geocoder provider found
+E/ActivityRecognitionHardware(  503): activity_recognition HAL is deprecated. is_supported is effectively a no-op
+E/LocationManagerService(  503): unable to bind ActivityRecognitionProxy
+E/LocationManagerService(  503): unable to bind to GeofenceProxy
+I/AndroidRuntime(  883): VM exiting with result code 0, cleanup skipped.
+E/idmap2d (  445): no resources were overlaid
+E/rkstack.process(  927): Not starting debugger since process cannot load the jdwp agent.
+E/SystemServiceRegistry(  927): No service published for: ethernet
+E/SystemServiceRegistry(  927): android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+E/SystemServiceRegistry(  927): 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+E/SystemServiceRegistry(  927): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+E/SystemServiceRegistry(  927): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.<init>(Tethering.java:362)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.TetheringService.makeTethering(TetheringService.java:88)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.TetheringService.onCreate(TetheringService.java:78)
+E/SystemServiceRegistry(  927): 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4651)
+E/SystemServiceRegistry(  927): 	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+E/SystemServiceRegistry(  927): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2264)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loop(Looper.java:294)
+E/SystemServiceRegistry(  927): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+E/SystemServiceRegistry(  927): 	at java.lang.reflect.Method.invoke(Native Method)
+E/SystemServiceRegistry(  927): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/SystemServiceRegistry(  927): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+E/AppWidgetManager(  796): Nofity service of inheritance info
+E/AppWidgetManager(  796): java.lang.IllegalStateException: User 0 must be unlocked for widgets to be available
+E/AppWidgetManager(  796): 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3065)
+E/AppWidgetManager(  796): 	at android.os.Parcel.createException(Parcel.java:3041)
+E/AppWidgetManager(  796): 	at android.os.Parcel.readException(Parcel.java:3024)
+E/AppWidgetManager(  796): 	at android.os.Parcel.readException(Parcel.java:2966)
+E/AppWidgetManager(  796): 	at com.android.internal.appwidget.IAppWidgetService$Stub$Proxy.getInstalledProvidersForProfile(IAppWidgetService.java:990)
+E/AppWidgetManager(  796): 	at android.appwidget.AppWidgetManager.getInstalledProvidersForProfile(AppWidgetManager.java:923)
+E/AppWidgetManager(  796): 	at android.appwidget.AppWidgetManager.getInstalledProvidersForPackage(AppWidgetManager.java:857)
+E/AppWidgetManager(  796): 	at android.appwidget.AppWidgetManager.lambda$new$3(AppWidgetManager.java:536)
+E/AppWidgetManager(  796): 	at android.appwidget.AppWidgetManager.$r8$lambda$MnZCUjy90wcD58stsygv3SVPbu4(Unknown Source:0)
+E/AppWidgetManager(  796): 	at android.appwidget.AppWidgetManager$$ExternalSyntheticLambda4.run(Unknown Source:2)
+E/AppWidgetManager(  796): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/AppWidgetManager(  796): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AppWidgetManager(  796): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/AppWidgetManager(  796): 	at android.os.Looper.loop(Looper.java:294)
+E/AppWidgetManager(  796): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/AppWidgetManager(  796): Caused by: android.os.RemoteException: Remote stack trace:
+E/AppWidgetManager(  796): 	at com.android.server.appwidget.AppWidgetServiceImpl.ensureGroupStateLoadedLocked(AppWidgetServiceImpl.java:650)
+E/AppWidgetManager(  796): 	at com.android.server.appwidget.AppWidgetServiceImpl.ensureGroupStateLoadedLocked(AppWidgetServiceImpl.java:644)
+E/AppWidgetManager(  796): 	at com.android.server.appwidget.AppWidgetServiceImpl.getInstalledProvidersForProfile(AppWidgetServiceImpl.java:1708)
+E/AppWidgetManager(  796): 	at com.android.internal.appwidget.IAppWidgetService$Stub.onTransact(IAppWidgetService.java:510)
+E/AppWidgetManager(  796): 	at android.os.Binder.execTransactInternal(Binder.java:1344)
+E/AppWidgetManager(  796): 
+E/Tethering(  927): [BpfCoordinator] ERROR Cannot report network stats: : the provider is not registered
+E/Tethering(  927): java.lang.IllegalStateException: the provider is not registered
+E/Tethering(  927): 	at android.net.netstats.provider.NetworkStatsProvider.getProviderCallbackBinderOrThrow(NetworkStatsProvider.java:104)
+E/Tethering(  927): 	at android.net.netstats.provider.NetworkStatsProvider.notifyStatsUpdated(NetworkStatsProvider.java:131)
+E/Tethering(  927): 	at com.android.networkstack.tethering.BpfCoordinator$BpfTetherStatsProvider.pushTetherStats(BpfCoordinator.java:1666)
+E/Tethering(  927): 	at com.android.networkstack.tethering.BpfCoordinator$BpfTetherStatsProvider.lambda$onRequestStatsUpdate$0(BpfCoordinator.java:1634)
+E/Tethering(  927): 	at com.android.networkstack.tethering.BpfCoordinator$BpfTetherStatsProvider.$r8$lambda$h-FtjgmfG461RfhB42VDtgOjxWU(BpfCoordinator.java:0)
+E/Tethering(  927): 	at com.android.networkstack.tethering.BpfCoordinator$BpfTetherStatsProvider$$ExternalSyntheticLambda2.run(R8$$SyntheticClass:0)
+E/Tethering(  927): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/Tethering(  927): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/Tethering(  927): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/Tethering(  927): 	at android.os.Looper.loop(Looper.java:294)
+E/Tethering(  927): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/droid.bluetooth(  968): Not starting debugger since process cannot load the jdwp agent.
+E/com.android.se(  969): Not starting debugger since process cannot load the jdwp agent.
+E/EGL_emulation(  387): eglQueryContext 3100  EGL_BAD_ATTRIBUTE
+E/EGL_emulation(  387): tid 407: eglQueryContext(2146): error 0x3004 (EGL_BAD_ATTRIBUTE)
+E/keystore2(  156): system/security/keystore2/src/error.rs:180 - system/security/keystore2/src/security_level.rs:681: Trying to call importKey
+E/keystore2(  156): 
+E/keystore2(  156): Caused by:
+E/keystore2(  156):     Error::Km(r#ROLLBACK_RESISTANCE_UNAVAILABLE)
+E/ndroid.settings(  993): Not starting debugger since process cannot load the jdwp agent.
+E/m.android.phone(  992): Not starting debugger since process cannot load the jdwp agent.
+E/fingerprint-service.ranchu(  759): openFile:48 open('/data/vendor_de/0/fpdata/sensor0.bin', output=0) failed with errno=2
+E/HwcComposer(  387): getDisplayDecorationSupport failed Status(-8, EX_SERVICE_SPECIFIC): '8: '
+E/HWComposer(  387): getDisplayDecorationSupport: getDisplayDecorationSupport failed for display 4619827259835644672: Unsupported (8)
+E/droid.launcher3( 1054): Not starting debugger since process cannot load the jdwp agent.
+E/ReportEncoder(  503): No watchlist hash
+E/WiredAccessoryManager(  503): No state change.
+E/CarrierIdProvider(  992): read carrier list from ota pb failure: java.io.FileNotFoundException: /data/misc/carrierid/carrier_list.pb: open failed: ENOENT (No such file or directory)
+E/droid.bluetooth(  968): [1128/054939.725167:ERROR:config.cc(106)] config_new: unable to open file '/data/misc/bluedroid/bt_remote_dev_info.conf': No such file or directory
+E/droid.bluetooth(  968): [1128/054939.725214:ERROR:config.cc(106)] config_new: unable to open file '/data/misc/bluedroid/bt_remote_dev_info.bak': No such file or directory
+E/device_iot_config(  968): packages/modules/Bluetooth/system/device/src/device_iot_config_int.cc:89 device_iot_config_module_init: Unable to load bak file; creating empty config.
+E/servicemanager(    0): VINTF HALs require names in the format type/instance (e.g. some.package.foo.IFoo/default) but got: suspend_control
+E/btaa    (  968): packages/modules/Bluetooth/system/gd/btaa/android/activity_attribution.cc:107 impl: No suspend control service available.
+E/android.hardware.bluetooth.service.default(  368): unable to open /dev/rfkill: Permission denied
+E/android.hardware.bluetooth.service.default(  368): rfkill unavailable
+E/bluetooth(  968): packages/modules/Bluetooth/system/gd/storage/legacy_config_file.cc:39 Read: unable to open file '/data/misc/bluedroid/bt_config.conf', error: No such file or directory
+E/bluetooth(  968): packages/modules/Bluetooth/system/gd/storage/legacy_config_file.cc:39 Read: unable to open file '/data/misc/bluedroid/bt_config.bak', error: No such file or directory
+E/CountryDetector(  503): Could not instantiate the custom country detector class
+E/bt_btif_storage(  968): packages/modules/Bluetooth/system/btif/src/btif_storage.cc:622 btif_storage_get_adapter_property: btif_storage_get_adapter_property: Controller not ready! Unable to return Bluetooth Address
+E/BluetoothServiceJni(  968): adapter_properties_callback: Status 1 is incorrect
+E/OpenGLRenderer(  796): Unable to match the desired swap behavior.
+E/bt_btif_storage(  968): packages/modules/Bluetooth/system/btif/src/btif_storage.cc:626 btif_storage_get_adapter_property: btif_storage_get_adapter_property: Controller ready!
+E/a2dp_vendor_ldac(  968): packages/modules/Bluetooth/system/stack/a2dp/a2dp_vendor_ldac.cc:1422 init: init: cannot load the decoder
+E/a2dp_vendor_ldac(  968): packages/modules/Bluetooth/system/stack/a2dp/a2dp_vendor_ldac.cc:1422 init: init: cannot load the decoder
+E/a2dp_vendor_ldac(  968): packages/modules/Bluetooth/system/stack/a2dp/a2dp_vendor_ldac.cc:1422 init: init: cannot load the decoder
+E/a2dp_vendor_ldac(  968): packages/modules/Bluetooth/system/stack/a2dp/a2dp_vendor_ldac.cc:1422 init: init: cannot load the decoder
+E/a2dp_vendor_ldac(  968): packages/modules/Bluetooth/system/stack/a2dp/a2dp_vendor_ldac.cc:1422 init: init: cannot load the decoder
+E/a2dp_vendor_ldac(  968): packages/modules/Bluetooth/system/stack/a2dp/a2dp_vendor_ldac.cc:1422 init: init: cannot load the decoder
+E/AvrcpTargetService(  968): Please use AVRCP version 1.6 to enable cover art
+E/receiver.module( 1179): Not starting debugger since process cannot load the jdwp agent.
+E/CellBroadcastConfigService( 1179): fails to setCellBroadcastRanges
+E/oadcastreceiver( 1248): Not starting debugger since process cannot load the jdwp agent.
+E/BluetoothPhonePolicy(  968): autoConnect: most recently active a2dp device is null
+E/bt_btif (  968): packages/modules/Bluetooth/system/main/bte_logmsg.cc:105 LogMsg: toggleProfile: Unknown service 255 being enabled
+E/MmTelFeatureConn [0](  992): ImsRegistrationCallbackAdapter: ImsRegistration is null
+E/RIL     (  459): Error 0 opening logical channel: 0
+E/SystemServiceRegistry(  927): No service published for: ethernet
+E/SystemServiceRegistry(  927): android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+E/SystemServiceRegistry(  927): 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+E/SystemServiceRegistry(  927): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+E/SystemServiceRegistry(  927): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Tethering.java:0)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1184)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1802)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.$r8$lambda$gDuJqgxY6Zb-ifyeubKeivTLAwk(Unknown Source:0)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loop(Looper.java:294)
+E/SystemServiceRegistry(  927): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/WifiScanningService(  503): wifi driver loaded received while already loaded
+E/RIL     (  459): Error 0 opening logical channel: 0
+E/SystemServiceRegistry(  927): No service published for: ethernet
+E/SystemServiceRegistry(  927): android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+E/SystemServiceRegistry(  927): 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+E/SystemServiceRegistry(  927): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+E/SystemServiceRegistry(  927): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Tethering.java:0)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1184)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1802)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.$r8$lambda$gDuJqgxY6Zb-ifyeubKeivTLAwk(Unknown Source:0)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loop(Looper.java:294)
+E/SystemServiceRegistry(  927): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/SingleInstanceRemoteListener(  796): Failed remote call on null listener
+E/SingleInstanceRemoteListener(  796): Failed remote call on null listener
+E/CellBroadcastConfigService( 1179): fails to setCellBroadcastRanges, result = 2
+E/WifiDataStall(  503): onDataConnectionStateChanged unexpected State: -1
+E/MboOceController(  503): onDataConnectionStateChanged unexpected State: -1
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/d.carrierconfig( 1347): Not starting debugger since process cannot load the jdwp agent.
+E/SystemServiceRegistry(  927): No service published for: ethernet
+E/SystemServiceRegistry(  927): android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+E/SystemServiceRegistry(  927): 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+E/SystemServiceRegistry(  927): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+E/SystemServiceRegistry(  927): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Tethering.java:0)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1184)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1802)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.$r8$lambda$gDuJqgxY6Zb-ifyeubKeivTLAwk(Unknown Source:0)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loop(Looper.java:294)
+E/SystemServiceRegistry(  927): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/StatsPullAtomService(  503): subInfo of subId 1 is invalid, ignored.
+E/StatsPullAtomService(  503): subInfo of subId 1 is invalid, ignored.
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/StatsPullAtomService(  503): subInfo of subId 1 is invalid, ignored.
+E/KeyguardClockSwitch(  796): No clock being shown
+E/KeyguardClockSwitch(  796): No clock being shown
+E/MmTelFeatureConn [0](  992): ImsRegistrationCallbackAdapter: ImsRegistration is null
+E/InputDispatcher(  503): Received out of order window infos update. Last update vsync id: 135388203251152, current update vsync id: 1071
+E/TestHarnessModeService(  503): Failed to start Test Harness Mode; no implementation of PersistentDataBlockManagerInternal was bound!
+E/WifiChipAidlImpl(  503): getUsableChannels failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/WifiChipAidlImpl(  503): getUsableChannels failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/WifiChipAidlImpl(  503): getUsableChannels failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/WifiChipAidlImpl(  503): getUsableChannels failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/WifiChipAidlImpl(  503): getUsableChannels failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/WifiChipAidlImpl(  503): getUsableChannels failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/ApConfigUtil(  503): Malformed channel value detected: java.lang.NumberFormatException: For input string: ""
+E/putmethod.latin( 1378): Not starting debugger since process cannot load the jdwp agent.
+E/WifiChipAidlImpl(  503): getUsableChannels failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/ApConfigUtil(  503): Malformed channel value detected: java.lang.NumberFormatException: For input string: ""
+E/WifiChipAidlImpl(  503): getUsableChannels failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/ApConfigUtil(  503): Malformed channel value detected: java.lang.NumberFormatException: For input string: ""
+E/WifiScoringParams(  503): Invalid frequency(-1), using 5G as default rssi array
+E/RIL     (  459): Error 0 transmitting APDU: 0
+E/bootstat( 1401): Failed to read /data/misc/bootstat/last_boot_time_utc: No such file or directory
+E/bootstat( 1401): Failed to parse boot time record: /data/misc/bootstat/last_boot_time_utc
+E/bootstat( 1401): Failed to read /data/misc/bootstat/build_date: No such file or directory
+E/bootstat( 1401): Failed to parse boot time record: /data/misc/bootstat/build_date
+E/id.ext.services( 1386): Not starting debugger since process cannot load the jdwp agent.
+E/bootstat( 1401): Failed to read /data/misc/bootstat/factory_reset: No such file or directory
+E/bootstat( 1401): Failed to parse boot time record: /data/misc/bootstat/factory_reset
+E/perfetto( 1419):     perfetto_cmd.cc:385 Could not open /data/misc/perfetto-configs/stopboottracetrigger.pbtxt (errno: 2, No such file or directory)
+E/selinux (    0): SELinux: Could not get canonical path for /sys/kernel/debug/tracing/instances/wifi restorecon: No such file or directory.
+E/RIL     (  459): Error 0 transmitting APDU: 0
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/SystemServiceRegistry(  927): No service published for: ethernet
+E/SystemServiceRegistry(  927): android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+E/SystemServiceRegistry(  927): 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+E/SystemServiceRegistry(  927): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+E/SystemServiceRegistry(  927): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.lambda$new$3(Tethering.java:345)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.$r8$lambda$bts3FsOwVdwDhrwMjvAr9kV3Jgs(Tethering.java:0)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering$$ExternalSyntheticLambda7.accept(R8$$SyntheticClass:0)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.util.VersionedBroadcastListener$Receiver.onReceive(VersionedBroadcastListener.java:103)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1802)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.$r8$lambda$gDuJqgxY6Zb-ifyeubKeivTLAwk(Unknown Source:0)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loop(Looper.java:294)
+E/SystemServiceRegistry(  927): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/WifiCarrierInfoManager(  503): Carrier config is missing for: 1
+E/MultiSimSettingController(  992): onCarrierConfigChanged with invalid subId while subId 1 is active and its config is loaded
+E/CellBroadcastConfigService( 1179): fails to setCellBroadcastRanges, result = 2
+E/dmesgd  ( 1442): /data/misc/dmesgd/sent_reports.txt is empty: No such file or directory
+E/d.process.acore( 1437): Not starting debugger since process cannot load the jdwp agent.
+E/TaskPersister(  503): restoreTasksForUserLocked: Unable to list files from /data/system_ce/0/recent_tasks
+E/rs.media.module( 1443): Not starting debugger since process cannot load the jdwp agent.
+E/or.multidisplay( 1475): Not starting debugger since process cannot load the jdwp agent.
+E/SingleInstanceRemoteListener(  796): Failed remote call on null listener
+E/system_server(  503): No package ID 7f found for resource ID 0x7f08025b.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f1315be.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f08025a.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f13067c.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f080259.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f130e50.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f080077.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f110261.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f07009e.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f120096.
+E/BackupPasswordManager(  503): Unable to read backup pw version
+E/BackupPasswordManager(  503): Unable to read saved backup pw hash
+E/ndroid.sdksetup( 1506): Not starting debugger since process cannot load the jdwp agent.
+E/elockcontroller( 1501): Not starting debugger since process cannot load the jdwp agent.
+E/CellBroadcastConfigService( 1179): fails to setCellBroadcastRanges, result = 2
+E/m.android.music( 1527): Not starting debugger since process cannot load the jdwp agent.
+E/SingleInstanceRemoteListener(  796): Failed remote call on null listener
+E/WifiDataStall(  503): onDataConnectionStateChanged unexpected State: -1
+E/MediaBrowser(  968): onConnectFailed for ComponentInfo{com.android.music/com.android.music.MediaPlaybackService}
+E/id.printspooler( 1556): Not starting debugger since process cannot load the jdwp agent.
+E/WifiConfigManager(  503): Cannot find network with networkId -1 or configKey "AndroidWifi"NONE or upgradable security type check
+E/WifiConfigManager(  503): Cannot find network with networkId -1 or configKey "AndroidWifi"NONE or upgradable security type check
+E/WifiConfigManager(  503): Cannot find network with configKey "AndroidWifi"NONE
+E/AggregateFuture( 1501): Got more than one input Future failure. Logging failures after the first
+E/AggregateFuture( 1501): java.lang.IllegalStateException: Setup parameters does not exist!
+E/AggregateFuture( 1501): 	at com.android.devicelockcontroller.policy.UserRestrictionsPolicyHandler.lambda$retrieveLockModeRestrictions$3(UserRestrictionsPolicyHandler.java:138)
+E/AggregateFuture( 1501): 	at com.android.devicelockcontroller.policy.UserRestrictionsPolicyHandler.$r8$lambda$K4dazaAj4roA8BauvRaHZASMq6E(UserRestrictionsPolicyHandler.java:0)
+E/AggregateFuture( 1501): 	at com.android.devicelockcontroller.policy.UserRestrictionsPolicyHandler$$ExternalSyntheticLambda4.call(R8$$SyntheticClass:0)
+E/AggregateFuture( 1501): 	at com.google.common.util.concurrent.CombinedFuture$CallableInterruptibleTask.runInterruptibly(CombinedFuture.java:196)
+E/AggregateFuture( 1501): 	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:74)
+E/AggregateFuture( 1501): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/AggregateFuture( 1501): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AggregateFuture( 1501): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/AggregateFuture( 1501): 	at android.os.Looper.loop(Looper.java:294)
+E/AggregateFuture( 1501): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+E/AggregateFuture( 1501): 	at java.lang.reflect.Method.invoke(Native Method)
+E/AggregateFuture( 1501): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/AggregateFuture( 1501): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+E/ndroid.keychain( 1563): Not starting debugger since process cannot load the jdwp agent.
+E/droid.messaging( 1557): Not starting debugger since process cannot load the jdwp agent.
+E/SingleInstanceRemoteListener(  796): Failed remote call on null listener
+E/OpenGLRenderer( 1054): Unable to match the desired swap behavior.
+E/SingleInstanceRemoteListener(  796): Failed remote call on null listener
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/SystemServiceRegistry(  927): No service published for: ethernet
+E/SystemServiceRegistry(  927): android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+E/SystemServiceRegistry(  927): 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+E/SystemServiceRegistry(  927): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+E/SystemServiceRegistry(  927): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Tethering.java:0)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering$ActiveDataSubIdListener.onActiveDataSubscriptionIdChanged(Tethering.java:522)
+E/SystemServiceRegistry(  927): 	at android.telephony.PhoneStateListener$IPhoneStateListenerStub.lambda$onActiveDataSubIdChanged$56(PhoneStateListener.java:1621)
+E/SystemServiceRegistry(  927): 	at android.telephony.PhoneStateListener$IPhoneStateListenerStub$$ExternalSyntheticLambda38.run(Unknown Source:4)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loop(Looper.java:294)
+E/SystemServiceRegistry(  927): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/oid.documentsui( 1643): Not starting debugger since process cannot load the jdwp agent.
+E/FrameEvents( 1054): updateAcquireFence: Did not find frame.
+E/OpenGLRenderer( 1054): Unable to match the desired swap behavior.
+E/FrameEvents( 1054): updateAcquireFence: Did not find frame.
+E/StrictMode( 1643): Tried to access the API:LayoutInflater which needs to have proper configuration from a non-UI Context:com.android.documentsui.DocumentsApplication@4f0dc81 The API:LayoutInflater needs a proper configuration. Use UI contexts such as an activity or a context created via createWindowContext(Display, int, Bundle) or  createConfigurationContext(Configuration) with a proper configuration.
+E/StrictMode( 1643): java.lang.IllegalAccessException: Tried to access the API:LayoutInflater which needs to have proper configuration from a non-UI Context:com.android.documentsui.DocumentsApplication@4f0dc81
+E/StrictMode( 1643): 	at android.os.StrictMode.assertConfigurationContext(StrictMode.java:2332)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.<init>(LayoutInflater.java:260)
+E/StrictMode( 1643): 	at com.android.internal.policy.PhoneLayoutInflater.<init>(PhoneLayoutInflater.java:44)
+E/StrictMode( 1643): 	at android.app.SystemServiceRegistry$33.createService(SystemServiceRegistry.java:560)
+E/StrictMode( 1643): 	at android.app.SystemServiceRegistry$33.createService(SystemServiceRegistry.java:557)
+E/StrictMode( 1643): 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+E/StrictMode( 1643): 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+E/StrictMode( 1643): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+E/StrictMode( 1643): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.from(LayoutInflater.java:288)
+E/StrictMode( 1643): 	at com.android.documentsui.DragShadowBuilder.<init>(DragShadowBuilder.java:49)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:195)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:0)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager.create(DragAndDropManager.java:163)
+E/StrictMode( 1643): 	at com.android.documentsui.DocumentsApplication.onCreate(DocumentsApplication.java:147)
+E/StrictMode( 1643): 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1316)
+E/StrictMode( 1643): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6998)
+E/StrictMode( 1643): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+E/StrictMode( 1643): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+E/StrictMode( 1643): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+E/StrictMode( 1643): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/StrictMode( 1643): 	at android.os.Looper.loop(Looper.java:294)
+E/StrictMode( 1643): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+E/StrictMode( 1643): 	at java.lang.reflect.Method.invoke(Native Method)
+E/StrictMode( 1643): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/StrictMode( 1643): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+E/StrictMode( 1643): Tried to access the API:ViewConfiguration which needs to have proper configuration from a non-UI Context:com.android.documentsui.DocumentsApplication@4f0dc81 The API:ViewConfiguration needs a proper configuration. Use UI contexts such as an activity or a context created via createWindowContext(Display, int, Bundle) or  createConfigurationContext(Configuration) with a proper configuration.
+E/StrictMode( 1643): java.lang.IllegalAccessException: Tried to access the API:ViewConfiguration which needs to have proper configuration from a non-UI Context:com.android.documentsui.DocumentsApplication@4f0dc81
+E/StrictMode( 1643): 	at android.os.StrictMode.assertConfigurationContext(StrictMode.java:2332)
+E/StrictMode( 1643): 	at android.view.ViewConfiguration.get(ViewConfiguration.java:568)
+E/StrictMode( 1643): 	at android.view.View.<init>(View.java:5493)
+E/StrictMode( 1643): 	at android.view.View.<init>(View.java:5638)
+E/StrictMode( 1643): 	at android.view.ViewGroup.<init>(ViewGroup.java:704)
+E/StrictMode( 1643): 	at android.widget.LinearLayout.<init>(LinearLayout.java:254)
+E/StrictMode( 1643): 	at android.widget.LinearLayout.<init>(LinearLayout.java:250)
+E/StrictMode( 1643): 	at android.widget.LinearLayout.<init>(LinearLayout.java:246)
+E/StrictMode( 1643): 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+E/StrictMode( 1643): 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createView(LayoutInflater.java:866)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createView(LayoutInflater.java:788)
+E/StrictMode( 1643): 	at com.android.internal.policy.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:58)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:942)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:962)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:1016)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:973)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:667)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:538)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:485)
+E/StrictMode( 1643): 	at com.android.documentsui.DragShadowBuilder.<init>(DragShadowBuilder.java:49)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:195)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:0)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager.create(DragAndDropManager.java:163)
+E/StrictMode( 1643): 	at com.android.documentsui.DocumentsApplication.onCreate(DocumentsApplication.java:147)
+E/StrictMode( 1643): 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1316)
+E/StrictMode( 1643): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6998)
+E/StrictMode( 1643): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+E/StrictMode( 1643): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+E/StrictMode( 1643): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+E/StrictMode( 1643): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/StrictMode( 1643): 	at android.os.Looper.loop(Looper.java:294)
+E/StrictMode( 1643): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+E/StrictMode( 1643): 	at java.lang.reflect.Method.invoke(Native Method)
+E/StrictMode( 1643): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/StrictMode( 1643): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+E/StrictMode( 1643): Tried to access the API:ViewConfiguration which needs to have proper configuration from a non-UI Context:com.android.documentsui.DocumentsApplication@4f0dc81 The API:ViewConfiguration needs a proper configuration. Use UI contexts such as an activity or a context created via createWindowContext(Display, int, Bundle) or  createConfigurationContext(Configuration) with a proper configuration.
+E/StrictMode( 1643): java.lang.IllegalAccessException: Tried to access the API:ViewConfiguration which needs to have proper configuration from a non-UI Context:com.android.documentsui.DocumentsApplication@4f0dc81
+E/StrictMode( 1643): 	at android.os.StrictMode.assertConfigurationContext(StrictMode.java:2332)
+E/StrictMode( 1643): 	at android.view.ViewConfiguration.get(ViewConfiguration.java:568)
+E/StrictMode( 1643): 	at android.view.View.<init>(View.java:5493)
+E/StrictMode( 1643): 	at android.view.View.<init>(View.java:5638)
+E/StrictMode( 1643): 	at android.view.ViewGroup.<init>(ViewGroup.java:704)
+E/StrictMode( 1643): 	at android.widget.LinearLayout.<init>(LinearLayout.java:254)
+E/StrictMode( 1643): 	at android.widget.LinearLayout.<init>(LinearLayout.java:250)
+E/StrictMode( 1643): 	at android.widget.LinearLayout.<init>(LinearLayout.java:246)
+E/StrictMode( 1643): 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+E/StrictMode( 1643): 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createView(LayoutInflater.java:866)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createView(LayoutInflater.java:788)
+E/StrictMode( 1643): 	at com.android.internal.policy.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:58)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:942)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:962)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:1016)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:973)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1135)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1096)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:694)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:538)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:485)
+E/StrictMode( 1643): 	at com.android.documentsui.DragShadowBuilder.<init>(DragShadowBuilder.java:49)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:195)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:0)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager.create(DragAndDropManager.java:163)
+E/StrictMode( 1643): 	at com.android.documentsui.DocumentsApplication.onCreate(DocumentsApplication.java:147)
+E/StrictMode( 1643): 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1316)
+E/StrictMode( 1643): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6998)
+E/StrictMode( 1643): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+E/StrictMode( 1643): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+E/StrictMode( 1643): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+E/StrictMode( 1643): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/StrictMode( 1643): 	at android.os.Looper.loop(Looper.java:294)
+E/StrictMode( 1643): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+E/StrictMode( 1643): 	at java.lang.reflect.Method.invoke(Native Method)
+E/StrictMode( 1643): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/StrictMode( 1643): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+E/StrictMode( 1643): Tried to access the API:ViewConfiguration which needs to have proper configuration from a non-UI Context:com.android.documentsui.DocumentsApplication@4f0dc81 The API:ViewConfiguration needs a proper configuration. Use UI contexts such as an activity or a context created via createWindowContext(Display, int, Bundle) or  createConfigurationContext(Configuration) with a proper configuration.
+E/StrictMode( 1643): java.lang.IllegalAccessException: Tried to access the API:ViewConfiguration which needs to have proper configuration from a non-UI Context:com.android.documentsui.DocumentsApplication@4f0dc81
+E/StrictMode( 1643): 	at android.os.StrictMode.assertConfigurationContext(StrictMode.java:2332)
+E/StrictMode( 1643): 	at android.view.ViewConfiguration.get(ViewConfiguration.java:568)
+E/StrictMode( 1643): 	at android.view.View.<init>(View.java:5493)
+E/StrictMode( 1643): 	at android.view.View.<init>(View.java:5638)
+E/StrictMode( 1643): 	at android.widget.ImageView.<init>(ImageView.java:196)
+E/StrictMode( 1643): 	at android.widget.ImageView.<init>(ImageView.java:191)
+E/StrictMode( 1643): 	at android.widget.ImageView.<init>(ImageView.java:187)
+E/StrictMode( 1643): 	at com.android.documentsui.DropBadgeView.<init>(DropBadgeView.java:40)
+E/StrictMode( 1643): 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+E/StrictMode( 1643): 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createView(LayoutInflater.java:866)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:1018)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.parseInclude(LayoutInflater.java:1245)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1131)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1096)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1138)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1096)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:694)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:538)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:485)
+E/StrictMode( 1643): 	at com.android.documentsui.DragShadowBuilder.<init>(DragShadowBuilder.java:49)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:195)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:0)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager.create(DragAndDropManager.java:163)
+E/StrictMode( 1643): 	at com.android.documentsui.DocumentsApplication.onCreate(DocumentsApplication.java:147)
+E/StrictMode( 1643): 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1316)
+E/StrictMode( 1643): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6998)
+E/StrictMode( 1643): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+E/StrictMode( 1643): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+E/StrictMode( 1643): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+E/StrictMode( 1643): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/StrictMode( 1643): 	at android.os.Looper.loop(Looper.java:294)
+E/StrictMode( 1643): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+E/StrictMode( 1643): 	at java.lang.reflect.Method.invoke(Native Method)
+E/StrictMode( 1643): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/StrictMode( 1643): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+E/ContextImpl( 1054): Tried to access visual service WindowManager from a non-visual Context:android.app.Application@3d0f505 WindowManager should be accessed from Activity or other visual Context. Use an Activity or a Context created with Context#createWindowContext(int, Bundle), which are adjusted to the configuration and visual bounds of an area on screen.
+E/ContextImpl( 1054): java.lang.IllegalAccessException: Tried to access visual service WindowManager from a non-visual Context:android.app.Application@3d0f505
+E/ContextImpl( 1054): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2207)
+E/ContextImpl( 1054): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/ContextImpl( 1054): 	at android.content.Context.getSystemService(Context.java:4420)
+E/ContextImpl( 1054): 	at com.android.launcher3.taskbar.TaskbarActivityContext.<init>(TaskbarActivityContext.java:196)
+E/ContextImpl( 1054): 	at com.android.launcher3.taskbar.TaskbarManager.recreateTaskbar(TaskbarManager.java:390)
+E/ContextImpl( 1054): 	at com.android.launcher3.taskbar.TaskbarManager.onUserUnlocked(TaskbarManager.java:297)
+E/ContextImpl( 1054): 	at com.android.quickstep.TouchInteractionService$$ExternalSyntheticLambda7.run(Unknown Source:2)
+E/ContextImpl( 1054): 	at com.android.quickstep.RecentsAnimationDeviceState.notifyUserUnlocked(RecentsAnimationDeviceState.java:347)
+E/ContextImpl( 1054): 	at com.android.quickstep.RecentsAnimationDeviceState.lambda$new$0(RecentsAnimationDeviceState.java:124)
+E/ContextImpl( 1054): 	at com.android.quickstep.RecentsAnimationDeviceState.$r8$lambda$lzbY9l5EY8tTgxhqwlBXif0gwpI(Unknown Source:0)
+E/ContextImpl( 1054): 	at com.android.quickstep.RecentsAnimationDeviceState$$ExternalSyntheticLambda2.accept(Unknown Source:4)
+E/ContextImpl( 1054): 	at com.android.launcher3.util.SimpleBroadcastReceiver.onReceive(SimpleBroadcastReceiver.java:39)
+E/ContextImpl( 1054): 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1802)
+E/ContextImpl( 1054): 	at android.app.LoadedApk$ReceiverDispatcher$Args.$r8$lambda$gDuJqgxY6Zb-ifyeubKeivTLAwk(Unknown Source:0)
+E/ContextImpl( 1054): 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+E/ContextImpl( 1054): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/ContextImpl( 1054): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/ContextImpl( 1054): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/ContextImpl( 1054): 	at android.os.Looper.loop(Looper.java:294)
+E/ContextImpl( 1054): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+E/ContextImpl( 1054): 	at java.lang.reflect.Method.invoke(Native Method)
+E/ContextImpl( 1054): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/ContextImpl( 1054): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+E/OpenGLRenderer( 1054): Unable to match the desired swap behavior.
+E/TelephonyProvider(  992): internal sim-specific settings backup data file does not exist. Aborting restore
+E/StrictMode( 1643): Tried to access the API:ViewConfiguration which needs to have proper configuration from a non-UI Context:com.android.documentsui.DocumentsApplication@4f0dc81 The API:ViewConfiguration needs a proper configuration. Use UI contexts such as an activity or a context created via createWindowContext(Display, int, Bundle) or  createConfigurationContext(Configuration) with a proper configuration.
+E/StrictMode( 1643): java.lang.IllegalAccessException: Tried to access the API:ViewConfiguration which needs to have proper configuration from a non-UI Context:com.android.documentsui.DocumentsApplication@4f0dc81
+E/StrictMode( 1643): 	at android.os.StrictMode.assertConfigurationContext(StrictMode.java:2332)
+E/StrictMode( 1643): 	at android.view.ViewConfiguration.get(ViewConfiguration.java:568)
+E/StrictMode( 1643): 	at android.view.View.<init>(View.java:5493)
+E/StrictMode( 1643): 	at android.view.View.<init>(View.java:5638)
+E/StrictMode( 1643): 	at android.widget.TextView.<init>(TextView.java:1155)
+E/StrictMode( 1643): 	at android.widget.TextView.<init>(TextView.java:1149)
+E/StrictMode( 1643): 	at android.widget.TextView.<init>(TextView.java:1145)
+E/StrictMode( 1643): 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+E/StrictMode( 1643): 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createView(LayoutInflater.java:866)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createView(LayoutInflater.java:788)
+E/StrictMode( 1643): 	at com.android.internal.policy.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:58)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:942)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:962)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:1016)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:973)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1135)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1096)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:1138)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:1096)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:694)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:538)
+E/StrictMode( 1643): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:485)
+E/StrictMode( 1643): 	at com.android.documentsui.DragShadowBuilder.<init>(DragShadowBuilder.java:49)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:195)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager$RuntimeDragAndDropManager.<init>(DragAndDropManager.java:0)
+E/StrictMode( 1643): 	at com.android.documentsui.DragAndDropManager.create(DragAndDropManager.java:163)
+E/StrictMode( 1643): 	at com.android.documentsui.DocumentsApplication.onCreate(DocumentsApplication.java:147)
+E/StrictMode( 1643): 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1316)
+E/StrictMode( 1643): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6998)
+E/StrictMode( 1643): 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+E/StrictMode( 1643): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2236)
+E/StrictMode( 1643): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+E/StrictMode( 1643): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/StrictMode( 1643): 	at android.os.Looper.loop(Looper.java:294)
+E/StrictMode( 1643): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+E/StrictMode( 1643): 	at java.lang.reflect.Method.invoke(Native Method)
+E/StrictMode( 1643): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/StrictMode( 1643): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+E/d.process.media( 1708): Not starting debugger since process cannot load the jdwp agent.
+E/MediaProvider( 1443): Xattr:user.extdbnextrowid0 not found on external storage: android.system.ErrnoException: getxattr failed: ENODATA (No data available)
+E/MediaProvider( 1443): Xattr:user.extdbnextrowid0 not found on external storage: android.system.ErrnoException: getxattr failed: ENODATA (No data available)
+E/gedprovisioning( 1714): Not starting debugger since process cannot load the jdwp agent.
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/FrameEvents( 1054): updateAcquireFence: Did not find frame.
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/wificond(  457): NL80211_CMD_TRIGGER_SCAN failed: Device or resource busy
+E/WificondScannerImpl(  503): Failed to start scan, freqs={2412, 2417, 2422, 2427, 2432, 2437, 2442, 2447, 2452, 2457, 2462, 2467, 2472, 2484, 5180, 5200, 5220, 5240, 5260, 5280, 5300, 5320, 5500, 5520, 5540, 5560, 5580, 5600, 5620, 5640, 5660, 5680, 5700, 5745, 5765, 5785, 5805, 5825} status: -6
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/SystemServiceRegistry(  927): No service published for: ethernet
+E/SystemServiceRegistry(  927): android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+E/SystemServiceRegistry(  927): 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+E/SystemServiceRegistry(  927): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+E/SystemServiceRegistry(  927): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Tethering.java:0)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1184)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1802)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.$r8$lambda$gDuJqgxY6Zb-ifyeubKeivTLAwk(Unknown Source:0)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loop(Looper.java:294)
+E/SystemServiceRegistry(  927): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/SystemServiceRegistry(  927): No service published for: ethernet
+E/SystemServiceRegistry(  927): android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+E/SystemServiceRegistry(  927): 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+E/SystemServiceRegistry(  927): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+E/SystemServiceRegistry(  927): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Tethering.java:0)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1184)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1802)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.$r8$lambda$gDuJqgxY6Zb-ifyeubKeivTLAwk(Unknown Source:0)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loop(Looper.java:294)
+E/SystemServiceRegistry(  927): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/OpenGLRenderer( 1054): Unable to match the desired swap behavior.
+E/FrameEvents( 1054): updateAcquireFence: Did not find frame.
+E/ContextImpl( 1054): Tried to access visual service WindowManager from a non-visual Context:android.app.Application@3d0f505 WindowManager should be accessed from Activity or other visual Context. Use an Activity or a Context created with Context#createWindowContext(int, Bundle), which are adjusted to the configuration and visual bounds of an area on screen.
+E/ContextImpl( 1054): java.lang.IllegalAccessException: Tried to access visual service WindowManager from a non-visual Context:android.app.Application@3d0f505
+E/ContextImpl( 1054): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2207)
+E/ContextImpl( 1054): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/ContextImpl( 1054): 	at android.content.Context.getSystemService(Context.java:4420)
+E/ContextImpl( 1054): 	at com.android.launcher3.taskbar.TaskbarActivityContext.<init>(TaskbarActivityContext.java:196)
+E/ContextImpl( 1054): 	at com.android.launcher3.taskbar.TaskbarManager.recreateTaskbar(TaskbarManager.java:390)
+E/ContextImpl( 1054): 	at com.android.launcher3.taskbar.TaskbarManager.lambda$new$1(TaskbarManager.java:155)
+E/ContextImpl( 1054): 	at com.android.launcher3.taskbar.TaskbarManager.$r8$lambda$4OeqswCwktN347s6A_YeBoQlyng(Unknown Source:0)
+E/ContextImpl( 1054): 	at com.android.launcher3.taskbar.TaskbarManager$$ExternalSyntheticLambda4.onSettingsChanged(Unknown Source:2)
+E/ContextImpl( 1054): 	at com.android.launcher3.util.SettingsCache.onChange(SettingsCache.java:98)
+E/ContextImpl( 1054): 	at android.database.ContentObserver.onChange(ContentObserver.java:170)
+E/ContextImpl( 1054): 	at android.database.ContentObserver.onChange(ContentObserver.java:188)
+E/ContextImpl( 1054): 	at android.database.ContentObserver.onChange(ContentObserver.java:224)
+E/ContextImpl( 1054): 	at android.database.ContentObserver.lambda$dispatchChange$0(ContentObserver.java:304)
+E/ContextImpl( 1054): 	at android.database.ContentObserver.$r8$lambda$ZTAX5Dz0QB2gJk_nBFGhENlKHoI(Unknown Source:0)
+E/ContextImpl( 1054): 	at android.database.ContentObserver$$ExternalSyntheticLambda0.run(Unknown Source:10)
+E/ContextImpl( 1054): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/ContextImpl( 1054): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/ContextImpl( 1054): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/ContextImpl( 1054): 	at android.os.Looper.loop(Looper.java:294)
+E/ContextImpl( 1054): 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+E/ContextImpl( 1054): 	at java.lang.reflect.Method.invoke(Native Method)
+E/ContextImpl( 1054): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+E/ContextImpl( 1054): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+E/OpenGLRenderer( 1054): Unable to match the desired swap behavior.
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/FrameEvents( 1054): updateAcquireFence: Did not find frame.
+E/externalstorage( 1772): Not starting debugger since process cannot load the jdwp agent.
+E/SystemServiceRegistry(  927): No service published for: ethernet
+E/SystemServiceRegistry(  927): android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+E/SystemServiceRegistry(  927): 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+E/SystemServiceRegistry(  927): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+E/SystemServiceRegistry(  927): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.-$$Nest$mupdateConfiguration(Tethering.java:0)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering$StateReceiver.onReceive(Tethering.java:1184)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1802)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.$r8$lambda$gDuJqgxY6Zb-ifyeubKeivTLAwk(Unknown Source:0)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loop(Looper.java:294)
+E/SystemServiceRegistry(  927): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/viders.calendar( 1776): Not starting debugger since process cannot load the jdwp agent.
+E/.quicksearchbox( 1821): Not starting debugger since process cannot load the jdwp agent.
+E/OpenGLRenderer( 1054): Unable to match the desired swap behavior.
+E/FrameEvents( 1054): updateAcquireFence: Did not find frame.
+E/OpenGLRenderer( 1054): Unable to match the desired swap behavior.
+E/FrameEvents( 1054): updateAcquireFence: Did not find frame.
+E/OpenGLRenderer( 1054): Unable to match the desired swap behavior.
+E/FrameEvents( 1054): updateAcquireFence: Did not find frame.
+E/TaskPersister(  503): File error accessing recents directory (directory doesn't exist?).
+E/TaskPersister(  503): File error accessing recents directory (directory doesn't exist?).
+E/android.traceur( 1853): Not starting debugger since process cannot load the jdwp agent.
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/wificond(  457): NL80211_CMD_TRIGGER_SCAN failed: Device or resource busy
+E/WificondScannerImpl(  503): Failed to start scan, freqs={2412, 2417, 2422, 2427, 2432, 2437, 2442, 2447, 2452, 2457, 2462, 2467, 2472, 2484, 5180, 5200, 5220, 5240, 5260, 5280, 5300, 5320, 5500, 5520, 5540, 5560, 5580, 5600, 5620, 5640, 5660, 5680, 5700, 5745, 5765, 5785, 5805, 5825} status: -6
+E/Launcher.Workspace( 1054): Failed to add to item at (4,0) to CellLayout
+E/Launcher.Workspace( 1054): Failed to add to item at (5,0) to CellLayout
+E/NearbyManager(  503): Cannot stop scan with this callback because it is never registered.
+E/ndroid.calendar( 1892): Not starting debugger since process cannot load the jdwp agent.
+E/rrierdefaultapp( 1910): Not starting debugger since process cannot load the jdwp agent.
+E/OpenGLRenderer(  796): Unable to match the desired swap behavior.
+E/android.camera2( 1938): Not starting debugger since process cannot load the jdwp agent.
+E/CarrierConfigLoader(  992): Received response for stale request.
+E/.localtransport( 1954): Not starting debugger since process cannot load the jdwp agent.
+E/MultiDisplayService( 1475): invalid parameters for add/modify display
+E/ndroid.contacts( 1974): Not starting debugger since process cannot load the jdwp agent.
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+E/SystemServiceRegistry(  927): No service published for: ethernet
+E/SystemServiceRegistry(  927): android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+E/SystemServiceRegistry(  927): 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$139.createService(SystemServiceRegistry.java:1872)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1971)
+E/SystemServiceRegistry(  927): 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1645)
+E/SystemServiceRegistry(  927): 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2212)
+E/SystemServiceRegistry(  927): 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:934)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1582)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2550)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2524)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:546)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.lambda$new$3(Tethering.java:345)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering.$r8$lambda$bts3FsOwVdwDhrwMjvAr9kV3Jgs(Tethering.java:0)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.Tethering$$ExternalSyntheticLambda7.accept(R8$$SyntheticClass:0)
+E/SystemServiceRegistry(  927): 	at com.android.networkstack.tethering.util.VersionedBroadcastListener$Receiver.onReceive(VersionedBroadcastListener.java:103)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java:1802)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args.$r8$lambda$gDuJqgxY6Zb-ifyeubKeivTLAwk(Unknown Source:0)
+E/SystemServiceRegistry(  927): 	at android.app.LoadedApk$ReceiverDispatcher$Args$$ExternalSyntheticLambda0.run(Unknown Source:2)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/SystemServiceRegistry(  927): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/SystemServiceRegistry(  927): 	at android.os.Looper.loop(Looper.java:294)
+E/SystemServiceRegistry(  927): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/droid.dynsystem( 1991): Not starting debugger since process cannot load the jdwp agent.
+E/wificond(  457): NL80211_CMD_TRIGGER_SCAN failed: Device or resource busy
+E/WificondScannerImpl(  503): Failed to start scan, freqs={2412, 2417, 2422, 2427, 2432, 2437, 2442, 2447, 2452, 2457, 2462, 2467, 2472, 2484, 5180, 5200, 5220, 5240, 5260, 5280, 5300, 5320, 5500, 5520, 5540, 5560, 5580, 5600, 5620, 5640, 5660, 5680, 5700, 5745, 5765, 5785, 5805, 5825} status: -6
+E/viceentitlement( 2012): Not starting debugger since process cannot load the jdwp agent.
+E/.intentresolver( 2026): Not starting debugger since process cannot load the jdwp agent.
+E/StorageManagerService(  503): Failed to notify volume state changed to the Storage Service
+E/StorageManagerService(  503): com.android.server.storage.StorageSessionController$ExternalStorageServiceException: Failed to notify volume state changed for vol : StorageVolume: Virtual SD card
+E/StorageManagerService(  503): 	at com.android.server.storage.StorageUserConnection$ActiveConnection.notifyVolumeStateChanged(StorageUserConnection.java:420)
+E/StorageManagerService(  503): 	at com.android.server.storage.StorageUserConnection.notifyVolumeStateChanged(StorageUserConnection.java:131)
+E/StorageManagerService(  503): 	at com.android.server.storage.StorageSessionController.notifyVolumeStateChanged(StorageSessionController.java:158)
+E/StorageManagerService(  503): 	at com.android.server.StorageManagerService.onVolumeStateChangedAsync(StorageManagerService.java:1681)
+E/StorageManagerService(  503): 	at com.android.server.StorageManagerService.-$$Nest$monVolumeStateChangedAsync(StorageManagerService.java:0)
+E/StorageManagerService(  503): 	at com.android.server.StorageManagerService$StorageManagerServiceHandler.handleMessage(StorageManagerService.java:804)
+E/StorageManagerService(  503): 	at android.os.Handler.dispatchMessage(Handler.java:106)
+E/StorageManagerService(  503): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/StorageManagerService(  503): 	at android.os.Looper.loop(Looper.java:294)
+E/StorageManagerService(  503): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/StorageManagerService(  503): Caused by: java.util.concurrent.ExecutionException: android.os.ParcelableException: java.lang.IllegalArgumentException
+E/StorageManagerService(  503): 	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:372)
+E/StorageManagerService(  503): 	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2072)
+E/StorageManagerService(  503): 	at com.android.server.storage.StorageUserConnection$ActiveConnection.waitForAsync(StorageUserConnection.java:379)
+E/StorageManagerService(  503): 	at com.android.server.storage.StorageUserConnection$ActiveConnection.waitForAsyncVoid(StorageUserConnection.java:358)
+E/StorageManagerService(  503): 	at com.android.server.storage.StorageUserConnection$ActiveConnection.notifyVolumeStateChanged(StorageUserConnection.java:417)
+E/StorageManagerService(  503): 	... 9 more
+E/StorageManagerService(  503): Caused by: android.os.ParcelableException: java.lang.IllegalArgumentException
+E/StorageManagerService(  503): 	at android.os.ParcelableException$1.createFromParcel(ParcelableException.java:82)
+E/StorageManagerService(  503): 	at android.os.ParcelableException$1.createFromParcel(ParcelableException.java:79)
+E/StorageManagerService(  503): 	at android.os.Parcel.readParcelableInternal(Parcel.java:4870)
+E/StorageManagerService(  503): 	at android.os.Parcel.readValue(Parcel.java:4621)
+E/StorageManagerService(  503): 	at android.os.Parcel.readValue(Parcel.java:4390)
+E/StorageManagerService(  503): 	at android.os.Parcel.-$$Nest$mreadValue(Unknown Source:0)
+E/StorageManagerService(  503): 	at android.os.Parcel$LazyValue.apply(Parcel.java:4488)
+E/StorageManagerService(  503): 	at android.os.Parcel$LazyValue.apply(Parcel.java:4447)
+E/StorageManagerService(  503): 	at android.os.BaseBundle.unwrapLazyValueFromMapLocked(BaseBundle.java:415)
+E/StorageManagerService(  503): 	at android.os.BaseBundle.getValueAt(BaseBundle.java:401)
+E/StorageManagerService(  503): 	at android.os.BaseBundle.getValue(BaseBundle.java:381)
+E/StorageManagerService(  503): 	at android.os.BaseBundle.getValue(BaseBundle.java:364)
+E/StorageManagerService(  503): 	at android.os.BaseBundle.get(BaseBundle.java:737)
+E/StorageManagerService(  503): 	at android.os.Bundle.getParcelable(Bundle.java:953)
+E/StorageManagerService(  503): 	at com.android.server.storage.StorageUserConnection$ActiveConnection.setResult(StorageUserConnection.java:448)
+E/StorageManagerService(  503): 	at com.android.server.storage.StorageUserConnection$ActiveConnection.lambda$waitForAsyncVoid$0(StorageUserConnection.java:356)
+E/StorageManagerService(  503): 	at com.android.server.storage.StorageUserConnection$ActiveConnection.$r8$lambda$FEark3qKXdf7J4q76s47jPohPig(StorageUserConnection.java:0)
+E/StorageManagerService(  503): 	at com.android.server.storage.StorageUserConnection$ActiveConnection$$ExternalSyntheticLambda3.onResult(R8$$SyntheticClass:0)
+E/StorageManagerService(  503): 	at android.os.RemoteCallback.sendResult(RemoteCallback.java:75)
+E/StorageManagerService(  503): 	at android.os.RemoteCallback$1.sendResult(RemoteCallback.java:52)
+E/StorageManagerService(  503): 	at android.os.IRemoteCallback$Stub.onTransact(IRemoteCallback.java:87)
+E/StorageManagerService(  503): 	at android.os.Binder.execTransactInternal(Binder.java:1344)
+E/StorageManagerService(  503): 	at android.os.Binder.execTransact(Binder.java:1275)
+E/StorageManagerService(  503): Caused by: java.lang.IllegalArgumentException
+E/StorageManagerService(  503): 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+E/StorageManagerService(  503): 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+E/StorageManagerService(  503): 	at android.os.ParcelableException.readFromParcel(ParcelableException.java:56)
+E/StorageManagerService(  503): 	... 23 more
+E/ystem:dynsystem( 2027): Not starting debugger since process cannot load the jdwp agent.
+E/com.android.nfc( 2039): Not starting debugger since process cannot load the jdwp agent.
+E/ackageinstaller( 2078): Not starting debugger since process cannot load the jdwp agent.
+E/android.rkpdapp( 2095): Not starting debugger since process cannot load the jdwp agent.
+E/m.android.shell( 2113): Not starting debugger since process cannot load the jdwp agent.
+E/tatementservice( 2127): Not starting debugger since process cannot load the jdwp agent.
+E/WifiStaIfaceAidlImpl(  503): installApfPacketFilter failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/WifiStaIfaceAidlImpl(  503): installApfPacketFilter failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/Netd    (  324): no such netId 100
+E/Netd    (  324): no such netId 100
+E/WifiStaIfaceAidlImpl(  503): setDtimMultiplier failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/WifiStaIfaceAidlImpl(  503): installApfPacketFilter failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/Netd    (  324): no such netId 100
+E/ConnectivityService(  503): Exception in networkAddRouteParcel for non-gateway: android.os.ServiceSpecificException: Machine is not on the network (code 64)
+E/Netd    (  324): no such netId 100
+E/ConnectivityService(  503): Exception in networkAddRouteParcel for gateway: android.os.ServiceSpecificException: Machine is not on the network (code 64)
+E/WifiStaIfaceAidlImpl(  503): stopRssiMonitoring failed with service-specific exception: android.os.ServiceSpecificException:  (code 5)
+E/NetlinkEvent(  324): NetlinkEvent::FindParam(): Parameter 'INTERFACE' not found
+E/NetlinkEvent(  324): NetlinkEvent::FindParam(): Parameter 'STATE' not found
+E/NetlinkEvent(  324): NetlinkEvent::FindParam(): Parameter 'TIME_NS' not found
+E/NetlinkEvent(  324): NetlinkEvent::FindParam(): Parameter 'UID' not found
+E/TaskWorkerFactory( 1501): Cannot create worker: com.android.devicelockcontroller.provision.worker.DeviceCheckInWorker
+E/TaskWorkerFactory( 1501): java.lang.NoSuchMethodException: com.android.devicelockcontroller.provision.worker.DeviceCheckInWorker.<init> [class android.content.Context, class androidx.work.WorkerParameters, interface com.google.common.util.concurrent.ListeningExecutorService]
+E/TaskWorkerFactory( 1501): 	at java.lang.Class.getConstructor0(Class.java:3325)
+E/TaskWorkerFactory( 1501): 	at java.lang.Class.getDeclaredConstructor(Class.java:3063)
+E/TaskWorkerFactory( 1501): 	at com.android.devicelockcontroller.policy.TaskWorkerFactory.createWorker(TaskWorkerFactory.java:53)
+E/TaskWorkerFactory( 1501): 	at androidx.work.DelegatingWorkerFactory.createWorker(DelegatingWorkerFactory.java:71)
+E/TaskWorkerFactory( 1501): 	at androidx.work.WorkerFactory.createWorkerWithDefaultFallback(WorkerFactory.java:82)
+E/TaskWorkerFactory( 1501): 	at androidx.work.impl.WorkerWrapper.runWorker(WorkerWrapper.java:240)
+E/TaskWorkerFactory( 1501): 	at androidx.work.impl.WorkerWrapper.run(WorkerWrapper.java:142)
+E/TaskWorkerFactory( 1501): 	at androidx.work.impl.utils.SerialExecutorImpl$Task.run(SerialExecutorImpl.java:96)
+E/TaskWorkerFactory( 1501): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+E/TaskWorkerFactory( 1501): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+E/TaskWorkerFactory( 1501): 	at java.lang.Thread.run(Thread.java:1012)
+E/GnssPsdsDownloader(  503): No Long-Term PSDS servers were specified in the GnssConfiguration
+E/DrmHalHidl( 2095): Failed to find passthrough drm factories
+E/clearkey-DrmFactory( 2195): Clearkey Drm HAL: failed to create drm plugin, invalid crypto scheme
+E/DrmHalAidl( 2095): uuid=[edef8ba979d64ace a3c827dcd51d21ed] Failed to make drm plugin: 6
+E/DrmHalHidl( 2095): uuid=[edef8ba979d64ace a3c827dcd51d21ed] No supported hal instance found
+E/StorageManager( 1443): Failed to set extended attributes for /storage/emulated/0/Android to set project id.: Operation not permitted
+E/StorageManager( 1443): Failed to set extended attributes for /storage/emulated/0/Android/media to set project id.: Operation not permitted
+E/RkpdServerInterface( 2095): Server connection failed for url: https://remoteprovisioning.googleapis.com/v1:signCertificates?challenge=AAABoiCz2EEBILStY7LQHp8QCrVklrZHspzNl3k=&request_id=e69e9336-7792-4db2-a7b9-24d885154961, response code: 400
+E/RkpdServerInterface( 2095): Repeated failure count: 1
+E/RkpdServerInterface( 2095): {
+E/RkpdServerInterface( 2095):   "error": {
+E/RkpdServerInterface( 2095):     "code": 400,
+E/RkpdServerInterface( 2095):     "message": "Invalid request payload: vendor_patch_level`0` should be in the format YYYYMMDD or YYYYMM if present.\nRequestId: e69e9336-7792-4db2-a7b9-24d885154961",
+E/RkpdServerInterface( 2095):     "status": "INVALID_ARGUMENT"
+E/RkpdServerInterface( 2095):   }
+E/RkpdServerInterface( 2095): }
+E/RkpdPeriodicProvisioner( 2095): Error provisioning keys for com.android.rkpdapp.interfaces.SystemInterface{android.hardware.security.keymint.IRemotelyProvisionedComponent/default}
+E/RkpdPeriodicProvisioner( 2095): com.android.rkpdapp.RkpdException: HTTP error status encountered: 400
+E/RkpdPeriodicProvisioner( 2095): 	at com.android.rkpdapp.interfaces.ServerInterface.requestData(ServerInterface.java:341)
+E/RkpdPeriodicProvisioner( 2095): 	at com.android.rkpdapp.interfaces.ServerInterface.connectAndGetData(ServerInterface.java:287)
+E/RkpdPeriodicProvisioner( 2095): 	at com.android.rkpdapp.interfaces.ServerInterface.requestSignedCertificates(ServerInterface.java:121)
+E/RkpdPeriodicProvisioner( 2095): 	at com.android.rkpdapp.provisioner.Provisioner.batchProvision(Provisioner.java:157)
+E/RkpdPeriodicProvisioner( 2095): 	at com.android.rkpdapp.provisioner.Provisioner.fetchCertificates(Provisioner.java:136)
+E/RkpdPeriodicProvisioner( 2095): 	at com.android.rkpdapp.provisioner.Provisioner.provisionKeys(Provisioner.java:89)
+E/RkpdPeriodicProvisioner( 2095): 	at com.android.rkpdapp.provisioner.PeriodicProvisioner.doWork(PeriodicProvisioner.java:110)
+E/RkpdPeriodicProvisioner( 2095): 	at androidx.work.Worker$1.run(Worker.java:82)
+E/RkpdPeriodicProvisioner( 2095): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+E/RkpdPeriodicProvisioner( 2095): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+E/RkpdPeriodicProvisioner( 2095): 	at java.lang.Thread.run(Thread.java:1012)
+E/WifiStaIfaceAidlImpl(  503): installApfPacketFilter failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/netd    (  324): Error adding route ::/0 -> fe80::2 wlan0 to table 1016: File exists
+E/WifiStaIfaceAidlImpl(  503): setDtimMultiplier failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+E/idmap2d (  445): no resources were overlaid
+E/system_server(  503): No package ID 7f found for resource ID 0x7f08025b.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f1315be.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f08025a.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f13067c.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f080259.
+E/system_server(  503): No package ID 7f found for resource ID 0x7f130e50.
+E/apexd   (    0): Didn't generate uevent for [com.android.apex.cts.shim] removal
+E/apexd   (    0): Didn't generate uevent for [com.android.btservices] removal
+E/apexd   (    0): Didn't generate uevent for [com.android.devicelock] removal
+E/apexd   (    0): Didn't generate uevent for [com.android.healthfitness] removal
+E/apexd   (    0): Didn't generate uevent for [com.android.i18n] removal
+E/apexd   (    0): Didn't generate uevent for [com.android.os.statsd] removal
+E/apexd   (    0): Didn't generate uevent for [com.android.rkpd] removal
+E/apexd   (    0): Didn't generate uevent for [com.android.runtime] removal
+E/apexd   (    0): Didn't generate uevent for [com.android.sdkext] removal
+E/apexd   (    0): Didn't generate uevent for [com.android.tzdata] removal
+E/apexd   (    0): Didn't generate uevent for [com.android.virt] removal
+E/apexd   (    0): Didn't generate uevent for [com.android.vndk.v34] removal
+E/BackupHelper(  798): Could not parse delayed permissions
+E/BackupHelper(  798): java.io.FileNotFoundException: /data/user_de/0/com.android.permissioncontroller/files/delayed_restore_permissions.xml: open failed: ENOENT (No such file or directory)
+E/BackupHelper(  798): 	at libcore.io.IoBridge.open(IoBridge.java:574)
+E/BackupHelper(  798): 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+E/BackupHelper(  798): 	at android.app.ContextImpl.openFileInput(ContextImpl.java:745)
+E/BackupHelper(  798): 	at com.android.permissioncontroller.permission.service.BackupHelper.restoreDelayedState(BackupHelper.java:409)
+E/BackupHelper(  798): 	at com.android.permissioncontroller.permission.service.PermissionControllerServiceImpl.onRestoreDelayedRuntimePermissionsBackup(PermissionControllerServiceImpl.java:426)
+E/BackupHelper(  798): 	at com.android.permissioncontroller.permission.service.PermissionControllerServiceImpl.lambda$onApplyStagedRuntimePermissionBackup$4(PermissionControllerServiceImpl.java:420)
+E/BackupHelper(  798): 	at com.android.permissioncontroller.permission.service.PermissionControllerServiceImpl.$r8$lambda$tLRxnveBSElsWBMXSZfvxMhS6zQ(PermissionControllerServiceImpl.java:0)
+E/BackupHelper(  798): 	at com.android.permissioncontroller.permission.service.PermissionControllerServiceImpl$$ExternalSyntheticLambda10.run(R8$$SyntheticClass:0)
+E/BackupHelper(  798): 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:305)
+E/BackupHelper(  798): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+E/BackupHelper(  798): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+E/BackupHelper(  798): 	at java.lang.Thread.run(Thread.java:1012)
+E/BackupHelper(  798): Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+E/BackupHelper(  798): 	at libcore.io.Linux.open(Native Method)
+E/BackupHelper(  798): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+E/BackupHelper(  798): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+E/BackupHelper(  798): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+E/BackupHelper(  798): 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8063)
+E/BackupHelper(  798): 	at libcore.io.IoBridge.open(IoBridge.java:560)
+E/BackupHelper(  798): 	... 11 more
+E/AppOps  (  503): attributionTag VCN not declared in manifest of android
+W/StradaI18n( 2325): en	mph
+W/StradaI18n( 2325): en	Android Auto
+W/StradaI18n( 2325): en	CarPlay
+W/StradaI18n( 2325): en	Bluetooth
+E/SensorNotificationService(  503): Invalid local geomagnetic field, ignore.
+E/WifiHealthMonitor(  503):  Hit PackageManager exception
+E/WifiHealthMonitor(  503): android.content.pm.PackageManager$NameNotFoundException: No module info for package: com.android.wifi
+E/WifiHealthMonitor(  503): 	at android.app.ApplicationPackageManager.getModuleInfo(ApplicationPackageManager.java:1190)
+E/WifiHealthMonitor(  503): 	at com.android.server.wifi.WifiHealthMonitor.getWifiStackVersion(WifiHealthMonitor.java:367)
+E/WifiHealthMonitor(  503): 	at com.android.server.wifi.WifiHealthMonitor.extractCurrentSoftwareBuildInfo(WifiHealthMonitor.java:588)
+E/WifiHealthMonitor(  503): 	at com.android.server.wifi.WifiHealthMonitor.postBootSwBuildCheck(WifiHealthMonitor.java:523)
+E/WifiHealthMonitor(  503): 	at com.android.server.wifi.WifiHealthMonitor.postBootDetectionHandler(WifiHealthMonitor.java:514)
+E/WifiHealthMonitor(  503): 	at com.android.server.wifi.WifiHealthMonitor.-$$Nest$mpostBootDetectionHandler(WifiHealthMonitor.java:0)
+E/WifiHealthMonitor(  503): 	at com.android.server.wifi.WifiHealthMonitor$2.onAlarm(WifiHealthMonitor.java:190)
+E/WifiHealthMonitor(  503): 	at android.app.AlarmManager$ListenerWrapper.run(AlarmManager.java:375)
+E/WifiHealthMonitor(  503): 	at android.os.Handler.handleCallback(Handler.java:958)
+E/WifiHealthMonitor(  503): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/WifiHealthMonitor(  503): 	at com.android.server.wifi.RunnerHandler.dispatchMessage(RunnerHandler.java:122)
+E/WifiHealthMonitor(  503): 	at android.os.Looper.loopOnce(Looper.java:205)
+E/WifiHealthMonitor(  503): 	at android.os.Looper.loop(Looper.java:294)
+E/WifiHealthMonitor(  503): 	at android.os.HandlerThread.run(HandlerThread.java:67)
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/BLASTSyncEngine(  503): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+E/audit   (    0): rate limit exceeded
+E/BLASTSyncEngine(  503): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+E/audit   (    0): rate limit exceeded
+E/BLASTSyncEngine(  503): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+E/audit   (    0): rate limit exceeded
+E/BLASTSyncEngine(  503): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+E/audit   (    0): rate limit exceeded
+E/BLASTSyncEngine(  503): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+E/audit   (    0): rate limit exceeded
+E/BLASTSyncEngine(  503): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+E/audit   (    0): rate limit exceeded
+E/BLASTSyncEngine(  503): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+E/audit   (    0): rate limit exceeded
+E/BLASTSyncEngine(  503): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+E/audit   (    0): rate limit exceeded
+E/BLASTSyncEngine(  503): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/BLASTSyncEngine(  503): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/GnssPsdsDownloader(  503): No Long-Term PSDS servers were specified in the GnssConfiguration
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): en	mph
+W/StradaI18n( 2325): en	Android Auto
+W/StradaI18n( 2325): en	CarPlay
+W/StradaI18n( 2325): en	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): en	StradaOS
+W/StradaI18n( 2325): en	English
+W/StradaI18n( 2325): en	None
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): en	— / Bluetooth
+W/StradaI18n( 2325): en	Canción de prueba — StradaOS
+W/StradaI18n( 2325): en	Carátula de internet: apagada
+W/StradaI18n( 2325): en	68/215 s · hcn
+W/StradaI18n( 2325): en	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): en	Cancion de prueba
+W/StradaI18n( 2325): en	SecurityException
+W/StradaI18n( 2325): en	com.stradaos.launcher.debug
+W/StradaI18n( 2325): en	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): en	Zoom: 17
+W/StradaI18n( 2325): en	OpenTopoMap
+W/StradaI18n( 2325): en	OpenStreetMap
+W/StradaI18n( 2325): en	Android 14 (API 34)
+W/StradaI18n( 2325): en	Location permission: yes
+W/StradaI18n( 2325): en	Head unit GPS: on · network location: off
+W/StradaI18n( 2325): en	Last signal: 0 s ago
+W/StradaI18n( 2325): en	Searching for 5 min
+W/StradaI18n( 2325): en	Position: 4.65330, -74.08360
+W/StradaI18n( 2325): en	Offline map: none
+W/StradaI18n( 2325): en	Provider: OSM Germany
+W/StradaI18n( 2325): en	Live traffic: inactive
+W/StradaI18n( 2325): en	Tiles downloaded: 24 · cached: 24
+W/StradaI18n( 2325): en	Errors in a row: 0
+W/StradaI18n( 2325): en	Last error: —
+W/StradaI18n( 2325): en	Sources tried:
+W/StradaI18n( 2325): en	OSM Germany
+W/StradaI18n( 2325): en	• OSM Germany: OK
+W/StradaI18n( 2325): en	OSM France
+W/StradaI18n( 2325): en	not tried
+W/StradaI18n( 2325): en	• OSM France: not tried
+W/StradaI18n( 2325): en	OSM Humanitarian
+W/StradaI18n( 2325): en	• OSM Humanitarian: not tried
+W/StradaI18n( 2325): en	• OpenTopoMap: not tried
+W/StradaI18n( 2325): en	Esri dark gray
+W/StradaI18n( 2325): en	• Esri dark gray: not tried
+W/StradaI18n( 2325): en	• OpenStreetMap: not tried
+W/StradaI18n( 2325): en	TLS ready (TLSv1.2), 118 roots
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): en	2.39.0-prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): pt	mph
+W/StradaI18n( 2325): pt	Android Auto
+W/StradaI18n( 2325): pt	CarPlay
+W/StradaI18n( 2325): pt	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): pt	StradaOS
+W/StradaI18n( 2325): pt	Português
+W/StradaI18n( 2325): pt	Nenhum
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): pt	— / Bluetooth
+W/StradaI18n( 2325): pt	Canción de prueba — StradaOS
+W/StradaI18n( 2325): pt	Carátula de internet: apagada
+W/StradaI18n( 2325): pt	68/215 s · hcn
+W/StradaI18n( 2325): pt	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): pt	Cancion de prueba
+W/StradaI18n( 2325): pt	SecurityException
+W/StradaI18n( 2325): pt	com.stradaos.launcher.debug
+W/StradaI18n( 2325): pt	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): pt	Zoom: 17
+W/StradaI18n( 2325): pt	OpenTopoMap
+W/StradaI18n( 2325): pt	OpenStreetMap
+W/StradaI18n( 2325): pt	Android 14 (API 34)
+W/StradaI18n( 2325): pt	Permissão de localização: sim
+W/StradaI18n( 2325): pt	GPS do aparelho: ligado · localização por rede: desligada
+W/StradaI18n( 2325): pt	Último sinal: há 1 s
+W/StradaI18n( 2325): pt	Procurando há 6 min
+W/StradaI18n( 2325): pt	Posição: 4.65330, -74.08360
+W/StradaI18n( 2325): pt	Mapa offline: nenhum
+W/StradaI18n( 2325): pt	Provedor: OSM Alemanha
+W/StradaI18n( 2325): pt	Trânsito ao vivo: inativo
+W/StradaI18n( 2325): pt	Blocos baixados: 24 · em cache: 24
+W/StradaI18n( 2325): pt	Erros seguidos: 0
+W/StradaI18n( 2325): pt	Último erro: —
+W/StradaI18n( 2325): pt	Fontes testadas:
+W/StradaI18n( 2325): pt	OSM Alemanha
+W/StradaI18n( 2325): pt	• OSM Alemanha: OK
+W/StradaI18n( 2325): pt	OSM França
+W/StradaI18n( 2325): pt	não testada
+W/StradaI18n( 2325): pt	• OSM França: não testada
+W/StradaI18n( 2325): pt	OSM Humanitário
+W/StradaI18n( 2325): pt	• OSM Humanitário: não testada
+W/StradaI18n( 2325): pt	• OpenTopoMap: não testada
+W/StradaI18n( 2325): pt	Esri cinza escuro
+W/StradaI18n( 2325): pt	• Esri cinza escuro: não testada
+W/StradaI18n( 2325): pt	• OpenStreetMap: não testada
+W/StradaI18n( 2325): pt	TLS pronto (TLSv1.2), 118 raízes
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): pt	2.39.0-prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): it	mph
+W/StradaI18n( 2325): it	Android Auto
+W/StradaI18n( 2325): it	CarPlay
+W/StradaI18n( 2325): it	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): it	StradaOS
+W/StradaI18n( 2325): it	Italiano
+W/StradaI18n( 2325): it	Nessuna
+W/StradaI18n( 2325): it	Reale
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): it	— / Bluetooth
+W/StradaI18n( 2325): it	Canción de prueba — StradaOS
+W/StradaI18n( 2325): it	Carátula de internet: apagada
+W/StradaI18n( 2325): it	68/215 s · hcn
+W/StradaI18n( 2325): it	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): it	Cancion de prueba
+W/StradaI18n( 2325): it	SecurityException
+W/StradaI18n( 2325): it	com.stradaos.launcher.debug
+W/StradaI18n( 2325): it	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): it	Zoom: 17
+W/StradaI18n( 2325): it	OpenTopoMap
+W/StradaI18n( 2325): it	OpenStreetMap
+W/StradaI18n( 2325): it	Android 14 (API 34)
+W/StradaI18n( 2325): it	Permesso di posizione: sì
+W/StradaI18n( 2325): it	GPS del dispositivo: acceso · posizione da rete: spenta
+W/StradaI18n( 2325): it	Ultimo segnale: 0 s fa
+W/StradaI18n( 2325): it	In ricerca da 7 min
+W/StradaI18n( 2325): it	Posizione: 4.65330, -74.08360
+W/StradaI18n( 2325): it	Mappa offline: nessuno
+W/StradaI18n( 2325): it	Fornitore: OSM Germania
+W/StradaI18n( 2325): it	Traffico in tempo reale: inattivo
+W/StradaI18n( 2325): it	Tessere scaricate: 24 · in cache: 24
+W/StradaI18n( 2325): it	Errori consecutivi: 0
+W/StradaI18n( 2325): it	Ultimo errore: —
+W/StradaI18n( 2325): it	Fonti provate:
+W/StradaI18n( 2325): it	OSM Germania
+W/StradaI18n( 2325): it	• OSM Germania: OK
+W/StradaI18n( 2325): it	non provata
+W/StradaI18n( 2325): it	• OSM Francia: non provata
+W/StradaI18n( 2325): it	OSM Umanitario
+W/StradaI18n( 2325): it	• OSM Umanitario: non provata
+W/StradaI18n( 2325): it	• OpenTopoMap: non provata
+W/StradaI18n( 2325): it	Esri grigio scuro
+W/StradaI18n( 2325): it	• Esri grigio scuro: non provata
+W/StradaI18n( 2325): it	• OpenStreetMap: non provata
+W/StradaI18n( 2325): it	TLS pronto (TLSv1.2), 118 radici
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): de	mph
+W/StradaI18n( 2325): de	Android Auto
+W/StradaI18n( 2325): de	CarPlay
+W/StradaI18n( 2325): de	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): de	StradaOS
+W/StradaI18n( 2325): de	Deutsch
+W/StradaI18n( 2325): de	Keine
+W/StradaI18n( 2325): de	Tatsächlich
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): de	— / Bluetooth
+W/StradaI18n( 2325): de	Canción de prueba — StradaOS
+W/StradaI18n( 2325): de	Carátula de internet: apagada
+W/StradaI18n( 2325): de	68/215 s · hcn
+W/StradaI18n( 2325): de	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): de	Cancion de prueba
+W/StradaI18n( 2325): de	SecurityException
+W/StradaI18n( 2325): de	com.stradaos.launcher.debug
+W/StradaI18n( 2325): de	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): de	Zoom: 17
+W/StradaI18n( 2325): de	OpenTopoMap
+W/StradaI18n( 2325): de	OpenStreetMap
+W/StradaI18n( 2325): de	Android 14 (API 34)
+W/StradaI18n( 2325): de	Standortberechtigung: ja
+W/StradaI18n( 2325): de	GPS des Geräts: an · Netzwerkortung: aus
+W/StradaI18n( 2325): de	Letztes Signal: vor 0 s
+W/StradaI18n( 2325): de	Suche seit 7 min
+W/StradaI18n( 2325): de	Position: 4.65330, -74.08360
+W/StradaI18n( 2325): de	Offline-Karte: keine
+W/StradaI18n( 2325): de	Anbieter: OSM Deutschland
+W/StradaI18n( 2325): de	Live-Verkehr: inaktiv
+W/StradaI18n( 2325): de	Heruntergeladene Kacheln: 24 · im Cache: 24
+W/StradaI18n( 2325): de	Fehler in Folge: 0
+W/StradaI18n( 2325): de	Letzter Fehler: —
+W/StradaI18n( 2325): de	Getestete Quellen:
+W/StradaI18n( 2325): de	OSM Deutschland
+W/StradaI18n( 2325): de	• OSM Deutschland: OK
+W/StradaI18n( 2325): de	OSM Frankreich
+W/StradaI18n( 2325): de	nicht getestet
+W/StradaI18n( 2325): de	• OSM Frankreich: nicht getestet
+W/StradaI18n( 2325): de	OSM Humanitär
+W/StradaI18n( 2325): de	• OSM Humanitär: nicht getestet
+W/StradaI18n( 2325): de	• OpenTopoMap: nicht getestet
+W/StradaI18n( 2325): de	Esri dunkelgrau
+W/StradaI18n( 2325): de	• Esri dunkelgrau: nicht getestet
+W/StradaI18n( 2325): de	• OpenStreetMap: nicht getestet
+W/StradaI18n( 2325): de	TLS bereit (TLSv1.2), 118 Wurzeln
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ms	mph
+W/StradaI18n( 2325): ms	Android Auto
+W/StradaI18n( 2325): ms	CarPlay
+W/StradaI18n( 2325): ms	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ms	StradaOS
+W/StradaI18n( 2325): ms	Melayu
+W/StradaI18n( 2325): ms	Tiada
+W/StradaI18n( 2325): ms	Sebenar
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ms	— / Bluetooth
+W/StradaI18n( 2325): ms	Canción de prueba — StradaOS
+W/StradaI18n( 2325): ms	Carátula de internet: apagada
+W/StradaI18n( 2325): ms	68/215 s · hcn
+W/StradaI18n( 2325): ms	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): ms	Cancion de prueba
+W/StradaI18n( 2325): ms	SecurityException
+W/StradaI18n( 2325): ms	com.stradaos.launcher.debug
+W/StradaI18n( 2325): ms	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ms	OpenTopoMap
+W/StradaI18n( 2325): ms	OpenStreetMap
+W/StradaI18n( 2325): ms	Android 14 (API 34)
+W/StradaI18n( 2325): ms	Kebenaran lokasi: ya
+W/StradaI18n( 2325): ms	GPS unit: hidup · lokasi rangkaian: mati
+W/StradaI18n( 2325): ms	Isyarat terakhir: 0 s lalu
+W/StradaI18n( 2325): ms	Mencari sejak 7 min
+W/StradaI18n( 2325): ms	Kedudukan: 4.65330, -74.08360
+W/StradaI18n( 2325): ms	Peta luar talian: tiada
+W/StradaI18n( 2325): ms	Pembekal: OSM Jerman
+W/StradaI18n( 2325): ms	Trafik langsung: tidak aktif
+W/StradaI18n( 2325): ms	Jubin dimuat turun: 24 · dalam cache: 24
+W/StradaI18n( 2325): ms	Ralat berturut-turut: 0
+W/StradaI18n( 2325): ms	Ralat terakhir: —
+W/StradaI18n( 2325): ms	Sumber dicuba:
+W/StradaI18n( 2325): ms	OSM Jerman
+W/StradaI18n( 2325): ms	• OSM Jerman: OK
+W/StradaI18n( 2325): ms	OSM Perancis
+W/StradaI18n( 2325): ms	belum dicuba
+W/StradaI18n( 2325): ms	• OSM Perancis: belum dicuba
+W/StradaI18n( 2325): ms	OSM Kemanusiaan
+W/StradaI18n( 2325): ms	• OSM Kemanusiaan: belum dicuba
+W/StradaI18n( 2325): ms	• OpenTopoMap: belum dicuba
+W/StradaI18n( 2325): ms	Esri kelabu gelap
+W/StradaI18n( 2325): ms	• Esri kelabu gelap: belum dicuba
+W/StradaI18n( 2325): ms	• OpenStreetMap: belum dicuba
+W/StradaI18n( 2325): ms	TLS sedia (TLSv1.2), 118 akar
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ar	mph
+W/StradaI18n( 2325): ar	Android Auto
+W/StradaI18n( 2325): ar	CarPlay
+W/StradaI18n( 2325): ar	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ar	StradaOS
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ar	— / Bluetooth
+W/StradaI18n( 2325): ar	Canción de prueba — StradaOS
+W/StradaI18n( 2325): ar	Carátula de internet: apagada
+W/StradaI18n( 2325): ar	68/215 s · hcn
+W/StradaI18n( 2325): ar	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): ar	Cancion de prueba
+W/StradaI18n( 2325): ar	SecurityException
+W/StradaI18n( 2325): ar	com.stradaos.launcher.debug
+W/StradaI18n( 2325): ar	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ar	OpenTopoMap
+W/StradaI18n( 2325): ar	OpenStreetMap
+W/StradaI18n( 2325): ar	Android 14 (API 34)
+W/StradaI18n( 2325): ar	• OpenTopoMap: لم يُجرَّب
+W/StradaI18n( 2325): ar	Esri رمادي داكن
+W/StradaI18n( 2325): ar	• Esri رمادي داكن: لم يُجرَّب
+W/StradaI18n( 2325): ar	• OpenStreetMap: لم يُجرَّب
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): tr	mph
+W/StradaI18n( 2325): tr	Android Auto
+W/StradaI18n( 2325): tr	CarPlay
+W/StradaI18n( 2325): tr	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): tr	StradaOS
+W/StradaI18n( 2325): tr	Hiçbiri
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): tr	— / Bluetooth
+W/StradaI18n( 2325): tr	Canción de prueba — StradaOS
+W/StradaI18n( 2325): tr	Carátula de internet: apagada
+W/StradaI18n( 2325): tr	68/215 s · hcn
+W/StradaI18n( 2325): tr	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): tr	Cancion de prueba
+W/StradaI18n( 2325): tr	SecurityException
+W/StradaI18n( 2325): tr	com.stradaos.launcher.debug
+W/StradaI18n( 2325): tr	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+E/WifiStaIfaceAidlImpl(  503): installApfPacketFilter failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+W/StradaI18n( 2325): tr	OpenTopoMap
+W/StradaI18n( 2325): tr	OpenStreetMap
+W/StradaI18n( 2325): tr	Android 14 (API 34)
+W/StradaI18n( 2325): tr	Konum izni: evet
+W/StradaI18n( 2325): tr	Cihaz GPS'i: açık · ağ konumu: kapalı
+W/StradaI18n( 2325): tr	Son sinyal: 0 sn önce
+W/StradaI18n( 2325): tr	8 dk'dır arıyor
+W/StradaI18n( 2325): tr	Konum: 4.65330, -74.08360
+W/StradaI18n( 2325): tr	Yakınlaştırma: 17
+W/StradaI18n( 2325): tr	Çevrimdışı harita: hiçbiri
+W/StradaI18n( 2325): tr	Sağlayıcı: OSM Almanya
+W/StradaI18n( 2325): tr	Canlı trafik: etkin değil
+W/StradaI18n( 2325): tr	İndirilen döşemeler: 24 · önbellekte: 24
+W/StradaI18n( 2325): tr	Üst üste hatalar: 0
+W/StradaI18n( 2325): tr	Son hata: —
+W/StradaI18n( 2325): tr	Denenen kaynaklar:
+W/StradaI18n( 2325): tr	OSM Almanya
+W/StradaI18n( 2325): tr	• OSM Almanya: OK
+W/StradaI18n( 2325): tr	OSM Fransa
+W/StradaI18n( 2325): tr	denenmedi
+W/StradaI18n( 2325): tr	• OSM Fransa: denenmedi
+W/StradaI18n( 2325): tr	OSM İnsani
+W/StradaI18n( 2325): tr	• OSM İnsani: denenmedi
+W/StradaI18n( 2325): tr	• OpenTopoMap: denenmedi
+W/StradaI18n( 2325): tr	Esri koyu gri
+W/StradaI18n( 2325): tr	• Esri koyu gri: denenmedi
+W/StradaI18n( 2325): tr	• OpenStreetMap: denenmedi
+W/StradaI18n( 2325): tr	TLS hazır (TLSv1.2), 118 kök
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): fr	mph
+W/StradaI18n( 2325): fr	Android Auto
+W/StradaI18n( 2325): fr	CarPlay
+W/StradaI18n( 2325): fr	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): fr	StradaOS
+W/StradaI18n( 2325): fr	Français
+W/StradaI18n( 2325): fr	Aucune
+W/StradaI18n( 2325): fr	Réel
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): fr	— / Bluetooth
+W/StradaI18n( 2325): fr	Canción de prueba — StradaOS
+W/StradaI18n( 2325): fr	Carátula de internet: apagada
+W/StradaI18n( 2325): fr	68/215 s · hcn
+W/StradaI18n( 2325): fr	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): fr	Cancion de prueba
+W/StradaI18n( 2325): fr	SecurityException
+W/StradaI18n( 2325): fr	com.stradaos.launcher.debug
+W/StradaI18n( 2325): fr	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): fr	OpenTopoMap
+W/StradaI18n( 2325): fr	OpenStreetMap
+W/StradaI18n( 2325): fr	Android 14 (API 34)
+W/StradaI18n( 2325): fr	Autorisation de position : oui
+W/StradaI18n( 2325): fr	GPS de l'appareil : activé · position par le réseau : désactivée
+W/StradaI18n( 2325): fr	Dernier signal : il y a 0 s
+W/StradaI18n( 2325): fr	Recherche depuis 9 min
+W/StradaI18n( 2325): fr	Position : 4.65330, -74.08360
+W/StradaI18n( 2325): fr	Zoom : 17
+W/StradaI18n( 2325): fr	Carte hors ligne : aucune
+W/StradaI18n( 2325): fr	Fournisseur : OSM Allemagne
+W/StradaI18n( 2325): fr	Trafic en direct : inactif
+W/StradaI18n( 2325): fr	Tuiles téléchargées : 24 · en cache : 24
+W/StradaI18n( 2325): fr	Erreurs consécutives : 0
+W/StradaI18n( 2325): fr	Dernière erreur : —
+W/StradaI18n( 2325): fr	Sources testées :
+W/StradaI18n( 2325): fr	OSM Allemagne
+W/StradaI18n( 2325): fr	OSM Allemagne 
+W/StradaI18n( 2325): fr	OSM France
+W/StradaI18n( 2325): fr	OSM France 
+W/StradaI18n( 2325): fr	non testée
+W/StradaI18n( 2325): fr	OSM Humanitaire
+W/StradaI18n( 2325): fr	OSM Humanitaire 
+W/StradaI18n( 2325): fr	OpenTopoMap 
+W/StradaI18n( 2325): fr	Esri gris foncé
+W/StradaI18n( 2325): fr	Esri gris foncé 
+W/StradaI18n( 2325): fr	OpenStreetMap 
+W/StradaI18n( 2325): fr	TLS prêt (TLSv1.2), 118 racines
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): zh	mph
+W/StradaI18n( 2325): zh	Android Auto
+W/StradaI18n( 2325): zh	CarPlay
+W/StradaI18n( 2325): zh	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): zh	StradaOS
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): zh	— / Bluetooth
+W/StradaI18n( 2325): zh	Canción de prueba — StradaOS
+W/StradaI18n( 2325): zh	Carátula de internet: apagada
+W/StradaI18n( 2325): zh	68/215 s · hcn
+W/StradaI18n( 2325): zh	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): zh	Cancion de prueba
+W/StradaI18n( 2325): zh	SecurityException
+W/StradaI18n( 2325): zh	com.stradaos.launcher.debug
+W/StradaI18n( 2325): zh	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): zh	OpenTopoMap
+W/StradaI18n( 2325): zh	OpenStreetMap
+W/StradaI18n( 2325): zh	Android 14 (API 34)
+W/StradaI18n( 2325): zh	• OpenTopoMap：未尝试
+W/StradaI18n( 2325): zh	• Esri 深灰：未尝试
+W/StradaI18n( 2325): zh	• OpenStreetMap：未尝试
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): hu	mph
+W/StradaI18n( 2325): hu	Android Auto
+W/StradaI18n( 2325): hu	CarPlay
+W/StradaI18n( 2325): hu	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): hu	StradaOS
+W/StradaI18n( 2325): hu	Magyar
+W/StradaI18n( 2325): hu	Nincs
+W/StradaI18n( 2325): hu	Valós
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): hu	— / Bluetooth
+W/StradaI18n( 2325): hu	Canción de prueba — StradaOS
+W/StradaI18n( 2325): hu	Carátula de internet: apagada
+W/StradaI18n( 2325): hu	68/215 s · hcn
+W/StradaI18n( 2325): hu	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): hu	Cancion de prueba
+W/StradaI18n( 2325): hu	SecurityException
+W/StradaI18n( 2325): hu	com.stradaos.launcher.debug
+W/StradaI18n( 2325): hu	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): hu	OpenTopoMap
+W/StradaI18n( 2325): hu	OpenStreetMap
+W/StradaI18n( 2325): hu	Android 14 (API 34)
+W/StradaI18n( 2325): hu	Helymeghatározási engedély: igen
+W/StradaI18n( 2325): hu	Fejegység GPS: be · hálózati hely: ki
+W/StradaI18n( 2325): hu	Utolsó jel: 1 mp-e
+W/StradaI18n( 2325): hu	10 perce keres
+W/StradaI18n( 2325): hu	Pozíció: 4.65330, -74.08360
+W/StradaI18n( 2325): hu	Nagyítás: 17
+W/StradaI18n( 2325): hu	Offline térkép: nincs
+W/StradaI18n( 2325): hu	Szolgáltató: OSM Németország
+W/StradaI18n( 2325): hu	Élő forgalom: inaktív
+W/StradaI18n( 2325): hu	Letöltött csempék: 24 · gyorsítótárban: 24
+W/StradaI18n( 2325): hu	Egymás utáni hibák: 0
+W/StradaI18n( 2325): hu	Utolsó hiba: —
+W/StradaI18n( 2325): hu	Kipróbált források:
+W/StradaI18n( 2325): hu	OSM Németország
+W/StradaI18n( 2325): hu	• OSM Németország: OK
+W/StradaI18n( 2325): hu	OSM Franciaország
+W/StradaI18n( 2325): hu	nem kipróbált
+W/StradaI18n( 2325): hu	• OSM Franciaország: nem kipróbált
+W/StradaI18n( 2325): hu	OSM Humanitárius
+W/StradaI18n( 2325): hu	• OSM Humanitárius: nem kipróbált
+W/StradaI18n( 2325): hu	• OpenTopoMap: nem kipróbált
+W/StradaI18n( 2325): hu	Esri sötétszürke
+W/StradaI18n( 2325): hu	• Esri sötétszürke: nem kipróbált
+W/StradaI18n( 2325): hu	• OpenStreetMap: nem kipróbált
+W/StradaI18n( 2325): hu	TLS kész (TLSv1.2), 118 gyökér
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): pl	mph
+W/StradaI18n( 2325): pl	Android Auto
+W/StradaI18n( 2325): pl	CarPlay
+W/StradaI18n( 2325): pl	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): pl	StradaOS
+W/StradaI18n( 2325): pl	Polski
+W/StradaI18n( 2325): pl	Brak
+W/StradaI18n( 2325): pl	Rzeczywisty
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): pl	— / Bluetooth
+W/StradaI18n( 2325): pl	Canción de prueba — StradaOS
+W/StradaI18n( 2325): pl	Carátula de internet: apagada
+W/StradaI18n( 2325): pl	68/215 s · hcn
+W/StradaI18n( 2325): pl	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): pl	Cancion de prueba
+W/StradaI18n( 2325): pl	SecurityException
+W/StradaI18n( 2325): pl	com.stradaos.launcher.debug
+W/StradaI18n( 2325): pl	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): pl	OpenTopoMap
+W/StradaI18n( 2325): pl	OpenStreetMap
+W/StradaI18n( 2325): pl	Android 14 (API 34)
+W/StradaI18n( 2325): pl	Uprawnienie do lokalizacji: tak
+W/StradaI18n( 2325): pl	GPS jednostki głównej: włączone · lokalizacja na podstawie sieci: wyłączone
+W/StradaI18n( 2325): pl	Ostatni sygnał: 0 s temu
+W/StradaI18n( 2325): pl	Wyszukiwanie trwa 10 min
+W/StradaI18n( 2325): pl	Pozycja: 4.65330, -74.08360
+W/StradaI18n( 2325): pl	Powiększenie: 17
+W/StradaI18n( 2325): pl	Mapa offline: brak
+W/StradaI18n( 2325): pl	Dostawca: OSM Niemcy
+W/StradaI18n( 2325): pl	Ruch na żywo: nieaktywny
+W/StradaI18n( 2325): pl	Pobrane kafelki: 24 · w pamięci podręcznej: 24
+W/StradaI18n( 2325): pl	Kolejne błędy: 0
+W/StradaI18n( 2325): pl	Ostatni błąd: —
+W/StradaI18n( 2325): pl	Sprawdzone źródła:
+W/StradaI18n( 2325): pl	OSM Niemcy
+W/StradaI18n( 2325): pl	• OSM Niemcy: OK
+W/StradaI18n( 2325): pl	OSM Francja
+W/StradaI18n( 2325): pl	nie sprawdzono
+W/StradaI18n( 2325): pl	• OSM Francja: nie sprawdzono
+W/StradaI18n( 2325): pl	OSM Humanitarian
+W/StradaI18n( 2325): pl	• OSM Humanitarian: nie sprawdzono
+W/StradaI18n( 2325): pl	• OpenTopoMap: nie sprawdzono
+W/StradaI18n( 2325): pl	Esri ciemnoszary
+W/StradaI18n( 2325): pl	• Esri ciemnoszary: nie sprawdzono
+W/StradaI18n( 2325): pl	• OpenStreetMap: nie sprawdzono
+W/StradaI18n( 2325): pl	TLS gotowe (TLSv1.2), 118 certyfikatów głównych
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ru	mph
+W/StradaI18n( 2325): ru	Android Auto
+W/StradaI18n( 2325): ru	CarPlay
+W/StradaI18n( 2325): ru	Bluetooth
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ru	StradaOS
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ru	— / Bluetooth
+W/StradaI18n( 2325): ru	Canción de prueba — StradaOS
+W/StradaI18n( 2325): ru	Carátula de internet: apagada
+W/StradaI18n( 2325): ru	68/215 s · hcn
+W/StradaI18n( 2325): ru	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 2325): ru	Cancion de prueba
+W/StradaI18n( 2325): ru	SecurityException
+W/StradaI18n( 2325): ru	com.stradaos.launcher.debug
+W/StradaI18n( 2325): ru	Android Auto: Cancion de prueba
+E/audit   (    0): rate limit exceeded
+W/StradaI18n( 2325): ru	OpenTopoMap
+W/StradaI18n( 2325): ru	OpenStreetMap
+W/StradaI18n( 2325): ru	Android 14 (API 34)
+W/StradaI18n( 2325): ru	• OpenTopoMap: не проверялось
+W/StradaI18n( 2325): ru	Esri тёмно-серая
+W/StradaI18n( 2325): ru	• Esri тёмно-серая: не проверялось
+W/StradaI18n( 2325): ru	• OpenStreetMap: не проверялось
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded
+E/audit   (    0): rate limit exceeded

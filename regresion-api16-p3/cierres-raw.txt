@@ -1,0 +1,336 @@
+--------- beginning of /dev/log/main
+I/DEBUG   ( 1143): debuggerd: Dec 18 2019 18:32:46
+--------- beginning of /dev/log/system
+E/AudioMixer( 1148): unable to find downmix effect
+E/SurfaceFlinger( 1145): ro.sf.lcd_density must be defined as a build property
+E/BandwidthController( 1142): runIptablesCmd(): failed /system/bin/iptables -A bw_INPUT -m owner --socket-exists res=256
+E/BandwidthController( 1142): runIptablesCmd(): failed /system/bin/ip6tables -A bw_INPUT -m owner --socket-exists res=256
+I/dalvikvm( 1146): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm( 1146): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm( 1146): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm( 1146): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+E/PhonePolicy( 1146): Could not preload class for phone policy: com.android.internal.policy.impl.PhoneWindow$ContextMenuCallback
+I/dalvikvm( 1146): System server process 1375 has been created
+E/BatteryService( 1375): usbOnlinePath not found
+E/BatteryService( 1375): batteryVoltagePath not found
+E/BatteryService( 1375): batteryTemperaturePath not found
+E/PowerManagerService-JNI( 1375): Couldn't load power module (No such file or directory)
+E/SQLiteLog( 1375): (1) no such table: secure
+E/libsuspend( 1375): Error opening /sys/power/autosleep: No such file or directory
+E/SoundPool( 1375): error loading /system/media/audio/ui/Lock.ogg
+E/SoundPool( 1375): error loading /system/media/audio/ui/Unlock.ogg
+E/EventHub( 1375): could not get driver version for /dev/input/mouse0, Not a typewriter
+E/Trace   ( 1375): error opening trace file: Permission denied (13)
+E/CommandListener( 1142): Failed to open /proc/sys/net/ipv6/conf/wlan0/disable_ipv6: No such file or directory
+E/WifiStateMachine( 1375): Failed to disable IPv6: java.lang.IllegalStateException: command '1 interface ipv6 wlan0 disable' failed with '400 1 Failed to change IPv6 state (No such file or directory)'
+E/MobileDataStateTracker( 1375): default: Ignoring feature request because could not acquire PhoneService
+E/MobileDataStateTracker( 1375): default: Could not enable APN type "default"
+E/EventHub( 1375): could not get driver version for /dev/input/mice, Not a typewriter
+E/SQLiteLog( 1375): (1) no such table: locksettings
+E/Trace   ( 1437): error opening trace file: Permission denied (13)
+E/Trace   ( 1145): error opening trace file: Permission denied (13)
+E/Trace   ( 1450): error opening trace file: Permission denied (13)
+E/Trace   ( 1464): error opening trace file: Permission denied (13)
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/Trace   ( 1477): error opening trace file: Permission denied (13)
+E/ThrottleService( 1375): Error reading data file
+E/Trace   ( 1491): error opening trace file: Permission denied (13)
+E/Trace   ( 1508): error opening trace file: Permission denied (13)
+E/Trace   ( 1522): error opening trace file: Permission denied (13)
+E/ActivityThread( 1491): Failed to find provider info for com.android.inputmethod.latin.dictionarypack
+E/BinaryDictionaryGetter( 1491): Could not find a dictionary pack
+E/Trace   ( 1547): error opening trace file: Permission denied (13)
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/Trace   ( 1582): error opening trace file: Permission denied (13)
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/Trace   ( 1594): error opening trace file: Permission denied (13)
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/GoogleSettings( 1582): Can't set key use_location_for_services in content://com.google.settings/partner
+E/GoogleSettings( 1582): java.lang.IllegalArgumentException: Unknown URL content://com.google.settings/partner
+E/GoogleSettings( 1582): 	at android.content.ContentResolver.insert(ContentResolver.java:860)
+E/GoogleSettings( 1582): 	at com.google.android.gsf.GoogleSettingsContract$NameValueTable.putString(GoogleSettingsContract.java:53)
+E/GoogleSettings( 1582): 	at com.google.android.gsf.GoogleSettingsContract$Partner.putString(GoogleSettingsContract.java:124)
+E/GoogleSettings( 1582): 	at com.google.android.gsf.GoogleSettingsContract$Partner.putInt(GoogleSettingsContract.java:136)
+E/GoogleSettings( 1582): 	at com.google.android.gsf.UseLocationForServices.setUseLocationForServices(UseLocationForServices.java:115)
+E/GoogleSettings( 1582): 	at com.android.sdksetup.DefaultActivity.onCreate(DefaultActivity.java:51)
+E/GoogleSettings( 1582): 	at android.app.Activity.performCreate(Activity.java:5008)
+E/GoogleSettings( 1582): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1079)
+E/GoogleSettings( 1582): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2023)
+E/GoogleSettings( 1582): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2084)
+E/GoogleSettings( 1582): 	at android.app.ActivityThread.access$600(ActivityThread.java:130)
+E/GoogleSettings( 1582): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1195)
+E/GoogleSettings( 1582): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/GoogleSettings( 1582): 	at android.os.Looper.loop(Looper.java:137)
+E/GoogleSettings( 1582): 	at android.app.ActivityThread.main(ActivityThread.java:4745)
+E/GoogleSettings( 1582): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/GoogleSettings( 1582): 	at java.lang.reflect.Method.invoke(Method.java:511)
+E/GoogleSettings( 1582): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+E/GoogleSettings( 1582): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+E/GoogleSettings( 1582): 	at dalvik.system.NativeStart.main(Native Method)
+E/ActivityThread( 1582): Failed to find provider info for com.google.settings
+E/Trace   ( 1614): error opening trace file: Permission denied (13)
+E/Trace   ( 1626): error opening trace file: Permission denied (13)
+E/ThrottleService( 1375): Error reading data file
+E/ThrottleService( 1375): problem during onPollAlarm: java.lang.IllegalStateException: problem parsing stats: java.io.FileNotFoundException: /proc/net/xt_qtaguid/iface_stat_all: open failed: ENOENT (No such file or directory)
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/ThrottleService( 1375): problem during onPollAlarm: java.lang.IllegalStateException: problem parsing stats: java.io.FileNotFoundException: /proc/net/xt_qtaguid/iface_stat_all: open failed: ENOENT (No such file or directory)
+E/ThrottleService( 1375): problem during onPollAlarm: java.lang.IllegalStateException: problem parsing stats: java.io.FileNotFoundException: /proc/net/xt_qtaguid/iface_stat_all: open failed: ENOENT (No such file or directory)
+E/Trace   ( 1688): error opening trace file: Permission denied (13)
+E/Trace   ( 1710): error opening trace file: Permission denied (13)
+E/Trace   ( 1735): error opening trace file: Permission denied (13)
+E/SoundPool( 1375): error loading /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1375): error loading /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1375): error loading /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1375): error loading /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1375): error loading /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1375): error loading /system/media/audio/ui/KeypressStandard.ogg
+E/SoundPool( 1375): error loading /system/media/audio/ui/KeypressSpacebar.ogg
+E/SoundPool( 1375): error loading /system/media/audio/ui/KeypressDelete.ogg
+E/SoundPool( 1375): error loading /system/media/audio/ui/KeypressReturn.ogg
+E/Trace   ( 1747): error opening trace file: Permission denied (13)
+E/Trace   ( 1777): error opening trace file: Permission denied (13)
+E/Trace   ( 1801): error opening trace file: Permission denied (13)
+E/Trace   ( 1844): error opening trace file: Permission denied (13)
+E/SQLiteLog( 1710): (1) no such table: files
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/WVMExtractor( 1148): Failed to open libwvm.so
+E/WVMExtractor( 1148): Failed to open libwvm.so
+E/WVMExtractor( 1148): Failed to open libwvm.so
+E/MetadataRetrieverClient( 1148): failed to extract an album art
+E/MediaScannerService( 1710): Exception in handleMessage
+E/MediaScannerService( 1710): android.database.sqlite.SQLiteConstraintException: column time is not unique (code 19)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:727)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:754)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:64)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1665)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1644)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaProvider.logToDb(MediaProvider.java:1738)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaProvider.delete(MediaProvider.java:3744)
+E/MediaScannerService( 1710): 	at android.content.ContentProvider$Transport.delete(ContentProvider.java:228)
+E/MediaScannerService( 1710): 	at android.content.ContentResolver.delete(ContentResolver.java:956)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaScannerService.scan(MediaScannerService.java:109)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaScannerService.access$300(MediaScannerService.java:49)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaScannerService$ServiceHandler.handleMessage(MediaScannerService.java:261)
+E/MediaScannerService( 1710): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/MediaScannerService( 1710): 	at android.os.Looper.loop(Looper.java:137)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaScannerService.run(MediaScannerService.java:183)
+E/MediaScannerService( 1710): 	at java.lang.Thread.run(Thread.java:856)
+E/SQLiteLog( 1710): (1) no such table: album_info
+E/MediaScannerService( 1710): Exception in handleMessage
+E/MediaScannerService( 1710): android.database.sqlite.SQLiteConstraintException: column time is not unique (code 19)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:727)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:754)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:64)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1665)
+E/MediaScannerService( 1710): 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1644)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaProvider.logToDb(MediaProvider.java:1738)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaProvider.delete(MediaProvider.java:3744)
+E/MediaScannerService( 1710): 	at android.content.ContentProvider$Transport.delete(ContentProvider.java:228)
+E/MediaScannerService( 1710): 	at android.content.ContentResolver.delete(ContentResolver.java:956)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaScannerService.scan(MediaScannerService.java:109)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaScannerService.access$300(MediaScannerService.java:49)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaScannerService$ServiceHandler.handleMessage(MediaScannerService.java:261)
+E/MediaScannerService( 1710): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/MediaScannerService( 1710): 	at android.os.Looper.loop(Looper.java:137)
+E/MediaScannerService( 1710): 	at com.android.providers.media.MediaScannerService.run(MediaScannerService.java:183)
+E/MediaScannerService( 1710): 	at java.lang.Thread.run(Thread.java:856)
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+I/AndroidRuntime( 1866): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 1885): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+I/AndroidRuntime( 1897): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+I/AndroidRuntime( 1910): NOTE: attach of thread 'Binder_3' failed
+E/Trace   ( 1932): error opening trace file: Permission denied (13)
+I/dalvikvm( 1945): DexOpt: access denied from Lcom/stradaos/launcher/NotifArt; to field Landroid/app/Notification;.extras
+I/AndroidRuntime( 1923): NOTE: attach of thread 'Binder_3' failed
+E/Trace   ( 1946): error opening trace file: Permission denied (13)
+I/AndroidRuntime( 1966): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/Trace   ( 1976): error opening trace file: Permission denied (13)
+I/dalvikvm( 1976): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.backupRestore
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+I/dalvikvm( 1976): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.backupSave
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+I/dalvikvm( 1976): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.btExport
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+I/dalvikvm( 1976): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.chooseMapToDownload
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+I/dalvikvm( 1976): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.gpsState
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+E/SurfaceFlinger( 1145): GL error 0x0502
+W/dalvikvm( 1976): Unable to resolve superclass of Lcom/stradaos/launcher/MediaListener; (175)
+W/dalvikvm( 1976): Link of class 'Lcom/stradaos/launcher/MediaListener;' failed
+E/dalvikvm( 1976): Could not find class 'com.stradaos.launcher.MediaListener', referenced from method com.stradaos.launcher.Main.notifAccessAdb
+W/dalvikvm( 1976): VFY: unable to resolve const-class 1134 (Lcom/stradaos/launcher/MediaListener;) in Lcom/stradaos/launcher/Main;
+I/dalvikvm( 1976): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.pickMapFile
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+W/dalvikvm( 1976): Unable to resolve superclass of Lcom/stradaos/launcher/MediaListener; (175)
+W/dalvikvm( 1976): Link of class 'Lcom/stradaos/launcher/MediaListener;' failed
+W/dalvikvm( 1976): VFY: unable to resolve static field 2708 (connected) in Lcom/stradaos/launcher/MediaListener;
+W/dalvikvm( 1976): Unable to resolve superclass of Lcom/stradaos/launcher/MediaListener; (175)
+W/dalvikvm( 1976): Link of class 'Lcom/stradaos/launcher/MediaListener;' failed
+W/dalvikvm( 1976): VFY: unable to resolve static field 2708 (connected) in Lcom/stradaos/launcher/MediaListener;
+I/dalvikvm( 1976): Could not find method android.widget.FrameLayout.setElevation, referenced from method com.stradaos.launcher.Main.videoMode
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 785: Landroid/widget/FrameLayout;.setElevation (F)V
+E/SurfaceFlinger( 1145): GL error 0x0502
+W/dalvikvm( 1976): Unable to resolve superclass of Lcom/stradaos/launcher/MediaListener; (175)
+W/dalvikvm( 1976): Link of class 'Lcom/stradaos/launcher/MediaListener;' failed
+W/dalvikvm( 1976): VFY: unable to resolve static field 2708 (connected) in Lcom/stradaos/launcher/MediaListener;
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+I/dalvikvm( 1976): Could not find method android.os.StatFs.getAvailableBytes, referenced from method com.stradaos.launcher.MapDownload.free
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 557: Landroid/os/StatFs;.getAvailableBytes ()J
+E/SurfaceFlinger( 1145): GL error 0x0502
+I/dalvikvm( 1976): DexOpt: access denied from Lcom/stradaos/launcher/NotifArt; to field Landroid/app/Notification;.extras
+W/dalvikvm( 1976): VFY: unable to resolve instance field 9
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+I/dalvikvm( 1976): Could not find method android.speech.tts.TextToSpeech.speak, referenced from method com.stradaos.launcher.Nav.doSpeak
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 577: Landroid/speech/tts/TextToSpeech;.speak (Ljava/lang/CharSequence;ILandroid/os/Bundle;Ljava/lang/String;)I
+I/dalvikvm( 1976): Could not find method android.content.Context.getExternalFilesDirs, referenced from method com.stradaos.launcher.Backup.appDirs
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 110: Landroid/content/Context;.getExternalFilesDirs (Ljava/lang/String;)[Ljava/io/File;
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+W/StradaI18n( 1976): en	mph
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+W/StradaI18n( 1976): en	Android Auto
+W/StradaI18n( 1976): en	CarPlay
+E/SurfaceFlinger( 1145): GL error 0x0502
+W/StradaI18n( 1976): en	Bluetooth
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+I/AndroidRuntime( 2005): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2031): NOTE: attach of thread 'Binder_3' failed
+I/dalvikvm( 1976): Could not find method android.app.NotificationManager.getNotificationChannel, referenced from method com.stradaos.launcher.ObdService.build
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 61: Landroid/app/NotificationManager;.getNotificationChannel (Ljava/lang/String;)Landroid/app/NotificationChannel;
+I/dalvikvm( 1976): Could not find method android.content.Context.startForegroundService, referenced from method com.stradaos.launcher.ObdService.start
+W/dalvikvm( 1976): VFY: unable to resolve virtual method 121: Landroid/content/Context;.startForegroundService (Landroid/content/Intent;)Landroid/content/ComponentName;
+E/ThrottleService( 1375): problem during onPollAlarm: java.lang.IllegalStateException: problem parsing stats: java.io.FileNotFoundException: /proc/net/xt_qtaguid/iface_stat_all: open failed: ENOENT (No such file or directory)
+I/AndroidRuntime( 2074): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2176): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2195): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2207): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2222): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2251): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2266): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2309): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2353): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2372): NOTE: attach of thread 'Binder_2' failed
+I/AndroidRuntime( 2396): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2440): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2463): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2485): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2507): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2530): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2552): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2575): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2598): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2620): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+I/AndroidRuntime( 2671): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+I/AndroidRuntime( 2712): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2758): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2780): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2802): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2824): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+I/AndroidRuntime( 2902): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+E/SurfaceFlinger( 1145): GL error 0x0502
+I/AndroidRuntime( 2936): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2958): NOTE: attach of thread 'Binder_3' failed

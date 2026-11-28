@@ -1,0 +1,77 @@
+archivo: apps-bluetooth-20261128-0553.zip
+Archive:  /tmp/exp.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+     6441  2026-11-28 05:53   info.txt
+   680401  2026-11-28 05:53   com.android.music/Music.apk
+   258728  2026-11-28 05:53   com.android.music/app_Music.odex
+    26797  2026-11-28 05:53   com.android.providers.media/MediaProvider.apk
+   156608  2026-11-28 05:53   com.android.providers.media/app_MediaProvider.odex
+  1878393  2026-11-28 05:53   com.android.phone/Phone.apk
+   723464  2026-11-28 05:53   com.android.phone/app_Phone.odex
+    30659  2026-11-28 05:53   com.android.providers.telephony/TelephonyProvider.apk
+   252864  2026-11-28 05:53   com.android.providers.telephony/app_TelephonyProvider.odex
+   116668  2026-11-28 05:53   com.android.soundrecorder/SoundRecorder.apk
+    29272  2026-11-28 05:53   com.android.soundrecorder/app_SoundRecorder.odex
+---------                     -------
+  4160295                     11 files
+StradaOS · exportación de apps de Bluetooth (#79)
+Equipo: unknown / Android SDK built for x86 / generic_x86 / sdk_x86 / placa unknown / hw ranchu
+Android: 4.1.2 (API 16) sdk_x86-eng 4.1.2 MASTER eng.wdu.20191218.182616 test-keys
+Fingerprint: generic_x86/sdk_x86/generic_x86:4.1.2/MASTER/eng.wdu.20191218.182616:eng/test-keys
+
+■ Music · com.android.music
+  versión 4.1.2-eng.wdu.20191218.190202 (16) · /system/app/Music.apk
+  activity com.android.music.MusicBrowserActivity (exported)
+  activity com.android.music.MediaPlaybackActivity (exported)
+  activity com.android.music.AudioPreview (exported)
+  activity com.android.music.ArtistAlbumBrowserActivity
+  activity com.android.music.AlbumBrowserActivity
+  activity com.android.music.NowPlayingActivity
+  activity com.android.music.TrackBrowserActivity
+  activity com.android.music.QueryBrowserActivity (exported)
+  activity com.android.music.PlaylistBrowserActivity (exported)
+  activity com.android.music.PlaylistShortcutActivity (exported)
+  activity com.android.music.VideoBrowserActivity
+  activity com.android.music.MediaPickerActivity
+  activity com.android.music.MusicPicker (exported)
+  activity com.android.music.CreatePlaylist
+  activity com.android.music.RenamePlaylist
+  activity com.android.music.WeekSelector
+  activity com.android.music.DeleteItems
+  activity com.android.music.ScanningProgress
+  service  com.android.music.MediaPlaybackService
+  receiver com.android.music.MediaButtonIntentReceiver (exported)
+  receiver com.android.music.MediaAppWidgetProvider (exported)
+
+■ Media Storage · com.android.providers.media
+  versión 4.1.2-eng.wdu.20191218.190202 (509) · /system/app/MediaProvider.apk
+  activity com.android.providers.media.RingtonePickerActivity (exported)
+  service  com.android.providers.media.MediaScannerService (exported)
+  service  com.android.providers.media.MtpService
+  receiver com.android.providers.media.MediaUpgradeReceiver (exported)
+  receiver com.android.providers.media.MediaScannerReceiver (exported)
+  receiver com.android.providers.media.UsbReceiver (exported)
+  provider com.android.providers.media.MediaProvider auth=media
+
+■ Phone · com.android.phone
+  versión 4.1.2-eng.wdu.20191218.190202 (16) · /system/app/Phone.apk
+  activity com.android.phone.EmergencyDialer (exported)
+  activity com.android.phone.ADNList
+  activity com.android.phone.SimContacts (exported)
+  activity com.android.phone.FdnList (exported)
+  activity com.android.phone.OutgoingCallBroadcaster (exported)
+  activity com.android.phone.EmergencyOutgoingCallBroadcaster (exported)
+  activity com.android.phone.PrivilegedOutgoingCallBroadcaster (exported)
+  activity com.android.phone.InCallScreen
+  activity com.android.phone.InCallScreenShowActivation (exported)
+  activity com.android.phone.MobileNetworkSettings (exported)
+  activity com.android.phone.Settings
+  activity com.android.phone.NetworkSetting (exported)
+  activity com.android.phone.GsmUmtsOptions (exported)
+  activity com.android.phone.CdmaOptions (exported)
+  activity com.android.phone.GsmUmtsCallOptions (exported)
+  activity com.android.phone.CdmaCallOptions (exported)
+  activity com.android.phone.GsmUmtsCallForwardOptions (exported)
+  activity com.android.phone.GsmUmtsAdditionalCallOptions (exported)
+  activity com.android.phone.CellBroadcastSms (exported)

@@ -1,0 +1,1456 @@
+--------- beginning of /dev/log/main
+I/DEBUG   ( 1145): debuggerd: Dec 18 2019 18:32:46
+--------- beginning of /dev/log/system
+E/BandwidthController( 1144): runIptablesCmd(): failed /system/bin/iptables -A bw_INPUT -m owner --socket-exists res=256
+E/BandwidthController( 1144): runIptablesCmd(): failed /system/bin/ip6tables -A bw_INPUT -m owner --socket-exists res=256
+E/AudioMixer( 1150): unable to find downmix effect
+E/SurfaceFlinger( 1147): ro.sf.lcd_density must be defined as a build property
+I/dalvikvm( 1148): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm( 1148): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm( 1148): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm( 1148): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+E/PhonePolicy( 1148): Could not preload class for phone policy: com.android.internal.policy.impl.PhoneWindow$ContextMenuCallback
+I/dalvikvm( 1148): System server process 1377 has been created
+E/BatteryService( 1377): usbOnlinePath not found
+E/BatteryService( 1377): batteryVoltagePath not found
+E/BatteryService( 1377): batteryTemperaturePath not found
+E/PowerManagerService-JNI( 1377): Couldn't load power module (No such file or directory)
+E/SQLiteLog( 1377): (1) no such table: secure
+E/libsuspend( 1377): Error opening /sys/power/autosleep: No such file or directory
+E/SoundPool( 1377): error loading /system/media/audio/ui/Lock.ogg
+E/SoundPool( 1377): error loading /system/media/audio/ui/Unlock.ogg
+E/EventHub( 1377): could not get driver version for /dev/input/mouse0, Not a typewriter
+E/Trace   ( 1377): error opening trace file: Permission denied (13)
+E/CommandListener( 1144): Failed to open /proc/sys/net/ipv6/conf/wlan0/disable_ipv6: No such file or directory
+E/WifiStateMachine( 1377): Failed to disable IPv6: java.lang.IllegalStateException: command '1 interface ipv6 wlan0 disable' failed with '400 1 Failed to change IPv6 state (No such file or directory)'
+E/MobileDataStateTracker( 1377): default: Ignoring feature request because could not acquire PhoneService
+E/MobileDataStateTracker( 1377): default: Could not enable APN type "default"
+E/EventHub( 1377): could not get driver version for /dev/input/mice, Not a typewriter
+E/SQLiteLog( 1377): (1) no such table: locksettings
+E/Trace   ( 1439): error opening trace file: Permission denied (13)
+E/Trace   ( 1147): error opening trace file: Permission denied (13)
+E/Trace   ( 1452): error opening trace file: Permission denied (13)
+E/Trace   ( 1466): error opening trace file: Permission denied (13)
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/Trace   ( 1479): error opening trace file: Permission denied (13)
+E/ThrottleService( 1377): Error reading data file
+E/Trace   ( 1493): error opening trace file: Permission denied (13)
+E/Trace   ( 1509): error opening trace file: Permission denied (13)
+E/Trace   ( 1525): error opening trace file: Permission denied (13)
+E/BinaryDictionaryGetter( 1493): Could not find a dictionary pack
+E/ActivityThread( 1493): Failed to find provider info for com.android.inputmethod.latin.dictionarypack
+E/Trace   ( 1553): error opening trace file: Permission denied (13)
+E/Trace   ( 1567): error opening trace file: Permission denied (13)
+E/GoogleSettings( 1567): Can't set key use_location_for_services in content://com.google.settings/partner
+E/GoogleSettings( 1567): java.lang.IllegalArgumentException: Unknown URL content://com.google.settings/partner
+E/GoogleSettings( 1567): 	at android.content.ContentResolver.insert(ContentResolver.java:860)
+E/GoogleSettings( 1567): 	at com.google.android.gsf.GoogleSettingsContract$NameValueTable.putString(GoogleSettingsContract.java:53)
+E/GoogleSettings( 1567): 	at com.google.android.gsf.GoogleSettingsContract$Partner.putString(GoogleSettingsContract.java:124)
+E/GoogleSettings( 1567): 	at com.google.android.gsf.GoogleSettingsContract$Partner.putInt(GoogleSettingsContract.java:136)
+E/GoogleSettings( 1567): 	at com.google.android.gsf.UseLocationForServices.setUseLocationForServices(UseLocationForServices.java:115)
+E/GoogleSettings( 1567): 	at com.android.sdksetup.DefaultActivity.onCreate(DefaultActivity.java:51)
+E/GoogleSettings( 1567): 	at android.app.Activity.performCreate(Activity.java:5008)
+E/GoogleSettings( 1567): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1079)
+E/GoogleSettings( 1567): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2023)
+E/GoogleSettings( 1567): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2084)
+E/GoogleSettings( 1567): 	at android.app.ActivityThread.access$600(ActivityThread.java:130)
+E/GoogleSettings( 1567): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1195)
+E/GoogleSettings( 1567): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/GoogleSettings( 1567): 	at android.os.Looper.loop(Looper.java:137)
+E/GoogleSettings( 1567): 	at android.app.ActivityThread.main(ActivityThread.java:4745)
+E/GoogleSettings( 1567): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/GoogleSettings( 1567): 	at java.lang.reflect.Method.invoke(Method.java:511)
+E/GoogleSettings( 1567): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+E/GoogleSettings( 1567): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+E/GoogleSettings( 1567): 	at dalvik.system.NativeStart.main(Native Method)
+E/ActivityThread( 1567): Failed to find provider info for com.google.settings
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/Trace   ( 1591): error opening trace file: Permission denied (13)
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/Trace   ( 1617): error opening trace file: Permission denied (13)
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/Trace   ( 1629): error opening trace file: Permission denied (13)
+E/ThrottleService( 1377): problem during onPollAlarm: java.lang.IllegalStateException: problem parsing stats: java.io.FileNotFoundException: /proc/net/xt_qtaguid/iface_stat_all: open failed: ENOENT (No such file or directory)
+E/ThrottleService( 1377): problem during onPollAlarm: java.lang.IllegalStateException: problem parsing stats: java.io.FileNotFoundException: /proc/net/xt_qtaguid/iface_stat_all: open failed: ENOENT (No such file or directory)
+E/ThrottleService( 1377): Error reading data file
+E/ThrottleService( 1377): problem during onPollAlarm: java.lang.IllegalStateException: problem parsing stats: java.io.FileNotFoundException: /proc/net/xt_qtaguid/iface_stat_all: open failed: ENOENT (No such file or directory)
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/Trace   ( 1693): error opening trace file: Permission denied (13)
+E/Trace   ( 1713): error opening trace file: Permission denied (13)
+E/Trace   ( 1738): error opening trace file: Permission denied (13)
+E/Trace   ( 1750): error opening trace file: Permission denied (13)
+E/SoundPool( 1377): error loading /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1377): error loading /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1377): error loading /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1377): error loading /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1377): error loading /system/media/audio/ui/Effect_Tick.ogg
+E/SoundPool( 1377): error loading /system/media/audio/ui/KeypressStandard.ogg
+E/SoundPool( 1377): error loading /system/media/audio/ui/KeypressSpacebar.ogg
+E/SoundPool( 1377): error loading /system/media/audio/ui/KeypressDelete.ogg
+E/SoundPool( 1377): error loading /system/media/audio/ui/KeypressReturn.ogg
+E/Trace   ( 1782): error opening trace file: Permission denied (13)
+E/Trace   ( 1807): error opening trace file: Permission denied (13)
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 1852): NOTE: attach of thread 'Binder_3' failed
+E/Trace   ( 1863): error opening trace file: Permission denied (13)
+E/SQLiteLog( 1713): (1) no such table: files
+E/WVMExtractor( 1150): Failed to open libwvm.so
+E/WVMExtractor( 1150): Failed to open libwvm.so
+E/WVMExtractor( 1150): Failed to open libwvm.so
+E/MetadataRetrieverClient( 1150): failed to extract an album art
+E/SQLiteLog( 1713): (1) no such table: album_info
+E/MediaScannerService( 1713): Exception in handleMessage
+E/MediaScannerService( 1713): android.database.sqlite.SQLiteConstraintException: column time is not unique (code 19)
+E/MediaScannerService( 1713): 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+E/MediaScannerService( 1713): 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:727)
+E/MediaScannerService( 1713): 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:754)
+E/MediaScannerService( 1713): 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:64)
+E/MediaScannerService( 1713): 	at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1665)
+E/MediaScannerService( 1713): 	at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1644)
+E/MediaScannerService( 1713): 	at com.android.providers.media.MediaProvider.logToDb(MediaProvider.java:1738)
+E/MediaScannerService( 1713): 	at com.android.providers.media.MediaProvider.delete(MediaProvider.java:3744)
+E/MediaScannerService( 1713): 	at android.content.ContentProvider$Transport.delete(ContentProvider.java:228)
+E/MediaScannerService( 1713): 	at android.content.ContentResolver.delete(ContentResolver.java:956)
+E/MediaScannerService( 1713): 	at com.android.providers.media.MediaScannerService.scan(MediaScannerService.java:109)
+E/MediaScannerService( 1713): 	at com.android.providers.media.MediaScannerService.access$300(MediaScannerService.java:49)
+E/MediaScannerService( 1713): 	at com.android.providers.media.MediaScannerService$ServiceHandler.handleMessage(MediaScannerService.java:261)
+E/MediaScannerService( 1713): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/MediaScannerService( 1713): 	at android.os.Looper.loop(Looper.java:137)
+E/MediaScannerService( 1713): 	at com.android.providers.media.MediaScannerService.run(MediaScannerService.java:183)
+E/MediaScannerService( 1713): 	at java.lang.Thread.run(Thread.java:856)
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 1889): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 1901): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/Trace   ( 1936): error opening trace file: Permission denied (13)
+I/dalvikvm( 1949): DexOpt: access denied from Lcom/stradaos/launcher/NotifArt; to field Landroid/app/Notification;.extras
+I/AndroidRuntime( 1927): NOTE: attach of thread 'Binder_3' failed
+E/Trace   ( 1950): error opening trace file: Permission denied (13)
+I/AndroidRuntime( 1970): NOTE: attach of thread 'Binder_3' failed
+E/Trace   ( 1979): error opening trace file: Permission denied (13)
+I/dalvikvm( 1979): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.backupRestore
+W/dalvikvm( 1979): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/dalvikvm( 1979): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.backupSave
+W/dalvikvm( 1979): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+I/dalvikvm( 1979): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.btExport
+W/dalvikvm( 1979): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+I/dalvikvm( 1979): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.chooseMapToDownload
+W/dalvikvm( 1979): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+I/dalvikvm( 1979): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.gpsState
+W/dalvikvm( 1979): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+W/dalvikvm( 1979): Unable to resolve superclass of Lcom/stradaos/launcher/MediaListener; (175)
+W/dalvikvm( 1979): Link of class 'Lcom/stradaos/launcher/MediaListener;' failed
+E/dalvikvm( 1979): Could not find class 'com.stradaos.launcher.MediaListener', referenced from method com.stradaos.launcher.Main.notifAccessAdb
+W/dalvikvm( 1979): VFY: unable to resolve const-class 1134 (Lcom/stradaos/launcher/MediaListener;) in Lcom/stradaos/launcher/Main;
+I/dalvikvm( 1979): Could not find method com.stradaos.launcher.Main.checkSelfPermission, referenced from method com.stradaos.launcher.Main.pickMapFile
+W/dalvikvm( 1979): VFY: unable to resolve virtual method 4032: Lcom/stradaos/launcher/Main;.checkSelfPermission (Ljava/lang/String;)I
+W/dalvikvm( 1979): Unable to resolve superclass of Lcom/stradaos/launcher/MediaListener; (175)
+W/dalvikvm( 1979): Link of class 'Lcom/stradaos/launcher/MediaListener;' failed
+W/dalvikvm( 1979): VFY: unable to resolve static field 2708 (connected) in Lcom/stradaos/launcher/MediaListener;
+W/dalvikvm( 1979): Unable to resolve superclass of Lcom/stradaos/launcher/MediaListener; (175)
+W/dalvikvm( 1979): Link of class 'Lcom/stradaos/launcher/MediaListener;' failed
+W/dalvikvm( 1979): VFY: unable to resolve static field 2708 (connected) in Lcom/stradaos/launcher/MediaListener;
+I/dalvikvm( 1979): Could not find method android.widget.FrameLayout.setElevation, referenced from method com.stradaos.launcher.Main.videoMode
+W/dalvikvm( 1979): VFY: unable to resolve virtual method 785: Landroid/widget/FrameLayout;.setElevation (F)V
+W/dalvikvm( 1979): Unable to resolve superclass of Lcom/stradaos/launcher/MediaListener; (175)
+W/dalvikvm( 1979): Link of class 'Lcom/stradaos/launcher/MediaListener;' failed
+W/dalvikvm( 1979): VFY: unable to resolve static field 2708 (connected) in Lcom/stradaos/launcher/MediaListener;
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/dalvikvm( 1979): Could not find method android.os.StatFs.getAvailableBytes, referenced from method com.stradaos.launcher.MapDownload.free
+W/dalvikvm( 1979): VFY: unable to resolve virtual method 557: Landroid/os/StatFs;.getAvailableBytes ()J
+I/dalvikvm( 1979): DexOpt: access denied from Lcom/stradaos/launcher/NotifArt; to field Landroid/app/Notification;.extras
+W/dalvikvm( 1979): VFY: unable to resolve instance field 9
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/dalvikvm( 1979): Could not find method android.speech.tts.TextToSpeech.speak, referenced from method com.stradaos.launcher.Nav.doSpeak
+W/dalvikvm( 1979): VFY: unable to resolve virtual method 577: Landroid/speech/tts/TextToSpeech;.speak (Ljava/lang/CharSequence;ILandroid/os/Bundle;Ljava/lang/String;)I
+I/dalvikvm( 1979): Could not find method android.content.Context.getExternalFilesDirs, referenced from method com.stradaos.launcher.Backup.appDirs
+W/dalvikvm( 1979): VFY: unable to resolve virtual method 110: Landroid/content/Context;.getExternalFilesDirs (Ljava/lang/String;)[Ljava/io/File;
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): en	mph
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): en	Android Auto
+W/StradaI18n( 1979): en	CarPlay
+W/StradaI18n( 1979): en	Bluetooth
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2008): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2034): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2050): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2068): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2084): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2102): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/ThrottleService( 1377): problem during onPollAlarm: java.lang.IllegalStateException: problem parsing stats: java.io.FileNotFoundException: /proc/net/xt_qtaguid/iface_stat_all: open failed: ENOENT (No such file or directory)
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2118): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2136): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2170): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2220): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2255): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2274): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2290): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2308): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2330): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2376): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2413): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2435): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2501): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2545): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2567): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2622): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2643): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2662): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2678): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2696): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2720): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2757): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2773): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2791): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2813): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2829): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2869): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2885): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2903): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2926): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2942): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 2960): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 2982): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 3004): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3038): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 3061): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 3109): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3138): NOTE: attach of thread 'Binder_1' failed
+I/AndroidRuntime( 3152): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3191): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3226): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 3249): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): en	mph
+W/StradaI18n( 1979): en	Android Auto
+W/StradaI18n( 1979): en	CarPlay
+W/StradaI18n( 1979): en	Bluetooth
+I/AndroidRuntime( 3272): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): en	StradaOS
+W/StradaI18n( 1979): en	English
+W/StradaI18n( 1979): en	None
+I/AndroidRuntime( 3294): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 3316): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): en	— / Bluetooth
+W/StradaI18n( 1979): en	Canción de prueba — StradaOS
+W/StradaI18n( 1979): en	Carátula de internet: apagada
+W/StradaI18n( 1979): en	68/215 s · hcn
+W/StradaI18n( 1979): en	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): en	Cancion de prueba
+W/StradaI18n( 1979): en	com.stradaos.launcher.debug
+W/StradaI18n( 1979): en	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3332): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): en	Zoom: 17
+W/StradaI18n( 1979): en	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): en	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): en	OpenTopoMap
+W/StradaI18n( 1979): en	OpenStreetMap
+W/StradaI18n( 1979): en	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): en	Location permission: yes
+W/StradaI18n( 1979): en	Head unit GPS: on · network location: off
+W/StradaI18n( 1979): en	Last signal: 0 s ago
+W/StradaI18n( 1979): en	Searching for 6 min
+W/StradaI18n( 1979): en	Position: 4.65330, -74.08360
+W/StradaI18n( 1979): en	Offline map: none
+W/StradaI18n( 1979): en	Provider: OSM France
+W/StradaI18n( 1979): en	Live traffic: inactive
+W/StradaI18n( 1979): en	Tiles downloaded: 16 · cached: 16
+W/StradaI18n( 1979): en	Errors in a row: 0
+W/StradaI18n( 1979): en	Last error: [OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): en	Sources tried:
+W/StradaI18n( 1979): en	OSM Germany
+W/StradaI18n( 1979): en	incompatible encryption
+W/StradaI18n( 1979): en	• OSM Germany: incompatible encryption
+W/StradaI18n( 1979): en	OSM France
+W/StradaI18n( 1979): en	• OSM France: OK
+W/StradaI18n( 1979): en	OSM Humanitarian
+W/StradaI18n( 1979): en	not tried
+W/StradaI18n( 1979): en	• OSM Humanitarian: not tried
+W/StradaI18n( 1979): en	• OpenTopoMap: not tried
+W/StradaI18n( 1979): en	Esri dark gray
+W/StradaI18n( 1979): en	• Esri dark gray: not tried
+W/StradaI18n( 1979): en	• OpenStreetMap: not tried
+W/StradaI18n( 1979): en	TLS ready (TLSv1.2), 118 roots
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3366): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3384): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): en	2.39.0-prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3400): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3418): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): pt	mph
+W/StradaI18n( 1979): pt	Android Auto
+W/StradaI18n( 1979): pt	CarPlay
+W/StradaI18n( 1979): pt	Bluetooth
+I/AndroidRuntime( 3441): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): pt	StradaOS
+W/StradaI18n( 1979): pt	Português
+W/StradaI18n( 1979): pt	Nenhum
+I/AndroidRuntime( 3463): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 3485): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): pt	— / Bluetooth
+W/StradaI18n( 1979): pt	Canción de prueba — StradaOS
+W/StradaI18n( 1979): pt	Carátula de internet: apagada
+W/StradaI18n( 1979): pt	68/215 s · hcn
+W/StradaI18n( 1979): pt	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): pt	Cancion de prueba
+W/StradaI18n( 1979): pt	com.stradaos.launcher.debug
+W/StradaI18n( 1979): pt	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3501): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): pt	Zoom: 17
+W/StradaI18n( 1979): pt	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): pt	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): pt	OpenTopoMap
+W/StradaI18n( 1979): pt	OpenStreetMap
+W/StradaI18n( 1979): pt	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): pt	Permissão de localização: sim
+W/StradaI18n( 1979): pt	GPS do aparelho: ligado · localização por rede: desligada
+W/StradaI18n( 1979): pt	Último sinal: há 0 s
+W/StradaI18n( 1979): pt	Procurando há 7 min
+W/StradaI18n( 1979): pt	Posição: 4.65330, -74.08360
+W/StradaI18n( 1979): pt	Mapa offline: nenhum
+W/StradaI18n( 1979): pt	Provedor: OSM França
+W/StradaI18n( 1979): pt	Trânsito ao vivo: inativo
+W/StradaI18n( 1979): pt	Blocos baixados: 16 · em cache: 16
+W/StradaI18n( 1979): pt	Erros seguidos: 0
+W/StradaI18n( 1979): pt	Último erro: [OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): pt	Fontes testadas:
+W/StradaI18n( 1979): pt	OSM Alemanha
+W/StradaI18n( 1979): pt	criptografia incompatível
+W/StradaI18n( 1979): pt	• OSM Alemanha: criptografia incompatível
+W/StradaI18n( 1979): pt	OSM França
+W/StradaI18n( 1979): pt	• OSM França: OK
+W/StradaI18n( 1979): pt	OSM Humanitário
+W/StradaI18n( 1979): pt	não testada
+W/StradaI18n( 1979): pt	• OSM Humanitário: não testada
+W/StradaI18n( 1979): pt	• OpenTopoMap: não testada
+W/StradaI18n( 1979): pt	Esri cinza escuro
+W/StradaI18n( 1979): pt	• Esri cinza escuro: não testada
+W/StradaI18n( 1979): pt	• OpenStreetMap: não testada
+W/StradaI18n( 1979): pt	TLS pronto (TLSv1.2), 118 raízes
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3535): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): pt	2.39.0-prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3568): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3586): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): it	mph
+W/StradaI18n( 1979): it	Android Auto
+W/StradaI18n( 1979): it	CarPlay
+W/StradaI18n( 1979): it	Bluetooth
+W/StradaI18n( 1979): it	StradaOS
+W/StradaI18n( 1979): it	Italiano
+W/StradaI18n( 1979): it	Nessuna
+W/StradaI18n( 1979): it	Reale
+I/AndroidRuntime( 3631): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 3653): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): it	— / Bluetooth
+W/StradaI18n( 1979): it	Canción de prueba — StradaOS
+W/StradaI18n( 1979): it	Carátula de internet: apagada
+W/StradaI18n( 1979): it	68/215 s · hcn
+W/StradaI18n( 1979): it	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): it	Cancion de prueba
+W/StradaI18n( 1979): it	com.stradaos.launcher.debug
+W/StradaI18n( 1979): it	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3669): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): it	Zoom: 17
+W/StradaI18n( 1979): it	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): it	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): it	• OSM Francia: OK
+W/StradaI18n( 1979): it	OpenTopoMap
+W/StradaI18n( 1979): it	OpenStreetMap
+W/StradaI18n( 1979): it	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): it	Permesso di posizione: sì
+W/StradaI18n( 1979): it	GPS del dispositivo: acceso · posizione da rete: spenta
+W/StradaI18n( 1979): it	Ultimo segnale: 0 s fa
+W/StradaI18n( 1979): it	In ricerca da 8 min
+W/StradaI18n( 1979): it	Posizione: 4.65330, -74.08360
+W/StradaI18n( 1979): it	Mappa offline: nessuno
+W/StradaI18n( 1979): it	Fornitore: OSM Francia
+W/StradaI18n( 1979): it	Traffico in tempo reale: inattivo
+W/StradaI18n( 1979): it	Tessere scaricate: 16 · in cache: 16
+W/StradaI18n( 1979): it	Errori consecutivi: 0
+W/StradaI18n( 1979): it	Ultimo errore: [OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): it	Fonti provate:
+W/StradaI18n( 1979): it	OSM Germania
+W/StradaI18n( 1979): it	crittografia non compatibile
+W/StradaI18n( 1979): it	• OSM Germania: crittografia non compatibile
+W/StradaI18n( 1979): it	OSM Umanitario
+W/StradaI18n( 1979): it	non provata
+W/StradaI18n( 1979): it	• OSM Umanitario: non provata
+W/StradaI18n( 1979): it	• OpenTopoMap: non provata
+W/StradaI18n( 1979): it	Esri grigio scuro
+W/StradaI18n( 1979): it	• Esri grigio scuro: non provata
+W/StradaI18n( 1979): it	• OpenStreetMap: non provata
+W/StradaI18n( 1979): it	TLS pronto (TLSv1.2), 118 radici
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3703): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): de	mph
+W/StradaI18n( 1979): de	Android Auto
+W/StradaI18n( 1979): de	CarPlay
+W/StradaI18n( 1979): de	Bluetooth
+I/AndroidRuntime( 3744): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): de	StradaOS
+W/StradaI18n( 1979): de	Deutsch
+W/StradaI18n( 1979): de	Keine
+W/StradaI18n( 1979): de	Tatsächlich
+I/AndroidRuntime( 3766): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 3788): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): de	— / Bluetooth
+W/StradaI18n( 1979): de	Canción de prueba — StradaOS
+W/StradaI18n( 1979): de	Carátula de internet: apagada
+W/StradaI18n( 1979): de	68/215 s · hcn
+W/StradaI18n( 1979): de	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): de	Cancion de prueba
+W/StradaI18n( 1979): de	com.stradaos.launcher.debug
+W/StradaI18n( 1979): de	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3804): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): de	Zoom: 17
+W/StradaI18n( 1979): de	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): de	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): de	OpenTopoMap
+W/StradaI18n( 1979): de	OpenStreetMap
+W/StradaI18n( 1979): de	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): de	Standortberechtigung: ja
+W/StradaI18n( 1979): de	GPS des Geräts: an · Netzwerkortung: aus
+W/StradaI18n( 1979): de	Letztes Signal: vor 0 s
+W/StradaI18n( 1979): de	Suche seit 8 min
+W/StradaI18n( 1979): de	Position: 4.65330, -74.08360
+W/StradaI18n( 1979): de	Offline-Karte: keine
+W/StradaI18n( 1979): de	Anbieter: OSM Frankreich
+W/StradaI18n( 1979): de	Live-Verkehr: inaktiv
+W/StradaI18n( 1979): de	Heruntergeladene Kacheln: 16 · im Cache: 16
+W/StradaI18n( 1979): de	Fehler in Folge: 0
+W/StradaI18n( 1979): de	Letzter Fehler: [OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): de	Getestete Quellen:
+W/StradaI18n( 1979): de	OSM Deutschland
+W/StradaI18n( 1979): de	inkompatible Verschlüsselung
+W/StradaI18n( 1979): de	• OSM Deutschland: inkompatible Verschlüsselung
+W/StradaI18n( 1979): de	OSM Frankreich
+W/StradaI18n( 1979): de	• OSM Frankreich: OK
+W/StradaI18n( 1979): de	OSM Humanitär
+W/StradaI18n( 1979): de	nicht getestet
+W/StradaI18n( 1979): de	• OSM Humanitär: nicht getestet
+W/StradaI18n( 1979): de	• OpenTopoMap: nicht getestet
+W/StradaI18n( 1979): de	Esri dunkelgrau
+W/StradaI18n( 1979): de	• Esri dunkelgrau: nicht getestet
+W/StradaI18n( 1979): de	• OpenStreetMap: nicht getestet
+W/StradaI18n( 1979): de	TLS bereit (TLSv1.2), 118 Wurzeln
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3838): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): ms	mph
+W/StradaI18n( 1979): ms	Android Auto
+W/StradaI18n( 1979): ms	CarPlay
+W/StradaI18n( 1979): ms	Bluetooth
+I/AndroidRuntime( 3878): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): ms	StradaOS
+W/StradaI18n( 1979): ms	Melayu
+W/StradaI18n( 1979): ms	Tiada
+W/StradaI18n( 1979): ms	Sebenar
+I/AndroidRuntime( 3900): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 3922): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): ms	— / Bluetooth
+W/StradaI18n( 1979): ms	Canción de prueba — StradaOS
+W/StradaI18n( 1979): ms	Carátula de internet: apagada
+W/StradaI18n( 1979): ms	68/215 s · hcn
+W/StradaI18n( 1979): ms	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): ms	Cancion de prueba
+W/StradaI18n( 1979): ms	com.stradaos.launcher.debug
+W/StradaI18n( 1979): ms	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3938): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): ms	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): ms	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): ms	OpenTopoMap
+W/StradaI18n( 1979): ms	OpenStreetMap
+W/StradaI18n( 1979): ms	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): ms	Kebenaran lokasi: ya
+W/StradaI18n( 1979): ms	GPS unit: hidup · lokasi rangkaian: mati
+W/StradaI18n( 1979): ms	Isyarat terakhir: 0 s lalu
+W/StradaI18n( 1979): ms	Mencari sejak 9 min
+W/StradaI18n( 1979): ms	Kedudukan: 4.65330, -74.08360
+W/StradaI18n( 1979): ms	Peta luar talian: tiada
+W/StradaI18n( 1979): ms	Pembekal: OSM Perancis
+W/StradaI18n( 1979): ms	Trafik langsung: tidak aktif
+W/StradaI18n( 1979): ms	Jubin dimuat turun: 16 · dalam cache: 16
+W/StradaI18n( 1979): ms	Ralat berturut-turut: 0
+W/StradaI18n( 1979): ms	Ralat terakhir: [OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): ms	Sumber dicuba:
+W/StradaI18n( 1979): ms	OSM Jerman
+W/StradaI18n( 1979): ms	enkripsi tidak serasi
+W/StradaI18n( 1979): ms	• OSM Jerman: enkripsi tidak serasi
+W/StradaI18n( 1979): ms	OSM Perancis
+W/StradaI18n( 1979): ms	• OSM Perancis: OK
+W/StradaI18n( 1979): ms	OSM Kemanusiaan
+W/StradaI18n( 1979): ms	belum dicuba
+W/StradaI18n( 1979): ms	• OSM Kemanusiaan: belum dicuba
+W/StradaI18n( 1979): ms	• OpenTopoMap: belum dicuba
+W/StradaI18n( 1979): ms	Esri kelabu gelap
+W/StradaI18n( 1979): ms	• Esri kelabu gelap: belum dicuba
+W/StradaI18n( 1979): ms	• OpenStreetMap: belum dicuba
+W/StradaI18n( 1979): ms	TLS sedia (TLSv1.2), 118 akar
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3972): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 3990): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): ar	mph
+W/StradaI18n( 1979): ar	Android Auto
+W/StradaI18n( 1979): ar	CarPlay
+W/StradaI18n( 1979): ar	Bluetooth
+I/AndroidRuntime( 4013): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): ar	StradaOS
+I/AndroidRuntime( 4035): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 4057): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): ar	— / Bluetooth
+W/StradaI18n( 1979): ar	Canción de prueba — StradaOS
+W/StradaI18n( 1979): ar	Carátula de internet: apagada
+W/StradaI18n( 1979): ar	68/215 s · hcn
+W/StradaI18n( 1979): ar	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): ar	Cancion de prueba
+W/StradaI18n( 1979): ar	com.stradaos.launcher.debug
+W/StradaI18n( 1979): ar	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4073): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4091): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): ar	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): ar	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): ar	OpenTopoMap
+W/StradaI18n( 1979): ar	OpenStreetMap
+W/StradaI18n( 1979): ar	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): ar	آخر خطأ: [OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): ar	• OpenTopoMap: لم يُجرَّب
+W/StradaI18n( 1979): ar	Esri رمادي داكن
+W/StradaI18n( 1979): ar	• Esri رمادي داكن: لم يُجرَّب
+W/StradaI18n( 1979): ar	• OpenStreetMap: لم يُجرَّب
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4106): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4125): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): tr	mph
+W/StradaI18n( 1979): tr	Android Auto
+W/StradaI18n( 1979): tr	CarPlay
+W/StradaI18n( 1979): tr	Bluetooth
+I/AndroidRuntime( 4148): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): tr	StradaOS
+W/StradaI18n( 1979): tr	Hiçbiri
+I/AndroidRuntime( 4170): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 4192): NOTE: attach of thread 'Binder_1' failed
+W/StradaI18n( 1979): tr	— / Bluetooth
+W/StradaI18n( 1979): tr	Canción de prueba — StradaOS
+W/StradaI18n( 1979): tr	Carátula de internet: apagada
+W/StradaI18n( 1979): tr	68/215 s · hcn
+W/StradaI18n( 1979): tr	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): tr	Cancion de prueba
+W/StradaI18n( 1979): tr	com.stradaos.launcher.debug
+W/StradaI18n( 1979): tr	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4206): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): tr	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): tr	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): tr	OpenTopoMap
+W/StradaI18n( 1979): tr	OpenStreetMap
+W/StradaI18n( 1979): tr	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): tr	Konum izni: evet
+W/StradaI18n( 1979): tr	Cihaz GPS'i: açık · ağ konumu: kapalı
+W/StradaI18n( 1979): tr	Son sinyal: 0 sn önce
+W/StradaI18n( 1979): tr	10 dk'dır arıyor
+W/StradaI18n( 1979): tr	Konum: 4.65330, -74.08360
+W/StradaI18n( 1979): tr	Yakınlaştırma: 17
+W/StradaI18n( 1979): tr	Çevrimdışı harita: hiçbiri
+W/StradaI18n( 1979): tr	Sağlayıcı: OSM Fransa
+W/StradaI18n( 1979): tr	Canlı trafik: etkin değil
+W/StradaI18n( 1979): tr	İndirilen döşemeler: 16 · önbellekte: 16
+W/StradaI18n( 1979): tr	Üst üste hatalar: 0
+W/StradaI18n( 1979): tr	Son hata: [OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): tr	Denenen kaynaklar:
+W/StradaI18n( 1979): tr	OSM Almanya
+W/StradaI18n( 1979): tr	şifreleme desteklenmiyor
+W/StradaI18n( 1979): tr	• OSM Almanya: şifreleme desteklenmiyor
+W/StradaI18n( 1979): tr	OSM Fransa
+W/StradaI18n( 1979): tr	• OSM Fransa: OK
+W/StradaI18n( 1979): tr	OSM İnsani
+W/StradaI18n( 1979): tr	denenmedi
+W/StradaI18n( 1979): tr	• OSM İnsani: denenmedi
+W/StradaI18n( 1979): tr	• OpenTopoMap: denenmedi
+W/StradaI18n( 1979): tr	Esri koyu gri
+W/StradaI18n( 1979): tr	• Esri koyu gri: denenmedi
+W/StradaI18n( 1979): tr	• OpenStreetMap: denenmedi
+W/StradaI18n( 1979): tr	TLS hazır (TLSv1.2), 118 kök
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4240): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4258): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): fr	mph
+W/StradaI18n( 1979): fr	Android Auto
+W/StradaI18n( 1979): fr	CarPlay
+W/StradaI18n( 1979): fr	Bluetooth
+W/StradaI18n( 1979): fr	StradaOS
+W/StradaI18n( 1979): fr	Français
+W/StradaI18n( 1979): fr	Aucune
+W/StradaI18n( 1979): fr	Réel
+I/AndroidRuntime( 4303): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 4325): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): fr	— / Bluetooth
+W/StradaI18n( 1979): fr	Canción de prueba — StradaOS
+W/StradaI18n( 1979): fr	Carátula de internet: apagada
+W/StradaI18n( 1979): fr	68/215 s · hcn
+W/StradaI18n( 1979): fr	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): fr	Cancion de prueba
+W/StradaI18n( 1979): fr	com.stradaos.launcher.debug
+W/StradaI18n( 1979): fr	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4341): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/ThrottleService( 1377): problem during onPollAlarm: java.lang.IllegalStateException: problem parsing stats: java.io.FileNotFoundException: /proc/net/xt_qtaguid/iface_stat_all: open failed: ENOENT (No such file or directory)
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): fr	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): fr	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): fr	OpenTopoMap
+W/StradaI18n( 1979): fr	OpenStreetMap
+W/StradaI18n( 1979): fr	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): fr	Autorisation de position : oui
+W/StradaI18n( 1979): fr	GPS de l'appareil : activé · position par le réseau : désactivée
+W/StradaI18n( 1979): fr	Dernier signal : il y a 0 s
+W/StradaI18n( 1979): fr	Recherche depuis 11 min
+W/StradaI18n( 1979): fr	Position : 4.65330, -74.08360
+W/StradaI18n( 1979): fr	Zoom : 17
+W/StradaI18n( 1979): fr	Carte hors ligne : aucune
+W/StradaI18n( 1979): fr	Fournisseur : OSM France
+W/StradaI18n( 1979): fr	Trafic en direct : inactif
+W/StradaI18n( 1979): fr	Tuiles téléchargées : 16 · en cache : 16
+W/StradaI18n( 1979): fr	Erreurs consécutives : 0
+W/StradaI18n( 1979): fr	Dernière erreur : [OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): fr	Sources testées :
+W/StradaI18n( 1979): fr	OSM Allemagne
+W/StradaI18n( 1979): fr	OSM Allemagne 
+W/StradaI18n( 1979): fr	chiffrement non compatible
+W/StradaI18n( 1979): fr	OSM France
+W/StradaI18n( 1979): fr	OSM France 
+W/StradaI18n( 1979): fr	OSM Humanitaire
+W/StradaI18n( 1979): fr	OSM Humanitaire 
+W/StradaI18n( 1979): fr	non testée
+W/StradaI18n( 1979): fr	OpenTopoMap 
+W/StradaI18n( 1979): fr	Esri gris foncé
+W/StradaI18n( 1979): fr	Esri gris foncé 
+W/StradaI18n( 1979): fr	OpenStreetMap 
+W/StradaI18n( 1979): fr	TLS prêt (TLSv1.2), 118 racines
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4375): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): zh	mph
+W/StradaI18n( 1979): zh	Android Auto
+W/StradaI18n( 1979): zh	CarPlay
+W/StradaI18n( 1979): zh	Bluetooth
+I/AndroidRuntime( 4416): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): zh	StradaOS
+I/AndroidRuntime( 4438): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 4460): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): zh	— / Bluetooth
+W/StradaI18n( 1979): zh	Canción de prueba — StradaOS
+W/StradaI18n( 1979): zh	Carátula de internet: apagada
+W/StradaI18n( 1979): zh	68/215 s · hcn
+W/StradaI18n( 1979): zh	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): zh	Cancion de prueba
+W/StradaI18n( 1979): zh	com.stradaos.launcher.debug
+W/StradaI18n( 1979): zh	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4494): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): zh	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): zh	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): zh	OpenTopoMap
+W/StradaI18n( 1979): zh	OpenStreetMap
+W/StradaI18n( 1979): zh	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): zh	上次错误：[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): zh	• OpenTopoMap：未尝试
+W/StradaI18n( 1979): zh	• Esri 深灰：未尝试
+W/StradaI18n( 1979): zh	• OpenStreetMap：未尝试
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4510): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): hu	mph
+W/StradaI18n( 1979): hu	Android Auto
+W/StradaI18n( 1979): hu	CarPlay
+W/StradaI18n( 1979): hu	Bluetooth
+I/AndroidRuntime( 4551): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): hu	StradaOS
+W/StradaI18n( 1979): hu	Magyar
+W/StradaI18n( 1979): hu	Nincs
+W/StradaI18n( 1979): hu	Valós
+I/AndroidRuntime( 4573): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 4595): NOTE: attach of thread 'Binder_1' failed
+W/StradaI18n( 1979): hu	— / Bluetooth
+W/StradaI18n( 1979): hu	Canción de prueba — StradaOS
+W/StradaI18n( 1979): hu	Carátula de internet: apagada
+W/StradaI18n( 1979): hu	68/215 s · hcn
+W/StradaI18n( 1979): hu	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): hu	Cancion de prueba
+W/StradaI18n( 1979): hu	com.stradaos.launcher.debug
+W/StradaI18n( 1979): hu	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4609): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4627): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): hu	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): hu	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): hu	OpenTopoMap
+W/StradaI18n( 1979): hu	OpenStreetMap
+W/StradaI18n( 1979): hu	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): hu	Helymeghatározási engedély: igen
+W/StradaI18n( 1979): hu	Fejegység GPS: be · hálózati hely: ki
+W/StradaI18n( 1979): hu	Utolsó jel: 1 mp-e
+W/StradaI18n( 1979): hu	12 perce keres
+W/StradaI18n( 1979): hu	Pozíció: 4.65330, -74.08360
+W/StradaI18n( 1979): hu	Nagyítás: 17
+W/StradaI18n( 1979): hu	Offline térkép: nincs
+W/StradaI18n( 1979): hu	Szolgáltató: OSM Franciaország
+W/StradaI18n( 1979): hu	Élő forgalom: inaktív
+W/StradaI18n( 1979): hu	Letöltött csempék: 16 · gyorsítótárban: 16
+W/StradaI18n( 1979): hu	Egymás utáni hibák: 0
+W/StradaI18n( 1979): hu	Utolsó hiba: [OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): hu	Kipróbált források:
+W/StradaI18n( 1979): hu	OSM Németország
+W/StradaI18n( 1979): hu	nem kompatibilis titkosítás
+W/StradaI18n( 1979): hu	• OSM Németország: nem kompatibilis titkosítás
+W/StradaI18n( 1979): hu	OSM Franciaország
+W/StradaI18n( 1979): hu	• OSM Franciaország: OK
+W/StradaI18n( 1979): hu	OSM Humanitárius
+W/StradaI18n( 1979): hu	nem kipróbált
+W/StradaI18n( 1979): hu	• OSM Humanitárius: nem kipróbált
+W/StradaI18n( 1979): hu	• OpenTopoMap: nem kipróbált
+W/StradaI18n( 1979): hu	Esri sötétszürke
+W/StradaI18n( 1979): hu	• Esri sötétszürke: nem kipróbált
+W/StradaI18n( 1979): hu	• OpenStreetMap: nem kipróbált
+W/StradaI18n( 1979): hu	TLS kész (TLSv1.2), 118 gyökér
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4661): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): pl	mph
+W/StradaI18n( 1979): pl	Android Auto
+W/StradaI18n( 1979): pl	CarPlay
+W/StradaI18n( 1979): pl	Bluetooth
+I/AndroidRuntime( 4684): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): pl	StradaOS
+W/StradaI18n( 1979): pl	Polski
+W/StradaI18n( 1979): pl	Brak
+W/StradaI18n( 1979): pl	Rzeczywisty
+I/AndroidRuntime( 4706): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 4728): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): pl	— / Bluetooth
+W/StradaI18n( 1979): pl	Canción de prueba — StradaOS
+W/StradaI18n( 1979): pl	Carátula de internet: apagada
+W/StradaI18n( 1979): pl	68/215 s · hcn
+W/StradaI18n( 1979): pl	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): pl	Cancion de prueba
+W/StradaI18n( 1979): pl	com.stradaos.launcher.debug
+W/StradaI18n( 1979): pl	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4744): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+W/StradaI18n( 1979): pl	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): pl	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): pl	OpenTopoMap
+W/StradaI18n( 1979): pl	OpenStreetMap
+W/StradaI18n( 1979): pl	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): pl	Uprawnienie do lokalizacji: tak
+W/StradaI18n( 1979): pl	GPS jednostki głównej: włączone · lokalizacja na podstawie sieci: wyłączone
+W/StradaI18n( 1979): pl	Ostatni sygnał: 0 s temu
+W/StradaI18n( 1979): pl	Wyszukiwanie trwa 12 min
+W/StradaI18n( 1979): pl	Pozycja: 4.65330, -74.08360
+W/StradaI18n( 1979): pl	Powiększenie: 17
+W/StradaI18n( 1979): pl	Mapa offline: brak
+W/StradaI18n( 1979): pl	Dostawca: OSM Francja
+W/StradaI18n( 1979): pl	Ruch na żywo: nieaktywny
+W/StradaI18n( 1979): pl	Pobrane kafelki: 16 · w pamięci podręcznej: 16
+W/StradaI18n( 1979): pl	Kolejne błędy: 0
+W/StradaI18n( 1979): pl	Ostatni błąd: [OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): pl	Sprawdzone źródła:
+W/StradaI18n( 1979): pl	OSM Niemcy
+W/StradaI18n( 1979): pl	incompatible encryption
+W/StradaI18n( 1979): pl	• OSM Niemcy: incompatible encryption
+W/StradaI18n( 1979): pl	OSM Francja
+W/StradaI18n( 1979): pl	• OSM Francja: OK
+W/StradaI18n( 1979): pl	OSM Humanitarian
+W/StradaI18n( 1979): pl	nie sprawdzono
+W/StradaI18n( 1979): pl	• OSM Humanitarian: nie sprawdzono
+W/StradaI18n( 1979): pl	• OpenTopoMap: nie sprawdzono
+W/StradaI18n( 1979): pl	Esri ciemnoszary
+W/StradaI18n( 1979): pl	• Esri ciemnoszary: nie sprawdzono
+W/StradaI18n( 1979): pl	• OpenStreetMap: nie sprawdzono
+W/StradaI18n( 1979): pl	TLS gotowe (TLSv1.2), 118 certyfikatów głównych
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4778): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4796): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): ru	mph
+W/StradaI18n( 1979): ru	Android Auto
+W/StradaI18n( 1979): ru	CarPlay
+W/StradaI18n( 1979): ru	Bluetooth
+I/AndroidRuntime( 4819): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): ru	StradaOS
+I/AndroidRuntime( 4841): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 4863): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): ru	— / Bluetooth
+W/StradaI18n( 1979): ru	Canción de prueba — StradaOS
+W/StradaI18n( 1979): ru	Carátula de internet: apagada
+W/StradaI18n( 1979): ru	68/215 s · hcn
+W/StradaI18n( 1979): ru	[Cancion de prueba, StradaOS, 00:30 / 03:20]
+W/StradaI18n( 1979): ru	Cancion de prueba
+W/StradaI18n( 1979): ru	com.stradaos.launcher.debug
+W/StradaI18n( 1979): ru	Android Auto: Cancion de prueba
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4879): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4897): NOTE: attach of thread 'Binder_3' failed
+W/StradaI18n( 1979): ru	[OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): ru	error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:741 0x8815e925:0x00000000)
+W/StradaI18n( 1979): ru	OpenTopoMap
+W/StradaI18n( 1979): ru	OpenStreetMap
+W/StradaI18n( 1979): ru	Android 4.1.2 (API 16)
+W/StradaI18n( 1979): ru	Последняя ошибка: [OSM Alemania] javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xb7a64630: Failure in SSL library, usually a protocol error
+W/StradaI18n( 1979): ru	• OpenTopoMap: не проверялось
+W/StradaI18n( 1979): ru	Esri тёмно-серая
+W/StradaI18n( 1979): ru	• Esri тёмно-серая: не проверялось
+W/StradaI18n( 1979): ru	• OpenStreetMap: не проверялось
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4913): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 4931): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 5012): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+I/AndroidRuntime( 5030): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 5053): NOTE: attach of thread 'Binder_3' failed
+I/AndroidRuntime( 5075): NOTE: attach of thread 'Binder_3' failed
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502
+E/SurfaceFlinger( 1147): GL error 0x0502

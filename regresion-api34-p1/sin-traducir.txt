@@ -1,0 +1,4 @@
+en	Android Auto
+en	Bluetooth
+en	CarPlay
+en	mph
