@@ -1,0 +1,5 @@
+STRADAOS-LIC-1
+id=QEYD21SX
+temas=carbono,cards
+fecha=2026-11-28
+firma=K4jLzm1QxMv6EOCXPb2QZMEUauYLgdz5xQGAgc+fzHi3sgSDkVQsPuVDd7qEn0KO6SLjs5haT43fNU4qpJOmC4AIj+6NWsi0DiLN3qPmu17+5oGRsGm7EyAfpAtyduSigd+sSaSTA5ZnD3Y5KtVeAYTyzgFJ2I+AeT42qp/tbCBTwLA7qc+K1fJKqAnPuuLLtW18+3oOgczOA2aqOekrsEMujQQpy8amXL0mcfQr+P/S4/nOkC0c8LD+X8PxNaWOkRCRodUswxP992bhwnJdmqydaTQ6j/jmasejc9sZ5ZiIMT2qWLLO6qGWwHtCkVwyWXLC/lH2fzVVy4+JgcsSfg==
