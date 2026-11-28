@@ -4,6 +4,9 @@ name: Diagnóstico 26 (Android 14)
 # Quedan en la rama «diag26-capturas».
 on:
   workflow_dispatch:
+  push:
+    branches: [ 'wip-2.40' ]
+    paths: [ '.github/scripts/diag26.sh', '.github/workflows/diag26.yml' ]
 
 permissions:
   contents: write
