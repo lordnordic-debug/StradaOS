@@ -275,7 +275,7 @@ final class Cockpit {
             float cx = w / 2f, cy = h / 2f, d = Math.min(w, h) / 2f;
             g.setShader(new RadialGradient(cx, cy, d,
                 new int[]{Aurora.a(accent, light ? 0.45f : 0.65f), Aurora.a(accent, light ? 0.18f : 0.28f), Aurora.a(accent, 0f)},
-                new float[]{0.55f, 0.75f, 1f}, Shader.TileMode.CLAMP));
+                new float[]{0f, 0.75f, 1f}, Shader.TileMode.CLAMP));   // desde el centro (el disco tapa lo de adentro)
             if (bmp != null) {
                 // el disco del logo ocupa ~80 % del dibujo; con 0,92 queda un aro rojo fino alrededor del negro
                 float rr = d * 0.70f, crop = bmp.getWidth() / 2f * 0.92f, sc = rr / crop;
@@ -581,8 +581,8 @@ final class Cockpit {
             android.graphics.Rect b = getBounds();
             float cx = b.exactCenterX(), cy = b.exactCenterY(), R = Math.min(b.width(), b.height()) / 2f;
             if (R != lastR) {
-                g.setShader(new RadialGradient(cx, cy, R, new int[]{Aurora.a(accent, light ? 0.30f : 0.45f), Aurora.a(accent, 0f)},
-                    new float[]{0.6f, 1f}, Shader.TileMode.CLAMP));
+                g.setShader(new RadialGradient(cx, cy, R, new int[]{Aurora.a(accent, light ? 0.34f : 0.5f), Aurora.a(accent, light ? 0.26f : 0.4f), Aurora.a(accent, 0f)},
+                    new float[]{0f, 0.76f, 1f}, Shader.TileMode.CLAMP));
                 lastR = R;
             }
             c.drawCircle(cx, cy, R, g);

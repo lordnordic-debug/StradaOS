@@ -90,13 +90,18 @@ public class PlayerArt extends View {
 
     private void drawDisc(Canvas c, float w, float h) {
         float cx = w / 2f, cy = h / 2f, R = Math.min(w, h) / 2f, ra = R * 0.80f;
-        if (glowR != R) {
-            // 3 colores como mucho: con 4, el emulador de Android 14 (swiftshader) dibuja rayas y se cae
-            glow.setShader(new android.graphics.RadialGradient(cx, cy, R, new int[]{glowColor, Aurora.a(glowColor, 0.25f), Aurora.a(glowColor, 0f)},
-                new float[]{0.78f, 0.88f, 1f}, Shader.TileMode.CLAMP));
-            glowR = R;
+        // resplandor con trazos cada vez más anchos y tenues (sin degradado: el emulador de Android 14 dibuja rayas
+        // con los radiales que no empiezan en el centro y se ha llegado a caer)
+        glow.setShader(null);
+        glow.setStyle(Paint.Style.STROKE);
+        float band = R - ra;
+        for (int i = 0; i < 4; i++) {
+            float wdt = band * (0.35f + 0.22f * i);
+            glow.setStrokeWidth(wdt);
+            glow.setColor(Aurora.a(glowColor, 0.30f - 0.065f * i));
+            c.drawCircle(cx, cy, ra + wdt / 2, glow);
         }
-        c.drawCircle(cx, cy, R, glow);
+        glow.setStyle(Paint.Style.FILL);
         if (bitmap != null && !bitmap.isRecycled()) {
             BitmapShader sh = new BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
             float scale = Math.max(2 * ra / bitmap.getWidth(), 2 * ra / bitmap.getHeight());
