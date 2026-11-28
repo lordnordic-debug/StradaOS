@@ -6578,14 +6578,21 @@ public class Main extends Activity {
         }
         if (ckTap != null) ckTap.setVisibility(t < 0.01f ? View.VISIBLE : View.GONE);
         // en Cabina, tocar fuera del círculo no debe entrar a «Explorar» en el mapa escondido
-        if (ckHoleMask != null) ckHoleMask.setClickable(t < 0.5f);
+        if (ckHoleMask != null) {
+            ckHoleMask.setClickable(t < 0.5f);
+            // en Mapa el hueco es toda la píldora: las curvas las tapa la máscara fija de encima
+            ckHoleMask.setVisibility(t >= 0.999f ? View.INVISIBLE : View.VISIBLE);
+            ckHoleMask.setLive(t > 0.001f && t < 0.999f);
+        }
     }
 
     /** Al terminar: la atribución del mapa adentro del círculo (Cabina) o abajo a la derecha (Mapa). */
     private void ckFinish() {
         if (liveMap == null) return;
-        if (ckWide) liveMap.setAttributionCentered((mapW - mapH * 0.95f) * s, (mapH - 14) * s);
-        else liveMap.setAttributionCentered(ckMx * s, (ckCy + ckD / 2 - 16) * s);
+        // Mapa: abajo, entre la pestaña y la curva derecha de la píldora
+        if (ckWide) liveMap.setAttributionCentered(((mapW / 2 + ckTabW / 2) + (mapW - 80)) / 2 * s, (mapH - 24) * s);
+        else liveMap.setAttributionCentered(ckMx * s, (ckCy + ckD * 0.33f) * s);
+        liveMap.setZoomBias(ckWide ? 0 : -1);
     }
 
     private void ckSetWide(boolean wide, boolean animate) {
@@ -11896,6 +11903,8 @@ public class Main extends Activity {
                 }});
         }
         LinearLayout lay = section(body, "Tarjetas");
+        // Sport Cockpit tiene su propio lado del reproductor arriba (en «Tema premium»): aquí no se repite
+        if (!(premiumActive() && Cockpit.ID.equals(prefs.getString("premium_theme", null))))
         segmented(lay, "Reproductor de música", "Ponlo del lado del conductor para tenerlo a la mano", new String[]{"Izquierda", "Derecha"},
             playerLeft ? 0 : 1, new IntCb() { public void on(int i) {
                 // botones en el orden de la pantalla: izquierda, derecha

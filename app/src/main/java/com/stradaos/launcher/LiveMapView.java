@@ -458,9 +458,17 @@ public class LiveMapView extends View {
      * Zoom según la velocidad: 17 en ciudad, 16 desde 35 km/h y 15 desde 70. Para volver a acercar hay que bajar de
      * 30 y 65 (5 km/h menos): así, andando justo alrededor de un límite (35 en ciudad), el zoom no va y viene.
      */
+    /** Sport Cockpit: en el círculo de «Cabina» el zoom automático va un nivel más lejos (se ven más calles). */
+    private int zoomBias;
+    void setZoomBias(int b) {
+        if (b == zoomBias) return;
+        zoomBias = b;
+        if (!userZoom && !exploring && !Double.isNaN(tLat)) { zoomTo(autoLevel(lastKmh), true); invalidate(); }
+    }
+
     private int autoLevel(float kmh) {
-        int near = kmh > 70 ? 15 : kmh > 35 ? 16 : 17;   // lo más cerca que puede estar a esta velocidad
-        int far = kmh > 65 ? 15 : kmh > 30 ? 16 : 17;    // lo más lejos (con el margen); entre los dos, se queda
+        int near = (kmh > 70 ? 15 : kmh > 35 ? 16 : 17) + zoomBias;   // lo más cerca que puede estar a esta velocidad
+        int far = (kmh > 65 ? 15 : kmh > 30 ? 16 : 17) + zoomBias;    // lo más lejos (con el margen); entre los dos, se queda
         return Math.max(far, Math.min(zoom, near));
     }
 
@@ -1029,7 +1037,7 @@ public class LiveMapView extends View {
             String attr = anyFile ? I18n.t("© colaboradores de OpenStreetMap") + " · mapsforge"
                     : provider == 5 ? "© Esri, HERE, Garmin, © OpenStreetMap" : provider == 4 ? "© OpenStreetMap, SRTM · © OpenTopoMap" : I18n.t("© colaboradores de OpenStreetMap");
             float ax = w - text.measureText(attr) - 10 * s, ay = (Nav.active != null ? 96 : 14) * s;
-            if (attrY >= 0 && Nav.active == null) { ax = attrCenter ? attrX - text.measureText(attr) / 2f : attrX + leftInset; ay = attrY; }
+            if (attrY >= 0 && (Nav.active == null || attrCenter)) { ax = attrCenter ? attrX - text.measureText(attr) / 2f : attrX + leftInset; ay = attrY; }
             if (bd && fadeEdge == 1 && fadeLen > 0) {
                 // Cobalto: antes del difuminado (si no, queda detrás de la tarjeta del reproductor) y un poco más
                 // arriba para no rozar los botones de la esquina

@@ -173,6 +173,54 @@ final class Cockpit {
             invalidate();
         }
 
+        /**
+         * Quieta, la máscara se pinta una vez en una imagen (por software) y después solo se copia: es lo más barato
+         * para la GPU de los radios y lo más estable en el emulador de Android 14. Mientras el hueco se anima (live),
+         * se dibuja como forma con el fondo de imagen, cuadro a cuadro.
+         */
+        private boolean live;
+        private Bitmap cache;
+        private String cacheKey;
+        private final Paint cp = new Paint(Paint.FILTER_BITMAP_FLAG), clear = new Paint(Paint.ANTI_ALIAS_FLAG);
+        void setLive(boolean on) { if (live != on) { live = on; invalidate(); } }
+
+        private boolean drawCached(Canvas c, int w, int h, int dxb, int dyb, int dxp, int dyp) {
+            String key = w + "x" + h + ":" + dxb + "," + dyb + ":" + dxp + "," + dyp + ":" + hole + ":" + rad;
+            if (cache == null || !key.equals(cacheKey)) {
+                try {
+                    if (cache == null || cache.getWidth() != w || cache.getHeight() != h) {
+                        if (cache != null) cache.recycle();
+                        cache = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+                    } else cache.eraseColor(0);
+                } catch (Throwable e) { cache = null; return false; }
+                Canvas cv = new Canvas(cache);
+                if (bg != null && bgHolder != null && bgHolder.getWidth() > 0) {
+                    cv.save();
+                    cv.concat(mb);
+                    cv.drawBitmap(bg, 0, 0, cp);
+                    cv.restore();
+                } else cv.drawColor(Main.BG);
+                if (bmp != null && holder != null && holder.getWidth() > 0) {
+                    cv.save();
+                    cv.concat(m);
+                    cv.drawBitmap(bmp, 0, 0, cp);
+                    cv.restore();
+                }
+                if (hole.width() > 0 && hole.height() > 0) {
+                    clear.setXfermode(new android.graphics.PorterDuffXfermode(android.graphics.PorterDuff.Mode.CLEAR));
+                    cv.drawRoundRect(hole, rad, rad, clear);
+                }
+                cacheKey = key;
+            }
+            c.drawBitmap(cache, 0, 0, null);
+            return true;
+        }
+
+        @Override protected void onDetachedFromWindow() {
+            super.onDetachedFromWindow();
+            if (cache != null) { cache.recycle(); cache = null; cacheKey = null; }
+        }
+
         @Override protected void onSizeChanged(int w, int h, int ow, int oh) { dirty = true; }
 
         @Override protected void onDraw(Canvas c) {
@@ -186,18 +234,24 @@ final class Cockpit {
                 dirty = false;
             }
             getLocationInWindow(la);
-            // primero la pantalla (la parte que queda detrás) y encima la píldora con su brillo o su sombra
+            int dxb = 0, dyb = 0, dxp = 0, dyp = 0;
             if (bg != null && bgHolder != null && bgHolder.getWidth() > 0) {
                 bgHolder.getLocationInWindow(lb);
+                dxb = lb[0] - la[0]; dyb = lb[1] - la[1];
                 mb.setScale(bgHolder.getWidth() / (float) bg.getWidth(), bgHolder.getHeight() / (float) bg.getHeight());
-                mb.postTranslate(lb[0] - la[0], lb[1] - la[1]);
-                pb.getShader().setLocalMatrix(mb);
+                mb.postTranslate(dxb, dyb);
             }
-            c.drawPath(path, pb);
             if (bmp != null && holder != null && holder.getWidth() > 0) {
                 holder.getLocationInWindow(lb);
+                dxp = lb[0] - la[0]; dyp = lb[1] - la[1];
                 m.setScale(holder.getWidth() / (float) bmp.getWidth(), holder.getHeight() / (float) bmp.getHeight());
-                m.postTranslate(lb[0] - la[0], lb[1] - la[1]);
+                m.postTranslate(dxp, dyp);
+            }
+            if (!live && drawCached(c, (int) w, (int) h, dxb, dyb, dxp, dyp)) return;
+            // animándose: la forma con la pantalla detrás y encima la píldora con su brillo o su sombra
+            if (bg != null) pb.getShader().setLocalMatrix(mb);
+            c.drawPath(path, pb);
+            if (bmp != null && holder != null && holder.getWidth() > 0) {
                 p.getShader().setLocalMatrix(m);
                 c.drawPath(path, p);
             }
