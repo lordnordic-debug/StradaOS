@@ -1,0 +1,340 @@
+=== idioma:es 02:02:54
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2330732K used,   203820K free,    27100K buffers
+ Swap:  1900908K total,    75520K used,  1825388K free,  1446456K cached
+200%cpu  15%user   0%nice  48%sys 115%idle   0%iow   0%irq   0%sirq  22%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 178M 101M S 37.0   7.2   0:07.73 com.stradaos.launcher.debug
+  377 system       -3 -10  10G  29M  15M S 22.2   1.1   0:05.29 android.hardware.graphics.composer3-service.ranchu
+  388 system       -3  -8  11G  39M  25M S  7.4   1.5   0:09.58 surfaceflinger
+ 2363 root         20   0  10G 4.9M 4.1M R  3.7   0.1   0:00.02 top -b -n 1
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.14 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.0M 5.0M S  0.0   0.3   0:00.27 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+u0_a141       2305   326   14581492 182644 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== tema-premium:cockpit 02:03:04
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2340800K used,   193752K free,    27128K buffers
+ Swap:  1900908K total,    75520K used,  1825388K free,  1447324K cached
+200%cpu   4%user   0%nice   4%sys 188%idle   0%iow   4%irq   0%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2386 root         20   0  10G 4.9M 4.1M R  3.8   0.1   0:00.02 top -b -n 1
+ 2305 u0_a141      10 -10  14G 188M 103M S  0.0   7.5   0:08.82 com.stradaos.launcher.debug
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.14 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.1M 5.0M S  0.0   0.3   0:00.36 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+ 2123 u0_a57       20   0  13G  98M  52M S  0.0   3.9   0:00.06 com.android.statementservice
+ 2097 shell        20   0  13G  88M  41M S  0.0   3.5   0:00.02 com.android.shell
+u0_a141       2305   326   14591684 192136 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== pista-demo:Night_Drive 02:03:09
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2348992K used,   185560K free,    27148K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447380K cached
+200%cpu   8%user   0%nice  19%sys 162%idle   4%iow   4%irq   0%sirq   4%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 193M 103M S 11.5   7.8   0:09.77 com.stradaos.launcher.debug
+ 2410 root         20   0  10G 5.1M 4.3M R  3.8   0.2   0:00.02 top -b -n 1
+  504 system       18  -2  15G 338M 233M S  3.8  13.6   0:10.20 system_server
+  377 system       -3 -10  10G  29M  15M S  3.8   1.1   0:05.96 android.hardware.graphics.composer3-service.ranchu
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.14 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:00.49 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+u0_a141       2305   326   14595684 198116 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== pref:center_card=both 02:03:16
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2330416K used,   204136K free,    27164K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447668K cached
+200%cpu  15%user   0%nice  73%sys  92%idle   0%iow   4%irq   0%sirq  15%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 171M  80M S 53.8   6.9   0:11.10 com.stradaos.launcher.debug
+ 2434 root         20   0  10G 5.0M 4.2M R 11.5   0.2   0:00.01 top -b -n 1
+  377 system       -3 -10  10G  29M  15M S 11.5   1.1   0:06.46 android.hardware.graphics.composer3-service.ranchu
+  388 system       -3  -8  11G  39M  25M S  7.6   1.5   0:09.92 surfaceflinger
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.14 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:00.55 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+u0_a141       2305   326   14529680 175156 0                   0 R com.stradaos.launcher.debug
+total 0
+=== centro:video 02:03:25
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2343464K used,   191088K free,    27180K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447684K cached
+200%cpu   8%user   0%nice   8%sys 181%idle   0%iow   0%irq   0%sirq   4%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 176M  81M S  3.8   7.1   0:13.23 com.stradaos.launcher.debug
+ 2456 root         20   0  10G 5.1M 4.3M R  0.0   0.2   0:00.02 top -b -n 1
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.15 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:00.67 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+ 2123 u0_a57       20   0  13G  98M  52M S  0.0   3.9   0:00.06 com.android.statementservice
+ 2097 shell        20   0  13G  88M  41M S  0.0   3.5   0:00.02 com.android.shell
+u0_a141       2305   326   14532096 180212 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== video-modo:1 02:03:32
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2359336K used,   175216K free,    27196K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447672K cached
+200%cpu   8%user   0%nice   8%sys 185%idle   0%iow   0%irq   0%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+   14 root         -2   0    0    0    0 I  3.8   0.0   0:00.11 [rcu_preempt]
+ 2476 root         20   0  10G 4.9M 4.1M R  0.0   0.2   0:00.02 top -b -n 1
+ 2305 u0_a141      10 -10  14G 177M  82M S  0.0   7.1   0:13.41 com.stradaos.launcher.debug
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.15 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:00.76 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+ 2123 u0_a57       20   0  13G  98M  52M S  0.0   3.9   0:00.06 com.android.statementservice
+u0_a141       2305   326   14533080 181624 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== video-modo:0 02:03:39
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2370172K used,   164380K free,    27212K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447424K cached
+200%cpu   4%user   0%nice   8%sys 185%idle   0%iow   0%irq   0%sirq   4%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2496 root         20   0  10G 4.9M 4.1M R  3.8   0.2   0:00.02 top -b -n 1
+  364 system       20   0  10G 6.8M 5.8M S  3.8   0.2   0:00.32 android.hardware.sensors-service.multihal
+ 2305 u0_a141      10 -10  14G 178M  82M S  0.0   7.1   0:13.57 com.stradaos.launcher.debug
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.15 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:00.87 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+ 2123 u0_a57       20   0  13G  98M  52M S  0.0   3.9   0:00.06 com.android.statementservice
+u0_a141       2305   326   14533444 181848 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== centro:mapa 02:03:48
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2343644K used,   190908K free,    27228K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447684K cached
+200%cpu  12%user   0%nice  58%sys 108%idle   0%iow   0%irq   0%sirq  23%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 181M  82M S 42.3   7.3   0:15.84 com.stradaos.launcher.debug
+ 2517 root         20   0  10G 4.9M 4.0M R  7.6   0.1   0:00.02 top -b -n 1
+  377 system       -3 -10  10G  29M  15M S  7.6   1.1   0:07.97 android.hardware.graphics.composer3-service.ranchu
+  504 system       18  -2  15G 338M 233M S  3.8  13.6   0:10.59 system_server
+  388 system       -3  -8  11G  39M  25M S  3.8   1.5   0:10.36 surfaceflinger
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.16 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:00.96 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+u0_a141       2305   326   14535948 185148 0                   0 R com.stradaos.launcher.debug
+total 0
+=== explorar:1 02:03:54
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2345912K used,   188640K free,    27260K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447724K cached
+200%cpu  15%user   0%nice  65%sys  92%idle   0%iow   4%irq   0%sirq  23%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 170M  82M S 46.1   6.8   0:17.22 com.stradaos.launcher.debug
+  388 system       -3  -8  11G  39M  25M S  7.6   1.5   0:10.47 surfaceflinger
+  377 system       -3 -10  10G  29M  15M S  7.6   1.1   0:08.37 android.hardware.graphics.composer3-service.ranchu
+ 2543 root         20   0  10G 4.9M 4.1M R  3.8   0.2   0:00.02 top -b -n 1
+  504 system       18  -2  15G 339M 233M S  3.8  13.6   0:10.66 system_server
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.16 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:01.06 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+u0_a141       2305   326   14522416 173784 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== explorar:0 02:04:00
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2351680K used,   182872K free,    27276K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447724K cached
+200%cpu   8%user   0%nice   8%sys 181%idle   0%iow   0%irq   0%sirq   4%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2563 root         20   0  10G 5.0M 4.2M R  3.8   0.2   0:00.02 top -b -n 1
+ 2305 u0_a141      10 -10  14G 191M 103M S  3.8   7.7   0:17.89 com.stradaos.launcher.debug
+  388 system       -3  -8  11G  39M  25M S  3.8   1.5   0:10.54 surfaceflinger
+  377 system       -3 -10  10G  29M  15M S  3.8   1.1   0:08.51 android.hardware.graphics.composer3-service.ranchu
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.16 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:01.15 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+u0_a141       2305   326   14591440 195784 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== pagina:1 02:04:07
+Tasks: 282 total,   2 running, 280 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2356216K used,   178336K free,    27292K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447760K cached
+200%cpu   8%user   0%nice   4%sys 185%idle   0%iow   4%irq   0%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2584 root         20   0  10G 5.0M 4.2M R  0.0   0.2   0:00.02 top -b -n 1
+ 2305 u0_a141      10 -10  14G 194M 105M R  0.0   7.8   0:18.51 com.stradaos.launcher.debug
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.16 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:01.25 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+ 2123 u0_a57       20   0  13G  98M  52M S  0.0   3.9   0:00.06 com.android.statementservice
+ 2097 shell        20   0  13G  88M  41M S  0.0   3.5   0:00.02 com.android.shell
+u0_a141       2305   326   14592136 198300 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== pagina:1 02:04:13
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2356216K used,   178336K free,    27308K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447744K cached
+200%cpu   8%user   0%nice  88%sys  88%idle   0%iow   0%irq   0%sirq  15%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 194M 105M S 61.5   7.8   0:20.04 com.stradaos.launcher.debug
+  377 system       -3 -10  10G  29M  15M S 23.0   1.1   0:09.23 android.hardware.graphics.composer3-service.ranchu
+ 2604 root         20   0  10G 5.1M 4.2M R  7.6   0.2   0:00.01 top -b -n 1
+  504 system       18  -2  15G 340M 233M S  3.8  13.7   0:10.85 system_server
+  388 system       -3  -8  11G  39M  25M S  3.8   1.5   0:10.77 surfaceflinger
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.16 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:01.33 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+u0_a141       2305   326   14592676 198412 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== pref:center_card= 02:04:20
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2364280K used,   170272K free,    27324K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447700K cached
+200%cpu  19%user   0%nice  50%sys 112%idle   0%iow   4%irq   0%sirq  15%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 196M 105M S 46.1   7.9   0:22.18 com.stradaos.launcher.debug
+ 2626 root         20   0  10G 5.0M 4.2M R  7.6   0.2   0:00.01 top -b -n 1
+  377 system       -3 -10  10G  29M  15M S  7.6   1.1   0:09.90 android.hardware.graphics.composer3-service.ranchu
+   14 root         -2   0    0    0    0 I  3.8   0.0   0:00.14 [rcu_preempt]
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.16 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:01.42 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+u0_a141       2305   326   14593716 200824 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== pref:ck_dock= 02:04:27
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2371836K used,   162716K free,    27340K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447788K cached
+200%cpu   8%user   0%nice   8%sys 177%idle   0%iow   0%irq   4%sirq   4%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 198M 105M S  7.6   8.0   0:24.65 com.stradaos.launcher.debug
+ 2648 root         20   0  10G 4.9M 4.1M R  3.8   0.1   0:00.02 top -b -n 1
+  388 system       -3  -8  11G  39M  25M S  3.8   1.5   0:11.13 surfaceflinger
+  377 system       -3 -10  10G  29M  15M S  3.8   1.1   0:10.61 android.hardware.graphics.composer3-service.ranchu
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.17 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:01.51 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+u0_a141       2305   326   14595068 203032 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== pref:ck_player= 02:04:34
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2333456K used,   201096K free,    27356K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447812K cached
+200%cpu  15%user   0%nice  67%sys  85%idle   0%iow   4%irq   0%sirq  30%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 201M 105M S 59.2   8.1   0:25.96 com.stradaos.launcher.debug
+  377 system       -3 -10  10G  29M  15M S 11.1   1.1   0:10.99 android.hardware.graphics.composer3-service.ranchu
+ 2670 root         20   0  10G 5.0M 4.2M R  7.4   0.2   0:00.02 top -b -n 1
+  504 system       18  -2  15G 341M 233M S  3.7  13.7   0:11.08 system_server
+  388 system       -3  -8  11G  39M  25M S  3.7   1.5   0:11.26 surfaceflinger
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.17 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:01.62 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+u0_a141       2305   326   14596420 205764 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== tema:claro 02:04:41
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2357384K used,   177168K free,    27372K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447824K cached
+200%cpu   8%user   0%nice  46%sys 123%idle   0%iow   4%irq   0%sirq  19%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 211M 105M S 42.3   8.5   0:27.94 com.stradaos.launcher.debug
+ 2693 root         20   0  10G 5.0M 4.2M R  7.6   0.2   0:00.01 top -b -n 1
+  377 system       -3 -10  10G  29M  15M S  7.6   1.1   0:11.46 android.hardware.graphics.composer3-service.ranchu
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.17 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:01.72 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+ 2123 u0_a57       20   0  13G  98M  52M S  0.0   3.9   0:00.06 com.android.statementservice
+u0_a141       2305   326   14606492 216240 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== cabina:1a 02:04:46
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2375024K used,   159528K free,    27388K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447732K cached
+200%cpu   4%user   0%nice   8%sys 188%idle   0%iow   0%irq   0%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2715 root         20   0  10G 5.1M 4.3M R  3.8   0.2   0:00.02 top -b -n 1
+ 2305 u0_a141      10 -10  14G 213M 105M S  3.8   8.5   0:28.72 com.stradaos.launcher.debug
+  388 system       -3  -8  11G  39M  25M S  3.8   1.5   0:11.46 surfaceflinger
+  364 system       20   0  10G 6.8M 5.8M S  3.8   0.2   0:00.52 android.hardware.sensors-service.multihal
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.17 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:01.81 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+u0_a141       2305   326   14607852 217624 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== cabina:0a 02:04:51
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2393420K used,   141132K free,    27404K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447760K cached
+200%cpu  15%user   0%nice  62%sys 100%idle   0%iow   4%irq   4%sirq  15%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 213M 105M S 53.8   8.6   0:29.71 com.stradaos.launcher.debug
+  377 system       -3 -10  10G  29M  15M S 11.5   1.1   0:11.91 android.hardware.graphics.composer3-service.ranchu
+ 2735 root         20   0  10G 5.0M 4.2M R  7.6   0.2   0:00.02 top -b -n 1
+  504 system       18  -2  15G 341M 233M S  3.8  13.7   0:11.26 system_server
+  388 system       -3  -8  11G  39M  25M S  3.8   1.5   0:11.56 surfaceflinger
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.17 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:01.90 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+u0_a141       2305   326   14608060 218096 do_epoll_wait       0 S com.stradaos.launcher.debug
+total 0
+=== swipe1 02:04:55
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2371376K used,   163176K free,    27412K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447764K cached
+200%cpu   4%user   0%nice   4%sys 192%idle   0%iow   0%irq   0%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2754 root         20   0  10G 5.1M 4.3M R  0.0   0.2   0:00.02 top -b -n 1
+ 2305 u0_a141      10 -10  14G 213M 105M S  0.0   8.6   0:32.14 com.stradaos.launcher.debug
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.17 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:02.01 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+ 2158 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:3H-kverityd]
+ 2123 u0_a57       20   0  13G  98M  52M S  0.0   3.9   0:00.06 com.android.statementservice
+ 2097 shell        20   0  13G  88M  41M S  0.0   3.5   0:00.02 com.android.shell
+u0_a141       2305   326   14608168 218336 0                   0 R com.stradaos.launcher.debug
+total 0
+=== swipe2 02:04:59
+Tasks: 282 total,   1 running, 281 sleeping,   0 stopped,   0 zombie
+  Mem:  2534552K total,  2366680K used,   167872K free,    27420K buffers
+ Swap:  1900908K total,    83968K used,  1816940K free,  1447784K cached
+200%cpu  14%user   0%nice 100%sys  32%idle   0%iow   4%irq   0%sirq  50%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS
+ 2305 u0_a141      10 -10  14G 214M 105M S 78.5   8.6   0:34.19 com.stradaos.launcher.debug
+  377 system       -3 -10  10G  29M  15M S 25.0   1.1   0:13.41 android.hardware.graphics.composer3-service.ranchu
+ 2773 root         20   0  10G 5.1M 4.3M R  3.5   0.2   0:00.02 top -b -n 1
+  388 system       -3  -8  11G  39M  25M S  3.5   1.5   0:11.90 surfaceflinger
+  147 root         20   0    0    0    0 I  3.5   0.0   0:00.13 [kworker/1:3-events]
+ 2294 root         20   0  10G 3.6M 2.9M S  0.0   0.1   0:00.18 logcat -v time
+ 2285 root         20   0  10G 3.4M 2.8M S  0.0   0.1   0:00.01 abb
+ 2265 root         20   0  10G 9.3M 5.0M S  0.0   0.3   0:02.07 adbd --root_seclabel=u:r:su:s0
+ 2161 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:4H-kblockd]
+u0_a141       2305   326   14608272 218824 futex_wait          0 S com.stradaos.launcher.debug
+total 0

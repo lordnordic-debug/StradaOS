@@ -1,0 +1,400 @@
+11-28 02:01:24.290 I/dyndbg  (    0): Ignore empty _ddebug table in a CONFIG_DYNAMIC_DEBUG_CORE build
+11-28 02:01:30.495 W/libc    (  146): Unable to set property "ro.boottime.init.fsck.data" to "22": error code: 0xb
+11-28 02:01:30.503 W/libc    (  146): Unable to set property "ro.boottime.init.mount.data" to "4": error code: 0xb
+11-28 02:01:33.988 I/init    (    0): starting service 'vendor.gralloc-3-0'...
+11-28 02:01:33.996 I/init    (    0): ... started service 'vendor.gralloc-3-0' has pid 336
+11-28 02:01:34.236 D/AndroidRuntime(  326): >>>>>> START com.android.internal.os.ZygoteInit uid 0 <<<<<<
+11-28 02:01:34.241 I/AndroidRuntime(  326): Using default boot image
+11-28 02:01:34.241 I/AndroidRuntime(  326): Leaving lock profiling enabled
+11-28 02:01:34.496 I/libc    (  384): malloc_limit: Allocation limit enabled, max size 519076240 bytes
+11-28 02:01:34.552 D/libEGL  (  388): loaded /vendor/lib64/egl/libEGL_emulation.so
+11-28 02:01:34.553 D/libEGL  (  388): loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-28 02:01:34.554 D/libEGL  (  388): loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-28 02:01:34.573 I/RenderEngine(  388): EGL information:
+11-28 02:01:34.573 I/RenderEngine(  388): version   : 1.4 Android META-EGL
+11-28 02:01:34.573 I/RenderEngine(  388): extensions: EGL_ANDROID_front_buffer_auto_refresh EGL_ANDROID_get_native_client_buffer EGL_ANDROID_presentation_time EGL_EXT_surface_CTA861_3_metadata EGL_EXT_surface_SMPTE2086_metadata EGL_KHR_get_all_proc_addresses EGL_KHR_swap_buffers_with_damage EGL_ANDROID_get_frame_timestamps EGL_ANDROID_image_native_buffer EGL_ANDROID_native_fence_sync EGL_ANDROID_recordable EGL_KHR_create_context EGL_KHR_fence_sync EGL_KHR_gl_texture_2D_image EGL_KHR_image EGL_KHR_image_base 
+11-28 02:01:34.573 I/RenderEngine(  388): EGLSurface: 8-8-8-8, config=0x5
+11-28 02:01:34.585 D/nativeloader(  326): InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-28 02:01:34.608 I/RenderEngine(  388): extensions: GL_EXT_debug_marker GL_EXT_robustness GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_alloc
+11-28 02:01:34.950 I/libc    (  450): malloc_limit: Allocation limit enabled, max size 519076240 bytes
+11-28 02:01:34.950 I/libc    (  451): malloc_limit: Allocation limit enabled, max size 134217728 bytes
+11-28 02:01:35.870 W/zygote64(  326): Core platform API violation: Llibcore/io/Memory;->peekLong(JZ)J from Lcom/android/framework/protobuf/UnsafeUtil; using reflection
+11-28 02:01:35.870 W/zygote64(  326): Core platform API violation: Llibcore/io/Memory;->pokeLong(JJZ)V from Lcom/android/framework/protobuf/UnsafeUtil; using reflection
+11-28 02:01:35.870 W/zygote64(  326): Core platform API violation: Llibcore/io/Memory;->pokeInt(JIZ)V from Lcom/android/framework/protobuf/UnsafeUtil; using reflection
+11-28 02:01:35.870 W/zygote64(  326): Core platform API violation: Llibcore/io/Memory;->peekInt(JZ)I from Lcom/android/framework/protobuf/UnsafeUtil; using reflection
+11-28 02:01:35.870 W/zygote64(  326): Core platform API violation: Llibcore/io/Memory;->pokeByte(JB)V from Lcom/android/framework/protobuf/UnsafeUtil; using reflection
+11-28 02:01:35.870 W/zygote64(  326): Core platform API violation: Llibcore/io/Memory;->peekByte(J)B from Lcom/android/framework/protobuf/UnsafeUtil; using reflection
+11-28 02:01:35.870 W/zygote64(  326): Core platform API violation: Llibcore/io/Memory;->pokeByteArray(J[BII)V from Lcom/android/framework/protobuf/UnsafeUtil; using reflection
+11-28 02:01:35.870 W/zygote64(  326): Core platform API violation: Llibcore/io/Memory;->peekByteArray(J[BII)V from Lcom/android/framework/protobuf/UnsafeUtil; using reflection
+11-28 02:01:36.087 D/nativeloader(  326): InitDefaultPublicLibraries for_preload=0: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libclang_rt.hwasan-aarch64-android.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-28 02:01:36.474 D/nativeloader(  504):   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcronet.114.0.5735.84.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libservice-connectivity.so
+11-28 02:01:37.118 D/CompatConfig(  504): Found a config file: /apex/com.android.art/etc/compatconfig/libcore-platform-compat-config.xml
+11-28 02:01:37.156 I/SystemConfig(  504): Reading permissions from /vendor/etc/permissions/android.hardware.vulkan.compute.xml
+11-28 02:01:37.157 I/SystemConfig(  504): Reading permissions from /vendor/etc/permissions/android.hardware.vulkan.version.xml
+11-28 02:01:37.158 I/SystemConfig(  504): Reading permissions from /vendor/etc/permissions/android.software.vulkan.deqp.level.xml
+11-28 02:01:37.159 I/SystemConfig(  504): Reading permissions from /vendor/etc/permissions/android.hardware.vulkan.level.xml
+11-28 02:01:37.174 W/SystemConfig(  504): 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-28 02:01:37.174 W/SystemConfig(  504): 	at libcore.io.Linux.open(Native Method)
+11-28 02:01:37.174 W/SystemConfig(  504): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-28 02:01:37.174 W/SystemConfig(  504): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-28 02:01:37.174 W/SystemConfig(  504): 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-28 02:01:38.528 E/ArtService(  504): 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-28 02:01:38.528 E/ArtService(  504): 	at libcore.io.Linux.open(Native Method)
+11-28 02:01:38.528 E/ArtService(  504): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-28 02:01:38.528 E/ArtService(  504): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-28 02:01:38.528 E/ArtService(  504): 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-28 02:01:44.296 W/system_server(  504): Core platform API violation: Llibcore/io/Memory;->pokeByte(JB)V from Landroid/net/connectivity/com/google/protobuf/UnsafeUtil; using reflection
+11-28 02:01:44.296 W/system_server(  504): Core platform API violation: Llibcore/io/Memory;->peekByte(J)B from Landroid/net/connectivity/com/google/protobuf/UnsafeUtil; using reflection
+11-28 02:01:44.748 E/AppIdleHistory(  504): 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-28 02:01:44.748 E/AppIdleHistory(  504): 	at libcore.io.Linux.open(Native Method)
+11-28 02:01:44.748 E/AppIdleHistory(  504): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-28 02:01:44.748 E/AppIdleHistory(  504): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-28 02:01:44.748 E/AppIdleHistory(  504): 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-28 02:01:44.856 W/FileUtils(  504): 	at libcore.io.Linux.chmod(Native Method)
+11-28 02:01:44.856 W/FileUtils(  504): 	at libcore.io.ForwardingOs.chmod(ForwardingOs.java:165)
+11-28 02:01:44.856 W/FileUtils(  504): 	at libcore.io.BlockGuardOs.chmod(BlockGuardOs.java:83)
+11-28 02:01:45.199 I/GoldfishComponentStore(  341): loading dll of path libcodec2_goldfish_avcdec.so
+11-28 02:01:45.205 I/GoldfishComponentStore(  341): loading dll of path libcodec2_goldfish_hevcdec.so
+11-28 02:01:45.207 I/GoldfishComponentStore(  341): loading dll of path libcodec2_goldfish_vp8dec.so
+11-28 02:01:45.211 I/GoldfishComponentStore(  341): loading dll of path libcodec2_goldfish_vp9dec.so
+11-28 02:01:45.345 D/nativeloader(  792):   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcronet.114.0.5735.84.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libservice-connectivity.so
+11-28 02:01:45.357 I/GoldfishComponentStore(  341): loading dll of path libcodec2_goldfish_avcdec.so
+11-28 02:01:45.359 I/GoldfishComponentStore(  341): loading dll of path libcodec2_goldfish_hevcdec.so
+11-28 02:01:45.360 I/GoldfishComponentStore(  341): loading dll of path libcodec2_goldfish_vp8dec.so
+11-28 02:01:45.360 I/GoldfishComponentStore(  341): loading dll of path libcodec2_goldfish_vp9dec.so
+11-28 02:01:46.060 E/EGL_emulation(  388): eglQueryContext 3100  EGL_BAD_ATTRIBUTE
+11-28 02:01:46.060 E/EGL_emulation(  388): tid 404: eglQueryContext(2146): error 0x3004 (EGL_BAD_ATTRIBUTE)
+11-28 02:01:46.131 D/nativeloader(  903): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+11-28 02:01:46.132 D/nativeloader(  903): InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+11-28 02:01:46.189 I/AndroidRuntime(  903): VM exiting with result code 0, cleanup skipped.
+11-28 02:01:46.280 D/nativeloader(  928): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+11-28 02:01:46.290 D/nativeloader(  928): InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+11-28 02:01:46.381 D/nativeloader(  945):   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcronet.114.0.5735.84.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libservice-connectivity.so
+11-28 02:01:46.670 D/nativeloader(  967):   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcronet.114.0.5735.84.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libservice-connectivity.so
+11-28 02:01:46.789 D/libEGL  (  995): loaded /vendor/lib64/egl/libEGL_emulation.so
+11-28 02:01:46.790 D/libEGL  (  995): loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-28 02:01:46.792 D/libEGL  (  995): loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-28 02:01:46.844 W/OpenGLRenderer(  995): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-28 02:01:47.317 D/libEGL  (  790): loaded /vendor/lib64/egl/libEGL_emulation.so
+11-28 02:01:47.318 D/libEGL  (  790): loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-28 02:01:47.320 D/libEGL  (  790): loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-28 02:01:47.400 W/OpenGLRenderer(  790): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-28 02:01:47.634 D/nativeloader( 1170):   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcronet.114.0.5735.84.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libservice-connectivity.so
+11-28 02:01:47.678 W/receiver.module( 1170): Core platform API violation: Llibcore/io/Memory;->pokeByte(JB)V from Lcom/google/protobuf/UnsafeUtil; using reflection
+11-28 02:01:47.678 W/receiver.module( 1170): Core platform API violation: Llibcore/io/Memory;->peekByte(J)B from Lcom/google/protobuf/UnsafeUtil; using reflection
+11-28 02:01:49.419 D/nativeloader( 1374):   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcronet.114.0.5735.84.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libservice-connectivity.so
+11-28 02:01:49.446 D/nativeloader( 1369): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+11-28 02:01:49.447 D/nativeloader( 1369): InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+11-28 02:01:49.801 W/FileUtils(  504): 	at libcore.io.Linux.chmod(Native Method)
+11-28 02:01:49.801 W/FileUtils(  504): 	at libcore.io.ForwardingOs.chmod(ForwardingOs.java:165)
+11-28 02:01:49.801 W/FileUtils(  504): 	at libcore.io.BlockGuardOs.chmod(BlockGuardOs.java:83)
+11-28 02:01:49.802 W/FileUtils(  504): 	at libcore.io.Linux.chmod(Native Method)
+11-28 02:01:49.802 W/FileUtils(  504): 	at libcore.io.ForwardingOs.chmod(ForwardingOs.java:165)
+11-28 02:01:49.802 W/FileUtils(  504): 	at libcore.io.BlockGuardOs.chmod(BlockGuardOs.java:83)
+11-28 02:01:49.838 W/system_server(  504): Core platform API violation: Llibcore/io/Memory;->pokeByte(JB)V from Lcom/android/server/appsearch/protobuf/UnsafeUtil; using reflection
+11-28 02:01:49.842 W/system_server(  504): Core platform API violation: Llibcore/io/Memory;->peekByte(J)B from Lcom/android/server/appsearch/protobuf/UnsafeUtil; using reflection
+11-28 02:01:49.935 D/nativeloader( 1424):   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcronet.114.0.5735.84.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libservice-connectivity.so
+11-28 02:01:50.018 I/UserRestrictionsPolicyHandler( 1424): Build type DEBUG = true
+11-28 02:01:50.115 D/libEGL  ( 1053): loaded /vendor/lib64/egl/libEGL_emulation.so
+11-28 02:01:50.116 D/libEGL  ( 1053): loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-28 02:01:50.130 D/libEGL  ( 1053): loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-28 02:01:50.209 W/OpenGLRenderer( 1053): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-28 02:01:50.261 D/libEGL  ( 1489): loaded /vendor/lib64/egl/libEGL_emulation.so
+11-28 02:01:50.263 D/libEGL  ( 1489): loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-28 02:01:50.267 D/libEGL  ( 1489): loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-28 02:01:50.394 D/nativeloader( 1458):   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcronet.114.0.5735.84.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libservice-connectivity.so
+11-28 02:01:50.417 D/nativeloader( 1487): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+11-28 02:01:50.470 D/nativeloader( 1487): InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+11-28 02:01:50.944 I/GoldfishComponentStore(  341): loading dll of path libcodec2_goldfish_hevcdec.so
+11-28 02:01:50.996 W/system_server(  504): Core platform API violation: Llibcore/io/Memory;->pokeByte(JB)V from Lcom/android/wifi/x/com/google/protobuf/UnsafeUtil; using reflection
+11-28 02:01:50.996 W/system_server(  504): Core platform API violation: Llibcore/io/Memory;->peekByte(J)B from Lcom/android/wifi/x/com/google/protobuf/UnsafeUtil; using reflection
+11-28 02:01:51.070 D/EGL_emulation(  790): app_time_stats: avg=506.23ms min=285.81ms max=882.14ms count=4
+11-28 02:01:51.146 D/EGL_emulation(  790): app_time_stats: avg=521.59ms min=76.59ms max=894.08ms count=4
+11-28 02:01:51.453 D/StrictMode( 1452): 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+11-28 02:01:51.453 D/StrictMode( 1452): 	at libcore.io.ForwardingOs.access(ForwardingOs.java:128)
+11-28 02:01:51.453 D/StrictMode( 1452): 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+11-28 02:01:51.453 D/StrictMode( 1452): 	at libcore.io.ForwardingOs.access(ForwardingOs.java:128)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.ForwardingOs.access(ForwardingOs.java:128)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:269)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:272)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.BlockGuardOs.fstat(BlockGuardOs.java:194)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.ForwardingOs.fstat(ForwardingOs.java:261)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.IoBridge.open(IoBridge.java:563)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.BlockGuardOs.write(BlockGuardOs.java:447)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.ForwardingOs.write(ForwardingOs.java:943)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.IoBridge.write(IoBridge.java:646)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.BlockGuardOs.chmod(BlockGuardOs.java:81)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.ForwardingOs.chmod(ForwardingOs.java:165)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.BlockGuardOs.stat(BlockGuardOs.java:419)
+11-28 02:01:51.454 D/StrictMode( 1452): 	at libcore.io.ForwardingOs.stat(ForwardingOs.java:846)
+11-28 02:01:51.566 D/libEGL  (  504): loaded /vendor/lib64/egl/libEGL_emulation.so
+11-28 02:01:51.604 D/libEGL  (  504): loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-28 02:01:51.642 D/libEGL  (  504): loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-28 02:01:52.065 D/nativeloader( 1797): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+11-28 02:01:52.066 D/nativeloader( 1797): InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+11-28 02:01:52.185 D/nativeloader( 1844): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+11-28 02:01:52.186 D/nativeloader( 1844): InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+11-28 02:01:52.416 D/nativeloader( 1868): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+11-28 02:01:52.418 D/nativeloader( 1868): InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+11-28 02:01:52.432 D/EGL_emulation(  790): app_time_stats: avg=668.44ms min=600.39ms max=736.50ms count=2
+11-28 02:01:53.008 D/nativeloader( 1894): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+11-28 02:01:53.009 D/nativeloader( 1894): InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+11-28 02:01:53.362 W/OpenGLRenderer(  790): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-28 02:01:53.386 W/system_server(  504): Core platform API violation: Llibcore/io/Memory;->pokeByte(JB)V from Lcom/android/permission/jarjar/com/google/protobuf/UnsafeUtil; using reflection
+11-28 02:01:53.386 W/system_server(  504): Core platform API violation: Llibcore/io/Memory;->peekByte(J)B from Lcom/android/permission/jarjar/com/google/protobuf/UnsafeUtil; using reflection
+11-28 02:01:53.571 D/EGL_emulation(  790): app_time_stats: avg=569.49ms min=469.54ms max=669.45ms count=2
+11-28 02:01:53.577 D/nativeloader( 1978): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+11-28 02:01:53.578 D/nativeloader( 1978): InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+11-28 02:01:53.773 D/EGL_emulation( 1053): app_time_stats: avg=300.74ms min=52.31ms max=993.31ms count=4
+11-28 02:01:54.008 D/nativeloader( 2028): InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvndksupport.so:libvulkan.so
+11-28 02:01:54.011 D/nativeloader( 2028): InitVndkspLibrariesProduct: android.hardware.common-V2-ndk.so:android.hardware.common.fmq-V1-ndk.so:android.hardware.graphics.allocator-V2-ndk.so:android.hardware.graphics.common-V4-ndk.so:android.hardware.graphics.common@1.0.so:android.hardware.graphics.common@1.1.so:android.hardware.graphics.common@1.2.so:android.hardware.graphics.composer3-V1-ndk.so:android.hardware.graphics.mapper@2.0.so:android.hardware.graphics.mapper@2.1.so:android.hardware.graphics.mapper@3.0.so:android.hardware.graphics.mapper@4.0.so:android.hardware.renderscript@1.0.so:android.hidl.memory.token@1.0.so:android.hidl.memory@1.0-impl.so:android.hidl.memory@1.0.so:android.hidl.safe_union@1.0.so:libRSCpuRef.so:libRSDriver.so:libRS_internal.so:libbase.so:libbcinfo.so:libblas.so:libc++.so:libcompiler_rt.so:libcutils.so:libdmabufheap.so:libgralloctypes.so:libhardware.so:libhidlbase.so:libhidlmemory.so:libion.so:libjsoncpp.so:liblzma.so:libprocessgroup.so:libunwindstack.so:libutils.so:libutilscallstack.so:libz.so
+11-28 02:01:54.295 D/nativeloader( 2080):   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcronet.114.0.5735.84.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libservice-connectivity.so
+11-28 02:01:55.589 D/EGL_emulation( 1053): app_time_stats: avg=452.42ms min=18.33ms max=1148.15ms count=4
+11-28 02:02:00.021 D/EGL_emulation(  790): app_time_stats: avg=919.67ms min=5.33ms max=5729.63ms count=7
+11-28 02:02:07.976 D/EGL_emulation( 1053): app_time_stats: avg=3096.35ms min=35.13ms max=12037.26ms count=4
+11-28 02:02:22.448 D/MediaGrants( 1458): Removed 0 media_grants for 0 user for com.stradaos.launcher.debug. Reason: Mode changed: android:read_external_storage
+11-28 02:02:22.453 V/BackupManagerService(  504): [UserID:0] restoreAtInstall pkg=com.stradaos.launcher.debug token=1 restoreSet=0
+11-28 02:02:22.458 E/BackupHelper(  792): 	at libcore.io.IoBridge.open(IoBridge.java:574)
+11-28 02:02:22.458 E/BackupHelper(  792): 	at libcore.io.Linux.open(Native Method)
+11-28 02:02:22.458 E/BackupHelper(  792): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-28 02:02:22.458 E/BackupHelper(  792): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+11-28 02:02:22.458 E/BackupHelper(  792): 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+11-28 02:02:22.458 E/BackupHelper(  792): 	at libcore.io.IoBridge.open(IoBridge.java:560)
+11-28 02:02:22.480 I/SdkSandboxManager(  504): No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10141, mPackageName='com.stradaos.launcher.debug, mAppProcessToken='null'}
+11-28 02:02:22.486 D/CarrierSvcBindHelper(  992): onPackageAdded: com.stradaos.launcher.debug
+11-28 02:02:22.492 D/ImsResolver(  992): maybeAddedImsService, packageName: com.stradaos.launcher.debug
+11-28 02:02:22.535 I/SafetyLabelChangedBroadcastReceiver(  792): received broadcast packageName: com.stradaos.launcher.debug, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+11-28 02:02:22.680 V/SplashScreenExceptionList(  504): SplashScreen checking exception for package com.stradaos.launcher.debug (target sdk:28) -> false
+11-28 02:02:22.713 D/CarrierSvcBindHelper(  992): onPackageModified: com.stradaos.launcher.debug
+11-28 02:02:22.726 D/ImsResolver(  992): maybeAddedImsService, packageName: com.stradaos.launcher.debug
+11-28 02:02:22.737 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
+11-28 02:02:22.738 V/WindowManagerShell(  790): Transition requested: android.os.BinderProxy@eb55588 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10800000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main } baseActivity=ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main} topActivity=ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main} origActivity=null realActivity=ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main} numActivities=1 lastActiveTime=58915 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@2750b21} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{1bffb46 com.stradaos.launcher.Main} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+11-28 02:02:22.750 I/ActivityManager(  504): Start proc 2305:com.stradaos.launcher.debug/u0a141 for next-top-activity {com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:02:22.751 D/CoreBackPreview(  504): Window{5c44bdf u0 Splash Screen com.stradaos.launcher.debug}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@38a98c4, mPriority=0, mIsAnimationCallback=false}
+11-28 02:02:22.843 D/EGL_emulation( 1053): app_time_stats: avg=3414.15ms min=3.06ms max=30159.71ms count=9
+11-28 02:02:22.891 D/EGL_emulation( 1053): app_time_stats: avg=613.88ms min=4.75ms max=14482.13ms count=24
+11-28 02:02:22.987 V/WindowManager(  504): Sent Transition #6 createdAt=11-28 02:02:22.629 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10800000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main } baseActivity=ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main} topActivity=ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main} origActivity=null realActivity=ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main} numActivities=1 lastActiveTime=58915 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{c714d78 Task{a8828b8 #8 type=standard A=10141:com.stradaos.launcher.debug}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{4a8bc51 com.stradaos.launcher.Main} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+11-28 02:02:22.987 V/WindowManager(  504):     info={id=6 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{c714d78 Task{a8828b8 #8 type=standard A=10141:com.stradaos.launcher.debug}}} m=OPEN f=NONE leash=Surface(name=Task=8)/@0xe9664c7 sb=Rect(0, 0 - 1024, 600) eb=Rect(0, 0 - 1024, 600) d=0},{WCT{RemoteToken{cdf0cb6 Task{9efb345 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x452b07c sb=Rect(0, 0 - 1024, 600) eb=Rect(0, 0 - 1024, 600) d=0}]}
+11-28 02:02:23.081 W/ziparchive( 2305): Unable to open '/data/app/~~OviBuJBKiGaxa84_QLQt0w==/com.stradaos.launcher.debug-MNiefR-F0Sa9lhBaPczq-g==/base.dm': No such file or directory
+11-28 02:02:23.081 W/ziparchive( 2305): Unable to open '/data/app/~~OviBuJBKiGaxa84_QLQt0w==/com.stradaos.launcher.debug-MNiefR-F0Sa9lhBaPczq-g==/base.dm': No such file or directory
+11-28 02:02:23.156 D/nativeloader( 2305): Configuring clns-6 for other apk /data/app/~~OviBuJBKiGaxa84_QLQt0w==/com.stradaos.launcher.debug-MNiefR-F0Sa9lhBaPczq-g==/base.apk. target_sdk_version=28, uses_libraries=, library_path=/data/app/~~OviBuJBKiGaxa84_QLQt0w==/com.stradaos.launcher.debug-MNiefR-F0Sa9lhBaPczq-g==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.stradaos.launcher.debug
+11-28 02:02:23.199 V/GraphicsEnvironment( 2305): ANGLE GameManagerService for com.stradaos.launcher.debug: false
+11-28 02:02:23.199 V/GraphicsEnvironment( 2305): com.stradaos.launcher.debug is not listed in per-application setting
+11-28 02:02:23.326 D/libEGL  ( 2305): loaded /vendor/lib64/egl/libEGL_emulation.so
+11-28 02:02:23.335 D/libEGL  ( 2305): loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-28 02:02:23.338 D/libEGL  ( 2305): loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-28 02:02:23.628 D/CoreBackPreview(  504): Window{8496e75 u0 com.stradaos.launcher.debug/com.stradaos.launcher.Main}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@676c67b, mPriority=0, mIsAnimationCallback=false}
+11-28 02:02:23.634 D/EGL_emulation(  790): app_time_stats: avg=23612.67ms min=23612.67ms max=23612.67ms count=1
+11-28 02:02:23.649 W/OpenGLRenderer( 2305): Failed to initialize 101010-2 format, error = EGL_SUCCESS
+11-28 02:02:23.851 W/ziparchive(  504): Unable to open '/data/app/~~OviBuJBKiGaxa84_QLQt0w==/com.stradaos.launcher.debug-MNiefR-F0Sa9lhBaPczq-g==/base.dm': No such file or directory
+11-28 02:02:23.851 I/ActivityTaskManager(  504): Displayed com.stradaos.launcher.debug/com.stradaos.launcher.Main for user 0: +1s298ms
+11-28 02:02:24.324 W/InputManager-JNI(  504): Input channel object '5c44bdf Splash Screen com.stradaos.launcher.debug (client)' was disposed without first being removed with the input manager!
+11-28 02:02:24.325 D/CoreBackPreview(  504): Window{5c44bdf u0 Splash Screen com.stradaos.launcher.debug EXITING}: Setting back callback null
+11-28 02:02:24.887 I/ImeTracker(  504): com.stradaos.launcher.debug:262379b9: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+11-28 02:02:24.887 I/ImeTracker(  504): com.stradaos.launcher.debug:262379b9: onCancelled at PHASE_SERVER_SHOULD_HIDE
+11-28 02:02:26.908 D/EGL_emulation( 2305): app_time_stats: avg=760.21ms min=8.04ms max=1984.27ms count=4
+11-28 02:02:28.069 D/EGL_emulation( 2305): app_time_stats: avg=1160.04ms min=1160.04ms max=1160.04ms count=1
+11-28 02:02:29.079 D/EGL_emulation( 2305): app_time_stats: avg=25.25ms min=5.11ms max=168.29ms count=38
+11-28 02:02:30.095 D/EGL_emulation( 2305): app_time_stats: avg=14.74ms min=5.46ms max=29.75ms count=50
+11-28 02:02:31.096 D/EGL_emulation( 2305): app_time_stats: avg=12.35ms min=4.97ms max=29.38ms count=52
+11-28 02:02:32.513 D/EGL_emulation( 2305): app_time_stats: avg=42.31ms min=5.30ms max=972.74ms count=27
+11-28 02:02:33.558 D/EGL_emulation( 2305): app_time_stats: avg=47.43ms min=28.41ms max=50.87ms count=22
+11-28 02:02:34.558 D/EGL_emulation( 2305): app_time_stats: avg=90.80ms min=40.29ms max=507.99ms count=11
+11-28 02:02:35.563 D/EGL_emulation( 2305): app_time_stats: avg=45.66ms min=22.84ms max=51.81ms count=22
+11-28 02:02:36.578 D/EGL_emulation( 2305): app_time_stats: avg=24.66ms min=16.96ms max=31.68ms count=41
+11-28 02:02:37.580 D/EGL_emulation( 2305): app_time_stats: avg=24.16ms min=10.27ms max=29.53ms count=41
+11-28 02:02:38.936 D/EGL_emulation( 2305): app_time_stats: avg=33.81ms min=18.32ms max=379.42ms count=40
+11-28 02:02:39.958 D/EGL_emulation( 2305): app_time_stats: avg=102.02ms min=46.67ms max=574.40ms count=10
+11-28 02:02:40.958 D/EGL_emulation( 2305): app_time_stats: avg=50.01ms min=48.18ms max=51.52ms count=20
+11-28 02:02:42.007 D/EGL_emulation( 2305): app_time_stats: avg=87.39ms min=44.12ms max=505.79ms count=12
+11-28 02:02:42.278 D/EGL_emulation(  790): app_time_stats: avg=2327.03ms min=1.22ms max=18311.55ms count=8
+11-28 02:02:43.008 D/EGL_emulation( 2305): app_time_stats: avg=47.60ms min=16.83ms max=51.60ms count=21
+11-28 02:02:44.009 D/EGL_emulation( 2305): app_time_stats: avg=90.98ms min=45.64ms max=504.96ms count=11
+11-28 02:02:45.013 D/EGL_emulation( 2305): app_time_stats: avg=32.13ms min=14.54ms max=50.70ms count=31
+11-28 02:02:46.029 D/EGL_emulation( 2305): app_time_stats: avg=24.59ms min=15.03ms max=32.17ms count=41
+11-28 02:02:47.057 D/EGL_emulation( 2305): app_time_stats: avg=32.07ms min=20.62ms max=51.28ms count=32
+11-28 02:02:47.816 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:02:47.818 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:02:47.850 D/EGL_emulation(  790): app_time_stats: avg=5572.68ms min=5572.68ms max=5572.68ms count=1
+11-28 02:02:48.097 D/EGL_emulation( 2305): app_time_stats: avg=37.11ms min=18.62ms max=58.32ms count=28
+11-28 02:02:49.296 D/EGL_emulation( 2305): app_time_stats: avg=108.98ms min=42.42ms max=409.72ms count=11
+11-28 02:02:50.897 D/EGL_emulation( 2305): app_time_stats: avg=530.90ms min=12.02ms max=1386.38ms count=3
+11-28 02:02:51.907 D/EGL_emulation( 2305): app_time_stats: avg=100.99ms min=12.53ms max=616.07ms count=10
+11-28 02:02:52.914 D/EGL_emulation( 2305): app_time_stats: avg=34.56ms min=12.75ms max=51.06ms count=29
+11-28 02:02:53.930 D/EGL_emulation( 2305): app_time_stats: avg=24.77ms min=14.81ms max=32.78ms count=41
+11-28 02:02:54.679 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:02:54.680 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:02:54.698 D/EGL_emulation(  790): app_time_stats: avg=489.06ms min=7.50ms max=6539.43ms count=14
+11-28 02:02:54.962 D/EGL_emulation( 2305): app_time_stats: avg=28.86ms min=9.25ms max=53.96ms count=34
+11-28 02:02:56.720 D/EGL_emulation( 2305): app_time_stats: avg=125.50ms min=44.33ms max=999.77ms count=14
+11-28 02:02:59.837 W/NotificationService(  504): Toast already killed. pkg=com.stradaos.launcher.debug token=android.os.BinderProxy@4db7f74
+11-28 02:03:00.030 D/EGL_emulation(  790): app_time_stats: avg=380.51ms min=10.03ms max=5038.73ms count=14
+11-28 02:03:05.386 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:03:05.386 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:03:05.414 D/EGL_emulation(  790): app_time_stats: avg=5383.79ms min=5383.79ms max=5383.79ms count=1
+11-28 02:03:07.585 D/EGL_emulation( 2305): app_time_stats: avg=5429.76ms min=20.03ms max=10839.48ms count=2
+11-28 02:03:08.607 D/EGL_emulation( 2305): app_time_stats: avg=126.59ms min=26.07ms max=628.95ms count=8
+11-28 02:03:10.143 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:03:10.143 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:03:10.158 D/EGL_emulation(  790): app_time_stats: avg=338.77ms min=15.03ms max=4451.63ms count=14
+11-28 02:03:10.288 D/EGL_emulation( 2305): app_time_stats: avg=560.48ms min=78.79ms max=920.56ms count=3
+11-28 02:03:11.781 D/EGL_emulation( 2305): app_time_stats: avg=370.29ms min=6.29ms max=880.58ms count=4
+11-28 02:03:12.269 D/EGL_emulation(  790): app_time_stats: avg=139.33ms min=0.91ms max=1795.93ms count=14
+11-28 02:03:13.198 D/EGL_emulation( 2305): app_time_stats: avg=471.63ms min=21.43ms max=991.97ms count=3
+11-28 02:03:14.206 D/EGL_emulation( 2305): app_time_stats: avg=503.98ms min=14.15ms max=993.82ms count=2
+11-28 02:03:15.232 D/EGL_emulation( 2305): app_time_stats: avg=64.09ms min=16.41ms max=319.91ms count=16
+11-28 02:03:16.279 D/EGL_emulation( 2305): app_time_stats: avg=34.57ms min=5.04ms max=55.02ms count=28
+11-28 02:03:17.286 D/EGL_emulation( 2305): app_time_stats: avg=39.61ms min=4.41ms max=72.60ms count=24
+11-28 02:03:17.523 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:03:17.524 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:03:17.563 D/EGL_emulation(  790): app_time_stats: avg=5294.06ms min=5294.06ms max=5294.06ms count=1
+11-28 02:03:18.309 D/EGL_emulation( 2305): app_time_stats: avg=45.85ms min=27.70ms max=53.65ms count=22
+11-28 02:03:19.137 W/StradaVideos( 2305): type=1400 audit(0.0:40): avc:  denied  { getattr } for  path="/mnt/pass_through" dev="tmpfs" ino=16 scontext=u:r:untrusted_app_27:s0:c141,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=dir permissive=0 app=com.stradaos.launcher.debug
+11-28 02:03:19.141 W/StradaVideos( 2305): type=1400 audit(0.0:41): avc:  denied  { getattr } for  path="/mnt/media_rw" dev="tmpfs" ino=11 scontext=u:r:untrusted_app_27:s0:c141,c256,c512,c768 tcontext=u:object_r:mnt_media_rw_file:s0 tclass=dir permissive=0 app=com.stradaos.launcher.debug
+11-28 02:03:19.145 W/StradaVideos( 2305): type=1400 audit(0.0:42): avc:  denied  { getattr } for  path="/mnt/product" dev="tmpfs" ino=3 scontext=u:r:untrusted_app_27:s0:c141,c256,c512,c768 tcontext=u:object_r:mnt_product_file:s0 tclass=dir permissive=0 app=com.stradaos.launcher.debug
+11-28 02:03:19.153 W/StradaVideos( 2305): type=1400 audit(0.0:43): avc:  denied  { getattr } for  path="/mnt/vendor" dev="tmpfs" ino=2 scontext=u:r:untrusted_app_27:s0:c141,c256,c512,c768 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=0 app=com.stradaos.launcher.debug
+11-28 02:03:19.446 D/EGL_emulation( 2305): app_time_stats: avg=142.11ms min=16.55ms max=851.64ms count=8
+11-28 02:03:20.570 D/EGL_emulation( 2305): app_time_stats: avg=277.66ms min=16.81ms max=980.69ms count=4
+11-28 02:03:21.590 D/EGL_emulation( 2305): app_time_stats: avg=509.67ms min=25.76ms max=993.57ms count=2
+11-28 02:03:22.595 D/EGL_emulation( 2305): app_time_stats: avg=502.73ms min=24.76ms max=980.71ms count=2
+11-28 02:03:24.571 D/EGL_emulation( 2305): app_time_stats: avg=151.92ms min=27.39ms max=981.04ms count=13
+11-28 02:03:25.589 D/EGL_emulation( 2305): app_time_stats: avg=508.99ms min=22.34ms max=995.65ms count=2
+11-28 02:03:26.354 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:03:26.355 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:03:26.377 D/EGL_emulation(  790): app_time_stats: avg=727.27ms min=0.98ms max=8496.93ms count=12
+11-28 02:03:27.387 D/EGL_emulation( 2305): app_time_stats: avg=594.20ms min=7.54ms max=946.25ms count=3
+11-28 02:03:28.409 D/EGL_emulation( 2305): app_time_stats: avg=340.83ms min=24.12ms max=499.92ms count=3
+11-28 02:03:29.416 D/EGL_emulation( 2305): app_time_stats: avg=503.04ms min=26.60ms max=979.49ms count=2
+11-28 02:03:31.405 D/EGL_emulation( 2305): app_time_stats: avg=994.32ms min=992.99ms max=995.65ms count=2
+11-28 02:03:32.425 D/EGL_emulation( 2305): app_time_stats: avg=510.16ms min=24.44ms max=995.88ms count=2
+11-28 02:03:33.047 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:03:33.047 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:03:33.061 D/EGL_emulation(  790): app_time_stats: avg=477.33ms min=15.29ms max=6388.00ms count=14
+11-28 02:03:34.088 D/EGL_emulation( 2305): app_time_stats: avg=550.79ms min=7.78ms max=963.54ms count=3
+11-28 02:03:35.106 D/EGL_emulation( 2305): app_time_stats: avg=339.33ms min=25.01ms max=523.28ms count=3
+11-28 02:03:36.110 D/EGL_emulation( 2305): app_time_stats: avg=501.82ms min=23.39ms max=980.25ms count=2
+11-28 02:03:38.046 E/BLASTSyncEngine(  504): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+11-28 02:03:38.088 D/EGL_emulation( 2305): app_time_stats: avg=988.74ms min=982.19ms max=995.30ms count=2
+11-28 02:03:39.107 D/EGL_emulation( 2305): app_time_stats: avg=509.24ms min=25.23ms max=993.26ms count=2
+11-28 02:03:39.860 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:03:39.861 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:03:39.877 D/EGL_emulation(  790): app_time_stats: avg=486.74ms min=12.90ms max=6502.28ms count=14
+11-28 02:03:40.887 D/EGL_emulation( 2305): app_time_stats: avg=591.53ms min=7.86ms max=961.34ms count=3
+11-28 02:03:41.906 D/EGL_emulation( 2305): app_time_stats: avg=254.27ms min=23.12ms max=580.30ms count=4
+11-28 02:03:42.913 D/EGL_emulation( 2305): app_time_stats: avg=503.56ms min=15.25ms max=991.88ms count=2
+11-28 02:03:43.946 D/EGL_emulation( 2305): app_time_stats: avg=103.12ms min=22.03ms max=628.94ms count=10
+11-28 02:03:44.980 D/EGL_emulation( 2305): app_time_stats: avg=36.45ms min=5.98ms max=52.95ms count=27
+11-28 02:03:46.542 D/EGL_emulation( 2305): app_time_stats: avg=90.00ms min=23.45ms max=619.17ms count=17
+11-28 02:03:47.567 D/EGL_emulation( 2305): app_time_stats: avg=46.09ms min=5.63ms max=51.38ms count=22
+11-28 02:03:48.602 D/EGL_emulation( 2305): app_time_stats: avg=37.19ms min=4.39ms max=64.19ms count=26
+11-28 02:03:49.007 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:03:49.009 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:03:49.033 D/EGL_emulation(  790): app_time_stats: avg=653.82ms min=14.81ms max=8857.62ms count=14
+11-28 02:03:50.037 D/EGL_emulation( 2305): app_time_stats: avg=60.73ms min=4.22ms max=461.79ms count=23
+11-28 02:03:51.060 D/EGL_emulation( 2305): app_time_stats: avg=255.81ms min=23.23ms max=486.04ms count=4
+11-28 02:03:52.062 D/EGL_emulation( 2305): app_time_stats: avg=196.98ms min=5.01ms max=874.09ms count=5
+11-28 02:03:53.543 D/EGL_emulation( 2305): app_time_stats: avg=740.65ms min=487.22ms max=994.08ms count=2
+11-28 02:03:54.551 D/EGL_emulation( 2305): app_time_stats: avg=47.95ms min=17.93ms max=58.56ms count=21
+11-28 02:03:55.000 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:03:55.004 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:03:55.050 D/EGL_emulation(  790): app_time_stats: avg=496.32ms min=2.46ms max=5692.93ms count=12
+11-28 02:03:56.071 D/EGL_emulation( 2305): app_time_stats: avg=116.71ms min=9.00ms max=965.06ms count=13
+11-28 02:03:57.089 D/EGL_emulation( 2305): app_time_stats: avg=339.30ms min=22.91ms max=529.99ms count=3
+11-28 02:03:58.094 D/EGL_emulation( 2305): app_time_stats: avg=502.10ms min=23.99ms max=980.20ms count=2
+11-28 02:03:59.541 D/EGL_emulation( 2305): app_time_stats: avg=723.43ms min=451.58ms max=995.28ms count=2
+11-28 02:04:00.001 E/BLASTSyncEngine(  504): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+11-28 02:04:00.061 D/EGL_emulation(  790): app_time_stats: avg=357.59ms min=14.51ms max=4720.21ms count=14
+11-28 02:04:00.830 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:04:00.830 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:04:00.889 D/EGL_emulation( 2305): app_time_stats: avg=336.78ms min=22.82ms max=779.13ms count=4
+11-28 02:04:01.075 D/EGL_emulation(  790): app_time_stats: avg=101.22ms min=15.32ms max=782.96ms count=10
+11-28 02:04:02.360 D/EGL_emulation( 2305): app_time_stats: avg=364.12ms min=5.56ms max=947.57ms count=4
+11-28 02:04:02.617 W/StradaVideos( 2305): type=1400 audit(0.0:92): avc:  denied  { getattr } for  path="/mnt/pass_through" dev="tmpfs" ino=16 scontext=u:r:untrusted_app_27:s0:c141,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=dir permissive=0 app=com.stradaos.launcher.debug
+11-28 02:04:02.617 W/StradaVideos( 2305): type=1400 audit(0.0:93): avc:  denied  { getattr } for  path="/mnt/media_rw" dev="tmpfs" ino=11 scontext=u:r:untrusted_app_27:s0:c141,c256,c512,c768 tcontext=u:object_r:mnt_media_rw_file:s0 tclass=dir permissive=0 app=com.stradaos.launcher.debug
+11-28 02:04:02.617 W/StradaVideos( 2305): type=1400 audit(0.0:94): avc:  denied  { getattr } for  path="/mnt/product" dev="tmpfs" ino=3 scontext=u:r:untrusted_app_27:s0:c141,c256,c512,c768 tcontext=u:object_r:mnt_product_file:s0 tclass=dir permissive=0 app=com.stradaos.launcher.debug
+11-28 02:04:02.617 W/StradaVideos( 2305): type=1400 audit(0.0:95): avc:  denied  { getattr } for  path="/mnt/vendor" dev="tmpfs" ino=2 scontext=u:r:untrusted_app_27:s0:c141,c256,c512,c768 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=0 app=com.stradaos.launcher.debug
+11-28 02:04:03.853 D/EGL_emulation( 2305): app_time_stats: avg=113.78ms min=16.95ms max=980.40ms count=13
+11-28 02:04:04.873 D/EGL_emulation( 2305): app_time_stats: avg=509.80ms min=24.56ms max=995.04ms count=2
+11-28 02:04:05.829 E/BLASTSyncEngine(  504): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+11-28 02:04:05.895 D/EGL_emulation( 2305): app_time_stats: avg=510.78ms min=24.52ms max=997.04ms count=2
+11-28 02:04:07.646 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:04:07.647 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:04:07.659 D/EGL_emulation(  790): app_time_stats: avg=1316.83ms min=15.90ms max=6518.13ms count=5
+11-28 02:04:07.690 D/EGL_emulation( 2305): app_time_stats: avg=127.93ms min=30.69ms max=800.55ms count=14
+11-28 02:04:08.695 D/EGL_emulation( 2305): app_time_stats: avg=334.71ms min=16.38ms max=963.13ms count=3
+11-28 02:04:10.672 D/EGL_emulation( 2305): app_time_stats: avg=139.66ms min=21.93ms max=982.45ms count=14
+11-28 02:04:11.712 D/EGL_emulation( 2305): app_time_stats: avg=207.83ms min=23.00ms max=865.67ms count=5
+11-28 02:04:12.650 E/BLASTSyncEngine(  504): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+11-28 02:04:12.715 D/EGL_emulation( 2305): app_time_stats: avg=43.21ms min=4.18ms max=54.08ms count=23
+11-28 02:04:13.716 D/EGL_emulation( 2305): app_time_stats: avg=35.23ms min=4.77ms max=54.81ms count=27
+11-28 02:04:14.525 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:04:14.526 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:04:14.575 D/EGL_emulation(  790): app_time_stats: avg=493.64ms min=14.33ms max=6600.43ms count=14
+11-28 02:04:14.750 D/EGL_emulation( 2305): app_time_stats: avg=46.27ms min=32.44ms max=59.31ms count=22
+11-28 02:04:16.160 D/EGL_emulation( 2305): app_time_stats: avg=70.19ms min=24.54ms max=548.36ms count=20
+11-28 02:04:17.599 D/EGL_emulation( 2305): app_time_stats: avg=479.47ms min=22.01ms max=992.81ms count=3
+11-28 02:04:18.610 D/EGL_emulation( 2305): app_time_stats: avg=337.07ms min=13.42ms max=944.50ms count=3
+11-28 02:04:19.612 D/EGL_emulation( 2305): app_time_stats: avg=47.25ms min=6.93ms max=52.93ms count=21
+11-28 02:04:20.615 D/EGL_emulation( 2305): app_time_stats: avg=49.80ms min=4.68ms max=450.72ms count=19
+11-28 02:04:21.551 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:04:21.553 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:04:21.603 D/EGL_emulation(  790): app_time_stats: avg=625.37ms min=0.81ms max=6651.35ms count=11
+11-28 02:04:21.656 D/EGL_emulation( 2305): app_time_stats: avg=49.05ms min=33.03ms max=73.12ms count=21
+11-28 02:04:22.680 D/EGL_emulation( 2305): app_time_stats: avg=27.17ms min=3.06ms max=43.43ms count=33
+11-28 02:04:24.647 D/EGL_emulation( 2305): app_time_stats: avg=487.67ms min=17.41ms max=974.50ms count=4
+11-28 02:04:25.659 D/EGL_emulation( 2305): app_time_stats: avg=253.00ms min=25.94ms max=883.36ms count=4
+11-28 02:04:26.683 D/EGL_emulation( 2305): app_time_stats: avg=44.03ms min=18.55ms max=53.95ms count=23
+11-28 02:04:28.378 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:04:28.379 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:04:28.393 D/EGL_emulation(  790): app_time_stats: avg=557.95ms min=1.82ms max=6415.68ms count=12
+11-28 02:04:28.440 D/EGL_emulation( 2305): app_time_stats: avg=74.93ms min=5.32ms max=767.31ms count=23
+11-28 02:04:29.446 D/EGL_emulation( 2305): app_time_stats: avg=331.22ms min=5.34ms max=963.42ms count=3
+11-28 02:04:31.433 D/EGL_emulation( 2305): app_time_stats: avg=496.47ms min=22.64ms max=993.81ms count=4
+11-28 02:04:32.439 D/EGL_emulation( 2305): app_time_stats: avg=493.87ms min=6.12ms max=981.62ms count=2
+11-28 02:04:33.464 D/EGL_emulation( 2305): app_time_stats: avg=51.20ms min=19.65ms max=121.33ms count=20
+11-28 02:04:34.496 D/EGL_emulation( 2305): app_time_stats: avg=34.67ms min=15.46ms max=53.67ms count=28
+11-28 02:04:35.325 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:04:35.326 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:04:35.377 D/EGL_emulation(  790): app_time_stats: avg=498.44ms min=13.84ms max=6685.88ms count=14
+11-28 02:04:35.514 D/EGL_emulation( 2305): app_time_stats: avg=45.38ms min=24.21ms max=60.61ms count=22
+11-28 02:04:37.058 D/EGL_emulation( 2305): app_time_stats: avg=383.82ms min=24.28ms max=818.28ms count=4
+11-28 02:04:38.397 D/EGL_emulation( 2305): app_time_stats: avg=332.94ms min=19.33ms max=989.37ms count=4
+11-28 02:04:39.408 D/EGL_emulation( 2305): app_time_stats: avg=505.25ms min=15.33ms max=995.17ms count=2
+11-28 02:04:40.411 D/EGL_emulation( 2305): app_time_stats: avg=52.78ms min=3.81ms max=151.06ms count=19
+11-28 02:04:41.425 D/EGL_emulation( 2305): app_time_stats: avg=35.23ms min=5.79ms max=54.54ms count=27
+11-28 02:04:42.075 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:04:42.075 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:04:42.093 D/EGL_emulation(  790): app_time_stats: avg=505.57ms min=0.99ms max=6386.40ms count=13
+11-28 02:04:43.107 D/EGL_emulation( 2305): app_time_stats: avg=238.12ms min=6.73ms max=949.94ms count=7
+11-28 02:04:44.120 D/EGL_emulation( 2305): app_time_stats: avg=200.60ms min=23.08ms max=478.46ms count=5
+11-28 02:04:45.175 D/EGL_emulation( 2305): app_time_stats: avg=208.97ms min=13.28ms max=922.85ms count=5
+11-28 02:04:46.175 D/EGL_emulation( 2305): app_time_stats: avg=1000.11ms min=1000.11ms max=1000.11ms count=1
+11-28 02:04:46.824 D/WindowManagerShell(  790): onActivityRestartAttempt: ComponentInfo{com.stradaos.launcher.debug/com.stradaos.launcher.Main}
+11-28 02:04:46.824 I/ActivityTaskManager(  504): START u0 {flg=0x10000000 cmp=com.stradaos.launcher.debug/com.stradaos.launcher.Main (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+11-28 02:04:46.841 D/EGL_emulation(  790): app_time_stats: avg=339.05ms min=14.40ms max=4450.56ms count=14
+11-28 02:04:47.183 D/EGL_emulation( 2305): app_time_stats: avg=200.77ms min=9.48ms max=393.15ms count=5
+11-28 02:04:48.358 D/EGL_emulation( 2305): app_time_stats: avg=97.94ms min=25.20ms max=479.25ms count=12
+11-28 02:04:49.853 D/EGL_emulation( 2305): app_time_stats: avg=90.02ms min=24.20ms max=979.38ms count=16
+11-28 02:04:50.862 D/EGL_emulation( 2305): app_time_stats: avg=126.00ms min=25.39ms max=680.61ms count=8
+11-28 02:04:51.825 E/BLASTSyncEngine(  504): WM sent Transaction to organized, but never received commit callback. Application ANR likely to follow.
+11-28 02:04:51.883 D/EGL_emulation( 2305): app_time_stats: avg=43.72ms min=16.43ms max=62.08ms count=23
+11-28 02:04:52.287 D/EGL_emulation(  790): app_time_stats: avg=418.67ms min=6.78ms max=5095.42ms count=13
+11-28 02:04:52.897 D/EGL_emulation( 2305): app_time_stats: avg=32.94ms min=10.97ms max=50.87ms count=28
+11-28 02:04:53.912 D/EGL_emulation( 2305): app_time_stats: avg=26.15ms min=14.85ms max=33.06ms count=34
+11-28 02:04:54.924 D/EGL_emulation( 2305): app_time_stats: avg=66.87ms min=32.74ms max=331.89ms count=15
+11-28 02:04:55.924 D/EGL_emulation( 2305): app_time_stats: avg=111.18ms min=34.45ms max=640.07ms count=9
+11-28 02:04:56.935 D/EGL_emulation( 2305): app_time_stats: avg=35.33ms min=18.92ms max=54.70ms count=27
+11-28 02:04:57.957 D/EGL_emulation( 2305): app_time_stats: avg=33.07ms min=22.09ms max=169.81ms count=28
+11-28 02:04:58.961 D/EGL_emulation( 2305): app_time_stats: avg=111.39ms min=46.64ms max=602.07ms count=9
+11-28 02:04:59.996 D/EGL_emulation( 2305): app_time_stats: avg=36.23ms min=1.96ms max=55.56ms count=27
+11-28 02:05:00.043 D/EGL_emulation(  790): app_time_stats: avg=7756.54ms min=7756.54ms max=7756.54ms count=1
+11-28 02:05:01.040 D/EGL_emulation( 2305): app_time_stats: avg=39.08ms min=20.24ms max=51.83ms count=26
+11-28 02:05:02.042 D/EGL_emulation( 2305): app_time_stats: avg=42.04ms min=3.45ms max=53.73ms count=23
+11-28 02:05:03.558 D/EGL_emulation( 2305): app_time_stats: avg=116.53ms min=47.95ms max=600.69ms count=13
+11-28 02:05:04.580 D/EGL_emulation( 2305): app_time_stats: avg=45.62ms min=6.59ms max=63.87ms count=22
+11-28 02:05:05.594 D/EGL_emulation( 2305): app_time_stats: avg=27.02ms min=21.32ms max=37.39ms count=33
